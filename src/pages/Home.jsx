@@ -28,7 +28,8 @@ export function Home() {
         </Badge>
 
         <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
-          Know Where You Stand. <br />
+          {/* Know Where You Stand. <br /> */}
+                   Ashish Updated<br />
           <span className="bg-gradient-to-r from-primary-start to-primary-end bg-clip-text text-transparent">
             Choose the Right College.
           </span>
