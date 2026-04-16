@@ -28,8 +28,7 @@ export function Home() {
         </Badge>
 
         <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
-          {/* Know Where You Stand. <br /> */}
-                   Ashish Updated<br />
+          Know Where You Stand. <br />
           <span className="bg-gradient-to-r from-primary-start to-primary-end bg-clip-text text-transparent">
             Choose the Right College.
           </span>
@@ -42,7 +41,7 @@ export function Home() {
 
         {/* PRIMARY ACTION */}
         <div className="max-w-2xl mx-auto bg-card border border-border-subtle rounded-2xl p-3 flex gap-2 shadow-lg">
-          {/* <Input placeholder="Enter your rank..." type="number" /> */}
+          <Input placeholder="Need help? Talk to our AI." type="number" />
           
         </div><Button onClick={() => navigate("/predictor")}>
            <Bot/>AI

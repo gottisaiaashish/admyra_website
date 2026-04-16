@@ -138,7 +138,8 @@ export function Predictor() {
                     
                     <Button 
                       variant="outline" 
-                      onClick={() => navigate('/colleges/1')} 
+                      // onClick={() => navigate('/colleges/1')} 
+                      onClick={() => navigate(`/colleges/${result.collegeId}`)}
                     >
                       View Details
                     </Button>
@@ -148,7 +149,7 @@ export function Predictor() {
             </div>
           ) : (
             <Card className="p-12 text-center">
-              <p className="text-xl text-text-main mb-2">It seems tough to predict an allocation for this rank.</p>
+              <p className="text-xl text-text-main mb-2">It seems tough to predict an allocation for this rank. Based on your rank, there are currently no suitable colleges available in our database. We are continuously updating our data. Please check back later.</p>
               <p className="text-text-muted">Try checking alternate categories or explore private colleges.</p>
             </Card>
           )}

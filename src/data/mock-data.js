@@ -6,7 +6,7 @@ export const colleges =
     location: "Hyderabad, Telangana",
     rating: 4.8,
     description: "Jawaharlal Nehru Technological University (JNTU) Hyderabad College of Engineering (JNTUHCEH), established in 1965 and located in Kukatpally, is a premier autonomous state university in Telangana. It offers top-tier engineering programs with high placement rates (80-90%, up to 46 LPA), strong faculty, and is consistently ranked among the top technical institutions in the region..",
-    image: "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80&w=800",
+    image: "https://img.collegepravesh.com/2021/06/JNTU-Hyderabad.jpg",
     placements: {
       avgPackage: "7.5 LPA",
       topRecruiters: ["TCS", "Infosys", "Amazon", "Deloitte", "Accenture", "Cognizant", "Wipro", "L&T Construction", "MathWorks", "Daikin", "Kia Motors"]
@@ -35,7 +35,7 @@ export const colleges =
   location: "Hyderabad, Telangana",
   rating: 4.7,
   description: "One of the oldest engineering colleges in India, established in 1929 under Osmania University, known for strong academics and top placements.",
-  image: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=800",
+  image: "https://cdn.siasat.com/wp-content/uploads/2023/07/Free-Medical-Camp-2023-07-10T164035.867.jpg",
   placements: {
     avgPackage: "10 LPA",
     topRecruiters: ["Amazon", "TCS", "Infosys", "Cognizant", "BEL Hyderabad"]
@@ -64,7 +64,7 @@ export const colleges =
   location: "Hyderabad, Telangana",
   rating: 4.5,
   description: "One of the top private engineering colleges in Telangana, known for strong academics, good campus life, and consistent placements.",
-  image: "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80&w=800",
+  image: "https://www.cbit.ac.in/wp-content/uploads/2019/03/Office-tab-scaled.jpeg",
   placements: {
     avgPackage: "8-10 LPA",
     topRecruiters: ["Amazon", "Microsoft", "Deloitte", "TCS", "Infosys", "Accenture", "Qualcomm"]
@@ -88,7 +88,7 @@ export const colleges =
   location: "Hyderabad, Telangana",
   rating: 4.6,
   description: "A top private engineering college in Hyderabad known for strong academics, modern infrastructure, and consistent placement records with a focus on innovation and technical excellence.",
-  image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=800",
+  image: "https://image-static.collegedunia.com/public/college_data/images/campusimage/1567745048a1cad.png",
   placements: {
     avgPackage: "7-9 LPA",
     topRecruiters: ["Amazon", "Microsoft", "ServiceNow", "TCS", "Infosys", "Accenture"]
@@ -111,7 +111,7 @@ export const colleges =
   location: "Hyderabad, Telangana",
   rating: 4.5,
   description: "A reputed autonomous engineering college in Hyderabad, known for strong academics, disciplined environment, and consistent placement performance.",
-  image: "https://images.unsplash.com/photo-1581093588401-22b1b4b9b5aa?auto=format&fit=crop&q=80&w=800",
+  image: "https://campuspro.co.in/collage-image/1751978662_row_382.jpg",
   placements: {
     avgPackage: "6-8 LPA",
     topRecruiters: ["TCS", "Infosys", "Accenture", "Wipro", "Cognizant", "Deloitte"]
@@ -137,7 +137,7 @@ export const colleges =
   location: "Hyderabad, Telangana",
   rating: 4.4,
   description: "A well-known autonomous engineering college in Hyderabad, recognized for quality education, modern infrastructure, and steady placement records.",
-  image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=800",
+  image: "https://sefet.in/assets/img/griet-campus.jpg",
   placements: {
     avgPackage: "5-7 LPA",
     topRecruiters: ["TCS", "Infosys", "Accenture", "Cognizant", "Capgemini", "Wipro"]
@@ -163,7 +163,7 @@ export const colleges =
   location: "Hyderabad, Telangana",
   rating: 4.4,
   description: "Mahatma Gandhi Institute of Technology (MGIT), established in 1997 in Gandipet, Hyderabad, is a premier autonomous engineering college affiliated with JNTUH and managed by the Chaitanya Bharathi Educational Society (CBES). The institute offers multiple UG and PG programs with NAAC A++ and NBA accreditation, focusing on high-quality technical education, research, and innovation. MGIT is known for its strong placement record, collaborations with top companies, modern infrastructure, and active student culture including technical fests and clubs.",
-  image: "https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&q=80&w=800",
+  image: "https://mgit.ac.in/wp-content/uploads/2020/02/A-block-fron-view-scaled.jpg",
   placements: {
     avgPackage: "3.5-6 LPA",
     highestPackage: "70 LPA",
@@ -188,7 +188,7 @@ export const colleges =
   location: "Hyderabad, Telangana",
   rating: 4.5,
   description: "B V Raju Institute of Technology (BVRIT), established in 1997 in Narsapur, Telangana, is a premier UGC-autonomous engineering college under the Sri Vishnu Educational Society. Affiliated with JNTUH and accredited with NAAC A+ and NBA, the institute offers quality technical education across multiple disciplines. Spread across a scenic 110-acre campus, BVRIT is known for its strong academic environment, research focus, and excellent placement record, consistently ranking among the top engineering colleges in Telangana.",
-  image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=800",
+  image: "https://images.shiksha.com/mediadata/images/1595846985phpW2q9ja.jpeg",
   placements: {
     avgPackage: "4.3-6 LPA",
     highestPackage: "52 LPA",
@@ -212,7 +212,7 @@ export const colleges =
   location: "Hyderabad, Telangana",
   rating: 4.5,
   description: "BVRIT Hyderabad College of Engineering for Women (BVRITH), established in 2012 by the Sri Vishnu Educational Society, is a premier NAAC 'A' Grade institution affiliated with JNTUH. The college focuses on empowering women in STEM through quality technical education, innovation, and industry-oriented training. It offers B.Tech and M.Tech programs in core and emerging fields, supported by modern infrastructure, strong placement training, and a safe, student-friendly campus environment.",
-  image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800",
+  image: "https://www.vidyavision.com/CollegeUploads/Photos/2019-21-8-12-42-56_bvrit-hyderabad-college-of-engineering-for-women-bvrithcew-hyderabad%20(1).jpg",
   placements: {
     avgPackage: "4.5-10 LPA",
     highestPackage: "54 LPA",
@@ -237,7 +237,7 @@ export const colleges =
   location: "Hyderabad, Telangana",
   rating: 4.6,
   description: "G Narayanamma Institute of Technology and Science (GNITS), established in 1997 in Hyderabad, is a premier autonomous women's engineering college known for quality education and strong placements. Accredited by NBA and ranked in NIRF 151-200, the institute offers B.Tech and M.Tech programs in fields like CSE, AI/ML, Data Science, and Electronics. GNITS is highly regarded for its academic excellence, industry connections, and focus on empowering women in engineering.",
-  image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=800",
+  image: "https://assets.allegiance-educare.com/colleges/1623744465DSC_0759.jpg",
   placements: {
     avgPackage: "7.5-9.5 LPA",
     highestPackage: "54 LPA",
@@ -263,7 +263,7 @@ export const colleges =
   location: "Hyderabad, Telangana",
   rating: 4.3,
   description: "The Institute of Aeronautical Engineering (IARE), established in 2000 in Hyderabad, is a well-known autonomous engineering college focused on technical education and innovation. Approved by AICTE and accredited by NAAC and NBA, the institute offers B.Tech and PG programs in core and emerging fields like CSE, AI & ML, Data Science, and Aeronautical Engineering. IARE is recognized for its modern infrastructure, strong industry collaborations, and consistent placement opportunities.",
-  image: "https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&q=80&w=800",
+  image: "https://www.iare.ac.in/sites/all/themes/iare/images/slider7.jpg",
   placements: {
     avgPackage: "4-6 LPA",
     highestPackage: "51 LPA",
@@ -283,7 +283,1229 @@ export const colleges =
     "Mess & Cafeteria",
     "24/7 Power Backup"
   ]
- }
+ },
+ {
+  id: "12",
+  name: "Keshav Memorial Institute of Technology",
+  location: "Hyderabad, Telangana",
+  rating: 4.5,
+  description: "Keshav Memorial Institute of Technology (KMIT), established in 2007, is a premier engineering college located in Narayanaguda, Hyderabad. Affiliated with JNTU Hyderabad and recognized by the Government of Telangana, the institute offers specialized programs in Computer Science, Artificial Intelligence & Machine Learning, Data Science, and Information Technology. Known for its strong placement performance and industry-focused learning approach, KMIT is co-promoted by Genesis Solutions Pvt. Ltd., enabling close collaboration with leading MNCs and real-world exposure through its Finishing School program.",
+  image: "https://ik.imagekit.io/syustaging/SYU_PREPROD/COVER-IMAGE_LysnXpcZWy.webp?tr=w-3840",
+  placements: {
+    avgPackage: "9.74 LPA",
+    topRecruiters: ["Microsoft", "Amazon", "Google", "TCS", "Infosys", "Accenture", "Cognizant"]
+  },
+  facilities: [
+    "Separate Hostels for Boys & Girls",
+    "Central Library with Books, Journals & Digital Resources",
+    "Modern Computer & IT Labs (GitHub, AWS Access)",
+    "Campus Wi-Fi",
+    "Auditorium for Events & Seminars",
+    "Cafeteria with Hygienic Food",
+    "Indoor & Outdoor Sports Facilities (Badminton, Football)",
+    "Medical & First Aid Facilities",
+    "Training & Placement Cell",
+    "Finishing School Program (Industry Projects)"
+  ]
+ },
+ {
+  id: "13",
+  name: "CMR College of Engineering & Technology",
+  location: "Hyderabad, Telangana",
+  rating: 4.2,
+  description: "CMR College of Engineering & Technology (CMRCET), established in 2002, is a reputed private engineering college in Hyderabad, affiliated with JNTU Hyderabad and approved by AICTE and UGC. The college offers undergraduate and postgraduate programs including B.Tech, M.Tech, and MBA, with a strong focus on academic excellence, innovation, and industry readiness. Accredited with an A+ grade by NAAC, CMRCET is recognized for its modern infrastructure, dedicated faculty, and consistent placement performance. The institution maintains strong industry collaborations and provides structured training programs to enhance students' technical and soft skills.",
+  image: "https://www.vidyavision.com/CollegeUploads/Photos/2021-05-10-11-19-01_sj5.jpeg",
+  placements: {
+    avgPackage: "9 LPA",
+    topRecruiters: ["Amazon", "Microsoft", "Infosys", "Accenture", "Cognizant", "TCS", "Deloitte", "Wipro", "Adobe", "HSBC"]
+  },
+  facilities: [
+    "Separate Hostels for Boys & Girls with Wardens",
+    "Central Library with Digital Resources",
+    "Modern IT Infrastructure & Computer Labs",
+    "Cafeteria with Multi-Cuisine Food",
+    "Medical Facilities with Doctor & Nurse",
+    "Sports Facilities & Gym",
+    "Auditorium & Seminar Halls",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "14",
+  name: "CMR Engineering College",
+  location: "Hyderabad, Telangana",
+  rating: 4.1,
+  description: "CMR Engineering College (CMREC), established in 2010, is a well-known private engineering institution in Hyderabad, affiliated with JNTU Hyderabad and approved by AICTE. Accredited with an 'A' grade by NAAC and recognized with a 5-star rating by the Institution Innovation Council, Ministry of Education, CMREC is known for its quality education, modern infrastructure, and industry-oriented curriculum. The college offers a wide range of undergraduate and postgraduate programs and emphasizes internships, research, and skill development. It actively encourages student participation in technical clubs and extracurricular activities to enhance overall development and employability.",
+  image: "https://tse3.mm.bing.net/th/id/OIP.r7FSRWWPbXK6plOXV6JU_QHaE7?rs=1&pid=ImgDetMain&o=7&rm=3",
+  placements: {
+    avgPackage: "4.5 LPA",
+    topRecruiters: ["TCS", "Infosys", "Wipro", "Accenture", "Cognizant", "HCL", "Tech Mahindra", "Capgemini"]
+  },
+  facilities: [
+    "Central Library with Digital Resources",
+    "Modern Laboratories & Workshops",
+    "Campus Wi-Fi",
+    "Hostel Facilities",
+    "Sports & Recreational Facilities",
+    "Auditorium & Seminar Halls",
+    "Cafeteria",
+    "Training & Placement Cell",
+    "Student Clubs & Innovation Activities"
+  ]
+ },
+ {
+  id: "15",
+  name: "CMR Technical Campus",
+  location: "Hyderabad, Telangana",
+  rating: 4.2,
+  description: "CMR Technical Campus (CMRTC), established in 2009, is an autonomous engineering and management institution located in Hyderabad. Affiliated with JNTU Hyderabad and approved by AICTE and UGC, the college is accredited by NAAC with an 'A' grade and NBA. Spread across a 20-acre campus, CMRTC offers undergraduate and postgraduate programs in engineering and management. The institute is known for its modern infrastructure, research-oriented approach, and strong industry collaborations with organizations like IBM, Amazon Web Services, and Wipro, providing students with quality education and global exposure.",
+  image: "https://cmrtc.ac.in/wp-content/uploads/2020/07/banner-02-1280x533.jpg",
+  placements: {
+    avgPackage: "6 LPA",
+    topRecruiters: ["Amazon", "Autodesk", "Siemens", "HSBC", "Hexagon", "Accenture", "Capgemini", "Wipro"]
+  },
+  facilities: [
+    "Central Library with Books & Digital Resources",
+    "Separate Hostels for Boys & Girls (Wi-Fi Enabled)",
+    "Indoor Sports Complex & Gym",
+    "Auditorium for Events & Seminars",
+    "Cafeteria with Hygienic Food",
+    "Modern Laboratories",
+    "Campus Wi-Fi",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "16",
+  name: "CMR Institute of Technology",
+  location: "Hyderabad, Telangana",
+  rating: 4.3,
+  description: "CMR Institute of Technology (CMRIT), established in 2005, is a reputed engineering institution in Hyderabad affiliated with JNTU Hyderabad and approved by AICTE. Recognized by UGC and accredited with an A++ grade by NAAC, the institute offers a wide range of programs including B.Tech, M.Tech, MBA, and PhD. CMRIT is known for its strong academic framework, experienced faculty, and modern infrastructure, including advanced laboratories and research centers. The college emphasizes industry-oriented learning, internships, and skill development, helping students achieve strong career outcomes.",
+  image: "https://media.collegedekho.com/media/img/institute/crawled_images/None/A08R8999.jpg?width=640",
+  placements: {
+    avgPackage: "4.5 LPA",
+    topRecruiters: ["Accenture", "Capgemini", "Infosys", "Cognizant", "Amazon", "Microsoft", "SAP", "Siemens"]
+  },
+  facilities: [
+    "Smart Classrooms with Audio-Visual Technology",
+    "Central Library with 100,000+ Books & E-Resources",
+    "Advanced Laboratories",
+    "Auditorium & Seminar Halls",
+    "Sports Facilities (Basketball, Football)",
+    "Health Center with Medical Officer",
+    "Separate Hostels for Boys & Girls",
+    "Campus Wi-Fi",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "17",
+  name: "Gokaraju Lailavathi Engineering College",
+  location: "Hyderabad, Telangana",
+  rating: 4.0,
+  description: "Gokaraju Lailavathi Engineering College (GLEC), established in 2021, is a self-financed institution in Hyderabad under the Gokaraju Rangaraju Educational Society. Approved by AICTE and affiliated with Osmania University, the college offers undergraduate and postgraduate programs in engineering disciplines such as Computer Science, Mechanical, Electrical, and Civil Engineering. GLEC focuses on quality education, innovative teaching methods, and industry-oriented learning. The institution supports students through scholarships, training programs, and placement assistance, ensuring strong academic performance and career readiness.",
+  image: "https://universitykart.b-cdn.net/Content/upload/admin/iwk0a25d.yjs.jpeg",
+  placements: {
+    avgPackage: "4 LPA",
+    topRecruiters: ["Microsoft", "Oracle", "Pega Systems", "Deloitte", "Infosys", "Cognizant", "Wipro"]
+  },
+  facilities: [
+    "Modern Lecture Halls",
+    "Advanced Computer Center",
+    "Well-Stocked Library",
+    "Indoor & Outdoor Sports Facilities",
+    "Hygienic Canteen",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "18",
+  name: "Keshav Memorial Engineering College",
+  location: "Hyderabad, Telangana",
+  rating: 4.3,
+  description: "Keshav Memorial Engineering College (KMEC) is a private institution in Hyderabad, approved by AICTE and affiliated with Osmania University. The college offers undergraduate and postgraduate programs in key engineering disciplines such as Computer Science, Artificial Intelligence & Machine Learning, and Electronics and Communication Engineering. Known for its quality education and modern infrastructure, KMEC emphasizes both academic excellence and overall student development through technical training, extracurricular activities, and sports. The college also has a strong placement support system that connects students with leading companies.",
+  image: "https://kmce.in/wp-content/uploads/2023/05/IMG-20230511-WA0014_1200x800.jpg",
+  placements: {
+    avgPackage: "5.3 LPA",
+    topRecruiters: ["Risposta", "EvJazz", "Inam Solutions", "Ashling Partners", "Rinex Technologies"]
+  },
+  facilities: [
+    "Modern Laboratories",
+    "Well-Maintained Classrooms",
+    "Library with Digital Resources",
+    "Canteen",
+    "Sports Facilities (Football, Indoor Games)",
+    "Medical Facilities",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "19",
+  name: "Malla Reddy Engineering College",
+  location: "Hyderabad, Telangana",
+  rating: 4.2,
+  description: "Malla Reddy Engineering College (MREC), located in Hyderabad, is an autonomous institution approved by AICTE and affiliated with JNTU Hyderabad. Accredited with an A++ grade by NAAC, the college offers undergraduate and postgraduate programs in engineering, technology, and management. MREC is known for its strong academic environment, modern infrastructure, and industry-focused training. It provides NBA-accredited programs in core branches such as Computer Science, Electronics and Communication, and Mechanical Engineering, helping students build strong technical and professional skills.",
+  image: "https://www.targetadmission.com/img/colleges/newc/6973-251379.jpg",
+  placements: {
+    avgPackage: "4.2 LPA",
+    topRecruiters: ["TCS", "Infosys", "Hexaware", "HP"]
+  },
+  facilities: [
+    "Advanced Laboratories",
+    "Large Auditorium",
+    "Separate Hostels for Boys & Girls",
+    "Gym and Sports Facilities",
+    "Central Library with Digital Resources",
+    "Canteen & Cafeteria",
+    "Medical Facilities",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "20",
+  name: "Malla Reddy Engineering College for Women",
+  location: "Hyderabad, Telangana",
+  rating: 4.3,
+  description: "Malla Reddy Engineering College for Women (MRECW), established in 2008 in Hyderabad, is an autonomous institution affiliated with JNTU Hyderabad. The college is known for its academic excellence, application-oriented teaching, and problem-based learning approach. It offers undergraduate programs in engineering disciplines such as Computer Science and Engineering and Electronics and Communication Engineering. MRECW focuses on empowering women through quality technical education, skill development, and holistic growth, supported by strong industry connections and innovation-driven initiatives.",
+  image: "https://www.mymathews.com/media/gallery/malla_reddy_engineering_clg_for_women_4.JPG",
+  placements: {
+    avgPackage: "4 LPA",
+    topRecruiters: ["Visa", "Amazon", "Infosys", "Capgemini", "Cognizant", "Accenture", "Deloitte", "KPMG", "Tech Mahindra", "Flipkart", "HCL Tech"]
+  },
+  facilities: [
+    "Health Center with First Aid",
+    "Well-Stocked Library",
+    "Indoor & Outdoor Sports Facilities",
+    "Gym and Amphitheater",
+    "Cafeteria with Nutritious Meals",
+    "Separate Girls Hostel with Modern Amenities",
+    "Study Rooms and Dining Halls"
+  ]
+ },
+ {
+  id: "21",
+  name: "Malla Reddy College of Engineering & Technology",
+  location: "Hyderabad, Telangana",
+  rating: 4.2,
+  description: "Malla Reddy College of Engineering & Technology (MRCET), established in 2004, is an autonomous private institution in Hyderabad affiliated with JNTU Hyderabad and approved by AICTE. Accredited with NBA Tier-1 and NAAC 'A' Grade, and recognized by UGC, the college offers undergraduate, postgraduate, and PhD programs in engineering and management. MRCET is known for its holistic education approach, modern infrastructure, and industry-oriented curriculum. The institution emphasizes skill development, research, and overall student growth, producing industry-ready graduates with strong academic and professional capabilities.",
+  image: "https://mrcet.com/images/departments/H&S_Block.jpg",
+  placements: {
+    avgPackage: "6 LPA",
+    topRecruiters: ["TCS", "Wipro", "Infosys", "IBM", "Accenture", "Tech Mahindra", "NTT Data"]
+  },
+  facilities: [
+    "Separate Hostels for Boys & Girls (Wi-Fi, Dining, Security)",
+    "Central Library with Books, Journals & E-Resources",
+    "Campus Wi-Fi Connectivity",
+    "Sports Facilities & Gymnasium",
+    "Cafeteria with Hygienic Food",
+    "24/7 Medical & Ambulance Services",
+    "Auditorium & Seminar Halls",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "22",
+  name: "Malla Reddy Institute of Technology",
+  location: "Hyderabad, Telangana",
+  rating: 3.9,
+  description: "Malla Reddy Institute of Technology (MRIT), established in 2008, is a private engineering institution in Hyderabad affiliated with JNTU Hyderabad and approved by AICTE. The institute offers a range of undergraduate and postgraduate programs with a focus on quality education, skill development, and industry-oriented learning. Spread across an 11.25-acre campus, MRIT provides modern infrastructure, experienced faculty, and a supportive academic environment, making it a suitable choice for engineering aspirants.",
+  image: "https://image-static.collegedunia.com/public/college_data/images/appImage/14244_app.png",
+  placements: {
+    avgPackage: "4 LPA",
+    topRecruiters: ["TCS", "Accenture", "Wipro", "Amazon", "Deloitte"]
+  },
+  facilities: [
+    "Modern Classrooms with Multimedia Technology",
+    "Well-Equipped Laboratories",
+    "Central Library with 20,000+ Volumes & Digital Resources",
+    "Advanced Computer Labs",
+    "Sports Facilities (Cricket, Football, Indoor Games)",
+    "Separate Hostels for Boys & Girls",
+    "Health Center & Medical Support",
+    "Gymnasium",
+    "Campus Wi-Fi",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "23",
+  name: "Malla Reddy Institute of Technology & Science",
+  location: "Hyderabad, Telangana",
+  rating: 4.0,
+  description: "Malla Reddy Institute of Technology & Science (MRITS), established in 2005, is a reputed engineering institution in Hyderabad affiliated with JNTU Hyderabad and approved by AICTE. The institute offers a wide range of undergraduate and postgraduate programs in engineering and management. Known for its modern campus, digital classrooms, and well-equipped laboratories, MRITS focuses on providing quality education with industry relevance. The college also has an active alumni network that supports student mentorship and career development.",
+  image: "https://universitykart.com/Content/upload/admin/34cqdu0o.dpo.jpeg",
+  placements: {
+    avgPackage: "4.2 LPA",
+    topRecruiters: ["TCS", "Infosys", "Amazon", "Deloitte", "Wipro", "Accenture", "Cognizant"]
+  },
+  facilities: [
+    "Central Library with 25,000+ Books & E-Journals",
+    "Modern Classrooms with Multimedia & Internet",
+    "Well-Equipped Laboratories",
+    "Campus Wi-Fi",
+    "Sports Facilities (Basketball, Football, Indoor Games, Gym)",
+    "Separate Hostels for Boys & Girls",
+    "Cafeteria & Canteen",
+    "Auditorium & Seminar Halls",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "24",
+  name: "Malla Reddy Institute of Engineering & Technology",
+  location: "Hyderabad, Telangana",
+  rating: 4.1,
+  description: "Malla Reddy Institute of Engineering & Technology (MRIET), established in 2007, is a private engineering institution in Hyderabad affiliated with JNTU Hyderabad and approved by AICTE. Accredited by NBA and NAAC with an 'A' grade, the institute offers a range of undergraduate and postgraduate programs in emerging fields such as Computer Science, Artificial Intelligence, Machine Learning, Data Science, Electronics, and Information Technology. MRIET is known for its strong focus on industry-oriented education, modern infrastructure, and a supportive learning environment that promotes academic excellence and skill development.",
+  image: "http://www.mriet.ac.in/img/College.png",
+  placements: {
+    avgPackage: "6 LPA",
+    topRecruiters: ["Infosys", "Wipro", "TCS", "IBM", "Tata Motors", "Accenture", "Cognizant"]
+  },
+  facilities: [
+    "Central Library with Books & Digital Resources",
+    "Well-Equipped Laboratories",
+    "Modern Classrooms",
+    "Campus Wi-Fi",
+    "Sports Facilities & Playground",
+    "Medical Facilities",
+    "Cafeteria",
+    "Auditorium & Seminar Halls",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "25",
+  name: "Vardhaman College of Engineering",
+  location: "Hyderabad, Telangana",
+  rating: 4.4,
+  description: "Vardhaman College of Engineering (VCE), established in 1999, is a reputed autonomous engineering institution in Hyderabad affiliated with JNTU Hyderabad and approved by AICTE. Accredited by NBA and NAAC with an A++ grade, the college is consistently ranked among top engineering institutions, including the 151–200 band in NIRF rankings. VCE offers a wide range of undergraduate and postgraduate programs in disciplines such as Computer Science, Electronics, Mechanical Engineering, and more. The institute is known for its strong academic standards, modern infrastructure, and consistent placement performance.",
+  image: "https://gyaanarth.com/wp-content/uploads/2022/06/main-qimg-20e5d9631a32ac97f7fe46348e806973-lq.jpg",
+  placements: {
+    avgPackage: "6.14 LPA",
+    topRecruiters: ["Accenture", "Capgemini", "Cognizant", "Deloitte", "EY India", "TCS", "Tech Mahindra", "Wipro", "Amazon", "Microsoft", "Infosys"]
+  },
+  facilities: [
+    "Separate Hostels for Boys & Girls with 24/7 Security",
+    "Central Library (500 Seating Capacity)",
+    "Cafeteria",
+    "Gymnasium",
+    "Medical Center",
+    "Sports Facilities",
+    "Transport Facility",
+    "IT Infrastructure & Labs",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "26",
+  name: "St. Martin’s Engineering College",
+  location: "Hyderabad, Telangana",
+  rating: 4.2,
+  description: "St. Martin’s Engineering College (SMEC), established in 2002, is a well-known engineering institution in Hyderabad affiliated with JNTU Hyderabad and approved by AICTE, UGC, and NBA. The college offers undergraduate and postgraduate programs including B.Tech, M.Tech, and MBA. Spread across a 17-acre campus, SMEC is known for its disciplined environment, modern infrastructure, and focus on academic excellence. The institution emphasizes holistic development, providing students with both technical knowledge and industry exposure.",
+  image: "https://universitykart.com/Content/upload/admin/tsqi4jvi.s03.jpeg",
+  placements: {
+    avgPackage: "6.5 LPA",
+    topRecruiters: ["Microsoft", "Amazon", "IBM", "Infosys", "Accenture", "TCS", "Wipro"]
+  },
+  facilities: [
+    "AC Classrooms",
+    "Central Library",
+    "Cafeteria & Mess",
+    "Auditorium & Conference Hall",
+    "Modern Laboratories",
+    "Campus Wi-Fi",
+    "Separate Hostels for Boys & Girls",
+    "Sports Facilities & Gym",
+    "ATM & Convenience Store",
+    "Medical Facilities & 24/7 Security",
+    "Transport Facility",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "27",
+  name: "Methodist College of Engineering & Technology",
+  location: "Hyderabad, Telangana",
+  rating: 4.1,
+  description: "Methodist College of Engineering & Technology (MCET), established in 2008, is a reputed private engineering institution located in Abids, Hyderabad. Affiliated with Osmania University and approved by AICTE, the college is accredited with an A+ grade by NAAC and NBA. MCET offers a wide range of undergraduate and postgraduate programs in engineering and management, with a strong emphasis on industry-oriented training, research, and independent learning. The institution is known for its academic excellence and focus on producing ethical, innovative, and socially responsible professionals.",
+  image: "https://i.ytimg.com/vi/Rf4HXgJKS-s/maxresdefault.jpg",
+  placements: {
+    avgPackage: "4 LPA",
+    topRecruiters: ["UBS", "Opentext", "Cognizant", "Deloitte", "NCR", "Amazon", "Google", "TCS"]
+  },
+  facilities: [
+    "Separate Hostels for Boys & Girls",
+    "Central Library with Academic & Research Resources",
+    "Air-Conditioned Computer Labs",
+    "Campus Wi-Fi",
+    "Cafeteria with Nutritious Food",
+    "Indoor & Outdoor Sports Facilities",
+    "Auditorium for Events & Seminars",
+    "Transport Facility",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "28",
+  name: "Lords Institute of Engineering & Technology",
+  location: "Hyderabad, Telangana",
+  rating: 4.0,
+  description: "Lords Institute of Engineering & Technology (LIET) is a private autonomous engineering college located near Appa Junction, Hyderabad. Approved by AICTE and accredited by NBA, the institution is recognized for its quality education and industry-oriented approach. It offers undergraduate and postgraduate programs in various disciplines including Computer Science, Artificial Intelligence, and Civil Engineering. The college focuses on academic excellence, skill development, and employability through its dedicated training and placement initiatives.",
+  image: "https://image-static.collegedunia.com/public/college_data/images/appImage/1594285693Cover.jpg",
+  placements: {
+    avgPackage: "4.5 LPA",
+    topRecruiters: ["TCS", "Capgemini", "Cognizant", "Infosys", "Wipro", "Amazon"]
+  },
+  facilities: [
+    "Separate Hostels for Boys & Girls",
+    "Central Library",
+    "Computer & Engineering Laboratories",
+    "Campus Wi-Fi",
+    "Cafeteria",
+    "Sports Facilities & Gym",
+    "Medical Facilities",
+    "Auditorium & Seminar Halls",
+    "Transport Facility",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "30",
+  name: "Matrusri Engineering College",
+  location: "Hyderabad, Telangana",
+  rating: 4.1,
+  description: "Matrusri Engineering College, established in 2011, is an autonomous institution in Hyderabad affiliated with Osmania University and accredited by NBA and NAAC with an 'A+' grade. The college offers undergraduate programs in various disciplines such as Civil, Computer Science, Data Science, ECE, EEE, IT, and Mechanical Engineering. Known for its academic excellence and industry-oriented approach, the institute provides a supportive learning environment with modern infrastructure and skilled faculty, helping students build strong technical and professional foundations.",
+  image: "https://www.collegesamachar.com/uploads/colleges/gallery/290/1648822790matrusri-engineering-college-hyderabad-front-view.jpg",
+  placements: {
+    avgPackage: "4.5 LPA",
+    topRecruiters: ["Cognizant", "TCS", "Infosys", "Wipro", "Accenture", "Amazon", "Capgemini"]
+  },
+  facilities: [
+    "Central Library with Digital Resources",
+    "Modern Classrooms & Laboratories",
+    "Campus Wi-Fi",
+    "Sports Facilities (Basketball, Volleyball, Badminton)",
+    "Cafeteria",
+    "Health Centre & First Aid",
+    "Separate Hostels for Boys & Girls (CCTV Surveillance)",
+    "Auditorium & Seminar Halls",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "31",
+  name: "Nawab Shah Alam Khan College of Engineering & Technology",
+  location: "Hyderabad, Telangana",
+  rating: 4.0,
+  description: "Nawab Shah Alam Khan College of Engineering & Technology (NSAKCET), established in 2008, is a private autonomous engineering institution in Hyderabad affiliated with JNTU Hyderabad and approved by AICTE. Accredited with an 'A' grade by NAAC, the college offers a variety of undergraduate, postgraduate, and polytechnic programs. Known for its well-qualified faculty and industry-oriented curriculum, NSAKCET provides a supportive academic environment with modern infrastructure, focusing on skill development, research, and overall student growth.",
+  image: "http://universitykart.com/Content/upload/admin/qnudvutq.0es.jpeg",
+  placements: {
+    avgPackage: "6 LPA",
+    topRecruiters: ["Amazon", "IBM", "TCS", "Microsoft", "Wipro", "Tech Mahindra"]
+  },
+  facilities: [
+    "Hostel Facilities",
+    "Modern Classrooms",
+    "Central Library",
+    "IT Infrastructure & Computer Labs",
+    "Sports & Recreation Facilities",
+    "Cafeteria",
+    "Campus Wi-Fi",
+    "Auditorium & Seminar Halls",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "32",
+  name: "Shadan College of Engineering & Technology",
+  location: "Hyderabad, Telangana",
+  rating: 3.9,
+  description: "Shadan College of Engineering & Technology (SCET), established in 1995, is a well-known engineering institution in Hyderabad affiliated with JNTU Hyderabad. Recognized as a Muslim Minority Engineering College, SCET offers a wide range of undergraduate and postgraduate programs across various engineering disciplines. The college is known for its commitment to quality education, industry-oriented curriculum, and holistic student development. With modern infrastructure and experienced faculty, SCET aims to prepare students for successful careers in the engineering field.",
+  image: "https://image-static.collegedunia.com/public/college_data/images/appImage/1635494446download.jpg",
+  placements: {
+    avgPackage: "2 LPA",
+    topRecruiters: ["Wipro", "HCL", "HP", "Microsoft", "Cognizant", "TCS"]
+  },
+  facilities: [
+    "Separate Hostels for Boys & Girls",
+    "Central Library with Journals & Research Resources",
+    "Modern Classrooms & Advanced Laboratories",
+    "Campus Wi-Fi",
+    "Cafeteria",
+    "Indoor & Outdoor Sports Facilities & Gym",
+    "Medical Facilities & Health Center",
+    "Auditorium",
+    "Transport Facility",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "34",
+  name: "Muffakham Jah College of Engineering & Technology",
+  location: "Hyderabad, Telangana",
+  rating: 4.3,
+  description: "Muffakham Jah College of Engineering & Technology (MJCET), established in 1980, is a prestigious engineering institution located in Banjara Hills, Hyderabad. Affiliated with Osmania University and approved by AICTE, the college is known for its high academic standards, experienced faculty, and strong infrastructure. Accredited by the National Board of Accreditation (NBA), MJCET offers a wide range of undergraduate and postgraduate programs in engineering disciplines. The institution has a strong reputation among minority engineering colleges and focuses on delivering quality education with industry relevance.",
+  image: "https://campushunt.in/photogallery/Muffakham%20Jah%20College%20of%20Engineering%20and%20Technology%20%20.jpg",
+  placements: {
+    avgPackage: "7 LPA",
+    topRecruiters: ["Google", "Amazon", "Wipro", "TCS", "Infosys", "Accenture", "Cognizant"]
+  },
+  facilities: [
+    "Modern Classrooms with Digital Learning",
+    "Advanced Laboratories & Workshops",
+    "Computer Centre with Servers & Latest Software",
+    "Central Library with Digital Resources & NPTEL Access",
+    "Sports Facilities & Gymnasium",
+    "Cafeteria (Veg & Non-Veg)",
+    "Separate Hostels for Boys & Girls",
+    "Campus Wi-Fi",
+    "Auditorium & Seminar Halls",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "35",
+  name: "Bhoj Reddy Engineering College for Women",
+  location: "Hyderabad, Telangana",
+  rating: 4.2,
+  description: "Bhoj Reddy Engineering College for Women (BRECW), established in 1997, is a reputed private institution in Hyderabad affiliated with JNTU Hyderabad and approved by AICTE. Sponsored by Sangam Lakshmibai Vidyapeeth, the college is accredited with an 'A' grade by NAAC. BRECW offers undergraduate engineering programs in various specializations and is known for its strong academic environment, disciplined campus, and focus on empowering women through quality technical education.",
+  image: "https://media.collegedekho.com/media/img/institute/crawled_images/Bhoj_Reddy_Engineering_College_for_Women-00.jpg?width=1080",
+  placements: {
+    avgPackage: "6 LPA",
+    topRecruiters: ["TCS", "Infosys", "Wipro", "Accenture", "Cognizant", "Capgemini", "Amazon"]
+  },
+  facilities: [
+    "Library & Information Center with Digital Resources",
+    "Outdoor & Indoor Sports Facilities",
+    "Cafeteria & Stationery Store",
+    "Modern Auditorium",
+    "Health Centre",
+    "Campus Wi-Fi",
+    "Computer Labs & Laboratories",
+    "Transport Facility",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "37",
+  name: "Sreyas Institute of Engineering & Technology",
+  location: "Hyderabad, Telangana",
+  rating: 4.1,
+  description: "Sreyas Institute of Engineering & Technology, established in 2011, is a reputed engineering institution in Hyderabad affiliated with JNTU Hyderabad and approved by AICTE. Accredited with an 'A' grade by NAAC and NBA, the institute offers a wide range of undergraduate and postgraduate programs in engineering and technology. Known for its quality education, industry-oriented curriculum, and strong academic infrastructure, Sreyas focuses on developing skilled professionals with practical knowledge and global exposure.",
+  image: "https://tse1.mm.bing.net/th/id/OIP.oQ9f5owtJs6erxcXEt3yygHaC2?rs=1&pid=ImgDetMain&o=7&rm=3",
+  placements: {
+    avgPackage: "5 LPA",
+    topRecruiters: ["Amazon", "TCS", "Infosys", "Wipro", "Mahindra", "Accenture", "Cognizant"]
+  },
+  facilities: [
+    "Separate Hostels for Boys & Girls",
+    "Central Library with Digital Resources",
+    "Modern Classrooms & ICT Labs",
+    "Campus Wi-Fi",
+    "Cafeteria",
+    "Indoor & Outdoor Sports Facilities",
+    "Health Centre with Medical Support",
+    "Auditorium",
+    "Computer Labs",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "38",
+  name: "Aurora’s Engineering College",
+  location: "Hyderabad, Telangana",
+  rating: 3.9,
+  description: "Aurora’s Engineering College, established in 1998 under the Aurora Educational Society, is a well-known institution located near Bhuvanagiri on the Hyderabad–Warangal highway. Approved by AICTE, the college offers multiple B.Tech programs and is recognized for its focus on quality education, research, and skill development. With a serene campus environment, experienced faculty, and industry-oriented curriculum, the institution aims to produce technically competent and professionally skilled graduates.",
+  image: "https://images.shiksha.com/mediadata/images/1533114847phpxZMCB2.jpeg",
+  placements: {
+    avgPackage: "3.8 LPA",
+    topRecruiters: ["TCS", "Cognizant", "Accenture", "Capgemini", "Infosys", "Wipro"]
+  },
+  facilities: [
+    "Central Library with Books & Journals",
+    "Transport Facility (Buses across City)",
+    "Cafeteria",
+    "Hostel Facilities",
+    "Indoor & Outdoor Sports Facilities",
+    "Computer Labs",
+    "Campus Wi-Fi",
+    "Auditorium & Seminar Halls",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "39",
+  name: "Aurora’s Technological & Research Institute",
+  location: "Hyderabad, Telangana",
+  rating: 3.7,
+  description: "Aurora’s Technological & Research Institute (ATRI) is a well-known engineering institution in Hyderabad offering undergraduate and postgraduate programs in various engineering disciplines. The institute focuses on delivering quality education through innovative teaching methods and strong industry connections. With a student-friendly environment, experienced faculty, and emphasis on skill development, ATRI aims to prepare students for professional careers in the technology sector.",
+  image: "https://images.shiksha.com/mediadata/images/1566556962phpXSYn0Z_g.jpg",
+  placements: {
+    avgPackage: "1.55 LPA",
+    topRecruiters: ["IBM", "Infosys", "Amazon", "Deloitte", "TCS", "Wipro"]
+  },
+  facilities: [
+    "Modern Classrooms with ICT Facilities",
+    "Central Library with Digital Resources",
+    "Well-Equipped Laboratories",
+    "Campus Wi-Fi",
+    "Separate Hostels for Boys & Girls",
+    "Cafeteria",
+    "Transport Facility",
+    "Sports Facilities & Gym",
+    "Medical Center",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "40",
+  name: "Geethanjali College of Engineering & Technology",
+  location: "Hyderabad, Telangana",
+  rating: 4.2,
+  description: "Geethanjali College of Engineering & Technology (GCET), established in 2005, is an autonomous institution affiliated with JNTU Hyderabad. The college offers a wide range of undergraduate and postgraduate programs in engineering, technology, and management. Known for its academic excellence and research focus, GCET provides a strong learning environment supported by modern infrastructure, experienced faculty, and industry-oriented training programs.",
+  image: "https://image-static.collegedunia.com/public/college_data/images/campusimage/1722677902DJI_0629.JPG",
+  placements: {
+    avgPackage: "6 LPA",
+    topRecruiters: ["Amazon", "TCS", "Infosys", "Capgemini", "Wipro", "IBM", "Mahindra", "ISRO", "Genpact", "Cognizant"]
+  },
+  facilities: [
+    "Modern Classrooms & Advanced Laboratories",
+    "Central Library with IEEE, DELNET & Digital Resources",
+    "Campus Wi-Fi",
+    "Sports Facilities (Football, Volleyball, Indoor Games)",
+    "Cafeteria",
+    "Nearby Hostel Facilities",
+    "Auditorium & Seminar Halls",
+    "Computer Labs",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "41",
+  name: "Siddhartha Institute of Engineering & Technology",
+  location: "Hyderabad, Telangana",
+  rating: 3.9,
+  description: "Siddhartha Institute of Engineering & Technology (SIET), located near Ibrahimpatnam, Hyderabad, is a well-established institution affiliated with JNTU Hyderabad and approved by AICTE. Spread across a 14-acre campus, the institute offers a wide range of undergraduate and postgraduate programs in engineering and technology. Known for its strong academic foundation, modern infrastructure, and focus on research and innovation, SIET provides a conducive environment for students to develop technical and professional skills.",
+  image: "https://tse4.mm.bing.net/th/id/OIP.QJoiaCIBa9HyDNb3PofWrgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
+  placements: {
+    avgPackage: "6 LPA",
+    topRecruiters: ["YUPPTV", "Altran", "Byjus", "TCS", "Infosys", "Wipro"]
+  },
+  facilities: [
+    "14-Acre Campus with Modern Infrastructure",
+    "Central Library with Digital Resources",
+    "Well-Equipped Laboratories & Classrooms",
+    "Separate Hostels for Boys & Girls",
+    "Campus Wi-Fi",
+    "Sports & Games Facilities",
+    "Medical Facilities",
+    "Cafeteria",
+    "Auditorium & Seminar Halls",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "42",
+  name: "Swarna Bharathi Institute of Science & Technology",
+  location: "Khammam, Telangana",
+  rating: 3.8,
+  description: "Swarna Bharathi Institute of Science & Technology (SBIT), established in 2003, is a private institution affiliated with JNTU Hyderabad and approved by AICTE. Accredited with an 'A' grade by NAAC, the institute offers a wide range of undergraduate, postgraduate, and diploma programs in engineering and technology. Known for its student-focused approach, SBIT emphasizes career development through structured training programs, modern infrastructure, and industry-oriented learning.",
+  image: "https://www.vidyavision.com/CollegeUploads/Photos/2016-31-5-07-09-38_SBIT.png",
+  placements: {
+    avgPackage: "3.5 LPA",
+    topRecruiters: ["Genpact", "Infosys", "TCS", "HCL", "Tech Mahindra", "Wipro"]
+  },
+  facilities: [
+    "Modern Classrooms & Specialized Laboratories",
+    "Central Library with Digital Resources",
+    "Campus Wi-Fi",
+    "Separate Hostels for Boys & Girls",
+    "Sports Facilities",
+    "Cafeteria",
+    "Transport Facility",
+    "Medical Centre",
+    "Auditorium & Seminar Halls",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "43",
+  name: "Guru Nanak Institutions Technical Campus",
+  location: "Hyderabad, Telangana",
+  rating: 4.2,
+  description: "Guru Nanak Institutions Technical Campus (GNITC), established in 2001, is a premier institution in Hyderabad affiliated with JNTU Hyderabad and approved by AICTE. Spread across a 100-acre campus, the institute is accredited with an 'A+' grade by NAAC and NBA for select programs. GNITC offers a wide range of undergraduate, postgraduate, and diploma programs, with a strong focus on academic excellence, research, and innovation. The campus provides a holistic learning environment that encourages both technical and personal development.",
+  image: "https://www.gkseries.com/blog/wp-content/uploads/2020/04/Guru-Nanak-Institutions-Technical-Campus-Ibrahimpatnam.jpg",
+  placements: {
+    avgPackage: "4.7 LPA",
+    topRecruiters: ["TCS", "Infosys", "Amazon", "Deloitte", "Wipro", "Accenture", "Cognizant"]
+  },
+  facilities: [
+    "100-Acre Campus with Modern Infrastructure",
+    "Smart Classrooms & Advanced Laboratories",
+    "Central Digital Library",
+    "Campus Wi-Fi",
+    "Sports Grounds & Indoor Games",
+    "Gymnasium",
+    "Medical Facilities",
+    "Banking & ATM Facility",
+    "Auditorium & Seminar Halls",
+    "NSS & Community Service Programs",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "44",
+  name: "Guru Nanak Institute of Technology",
+  location: "Hyderabad, Telangana",
+  rating: 4.1,
+  description: "Guru Nanak Institute of Technology (GNIT), established in 2008, is a well-known engineering institution in Hyderabad affiliated with JNTU Hyderabad and recognized by AICTE and UGC. Spread across a 100-acre campus, GNIT offers undergraduate and postgraduate programs in engineering and management. The institute is known for its industry-oriented curriculum, experienced faculty, and strong emphasis on holistic student development through co-curricular and skill-based programs.",
+  image: "https://tse3.mm.bing.net/th/id/OIP.OfvW_-NV7axVkvpVMwlX8AHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
+  placements: {
+    avgPackage: "4.5 LPA",
+    topRecruiters: ["Amazon", "TCS", "Wipro", "Infosys", "Capgemini", "Accenture", "Cognizant", "Deloitte"]
+  },
+  facilities: [
+    "100-Acre Campus with Modern Infrastructure",
+    "Advanced Laboratories & Computer Centers",
+    "Central Library with Digital Resources",
+    "Separate Hostels for Boys & Girls",
+    "Campus Wi-Fi",
+    "Indoor & Outdoor Sports Facilities & Gym",
+    "Multiple Cafeterias",
+    "Medical Centre & Emergency Support",
+    "Transport Facility",
+    "Auditorium & Seminar Halls",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "45",
+  name: "ACE Engineering College",
+  location: "Hyderabad, Telangana",
+  rating: 4.1,
+  description: "ACE Engineering College (ACEEC), established in 2007, is a private autonomous engineering institution affiliated with JNTU Hyderabad and approved by AICTE and NBA. The college offers B.Tech programs in CSE, AI & ML, Data Science, and core branches. It is known for its strong academic environment, modern infrastructure, and industry-focused training.",
+  image: "https://tse2.mm.bing.net/th/id/OIP.xBqmFSEQWSzAJeGFHpIsdwHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
+  placements: {
+    avgPackage: "4.5 LPA",
+    topRecruiters: ["Amazon", "TCS", "Infosys", "Wipro", "Capgemini", "Accenture", "Cognizant", "Deloitte"]
+  },
+  facilities: [
+    "Smart Classrooms & Modern Labs",
+    "Central Library with Digital Access",
+    "Wi-Fi Enabled Campus",
+    "Separate Hostels for Boys & Girls",
+    "Sports Facilities & Gym",
+    "Cafeteria",
+    "Transport Facility",
+    "Seminar Halls",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "46",
+  name: "ACE Institute of Technology",
+  location: "Hyderabad, Telangana",
+  rating: 4.0,
+  description: "ACE Institute of Technology is another name often associated with ACE Engineering College in Hyderabad. It is a private engineering institution established in 2007, affiliated with JNTU Hyderabad and approved by AICTE. The institute offers multiple B.Tech programs and focuses on practical learning, skill development, and placement preparation.",
+  image: "https://tse2.mm.bing.net/th/id/OIP.xBqmFSEQWSzAJeGFHpIsdwHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
+  placements: {
+    avgPackage: "4.3 - 5 LPA",
+    topRecruiters: ["Infosys", "TCS", "Cognizant", "Wipro", "Capgemini", "Accenture"]
+  },
+  facilities: [
+    "Central Library",
+    "Modern Laboratories",
+    "Smart Classrooms",
+    "Wi-Fi Campus",
+    "Sports & Gym",
+    "Canteen",
+    "Transport",
+    "Placement Training Programs"
+  ]
+ },
+ {
+  id: "47",
+  name: "Sreenidhi Institute of Science & Technology",
+  location: "Hyderabad, Telangana",
+  rating: 4.5,
+  description: "Sreenidhi Institute of Science and Technology (SNIST), established in 1997, is one of the top private engineering institutions in Hyderabad. It is affiliated with JNTU Hyderabad and approved by AICTE and UGC. The institute offers B.Tech, M.Tech, and MBA programs and is well-known for its strong academic standards, research focus, and excellent placement record with top global companies.",
+  image: "https://tse1.mm.bing.net/th/id/OIP.z4D1xxlmBHwKEqqTQCo8qgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
+  placements: {
+    avgPackage: "6.5 - 6.8 LPA",
+    topRecruiters: [
+      "Google",
+      "Amazon",
+      "Microsoft",
+      "IBM",
+      "Cisco",
+      "Accenture",
+      "Deloitte",
+      "Infosys",
+      "Wipro",
+      "Cognizant"
+    ]
+  },
+  facilities: [
+    "Advanced Laboratories (AI, ML, IoT, Cyber Security)",
+    "Digital Classrooms with Smart Boards",
+    "Central Library with E-Resources",
+    "Separate Hostels for Boys & Girls",
+    "Sports Grounds & Indoor Facilities",
+    "Wi-Fi Enabled Campus",
+    "Cafeterias & Dining Areas",
+    "On-Campus ATMs",
+    "Medical & Emergency Services",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "48",
+  name: "MLR Institute of Technology",
+  location: "Hyderabad, Telangana",
+  rating: 4.2,
+  description: "MLR Institute of Technology (MLRIT), established in 2005, is a private autonomous engineering college located in Dundigal, Hyderabad. It is affiliated with JNTU Hyderabad and approved by AICTE. The institute is known for its strong academic structure, industry-integrated curriculum, and focus on innovation and research. MLRIT offers multiple B.Tech, M.Tech, and MBA programs with specializations like CSE, AI & ML, Data Science, Cyber Security, ECE, and Aeronautical Engineering. :contentReference[oaicite:0]{index=0}",
+  image: "https://gyaanarth.com/wp-content/uploads/2022/06/banner1-1.jpg",
+  placements: {
+    avgPackage: "5.5 – 6 LPA",
+    highestPackage: "30+ LPA (approx)",
+    topRecruiters: ["Amazon", "Deloitte", "Accenture", "Capgemini", "Infosys", "TCS", "Virtusa", "HCL"]
+  },
+  facilities: [
+    "35+ Acre Campus",
+    "Advanced Labs (AI, ML, Cyber Security)",
+    "Central Library with Digital Access",
+    "Smart Classrooms",
+    "Separate Hostels for Boys & Girls",
+    "Sports Grounds & Indoor Stadium",
+    "Gym & Fitness Center",
+    "Cafeteria & Food Courts",
+    "Transport Facility",
+    "Innovation & Research Centers",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "49",
+  name: "MLR Institute of Technology",
+  location: "Hyderabad, Telangana",
+  rating: 4.2,
+  description: "MLR Institute of Technology (MLRIT), established in 2005 in Dundigal, Hyderabad, is a reputed engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute emphasizes a balanced curriculum focusing on academics, employability skills, research, and sports. It is known for strong placements, modern infrastructure, and a student-friendly learning environment.",
+  image: "https://gyaanarth.com/wp-content/uploads/2022/06/mlr_banner.jpg",
+  placements: {
+    avgPackage: "4.25 LPA",
+    medianPackage: "10 LPA",
+    highestPackage: "33 LPA",
+    placementRate: "80%+",
+    topRecruiters: ["Amazon", "Infosys", "TCS", "Capgemini", "Wipro", "Accenture"]
+  },
+  facilities: [
+    "Central Library with 39,000+ Volumes",
+    "Digital Library with NPTEL Access",
+    "Separate Hostels for Boys & Girls",
+    "Medical Center with Doctor Support",
+    "Sports Complex (Cricket, Football, Basketball, Tennis)",
+    "Gym & Fitness Facilities",
+    "Cafeteria",
+    "Transport Facility",
+    "Wi-Fi Enabled Campus",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "50",
+  name: "Hyderabad Institute of Technology & Management",
+  location: "Hyderabad, Telangana",
+  rating: 4.0,
+  description: "Hyderabad Institute of Technology & Management (HITAM), established in 2001 in Medchal, is a private autonomous engineering college affiliated with JNTU Hyderabad. Accredited with NAAC A+ and NBA, HITAM is known for its innovative learning approach, industry collaboration, and focus on holistic student development through academics and extracurricular activities.",
+  image: "https://image-static.collegedunia.com/public/college_data/images/appImage/17798_cover2.png",
+  placements: {
+    avgPackage: "4.4 LPA",
+    highestPackage: "24 LPA",
+    placementRate: "Good",
+    topRecruiters: ["Goldman Sachs", "Zemoso Labs", "Pie Infocom", "Infosys", "TCS", "Wipro"]
+  },
+  facilities: [
+    "Modern Smart Classrooms with AV Aids",
+    "Central Library with Digital Resources",
+    "High-Speed Wi-Fi Campus",
+    "Hostels with Security & Amenities",
+    "Sports & Recreation Facilities",
+    "Cafeteria",
+    "Industry-Oriented Training Programs",
+    "Transport Facility",
+    "Placement Cell"
+  ]
+ },
+ {
+  id: "51",
+  name: "Vignan Bharati Institute of Technology",
+  location: "Hyderabad, Telangana",
+  rating: 4.2,
+  description: "Vignan Bharati Institute of Technology (VBIT), established in 2004, is a reputed autonomous engineering college affiliated with JNTU Hyderabad and approved by AICTE and NBA. The institute offers multiple B.Tech, M.Tech, MBA, and diploma programs with a strong focus on industry-oriented education, innovation, and entrepreneurship. VBIT is known for its academic excellence, incubation centers, and strong placement support.",
+  image: "https://cache.careers360.mobi/media/colleges/social-media/media-gallery/2664/2021/8/17/Campus%20View%20of%20Vignana%20Bharathi%20Institute%20of%20Technology%20Ghatkesar_Campus-View.jpg",
+  placements: {
+    avgPackage: "5 – 7 LPA",
+    highestPackage: "7.5 LPA",
+    placementRate: "70–85%",
+    topRecruiters: ["TCS", "Infosys", "HCL", "Accenture", "Amazon"]
+  },
+  facilities: [
+    "60+ Advanced Laboratories",
+    "Central Library with 39,000+ Books & E-Resources",
+    "Digital Library with IIT & MIT Lectures",
+    "Wi-Fi Enabled Campus",
+    "Separate Hostels for Boys & Girls",
+    "Sports Grounds & Indoor Games",
+    "Gym & Recreation Facilities",
+    "Health Center & Medical Support",
+    "Transport Facility",
+    "Auditorium & Seminar Halls",
+    "Centers of Excellence (Cisco, Autodesk, Microchip)",
+    "Startup & Incubation Support"
+  ]
+ },
+ {
+  id: "52",
+  name: "Vidya Jyothi Institute of Technology",
+  location: "Hyderabad, Telangana",
+  rating: 4.0,
+  description: "Vidya Jyothi Institute of Technology (VJIT), established in 1998, is a well-known engineering college in Hyderabad affiliated with JNTU Hyderabad and approved by AICTE and UGC. The institute offers a wide range of undergraduate and postgraduate programs with a strong focus on academic excellence, industry-oriented learning, and skill development. VJIT is known for its high success rate, active campus life, and consistent placement performance.",
+  image: "https://static.careers360.mobi/media/presets/720X480/colleges/social-media/media-gallery/2680/2019/5/28/Campus%20View%20of%20Vidya%20Jyothi%20Institute%20of%20Technology%20Hyderabad_Campus-View.jpg",
+  placements: {
+    avgPackage: "4.8 LPA",
+    topRecruiters: ["TCS", "Infosys", "Wipro", "Accenture", "Cognizant", "Capgemini"]
+  },
+  facilities: [
+    "Spacious Campus with Modern Infrastructure",
+    "Advanced Laboratories & Computer Labs",
+    "Central Library with Digital Resources",
+    "Transport Facility",
+    "Sports Grounds & Indoor Games",
+    "Cafeteria with Hygienic Food",
+    "Healthcare Centre",
+    "Wi-Fi Enabled Campus",
+    "Auditorium & Seminar Halls",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "53",
+  name: "TKR College of Engineering & Technology",
+  location: "Hyderabad, Telangana",
+  rating: 4.0,
+  description: "TKR College of Engineering & Technology (TKRCET), established in 2002, is a reputed private engineering college located in Meerpet, Hyderabad. Affiliated with JNTU Hyderabad and approved by AICTE, the college holds NAAC 'A+' accreditation. It offers a wide range of UG, PG, and Diploma programs across engineering and management disciplines. Known for its modern infrastructure and industry-oriented curriculum, TKRCET focuses on holistic student development through academics, internships, and placement training.",
+  image: "https://th.bing.com/th/id/R.5c2da8df97c18954c2a4253ed052ff5e?rik=txHGsv%2fZPwjChg&riu=http%3a%2f%2ftkrcet.ac.in%2fwp-content%2fuploads%2f2018%2f10%2fslid2.jpg&ehk=edzZwPi7w2nPVa9ee3Pu3KlqB86LYqVxBrESuJADBgE%3d&risl=&pid=ImgRaw&r=0",
+  placements: {
+    avgPackage: "4 - 6 LPA",
+    topRecruiters: ["TCS", "Infosys", "Wipro", "Accenture", "Capgemini", "Cognizant"]
+  },
+  facilities: [
+    "Modern Classrooms with Digital Projectors",
+    "Advanced Laboratories",
+    "Central Library with Digital Resources",
+    "Separate Hostels for Boys & Girls",
+    "Sports Grounds & Gymnasium",
+    "Canteen & Cafeteria",
+    "Medical Centre",
+    "Wi-Fi Enabled Campus",
+    "Auditorium & Seminar Halls",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "54",
+  name: "Teegala Krishna Reddy Engineering College",
+  location: "Hyderabad, Telangana",
+  rating: 4.0,
+  description: "Teegala Krishna Reddy Engineering College (TKREC), established in 2002 in Meerpet, Hyderabad, is a well-known engineering institution affiliated with JNTU Hyderabad and approved by AICTE. The college offers UG, PG, and Diploma programs in engineering and management. Known for its strong placement support and industry-oriented training, TKREC focuses on delivering quality education through experienced faculty and modern infrastructure. The campus provides a balanced environment for academic growth and extracurricular development.",
+  image: "https://tkrec.ac.in/wp-content/uploads/2018/01/full-Building.jpg",
+  placements: {
+    avgPackage: "4.5 LPA",
+    topRecruiters: ["TCS", "Infosys", "Wipro", "Accenture", "Tech Mahindra", "Capgemini"]
+  },
+  facilities: [
+    "20-Acre Green Campus",
+    "Modern Classrooms & Advanced Laboratories",
+    "Central Library with 45,000+ Books & Digital Resources",
+    "Separate Hostels for Boys & Girls",
+    "Sports Grounds & Indoor Games Facilities",
+    "Gymnasium",
+    "Canteen & RO Drinking Water",
+    "Wi-Fi Enabled Campus",
+    "Auditorium & Seminar Halls",
+    "Medical Facilities & 24/7 Security",
+    "Transport Facility",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "55",
+  name: "Bharat Institute of Engineering & Technology",
+  location: "Hyderabad, Telangana",
+  rating: 3.8,
+  description: "Bharat Institute of Engineering & Technology (BIET), established in 2001, is a private engineering college in Hyderabad affiliated with JNTU Hyderabad. Accredited with NAAC B++ grade, the institute offers UG and PG programs across various engineering and management disciplines. The college focuses on academic excellence, industry-oriented training, and skill development. With a large green campus and strong infrastructure, BIET provides a conducive environment for both academic and extracurricular growth.",
+  image: "https://image-static.collegedunia.com/public/college_data/images/appImage/1559287038658358.jpg",
+  placements: {
+    avgPackage: "3 - 5 LPA",
+    topRecruiters: ["Qspiders", "HDFC", "Teachnook", "Infosys", "Wipro", "Tech Mahindra"]
+  },
+  facilities: [
+    "120-Acre Green Campus",
+    "Advanced Laboratories & Computer Centers",
+    "Central Libraries with 64,000+ Books & Digital Access",
+    "Wi-Fi Enabled Campus",
+    "Auditorium & Seminar Halls",
+    "Gym & Sports Grounds",
+    "Multiple Cafeterias",
+    "Transport Facility with Bus Services",
+    "24/7 Power Backup & Internet Connectivity",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "56",
+  name: "MVSR Engineering College",
+  location: "Hyderabad, Telangana",
+  rating: 4.2,
+  description: "Maturi Venkata Subba Rao (MVSR) Engineering College, established in 1981, is a reputed private engineering institution affiliated with Osmania University. Known for its strong academic foundation and research-oriented approach, MVSR offers undergraduate and postgraduate programs across core engineering disciplines. The college emphasizes industry-relevant education, experienced faculty, and a disciplined academic environment, making it one of the well-established engineering colleges in Hyderabad.",
+  image: "https://tse2.mm.bing.net/th/id/OIP.OHO38_aBpxnhJTX4x-QVGgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
+  placements: {
+    avgPackage: "5.5 - 7 LPA",
+    topRecruiters: ["Infosys", "Wipro", "IBM", "Tech Mahindra", "Accenture", "Cognizant"]
+  },
+  facilities: [
+    "Digitized Classrooms & Advanced Learning Spaces",
+    "Modern Computer Center",
+    "Central Library with Research Resources",
+    "Separate Hostels for Boys & Girls",
+    "Sports Grounds & Indoor Facilities",
+    "Gym & Physical Education Department",
+    "Cafeteria & Food Courts",
+    "Medical Centre & Ambulance Services",
+    "Wi-Fi Enabled Campus",
+    "Auditorium & Seminar Halls",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "57",
+  name: "Narasimha Reddy Engineering College",
+  location: "Hyderabad, Telangana",
+  rating: 4.0,
+  description: "Narasimha Reddy Engineering College (NRCM), established in 2007 in Secunderabad, is a well-known private engineering institution affiliated with JNTU Hyderabad. Accredited with NAAC 'A' grade and recognized by UGC, the college offers B.Tech, M.Tech, and MBA programs. NRCM is known for its strong academic environment, industry collaborations, and focus on innovation and holistic student development. The institute also hosts national-level events and has recognition from organizations like ISRO for academic initiatives.",
+  image: "https://tse2.mm.bing.net/th/id/OIP.cD-l9XbHREN2RmpOsq-pfQHaDn?rs=1&pid=ImgDetMain&o=7&rm=3",
+  placements: {
+    avgPackage: "5.5 LPA",
+    topRecruiters: ["Infosys", "Wipro", "TCS", "Accenture", "Tech Mahindra", "Cognizant"]
+  },
+  facilities: [
+    "Modern Campus with E-Classrooms",
+    "Advanced Computer Labs with 800+ Systems",
+    "Central Library with 97+ Journals",
+    "Wi-Fi & Internet Facilities",
+    "Cafeteria & Dining Areas",
+    "Sports Grounds & Coaching Facilities",
+    "Medical Centre with Doctor Availability",
+    "Bank & ATM Facilities",
+    "RO Drinking Water & Power Backup",
+    "Auditorium & Seminar Halls",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "58",
+  name: "JB Institute of Engineering & Technology",
+  location: "Hyderabad, Telangana",
+  rating: 4.1,
+  description: "J.B. Institute of Engineering & Technology (JBIET), established in 1998, is a reputed autonomous engineering college affiliated with JNTU Hyderabad. Approved by AICTE, NBA, and NAAC, the institute offers UG and PG programs in engineering, management, and computer applications. JBIET is known for its strong academic environment, industry collaborations, and focus on experiential learning, making it a popular choice among students in Hyderabad.",
+  image: "https://www.vidyavision.com/CollegeUploads/Photos/2016-11-5-13-12-17_jbit11.jpg",
+  placements: {
+    avgPackage: "4 LPA",
+    topRecruiters: ["TCS", "Infosys", "Wipro", "Accenture", "Capgemini", "Cognizant"]
+  },
+  facilities: [
+    "Spacious Library with Digital Resources (4TB Capacity)",
+    "Separate Hostels for Boys & Girls",
+    "Advanced Laboratories",
+    "Sports Grounds & Indoor Facilities",
+    "Gymnasium",
+    "Cafeteria & Food Courts",
+    "Medical Facilities & Insurance Support",
+    "Wi-Fi Enabled Campus",
+    "Auditorium & Seminar Halls",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "59",
+  name: "CVR College of Engineering",
+  location: "Ibrahimpatnam, Hyderabad, Telangana",
+  rating: 4.4,
+  description: "CVR College of Engineering, established in 2000 by the Cherabuddi Educational Society, is a premier autonomous engineering institution affiliated with JNTU Hyderabad. Accredited with NAAC 'A' grade and NBA for multiple programs, CVR is known for its academic excellence, strong discipline, and industry-oriented training. The college offers a wide range of B.Tech and M.Tech programs and is consistently ranked among the top engineering colleges in Telangana for quality education and placements.",
+  image: "https://tse3.mm.bing.net/th/id/OIP.-SMf1ZV97Zcy3LinZEH6jgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
+  placements: {
+    avgPackage: "4.37 LPA",
+    topRecruiters: ["TCS", "Infosys", "Wipro", "Accenture", "Cognizant", "Amazon", "Capgemini"]
+  },
+  facilities: [
+    "Air-Conditioned Central Library with Digital Resources",
+    "In-Campus Hostels for Boys & Girls",
+    "Wi-Fi Enabled Campus",
+    "Student Center with Gym & Indoor Sports",
+    "Medical Centre with Qualified Doctors",
+    "Cafeteria with Hygienic Food",
+    "Shuttle Transport Facility",
+    "Sports Grounds & Facilities",
+    "Auditorium & Seminar Halls",
+    "Dedicated Placement Cell"
+  ]
+ },
+ {
+  id: "60",
+  name: "Mahaveer Institute of Science & Technology",
+  location: "Hyderabad, Telangana",
+  rating: 3.1,
+  description: "Mahaveer Institute of Science & Technology (MIST), established in 2001 in Hyderabad, is a private engineering institution affiliated with JNTUH and approved by AICTE. The college offers undergraduate, postgraduate, and diploma programs in Engineering and Management. It is known for its NAAC 'A' grade accreditation, moderate academic environment, and focus on basic technical education with support for student development through academics and extracurricular activities.",
+  image: "https://d13loartjoc1yn.cloudfront.net/upload/institute/images/large/m2.webp",
+  placements: {
+    avgPackage: "3–6 LPA",
+    topRecruiters: ["TCS", "Infosys", "Wipro", "Tech Mahindra", "Capgemini", "Cognizant"]
+  },
+  facilities: [
+    "Separate Boys & Girls Hostels with Wi-Fi",
+    "Well-Equipped Library with E-Resources",
+    "Computer Labs & Basic IT Infrastructure",
+    "Cafeteria with Multi-Cuisine Food",
+    "Medical Facility with 24/7 Ambulance Support",
+    "Sports Grounds & Indoor Games",
+    "Smart Classrooms with Projectors",
+    "Conference & Seminar Halls",
+    "Wi-Fi Enabled Campus",
+    "Training & Placement Cell"
+  ]
+ },
+ {
+  id: "61",
+  name: "DRK Institute of Science & Technology",
+  location: "Hyderabad, Telangana",
+  rating: 4.0,
+  description: "DRK Institute of Science & Technology (DRKIST), established in 2004 in Hyderabad, is a private engineering college affiliated with JNTUH and approved by AICTE. The institute offers undergraduate and postgraduate programs including B.Tech, M.Tech, and MBA across branches such as CSE, AI & ML, Cybersecurity, Civil, Mechanical, and ECE. It is known for industry-oriented training, strong placement support, and skill development programs aligned with IT sector requirements.",
+  image: "https://sunstone.in/_next/image?url=https:%2F%2Fcdn-eu.aglty.io%2Fsunstoneuniversity%2Fall-campus-image%2Fdrkist%2Fc5a6518e-3067-49d0-b293-31c584ed53f5img_20211013_103419.jpg&w=3840&q=75",
+  placements: {
+    avgPackage: "9 LPA",
+    topRecruiters: ["Amazon", "Wipro", "Infosys", "TCS", "Tech Mahindra", "Cognizant"]
+  },
+  facilities: [
+    "Central Library with Digital Resources",
+    "Advanced Engineering Laboratories",
+    "Computer Centers with High-Speed Internet",
+    "Sports Complex (Indoor & Outdoor Games)",
+    "Gymnasium & Fitness Center",
+    "Cafeteria with Subsidized Food",
+    "Spacious Playground",
+    "Wi-Fi Enabled Campus",
+    "Training & Placement Cell",
+    "Workshops, GD & Interview Training"
+  ]
+ },
+ {
+  id: "62",
+  name: "VIF College of Engineering & Technology",
+  location: "Rangareddy, Telangana",
+  rating: 4.0,
+  description: "VIF College of Engineering & Technology is a private engineering institution located in Rangareddy, Telangana, affiliated with JNTUH. The college offers undergraduate and postgraduate programs including B.Tech, M.Tech, and MBA across branches such as Civil, CSE, ECE, EEE, and Mechanical Engineering. It is known for its structured academic environment, entrance-based admissions through TS EAMCET/TS ICET, and focus on overall student development.",
+  image: "https://www.vidyavision.com/CollegeUploads/Photos/2016-02-6-07-45-58_vif.jpg",
+  placements: {
+    avgPackage: "9 LPA",
+    topRecruiters: ["TCS", "Infosys", "Wipro", "Tech Mahindra", "Accenture", "Cognizant"]
+  },
+  facilities: [
+    "Smart Classrooms with Digital Boards",
+    "Well-Equipped Engineering Laboratories",
+    "Central Library with Academic Resources",
+    "Separate Hostel Facilities",
+    "Cafeteria with Multiple Food Options",
+    "Indoor & Outdoor Sports Facilities",
+    "College Transportation Services",
+    "Alumni Association Network",
+    "Wi-Fi Enabled Campus",
+    "Placement & Training Cell"
+  ]
+ },
+ {
+  id: "63",
+  name: "Holy Mary Institute of Technology & Science",
+  location: "Hyderabad, Telangana",
+  rating: 4.0,
+  description: "Holy Mary Institute of Technology & Science (HITS) is a private institution in Hyderabad, Telangana, affiliated with JNTUH and approved by AICTE. The institute offers undergraduate and postgraduate programs in Engineering, Technology, Management, Science, and related fields. It focuses on academic excellence, analytical thinking, and industry-ready skill development through a structured curriculum and training programs.",
+  image: "https://www.hits.ac.in/wp-content/uploads/2015/03/Untitled-12.jpg",
+  placements: {
+    avgPackage: "4.5–6 LPA",
+    topRecruiters: ["Amazon", "Microsoft", "Infosys", "Wipro", "Tech Mahindra", "Genpact", "HCL"]
+  },
+  facilities: [
+    "100-Acre Campus with Spacious Infrastructure",
+    "Well-Equipped Engineering Laboratories",
+    "Modern Classrooms with Ventilation",
+    "Central Library with Books & Journals",
+    "Open-Air Amphitheater (5000 Capacity)",
+    "Separate Hostels for Boys & Girls",
+    "Cafeteria with Hygienic Food",
+    "Medical Center on Campus",
+    "Sports Facilities for Indoor & Outdoor Games",
+    "Seminar Halls & Auditorium"
+  ]
+ },
+ {
+  id: "64",
+  name: "St. Mary’s Engineering College",
+  location: "Hyderabad, Telangana",
+  rating: 3.9,
+  description: "St. Mary’s Engineering College is a private self-financing institution established in 2007 in Hyderabad, Telangana, affiliated with JNTUH and approved by AICTE. The college offers undergraduate, postgraduate, and diploma programs in engineering and technology fields such as CSE, AI & ML, ECE, Civil, and related specializations. It focuses on holistic development, industry exposure, and employability through structured training and campus recruitment support.",
+  image: "https://www.vidyavision.com/CollegeUploads/Photos/2016-13-6-11-18-53_st-marys-college-greenery.jpg",
+  placements: {
+    avgPackage: "3.5–5.5 LPA",
+    topRecruiters: ["TCS", "Infosys", "Wipro", "Tech Mahindra", "Accenture", "Cognizant"]
+  },
+  facilities: [
+    "Large Central Library with 69,000+ Books & Journals",
+    "Separate Boys & Girls Hostels (Wi-Fi Enabled)",
+    "Cafeteria with Multiple Food Options",
+    "Sports Complex with Multi-Sport Arena",
+    "Olympic-Size Swimming Pool",
+    "24/7 Wi-Fi Campus Access",
+    "Medical & Doctor Visits",
+    "Mental Health & Counseling Support",
+    "Engineering Laboratories",
+    "Seminar Halls & Training Centers"
+  ]
+ },
+ {
+  id: "65",
+  name: "Neil Gogte Institute of Technology",
+  location: "Uppal, Hyderabad, Telangana",
+  rating: 4.2,
+  description: "Neil Gogte Institute of Technology (NGIT), established in 2017 in Hyderabad, is a private engineering college affiliated with Osmania University and approved by AICTE. The institute offers undergraduate and postgraduate programs in engineering disciplines such as Computer Science, ECE, Mechanical, and Civil Engineering. It is known for its modern infrastructure, active placement cell, and strong focus on student skill development and industry readiness.",
+  image: "https://ngit.ac.in/wp-content/uploads/2023/01/campus_pic26-580x380.jpeg",
+  placements: {
+    avgPackage: "8 LPA",
+    topRecruiters: ["Amazon", "TCS", "Wipro", "Infosys", "Accenture", "Capgemini", "Cognizant"]
+  },
+  facilities: [
+    "Smart Classrooms with AV Systems",
+    "Well-Equipped Engineering Laboratories",
+    "Central Library with Digital Resources",
+    "Auditorium & Seminar Halls",
+    "Sports Facilities (Cricket, Basketball, Volleyball)",
+    "Indoor Games Facilities",
+    "Cafeteria with Multiple Food Options",
+    "Transportation (Pick & Drop Service)",
+    "Health Center with First Aid Support",
+    "Training & Placement Cell"
+  ]
+ },
+ 
 ];
 
 export const reviews = [
@@ -2313,7 +3535,7 @@ export const reviews = [
   }
 ];
 
-export const predictorMockLogic = (rank, category = "OC", gender = "Boys") => {
+export const predictorMockLogic = (rank) => {
 
   const results = [];
 
@@ -2326,196 +3548,111 @@ export const predictorMockLogic = (rank, category = "OC", gender = "Boys") => {
     return "Very Low";
   };
 
-  const adjust = (range) => {
-    let [start, end] = range;
-
-    if (category.startsWith("BC")) {
-      start += 500; end += 3000;
-    } else if (category === "SC") {
-      start += 1500; end += 10000;
-    } else if (category === "ST") {
-      start += 3000; end += 20000;
-    }
-
-    if (gender === "Girls") {
-      start += 200; end += 1500;
-    }
-
-    return [start, end];
-  };
-
-  // ---------------- IIT/NIT (same as yours) ----------------
-  if (rank <= 2000) {
-    results.push({
-      id: "p1",
-      collegeName: "Indian Institute of Technology, Madras",
-      branch: "Computer Science",
-      cutoff: "150",
-      chance: "High",
-      rating: 4.8
-    });
-  }
-
-  if (rank <= 15000) {
-    results.push({
-      id: "p2",
-      collegeName: "National Institute of Technology, Trichy",
-      branch: "Electronics and Communication",
-      cutoff: "4000",
-      chance: rank < 3000 ? "High" : rank < 8000 ? "Medium" : "Low",
-      rating: 4.6
-    });
-  }
+  let r;
 
   // ---------------- JNTU ----------------
-  let r = adjust([600, 1700]);
-  results.push({
-    id: "jntu-cse",
-    collegeName: "JNTU Hyderabad",
-    branch: "CSE",
-    cutoff: r[1],
-    chance: getChance(rank, r[0], r[1]),
-    rating: 4.8
-  });
+  r = [600, 1700];
+  results.push({ collegeId: "1", collegeName: "JNTU Hyderabad", branch: "CSE", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.8 });
 
-  r = adjust([1800, 3200]);
-  results.push({
-    id: "jntu-ece",
-    collegeName: "JNTU Hyderabad",
-    branch: "ECE",
-    cutoff: r[1],
-    chance: getChance(rank, r[0], r[1]),
-    rating: 4.8
-  });
+  r = [700, 2000];
+  results.push({ collegeId: "1", collegeName: "JNTU Hyderabad", branch: "AI & DS", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.8 });
+
+  r = [1800, 3200];
+  results.push({ collegeId: "1", collegeName: "JNTU Hyderabad", branch: "ECE", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.8 });
+
+  r = [4500, 8000];
+  results.push({ collegeId: "1", collegeName: "JNTU Hyderabad", branch: "EEE", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.8 });
+
+  r = [7500, 11000];
+  results.push({ collegeId: "1", collegeName: "JNTU Hyderabad", branch: "MECH", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.8 });
 
   // ---------------- OU ----------------
-  r = adjust([900, 1900]);
-  results.push({
-    id: "ou-cse",
-    collegeName: "OU",
-    branch: "CSE",
-    cutoff: r[1],
-    chance: getChance(rank, r[0], r[1]),
-    rating: 4.7
-  });
+  r = [900, 1900];
+  results.push({ collegeId: "2", collegeName: "OU", branch: "CSE", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.7 });
 
-  r = adjust([2000, 3800]);
-  results.push({
-    id: "ou-ece",
-    collegeName: "OU",
-    branch: "ECE",
-    cutoff: r[1],
-    chance: getChance(rank, r[0], r[1]),
-    rating: 4.7
-  });
+  r = [1000, 2500];
+  results.push({ collegeId: "2", collegeName: "OU", branch: "AI & DS", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.7 });
+
+  r = [2000, 3800];
+  results.push({ collegeId: "2", collegeName: "OU", branch: "ECE", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.7 });
+
+  r = [5000, 9000];
+  results.push({ collegeId: "2", collegeName: "OU", branch: "EEE", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.7 });
 
   // ---------------- CBIT ----------------
-  r = adjust([1500, 3000]);
-  results.push({
-    id: "cbit-cse",
-    collegeName: "CBIT",
-    branch: "CSE",
-    cutoff: r[1],
-    chance: getChance(rank, r[0], r[1]),
-    rating: 4.5
-  });
+  r = [1500, 3000];
+  results.push({ collegeId: "3", collegeName: "CBIT", branch: "CSE", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.5 });
 
-  r = adjust([3000, 5200]);
-  results.push({
-    id: "cbit-ece",
-    collegeName: "CBIT",
-    branch: "ECE",
-    cutoff: r[1],
-    chance: getChance(rank, r[0], r[1]),
-    rating: 4.5
-  });
+  r = [1800, 3500];
+  results.push({ collegeId: "3", collegeName: "CBIT", branch: "AI & DS", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.5 });
+
+  r = [3000, 5200];
+  results.push({ collegeId: "3", collegeName: "CBIT", branch: "ECE", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.5 });
 
   // ---------------- VNR ----------------
-  r = adjust([2000, 4000]);
-  results.push({
-    id: "vnr-cse",
-    collegeName: "VNR VJIET",
-    branch: "CSE",
-    cutoff: r[1],
-    chance: getChance(rank, r[0], r[1]),
-    rating: 4.6
-  });
+  r = [2000, 4000];
+  results.push({ collegeId: "4", collegeName: "VNR VJIET", branch: "CSE", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.6 });
 
-  r = adjust([3500, 6200]);
-  results.push({
-    id: "vnr-ece",
-    collegeName: "VNR VJIET",
-    branch: "ECE",
-    cutoff: r[1],
-    chance: getChance(rank, r[0], r[1]),
-    rating: 4.6
-  });
+  r = [2200, 4500];
+  results.push({ collegeId: "4", collegeName: "VNR VJIET", branch: "AI & DS", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.6 });
+
+  r = [3500, 6200];
+  results.push({ collegeId: "4", collegeName: "VNR VJIET", branch: "ECE", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.6 });
 
   // ---------------- MGIT ----------------
-  r = adjust([4000, 7000]);
-  results.push({
-    id: "mgit-cse",
-    collegeName: "MGIT",
-    branch: "CSE",
-    cutoff: r[1],
-    chance: getChance(rank, r[0], r[1]),
-    rating: 4.4
-  });
+  r = [4000, 7000];
+  results.push({ collegeId: "7", collegeName: "MGIT", branch: "CSE", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.4 });
 
-  r = adjust([6000, 10000]);
-  results.push({
-    id: "mgit-ece",
-    collegeName: "MGIT",
-    branch: "ECE",
-    cutoff: r[1],
-    chance: getChance(rank, r[0], r[1]),
-    rating: 4.4
-  });
+  r = [4500, 7500];
+  results.push({ collegeId: "7", collegeName: "MGIT", branch: "AI & DS", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.4 });
+
+  r = [6000, 10000];
+  results.push({ collegeId: "7", collegeName: "MGIT", branch: "ECE", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.4 });
 
   // ---------------- BVRIT ----------------
-  r = adjust([6000, 10000]);
-  results.push({
-    id: "bvrit-cse",
-    collegeName: "BVRIT",
-    branch: "CSE",
-    cutoff: r[1],
-    chance: getChance(rank, r[0], r[1]),
-    rating: 4.5
-  });
+  r = [6000, 10000];
+  results.push({ collegeId: "8", collegeName: "BVRIT", branch: "CSE", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.5 });
+
+  r = [6500, 11000];
+  results.push({ collegeId: "8", collegeName: "BVRIT", branch: "AI & DS", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.5 });
 
   // ---------------- IARE ----------------
-  r = adjust([8000, 13000]);
-  results.push({
-    id: "iare-cse",
-    collegeName: "IARE",
-    branch: "CSE",
-    cutoff: r[1],
-    chance: getChance(rank, r[0], r[1]),
-    rating: 4.3
+  r = [8000, 13000];
+  results.push({ collegeId: "11", collegeName: "IARE", branch: "CSE", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.3 });
+
+  r = [9000, 14000];
+  results.push({ collegeId: "11", collegeName: "IARE", branch: "AI & DS", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.3 });
+
+  r = [12000, 18000];
+  results.push({ collegeId: "11", collegeName: "IARE", branch: "ECE", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.3 });
+
+  // ---------------- SORT ----------------
+  const priority = { High: 1, Medium: 2, Low: 3, "Very Low": 4 };
+
+  const sorted = results.sort((a, b) => {
+    if (priority[a.chance] !== priority[b.chance]) {
+      return priority[a.chance] - priority[b.chance];
+    }
+    return a.cutoff - b.cutoff;
   });
 
-  // ---------------- GIRLS ONLY ----------------
-  if (gender === "Girls") {
-    r = adjust([7500, 9000]);
-    results.push({
-      id: "bvritw-cse",
-      collegeName: "BVRIT Womens",
-      branch: "CSE",
-      cutoff: r[1],
-      chance: getChance(rank, r[0], r[1]),
-      rating: 4.5
-    });
+  // ---------------- NO RESULT MESSAGE ----------------
+  const hasChance = sorted.some(r => r.chance !== "Very Low");
 
-    r = adjust([2500, 5000]);
-    results.push({
-      id: "gnits-cse",
-      collegeName: "GNITS",
-      branch: "CSE",
-      cutoff: r[1],
-      chance: getChance(rank, r[0], r[1]),
-      rating: 4.6
-    });
+  if (!hasChance) {
+    return [
+      {
+        collegeId: "no-data",
+        collegeName: "No Colleges Available",
+        branch: "-",
+        cutoff: "-",
+        chance: "No Chance",
+        rating: 0,
+        message: "Based on your rank, there are currently no suitable colleges available in our database. We are continuously updating our data. Please check back later."
+      }
+    ];
   }
+  
 
-  return results;
+  return sorted;
 };

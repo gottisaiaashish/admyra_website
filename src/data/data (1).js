@@ -2374,7 +2374,7 @@ export const predictorMockLogic = (rank, category = "OC", gender = "Boys") => {
   // ---------------- JNTU ----------------
   let r = adjust([600, 1700]);
   results.push({
-    id: "jntu-cse",
+    id: "1",
     collegeName: "JNTU Hyderabad",
     branch: "CSE",
     cutoff: r[1],
@@ -2384,7 +2384,7 @@ export const predictorMockLogic = (rank, category = "OC", gender = "Boys") => {
 
   r = adjust([1800, 3200]);
   results.push({
-    id: "jntu-ece",
+    id: "1",
     collegeName: "JNTU Hyderabad",
     branch: "ECE",
     cutoff: r[1],
@@ -2395,7 +2395,7 @@ export const predictorMockLogic = (rank, category = "OC", gender = "Boys") => {
   // ---------------- OU ----------------
   r = adjust([900, 1900]);
   results.push({
-    id: "ou-cse",
+    id: "2",
     collegeName: "OU",
     branch: "CSE",
     cutoff: r[1],
@@ -2405,7 +2405,7 @@ export const predictorMockLogic = (rank, category = "OC", gender = "Boys") => {
 
   r = adjust([2000, 3800]);
   results.push({
-    id: "ou-ece",
+    id: "2",
     collegeName: "OU",
     branch: "ECE",
     cutoff: r[1],
