@@ -118,6 +118,8 @@ export function DarkVeil({
       program.uniforms.uResolution.value.set(w, h);
     };
 
+    const observer = new ResizeObserver(resize);
+    observer.observe(parent);
     window.addEventListener('resize', resize);
     resize();
 
@@ -140,9 +142,10 @@ export function DarkVeil({
     return () => {
       cancelAnimationFrame(frame);
       window.removeEventListener('resize', resize);
+      observer.disconnect();
     };
   }, [hueShift, noiseIntensity, scanlineIntensity, speed, scanlineFrequency, warpAmount, resolutionScale]);
-  return <canvas ref={ref} className="w-full h-full block" />;
+  return <canvas ref={ref} className="w-full h-full block pointer-events-none" />;
 }
 
 export default DarkVeil;

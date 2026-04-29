@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Target, AlertCircle } from 'lucide-react';
+import { Target, AlertCircle, Check } from 'lucide-react';
 import { Button, Card, Input, Select, Badge, RatingStars } from '../components/ui';
 import { predictorMockLogic } from '../data/mock-data';
 
@@ -60,8 +60,8 @@ export function Predictor() {
         <div className="h-20 w-20 bg-accent-cyan/10 rounded-3xl flex items-center justify-center mb-6 shadow-sm border border-accent-cyan/20">
           <Target className="h-10 w-10 text-accent-cyan" />
         </div>
-        <h1 className="text-5xl font-bold mb-6 tracking-tight text-text-main">Rank Predictor</h1>
-        <p className="text-xl text-text-muted font-medium leading-relaxed">
+        <h1 className="text-4xl sm:text-5xl font-semibold sm:font-bold mb-6 tracking-tight text-text-main">Rank Predictor</h1>
+        <p className="text-base sm:text-xl text-text-muted font-medium leading-relaxed">
           Enter your rank and category details to get an accurate prediction of colleges and branches you can secure.
         </p>
       </div>
@@ -69,7 +69,7 @@ export function Predictor() {
       <div className="grid lg:grid-cols-12 gap-10 items-start">
         {/* Form Card (Left) */}
         <div className="lg:col-span-4 h-max lg:sticky lg:top-24">
-          <Card className="p-8 shadow-xl shadow-black/5 border-border-subtle/50 rounded-3xl">
+          <Card className="p-6 sm:p-8 shadow-xl shadow-black/5 border-border-subtle/50 rounded-3xl">
             <div className="mb-8">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                 <div>
@@ -102,7 +102,7 @@ export function Predictor() {
                   <div
                     onClick={() => handleSelectExam(EXAM_CARD.name)}
                     className={
-                      'cursor-pointer rounded-3xl border p-6 transition ' +
+                      'cursor-pointer rounded-3xl border p-4 sm:p-6 transition ' +
                       (selectedExam === EXAM_CARD.name
                         ? 'border-primary-start bg-primary-start/10 shadow-sm'
                         : 'border-border-subtle hover:border-primary-start hover:bg-white/70')
@@ -111,19 +111,20 @@ export function Predictor() {
                     <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
                       <div>
                         <p className="text-sm font-semibold text-text-muted">{EXAM_CARD.name}</p>
-                        <h3 className="mt-3 text-xl font-bold text-text-main">{EXAM_CARD.title}</h3>
+                        <h3 className="mt-3 text-lg sm:text-xl font-semibold sm:font-bold text-text-main">{EXAM_CARD.title}</h3>
                         <div className="mt-4 flex flex-wrap gap-2">
                           {EXAM_CARD.tags.map((tag) => (
-                            <Badge key={tag} variant="brand" className="rounded-full px-3 py-1 text-xs uppercase tracking-[0.16em]">
+                            <Badge key={tag} variant="brand" className="rounded-full px-2.5 py-1 text-[10px] sm:text-xs uppercase tracking-[0.16em]">
                               {tag}
                             </Badge>
                           ))}
                         </div>
                       </div>
                       {selectedExam === EXAM_CARD.name && (
-                        <div className="rounded-2xl bg-primary-start/10 px-4 py-2 text-sm font-semibold text-primary-start">
+                        <span className="inline-flex items-center gap-1 rounded-full bg-primary-start/10 px-2.5 py-1 text-[0.68rem] font-semibold text-primary-start">
+                          <Check className="h-3 w-3" />
                           Selected
-                        </div>
+                        </span>
                       )}
                     </div>
                   </div>
