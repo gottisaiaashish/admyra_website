@@ -21,10 +21,10 @@ export function Home() {
     <div className="w-full pb-24">
 
       {/* HERO */}
-      <section className="relative min-h-[520px] sm:h-[620px] md:h-[680px] overflow-hidden">
+      <section className="relative h-[620px] sm:h-[680px] overflow-hidden">
         <div className="absolute inset-0 z-0">
           <DarkVeil />
-          <div className="absolute inset-0 bg-slate-950/80 pointer-events-none" />
+          <div className="absolute inset-0 bg-slate-950/80" />
         </div>
 
         <div className="relative z-10 flex h-full items-center justify-center px-4">
@@ -33,22 +33,22 @@ export function Home() {
               Admyra — Admit My Rank
             </Badge>
 
-            <h1 className="text-3xl sm:text-4xl md:text-6xl font-semibold sm:font-extrabold leading-tight tracking-tight text-white mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight tracking-tight text-white mb-6">
               Know Where You Stand.
               <span className="block bg-gradient-to-r from-primary-start to-primary-end bg-clip-text text-transparent">
                 Choose the Right College.
               </span>
             </h1>
 
-            <p className="mx-auto mb-10 max-w-2xl text-sm sm:text-base text-slate-200">
+            <p className="mx-auto mb-10 max-w-2xl text-base sm:text-lg text-slate-200">
               Enter your rank and instantly discover colleges you can get into — powered by real cutoff data and student insights.
             </p>
 
             <div className="mx-auto flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Button size="lg" className="px-6 py-4 sm:px-8 sm:py-5" onClick={() => navigate("/predictor") }>
+              <Button size="lg" className="px-8 py-5" onClick={() => navigate("/predictor") }>
                 <Book className="h-4 w-4 mr-2" /> Predict
               </Button>
-              <Button variant="outline" size="lg" className="px-6 py-4 sm:px-8 sm:py-5" onClick={() => navigate("/colleges") }>
+              <Button variant="outline" size="lg" className="px-8 py-5" onClick={() => navigate("/colleges") }>
                 Explore Colleges
               </Button>
             </div>
@@ -187,12 +187,12 @@ export function Home() {
      
 
     {/* Heading */}
-    <h2 className="text-3xl sm:text-5xl font-semibold sm:font-extrabold leading-tight mb-6">
+    <h2 className="text-5xl font-extrabold leading-tight mb-6">
       Stop Guessing Your Future 🎯
     </h2>
 
     {/* Subtitle */}
-    <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto mb-10">
+    <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-10">
       Use real admission data, rank trends, and AI insights to choose the right college with confidence.
     </p>
 
@@ -200,7 +200,7 @@ export function Home() {
     <div className="flex flex-col sm:flex-row justify-center gap-4">
       <Button
         size="lg"
-        className="px-6 py-4 sm:px-8 sm:py-6 text-base sm:text-lg shadow-md"
+        className="px-8 py-6 text-lg shadow-md"
         onClick={() => navigate("/predictor")}
       >
         Predict My College
@@ -209,7 +209,7 @@ export function Home() {
       <Button
         variant="outline"
         size="lg"
-        className="px-6 py-4 sm:px-8 sm:py-6 text-base sm:text-lg"
+        className="px-8 py-6 text-lg"
       >
         Explore Colleges
       </Button>
