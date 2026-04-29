@@ -8,8 +8,8 @@ export const colleges =
     description: "Jawaharlal Nehru Technological University (JNTU) Hyderabad College of Engineering (JNTUHCEH), established in 1965 and located in Kukatpally, is a premier autonomous state university in Telangana. It offers top-tier engineering programs with high placement rates (80-90%, up to 46 LPA), strong faculty, and is consistently ranked among the top technical institutions in the region..",
     image: "https://img.collegepravesh.com/2021/06/JNTU-Hyderabad.jpg",
     placements: {
-      avgPackage: "7.5 LPA",
-      topRecruiters: ["TCS", "Infosys", "Amazon", "Deloitte", "Accenture", "Cognizant", "Wipro", "L&T Construction", "MathWorks", "Daikin", "Kia Motors"]
+      avgPackage: "7.2 LPA",
+      topRecruiters: ["Microsoft", "Amazon", "Goldman Sachs", "TCS", "Infosys", "Wipro", "Accenture", "Oracle"]
     },
     facilities: [
   "Central Library (45,000 sq ft, 90,000+ books, e-journals)",
@@ -27,18 +27,34 @@ export const colleges =
   "Kabaddi & Throwball Courts",
   "Indoor Games (Table Tennis, Chess)",
   "Student Clubs (Robotics, Photography, Literary)",
-  "Placement Cell"]
+  "Placement Cell"],
+    ratingsBreakdown: {
+      faculty: 4.2,
+      placements: 4.1,
+      hostel: 3.5,
+      campusLife: 4.3
+    },
+    experience: [
+      { year: 1, title: "Academic Excellence", description: "Deep dive into mathematics and physics foundations with a focus on competitive exams." },
+      { year: 2, title: "Core Engineering", description: "Master the fundamentals of your chosen branch with lab-intensive courses and experienced faculty." },
+      { year: 3, title: "Research & Projects", description: "Engage in student research projects and start technical club activities for holistic growth." },
+      { year: 4, title: "Career Launch", description: "Focused on civil services/GATE prep and securing top-tier MNC placements through placement cell." }
+    ],
+    collaborators: [
+      { name: "JNTUH Memes", role: "Student Community", platform: "Instagram", url: "https://instagram.com", followers: "45K" },
+      { name: "Jntuh Confessions", role: "Student Voices", platform: "Instagram", url: "https://instagram.com", followers: "12K" }
+    ]
   },
   {
   id: "2",
-  name: "University College of Engineering (OUCE)",
+  name: "Osmania University College of Engineering (OUCE)",
   location: "Hyderabad, Telangana",
   rating: 4.7,
   description: "One of the oldest engineering colleges in India, established in 1929 under Osmania University, known for strong academics and top placements.",
   image: "https://cdn.siasat.com/wp-content/uploads/2023/07/Free-Medical-Camp-2023-07-10T164035.867.jpg",
   placements: {
-    avgPackage: "10 LPA",
-    topRecruiters: ["Amazon", "TCS", "Infosys", "Cognizant", "BEL Hyderabad"]
+    avgPackage: "6.8 LPA",
+    topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "Deloitte", "Optum", "Verizon"]
   },
   facilities: 
   ["Central Library (Diamond Jubilee Library)",
@@ -56,7 +72,23 @@ export const colleges =
   "Tagore Auditorium",
   "Moot Court Hall (Law College)",
   "Campus Security",
-  "Landscaped Gardens"]
+  "Landscaped Gardens"],
+    ratingsBreakdown: {
+      faculty: 4.4,
+      placements: 4.2,
+      hostel: 3.4,
+      campusLife: 4.4
+    },
+    experience: [
+      { year: 1, title: "Heritage Learning", description: "Adapting to the historic campus and building competitive academic roots in a legendary environment." },
+      { year: 2, title: "Technical Depth", description: "Rigorous core subjects taught by some of the most experienced faculty in the state." },
+      { year: 3, title: "Industry Exposure", description: "Seminars, workshops, and early internships with local tech hubs in Hyderabad." },
+      { year: 4, title: "Legacy & Leadership", description: "Completing final projects and leveraging the massive alumni network for placement success." }
+    ],
+    collaborators: [
+      { name: "OUCE Life", role: "Student Organization", platform: "Instagram", url: "https://instagram.com", followers: "15K" },
+      { name: "Osmania Memes", role: "Student Hub", platform: "Instagram", url: "https://instagram.com", followers: "30K" }
+    ]
  },
  {
   id: "3",
@@ -66,8 +98,8 @@ export const colleges =
   description: "One of the top private engineering colleges in Telangana, known for strong academics, good campus life, and consistent placements.",
   image: "https://www.cbit.ac.in/wp-content/uploads/2019/03/Office-tab-scaled.jpeg",
   placements: {
-    avgPackage: "8-10 LPA",
-    topRecruiters: ["Amazon", "Microsoft", "Deloitte", "TCS", "Infosys", "Accenture", "Qualcomm"]
+    avgPackage: "8.5 LPA",
+    topRecruiters: ["Microsoft", "Google", "Amazon", "JP Morgan", "ITC", "Hindustan Unilever", "Deloitte", "ServiceNow"]
   },
   facilities: [
   "ICT-Enabled Classrooms",
@@ -80,7 +112,23 @@ export const colleges =
   "Auditorium",
   "Cafeteria",
   "Sports Facilities",
-  "Wi-Fi Campus"]
+  "Wi-Fi Campus"],
+    ratingsBreakdown: {
+      faculty: 4.5,
+      placements: 4.7,
+      hostel: 3.8,
+      campusLife: 4.5
+    },
+    experience: [
+      { year: 1, title: "Holistic Entry", description: "Balancing technical subjects with soft skills development and orientation to professional engineering." },
+      { year: 2, title: "Skill Building", description: "Intensive coding labs and introduction to emerging technologies like AI/ML and Cloud." },
+      { year: 3, title: "Professional Edge", description: "Corporate internships and participation in national-level technical fests (Shruti/Sudhee)." },
+      { year: 4, title: "Global Placements", description: "Dedicated training for high-package interviews and securing multiple job offers." }
+    ],
+    collaborators: [
+      { name: "CBIT Memes", role: "Comedy & Community", platform: "Instagram", url: "https://instagram.com", followers: "25K" },
+      { name: "CBIT Clubs", role: "Student Org", platform: "Web", url: "https://cbit.ac.in", followers: "5K" }
+    ]
  },
  {
   id: "4",
@@ -90,8 +138,8 @@ export const colleges =
   description: "A top private engineering college in Hyderabad known for strong academics, modern infrastructure, and consistent placement records with a focus on innovation and technical excellence.",
   image: "https://image-static.collegedunia.com/public/college_data/images/campusimage/1567745048a1cad.png",
   placements: {
-    avgPackage: "7-9 LPA",
-    topRecruiters: ["Amazon", "Microsoft", "ServiceNow", "TCS", "Infosys", "Accenture"]
+    avgPackage: "7.5 LPA",
+    topRecruiters: ["Amazon", "Google", "Qualcomm", "TCS", "Invesco", "NCR", "Accenture"]
   },
   facilities: [
     "AC Hostels with Wi-Fi & 24/7 Power Backup",
@@ -103,7 +151,19 @@ export const colleges =
     "Gym",
     "Cafeteria",
     "Wheelchair Accessible Campus",
-    "Innovation & Technical Committees"]
+    "Innovation & Technical Committees"],
+    ratingsBreakdown: {
+      faculty: 4.4,
+      placements: 4.6,
+      hostel: 4.0,
+      campusLife: 4.5
+    },
+    experience: [
+      { year: 1, title: "Innovation Culture", description: "Mind-mapping and design thinking sessions to spark innovative engineering mindsets." },
+      { year: 2, title: "Practical Exposure", description: "Lab-integrated curriculum focusing on real-world applications of theoretical concepts." },
+      { year: 3, title: "Research Focus", description: "Working with faculty on papers and attending international conferences/workshops." },
+      { year: 4, title: "Vignana Jyothi Drive", description: "Extensive placement training and major capstone projects with industrial relevance." }
+    ]
  },
  {
   id: "5",
@@ -113,8 +173,8 @@ export const colleges =
   description: "A reputed autonomous engineering college in Hyderabad, known for strong academics, disciplined environment, and consistent placement performance.",
   image: "https://campuspro.co.in/collage-image/1751978662_row_382.jpg",
   placements: {
-    avgPackage: "6-8 LPA",
-    topRecruiters: ["TCS", "Infosys", "Accenture", "Wipro", "Cognizant", "Deloitte"]
+    avgPackage: "7.8 LPA",
+    topRecruiters: ["Accenture", "Capgemini", "Invesco", "Oracle", "ADP", "TCS Digital", "ServiceNow"]
   },
   facilities: [
   "ICT-Enabled Classrooms",
@@ -129,7 +189,19 @@ export const colleges =
   "Volleyball Courts",
   "Indoor Games (Table Tennis, Chess, Carroms)",
   "Cultural Fest (Euphoria)",
-  "Placement Cell"]
+  "Placement Cell"],
+    ratingsBreakdown: {
+      faculty: 4.5,
+      placements: 4.6,
+      hostel: 3.3,
+      campusLife: 4.3
+    },
+    experience: [
+      { year: 1, title: "Discipline & Basics", description: "Focus on academic discipline and strong fundamentals in science and core engineering." },
+      { year: 2, title: "Core Specialization", description: "Shifting focus to departmental core subjects with emphasis on conceptual clarity." },
+      { year: 3, title: "Industry Bridge", description: "Value-added courses and initial internship opportunities to bridge the industry gap." },
+      { year: 4, title: "Euphonious Exit", description: "Campus recruitment preparation and completing the 4-year journey with strong placements." }
+    ]
  },
  {
   id: "6",
@@ -139,8 +211,8 @@ export const colleges =
   description: "A well-known autonomous engineering college in Hyderabad, recognized for quality education, modern infrastructure, and steady placement records.",
   image: "https://sefet.in/assets/img/griet-campus.jpg",
   placements: {
-    avgPackage: "5-7 LPA",
-    topRecruiters: ["TCS", "Infosys", "Accenture", "Cognizant", "Capgemini", "Wipro"]
+    avgPackage: "6.2 LPA",
+    topRecruiters: ["TCS Digital", "Infosys", "Accenture", "Cognizant", "Capgemini", "Wipro Turbo"]
   },
   facilities: [
     "Central Library",
@@ -155,6 +227,18 @@ export const colleges =
     "Wi-Fi Campus",
     "Transport Facility",
     "Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.2,
+    placements: 4.3,
+    hostel: 4.0,
+    campusLife: 4.4
+  },
+  experience: [
+    { year: 1, title: "Academic Rigor", description: "Adapting to the autonomous curriculum and building strong basics in science and engineering." },
+    { year: 2, title: "Core Mastery", description: "Deep dive into departmental core subjects with hands-on lab sessions." },
+    { year: 3, title: "Innovation & Labs", description: "Engagement in mini-projects and participation in technical fests like Pragnya." },
+    { year: 4, title: "Placement Drive", description: "Intensive training for corporate interviews and completing major projects with industrial value." }
   ]
  },
  {
@@ -165,8 +249,7 @@ export const colleges =
   description: "Mahatma Gandhi Institute of Technology (MGIT), established in 1997 in Gandipet, Hyderabad, is a premier autonomous engineering college affiliated with JNTUH and managed by the Chaitanya Bharathi Educational Society (CBES). The institute offers multiple UG and PG programs with NAAC A++ and NBA accreditation, focusing on high-quality technical education, research, and innovation. MGIT is known for its strong placement record, collaborations with top companies, modern infrastructure, and active student culture including technical fests and clubs.",
   image: "https://mgit.ac.in/wp-content/uploads/2020/02/A-block-fron-view-scaled.jpg",
   placements: {
-    avgPackage: "3.5-6 LPA",
-    highestPackage: "70 LPA",
+    avgPackage: "5.8 LPA",
     topRecruiters: ["Cognizant", "Infosys", "Wipro", "Accenture", "Deloitte", "JP Morgan", "Cisco", "Salesforce", "Rubrik"]
   },
   facilities: [
@@ -180,6 +263,18 @@ export const colleges =
     "Green Campus Environment",
     "Wi-Fi Campus",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.3,
+    placements: 4.1,
+    hostel: 3.5,
+    campusLife: 4.5
+  },
+  experience: [
+    { year: 1, title: "Gandipet Entry", description: "Acclimatizing to the vast green campus and establishing strong academic foundations." },
+    { year: 2, title: "Technical Shift", description: "Focusing on core engineering principles and participating in technical societies." },
+    { year: 3, title: "Professional Edge", description: "Advanced workshops, electives, and early engagement with top MNC recruiters." },
+    { year: 4, title: "Career Readiness", description: "Final projects and securing high-package placements through Nirvana fests and campus drives." }
   ]
  },
  {
@@ -190,8 +285,7 @@ export const colleges =
   description: "B V Raju Institute of Technology (BVRIT), established in 1997 in Narsapur, Telangana, is a premier UGC-autonomous engineering college under the Sri Vishnu Educational Society. Affiliated with JNTUH and accredited with NAAC A+ and NBA, the institute offers quality technical education across multiple disciplines. Spread across a scenic 110-acre campus, BVRIT is known for its strong academic environment, research focus, and excellent placement record, consistently ranking among the top engineering colleges in Telangana.",
   image: "https://images.shiksha.com/mediadata/images/1595846985phpW2q9ja.jpeg",
   placements: {
-    avgPackage: "4.3-6 LPA",
-    highestPackage: "52 LPA",
+    avgPackage: "6.5 LPA",
     topRecruiters: ["Microsoft", "Amazon", "Flipkart", "Optum", "Synopsys", "TCS Prime", "Hyundai"]
   },
   facilities: [
@@ -204,6 +298,18 @@ export const colleges =
     "Cafeteria",
     "24/7 Power Backup",
     "Secure Campus Environment"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.4,
+    placements: 4.4,
+    hostel: 4.2,
+    campusLife: 4.4
+  },
+  experience: [
+    { year: 1, title: "Narsapur Immersion", description: "Exploring the eco-friendly 110-acre campus while building science fundamentals." },
+    { year: 2, title: "Hands-on Learning", description: "Intensive laboratory courses and introduction to engineering design thinking." },
+    { year: 3, title: "Industry Link", description: "Practical internships and working on real-world problems in the Innovation Hub." },
+    { year: 4, title: "Final Frontier", description: "Capstone projects and intensive placement marathons for global tech companies." }
   ]
  },
  {
@@ -214,8 +320,7 @@ export const colleges =
   description: "BVRIT Hyderabad College of Engineering for Women (BVRITH), established in 2012 by the Sri Vishnu Educational Society, is a premier NAAC 'A' Grade institution affiliated with JNTUH. The college focuses on empowering women in STEM through quality technical education, innovation, and industry-oriented training. It offers B.Tech and M.Tech programs in core and emerging fields, supported by modern infrastructure, strong placement training, and a safe, student-friendly campus environment.",
   image: "https://www.vidyavision.com/CollegeUploads/Photos/2019-21-8-12-42-56_bvrit-hyderabad-college-of-engineering-for-women-bvrithcew-hyderabad%20(1).jpg",
   placements: {
-    avgPackage: "4.5-10 LPA",
-    highestPackage: "54 LPA",
+    avgPackage: "7.0 LPA",
     topRecruiters: ["Amazon", "Microsoft", "Flipkart", "TCS", "Infosys", "Accenture", "Deloitte", "Optum"]
   },
   facilities: [
@@ -229,6 +334,18 @@ export const colleges =
     "Safe & Ragging-Free Campus",
     "Wheelchair Accessible Campus",
     "24/7 Water & Security"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.5,
+    placements: 4.7,
+    hostel: 4.4,
+    campusLife: 4.3
+  },
+  experience: [
+    { year: 1, title: "Women in STEM", description: "Orientation towards engineering careers and building early academic confidence." },
+    { year: 2, title: "Technical Ascent", description: "Core coding skills and introduction to emerging tech through task-based labs." },
+    { year: 3, title: "Leadership & Growth", description: "Engaging in hackathons and soft-skills training for early career readiness." },
+    { year: 4, title: "Dream Placements", description: "Focus on top-tier product placements and building a strong professional network." }
   ]
  },
  {
@@ -239,8 +356,7 @@ export const colleges =
   description: "G Narayanamma Institute of Technology and Science (GNITS), established in 1997 in Hyderabad, is a premier autonomous women's engineering college known for quality education and strong placements. Accredited by NBA and ranked in NIRF 151-200, the institute offers B.Tech and M.Tech programs in fields like CSE, AI/ML, Data Science, and Electronics. GNITS is highly regarded for its academic excellence, industry connections, and focus on empowering women in engineering.",
   image: "https://assets.allegiance-educare.com/colleges/1623744465DSC_0759.jpg",
   placements: {
-    avgPackage: "7.5-9.5 LPA",
-    highestPackage: "54 LPA",
+    avgPackage: "8.2 LPA",
     topRecruiters: ["Amazon", "Microsoft", "Deloitte", "TCS", "Infosys", "Accenture", "Cognizant", "Adobe"]
   },
   facilities: [
@@ -255,6 +371,18 @@ export const colleges =
     "Green Campus",
     "Free Parking",
     "Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.6,
+    placements: 4.8,
+    hostel: 4.5,
+    campusLife: 4.5
+  },
+  experience: [
+    { year: 1, title: "Academic Rigor", description: "Focus on high-GPA maintenance and core mathematical foundations." },
+    { year: 2, title: "Domain Expertise", description: "In-depth study of computer science and electronics core subjects." },
+    { year: 3, title: "Career Accelerate", description: "Top-tier MNC internships and advanced specialization in AI/ML or Data Science." },
+    { year: 4, title: "Peak Performance", description: "Securing record-breaking placements and completing high-impact final projects." }
   ]
  },
  {
@@ -265,9 +393,8 @@ export const colleges =
   description: "The Institute of Aeronautical Engineering (IARE), established in 2000 in Hyderabad, is a well-known autonomous engineering college focused on technical education and innovation. Approved by AICTE and accredited by NAAC and NBA, the institute offers B.Tech and PG programs in core and emerging fields like CSE, AI & ML, Data Science, and Aeronautical Engineering. IARE is recognized for its modern infrastructure, strong industry collaborations, and consistent placement opportunities.",
   image: "https://www.iare.ac.in/sites/all/themes/iare/images/slider7.jpg",
   placements: {
-    avgPackage: "4-6 LPA",
-    highestPackage: "51 LPA",
-    topRecruiters: ["Microsoft", "JPMorgan Chase", "Deloitte", "Infosys", "TCS", "Cognizant", "Wipro"]
+    avgPackage: "4.8 LPA",
+    topRecruiters: ["Microsoft", "JPMorgan Chase", "Deloitte", "Infosys", "TCS", "Cognizant", "Wipro", "L&T"]
   },
   facilities: [
     "AC Classrooms",
@@ -282,6 +409,18 @@ export const colleges =
     "Research & R&D Centers",
     "Mess & Cafeteria",
     "24/7 Power Backup"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.2,
+    placements: 4.1,
+    hostel: 3.5,
+    campusLife: 4.2
+  },
+  experience: [
+    { year: 1, title: "Aero Foundations", description: "Exploring basics of aviation and core engineering in a tech-driven campus." },
+    { year: 2, title: "Skill Acquisition", description: "Intro to CAD/CAM and advanced manufacturing labs for hands-on exposure." },
+    { year: 3, title: "Industry Linkage", description: "Project-based learning with industry partners and mini-projects." },
+    { year: 4, title: "Final Takeoff", description: "Career-focused major projects and securing placements in core and IT sectors." }
   ]
  },
  {
@@ -293,7 +432,7 @@ export const colleges =
   image: "https://ik.imagekit.io/syustaging/SYU_PREPROD/COVER-IMAGE_LysnXpcZWy.webp?tr=w-3840",
   placements: {
     avgPackage: "9.74 LPA",
-    topRecruiters: ["Microsoft", "Amazon", "Google", "TCS", "Infosys", "Accenture", "Cognizant"]
+    topRecruiters: ["Microsoft", "Amazon", "Google", "TCS", "Infosys", "Accenture", "Salesforce"]
   },
   facilities: [
     "Separate Hostels for Boys & Girls",
@@ -306,6 +445,18 @@ export const colleges =
     "Medical & First Aid Facilities",
     "Training & Placement Cell",
     "Finishing School Program (Industry Projects)"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.6,
+    placements: 4.8,
+    hostel: 4.0,
+    campusLife: 4.5
+  },
+  experience: [
+    { year: 1, title: "Coding Culture", description: "Immediate immersion into programming and peer-to-peer learning groups." },
+    { year: 2, title: "Technology Pivot", description: "Mastering web technologies and starting specialized tracks like AI or DS." },
+    { year: 3, title: "Finishing School", description: "Unique industry project-based curriculum to ensure complete industry readiness." },
+    { year: 4, title: "Placement Blitz", description: "Securing dream offers in giants like Microsoft, Google, and Amazon." }
   ]
  },
  {
@@ -316,7 +467,7 @@ export const colleges =
   description: "CMR College of Engineering & Technology (CMRCET), established in 2002, is a reputed private engineering college in Hyderabad, affiliated with JNTU Hyderabad and approved by AICTE and UGC. The college offers undergraduate and postgraduate programs including B.Tech, M.Tech, and MBA, with a strong focus on academic excellence, innovation, and industry readiness. Accredited with an A+ grade by NAAC, CMRCET is recognized for its modern infrastructure, dedicated faculty, and consistent placement performance. The institution maintains strong industry collaborations and provides structured training programs to enhance students' technical and soft skills.",
   image: "https://www.vidyavision.com/CollegeUploads/Photos/2021-05-10-11-19-01_sj5.jpeg",
   placements: {
-    avgPackage: "9 LPA",
+    avgPackage: "5.5 LPA",
     topRecruiters: ["Amazon", "Microsoft", "Infosys", "Accenture", "Cognizant", "TCS", "Deloitte", "Wipro", "Adobe", "HSBC"]
   },
   facilities: [
@@ -328,6 +479,18 @@ export const colleges =
     "Sports Facilities & Gym",
     "Auditorium & Seminar Halls",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.2,
+    placements: 4.3,
+    hostel: 3.9,
+    campusLife: 4.4
+  },
+  experience: [
+    { year: 1, title: "CMR Welcome", description: "Integrating into the CMR community and building core academic discipline." },
+    { year: 2, title: "Skill Enrichment", description: "Departmental core subjects and soft-skills workshops for holistic growth." },
+    { year: 3, title: "Career Pathway", description: "Choosing specialization tracks and starting internship preparations." },
+    { year: 4, title: "Success Gate", description: "Final year projects and securing placements in a wide range of top MNCs." }
   ]
  },
  {
@@ -351,6 +514,18 @@ export const colleges =
     "Cafeteria",
     "Training & Placement Cell",
     "Student Clubs & Innovation Activities"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.1,
+    placements: 4.0,
+    hostel: 3.8,
+    campusLife: 4.2
+  },
+  experience: [
+    { year: 1, title: "Fresh Start", description: "Laying the foundation for a successful 4-year engineering journey." },
+    { year: 2, title: "Hands-on Focus", description: "Intensive laboratory sessions and introduction to technical clubs." },
+    { year: 3, title: "Project Launch", description: "Engagement in mini-projects and starting industry-oriented training." },
+    { year: 4, title: "Final Goal", description: "Completing capstone projects and securing steady career opportunities." }
   ]
  },
  {
@@ -361,7 +536,7 @@ export const colleges =
   description: "CMR Technical Campus (CMRTC), established in 2009, is an autonomous engineering and management institution located in Hyderabad. Affiliated with JNTU Hyderabad and approved by AICTE and UGC, the college is accredited by NAAC with an 'A' grade and NBA. Spread across a 20-acre campus, CMRTC offers undergraduate and postgraduate programs in engineering and management. The institute is known for its modern infrastructure, research-oriented approach, and strong industry collaborations with organizations like IBM, Amazon Web Services, and Wipro, providing students with quality education and global exposure.",
   image: "https://cmrtc.ac.in/wp-content/uploads/2020/07/banner-02-1280x533.jpg",
   placements: {
-    avgPackage: "6 LPA",
+    avgPackage: "5.2 LPA",
     topRecruiters: ["Amazon", "Autodesk", "Siemens", "HSBC", "Hexagon", "Accenture", "Capgemini", "Wipro"]
   },
   facilities: [
@@ -373,6 +548,18 @@ export const colleges =
     "Modern Laboratories",
     "Campus Wi-Fi",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.2,
+    placements: 4.2,
+    hostel: 4.0,
+    campusLife: 4.2
+  },
+  experience: [
+    { year: 1, title: "Technical Initiation", description: "Exposure to multi-disciplinary basics in a research-oriented campus." },
+    { year: 2, title: "Specialized Labs", description: "Working with high-end tools in departmental specialized computer labs." },
+    { year: 3, title: "R&D Focus", description: "Collaborating with faculty on innovative research projects and internships." },
+    { year: 4, title: "Industry Bridge", description: "Securing placements in diverse sectors through robust campus drives." }
   ]
  },
  {
@@ -383,7 +570,7 @@ export const colleges =
   description: "CMR Institute of Technology (CMRIT), established in 2005, is a reputed engineering institution in Hyderabad affiliated with JNTU Hyderabad and approved by AICTE. Recognized by UGC and accredited with an A++ grade by NAAC, the institute offers a wide range of programs including B.Tech, M.Tech, MBA, and PhD. CMRIT is known for its strong academic framework, experienced faculty, and modern infrastructure, including advanced laboratories and research centers. The college emphasizes industry-oriented learning, internships, and skill development, helping students achieve strong career outcomes.",
   image: "https://media.collegedekho.com/media/img/institute/crawled_images/None/A08R8999.jpg?width=640",
   placements: {
-    avgPackage: "4.5 LPA",
+    avgPackage: "4.8 LPA",
     topRecruiters: ["Accenture", "Capgemini", "Infosys", "Cognizant", "Amazon", "Microsoft", "SAP", "Siemens"]
   },
   facilities: [
@@ -396,6 +583,18 @@ export const colleges =
     "Separate Hostels for Boys & Girls",
     "Campus Wi-Fi",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.1,
+    placements: 4.1,
+    hostel: 4.1,
+    campusLife: 4.3
+  },
+  experience: [
+    { year: 1, title: "Smart Learning", description: "Adapting to ICT-enabled classrooms and building core engineering logic." },
+    { year: 2, title: "Technical Proficiency", description: "Focusing on lab-integrated core subjects and technical mini-projects." },
+    { year: 3, title: "Career Orientation", description: "Professional electives and participation in state-level coding competitions." },
+    { year: 4, title: "Industry Readiness", description: "Completing final year projects and securing placements in top tech firms." }
   ]
  },
  {
@@ -406,7 +605,7 @@ export const colleges =
   description: "Gokaraju Lailavathi Engineering College (GLEC), established in 2021, is a self-financed institution in Hyderabad under the Gokaraju Rangaraju Educational Society. Approved by AICTE and affiliated with Osmania University, the college offers undergraduate and postgraduate programs in engineering disciplines such as Computer Science, Mechanical, Electrical, and Civil Engineering. GLEC focuses on quality education, innovative teaching methods, and industry-oriented learning. The institution supports students through scholarships, training programs, and placement assistance, ensuring strong academic performance and career readiness.",
   image: "https://universitykart.b-cdn.net/Content/upload/admin/iwk0a25d.yjs.jpeg",
   placements: {
-    avgPackage: "4 LPA",
+    avgPackage: "4.0 LPA",
     topRecruiters: ["Microsoft", "Oracle", "Pega Systems", "Deloitte", "Infosys", "Cognizant", "Wipro"]
   },
   facilities: [
@@ -416,6 +615,18 @@ export const colleges =
     "Indoor & Outdoor Sports Facilities",
     "Hygienic Canteen",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.0,
+    placements: 4.0,
+    hostel: 3.8,
+    campusLife: 4.1
+  },
+  experience: [
+    { year: 1, title: "Foundational Start", description: "Establishing academic discipline in a new, modern self-financed campus." },
+    { year: 2, title: "Core Engineering", description: "Diving into departmental basics with access to modern computer centers." },
+    { year: 3, title: "Skill Building", description: "Workshops on emerging technologies and industry-oriented training programs." },
+    { year: 4, title: "Career Launch", description: "Intensive placement assistance and completing major degree projects." }
   ]
  },
  {
@@ -437,6 +648,18 @@ export const colleges =
     "Sports Facilities (Football, Indoor Games)",
     "Medical Facilities",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.3,
+    placements: 4.2,
+    hostel: 3.9,
+    campusLife: 4.2
+  },
+  experience: [
+    { year: 1, title: "Academic Roots", description: "Rigorous foundational subjects in a centrally located urban campus environment." },
+    { year: 2, title: "Technical Depth", description: "Diving into core departmental subjects with specialized laboratory focus." },
+    { year: 3, title: "Professional Bridge", description: "Participation in technical training and extracurricular development activities." },
+    { year: 4, title: "Successful Exit", description: "Final year project completion and securing placements through strong alumni support." }
   ]
  },
  {
@@ -447,8 +670,8 @@ export const colleges =
   description: "Malla Reddy Engineering College (MREC), located in Hyderabad, is an autonomous institution approved by AICTE and affiliated with JNTU Hyderabad. Accredited with an A++ grade by NAAC, the college offers undergraduate and postgraduate programs in engineering, technology, and management. MREC is known for its strong academic environment, modern infrastructure, and industry-focused training. It provides NBA-accredited programs in core branches such as Computer Science, Electronics and Communication, and Mechanical Engineering, helping students build strong technical and professional skills.",
   image: "https://www.targetadmission.com/img/colleges/newc/6973-251379.jpg",
   placements: {
-    avgPackage: "4.2 LPA",
-    topRecruiters: ["TCS", "Infosys", "Hexaware", "HP"]
+    avgPackage: "4.5 LPA",
+    topRecruiters: ["TCS", "Infosys", "Hexaware", "HP", "Wipro", "Capgemini"]
   },
   facilities: [
     "Advanced Laboratories",
@@ -459,6 +682,18 @@ export const colleges =
     "Canteen & Cafeteria",
     "Medical Facilities",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.2,
+    placements: 4.1,
+    hostel: 4.0,
+    campusLife: 4.3
+  },
+  experience: [
+    { year: 1, title: "Autonomous Entry", description: "Adapting to the outcome-based education system and building strong basics." },
+    { year: 2, title: "Core Competence", description: "Mastering departmental fundamentals with emphasis on practical lab applications." },
+    { year: 3, title: "Value Addition", description: "Working on industry-linked projects and participating in technical symposiums." },
+    { year: 4, title: "Placement Power", description: "Intense campus recruitment season and completing major branch projects." }
   ]
  },
  {
@@ -469,7 +704,7 @@ export const colleges =
   description: "Malla Reddy Engineering College for Women (MRECW), established in 2008 in Hyderabad, is an autonomous institution affiliated with JNTU Hyderabad. The college is known for its academic excellence, application-oriented teaching, and problem-based learning approach. It offers undergraduate programs in engineering disciplines such as Computer Science and Engineering and Electronics and Communication Engineering. MRECW focuses on empowering women through quality technical education, skill development, and holistic growth, supported by strong industry connections and innovation-driven initiatives.",
   image: "https://www.mymathews.com/media/gallery/malla_reddy_engineering_clg_for_women_4.JPG",
   placements: {
-    avgPackage: "4 LPA",
+    avgPackage: "4.8 LPA",
     topRecruiters: ["Visa", "Amazon", "Infosys", "Capgemini", "Cognizant", "Accenture", "Deloitte", "KPMG", "Tech Mahindra", "Flipkart", "HCL Tech"]
   },
   facilities: [
@@ -480,6 +715,18 @@ export const colleges =
     "Cafeteria with Nutritious Meals",
     "Separate Girls Hostel with Modern Amenities",
     "Study Rooms and Dining Halls"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.3,
+    placements: 4.4,
+    hostel: 4.2,
+    campusLife: 4.3
+  },
+  experience: [
+    { year: 1, title: "Empowered Learning", description: "Building technical confidence and foundational excellence in a supportive setting." },
+    { year: 2, title: "Creative Engineering", description: "Introduction to problem-based learning and participating in women-led tech fests." },
+    { year: 3, title: "Skill Excellence", description: "Intensive coding training and leadership development through various clubs." },
+    { year: 4, title: "Future Ready", description: "Securing placements in global tech leaders and mastering final projects." }
   ]
  },
  {
@@ -490,7 +737,7 @@ export const colleges =
   description: "Malla Reddy College of Engineering & Technology (MRCET), established in 2004, is an autonomous private institution in Hyderabad affiliated with JNTU Hyderabad and approved by AICTE. Accredited with NBA Tier-1 and NAAC 'A' Grade, and recognized by UGC, the college offers undergraduate, postgraduate, and PhD programs in engineering and management. MRCET is known for its holistic education approach, modern infrastructure, and industry-oriented curriculum. The institution emphasizes skill development, research, and overall student growth, producing industry-ready graduates with strong academic and professional capabilities.",
   image: "https://mrcet.com/images/departments/H&S_Block.jpg",
   placements: {
-    avgPackage: "6 LPA",
+    avgPackage: "5.5 LPA",
     topRecruiters: ["TCS", "Wipro", "Infosys", "IBM", "Accenture", "Tech Mahindra", "NTT Data"]
   },
   facilities: [
@@ -502,6 +749,18 @@ export const colleges =
     "24/7 Medical & Ambulance Services",
     "Auditorium & Seminar Halls",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.2,
+    placements: 4.2,
+    hostel: 4.0,
+    campusLife: 4.2
+  },
+  experience: [
+    { year: 1, title: "Holistic Start", description: "Acclimatizing to the MRCET culture and building solid multi-disciplinary roots." },
+    { year: 2, title: "Lab Mastery", description: "Intensive hands-on training in core engineering labs and skill workshops." },
+    { year: 3, title: "Innovation Drive", description: "Working with the incubation cell on R&D projects and starting internships." },
+    { year: 4, title: "Professional Exit", description: "Securing placements in industry giants like IBM or TCS with strong projects." }
   ]
  },
  {
@@ -512,7 +771,7 @@ export const colleges =
   description: "Malla Reddy Institute of Technology (MRIT), established in 2008, is a private engineering institution in Hyderabad affiliated with JNTU Hyderabad and approved by AICTE. The institute offers a range of undergraduate and postgraduate programs with a focus on quality education, skill development, and industry-oriented learning. Spread across an 11.25-acre campus, MRIT provides modern infrastructure, experienced faculty, and a supportive academic environment, making it a suitable choice for engineering aspirants.",
   image: "https://image-static.collegedunia.com/public/college_data/images/appImage/14244_app.png",
   placements: {
-    avgPackage: "4 LPA",
+    avgPackage: "4.0 LPA",
     topRecruiters: ["TCS", "Accenture", "Wipro", "Amazon", "Deloitte"]
   },
   facilities: [
@@ -526,6 +785,18 @@ export const colleges =
     "Gymnasium",
     "Campus Wi-Fi",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 3.9,
+    placements: 3.9,
+    hostel: 3.7,
+    campusLife: 4.0
+  },
+  experience: [
+    { year: 1, title: "Technical Setup", description: "Orientation to engineering labs and establishing core learning habits." },
+    { year: 2, title: "Core Building", description: "Diving into departmental subjects with a focus on practical assignments." },
+    { year: 3, title: "Professional Prep", description: "Value-added courses and initial skill development for job readiness." },
+    { year: 4, title: "Career Start", description: "Intensive placement season and completing important final-year degree projects." }
   ]
  },
  {
@@ -549,6 +820,18 @@ export const colleges =
     "Cafeteria & Canteen",
     "Auditorium & Seminar Halls",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.0,
+    placements: 4.0,
+    hostel: 3.8,
+    campusLife: 4.1
+  },
+  experience: [
+    { year: 1, title: "Campus Pulse", description: "Joining technical and social clubs while building academic foundations." },
+    { year: 2, title: "Core Specialization", description: "Developing expertise in branch-specific core engineering subjects." },
+    { year: 3, title: "Alumni Insight", description: "Mentorship sessions with successful alumni and initial internship projects." },
+    { year: 4, title: "Opportunity Gate", description: "Securing placements through campus recruitment and final projects." }
   ]
  },
  {
@@ -559,7 +842,7 @@ export const colleges =
   description: "Malla Reddy Institute of Engineering & Technology (MRIET), established in 2007, is a private engineering institution in Hyderabad affiliated with JNTU Hyderabad and approved by AICTE. Accredited by NBA and NAAC with an 'A' grade, the institute offers a range of undergraduate and postgraduate programs in emerging fields such as Computer Science, Artificial Intelligence, Machine Learning, Data Science, Electronics, and Information Technology. MRIET is known for its strong focus on industry-oriented education, modern infrastructure, and a supportive learning environment that promotes academic excellence and skill development.",
   image: "http://www.mriet.ac.in/img/College.png",
   placements: {
-    avgPackage: "6 LPA",
+    avgPackage: "4.5 LPA",
     topRecruiters: ["Infosys", "Wipro", "TCS", "IBM", "Tata Motors", "Accenture", "Cognizant"]
   },
   facilities: [
@@ -572,6 +855,18 @@ export const colleges =
     "Cafeteria",
     "Auditorium & Seminar Halls",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.1,
+    placements: 4.1,
+    hostel: 3.9,
+    campusLife: 4.1
+  },
+  experience: [
+    { year: 1, title: "Aero-Tech Entry", description: "Focusing on aerospace-oriented basics and building early academic discipline." },
+    { year: 2, title: "Technical Intensive", description: "In-depth labs in emerging tech like AI/ML and core electronics subjects." },
+    { year: 3, title: "Skill Mastery", description: "Participation in hackathons and industry-oriented training programs." },
+    { year: 4, title: "Launch Pad", description: "Completing innovative projects and securing job offers in top firms." }
   ]
  },
  {
@@ -580,9 +875,9 @@ export const colleges =
   location: "Hyderabad, Telangana",
   rating: 4.4,
   description: "Vardhaman College of Engineering (VCE), established in 1999, is a reputed autonomous engineering institution in Hyderabad affiliated with JNTU Hyderabad and approved by AICTE. Accredited by NBA and NAAC with an A++ grade, the college is consistently ranked among top engineering institutions, including the 151–200 band in NIRF rankings. VCE offers a wide range of undergraduate and postgraduate programs in disciplines such as Computer Science, Electronics, Mechanical Engineering, and more. The institute is known for its strong academic standards, modern infrastructure, and consistent placement performance.",
-  image: "https://gyaanarth.com/wp-content/uploads/2022/06/main-qimg-20e5d9631a32ac97f7fe46348e806973-lq.jpg",
+  image: "https://video-lectures.vardhaman.org/images/building.gif",
   placements: {
-    avgPackage: "6.14 LPA",
+    avgPackage: "6.5 LPA",
     topRecruiters: ["Accenture", "Capgemini", "Cognizant", "Deloitte", "EY India", "TCS", "Tech Mahindra", "Wipro", "Amazon", "Microsoft", "Infosys"]
   },
   facilities: [
@@ -595,6 +890,18 @@ export const colleges =
     "Transport Facility",
     "IT Infrastructure & Labs",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.4,
+    placements: 4.6,
+    hostel: 4.1,
+    campusLife: 4.3
+  },
+  experience: [
+    { year: 1, title: "Elite Orientation", description: "Establishing a high-performance academic mindset in a top-rated campus." },
+    { year: 2, title: "Technical Rigor", description: "Focusing on core engineering subjects with rigorous lab training." },
+    { year: 3, title: "Innovation Culture", description: "Working with faculty on papers and attending national tech-fests." },
+    { year: 4, title: "Peak Placement", description: "Securing dream placements and completing final year projects." }
   ]
  },
  {
@@ -605,7 +912,7 @@ export const colleges =
   description: "St. Martin’s Engineering College (SMEC), established in 2002, is a well-known engineering institution in Hyderabad affiliated with JNTU Hyderabad and approved by AICTE, UGC, and NBA. The college offers undergraduate and postgraduate programs including B.Tech, M.Tech, and MBA. Spread across a 17-acre campus, SMEC is known for its disciplined environment, modern infrastructure, and focus on academic excellence. The institution emphasizes holistic development, providing students with both technical knowledge and industry exposure.",
   image: "https://universitykart.com/Content/upload/admin/tsqi4jvi.s03.jpeg",
   placements: {
-    avgPackage: "6.5 LPA",
+    avgPackage: "4.5 LPA",
     topRecruiters: ["Microsoft", "Amazon", "IBM", "Infosys", "Accenture", "TCS", "Wipro"]
   },
   facilities: [
@@ -621,6 +928,18 @@ export const colleges =
     "Medical Facilities & 24/7 Security",
     "Transport Facility",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.2,
+    placements: 4.1,
+    hostel: 4.1,
+    campusLife: 4.3
+  },
+  experience: [
+    { year: 1, title: "Disciplined Start", description: "Academic rigor and building strong fundamental science roots in a safe campus." },
+    { year: 2, title: "Technical Growth", description: "Core departmental subjects and entry into technical clubs and societies." },
+    { year: 3, title: "Project Phase", description: "Mini-projects and industry-oriented workshops for skill enhancement." },
+    { year: 4, title: "Career Launch", description: "Securing placements in global giants like Microsoft and Amazon through campus drives." }
   ]
  },
  {
@@ -631,7 +950,7 @@ export const colleges =
   description: "Methodist College of Engineering & Technology (MCET), established in 2008, is a reputed private engineering institution located in Abids, Hyderabad. Affiliated with Osmania University and approved by AICTE, the college is accredited with an A+ grade by NAAC and NBA. MCET offers a wide range of undergraduate and postgraduate programs in engineering and management, with a strong emphasis on industry-oriented training, research, and independent learning. The institution is known for its academic excellence and focus on producing ethical, innovative, and socially responsible professionals.",
   image: "https://i.ytimg.com/vi/Rf4HXgJKS-s/maxresdefault.jpg",
   placements: {
-    avgPackage: "4 LPA",
+    avgPackage: "4.2 LPA",
     topRecruiters: ["UBS", "Opentext", "Cognizant", "Deloitte", "NCR", "Amazon", "Google", "TCS"]
   },
   facilities: [
@@ -644,6 +963,18 @@ export const colleges =
     "Auditorium for Events & Seminars",
     "Transport Facility",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.1,
+    placements: 3.8,
+    hostel: 3.2,
+    campusLife: 3.9
+  },
+  experience: [
+    { year: 1, title: "Urban Learning", description: "Adapting to the centrally located Abids campus and building academic foundations." },
+    { year: 2, title: "Core Specialization", description: "Diving deep into departmental core subjects and specialized lab work." },
+    { year: 3, title: "Career Prep", description: "Value-added courses and early preparation for top-tier campus recruiters." },
+    { year: 4, title: "Path to Success", description: "Final year projects and securing placements in top IT and core engineering firms." }
   ]
  },
  {
@@ -654,7 +985,7 @@ export const colleges =
   description: "Lords Institute of Engineering & Technology (LIET) is a private autonomous engineering college located near Appa Junction, Hyderabad. Approved by AICTE and accredited by NBA, the institution is recognized for its quality education and industry-oriented approach. It offers undergraduate and postgraduate programs in various disciplines including Computer Science, Artificial Intelligence, and Civil Engineering. The college focuses on academic excellence, skill development, and employability through its dedicated training and placement initiatives.",
   image: "https://image-static.collegedunia.com/public/college_data/images/appImage/1594285693Cover.jpg",
   placements: {
-    avgPackage: "4.5 LPA",
+    avgPackage: "3.8 LPA",
     topRecruiters: ["TCS", "Capgemini", "Cognizant", "Infosys", "Wipro", "Amazon"]
   },
   facilities: [
@@ -668,6 +999,18 @@ export const colleges =
     "Auditorium & Seminar Halls",
     "Transport Facility",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 3.8,
+    placements: 3.7,
+    hostel: 3.5,
+    campusLife: 4.0
+  },
+  experience: [
+    { year: 1, title: "Foundational Journey", description: "Establishing core engineering principles and academic discipline in a tech-focused campus." },
+    { year: 2, title: "Technical Skill-up", description: "Intensive core departmental labs and introduction to technical and social clubs." },
+    { year: 3, title: "Practical Edge", description: "Industry micro-internships and project-based learning for hands-on exposure." },
+    { year: 4, title: "Career Gateway", description: "Transitioning to professional roles through robust campus recruitment drives." }
   ]
  },
  {
@@ -678,7 +1021,7 @@ export const colleges =
   description: "Matrusri Engineering College, established in 2011, is an autonomous institution in Hyderabad affiliated with Osmania University and accredited by NBA and NAAC with an 'A+' grade. The college offers undergraduate programs in various disciplines such as Civil, Computer Science, Data Science, ECE, EEE, IT, and Mechanical Engineering. Known for its academic excellence and industry-oriented approach, the institute provides a supportive learning environment with modern infrastructure and skilled faculty, helping students build strong technical and professional foundations.",
   image: "https://www.collegesamachar.com/uploads/colleges/gallery/290/1648822790matrusri-engineering-college-hyderabad-front-view.jpg",
   placements: {
-    avgPackage: "4.5 LPA",
+    avgPackage: "5.8 LPA",
     topRecruiters: ["Cognizant", "TCS", "Infosys", "Wipro", "Accenture", "Amazon", "Capgemini"]
   },
   facilities: [
@@ -691,6 +1034,18 @@ export const colleges =
     "Separate Hostels for Boys & Girls (CCTV Surveillance)",
     "Auditorium & Seminar Halls",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.4,
+    placements: 4.3,
+    hostel: 3.4,
+    campusLife: 4.1
+  },
+  experience: [
+    { year: 1, title: "Academic Excellence", description: "Maintaining a high academic standard and setting solid engineering roots." },
+    { year: 2, title: "Technical Immersion", description: "Mastering complex core engineering and data science subjects with practical labs." },
+    { year: 3, title: "Industry Bridge", description: "Advanced specialization workshops, electives, and early engagement with recruiters." },
+    { year: 4, title: "Career Pinnacle", description: "Securing placements in top-tier firms and completing high-impact final year projects." }
   ]
  },
  {
@@ -701,7 +1056,7 @@ export const colleges =
   description: "Nawab Shah Alam Khan College of Engineering & Technology (NSAKCET), established in 2008, is a private autonomous engineering institution in Hyderabad affiliated with JNTU Hyderabad and approved by AICTE. Accredited with an 'A' grade by NAAC, the college offers a variety of undergraduate, postgraduate, and polytechnic programs. Known for its well-qualified faculty and industry-oriented curriculum, NSAKCET provides a supportive academic environment with modern infrastructure, focusing on skill development, research, and overall student growth.",
   image: "http://universitykart.com/Content/upload/admin/qnudvutq.0es.jpeg",
   placements: {
-    avgPackage: "6 LPA",
+    avgPackage: "3.2 LPA",
     topRecruiters: ["Amazon", "IBM", "TCS", "Microsoft", "Wipro", "Tech Mahindra"]
   },
   facilities: [
@@ -714,6 +1069,18 @@ export const colleges =
     "Campus Wi-Fi",
     "Auditorium & Seminar Halls",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 3.7,
+    placements: 3.5,
+    hostel: 3.0,
+    campusLife: 3.8
+  },
+  experience: [
+    { year: 1, title: "Academic Setup", description: "Nawabs' lifestyle integration with rigorous engineering foundations." },
+    { year: 2, title: "Skill Building", description: "Hands-on experience in modern computer labs and technical workshops." },
+    { year: 3, title: "Industry Connection", description: "Work-integrated learning through industry collaborations and internships." },
+    { year: 4, title: "Successful Launch", description: "Career-oriented final projects and securing steady job placements." }
   ]
  },
  {
@@ -724,7 +1091,7 @@ export const colleges =
   description: "Shadan College of Engineering & Technology (SCET), established in 1995, is a well-known engineering institution in Hyderabad affiliated with JNTU Hyderabad. Recognized as a Muslim Minority Engineering College, SCET offers a wide range of undergraduate and postgraduate programs across various engineering disciplines. The college is known for its commitment to quality education, industry-oriented curriculum, and holistic student development. With modern infrastructure and experienced faculty, SCET aims to prepare students for successful careers in the engineering field.",
   image: "https://image-static.collegedunia.com/public/college_data/images/appImage/1635494446download.jpg",
   placements: {
-    avgPackage: "2 LPA",
+    avgPackage: "3.0 LPA",
     topRecruiters: ["Wipro", "HCL", "HP", "Microsoft", "Cognizant", "TCS"]
   },
   facilities: [
@@ -738,6 +1105,18 @@ export const colleges =
     "Auditorium",
     "Transport Facility",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 3.6,
+    placements: 3.4,
+    hostel: 3.2,
+    campusLife: 3.7
+  },
+  experience: [
+    { year: 1, title: "SCET Initiation", description: "Introduction to engineering lab culture and building academic discipline." },
+    { year: 2, title: "Foundational depth", description: "Mastering core departmental subjects and choosing technical electives." },
+    { year: 3, title: "Skill development", description: "Participating in training programs and choosing career-oriented tracks." },
+    { year: 4, title: "Career Start", description: "Completing final year projects and participating in campus recruitment drives." }
   ]
  },
  {
@@ -748,7 +1127,7 @@ export const colleges =
   description: "Muffakham Jah College of Engineering & Technology (MJCET), established in 1980, is a prestigious engineering institution located in Banjara Hills, Hyderabad. Affiliated with Osmania University and approved by AICTE, the college is known for its high academic standards, experienced faculty, and strong infrastructure. Accredited by the National Board of Accreditation (NBA), MJCET offers a wide range of undergraduate and postgraduate programs in engineering disciplines. The institution has a strong reputation among minority engineering colleges and focuses on delivering quality education with industry relevance.",
   image: "https://campushunt.in/photogallery/Muffakham%20Jah%20College%20of%20Engineering%20and%20Technology%20%20.jpg",
   placements: {
-    avgPackage: "7 LPA",
+    avgPackage: "5.5 LPA",
     topRecruiters: ["Google", "Amazon", "Wipro", "TCS", "Infosys", "Accenture", "Cognizant"]
   },
   facilities: [
@@ -762,6 +1141,18 @@ export const colleges =
     "Campus Wi-Fi",
     "Auditorium & Seminar Halls",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.5,
+    placements: 4.3,
+    hostel: 3.2,
+    campusLife: 4.4
+  },
+  experience: [
+    { year: 1, title: "Historic Start", description: "Immersing in the academic legacy and building strong science roots." },
+    { year: 2, title: "Global Outlook", description: "Specializing in core subjects and joining national technical societies." },
+    { year: 3, title: "Placement Power", description: "Intensive training and securing internships with global companies like Google." },
+    { year: 4, title: "Professional Exit", description: "Final Year projects and securing high-package job offers in Banjara Hills hub." }
   ]
  },
  {
@@ -772,7 +1163,7 @@ export const colleges =
   description: "Bhoj Reddy Engineering College for Women (BRECW), established in 1997, is a reputed private institution in Hyderabad affiliated with JNTU Hyderabad and approved by AICTE. Sponsored by Sangam Lakshmibai Vidyapeeth, the college is accredited with an 'A' grade by NAAC. BRECW offers undergraduate engineering programs in various specializations and is known for its strong academic environment, disciplined campus, and focus on empowering women through quality technical education.",
   image: "https://media.collegedekho.com/media/img/institute/crawled_images/Bhoj_Reddy_Engineering_College_for_Women-00.jpg?width=1080",
   placements: {
-    avgPackage: "6 LPA",
+    avgPackage: "6.0 LPA",
     topRecruiters: ["TCS", "Infosys", "Wipro", "Accenture", "Cognizant", "Capgemini", "Amazon"]
   },
   facilities: [
@@ -785,6 +1176,18 @@ export const colleges =
     "Computer Labs & Laboratories",
     "Transport Facility",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.2,
+    placements: 4.4,
+    hostel: 3.9,
+    campusLife: 4.3
+  },
+  experience: [
+    { year: 1, title: "Women in Engineering", description: "Orientation towards STEM and building core academic confidence." },
+    { year: 2, title: "Technical Expertise", description: "Diving into departmental core subjects and practical lab sessions." },
+    { year: 3, title: "Industry Exposure", description: "Skill development workshops and participation in technical fests." },
+    { year: 4, title: "Career Success", description: "Securing placements in top firms through intensive campus drives." }
   ]
  },
  {
@@ -795,7 +1198,7 @@ export const colleges =
   description: "Sreyas Institute of Engineering & Technology, established in 2011, is a reputed engineering institution in Hyderabad affiliated with JNTU Hyderabad and approved by AICTE. Accredited with an 'A' grade by NAAC and NBA, the institute offers a wide range of undergraduate and postgraduate programs in engineering and technology. Known for its quality education, industry-oriented curriculum, and strong academic infrastructure, Sreyas focuses on developing skilled professionals with practical knowledge and global exposure.",
   image: "https://tse1.mm.bing.net/th/id/OIP.oQ9f5owtJs6erxcXEt3yygHaC2?rs=1&pid=ImgDetMain&o=7&rm=3",
   placements: {
-    avgPackage: "5 LPA",
+    avgPackage: "5.0 LPA",
     topRecruiters: ["Amazon", "TCS", "Infosys", "Wipro", "Mahindra", "Accenture", "Cognizant"]
   },
   facilities: [
@@ -809,6 +1212,18 @@ export const colleges =
     "Auditorium",
     "Computer Labs",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.1,
+    placements: 4.1,
+    hostel: 4.0,
+    campusLife: 4.2
+  },
+  experience: [
+    { year: 1, title: "Sreyas Welcome", description: "Integrating into the campus culture and establishing acadmic discipline." },
+    { year: 2, title: "Skill Acquisition", description: "Hands-on labs and starting industry-relevant certification courses." },
+    { year: 3, title: "Growth & Innovation", description: "Participation in hackathons and micro-projects for practical gain." },
+    { year: 4, title: "Placement Blitz", description: "Intense recruitment drives and completing major branch projects." }
   ]
  },
  {
@@ -832,6 +1247,18 @@ export const colleges =
     "Campus Wi-Fi",
     "Auditorium & Seminar Halls",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 3.9,
+    placements: 3.8,
+    hostel: 3.6,
+    campusLife: 4.1
+  },
+  experience: [
+    { year: 1, title: "Aurora Entry", description: "Adapting to the serene campus and building strong academic roots." },
+    { year: 2, title: "Core Building", description: "Fundamental core subjects and lab work with emphasis on discipline." },
+    { year: 3, title: "Professional Prep", description: "Soft skills development and attending industry workshops." },
+    { year: 4, title: "Graduation Path", description: "Final year projects and participating in corporate placement drives." }
   ]
  },
  {
@@ -842,7 +1269,7 @@ export const colleges =
   description: "Aurora’s Technological & Research Institute (ATRI) is a well-known engineering institution in Hyderabad offering undergraduate and postgraduate programs in various engineering disciplines. The institute focuses on delivering quality education through innovative teaching methods and strong industry connections. With a student-friendly environment, experienced faculty, and emphasis on skill development, ATRI aims to prepare students for professional careers in the technology sector.",
   image: "https://images.shiksha.com/mediadata/images/1566556962phpXSYn0Z_g.jpg",
   placements: {
-    avgPackage: "1.55 LPA",
+    avgPackage: "3.2 LPA",
     topRecruiters: ["IBM", "Infosys", "Amazon", "Deloitte", "TCS", "Wipro"]
   },
   facilities: [
@@ -856,7 +1283,13 @@ export const colleges =
     "Sports Facilities & Gym",
     "Medical Center",
     "Training & Placement Cell"
-  ]
+  ],
+  ratingsBreakdown: {
+    faculty: 3.8,
+    placements: 3.6,
+    hostel: 3.5,
+    campusLife: 4.0
+  },
  },
  {
   id: "40",
@@ -866,7 +1299,7 @@ export const colleges =
   description: "Geethanjali College of Engineering & Technology (GCET), established in 2005, is an autonomous institution affiliated with JNTU Hyderabad. The college offers a wide range of undergraduate and postgraduate programs in engineering, technology, and management. Known for its academic excellence and research focus, GCET provides a strong learning environment supported by modern infrastructure, experienced faculty, and industry-oriented training programs.",
   image: "https://image-static.collegedunia.com/public/college_data/images/campusimage/1722677902DJI_0629.JPG",
   placements: {
-    avgPackage: "6 LPA",
+    avgPackage: "5.8 LPA",
     topRecruiters: ["Amazon", "TCS", "Infosys", "Capgemini", "Wipro", "IBM", "Mahindra", "ISRO", "Genpact", "Cognizant"]
   },
   facilities: [
@@ -879,7 +1312,13 @@ export const colleges =
     "Auditorium & Seminar Halls",
     "Computer Labs",
     "Training & Placement Cell"
-  ]
+  ],
+  ratingsBreakdown: {
+    faculty: 4.2,
+    placements: 4.3,
+    hostel: 3.8,
+    campusLife: 4.3
+  },
  },
  {
   id: "41",
@@ -889,7 +1328,7 @@ export const colleges =
   description: "Siddhartha Institute of Engineering & Technology (SIET), located near Ibrahimpatnam, Hyderabad, is a well-established institution affiliated with JNTU Hyderabad and approved by AICTE. Spread across a 14-acre campus, the institute offers a wide range of undergraduate and postgraduate programs in engineering and technology. Known for its strong academic foundation, modern infrastructure, and focus on research and innovation, SIET provides a conducive environment for students to develop technical and professional skills.",
   image: "https://tse4.mm.bing.net/th/id/OIP.QJoiaCIBa9HyDNb3PofWrgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
   placements: {
-    avgPackage: "6 LPA",
+    avgPackage: "3.5 LPA",
     topRecruiters: ["YUPPTV", "Altran", "Byjus", "TCS", "Infosys", "Wipro"]
   },
   facilities: [
@@ -903,6 +1342,18 @@ export const colleges =
     "Cafeteria",
     "Auditorium & Seminar Halls",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.0,
+    placements: 3.8,
+    hostel: 3.7,
+    campusLife: 4.0
+  },
+  experience: [
+    { year: 1, title: "Rural Immersion", description: "Adapting to the Ibrahimpatnam campus and building strong academic fundamentals." },
+    { year: 2, title: "Technical Depth", description: "Diving into core departmental subjects with a focus on practical assignments." },
+    { year: 3, title: "Professional Prep", description: "Value-added courses and initial skill development for job readiness." },
+    { year: 4, title: "Career Start", description: "Securing placements through campus recruitment and final projects." }
   ]
  },
  {
@@ -913,7 +1364,7 @@ export const colleges =
   description: "Swarna Bharathi Institute of Science & Technology (SBIT), established in 2003, is a private institution affiliated with JNTU Hyderabad and approved by AICTE. Accredited with an 'A' grade by NAAC, the institute offers a wide range of undergraduate, postgraduate, and diploma programs in engineering and technology. Known for its student-focused approach, SBIT emphasizes career development through structured training programs, modern infrastructure, and industry-oriented learning.",
   image: "https://www.vidyavision.com/CollegeUploads/Photos/2016-31-5-07-09-38_SBIT.png",
   placements: {
-    avgPackage: "3.5 LPA",
+    avgPackage: "3.2 LPA",
     topRecruiters: ["Genpact", "Infosys", "TCS", "HCL", "Tech Mahindra", "Wipro"]
   },
   facilities: [
@@ -927,6 +1378,18 @@ export const colleges =
     "Medical Centre",
     "Auditorium & Seminar Halls",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 3.8,
+    placements: 3.5,
+    hostel: 3.8,
+    campusLife: 3.7
+  },
+  experience: [
+    { year: 1, title: "Khammam Campus Life", description: "Entering the regional educational hub and establishing basic learning habits." },
+    { year: 2, title: "Core Building", description: "Focusing on branch-specific core engineering subjects and lab work." },
+    { year: 3, title: "Growth & Skill", description: "Workshops on emerging technologies and industry-oriented training." },
+    { year: 4, title: "Career Launch", description: "Preparing for job interviews and completing final degree projects." }
   ]
  },
  {
@@ -937,7 +1400,7 @@ export const colleges =
   description: "Guru Nanak Institutions Technical Campus (GNITC), established in 2001, is a premier institution in Hyderabad affiliated with JNTU Hyderabad and approved by AICTE. Spread across a 100-acre campus, the institute is accredited with an 'A+' grade by NAAC and NBA for select programs. GNITC offers a wide range of undergraduate, postgraduate, and diploma programs, with a strong focus on academic excellence, research, and innovation. The campus provides a holistic learning environment that encourages both technical and personal development.",
   image: "https://www.gkseries.com/blog/wp-content/uploads/2020/04/Guru-Nanak-Institutions-Technical-Campus-Ibrahimpatnam.jpg",
   placements: {
-    avgPackage: "4.7 LPA",
+    avgPackage: "4.8 LPA",
     topRecruiters: ["TCS", "Infosys", "Amazon", "Deloitte", "Wipro", "Accenture", "Cognizant"]
   },
   facilities: [
@@ -952,6 +1415,18 @@ export const colleges =
     "Auditorium & Seminar Halls",
     "NSS & Community Service Programs",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.2,
+    placements: 4.4,
+    hostel: 4.1,
+    campusLife: 4.4
+  },
+  experience: [
+    { year: 1, title: "Mega Campus Entry", description: "Exploring the vast 100-acre campus and building strong science roots." },
+    { year: 2, title: "Innovation Drive", description: "Participating in national technical fests and advanced lab projects." },
+    { year: 3, title: "Industry Bridge", description: "Collaborating with incubation centers and securing early internship offers." },
+    { year: 4, title: "Top-tier Launch", description: "Securing placements in global tech giants and completing capstone projects." }
   ]
  },
  {
@@ -977,6 +1452,18 @@ export const colleges =
     "Transport Facility",
     "Auditorium & Seminar Halls",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.1,
+    placements: 4.2,
+    hostel: 4.0,
+    campusLife: 4.2
+  },
+  experience: [
+    { year: 1, title: "Technical Orientation", description: "Adapting to the professional academic framework and building core logic." },
+    { year: 2, title: "Core Specialization", description: "Intensive training in branch-specific core subjects and lab work." },
+    { year: 3, title: "Career Pathway", description: "Value-added courses and participating in various technical symposiums." },
+    { year: 4, title: "Gateway to MNCs", description: "Intense placement season and securing offers in top companies like Amazon." }
   ]
  },
  {
@@ -987,7 +1474,7 @@ export const colleges =
   description: "ACE Engineering College (ACEEC), established in 2007, is a private autonomous engineering institution affiliated with JNTU Hyderabad and approved by AICTE and NBA. The college offers B.Tech programs in CSE, AI & ML, Data Science, and core branches. It is known for its strong academic environment, modern infrastructure, and industry-focused training.",
   image: "https://tse2.mm.bing.net/th/id/OIP.xBqmFSEQWSzAJeGFHpIsdwHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
   placements: {
-    avgPackage: "4.5 LPA",
+    avgPackage: "3.8 LPA",
     topRecruiters: ["Amazon", "TCS", "Infosys", "Wipro", "Capgemini", "Accenture", "Cognizant", "Deloitte"]
   },
   facilities: [
@@ -1000,6 +1487,18 @@ export const colleges =
     "Transport Facility",
     "Seminar Halls",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.0,
+    placements: 3.8,
+    hostel: 3.6,
+    campusLife: 4.0
+  },
+  experience: [
+    { year: 1, title: "ACE Entry", description: "Laying the foundation for a successful career with strong academic focus." },
+    { year: 2, title: "Technical Shift", description: "Shift towards specialized engineering labs and technical workshops." },
+    { year: 3, title: "Skill Acquisition", description: "Participating in hackathons and industry-oriented training projects." },
+    { year: 4, title: "Successful Finish", description: "Completing major projects and securing job offers in top firms like Infosys." }
   ]
  },
  {
@@ -1010,7 +1509,7 @@ export const colleges =
   description: "ACE Institute of Technology is another name often associated with ACE Engineering College in Hyderabad. It is a private engineering institution established in 2007, affiliated with JNTU Hyderabad and approved by AICTE. The institute offers multiple B.Tech programs and focuses on practical learning, skill development, and placement preparation.",
   image: "https://tse2.mm.bing.net/th/id/OIP.xBqmFSEQWSzAJeGFHpIsdwHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
   placements: {
-    avgPackage: "4.3 - 5 LPA",
+    avgPackage: "3.8 LPA",
     topRecruiters: ["Infosys", "TCS", "Cognizant", "Wipro", "Capgemini", "Accenture"]
   },
   facilities: [
@@ -1022,6 +1521,18 @@ export const colleges =
     "Canteen",
     "Transport",
     "Placement Training Programs"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.0,
+    placements: 3.8,
+    hostel: 3.6,
+    campusLife: 4.0
+  },
+  experience: [
+    { year: 1, title: "AIT Initiation", description: "Orientation to professional engineering labs and basic science roots." },
+    { year: 2, title: "Domain Mastery", description: "Diving into core departmental subjects with emphasis on lab performance." },
+    { year: 3, title: "Ready for Industry", description: "Participating in soft-skills training and internship preparations." },
+    { year: 4, title: "Career Gateway", description: "Completing final project work and participating in large-number recruitment drives." }
   ]
  },
  {
@@ -1032,7 +1543,7 @@ export const colleges =
   description: "Sreenidhi Institute of Science and Technology (SNIST), established in 1997, is one of the top private engineering institutions in Hyderabad. It is affiliated with JNTU Hyderabad and approved by AICTE and UGC. The institute offers B.Tech, M.Tech, and MBA programs and is well-known for its strong academic standards, research focus, and excellent placement record with top global companies.",
   image: "https://tse1.mm.bing.net/th/id/OIP.z4D1xxlmBHwKEqqTQCo8qgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
   placements: {
-    avgPackage: "6.5 - 6.8 LPA",
+    avgPackage: "6.8 LPA",
     topRecruiters: [
       "Google",
       "Amazon",
@@ -1057,6 +1568,18 @@ export const colleges =
     "On-Campus ATMs",
     "Medical & Emergency Services",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.6,
+    placements: 4.8,
+    hostel: 4.3,
+    campusLife: 4.6
+  },
+  experience: [
+    { year: 1, title: "SNIST Excellence", description: "Adapting to the high-performance culture and building solid foundations." },
+    { year: 2, title: "Lab Intensive", description: "Diving into state-of-the-art labs for AI, ML, and Cyber Security." },
+    { year: 3, title: "Global Opportunities", description: "Advanced research projects and securing internships in multinational giants." },
+    { year: 4, title: "Dream Career", description: "Securing record packages and completing innovative capstone projects." }
   ]
  },
  {
@@ -1064,11 +1587,10 @@ export const colleges =
   name: "MLR Institute of Technology",
   location: "Hyderabad, Telangana",
   rating: 4.2,
-  description: "MLR Institute of Technology (MLRIT), established in 2005, is a private autonomous engineering college located in Dundigal, Hyderabad. It is affiliated with JNTU Hyderabad and approved by AICTE. The institute is known for its strong academic structure, industry-integrated curriculum, and focus on innovation and research. MLRIT offers multiple B.Tech, M.Tech, and MBA programs with specializations like CSE, AI & ML, Data Science, Cyber Security, ECE, and Aeronautical Engineering. :contentReference[oaicite:0]{index=0}",
-  image: "https://gyaanarth.com/wp-content/uploads/2022/06/banner1-1.jpg",
+  description: "MLR Institute of Technology (MLRIT), established in 2005, is a private autonomous engineering college located in Dundigal, Hyderabad. It is affiliated with JNTU Hyderabad and approved by AICTE. The institute is known for its strong academic structure, industry-integrated curriculum, and focus on innovation and research. MLRIT offers multiple B.Tech, M.Tech, and MBA programs with specializations like CSE, AI & ML, Data Science, Cyber Security, ECE, and Aeronautical Engineering.",
+  image: "https://campuspro.co.in/collage-image/1751978657_row_205.jpg",
   placements: {
-    avgPackage: "5.5 – 6 LPA",
-    highestPackage: "30+ LPA (approx)",
+    avgPackage: "6.0 LPA",
     topRecruiters: ["Amazon", "Deloitte", "Accenture", "Capgemini", "Infosys", "TCS", "Virtusa", "HCL"]
   },
   facilities: [
@@ -1083,6 +1605,18 @@ export const colleges =
     "Transport Facility",
     "Innovation & Research Centers",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.4,
+    placements: 4.4,
+    hostel: 4.1,
+    campusLife: 4.4
+  },
+  experience: [
+    { year: 1, title: "MLRIT Welcome", description: "Exploring the modern 35-acre campus and building technical foundations." },
+    { year: 2, title: "Advanced Tracks", description: "Specialized lab training in AI/ML and involvement in technical societies." },
+    { year: 3, title: "Innovation Focus", description: "Working on research projects in innovation centers and starting internships." },
+    { year: 4, title: "Professional Exit", description: "Securing job offers in firms like Amazon and completing major projects." }
   ]
  },
  {
@@ -1091,12 +1625,9 @@ export const colleges =
   location: "Hyderabad, Telangana",
   rating: 4.2,
   description: "MLR Institute of Technology (MLRIT), established in 2005 in Dundigal, Hyderabad, is a reputed engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute emphasizes a balanced curriculum focusing on academics, employability skills, research, and sports. It is known for strong placements, modern infrastructure, and a student-friendly learning environment.",
-  image: "https://gyaanarth.com/wp-content/uploads/2022/06/mlr_banner.jpg",
+  image: "https://mlrit.ac.in/wp-content/uploads/2022/04/1547110013php9bMjmq.jpeg",
   placements: {
-    avgPackage: "4.25 LPA",
-    medianPackage: "10 LPA",
-    highestPackage: "33 LPA",
-    placementRate: "80%+",
+    avgPackage: "5.8 LPA",
     topRecruiters: ["Amazon", "Infosys", "TCS", "Capgemini", "Wipro", "Accenture"]
   },
   facilities: [
@@ -1110,6 +1641,18 @@ export const colleges =
     "Transport Facility",
     "Wi-Fi Enabled Campus",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.3,
+    placements: 4.5,
+    hostel: 4.0,
+    campusLife: 4.4
+  },
+  experience: [
+    { year: 1, title: "Academic Rigor", description: "Establishing a solid academic foundation and maintaining high GPA." },
+    { year: 2, title: "Specialization", description: "Diving into branch-specific subjects with emphasis on lab assignments." },
+    { year: 3, title: "Career Acceleration", description: "Participating in employability skill training and industry workshops." },
+    { year: 4, title: "Peak Placement", description: "Securing job offers in top MNCs and completing major final projects." }
   ]
  },
  {
@@ -1121,8 +1664,6 @@ export const colleges =
   image: "https://image-static.collegedunia.com/public/college_data/images/appImage/17798_cover2.png",
   placements: {
     avgPackage: "4.4 LPA",
-    highestPackage: "24 LPA",
-    placementRate: "Good",
     topRecruiters: ["Goldman Sachs", "Zemoso Labs", "Pie Infocom", "Infosys", "TCS", "Wipro"]
   },
   facilities: [
@@ -1135,6 +1676,18 @@ export const colleges =
     "Industry-Oriented Training Programs",
     "Transport Facility",
     "Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.1,
+    placements: 4.3,
+    hostel: 3.9,
+    campusLife: 4.4
+  },
+  experience: [
+    { year: 1, title: "HITAM Innovation", description: "Exposure to innovative learning methods and building core foundations." },
+    { year: 2, title: "Technical Shift", description: "Domain mastery through specialized lab work and workshops." },
+    { year: 3, title: "Growth Mindset", description: "Industry collaborations and starting professional certification courses." },
+    { year: 4, title: "Career Ready", description: "Securing placements in firms like Goldman Sachs and finishing projects." }
   ]
  },
  {
@@ -1145,9 +1698,7 @@ export const colleges =
   description: "Vignan Bharati Institute of Technology (VBIT), established in 2004, is a reputed autonomous engineering college affiliated with JNTU Hyderabad and approved by AICTE and NBA. The institute offers multiple B.Tech, M.Tech, MBA, and diploma programs with a strong focus on industry-oriented education, innovation, and entrepreneurship. VBIT is known for its academic excellence, incubation centers, and strong placement support.",
   image: "https://cache.careers360.mobi/media/colleges/social-media/media-gallery/2664/2021/8/17/Campus%20View%20of%20Vignana%20Bharathi%20Institute%20of%20Technology%20Ghatkesar_Campus-View.jpg",
   placements: {
-    avgPackage: "5 – 7 LPA",
-    highestPackage: "7.5 LPA",
-    placementRate: "70–85%",
+    avgPackage: "5.2 LPA",
     topRecruiters: ["TCS", "Infosys", "HCL", "Accenture", "Amazon"]
   },
   facilities: [
@@ -1163,6 +1714,18 @@ export const colleges =
     "Auditorium & Seminar Halls",
     "Centers of Excellence (Cisco, Autodesk, Microchip)",
     "Startup & Incubation Support"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.2,
+    placements: 4.2,
+    hostel: 3.5,
+    campusLife: 4.3
+  },
+  experience: [
+    { year: 1, title: "VBIT Integration", description: "Adapting to the autonomous culture and building strong technical roots." },
+    { year: 2, title: "Domain Expertise", description: "In-depth study of core subjects and participation in technical societies." },
+    { year: 3, title: "Innovation Drive", description: "Involvement in incubation centers and securing industry internship offers." },
+    { year: 4, title: "Professional Launch", description: "Completing final year projects and securing placements in top tech firms." }
   ]
  },
  {
@@ -1187,6 +1750,18 @@ export const colleges =
     "Wi-Fi Enabled Campus",
     "Auditorium & Seminar Halls",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.0,
+    placements: 4.1,
+    hostel: 3.8,
+    campusLife: 4.2
+  },
+  experience: [
+    { year: 1, title: "VJIT Orientation", description: "Establishing academic discipline in a modern urban campus environment." },
+    { year: 2, title: "Core Fundamentals", description: "Diving into departmental basics with advanced lab exposure and workshops." },
+    { year: 3, title: "Skill Acquisition", description: "Workshops on emerging technologies and soft-skills training programs." },
+    { year: 4, title: "Career Entry", description: "Preparing for job interviews and completing major graduation projects." }
   ]
  },
  {
@@ -1197,7 +1772,7 @@ export const colleges =
   description: "TKR College of Engineering & Technology (TKRCET), established in 2002, is a reputed private engineering college located in Meerpet, Hyderabad. Affiliated with JNTU Hyderabad and approved by AICTE, the college holds NAAC 'A+' accreditation. It offers a wide range of UG, PG, and Diploma programs across engineering and management disciplines. Known for its modern infrastructure and industry-oriented curriculum, TKRCET focuses on holistic student development through academics, internships, and placement training.",
   image: "https://th.bing.com/th/id/R.5c2da8df97c18954c2a4253ed052ff5e?rik=txHGsv%2fZPwjChg&riu=http%3a%2f%2ftkrcet.ac.in%2fwp-content%2fuploads%2f2018%2f10%2fslid2.jpg&ehk=edzZwPi7w2nPVa9ee3Pu3KlqB86LYqVxBrESuJADBgE%3d&risl=&pid=ImgRaw&r=0",
   placements: {
-    avgPackage: "4 - 6 LPA",
+    avgPackage: "4.5 LPA",
     topRecruiters: ["TCS", "Infosys", "Wipro", "Accenture", "Capgemini", "Cognizant"]
   },
   facilities: [
@@ -1211,6 +1786,18 @@ export const colleges =
     "Wi-Fi Enabled Campus",
     "Auditorium & Seminar Halls",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.0,
+    placements: 3.0,
+    hostel: 3.9,
+    campusLife: 4.3
+  },
+  experience: [
+    { year: 1, title: "TKRCET Entry", description: "Adapting to the Meerpet campus culture and building solid foundations." },
+    { year: 2, title: "Technical Shift", description: "Mastering core engineering subjects with intensive lab training." },
+    { year: 3, title: "Career Bridge", description: "Participating in placement training and industry-oriented workshops." },
+    { year: 4, title: "Success Gate", description: "Securing placements in firms like TCS and finishing final projects." }
   ]
  },
  {
@@ -1237,6 +1824,18 @@ export const colleges =
     "Medical Facilities & 24/7 Security",
     "Transport Facility",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.1,
+    placements: 3.0,
+    hostel: 4.0,
+    campusLife: 4.1
+  },
+  experience: [
+    { year: 1, title: "TKREC Initiation", description: "Building a strong technical foundation and maintaining academic focus." },
+    { year: 2, title: "Skill Up", description: "Domain mastery through branch-specific core subjects and labs." },
+    { year: 3, title: "Innovation Phase", description: "Working on mini-projects and starting industry relevant certifications." },
+    { year: 4, title: "Placement Blitz", description: "Securing offers in top companies like Infosys and finishing major projects." }
   ]
  },
  {
@@ -1247,7 +1846,7 @@ export const colleges =
   description: "Bharat Institute of Engineering & Technology (BIET), established in 2001, is a private engineering college in Hyderabad affiliated with JNTU Hyderabad. Accredited with NAAC B++ grade, the institute offers UG and PG programs across various engineering and management disciplines. The college focuses on academic excellence, industry-oriented training, and skill development. With a large green campus and strong infrastructure, BIET provides a conducive environment for both academic and extracurricular growth.",
   image: "https://image-static.collegedunia.com/public/college_data/images/appImage/1559287038658358.jpg",
   placements: {
-    avgPackage: "3 - 5 LPA",
+    avgPackage: "3.8 LPA",
     topRecruiters: ["Qspiders", "HDFC", "Teachnook", "Infosys", "Wipro", "Tech Mahindra"]
   },
   facilities: [
@@ -1261,6 +1860,18 @@ export const colleges =
     "Transport Facility with Bus Services",
     "24/7 Power Backup & Internet Connectivity",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 3.8,
+    placements: 3.9,
+    hostel: 3.5,
+    campusLife: 4.2
+  },
+  experience: [
+    { year: 1, title: "BIET Welcome", description: "Exploring the massive 120-acre campus and setting basic science roots." },
+    { year: 2, title: "Core Specialization", description: "Mastering department core subjects with focus on laboratory results." },
+    { year: 3, title: "Skill Growth", description: "Industry-oriented training programs and attending technical symposiums." },
+    { year: 4, title: "Graduation Prep", description: "Completing final year projects and participating in campus recruitment." }
   ]
  },
  {
@@ -1271,7 +1882,7 @@ export const colleges =
   description: "Maturi Venkata Subba Rao (MVSR) Engineering College, established in 1981, is a reputed private engineering institution affiliated with Osmania University. Known for its strong academic foundation and research-oriented approach, MVSR offers undergraduate and postgraduate programs across core engineering disciplines. The college emphasizes industry-relevant education, experienced faculty, and a disciplined academic environment, making it one of the well-established engineering colleges in Hyderabad.",
   image: "https://tse2.mm.bing.net/th/id/OIP.OHO38_aBpxnhJTX4x-QVGgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
   placements: {
-    avgPackage: "5.5 - 7 LPA",
+    avgPackage: "5.8 LPA",
     topRecruiters: ["Infosys", "Wipro", "IBM", "Tech Mahindra", "Accenture", "Cognizant"]
   },
   facilities: [
@@ -1286,6 +1897,18 @@ export const colleges =
     "Wi-Fi Enabled Campus",
     "Auditorium & Seminar Halls",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.2,
+    placements: 4.3,
+    hostel: 3.5,
+    campusLife: 4.0
+  },
+  experience: [
+    { year: 1, title: "MVSR Foundations", description: "Rigorous academic start with emphasis on mathematical foundations." },
+    { year: 2, title: "Technical Depth", description: "Specialized lab training in core engineering and workshops." },
+    { year: 3, title: "Professional Bridge", description: "Choosing career-oriented electives and starting internship preperations." },
+    { year: 4, title: "Career Achievement", description: "Securing placements in firms like IBM or Wipro with solid projects." }
   ]
  },
  {
@@ -1296,7 +1919,7 @@ export const colleges =
   description: "Narasimha Reddy Engineering College (NRCM), established in 2007 in Secunderabad, is a well-known private engineering institution affiliated with JNTU Hyderabad. Accredited with NAAC 'A' grade and recognized by UGC, the college offers B.Tech, M.Tech, and MBA programs. NRCM is known for its strong academic environment, industry collaborations, and focus on innovation and holistic student development. The institute also hosts national-level events and has recognition from organizations like ISRO for academic initiatives.",
   image: "https://tse2.mm.bing.net/th/id/OIP.cD-l9XbHREN2RmpOsq-pfQHaDn?rs=1&pid=ImgDetMain&o=7&rm=3",
   placements: {
-    avgPackage: "5.5 LPA",
+    avgPackage: "4.5 LPA",
     topRecruiters: ["Infosys", "Wipro", "TCS", "Accenture", "Tech Mahindra", "Cognizant"]
   },
   facilities: [
@@ -1311,6 +1934,18 @@ export const colleges =
     "RO Drinking Water & Power Backup",
     "Auditorium & Seminar Halls",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.0,
+    placements: 4.1,
+    hostel: 3.8,
+    campusLife: 4.1
+  },
+  experience: [
+    { year: 1, title: "NRCM Welcome", description: "Integrating into the Secunderabad campus and building basic science logic." },
+    { year: 2, title: "Domain mastery", description: "Focusing on core engineering subjects with entry into technical societies." },
+    { year: 3, title: "Innovation Phase", description: "Work-integrated learning and participation in national-level events." },
+    { year: 4, title: "Career Start", description: "Completing final year projects and securing placements in top IT firms." }
   ]
  },
  {
@@ -1321,7 +1956,7 @@ export const colleges =
   description: "J.B. Institute of Engineering & Technology (JBIET), established in 1998, is a reputed autonomous engineering college affiliated with JNTU Hyderabad. Approved by AICTE, NBA, and NAAC, the institute offers UG and PG programs in engineering, management, and computer applications. JBIET is known for its strong academic environment, industry collaborations, and focus on experiential learning, making it a popular choice among students in Hyderabad.",
   image: "https://www.vidyavision.com/CollegeUploads/Photos/2016-11-5-13-12-17_jbit11.jpg",
   placements: {
-    avgPackage: "4 LPA",
+    avgPackage: "4.2 LPA",
     topRecruiters: ["TCS", "Infosys", "Wipro", "Accenture", "Capgemini", "Cognizant"]
   },
   facilities: [
@@ -1335,6 +1970,18 @@ export const colleges =
     "Wi-Fi Enabled Campus",
     "Auditorium & Seminar Halls",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.1,
+    placements: 4.0,
+    hostel: 3.9,
+    campusLife: 4.2
+  },
+  experience: [
+    { year: 1, title: "JBIET Initiation", description: "Establishing academic foundations in an autonomous urban setting." },
+    { year: 2, title: "Specialization", description: "Mastering departmental core subjects with hands-on lab projects." },
+    { year: 3, title: "Industry Link", description: "Participating in research-oriented fests and internship programs." },
+    { year: 4, title: "Career Ready", description: "Securing placements in MNCs and finishing high-impact final projects." }
   ]
  },
  {
@@ -1345,7 +1992,7 @@ export const colleges =
   description: "CVR College of Engineering, established in 2000 by the Cherabuddi Educational Society, is a premier autonomous engineering institution affiliated with JNTU Hyderabad. Accredited with NAAC 'A' grade and NBA for multiple programs, CVR is known for its academic excellence, strong discipline, and industry-oriented training. The college offers a wide range of B.Tech and M.Tech programs and is consistently ranked among the top engineering colleges in Telangana for quality education and placements.",
   image: "https://tse3.mm.bing.net/th/id/OIP.-SMf1ZV97Zcy3LinZEH6jgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
   placements: {
-    avgPackage: "4.37 LPA",
+    avgPackage: "6.5 LPA",
     topRecruiters: ["TCS", "Infosys", "Wipro", "Accenture", "Cognizant", "Amazon", "Capgemini"]
   },
   facilities: [
@@ -1359,6 +2006,18 @@ export const colleges =
     "Sports Grounds & Facilities",
     "Auditorium & Seminar Halls",
     "Dedicated Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.4,
+    placements: 4.5,
+    hostel: 4.3,
+    campusLife: 4.4
+  },
+  experience: [
+    { year: 1, title: "CVR Excellence", description: "High-rigor start in a top-rated disciplined campus environment." },
+    { year: 2, title: "Technical Shift", description: "In-depth specialization subjects with rigorous laboratory training." },
+    { year: 3, title: "Innovation Quest", description: "Working on complex projects and attending international symposiums." },
+    { year: 4, title: "Elite Exit", description: "Securing dream placements and finishing innovative graduation projects." }
   ]
  },
  {
@@ -1369,7 +2028,7 @@ export const colleges =
   description: "Mahaveer Institute of Science & Technology (MIST), established in 2001 in Hyderabad, is a private engineering institution affiliated with JNTUH and approved by AICTE. The college offers undergraduate, postgraduate, and diploma programs in Engineering and Management. It is known for its NAAC 'A' grade accreditation, moderate academic environment, and focus on basic technical education with support for student development through academics and extracurricular activities.",
   image: "https://d13loartjoc1yn.cloudfront.net/upload/institute/images/large/m2.webp",
   placements: {
-    avgPackage: "3–6 LPA",
+    avgPackage: "2.5 LPA",
     topRecruiters: ["TCS", "Infosys", "Wipro", "Tech Mahindra", "Capgemini", "Cognizant"]
   },
   facilities: [
@@ -1383,6 +2042,18 @@ export const colleges =
     "Conference & Seminar Halls",
     "Wi-Fi Enabled Campus",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 3.5,
+    placements: 3.3,
+    hostel: 3.2,
+    campusLife: 4.0
+  },
+  experience: [
+    { year: 1, title: "MIST Entry", description: "Building a basic science foundation and establishing study habits." },
+    { year: 2, title: "Technical setup", description: "Orientation to core engineering labs and foundational subjects." },
+    { year: 3, title: "Skill Building", description: "Participating in employability training and career orientations." },
+    { year: 4, title: "Career Start", description: "Preparing for job interviews and completing final year projects." }
   ]
  },
  {
@@ -1393,7 +2064,7 @@ export const colleges =
   description: "DRK Institute of Science & Technology (DRKIST), established in 2004 in Hyderabad, is a private engineering college affiliated with JNTUH and approved by AICTE. The institute offers undergraduate and postgraduate programs including B.Tech, M.Tech, and MBA across branches such as CSE, AI & ML, Cybersecurity, Civil, Mechanical, and ECE. It is known for industry-oriented training, strong placement support, and skill development programs aligned with IT sector requirements.",
   image: "https://sunstone.in/_next/image?url=https:%2F%2Fcdn-eu.aglty.io%2Fsunstoneuniversity%2Fall-campus-image%2Fdrkist%2Fc5a6518e-3067-49d0-b293-31c584ed53f5img_20211013_103419.jpg&w=3840&q=75",
   placements: {
-    avgPackage: "9 LPA",
+    avgPackage: "2.2 LPA",
     topRecruiters: ["Amazon", "Wipro", "Infosys", "TCS", "Tech Mahindra", "Cognizant"]
   },
   facilities: [
@@ -1407,6 +2078,18 @@ export const colleges =
     "Wi-Fi Enabled Campus",
     "Training & Placement Cell",
     "Workshops, GD & Interview Training"
+  ],
+  ratingsBreakdown: {
+    faculty: 3.4,
+    placements: 3.1,
+    hostel: 2.8,
+    campusLife: 3.8
+  },
+  experience: [
+    { year: 1, title: "Tech Ready", description: "Orientation to modern computer labs and building basic science logic." },
+    { year: 2, title: "Domain Mastery", description: "Specializing in branches like AI/ML with intensive practical sessions." },
+    { year: 3, title: "Skill Excellence", description: "Participating in GD and interview training modules for industry readiness." },
+    { year: 4, title: "Career Launch", description: "Securing job offers in firms like Amazon with strong final projects." }
   ]
  },
  {
@@ -1417,7 +2100,7 @@ export const colleges =
   description: "VIF College of Engineering & Technology is a private engineering institution located in Rangareddy, Telangana, affiliated with JNTUH. The college offers undergraduate and postgraduate programs including B.Tech, M.Tech, and MBA across branches such as Civil, CSE, ECE, EEE, and Mechanical Engineering. It is known for its structured academic environment, entrance-based admissions through TS EAMCET/TS ICET, and focus on overall student development.",
   image: "https://www.vidyavision.com/CollegeUploads/Photos/2016-02-6-07-45-58_vif.jpg",
   placements: {
-    avgPackage: "9 LPA",
+    avgPackage: "2.0 LPA",
     topRecruiters: ["TCS", "Infosys", "Wipro", "Tech Mahindra", "Accenture", "Cognizant"]
   },
   facilities: [
@@ -1431,6 +2114,18 @@ export const colleges =
     "Alumni Association Network",
     "Wi-Fi Enabled Campus",
     "Placement & Training Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 3.2,
+    placements: 3.0,
+    hostel: 2.5,
+    campusLife: 3.5
+  },
+  experience: [
+    { year: 1, title: "Academic Focus", description: "Adapting to the structured academic environment and building science roots." },
+    { year: 2, title: "Core Engineering", description: "Diving into departmental subjects with advanced lab exposure." },
+    { year: 3, title: "Growth Phase", description: "Participating in development workshops and attending technical symposiums." },
+    { year: 4, title: "Professional Entry", description: "Final year projects and securing placements through campus drives." }
   ]
  },
  {
@@ -1441,7 +2136,7 @@ export const colleges =
   description: "Holy Mary Institute of Technology & Science (HITS) is a private institution in Hyderabad, Telangana, affiliated with JNTUH and approved by AICTE. The institute offers undergraduate and postgraduate programs in Engineering, Technology, Management, Science, and related fields. It focuses on academic excellence, analytical thinking, and industry-ready skill development through a structured curriculum and training programs.",
   image: "https://www.hits.ac.in/wp-content/uploads/2015/03/Untitled-12.jpg",
   placements: {
-    avgPackage: "4.5–6 LPA",
+    avgPackage: "2.4 LPA",
     topRecruiters: ["Amazon", "Microsoft", "Infosys", "Wipro", "Tech Mahindra", "Genpact", "HCL"]
   },
   facilities: [
@@ -1455,6 +2150,18 @@ export const colleges =
     "Medical Center on Campus",
     "Sports Facilities for Indoor & Outdoor Games",
     "Seminar Halls & Auditorium"
+  ],
+  ratingsBreakdown: {
+    faculty: 3.5,
+    placements: 3.2,
+    hostel: 3.2,
+    campusLife: 3.9
+  },
+  experience: [
+    { year: 1, title: "Campus Immersion", description: "Exploring the 100-acre campus and building basic technical foundations." },
+    { year: 2, title: "Technical Shift", description: "Domain mastery through specialized lab work and intense workshops." },
+    { year: 3, title: "Innovation Quest", description: "Working with the innovation center on industry relevant projects." },
+    { year: 4, title: "HITS Success", description: "Securing placements in firms like Microsoft and finishing final projects." }
   ]
  },
  {
@@ -1465,7 +2172,7 @@ export const colleges =
   description: "St. Mary’s Engineering College is a private self-financing institution established in 2007 in Hyderabad, Telangana, affiliated with JNTUH and approved by AICTE. The college offers undergraduate, postgraduate, and diploma programs in engineering and technology fields such as CSE, AI & ML, ECE, Civil, and related specializations. It focuses on holistic development, industry exposure, and employability through structured training and campus recruitment support.",
   image: "https://www.vidyavision.com/CollegeUploads/Photos/2016-13-6-11-18-53_st-marys-college-greenery.jpg",
   placements: {
-    avgPackage: "3.5–5.5 LPA",
+    avgPackage: "2.8 LPA",
     topRecruiters: ["TCS", "Infosys", "Wipro", "Tech Mahindra", "Accenture", "Cognizant"]
   },
   facilities: [
@@ -1479,6 +2186,18 @@ export const colleges =
     "Mental Health & Counseling Support",
     "Engineering Laboratories",
     "Seminar Halls & Training Centers"
+  ],
+  ratingsBreakdown: {
+    faculty: 3.6,
+    placements: 3.4,
+    hostel: 3.3,
+    campusLife: 4.0
+  },
+  experience: [
+    { year: 1, title: "Holistic Entry", description: "Building a healthy academic focus and exploring the multi-sport arena." },
+    { year: 2, title: "Engineering Logic", description: "Mastering core lab techniques and building foundational logic." },
+    { year: 3, title: "Career Orientation", description: "Participating in employability training and career counseling." },
+    { year: 4, title: "Professional Path", description: "Completing final projects and participating in campus recruitment." }
   ]
  },
  {
@@ -1489,7 +2208,7 @@ export const colleges =
   description: "Neil Gogte Institute of Technology (NGIT), established in 2017 in Hyderabad, is a private engineering college affiliated with Osmania University and approved by AICTE. The institute offers undergraduate and postgraduate programs in engineering disciplines such as Computer Science, ECE, Mechanical, and Civil Engineering. It is known for its modern infrastructure, active placement cell, and strong focus on student skill development and industry readiness.",
   image: "https://ngit.ac.in/wp-content/uploads/2023/01/campus_pic26-580x380.jpeg",
   placements: {
-    avgPackage: "8 LPA",
+    avgPackage: "5.8 LPA",
     topRecruiters: ["Amazon", "TCS", "Wipro", "Infosys", "Accenture", "Capgemini", "Cognizant"]
   },
   facilities: [
@@ -1503,9 +2222,20 @@ export const colleges =
     "Transportation (Pick & Drop Service)",
     "Health Center with First Aid Support",
     "Training & Placement Cell"
+  ],
+  ratingsBreakdown: {
+    faculty: 4.4,
+    placements: 4.5,
+    hostel: 3.2,
+    campusLife: 4.1
+  },
+  experience: [
+    { year: 1, title: "NGIT Welcome", description: "Establishing academic excellence in a modern tech environment." },
+    { year: 2, title: "Technical Mastery", description: "In-depth specialization subjects with rigorous laboratory training." },
+    { year: 3, title: "Ready for Tech", description: "Advanced research projects and attending industry symposiums." },
+    { year: 4, title: "Peak Career", description: "Securing job offers in firms like Amazon and finishing final projects." }
   ]
  },
- 
 ];
 
 export const reviews = [
@@ -3535,9 +4265,15 @@ export const reviews = [
   }
 ];
 
-export const predictorMockLogic = (rank) => {
+export const predictorMockLogic = (exam, rank, category, gender) => {
+  if (exam !== 'TG EAPCET') {
+    return [];
+  }
 
   const results = [];
+
+  // Create a map of college ratings for quick lookup
+  const ratingsMap = colleges.reduce((acc, c) => ({ ...acc, [c.id]: c.rating }), {});
 
   const getChance = (rank, start, end) => {
     const mid = (start + end) / 2;
@@ -3548,86 +4284,7445 @@ export const predictorMockLogic = (rank) => {
     return "Very Low";
   };
 
-  let r;
+  // 🔥 dynamic college variables
+  let collegeId = "1";
+  let collegeName = "JNTU Hyderabad";
 
-  // ---------------- JNTU ----------------
-  r = [600, 1700];
-  results.push({ collegeId: "1", collegeName: "JNTU Hyderabad", branch: "CSE", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.8 });
+  // helper function
+  const addBranch = (branch, cutoffs) => {
+    const r = cutoffs[category]?.[gender] || cutoffs["OC"]["Male"];
+    if (!r) return;
 
-  r = [700, 2000];
-  results.push({ collegeId: "1", collegeName: "JNTU Hyderabad", branch: "AI & DS", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.8 });
+  const chance = getChance(rank, r[0], r[1]);
 
-  r = [1800, 3200];
-  results.push({ collegeId: "1", collegeName: "JNTU Hyderabad", branch: "ECE", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.8 });
+  if (chance !== "Very Low") {
+    results.push({
+      collegeId,
+      collegeName,
+      branch,
+      cutoff: r[1],
+      chance,
+      rating: ratingsMap[collegeId] || 4.0
+    });
+  }
+};
 
-  r = [4500, 8000];
-  results.push({ collegeId: "1", collegeName: "JNTU Hyderabad", branch: "EEE", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.8 });
+  // ================= JNTU =================
 
-  r = [7500, 11000];
-  results.push({ collegeId: "1", collegeName: "JNTU Hyderabad", branch: "MECH", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.8 });
+  addBranch("CSE", {
+    OC: { Male: [120,280], Female: [150,320] },
+    EWS: { Male: [200,450], Female: [250,500] },
+    "BC-A": { Male: [400,1200], Female: [500,1300] },
+    "BC-B": { Male: [300,900], Female: [350,950] },
+    "BC-C": { Male: [200,500], Female: [250,600] },
+    "BC-D": { Male: [350,950], Female: [400,1000] },
+    "BC-E": { Male: [300,700], Female: [350,800] },
+    SC: { Male: [900,2500], Female: [1000,2600] },
+    ST: { Male: [1500,4000], Female: [1700,4200] }
+  });
 
-  // ---------------- OU ----------------
-  r = [900, 1900];
-  results.push({ collegeId: "2", collegeName: "OU", branch: "CSE", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.7 });
+  addBranch("AI & DS", {
+    OC: { Male: [180,400], Female: [200,450] },
+    EWS: { Male: [300,650], Female: [350,700] },
+    "BC-A": { Male: [600,1800], Female: [700,2000] },
+    "BC-B": { Male: [450,1300], Female: [500,1400] },
+    "BC-C": { Male: [300,700], Female: [350,800] },
+    "BC-D": { Male: [550,1500], Female: [600,1600] },
+    "BC-E": { Male: [450,1000], Female: [500,1100] },
+    SC: { Male: [1300,3500], Female: [1500,3800] },
+    ST: { Male: [2200,6000], Female: [2500,6500] }
+  });
 
-  r = [1000, 2500];
-  results.push({ collegeId: "2", collegeName: "OU", branch: "AI & DS", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.7 });
+  addBranch("ECE", {
+    OC: { Male: [400,900], Female: [500,1000] },
+    EWS: { Male: [700,1500], Female: [800,1600] },
+    "BC-A": { Male: [1200,3000], Female: [1300,3200] },
+    "BC-B": { Male: [900,2200], Female: [1000,2400] },
+    "BC-C": { Male: [700,1400], Female: [800,1500] },
+    "BC-D": { Male: [1000,2500], Female: [1100,2600] },
+    "BC-E": { Male: [900,1800], Female: [1000,1900] },
+    SC: { Male: [2500,6000], Female: [2700,6200] },
+    ST: { Male: [4000,9000], Female: [4200,9200] }
+  });
 
-  r = [2000, 3800];
-  results.push({ collegeId: "2", collegeName: "OU", branch: "ECE", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.7 });
+  addBranch("EEE", {
+    OC: { Male: [900,1800], Female: [1000,2000] },
+    EWS: { Male: [1400,2600], Female: [1500,2800] },
+    "BC-A": { Male: [2500,6000], Female: [2700,6500] },
+    "BC-B": { Male: [1800,4200], Female: [2000,4500] },
+    "BC-C": { Male: [1500,3000], Female: [1700,3200] },
+    "BC-D": { Male: [2000,4800], Female: [2200,5000] },
+    "BC-E": { Male: [1800,3500], Female: [2000,3700] },
+    SC: { Male: [5000,12000], Female: [5500,13000] },
+    ST: { Male: [8000,18000], Female: [9000,19000] }
+  });
 
-  r = [5000, 9000];
-  results.push({ collegeId: "2", collegeName: "OU", branch: "EEE", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.7 });
+  // ================= OU =================
+  collegeId = "2";
+  collegeName = "OU";
 
-  // ---------------- CBIT ----------------
-  r = [1500, 3000];
-  results.push({ collegeId: "3", collegeName: "CBIT", branch: "CSE", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.5 });
+  addBranch("CSE", {
+    OC: { Male: [150,320], Female: [180,350] },
+    EWS: { Male: [250,500], Female: [300,550] },
+    "BC-A": { Male: [500,1400], Female: [600,1500] },
+    "BC-B": { Male: [350,1000], Female: [400,1100] },
+    "BC-C": { Male: [250,600], Female: [300,650] },
+    "BC-D": { Male: [400,1100], Female: [450,1200] },
+    "BC-E": { Male: [350,800], Female: [400,900] },
+    SC: { Male: [1100,3000], Female: [1200,3200] },
+    ST: { Male: [1800,5000], Female: [2000,5200] }
+  });
 
-  r = [1800, 3500];
-  results.push({ collegeId: "3", collegeName: "CBIT", branch: "AI & DS", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.5 });
+  addBranch("AI & DS", {
+    OC: { Male: [200,450], Female: [230,500] },
+    EWS: { Male: [320,700], Female: [380,750] },
+    "BC-A": { Male: [650,1800], Female: [750,2000] },
+    "BC-B": { Male: [500,1400], Female: [550,1500] },
+    "BC-C": { Male: [350,800], Female: [400,900] },
+    "BC-D": { Male: [600,1600], Female: [650,1700] },
+    "BC-E": { Male: [500,1100], Female: [550,1200] },
+    SC: { Male: [1400,3600], Female: [1600,3900] },
+    ST: { Male: [2400,6500], Female: [2700,7000] }
+  });
 
-  r = [3000, 5200];
-  results.push({ collegeId: "3", collegeName: "CBIT", branch: "ECE", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.5 });
+  // -------- Data Science --------
+addBranch("Data Science", {
+  OC: { Male: [230,550], Female: [260,600] },
+  EWS: { Male: [400,850], Female: [450,900] },
+  "BC-A": { Male: [800,2200], Female: [900,2400] },
+  "BC-B": { Male: [600,1700], Female: [650,1800] },
+  "BC-C": { Male: [450,1000], Female: [500,1100] },
+  "BC-D": { Male: [700,1900], Female: [750,2000] },
+  "BC-E": { Male: [600,1400], Female: [650,1500] },
+  SC: { Male: [1700,4500], Female: [1900,4800] },
+  ST: { Male: [3000,7500], Female: [3200,8000] }
+});
 
-  // ---------------- VNR ----------------
-  r = [2000, 4000];
-  results.push({ collegeId: "4", collegeName: "VNR VJIET", branch: "CSE", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.6 });
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [500,1100], Female: [600,1200] },
+  EWS: { Male: [800,1700], Female: [900,1800] },
+  "BC-A": { Male: [1400,3500], Female: [1500,3700] },
+  "BC-B": { Male: [1100,2600], Female: [1200,2800] },
+  "BC-C": { Male: [900,1600], Female: [1000,1700] },
+  "BC-D": { Male: [1200,2800], Female: [1300,3000] },
+  "BC-E": { Male: [1100,2000], Female: [1200,2200] },
+  SC: { Male: [3000,7000], Female: [3200,7200] },
+  ST: { Male: [5000,10000], Female: [5200,10500] }
+});
 
-  r = [2200, 4500];
-  results.push({ collegeId: "4", collegeName: "VNR VJIET", branch: "AI & DS", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.6 });
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [1000,2000], Female: [1100,2200] },
+  EWS: { Male: [1500,2800], Female: [1700,3000] },
+  "BC-A": { Male: [2700,6500], Female: [3000,7000] },
+  "BC-B": { Male: [2000,4500], Female: [2200,4800] },
+  "BC-C": { Male: [1700,3200], Female: [1900,3500] },
+  "BC-D": { Male: [2200,5000], Female: [2400,5200] },
+  "BC-E": { Male: [2000,3700], Female: [2200,4000] },
+  SC: { Male: [5500,13000], Female: [6000,14000] },
+  ST: { Male: [9000,19000], Female: [10000,20000] }
+});
 
-  r = [3500, 6200];
-  results.push({ collegeId: "4", collegeName: "VNR VJIET", branch: "ECE", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.6 });
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [2000,4000], Female: [2500,4500] },
+  EWS: { Male: [3000,5000], Female: [3500,5500] },
+  "BC-A": { Male: [6000,14000], Female: [7000,16000] },
+  "BC-B": { Male: [4000,9000], Female: [5000,10000] },
+  "BC-C": { Male: [3500,7000], Female: [4000,8000] },
+  "BC-D": { Male: [5000,11000], Female: [5500,12000] },
+  "BC-E": { Male: [4000,8000], Female: [5000,9000] },
+  SC: { Male: [11000,26000], Female: [13000,30000] },
+  ST: { Male: [20000,42000], Female: [22000,45000] }
+});
 
-  // ---------------- MGIT ----------------
-  r = [4000, 7000];
-  results.push({ collegeId: "7", collegeName: "MGIT", branch: "CSE", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.4 });
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [3000,6000], Female: [3500,7000] },
+  EWS: { Male: [4000,8000], Female: [4500,9000] },
+  "BC-A": { Male: [8000,18000], Female: [9000,20000] },
+  "BC-B": { Male: [6000,14000], Female: [7000,15000] },
+  "BC-C": { Male: [5000,10000], Female: [6000,11000] },
+  "BC-D": { Male: [7000,15000], Female: [8000,17000] },
+  "BC-E": { Male: [6000,12000], Female: [7000,14000] },
+  SC: { Male: [14000,32000], Female: [16000,35000] },
+  ST: { Male: [22000,48000], Female: [25000,50000] }
+});
 
-  r = [4500, 7500];
-  results.push({ collegeId: "7", collegeName: "MGIT", branch: "AI & DS", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.4 });
+// -------- CHEMICAL --------
+addBranch("Chemical", {
+  OC: { Male: [2500,5500], Female: [3000,6000] },
+  EWS: { Male: [3500,7500], Female: [4000,8000] },
+  "BC-A": { Male: [7000,16000], Female: [8000,18000] },
+  "BC-B": { Male: [5500,13000], Female: [6000,14000] },
+  "BC-C": { Male: [5000,10000], Female: [5500,11000] },
+  "BC-D": { Male: [6500,15000], Female: [7000,16000] },
+  "BC-E": { Male: [5500,12000], Female: [6000,13000] },
+  SC: { Male: [13000,30000], Female: [15000,32000] },
+  ST: { Male: [22000,48000], Female: [24000,50000] }
+});
 
-  r = [6000, 10000];
-  results.push({ collegeId: "7", collegeName: "MGIT", branch: "ECE", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.4 });
+// -------- EIE --------
+addBranch("EIE", {
+  OC: { Male: [2200,4800], Female: [2600,5200] },
+  EWS: { Male: [3200,6500], Female: [3600,7000] },
+  "BC-A": { Male: [6500,15000], Female: [7500,17000] },
+  "BC-B": { Male: [4800,11000], Female: [5200,12000] },
+  "BC-C": { Male: [4200,8500], Female: [4600,9000] },
+  "BC-D": { Male: [5500,13000], Female: [6000,14000] },
+  "BC-E": { Male: [4800,10000], Female: [5200,11000] },
+  SC: { Male: [11000,26000], Female: [13000,29000] },
+  ST: { Male: [20000,42000], Female: [22000,45000] }
+});
 
-  // ---------------- BVRIT ----------------
-  r = [6000, 10000];
-  results.push({ collegeId: "8", collegeName: "BVRIT", branch: "CSE", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.5 });
+// ================= CBIT =================
+collegeId = "3";
+collegeName = "CBIT";
 
-  r = [6500, 11000];
-  results.push({ collegeId: "8", collegeName: "BVRIT", branch: "AI & DS", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.5 });
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [900,1500], Female: [1000,1700] },
+  EWS: { Male: [1200,2200], Female: [1400,2400] },
+  "BC-A": { Male: [2000,5000], Female: [2200,5200] },
+  "BC-B": { Male: [1500,3500], Female: [1700,3700] },
+  "BC-C": { Male: [1200,2500], Female: [1300,2700] },
+  "BC-D": { Male: [1800,4000], Female: [2000,4200] },
+  "BC-E": { Male: [1500,3000], Female: [1700,3200] },
+  SC: { Male: [4000,9000], Female: [4500,9500] },
+  ST: { Male: [7000,15000], Female: [7500,15500] }
+});
 
-  // ---------------- IARE ----------------
-  r = [8000, 13000];
-  results.push({ collegeId: "11", collegeName: "IARE", branch: "CSE", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.3 });
+// -------- CSE AI & ML --------
+addBranch("CSE (AI & ML)", {
+  OC: { Male: [1100,2000], Female: [1200,2200] },
+  EWS: { Male: [1500,2800], Female: [1700,3000] },
+  "BC-A": { Male: [2800,6500], Female: [3000,7000] },
+  "BC-B": { Male: [2000,4800], Female: [2200,5000] },
+  "BC-C": { Male: [1600,3200], Female: [1800,3500] },
+  "BC-D": { Male: [2500,5500], Female: [2700,6000] },
+  "BC-E": { Male: [2000,4200], Female: [2200,4500] },
+  SC: { Male: [5500,13000], Female: [6000,14000] },
+  ST: { Male: [9000,20000], Female: [10000,21000] }
+});
 
-  r = [9000, 14000];
-  results.push({ collegeId: "11", collegeName: "IARE", branch: "AI & DS", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.3 });
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [1200,2300], Female: [1300,2500] },
+  EWS: { Male: [1700,3200], Female: [1800,3500] },
+  "BC-A": { Male: [3000,7000], Female: [3200,7500] },
+  "BC-B": { Male: [2300,5200], Female: [2500,5500] },
+  "BC-C": { Male: [1800,3500], Female: [2000,3800] },
+  "BC-D": { Male: [2800,6000], Female: [3000,6500] },
+  "BC-E": { Male: [2300,4800], Female: [2500,5000] },
+  SC: { Male: [6000,14000], Female: [6500,15000] },
+  ST: { Male: [10000,22000], Female: [11000,23000] }
+});
 
-  r = [12000, 18000];
-  results.push({ collegeId: "11", collegeName: "IARE", branch: "ECE", cutoff: r[1], chance: getChance(rank, r[0], r[1]), rating: 4.3 });
+// -------- Cyber --------
+addBranch("CSE (Cyber Security)", {
+  OC: { Male: [1300,2600], Female: [1500,2800] },
+  EWS: { Male: [1800,3500], Female: [2000,3800] },
+  "BC-A": { Male: [3500,8000], Female: [3800,8500] },
+  "BC-B": { Male: [2600,6000], Female: [2800,6500] },
+  "BC-C": { Male: [2000,4000], Female: [2200,4200] },
+  "BC-D": { Male: [3200,7000], Female: [3500,7500] },
+  "BC-E": { Male: [2600,5500], Female: [2800,5800] },
+  SC: { Male: [7000,16000], Female: [7500,17000] },
+  ST: { Male: [12000,26000], Female: [13000,28000] }
+});
 
-  // ---------------- SORT ----------------
-  const priority = { High: 1, Medium: 2, Low: 3, "Very Low": 4 };
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [1500,2800], Female: [1700,3000] },
+  EWS: { Male: [2000,3500], Female: [2200,3800] },
+  "BC-A": { Male: [4000,9000], Female: [4200,9500] },
+  "BC-B": { Male: [2800,6500], Female: [3000,7000] },
+  "BC-C": { Male: [2200,4200], Female: [2400,4500] },
+  "BC-D": { Male: [3500,8000], Female: [3800,8500] },
+  "BC-E": { Male: [3000,6500], Female: [3200,6800] },
+  SC: { Male: [9000,20000], Female: [10000,21000] },
+  ST: { Male: [15000,32000], Female: [16000,34000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [2000,3500], Female: [2200,3800] },
+  EWS: { Male: [2500,4500], Female: [2700,4800] },
+  "BC-A": { Male: [4000,9000], Female: [4200,9500] },
+  "BC-B": { Male: [3000,7000], Female: [3200,7500] },
+  "BC-C": { Male: [2500,5000], Female: [2700,5500] },
+  "BC-D": { Male: [3500,8000], Female: [3700,8200] },
+  "BC-E": { Male: [3000,6000], Female: [3200,6500] },
+  SC: { Male: [8000,18000], Female: [8500,19000] },
+  ST: { Male: [13000,28000], Female: [14000,30000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [4000,7000], Female: [4500,7500] },
+  EWS: { Male: [5500,9000], Female: [6000,10000] },
+  "BC-A": { Male: [9000,18000], Female: [10000,20000] },
+  "BC-B": { Male: [7000,14000], Female: [7500,15000] },
+  "BC-C": { Male: [6000,11000], Female: [6500,12000] },
+  "BC-D": { Male: [8000,16000], Female: [8500,17000] },
+  "BC-E": { Male: [7000,13000], Female: [7500,14000] },
+  SC: { Male: [15000,30000], Female: [17000,32000] },
+  ST: { Male: [25000,50000], Female: [27000,52000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [5000,9000], Female: [6000,11000] },
+  EWS: { Male: [7000,12000], Female: [8000,14000] },
+  "BC-A": { Male: [12000,25000], Female: [15000,30000] },
+  "BC-B": { Male: [9000,18000], Female: [11000,20000] },
+  "BC-C": { Male: [8000,15000], Female: [9000,17000] },
+  "BC-D": { Male: [10000,20000], Female: [12000,23000] },
+  "BC-E": { Male: [9000,17000], Female: [11000,19000] },
+  SC: { Male: [20000,45000], Female: [25000,50000] },
+  ST: { Male: [35000,70000], Female: [40000,80000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [6000,11000], Female: [7000,13000] },
+  EWS: { Male: [8000,14000], Female: [9000,16000] },
+  "BC-A": { Male: [15000,30000], Female: [18000,35000] },
+  "BC-B": { Male: [11000,22000], Female: [13000,25000] },
+  "BC-C": { Male: [10000,18000], Female: [11000,20000] },
+  "BC-D": { Male: [13000,25000], Female: [15000,28000] },
+  "BC-E": { Male: [11000,20000], Female: [13000,23000] },
+  SC: { Male: [25000,50000], Female: [30000,55000] },
+  ST: { Male: [40000,80000], Female: [45000,85000] }
+});
+
+// ================= VNR =================
+collegeId = "4";
+collegeName = "VNR VJIET";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [1200,2200], Female: [1300,2400] },
+  EWS: { Male: [1500,3000], Female: [1700,3200] },
+  "BC-A": { Male: [3000,7000], Female: [3200,7500] },
+  "BC-B": { Male: [2000,5000], Female: [2200,5200] },
+  "BC-C": { Male: [1500,3000], Female: [1700,3200] },
+  "BC-D": { Male: [2500,6000], Female: [2700,6500] },
+  "BC-E": { Male: [2000,4500], Female: [2200,4800] },
+  SC: { Male: [6000,14000], Female: [6500,15000] },
+  ST: { Male: [10000,22000], Female: [11000,23000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [1400,2600], Female: [1500,2800] },
+  EWS: { Male: [1800,3500], Female: [2000,3800] },
+  "BC-A": { Male: [3500,8000], Female: [3800,8500] },
+  "BC-B": { Male: [2600,6000], Female: [2800,6500] },
+  "BC-C": { Male: [2000,4000], Female: [2200,4200] },
+  "BC-D": { Male: [3200,7000], Female: [3500,7500] },
+  "BC-E": { Male: [2600,5500], Female: [2800,5800] },
+  SC: { Male: [7000,16000], Female: [7500,17000] },
+  ST: { Male: [12000,26000], Female: [13000,28000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [1800,3200], Female: [2000,3500] },
+  EWS: { Male: [2500,4500], Female: [2700,4800] },
+  "BC-A": { Male: [4500,9500], Female: [4800,10000] },
+  "BC-B": { Male: [3200,7500], Female: [3500,8000] },
+  "BC-C": { Male: [2600,4800], Female: [2800,5200] },
+  "BC-D": { Male: [4000,8500], Female: [4200,9000] },
+  "BC-E": { Male: [3200,7000], Female: [3500,7500] },
+  SC: { Male: [8500,19000], Female: [9000,20000] },
+  ST: { Male: [15000,32000], Female: [16000,34000] }
+});
+
+// ================= VCE =================
+collegeId = "5";
+collegeName = "Vasavi College of Engineering";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [1500,2800], Female: [1700,3000] },
+  EWS: { Male: [2000,3500], Female: [2200,3800] },
+  "BC-A": { Male: [4000,9000], Female: [4200,9500] },
+  "BC-B": { Male: [2800,6500], Female: [3000,6800] },
+  "BC-C": { Male: [2000,4000], Female: [2200,4200] },
+  "BC-D": { Male: [3500,8000], Female: [3800,8500] },
+  "BC-E": { Male: [3000,6000], Female: [3200,6500] },
+  SC: { Male: [9000,20000], Female: [9500,21000] },
+  ST: { Male: [15000,32000], Female: [16000,34000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [1700,3200], Female: [1900,3500] },
+  EWS: { Male: [2300,4200], Female: [2500,4500] },
+  "BC-A": { Male: [4500,10000], Female: [4800,11000] },
+  "BC-B": { Male: [3200,7500], Female: [3500,8000] },
+  "BC-C": { Male: [2400,4800], Female: [2600,5200] },
+  "BC-D": { Male: [4000,9000], Female: [4200,9500] },
+  "BC-E": { Male: [3200,7000], Female: [3500,7500] },
+  SC: { Male: [10000,22000], Female: [11000,24000] },
+  ST: { Male: [17000,36000], Female: [18000,38000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [1800,3400], Female: [2000,3700] },
+  EWS: { Male: [2500,4500], Female: [2700,4800] },
+  "BC-A": { Male: [4800,11000], Female: [5200,12000] },
+  "BC-B": { Male: [3400,8000], Female: [3700,8500] },
+  "BC-C": { Male: [2600,5200], Female: [2800,5500] },
+  "BC-D": { Male: [4200,9500], Female: [4500,10000] },
+  "BC-E": { Male: [3400,7500], Female: [3700,8000] },
+  SC: { Male: [11000,24000], Female: [12000,26000] },
+  ST: { Male: [18000,38000], Female: [20000,40000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [2000,3800], Female: [2200,4000] },
+  EWS: { Male: [2800,5000], Female: [3000,5200] },
+  "BC-A": { Male: [5500,12000], Female: [5800,13000] },
+  "BC-B": { Male: [3800,9000], Female: [4000,9500] },
+  "BC-C": { Male: [3000,6000], Female: [3200,6500] },
+  "BC-D": { Male: [4800,10000], Female: [5000,11000] },
+  "BC-E": { Male: [3800,8500], Female: [4000,9000] },
+  SC: { Male: [12000,26000], Female: [13000,28000] },
+  ST: { Male: [20000,42000], Female: [22000,45000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [2200,4000], Female: [2500,4200] },
+  EWS: { Male: [3000,5200], Female: [3200,5500] },
+  "BC-A": { Male: [5800,13000], Female: [6000,14000] },
+  "BC-B": { Male: [4000,9500], Female: [4200,10000] },
+  "BC-C": { Male: [3200,6500], Female: [3500,7000] },
+  "BC-D": { Male: [5000,11000], Female: [5200,12000] },
+  "BC-E": { Male: [4000,9000], Female: [4200,9500] },
+  SC: { Male: [13000,28000], Female: [14000,30000] },
+  ST: { Male: [22000,45000], Female: [24000,48000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [3000,5000], Female: [3200,5500] },
+  EWS: { Male: [3500,6000], Female: [3800,6500] },
+  "BC-A": { Male: [6000,13000], Female: [6500,14000] },
+  "BC-B": { Male: [5000,11000], Female: [5500,12000] },
+  "BC-C": { Male: [4500,9000], Female: [5000,9500] },
+  "BC-D": { Male: [5500,12000], Female: [6000,13000] },
+  "BC-E": { Male: [5000,10000], Female: [5500,11000] },
+  SC: { Male: [12000,26000], Female: [13000,28000] },
+  ST: { Male: [20000,42000], Female: [22000,45000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [5000,9000], Female: [6000,11000] },
+  EWS: { Male: [7000,12000], Female: [8000,14000] },
+  "BC-A": { Male: [12000,25000], Female: [15000,30000] },
+  "BC-B": { Male: [9000,18000], Female: [11000,20000] },
+  "BC-C": { Male: [8000,15000], Female: [9000,17000] },
+  "BC-D": { Male: [10000,20000], Female: [12000,23000] },
+  "BC-E": { Male: [9000,17000], Female: [11000,19000] },
+  SC: { Male: [20000,45000], Female: [25000,50000] },
+  ST: { Male: [35000,70000], Female: [40000,80000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [7000,12000], Female: [9000,15000] },
+  EWS: { Male: [9000,15000], Female: [11000,18000] },
+  "BC-A": { Male: [18000,35000], Female: [22000,40000] },
+  "BC-B": { Male: [12000,25000], Female: [15000,28000] },
+  "BC-C": { Male: [10000,20000], Female: [12000,23000] },
+  "BC-D": { Male: [15000,28000], Female: [18000,32000] },
+  "BC-E": { Male: [12000,23000], Female: [15000,26000] },
+  SC: { Male: [30000,60000], Female: [35000,65000] },
+  ST: { Male: [50000,90000], Female: [55000,100000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [9000,15000], Female: [11000,18000] },
+  EWS: { Male: [11000,18000], Female: [13000,20000] },
+  "BC-A": { Male: [22000,40000], Female: [25000,45000] },
+  "BC-B": { Male: [15000,28000], Female: [18000,32000] },
+  "BC-C": { Male: [12000,23000], Female: [15000,26000] },
+  "BC-D": { Male: [18000,32000], Female: [20000,35000] },
+  "BC-E": { Male: [15000,26000], Female: [18000,30000] },
+  SC: { Male: [35000,65000], Female: [40000,70000] },
+  ST: { Male: [55000,100000], Female: [60000,110000] }
+});
+
+// ================= GRIET =================
+collegeId = "6";
+collegeName = "GRIET";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [1800,3200], Female: [2000,3500] },
+  EWS: { Male: [2500,4500], Female: [2700,4800] },
+  "BC-A": { Male: [4500,10000], Female: [4800,11000] },
+  "BC-B": { Male: [3200,7500], Female: [3500,8000] },
+  "BC-C": { Male: [2500,5000], Female: [2700,5500] },
+  "BC-D": { Male: [4000,9000], Female: [4200,9500] },
+  "BC-E": { Male: [3200,7000], Female: [3500,7500] },
+  SC: { Male: [10000,22000], Female: [11000,24000] },
+  ST: { Male: [17000,36000], Female: [18000,38000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [2000,3600], Female: [2200,3800] },
+  EWS: { Male: [2800,5000], Female: [3000,5200] },
+  "BC-A": { Male: [5000,11000], Female: [5200,12000] },
+  "BC-B": { Male: [3600,8500], Female: [3800,9000] },
+  "BC-C": { Male: [2800,5500], Female: [3000,6000] },
+  "BC-D": { Male: [4500,10000], Female: [4800,11000] },
+  "BC-E": { Male: [3600,8000], Female: [3800,8500] },
+  SC: { Male: [11000,24000], Female: [12000,26000] },
+  ST: { Male: [18000,38000], Female: [20000,40000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [2200,4000], Female: [2400,4200] },
+  EWS: { Male: [3000,5500], Female: [3200,5800] },
+  "BC-A": { Male: [5500,12000], Female: [6000,13000] },
+  "BC-B": { Male: [4000,9000], Female: [4200,9500] },
+  "BC-C": { Male: [3000,6000], Female: [3200,6500] },
+  "BC-D": { Male: [4800,11000], Female: [5000,11500] },
+  "BC-E": { Male: [4000,8500], Female: [4200,9000] },
+  SC: { Male: [12000,26000], Female: [13000,28000] },
+  ST: { Male: [20000,42000], Female: [22000,45000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [2400,4500], Female: [2600,4800] },
+  EWS: { Male: [3200,6000], Female: [3500,6500] },
+  "BC-A": { Male: [6000,13000], Female: [6500,14000] },
+  "BC-B": { Male: [4500,10000], Female: [4800,10500] },
+  "BC-C": { Male: [3500,7000], Female: [3800,7500] },
+  "BC-D": { Male: [5500,12000], Female: [5800,13000] },
+  "BC-E": { Male: [4500,9500], Female: [4800,10000] },
+  SC: { Male: [13000,28000], Female: [14000,30000] },
+  ST: { Male: [22000,45000], Female: [24000,48000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [2600,4800], Female: [2800,5000] },
+  EWS: { Male: [3500,6500], Female: [3800,7000] },
+  "BC-A": { Male: [6500,14000], Female: [7000,15000] },
+  "BC-B": { Male: [4800,10500], Female: [5000,11000] },
+  "BC-C": { Male: [3800,7500], Female: [4000,8000] },
+  "BC-D": { Male: [5800,13000], Female: [6000,13500] },
+  "BC-E": { Male: [4800,10000], Female: [5000,10500] },
+  SC: { Male: [14000,30000], Female: [15000,32000] },
+  ST: { Male: [24000,48000], Female: [26000,50000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [3500,6000], Female: [3800,6500] },
+  EWS: { Male: [4500,7500], Female: [4800,8000] },
+  "BC-A": { Male: [7500,16000], Female: [8000,17000] },
+  "BC-B": { Male: [6000,13000], Female: [6500,14000] },
+  "BC-C": { Male: [5000,10000], Female: [5500,11000] },
+  "BC-D": { Male: [6500,14000], Female: [7000,15000] },
+  "BC-E": { Male: [6000,12000], Female: [6500,13000] },
+  SC: { Male: [15000,32000], Female: [16000,35000] },
+  ST: { Male: [26000,50000], Female: [28000,52000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [6000,11000], Female: [7000,13000] },
+  EWS: { Male: [8000,14000], Female: [9000,16000] },
+  "BC-A": { Male: [15000,30000], Female: [18000,35000] },
+  "BC-B": { Male: [11000,22000], Female: [13000,25000] },
+  "BC-C": { Male: [10000,18000], Female: [11000,20000] },
+  "BC-D": { Male: [13000,25000], Female: [15000,28000] },
+  "BC-E": { Male: [11000,20000], Female: [13000,23000] },
+  SC: { Male: [25000,50000], Female: [30000,55000] },
+  ST: { Male: [40000,80000], Female: [45000,85000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [9000,15000], Female: [11000,18000] },
+  EWS: { Male: [11000,18000], Female: [13000,20000] },
+  "BC-A": { Male: [22000,40000], Female: [25000,45000] },
+  "BC-B": { Male: [15000,28000], Female: [18000,32000] },
+  "BC-C": { Male: [12000,23000], Female: [15000,26000] },
+  "BC-D": { Male: [18000,32000], Female: [20000,35000] },
+  "BC-E": { Male: [15000,26000], Female: [18000,30000] },
+  SC: { Male: [35000,65000], Female: [40000,70000] },
+  ST: { Male: [55000,100000], Female: [60000,110000] }
+});
+
+// ================= MGIT =================
+collegeId = "7";
+collegeName = "MGIT";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [2500,4500], Female: [2800,4800] },
+  EWS: { Male: [3200,6000], Female: [3500,6500] },
+  "BC-A": { Male: [6000,13000], Female: [6500,14000] },
+  "BC-B": { Male: [4500,10000], Female: [4800,10500] },
+  "BC-C": { Male: [3500,7000], Female: [3800,7500] },
+  "BC-D": { Male: [5500,12000], Female: [5800,13000] },
+  "BC-E": { Male: [4500,9500], Female: [4800,10000] },
+  SC: { Male: [13000,28000], Female: [14000,30000] },
+  ST: { Male: [22000,45000], Female: [24000,48000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [2800,5000], Female: [3000,5500] },
+  EWS: { Male: [3800,7000], Female: [4000,7500] },
+  "BC-A": { Male: [7000,15000], Female: [7500,16000] },
+  "BC-B": { Male: [5000,11000], Female: [5500,12000] },
+  "BC-C": { Male: [4000,8000], Female: [4200,8500] },
+  "BC-D": { Male: [6000,13500], Female: [6500,14000] },
+  "BC-E": { Male: [5000,10500], Female: [5500,11000] },
+  SC: { Male: [15000,32000], Female: [16000,35000] },
+  ST: { Male: [26000,50000], Female: [28000,52000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [3000,5500], Female: [3200,6000] },
+  EWS: { Male: [4000,7500], Female: [4200,8000] },
+  "BC-A": { Male: [7500,16000], Female: [8000,17000] },
+  "BC-B": { Male: [5500,12000], Female: [6000,13000] },
+  "BC-C": { Male: [4200,8500], Female: [4500,9000] },
+  "BC-D": { Male: [6500,14000], Female: [7000,15000] },
+  "BC-E": { Male: [5500,11000], Female: [6000,12000] },
+  SC: { Male: [16000,35000], Female: [17000,37000] },
+  ST: { Male: [28000,52000], Female: [30000,55000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [3200,6000], Female: [3500,6500] },
+  EWS: { Male: [4200,8000], Female: [4500,8500] },
+  "BC-A": { Male: [8000,17000], Female: [8500,18000] },
+  "BC-B": { Male: [6000,13000], Female: [6500,14000] },
+  "BC-C": { Male: [4500,9000], Female: [5000,10000] },
+  "BC-D": { Male: [7000,15000], Female: [7500,16000] },
+  "BC-E": { Male: [6000,12000], Female: [6500,13000] },
+  SC: { Male: [17000,37000], Female: [18000,40000] },
+  ST: { Male: [30000,55000], Female: [32000,58000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [3500,6500], Female: [3800,7000] },
+  EWS: { Male: [4500,8500], Female: [4800,9000] },
+  "BC-A": { Male: [8500,18000], Female: [9000,19000] },
+  "BC-B": { Male: [6500,14000], Female: [7000,15000] },
+  "BC-C": { Male: [5000,10000], Female: [5500,11000] },
+  "BC-D": { Male: [7500,16000], Female: [8000,17000] },
+  "BC-E": { Male: [6500,13000], Female: [7000,14000] },
+  SC: { Male: [18000,40000], Female: [20000,42000] },
+  ST: { Male: [32000,58000], Female: [35000,60000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [4500,7500], Female: [5000,8000] },
+  EWS: { Male: [5500,9500], Female: [6000,10000] },
+  "BC-A": { Male: [9500,20000], Female: [10000,22000] },
+  "BC-B": { Male: [7500,16000], Female: [8000,17000] },
+  "BC-C": { Male: [6500,13000], Female: [7000,14000] },
+  "BC-D": { Male: [8500,18000], Female: [9000,19000] },
+  "BC-E": { Male: [7500,15000], Female: [8000,16000] },
+  SC: { Male: [20000,42000], Female: [22000,45000] },
+  ST: { Male: [35000,60000], Female: [38000,65000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [7000,12000], Female: [9000,15000] },
+  EWS: { Male: [9000,15000], Female: [11000,18000] },
+  "BC-A": { Male: [18000,35000], Female: [22000,40000] },
+  "BC-B": { Male: [12000,25000], Female: [15000,28000] },
+  "BC-C": { Male: [10000,20000], Female: [12000,23000] },
+  "BC-D": { Male: [15000,28000], Female: [18000,32000] },
+  "BC-E": { Male: [12000,23000], Female: [15000,26000] },
+  SC: { Male: [30000,60000], Female: [35000,65000] },
+  ST: { Male: [50000,90000], Female: [55000,100000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [9000,15000], Female: [11000,18000] },
+  EWS: { Male: [11000,18000], Female: [13000,20000] },
+  "BC-A": { Male: [22000,40000], Female: [25000,45000] },
+  "BC-B": { Male: [15000,28000], Female: [18000,32000] },
+  "BC-C": { Male: [12000,23000], Female: [15000,26000] },
+  "BC-D": { Male: [18000,32000], Female: [20000,35000] },
+  "BC-E": { Male: [15000,26000], Female: [18000,30000] },
+  SC: { Male: [35000,65000], Female: [40000,70000] },
+  ST: { Male: [55000,100000], Female: [60000,110000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [10000,17000], Female: [12000,20000] },
+  EWS: { Male: [13000,21000], Female: [15000,23000] },
+  "BC-A": { Male: [26000,45000], Female: [30000,50000] },
+  "BC-B": { Male: [17000,32000], Female: [20000,35000] },
+  "BC-C": { Male: [14000,26000], Female: [16000,28000] },
+  "BC-D": { Male: [20000,35000], Female: [23000,38000] },
+  "BC-E": { Male: [17000,30000], Female: [20000,32000] },
+  SC: { Male: [40000,70000], Female: [45000,75000] },
+  ST: { Male: [60000,110000], Female: [65000,120000] }
+});
+
+// ================= BVRIT =================
+collegeId = "8";
+collegeName = "BVRIT";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [4000,7000], Female: [4500,7500] },
+  EWS: { Male: [5500,9500], Female: [6000,10000] },
+  "BC-A": { Male: [9500,20000], Female: [10000,22000] },
+  "BC-B": { Male: [7000,15000], Female: [7500,16000] },
+  "BC-C": { Male: [6000,12000], Female: [6500,13000] },
+  "BC-D": { Male: [8500,18000], Female: [9000,19000] },
+  "BC-E": { Male: [7000,14000], Female: [7500,15000] },
+  SC: { Male: [18000,38000], Female: [20000,40000] },
+  ST: { Male: [30000,60000], Female: [32000,65000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [4500,8000], Female: [5000,8500] },
+  EWS: { Male: [6000,11000], Female: [6500,12000] },
+  "BC-A": { Male: [11000,24000], Female: [12000,26000] },
+  "BC-B": { Male: [8000,17000], Female: [8500,18000] },
+  "BC-C": { Male: [7000,14000], Female: [7500,15000] },
+  "BC-D": { Male: [9500,20000], Female: [10000,21000] },
+  "BC-E": { Male: [8000,16000], Female: [8500,17000] },
+  SC: { Male: [20000,42000], Female: [22000,45000] },
+  ST: { Male: [35000,70000], Female: [38000,75000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [4800,8500], Female: [5200,9000] },
+  EWS: { Male: [6500,12000], Female: [7000,13000] },
+  "BC-A": { Male: [12000,26000], Female: [13000,28000] },
+  "BC-B": { Male: [8500,18000], Female: [9000,19000] },
+  "BC-C": { Male: [7500,15000], Female: [8000,16000] },
+  "BC-D": { Male: [10000,21000], Female: [11000,23000] },
+  "BC-E": { Male: [8500,17000], Female: [9000,18000] },
+  SC: { Male: [22000,45000], Female: [24000,48000] },
+  ST: { Male: [38000,75000], Female: [40000,80000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [5000,9000], Female: [5500,9500] },
+  EWS: { Male: [7000,13000], Female: [7500,14000] },
+  "BC-A": { Male: [13000,28000], Female: [14000,30000] },
+  "BC-B": { Male: [9000,19000], Female: [9500,20000] },
+  "BC-C": { Male: [8000,16000], Female: [8500,17000] },
+  "BC-D": { Male: [11000,23000], Female: [12000,25000] },
+  "BC-E": { Male: [9000,18000], Female: [9500,19000] },
+  SC: { Male: [24000,48000], Female: [26000,50000] },
+  ST: { Male: [40000,80000], Female: [42000,85000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [5500,9500], Female: [6000,10000] },
+  EWS: { Male: [7500,14000], Female: [8000,15000] },
+  "BC-A": { Male: [14000,30000], Female: [15000,32000] },
+  "BC-B": { Male: [9500,20000], Female: [10000,22000] },
+  "BC-C": { Male: [8500,17000], Female: [9000,18000] },
+  "BC-D": { Male: [12000,25000], Female: [13000,27000] },
+  "BC-E": { Male: [9500,19000], Female: [10000,20000] },
+  SC: { Male: [26000,50000], Female: [28000,52000] },
+  ST: { Male: [42000,85000], Female: [45000,90000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [7000,12000], Female: [8000,14000] },
+  EWS: { Male: [9000,15000], Female: [10000,17000] },
+  "BC-A": { Male: [18000,35000], Female: [20000,38000] },
+  "BC-B": { Male: [12000,25000], Female: [14000,28000] },
+  "BC-C": { Male: [10000,20000], Female: [12000,23000] },
+  "BC-D": { Male: [15000,28000], Female: [17000,30000] },
+  "BC-E": { Male: [12000,23000], Female: [14000,26000] },
+  SC: { Male: [30000,60000], Female: [35000,65000] },
+  ST: { Male: [50000,90000], Female: [55000,100000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [9000,15000], Female: [10000,17000] },
+  EWS: { Male: [11000,18000], Female: [13000,20000] },
+  "BC-A": { Male: [22000,40000], Female: [25000,45000] },
+  "BC-B": { Male: [15000,28000], Female: [17000,32000] },
+  "BC-C": { Male: [12000,23000], Female: [14000,26000] },
+  "BC-D": { Male: [18000,32000], Female: [20000,35000] },
+  "BC-E": { Male: [15000,26000], Female: [17000,30000] },
+  SC: { Male: [35000,65000], Female: [40000,70000] },
+  ST: { Male: [55000,100000], Female: [60000,110000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [12000,20000], Female: [15000,23000] },
+  EWS: { Male: [15000,23000], Female: [18000,26000] },
+  "BC-A": { Male: [30000,50000], Female: [35000,60000] },
+  "BC-B": { Male: [20000,35000], Female: [23000,40000] },
+  "BC-C": { Male: [16000,28000], Female: [18000,32000] },
+  "BC-D": { Male: [23000,38000], Female: [26000,45000] },
+  "BC-E": { Male: [20000,32000], Female: [23000,38000] },
+  SC: { Male: [45000,75000], Female: [50000,80000] },
+  ST: { Male: [65000,120000], Female: [70000,130000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [13000,22000], Female: [16000,25000] },
+  EWS: { Male: [17000,26000], Female: [20000,30000] },
+  "BC-A": { Male: [35000,60000], Female: [40000,65000] },
+  "BC-B": { Male: [22000,40000], Female: [25000,45000] },
+  "BC-C": { Male: [18000,32000], Female: [20000,35000] },
+  "BC-D": { Male: [26000,45000], Female: [30000,50000] },
+  "BC-E": { Male: [22000,38000], Female: [25000,42000] },
+  SC: { Male: [50000,80000], Female: [55000,90000] },
+  ST: { Male: [70000,130000], Female: [75000,140000] }
+});
+
+// ================= BVRIT WOMEN =================
+collegeId = "9";
+collegeName = "BVRIT Women";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [], Female: [5000,9000] },
+  EWS: { Male: [], Female: [7000,13000] },
+  "BC-A": { Male: [], Female: [13000,28000] },
+  "BC-B": { Male: [], Female: [9000,19000] },
+  "BC-C": { Male: [], Female: [8000,16000] },
+  "BC-D": { Male: [], Female: [11000,23000] },
+  "BC-E": { Male: [], Female: [9000,18000] },
+  SC: { Male: [], Female: [24000,50000] },
+  ST: { Male: [], Female: [40000,85000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [], Female: [5500,9500] },
+  EWS: { Male: [], Female: [7500,14000] },
+  "BC-A": { Male: [], Female: [14000,30000] },
+  "BC-B": { Male: [], Female: [9500,20000] },
+  "BC-C": { Male: [], Female: [8500,17000] },
+  "BC-D": { Male: [], Female: [12000,25000] },
+  "BC-E": { Male: [], Female: [9500,19000] },
+  SC: { Male: [], Female: [26000,52000] },
+  ST: { Male: [], Female: [42000,90000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [], Female: [5800,10000] },
+  EWS: { Male: [], Female: [8000,15000] },
+  "BC-A": { Male: [], Female: [15000,32000] },
+  "BC-B": { Male: [], Female: [10000,22000] },
+  "BC-C": { Male: [], Female: [9000,18000] },
+  "BC-D": { Male: [], Female: [13000,27000] },
+  "BC-E": { Male: [], Female: [10000,20000] },
+  SC: { Male: [], Female: [28000,55000] },
+  ST: { Male: [], Female: [45000,95000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [], Female: [6000,10500] },
+  EWS: { Male: [], Female: [8500,16000] },
+  "BC-A": { Male: [], Female: [16000,35000] },
+  "BC-B": { Male: [], Female: [10500,23000] },
+  "BC-C": { Male: [], Female: [9500,19000] },
+  "BC-D": { Male: [], Female: [14000,30000] },
+  "BC-E": { Male: [], Female: [10500,21000] },
+  SC: { Male: [], Female: [30000,60000] },
+  ST: { Male: [], Female: [50000,100000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [], Female: [6500,11000] },
+  EWS: { Male: [], Female: [9000,17000] },
+  "BC-A": { Male: [], Female: [17000,36000] },
+  "BC-B": { Male: [], Female: [11000,24000] },
+  "BC-C": { Male: [], Female: [10000,20000] },
+  "BC-D": { Male: [], Female: [15000,32000] },
+  "BC-E": { Male: [], Female: [11000,22000] },
+  SC: { Male: [], Female: [32000,65000] },
+  ST: { Male: [], Female: [52000,105000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [], Female: [8000,14000] },
+  EWS: { Male: [], Female: [10000,18000] },
+  "BC-A": { Male: [], Female: [20000,38000] },
+  "BC-B": { Male: [], Female: [14000,28000] },
+  "BC-C": { Male: [], Female: [12000,23000] },
+  "BC-D": { Male: [], Female: [17000,30000] },
+  "BC-E": { Male: [], Female: [14000,26000] },
+  SC: { Male: [], Female: [35000,70000] },
+  ST: { Male: [], Female: [55000,110000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [], Female: [10000,17000] },
+  EWS: { Male: [], Female: [13000,22000] },
+  "BC-A": { Male: [], Female: [25000,45000] },
+  "BC-B": { Male: [], Female: [17000,32000] },
+  "BC-C": { Male: [], Female: [14000,26000] },
+  "BC-D": { Male: [], Female: [20000,35000] },
+  "BC-E": { Male: [], Female: [17000,30000] },
+  SC: { Male: [], Female: [40000,75000] },
+  ST: { Male: [], Female: [60000,120000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [], Female: [15000,25000] },
+  EWS: { Male: [], Female: [18000,30000] },
+  "BC-A": { Male: [], Female: [35000,60000] },
+  "BC-B": { Male: [], Female: [25000,45000] },
+  "BC-C": { Male: [], Female: [20000,35000] },
+  "BC-D": { Male: [], Female: [30000,50000] },
+  "BC-E": { Male: [], Female: [25000,42000] },
+  SC: { Male: [], Female: [50000,85000] },
+  ST: { Male: [], Female: [70000,130000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [], Female: [16000,27000] },
+  EWS: { Male: [], Female: [20000,32000] },
+  "BC-A": { Male: [], Female: [40000,65000] },
+  "BC-B": { Male: [], Female: [27000,48000] },
+  "BC-C": { Male: [], Female: [22000,38000] },
+  "BC-D": { Male: [], Female: [32000,55000] },
+  "BC-E": { Male: [], Female: [27000,45000] },
+  SC: { Male: [], Female: [55000,90000] },
+  ST: { Male: [], Female: [75000,140000] }
+});
+
+// ================= GNITS =================
+collegeId = "10";
+collegeName = "GNITS";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [], Female: [3000,6000] },
+  EWS: { Male: [], Female: [4200,8000] },
+  "BC-A": { Male: [], Female: [8000,18000] },
+  "BC-B": { Male: [], Female: [6000,14000] },
+  "BC-C": { Male: [], Female: [5000,10000] },
+  "BC-D": { Male: [], Female: [7000,16000] },
+  "BC-E": { Male: [], Female: [6000,13000] },
+  SC: { Male: [], Female: [16000,35000] },
+  ST: { Male: [], Female: [28000,60000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [], Female: [3500,7000] },
+  EWS: { Male: [], Female: [5000,9000] },
+  "BC-A": { Male: [], Female: [9000,20000] },
+  "BC-B": { Male: [], Female: [7000,16000] },
+  "BC-C": { Male: [], Female: [6000,12000] },
+  "BC-D": { Male: [], Female: [8000,18000] },
+  "BC-E": { Male: [], Female: [7000,15000] },
+  SC: { Male: [], Female: [18000,38000] },
+  ST: { Male: [], Female: [30000,65000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [], Female: [3800,7500] },
+  EWS: { Male: [], Female: [5500,10000] },
+  "BC-A": { Male: [], Female: [10000,22000] },
+  "BC-B": { Male: [], Female: [7500,17000] },
+  "BC-C": { Male: [], Female: [6500,13000] },
+  "BC-D": { Male: [], Female: [9000,19000] },
+  "BC-E": { Male: [], Female: [7500,16000] },
+  SC: { Male: [], Female: [20000,40000] },
+  ST: { Male: [], Female: [32000,70000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [], Female: [4200,8000] },
+  EWS: { Male: [], Female: [6000,11000] },
+  "BC-A": { Male: [], Female: [11000,24000] },
+  "BC-B": { Male: [], Female: [8000,18000] },
+  "BC-C": { Male: [], Female: [7000,14000] },
+  "BC-D": { Male: [], Female: [9500,20000] },
+  "BC-E": { Male: [], Female: [8000,17000] },
+  SC: { Male: [], Female: [22000,42000] },
+  ST: { Male: [], Female: [35000,75000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [], Female: [4500,8500] },
+  EWS: { Male: [], Female: [6500,12000] },
+  "BC-A": { Male: [], Female: [12000,26000] },
+  "BC-B": { Male: [], Female: [8500,19000] },
+  "BC-C": { Male: [], Female: [7500,15000] },
+  "BC-D": { Male: [], Female: [10000,22000] },
+  "BC-E": { Male: [], Female: [8500,18000] },
+  SC: { Male: [], Female: [24000,45000] },
+  ST: { Male: [], Female: [38000,80000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [], Female: [7000,12000] },
+  EWS: { Male: [], Female: [9000,16000] },
+  "BC-A": { Male: [], Female: [18000,35000] },
+  "BC-B": { Male: [], Female: [12000,26000] },
+  "BC-C": { Male: [], Female: [10000,20000] },
+  "BC-D": { Male: [], Female: [15000,30000] },
+  "BC-E": { Male: [], Female: [12000,25000] },
+  SC: { Male: [], Female: [30000,60000] },
+  ST: { Male: [], Female: [50000,95000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [], Female: [9000,15000] },
+  EWS: { Male: [], Female: [12000,20000] },
+  "BC-A": { Male: [], Female: [24000,42000] },
+  "BC-B": { Male: [], Female: [15000,30000] },
+  "BC-C": { Male: [], Female: [12000,24000] },
+  "BC-D": { Male: [], Female: [18000,35000] },
+  "BC-E": { Male: [], Female: [15000,30000] },
+  SC: { Male: [], Female: [35000,70000] },
+  ST: { Male: [], Female: [60000,110000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [], Female: [13000,22000] },
+  EWS: { Male: [], Female: [16000,26000] },
+  "BC-A": { Male: [], Female: [30000,55000] },
+  "BC-B": { Male: [], Female: [22000,40000] },
+  "BC-C": { Male: [], Female: [18000,32000] },
+  "BC-D": { Male: [], Female: [26000,45000] },
+  "BC-E": { Male: [], Female: [22000,38000] },
+  SC: { Male: [], Female: [50000,85000] },
+  ST: { Male: [], Female: [75000,130000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [], Female: [14000,24000] },
+  EWS: { Male: [], Female: [18000,28000] },
+  "BC-A": { Male: [], Female: [32000,60000] },
+  "BC-B": { Male: [], Female: [24000,42000] },
+  "BC-C": { Male: [], Female: [20000,35000] },
+  "BC-D": { Male: [], Female: [28000,48000] },
+  "BC-E": { Male: [], Female: [24000,40000] },
+  SC: { Male: [], Female: [55000,90000] },
+  ST: { Male: [], Female: [80000,140000] }
+});
+
+// ================= IARE =================
+collegeId = "11";
+collegeName = "IARE";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [6000,10000], Female: [6500,11000] },
+  EWS: { Male: [8000,14000], Female: [8500,15000] },
+  "BC-A": { Male: [14000,28000], Female: [15000,30000] },
+  "BC-B": { Male: [10000,20000], Female: [11000,22000] },
+  "BC-C": { Male: [9000,16000], Female: [9500,17000] },
+  "BC-D": { Male: [12000,24000], Female: [13000,26000] },
+  "BC-E": { Male: [10000,19000], Female: [11000,20000] },
+  SC: { Male: [24000,50000], Female: [26000,52000] },
+  ST: { Male: [40000,85000], Female: [42000,90000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [6500,11000], Female: [7000,12000] },
+  EWS: { Male: [8500,15000], Female: [9000,16000] },
+  "BC-A": { Male: [15000,30000], Female: [16000,32000] },
+  "BC-B": { Male: [11000,22000], Female: [12000,24000] },
+  "BC-C": { Male: [9500,17000], Female: [10000,18000] },
+  "BC-D": { Male: [13000,26000], Female: [14000,28000] },
+  "BC-E": { Male: [11000,20000], Female: [12000,22000] },
+  SC: { Male: [26000,52000], Female: [28000,55000] },
+  ST: { Male: [42000,90000], Female: [45000,95000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [7000,12000], Female: [7500,13000] },
+  EWS: { Male: [9000,16000], Female: [10000,17000] },
+  "BC-A": { Male: [16000,32000], Female: [17000,34000] },
+  "BC-B": { Male: [12000,24000], Female: [13000,26000] },
+  "BC-C": { Male: [10000,18000], Female: [11000,20000] },
+  "BC-D": { Male: [14000,28000], Female: [15000,30000] },
+  "BC-E": { Male: [12000,22000], Female: [13000,24000] },
+  SC: { Male: [28000,55000], Female: [30000,60000] },
+  ST: { Male: [45000,95000], Female: [48000,100000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [7500,13000], Female: [8000,14000] },
+  EWS: { Male: [10000,17000], Female: [11000,18000] },
+  "BC-A": { Male: [17000,34000], Female: [18000,36000] },
+  "BC-B": { Male: [13000,26000], Female: [14000,28000] },
+  "BC-C": { Male: [11000,20000], Female: [12000,22000] },
+  "BC-D": { Male: [15000,30000], Female: [16000,32000] },
+  "BC-E": { Male: [13000,24000], Female: [14000,26000] },
+  SC: { Male: [30000,60000], Female: [32000,65000] },
+  ST: { Male: [48000,100000], Female: [50000,110000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [8000,14000], Female: [8500,15000] },
+  EWS: { Male: [11000,18000], Female: [12000,20000] },
+  "BC-A": { Male: [18000,36000], Female: [20000,38000] },
+  "BC-B": { Male: [14000,28000], Female: [15000,30000] },
+  "BC-C": { Male: [12000,22000], Female: [13000,24000] },
+  "BC-D": { Male: [16000,32000], Female: [18000,35000] },
+  "BC-E": { Male: [14000,26000], Female: [15000,28000] },
+  SC: { Male: [32000,65000], Female: [35000,70000] },
+  ST: { Male: [50000,110000], Female: [55000,120000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [9000,16000], Female: [10000,17000] },
+  EWS: { Male: [12000,20000], Female: [13000,22000] },
+  "BC-A": { Male: [20000,38000], Female: [22000,40000] },
+  "BC-B": { Male: [16000,30000], Female: [17000,32000] },
+  "BC-C": { Male: [13000,24000], Female: [14000,26000] },
+  "BC-D": { Male: [18000,35000], Female: [20000,38000] },
+  "BC-E": { Male: [16000,30000], Female: [17000,32000] },
+  SC: { Male: [35000,70000], Female: [38000,75000] },
+  ST: { Male: [55000,120000], Female: [60000,130000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [12000,20000], Female: [14000,22000] },
+  EWS: { Male: [15000,25000], Female: [17000,28000] },
+  "BC-A": { Male: [30000,50000], Female: [35000,55000] },
+  "BC-B": { Male: [20000,35000], Female: [22000,40000] },
+  "BC-C": { Male: [16000,28000], Female: [18000,32000] },
+  "BC-D": { Male: [23000,40000], Female: [26000,45000] },
+  "BC-E": { Male: [20000,35000], Female: [22000,40000] },
+  SC: { Male: [45000,80000], Female: [50000,85000] },
+  ST: { Male: [70000,130000], Female: [75000,140000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [15000,25000], Female: [18000,28000] },
+  EWS: { Male: [18000,30000], Female: [22000,35000] },
+  "BC-A": { Male: [35000,60000], Female: [40000,65000] },
+  "BC-B": { Male: [25000,45000], Female: [28000,48000] },
+  "BC-C": { Male: [20000,35000], Female: [22000,38000] },
+  "BC-D": { Male: [30000,50000], Female: [32000,55000] },
+  "BC-E": { Male: [25000,42000], Female: [28000,45000] },
+  SC: { Male: [50000,85000], Female: [55000,90000] },
+  ST: { Male: [75000,140000], Female: [80000,150000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [18000,30000], Female: [22000,35000] },
+  EWS: { Male: [22000,35000], Female: [26000,40000] },
+  "BC-A": { Male: [40000,65000], Female: [45000,70000] },
+  "BC-B": { Male: [30000,50000], Female: [35000,55000] },
+  "BC-C": { Male: [25000,42000], Female: [28000,48000] },
+  "BC-D": { Male: [35000,60000], Female: [40000,65000] },
+  "BC-E": { Male: [30000,52000], Female: [35000,58000] },
+  SC: { Male: [60000,95000], Female: [65000,100000] },
+  ST: { Male: [85000,160000], Female: [90000,170000] }
+});
+
+// -------- AERONAUTICAL --------
+addBranch("AERONAUTICAL", {
+  OC: { Male: [8000,14000], Female: [9000,15000] },
+  EWS: { Male: [11000,18000], Female: [12000,20000] },
+  "BC-A": { Male: [18000,35000], Female: [20000,38000] },
+  "BC-B": { Male: [14000,28000], Female: [15000,30000] },
+  "BC-C": { Male: [12000,22000], Female: [13000,24000] },
+  "BC-D": { Male: [16000,32000], Female: [18000,35000] },
+  "BC-E": { Male: [14000,26000], Female: [15000,28000] },
+  SC: { Male: [32000,65000], Female: [35000,70000] },
+  ST: { Male: [50000,110000], Female: [55000,120000] }
+});
+
+// ================= KMIT =================
+collegeId = "12";
+collegeName = "KMIT";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [5000,9000], Female: [5500,9500] },
+  EWS: { Male: [7000,13000], Female: [7500,14000] },
+  "BC-A": { Male: [13000,28000], Female: [14000,30000] },
+  "BC-B": { Male: [9000,19000], Female: [9500,20000] },
+  "BC-C": { Male: [8000,16000], Female: [8500,17000] },
+  "BC-D": { Male: [11000,23000], Female: [12000,25000] },
+  "BC-E": { Male: [9000,18000], Female: [9500,19000] },
+  SC: { Male: [24000,50000], Female: [26000,52000] },
+  ST: { Male: [40000,85000], Female: [42000,90000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [5500,9500], Female: [6000,10000] },
+  EWS: { Male: [7500,14000], Female: [8000,15000] },
+  "BC-A": { Male: [14000,30000], Female: [15000,32000] },
+  "BC-B": { Male: [9500,20000], Female: [10000,22000] },
+  "BC-C": { Male: [8500,17000], Female: [9000,18000] },
+  "BC-D": { Male: [12000,25000], Female: [13000,27000] },
+  "BC-E": { Male: [9500,19000], Female: [10000,20000] },
+  SC: { Male: [26000,52000], Female: [28000,55000] },
+  ST: { Male: [42000,90000], Female: [45000,95000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [6000,10000], Female: [6500,11000] },
+  EWS: { Male: [8000,15000], Female: [8500,16000] },
+  "BC-A": { Male: [15000,32000], Female: [16000,34000] },
+  "BC-B": { Male: [10000,22000], Female: [11000,24000] },
+  "BC-C": { Male: [9000,18000], Female: [9500,19000] },
+  "BC-D": { Male: [13000,27000], Female: [14000,29000] },
+  "BC-E": { Male: [10000,20000], Female: [11000,22000] },
+  SC: { Male: [28000,55000], Female: [30000,60000] },
+  ST: { Male: [45000,95000], Female: [48000,100000] }
+});
+
+// ================= CMRCET =================
+collegeId = "13";
+collegeName = "CMRCET";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [8000,14000], Female: [8500,15000] },
+  EWS: { Male: [11000,18000], Female: [12000,20000] },
+  "BC-A": { Male: [18000,35000], Female: [20000,38000] },
+  "BC-B": { Male: [14000,28000], Female: [15000,30000] },
+  "BC-C": { Male: [12000,22000], Female: [13000,24000] },
+  "BC-D": { Male: [16000,32000], Female: [18000,35000] },
+  "BC-E": { Male: [14000,26000], Female: [15000,28000] },
+  SC: { Male: [32000,65000], Female: [35000,70000] },
+  ST: { Male: [50000,110000], Female: [55000,120000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [9000,16000], Female: [9500,17000] },
+  EWS: { Male: [12000,20000], Female: [13000,22000] },
+  "BC-A": { Male: [20000,38000], Female: [22000,40000] },
+  "BC-B": { Male: [16000,30000], Female: [17000,32000] },
+  "BC-C": { Male: [14000,25000], Female: [15000,26000] },
+  "BC-D": { Male: [18000,35000], Female: [20000,38000] },
+  "BC-E": { Male: [16000,30000], Female: [17000,32000] },
+  SC: { Male: [35000,70000], Female: [38000,75000] },
+  ST: { Male: [55000,120000], Female: [60000,130000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [9500,17000], Female: [10000,18000] },
+  EWS: { Male: [13000,22000], Female: [14000,23000] },
+  "BC-A": { Male: [22000,40000], Female: [24000,42000] },
+  "BC-B": { Male: [17000,32000], Female: [18000,35000] },
+  "BC-C": { Male: [15000,26000], Female: [16000,28000] },
+  "BC-D": { Male: [20000,38000], Female: [22000,40000] },
+  "BC-E": { Male: [17000,32000], Female: [18000,34000] },
+  SC: { Male: [38000,75000], Female: [40000,80000] },
+  ST: { Male: [60000,130000], Female: [65000,140000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [10000,18000], Female: [11000,20000] },
+  EWS: { Male: [14000,23000], Female: [15000,25000] },
+  "BC-A": { Male: [24000,42000], Female: [26000,45000] },
+  "BC-B": { Male: [18000,35000], Female: [20000,38000] },
+  "BC-C": { Male: [16000,28000], Female: [17000,30000] },
+  "BC-D": { Male: [22000,40000], Female: [24000,42000] },
+  "BC-E": { Male: [18000,34000], Female: [20000,36000] },
+  SC: { Male: [40000,80000], Female: [42000,85000] },
+  ST: { Male: [65000,140000], Female: [70000,150000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [11000,20000], Female: [12000,22000] },
+  EWS: { Male: [15000,25000], Female: [17000,28000] },
+  "BC-A": { Male: [26000,45000], Female: [28000,48000] },
+  "BC-B": { Male: [20000,38000], Female: [22000,40000] },
+  "BC-C": { Male: [17000,30000], Female: [19000,32000] },
+  "BC-D": { Male: [24000,42000], Female: [26000,45000] },
+  "BC-E": { Male: [20000,36000], Female: [22000,38000] },
+  SC: { Male: [42000,85000], Female: [45000,90000] },
+  ST: { Male: [70000,150000], Female: [75000,160000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [13000,23000], Female: [14000,25000] },
+  EWS: { Male: [17000,28000], Female: [18000,30000] },
+  "BC-A": { Male: [28000,48000], Female: [30000,52000] },
+  "BC-B": { Male: [23000,40000], Female: [25000,42000] },
+  "BC-C": { Male: [20000,35000], Female: [22000,38000] },
+  "BC-D": { Male: [26000,45000], Female: [28000,48000] },
+  "BC-E": { Male: [23000,38000], Female: [25000,42000] },
+  SC: { Male: [45000,90000], Female: [50000,95000] },
+  ST: { Male: [75000,160000], Female: [80000,170000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [18000,30000], Female: [20000,33000] },
+  EWS: { Male: [22000,35000], Female: [25000,38000] },
+  "BC-A": { Male: [40000,65000], Female: [45000,70000] },
+  "BC-B": { Male: [30000,50000], Female: [33000,55000] },
+  "BC-C": { Male: [25000,42000], Female: [28000,48000] },
+  "BC-D": { Male: [35000,60000], Female: [40000,65000] },
+  "BC-E": { Male: [30000,52000], Female: [33000,58000] },
+  SC: { Male: [60000,95000], Female: [65000,100000] },
+  ST: { Male: [85000,160000], Female: [90000,170000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [22000,35000], Female: [25000,38000] },
+  EWS: { Male: [26000,40000], Female: [30000,45000] },
+  "BC-A": { Male: [45000,70000], Female: [50000,75000] },
+  "BC-B": { Male: [35000,55000], Female: [38000,60000] },
+  "BC-C": { Male: [30000,50000], Female: [32000,55000] },
+  "BC-D": { Male: [40000,65000], Female: [45000,70000] },
+  "BC-E": { Male: [35000,60000], Female: [38000,65000] },
+  SC: { Male: [65000,100000], Female: [70000,110000] },
+  ST: { Male: [90000,170000], Female: [100000,180000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [25000,40000], Female: [28000,45000] },
+  EWS: { Male: [30000,45000], Female: [35000,50000] },
+  "BC-A": { Male: [50000,75000], Female: [55000,80000] },
+  "BC-B": { Male: [40000,60000], Female: [45000,65000] },
+  "BC-C": { Male: [35000,55000], Female: [38000,60000] },
+  "BC-D": { Male: [45000,70000], Female: [50000,75000] },
+  "BC-E": { Male: [40000,65000], Female: [45000,70000] },
+  SC: { Male: [70000,110000], Female: [75000,120000] },
+  ST: { Male: [100000,180000], Female: [110000,190000] }
+});
+
+// ================= CMREC =================
+collegeId = "14";
+collegeName = "CMREC";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [9000,15000], Female: [9500,16000] },
+  EWS: { Male: [12000,20000], Female: [13000,22000] },
+  "BC-A": { Male: [20000,38000], Female: [22000,40000] },
+  "BC-B": { Male: [15000,30000], Female: [16000,32000] },
+  "BC-C": { Male: [13000,24000], Female: [14000,26000] },
+  "BC-D": { Male: [18000,35000], Female: [20000,38000] },
+  "BC-E": { Male: [15000,28000], Female: [16000,30000] },
+  SC: { Male: [35000,70000], Female: [38000,75000] },
+  ST: { Male: [55000,120000], Female: [60000,130000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [10000,17000], Female: [11000,18000] },
+  EWS: { Male: [14000,23000], Female: [15000,25000] },
+  "BC-A": { Male: [23000,42000], Female: [25000,45000] },
+  "BC-B": { Male: [17000,33000], Female: [18000,35000] },
+  "BC-C": { Male: [15000,27000], Female: [16000,29000] },
+  "BC-D": { Male: [21000,39000], Female: [23000,42000] },
+  "BC-E": { Male: [17000,32000], Female: [18000,34000] },
+  SC: { Male: [39000,78000], Female: [42000,82000] },
+  ST: { Male: [62000,135000], Female: [65000,140000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [11000,18000], Female: [12000,20000] },
+  EWS: { Male: [15000,25000], Female: [17000,28000] },
+  "BC-A": { Male: [25000,45000], Female: [28000,48000] },
+  "BC-B": { Male: [18000,35000], Female: [20000,38000] },
+  "BC-C": { Male: [16000,29000], Female: [18000,32000] },
+  "BC-D": { Male: [23000,42000], Female: [25000,45000] },
+  "BC-E": { Male: [18000,34000], Female: [20000,36000] },
+  SC: { Male: [42000,82000], Female: [45000,90000] },
+  ST: { Male: [65000,140000], Female: [70000,150000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [12000,20000], Female: [13000,22000] },
+  EWS: { Male: [17000,28000], Female: [18000,30000] },
+  "BC-A": { Male: [28000,48000], Female: [30000,52000] },
+  "BC-B": { Male: [20000,38000], Female: [22000,40000] },
+  "BC-C": { Male: [18000,32000], Female: [20000,35000] },
+  "BC-D": { Male: [25000,45000], Female: [28000,48000] },
+  "BC-E": { Male: [20000,36000], Female: [22000,38000] },
+  SC: { Male: [45000,90000], Female: [48000,95000] },
+  ST: { Male: [70000,150000], Female: [75000,160000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [13000,22000], Female: [14000,24000] },
+  EWS: { Male: [18000,30000], Female: [20000,32000] },
+  "BC-A": { Male: [30000,52000], Female: [32000,55000] },
+  "BC-B": { Male: [22000,40000], Female: [24000,42000] },
+  "BC-C": { Male: [20000,35000], Female: [22000,38000] },
+  "BC-D": { Male: [28000,48000], Female: [30000,50000] },
+  "BC-E": { Male: [22000,38000], Female: [24000,42000] },
+  SC: { Male: [48000,95000], Female: [50000,100000] },
+  ST: { Male: [75000,160000], Female: [80000,170000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [15000,25000], Female: [16000,27000] },
+  EWS: { Male: [20000,32000], Female: [22000,35000] },
+  "BC-A": { Male: [32000,55000], Female: [35000,60000] },
+  "BC-B": { Male: [25000,42000], Female: [27000,45000] },
+  "BC-C": { Male: [22000,38000], Female: [24000,42000] },
+  "BC-D": { Male: [30000,50000], Female: [32000,55000] },
+  "BC-E": { Male: [25000,42000], Female: [27000,45000] },
+  SC: { Male: [50000,100000], Female: [55000,105000] },
+  ST: { Male: [80000,170000], Female: [85000,180000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [20000,33000], Female: [22000,36000] },
+  EWS: { Male: [25000,40000], Female: [28000,45000] },
+  "BC-A": { Male: [45000,70000], Female: [50000,75000] },
+  "BC-B": { Male: [33000,55000], Female: [36000,60000] },
+  "BC-C": { Male: [28000,48000], Female: [32000,55000] },
+  "BC-D": { Male: [40000,65000], Female: [45000,70000] },
+  "BC-E": { Male: [33000,58000], Female: [36000,62000] },
+  SC: { Male: [65000,105000], Female: [70000,110000] },
+  ST: { Male: [90000,180000], Female: [100000,190000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [25000,40000], Female: [28000,45000] },
+  EWS: { Male: [30000,45000], Female: [35000,50000] },
+  "BC-A": { Male: [50000,75000], Female: [55000,80000] },
+  "BC-B": { Male: [40000,60000], Female: [45000,65000] },
+  "BC-C": { Male: [35000,55000], Female: [38000,60000] },
+  "BC-D": { Male: [45000,70000], Female: [50000,75000] },
+  "BC-E": { Male: [40000,65000], Female: [45000,70000] },
+  SC: { Male: [70000,110000], Female: [75000,120000] },
+  ST: { Male: [100000,190000], Female: [110000,200000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [30000,45000], Female: [35000,50000] },
+  EWS: { Male: [35000,50000], Female: [40000,60000] },
+  "BC-A": { Male: [55000,80000], Female: [60000,90000] },
+  "BC-B": { Male: [45000,65000], Female: [50000,70000] },
+  "BC-C": { Male: [38000,60000], Female: [42000,65000] },
+  "BC-D": { Male: [50000,75000], Female: [55000,80000] },
+  "BC-E": { Male: [45000,70000], Female: [50000,75000] },
+  SC: { Male: [75000,120000], Female: [80000,130000] },
+  ST: { Male: [110000,200000], Female: [120000,210000] }
+});
+
+// ================= CMRTC =================
+collegeId = "15";
+collegeName = "CMRTC";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [12000,20000], Female: [13000,22000] },
+  EWS: { Male: [16000,26000], Female: [18000,30000] },
+  "BC-A": { Male: [26000,45000], Female: [30000,50000] },
+  "BC-B": { Male: [20000,38000], Female: [22000,40000] },
+  "BC-C": { Male: [18000,32000], Female: [20000,35000] },
+  "BC-D": { Male: [24000,42000], Female: [26000,45000] },
+  "BC-E": { Male: [20000,36000], Female: [22000,38000] },
+  SC: { Male: [42000,85000], Female: [45000,90000] },
+  ST: { Male: [70000,150000], Female: [75000,160000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [14000,23000], Female: [15000,25000] },
+  EWS: { Male: [18000,30000], Female: [20000,32000] },
+  "BC-A": { Male: [30000,52000], Female: [32000,55000] },
+  "BC-B": { Male: [23000,42000], Female: [25000,45000] },
+  "BC-C": { Male: [20000,36000], Female: [22000,38000] },
+  "BC-D": { Male: [28000,48000], Female: [30000,50000] },
+  "BC-E": { Male: [23000,40000], Female: [25000,42000] },
+  SC: { Male: [48000,95000], Female: [50000,100000] },
+  ST: { Male: [80000,170000], Female: [85000,180000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [15000,25000], Female: [16000,27000] },
+  EWS: { Male: [20000,32000], Female: [22000,35000] },
+  "BC-A": { Male: [32000,55000], Female: [35000,60000] },
+  "BC-B": { Male: [25000,45000], Female: [27000,48000] },
+  "BC-C": { Male: [22000,38000], Female: [24000,42000] },
+  "BC-D": { Male: [30000,50000], Female: [32000,55000] },
+  "BC-E": { Male: [25000,42000], Female: [27000,45000] },
+  SC: { Male: [50000,100000], Female: [55000,105000] },
+  ST: { Male: [85000,180000], Female: [90000,190000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [16000,27000], Female: [17000,29000] },
+  EWS: { Male: [22000,35000], Female: [24000,38000] },
+  "BC-A": { Male: [35000,60000], Female: [38000,65000] },
+  "BC-B": { Male: [27000,48000], Female: [29000,52000] },
+  "BC-C": { Male: [24000,42000], Female: [26000,45000] },
+  "BC-D": { Male: [32000,55000], Female: [35000,60000] },
+  "BC-E": { Male: [27000,45000], Female: [29000,50000] },
+  SC: { Male: [55000,105000], Female: [60000,110000] },
+  ST: { Male: [90000,190000], Female: [95000,200000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [17000,29000], Female: [18000,31000] },
+  EWS: { Male: [24000,38000], Female: [26000,40000] },
+  "BC-A": { Male: [38000,65000], Female: [40000,70000] },
+  "BC-B": { Male: [29000,52000], Female: [31000,55000] },
+  "BC-C": { Male: [26000,45000], Female: [28000,48000] },
+  "BC-D": { Male: [35000,60000], Female: [38000,65000] },
+  "BC-E": { Male: [29000,50000], Female: [31000,52000] },
+  SC: { Male: [60000,110000], Female: [65000,120000] },
+  ST: { Male: [95000,200000], Female: [100000,210000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [20000,33000], Female: [22000,36000] },
+  EWS: { Male: [26000,40000], Female: [28000,45000] },
+  "BC-A": { Male: [40000,70000], Female: [45000,75000] },
+  "BC-B": { Male: [33000,55000], Female: [36000,60000] },
+  "BC-C": { Male: [28000,48000], Female: [32000,55000] },
+  "BC-D": { Male: [38000,65000], Female: [42000,70000] },
+  "BC-E": { Male: [33000,58000], Female: [36000,62000] },
+  SC: { Male: [65000,120000], Female: [70000,130000] },
+  ST: { Male: [100000,210000], Female: [110000,220000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [28000,45000], Female: [30000,50000] },
+  EWS: { Male: [35000,55000], Female: [38000,60000] },
+  "BC-A": { Male: [55000,85000], Female: [60000,90000] },
+  "BC-B": { Male: [45000,70000], Female: [50000,75000] },
+  "BC-C": { Male: [38000,65000], Female: [42000,70000] },
+  "BC-D": { Male: [50000,80000], Female: [55000,85000] },
+  "BC-E": { Male: [45000,75000], Female: [50000,78000] },
+  SC: { Male: [80000,130000], Female: [85000,140000] },
+  ST: { Male: [120000,230000], Female: [130000,240000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [32000,52000], Female: [35000,60000] },
+  EWS: { Male: [40000,65000], Female: [45000,70000] },
+  "BC-A": { Male: [65000,95000], Female: [70000,100000] },
+  "BC-B": { Male: [52000,80000], Female: [60000,85000] },
+  "BC-C": { Male: [45000,75000], Female: [50000,80000] },
+  "BC-D": { Male: [60000,90000], Female: [65000,95000] },
+  "BC-E": { Male: [52000,82000], Female: [60000,88000] },
+  SC: { Male: [90000,140000], Female: [95000,150000] },
+  ST: { Male: [140000,250000], Female: [150000,260000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [35000,60000], Female: [40000,65000] },
+  EWS: { Male: [45000,70000], Female: [50000,80000] },
+  "BC-A": { Male: [70000,100000], Female: [80000,110000] },
+  "BC-B": { Male: [60000,85000], Female: [65000,90000] },
+  "BC-C": { Male: [50000,80000], Female: [55000,85000] },
+  "BC-D": { Male: [65000,95000], Female: [70000,100000] },
+  "BC-E": { Male: [60000,88000], Female: [65000,92000] },
+  SC: { Male: [95000,150000], Female: [100000,160000] },
+  ST: { Male: [150000,260000], Female: [160000,270000] }
+});
+
+// ================= CMRIT =================
+collegeId = "16";
+collegeName = "CMRIT";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [15000,25000], Female: [16000,27000] },
+  EWS: { Male: [20000,32000], Female: [22000,35000] },
+  "BC-A": { Male: [32000,55000], Female: [35000,60000] },
+  "BC-B": { Male: [25000,45000], Female: [27000,48000] },
+  "BC-C": { Male: [22000,38000], Female: [24000,42000] },
+  "BC-D": { Male: [30000,50000], Female: [32000,55000] },
+  "BC-E": { Male: [25000,42000], Female: [27000,45000] },
+  SC: { Male: [50000,100000], Female: [55000,105000] },
+  ST: { Male: [85000,180000], Female: [90000,190000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [17000,29000], Female: [18000,31000] },
+  EWS: { Male: [24000,38000], Female: [26000,40000] },
+  "BC-A": { Male: [38000,65000], Female: [40000,70000] },
+  "BC-B": { Male: [29000,52000], Female: [31000,55000] },
+  "BC-C": { Male: [26000,45000], Female: [28000,48000] },
+  "BC-D": { Male: [35000,60000], Female: [38000,65000] },
+  "BC-E": { Male: [29000,50000], Female: [31000,52000] },
+  SC: { Male: [60000,110000], Female: [65000,120000] },
+  ST: { Male: [95000,200000], Female: [100000,210000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [18000,30000], Female: [20000,33000] },
+  EWS: { Male: [25000,40000], Female: [28000,45000] },
+  "BC-A": { Male: [40000,70000], Female: [45000,75000] },
+  "BC-B": { Male: [30000,55000], Female: [33000,60000] },
+  "BC-C": { Male: [28000,48000], Female: [30000,52000] },
+  "BC-D": { Male: [38000,65000], Female: [42000,70000] },
+  "BC-E": { Male: [30000,52000], Female: [33000,58000] },
+  SC: { Male: [65000,120000], Female: [70000,130000] },
+  ST: { Male: [100000,210000], Female: [110000,220000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [20000,33000], Female: [22000,36000] },
+  EWS: { Male: [28000,45000], Female: [30000,48000] },
+  "BC-A": { Male: [45000,75000], Female: [48000,80000] },
+  "BC-B": { Male: [33000,60000], Female: [36000,65000] },
+  "BC-C": { Male: [30000,52000], Female: [32000,55000] },
+  "BC-D": { Male: [42000,70000], Female: [45000,75000] },
+  "BC-E": { Male: [33000,58000], Female: [36000,62000] },
+  SC: { Male: [70000,130000], Female: [75000,140000] },
+  ST: { Male: [110000,220000], Female: [120000,230000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [22000,36000], Female: [24000,38000] },
+  EWS: { Male: [30000,48000], Female: [32000,50000] },
+  "BC-A": { Male: [48000,80000], Female: [50000,85000] },
+  "BC-B": { Male: [36000,65000], Female: [38000,70000] },
+  "BC-C": { Male: [32000,55000], Female: [35000,60000] },
+  "BC-D": { Male: [45000,75000], Female: [48000,80000] },
+  "BC-E": { Male: [36000,62000], Female: [38000,68000] },
+  SC: { Male: [75000,140000], Female: [80000,150000] },
+  ST: { Male: [120000,230000], Female: [130000,240000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [25000,40000], Female: [27000,42000] },
+  EWS: { Male: [32000,50000], Female: [35000,55000] },
+  "BC-A": { Male: [50000,85000], Female: [55000,90000] },
+  "BC-B": { Male: [40000,70000], Female: [42000,75000] },
+  "BC-C": { Male: [35000,60000], Female: [38000,65000] },
+  "BC-D": { Male: [48000,80000], Female: [52000,85000] },
+  "BC-E": { Male: [40000,68000], Female: [42000,72000] },
+  SC: { Male: [80000,150000], Female: [85000,160000] },
+  ST: { Male: [130000,240000], Female: [140000,250000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [32000,50000], Female: [35000,55000] },
+  EWS: { Male: [40000,60000], Female: [45000,70000] },
+  "BC-A": { Male: [60000,95000], Female: [70000,105000] },
+  "BC-B": { Male: [50000,80000], Female: [55000,85000] },
+  "BC-C": { Male: [45000,75000], Female: [50000,80000] },
+  "BC-D": { Male: [60000,90000], Female: [65000,95000] },
+  "BC-E": { Male: [50000,82000], Female: [55000,88000] },
+  SC: { Male: [90000,150000], Female: [95000,160000] },
+  ST: { Male: [150000,260000], Female: [160000,270000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [35000,55000], Female: [38000,60000] },
+  EWS: { Male: [45000,70000], Female: [50000,75000] },
+  "BC-A": { Male: [70000,105000], Female: [75000,110000] },
+  "BC-B": { Male: [55000,85000], Female: [60000,90000] },
+  "BC-C": { Male: [50000,80000], Female: [55000,85000] },
+  "BC-D": { Male: [65000,95000], Female: [70000,100000] },
+  "BC-E": { Male: [55000,88000], Female: [60000,92000] },
+  SC: { Male: [95000,160000], Female: [100000,170000] },
+  ST: { Male: [160000,270000], Female: [170000,280000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [40000,65000], Female: [45000,70000] },
+  EWS: { Male: [50000,80000], Female: [55000,85000] },
+  "BC-A": { Male: [80000,115000], Female: [85000,120000] },
+  "BC-B": { Male: [65000,95000], Female: [70000,100000] },
+  "BC-C": { Male: [55000,90000], Female: [60000,95000] },
+  "BC-D": { Male: [70000,105000], Female: [75000,110000] },
+  "BC-E": { Male: [65000,100000], Female: [70000,105000] },
+  SC: { Male: [100000,170000], Female: [110000,180000] },
+  ST: { Male: [170000,280000], Female: [180000,300000] }
+});
+
+// ================= GLEC =================
+collegeId = "17";
+collegeName = "GLEC";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [18000,30000], Female: [20000,32000] },
+  EWS: { Male: [24000,38000], Female: [26000,42000] },
+  "BC-A": { Male: [38000,65000], Female: [42000,70000] },
+  "BC-B": { Male: [30000,55000], Female: [32000,58000] },
+  "BC-C": { Male: [26000,45000], Female: [28000,48000] },
+  "BC-D": { Male: [35000,60000], Female: [38000,65000] },
+  "BC-E": { Male: [30000,52000], Female: [32000,55000] },
+  SC: { Male: [60000,110000], Female: [65000,120000] },
+  ST: { Male: [100000,200000], Female: [110000,210000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [20000,33000], Female: [22000,35000] },
+  EWS: { Male: [26000,42000], Female: [28000,45000] },
+  "BC-A": { Male: [42000,70000], Female: [45000,75000] },
+  "BC-B": { Male: [33000,60000], Female: [35000,62000] },
+  "BC-C": { Male: [28000,50000], Female: [30000,52000] },
+  "BC-D": { Male: [38000,65000], Female: [40000,70000] },
+  "BC-E": { Male: [33000,58000], Female: [35000,60000] },
+  SC: { Male: [65000,120000], Female: [70000,130000] },
+  ST: { Male: [110000,210000], Female: [120000,220000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [22000,35000], Female: [24000,38000] },
+  EWS: { Male: [28000,45000], Female: [30000,48000] },
+  "BC-A": { Male: [45000,75000], Female: [48000,80000] },
+  "BC-B": { Male: [35000,62000], Female: [38000,65000] },
+  "BC-C": { Male: [30000,52000], Female: [32000,55000] },
+  "BC-D": { Male: [40000,70000], Female: [42000,75000] },
+  "BC-E": { Male: [35000,60000], Female: [38000,62000] },
+  SC: { Male: [70000,130000], Female: [75000,140000] },
+  ST: { Male: [120000,220000], Female: [130000,230000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [24000,38000], Female: [26000,40000] },
+  EWS: { Male: [30000,48000], Female: [32000,50000] },
+  "BC-A": { Male: [48000,80000], Female: [50000,85000] },
+  "BC-B": { Male: [38000,65000], Female: [40000,70000] },
+  "BC-C": { Male: [32000,55000], Female: [35000,60000] },
+  "BC-D": { Male: [42000,75000], Female: [45000,80000] },
+  "BC-E": { Male: [38000,62000], Female: [40000,65000] },
+  SC: { Male: [75000,140000], Female: [80000,150000] },
+  ST: { Male: [130000,230000], Female: [140000,240000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [25000,40000], Female: [28000,42000] },
+  EWS: { Male: [32000,50000], Female: [35000,55000] },
+  "BC-A": { Male: [50000,85000], Female: [55000,90000] },
+  "BC-B": { Male: [40000,70000], Female: [42000,75000] },
+  "BC-C": { Male: [35000,60000], Female: [38000,65000] },
+  "BC-D": { Male: [45000,80000], Female: [50000,85000] },
+  "BC-E": { Male: [40000,65000], Female: [42000,70000] },
+  SC: { Male: [80000,150000], Female: [85000,160000] },
+  ST: { Male: [140000,240000], Female: [150000,250000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [30000,45000], Female: [32000,48000] },
+  EWS: { Male: [38000,58000], Female: [40000,62000] },
+  "BC-A": { Male: [58000,90000], Female: [62000,95000] },
+  "BC-B": { Male: [45000,75000], Female: [48000,80000] },
+  "BC-C": { Male: [40000,65000], Female: [42000,70000] },
+  "BC-D": { Male: [52000,85000], Female: [55000,90000] },
+  "BC-E": { Male: [45000,70000], Female: [48000,75000] },
+  SC: { Male: [85000,160000], Female: [90000,170000] },
+  ST: { Male: [150000,250000], Female: [160000,260000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [40000,60000], Female: [42000,65000] },
+  EWS: { Male: [50000,75000], Female: [55000,80000] },
+  "BC-A": { Male: [75000,110000], Female: [80000,115000] },
+  "BC-B": { Male: [60000,90000], Female: [65000,95000] },
+  "BC-C": { Male: [50000,80000], Female: [55000,85000] },
+  "BC-D": { Male: [65000,95000], Female: [70000,100000] },
+  "BC-E": { Male: [60000,90000], Female: [65000,95000] },
+  SC: { Male: [100000,170000], Female: [110000,180000] },
+  ST: { Male: [170000,280000], Female: [180000,290000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [45000,70000], Female: [50000,75000] },
+  EWS: { Male: [55000,85000], Female: [60000,90000] },
+  "BC-A": { Male: [85000,120000], Female: [90000,125000] },
+  "BC-B": { Male: [70000,100000], Female: [75000,105000] },
+  "BC-C": { Male: [60000,90000], Female: [65000,95000] },
+  "BC-D": { Male: [75000,105000], Female: [80000,110000] },
+  "BC-E": { Male: [70000,100000], Female: [75000,105000] },
+  SC: { Male: [110000,180000], Female: [120000,190000] },
+  ST: { Male: [180000,300000], Female: [200000,320000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [50000,80000], Female: [55000,85000] },
+  EWS: { Male: [60000,90000], Female: [65000,100000] },
+  "BC-A": { Male: [90000,130000], Female: [100000,140000] },
+  "BC-B": { Male: [80000,110000], Female: [85000,120000] },
+  "BC-C": { Male: [70000,100000], Female: [75000,110000] },
+  "BC-D": { Male: [85000,115000], Female: [90000,120000] },
+  "BC-E": { Male: [80000,110000], Female: [85000,120000] },
+  SC: { Male: [120000,200000], Female: [130000,210000] },
+  ST: { Male: [200000,320000], Female: [220000,330000] }
+});
+
+// ================= KMEC =================
+collegeId = "18";
+collegeName = "KMEC";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [20000,35000], Female: [22000,38000] },
+  EWS: { Male: [26000,42000], Female: [28000,45000] },
+  "BC-A": { Male: [42000,70000], Female: [45000,75000] },
+  "BC-B": { Male: [35000,60000], Female: [38000,65000] },
+  "BC-C": { Male: [30000,52000], Female: [32000,55000] },
+  "BC-D": { Male: [40000,68000], Female: [42000,70000] },
+  "BC-E": { Male: [35000,58000], Female: [38000,62000] },
+  SC: { Male: [65000,120000], Female: [70000,130000] },
+  ST: { Male: [110000,220000], Female: [120000,230000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [22000,38000], Female: [24000,40000] },
+  EWS: { Male: [28000,45000], Female: [30000,48000] },
+  "BC-A": { Male: [45000,75000], Female: [48000,80000] },
+  "BC-B": { Male: [38000,65000], Female: [40000,68000] },
+  "BC-C": { Male: [32000,55000], Female: [35000,60000] },
+  "BC-D": { Male: [42000,70000], Female: [45000,75000] },
+  "BC-E": { Male: [38000,62000], Female: [40000,65000] },
+  SC: { Male: [70000,130000], Female: [75000,140000] },
+  ST: { Male: [120000,230000], Female: [130000,240000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [24000,40000], Female: [26000,42000] },
+  EWS: { Male: [30000,48000], Female: [32000,50000] },
+  "BC-A": { Male: [48000,80000], Female: [50000,85000] },
+  "BC-B": { Male: [40000,68000], Female: [42000,70000] },
+  "BC-C": { Male: [35000,60000], Female: [38000,65000] },
+  "BC-D": { Male: [45000,75000], Female: [48000,80000] },
+  "BC-E": { Male: [40000,65000], Female: [42000,70000] },
+  SC: { Male: [75000,140000], Female: [80000,150000] },
+  ST: { Male: [130000,240000], Female: [140000,250000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [26000,42000], Female: [28000,45000] },
+  EWS: { Male: [32000,50000], Female: [35000,55000] },
+  "BC-A": { Male: [50000,85000], Female: [55000,90000] },
+  "BC-B": { Male: [42000,70000], Female: [45000,75000] },
+  "BC-C": { Male: [38000,65000], Female: [40000,68000] },
+  "BC-D": { Male: [48000,80000], Female: [52000,85000] },
+  "BC-E": { Male: [42000,70000], Female: [45000,75000] },
+  SC: { Male: [80000,150000], Female: [85000,160000] },
+  ST: { Male: [140000,250000], Female: [150000,260000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [28000,45000], Female: [30000,48000] },
+  EWS: { Male: [35000,55000], Female: [38000,60000] },
+  "BC-A": { Male: [55000,90000], Female: [60000,95000] },
+  "BC-B": { Male: [45000,75000], Female: [48000,80000] },
+  "BC-C": { Male: [40000,68000], Female: [42000,72000] },
+  "BC-D": { Male: [52000,85000], Female: [55000,90000] },
+  "BC-E": { Male: [45000,75000], Female: [48000,80000] },
+  SC: { Male: [85000,160000], Female: [90000,170000] },
+  ST: { Male: [150000,260000], Female: [160000,270000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [32000,50000], Female: [35000,55000] },
+  EWS: { Male: [40000,62000], Female: [45000,70000] },
+  "BC-A": { Male: [62000,95000], Female: [70000,100000] },
+  "BC-B": { Male: [50000,80000], Female: [55000,85000] },
+  "BC-C": { Male: [45000,75000], Female: [50000,80000] },
+  "BC-D": { Male: [58000,90000], Female: [65000,95000] },
+  "BC-E": { Male: [50000,78000], Female: [55000,85000] },
+  SC: { Male: [90000,170000], Female: [95000,180000] },
+  ST: { Male: [160000,270000], Female: [170000,280000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [40000,65000], Female: [45000,70000] },
+  EWS: { Male: [50000,80000], Female: [55000,85000] },
+  "BC-A": { Male: [80000,115000], Female: [85000,120000] },
+  "BC-B": { Male: [65000,95000], Female: [70000,100000] },
+  "BC-C": { Male: [55000,85000], Female: [60000,90000] },
+  "BC-D": { Male: [70000,100000], Female: [75000,105000] },
+  "BC-E": { Male: [65000,95000], Female: [70000,100000] },
+  SC: { Male: [100000,180000], Female: [110000,190000] },
+  ST: { Male: [180000,300000], Female: [190000,310000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [45000,75000], Female: [50000,80000] },
+  EWS: { Male: [55000,90000], Female: [60000,95000] },
+  "BC-A": { Male: [90000,130000], Female: [95000,140000] },
+  "BC-B": { Male: [75000,105000], Female: [80000,110000] },
+  "BC-C": { Male: [65000,95000], Female: [70000,100000] },
+  "BC-D": { Male: [80000,110000], Female: [85000,115000] },
+  "BC-E": { Male: [75000,105000], Female: [80000,110000] },
+  SC: { Male: [110000,190000], Female: [120000,200000] },
+  ST: { Male: [190000,310000], Female: [200000,320000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [50000,80000], Female: [55000,90000] },
+  EWS: { Male: [60000,95000], Female: [65000,100000] },
+  "BC-A": { Male: [95000,140000], Female: [100000,150000] },
+  "BC-B": { Male: [80000,110000], Female: [90000,120000] },
+  "BC-C": { Male: [70000,100000], Female: [80000,110000] },
+  "BC-D": { Male: [85000,115000], Female: [95000,125000] },
+  "BC-E": { Male: [80000,110000], Female: [90000,120000] },
+  SC: { Male: [120000,200000], Female: [130000,210000] },
+  ST: { Male: [200000,320000], Female: [220000,330000] }
+});
+
+// ================= MREC =================
+collegeId = "19";
+collegeName = "MREC";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [25000,42000], Female: [28000,45000] },
+  EWS: { Male: [32000,55000], Female: [35000,60000] },
+  "BC-A": { Male: [55000,90000], Female: [60000,95000] },
+  "BC-B": { Male: [42000,75000], Female: [45000,80000] },
+  "BC-C": { Male: [38000,65000], Female: [40000,70000] },
+  "BC-D": { Male: [50000,85000], Female: [55000,90000] },
+  "BC-E": { Male: [42000,70000], Female: [45000,75000] },
+  SC: { Male: [85000,150000], Female: [90000,160000] },
+  ST: { Male: [140000,250000], Female: [150000,260000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [28000,48000], Female: [30000,50000] },
+  EWS: { Male: [35000,62000], Female: [38000,65000] },
+  "BC-A": { Male: [62000,100000], Female: [65000,105000] },
+  "BC-B": { Male: [48000,85000], Female: [50000,90000] },
+  "BC-C": { Male: [42000,75000], Female: [45000,78000] },
+  "BC-D": { Male: [58000,95000], Female: [60000,100000] },
+  "BC-E": { Male: [48000,80000], Female: [50000,85000] },
+  SC: { Male: [90000,160000], Female: [95000,170000] },
+  ST: { Male: [150000,260000], Female: [160000,270000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [30000,50000], Female: [32000,55000] },
+  EWS: { Male: [38000,65000], Female: [40000,70000] },
+  "BC-A": { Male: [65000,105000], Female: [70000,110000] },
+  "BC-B": { Male: [50000,90000], Female: [55000,95000] },
+  "BC-C": { Male: [45000,78000], Female: [48000,82000] },
+  "BC-D": { Male: [60000,100000], Female: [65000,105000] },
+  "BC-E": { Male: [50000,85000], Female: [55000,90000] },
+  SC: { Male: [95000,170000], Female: [100000,180000] },
+  ST: { Male: [160000,270000], Female: [170000,280000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [32000,55000], Female: [35000,58000] },
+  EWS: { Male: [40000,70000], Female: [42000,75000] },
+  "BC-A": { Male: [70000,110000], Female: [75000,115000] },
+  "BC-B": { Male: [55000,95000], Female: [58000,100000] },
+  "BC-C": { Male: [48000,82000], Female: [50000,85000] },
+  "BC-D": { Male: [65000,105000], Female: [70000,110000] },
+  "BC-E": { Male: [55000,90000], Female: [58000,95000] },
+  SC: { Male: [100000,180000], Female: [110000,190000] },
+  ST: { Male: [170000,280000], Female: [180000,290000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [35000,58000], Female: [38000,60000] },
+  EWS: { Male: [42000,75000], Female: [45000,80000] },
+  "BC-A": { Male: [75000,115000], Female: [80000,120000] },
+  "BC-B": { Male: [58000,100000], Female: [60000,105000] },
+  "BC-C": { Male: [50000,85000], Female: [55000,90000] },
+  "BC-D": { Male: [70000,110000], Female: [75000,115000] },
+  "BC-E": { Male: [58000,95000], Female: [60000,100000] },
+  SC: { Male: [110000,190000], Female: [120000,200000] },
+  ST: { Male: [180000,290000], Female: [190000,300000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [38000,65000], Female: [40000,70000] },
+  EWS: { Male: [45000,80000], Female: [50000,85000] },
+  "BC-A": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-B": { Male: [65000,105000], Female: [70000,110000] },
+  "BC-C": { Male: [55000,90000], Female: [60000,95000] },
+  "BC-D": { Male: [75000,115000], Female: [80000,120000] },
+  "BC-E": { Male: [65000,100000], Female: [70000,105000] },
+  SC: { Male: [120000,200000], Female: [130000,210000] },
+  ST: { Male: [190000,300000], Female: [200000,310000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [45000,75000], Female: [50000,80000] },
+  EWS: { Male: [55000,90000], Female: [60000,95000] },
+  "BC-A": { Male: [90000,130000], Female: [95000,140000] },
+  "BC-B": { Male: [75000,110000], Female: [80000,115000] },
+  "BC-C": { Male: [65000,100000], Female: [70000,105000] },
+  "BC-D": { Male: [85000,120000], Female: [90000,125000] },
+  "BC-E": { Male: [75000,110000], Female: [80000,115000] },
+  SC: { Male: [130000,210000], Female: [140000,220000] },
+  ST: { Male: [200000,310000], Female: [210000,320000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [50000,85000], Female: [55000,90000] },
+  EWS: { Male: [60000,100000], Female: [65000,110000] },
+  "BC-A": { Male: [100000,140000], Female: [110000,150000] },
+  "BC-B": { Male: [85000,120000], Female: [90000,130000] },
+  "BC-C": { Male: [75000,110000], Female: [80000,120000] },
+  "BC-D": { Male: [95000,130000], Female: [100000,140000] },
+  "BC-E": { Male: [85000,120000], Female: [90000,130000] },
+  SC: { Male: [140000,220000], Female: [150000,230000] },
+  ST: { Male: [220000,330000], Female: [230000,340000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [55000,90000], Female: [60000,100000] },
+  EWS: { Male: [65000,110000], Female: [70000,120000] },
+  "BC-A": { Male: [110000,150000], Female: [120000,160000] },
+  "BC-B": { Male: [90000,130000], Female: [100000,140000] },
+  "BC-C": { Male: [80000,120000], Female: [90000,130000] },
+  "BC-D": { Male: [100000,140000], Female: [110000,150000] },
+  "BC-E": { Male: [90000,130000], Female: [100000,140000] },
+  SC: { Male: [150000,230000], Female: [160000,240000] },
+  ST: { Male: [230000,340000], Female: [240000,350000] }
+});
+
+// ================= MRECW =================
+collegeId = "20";
+collegeName = "MRECW";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: {  Male:[ ], Female: [22000,38000] },
+  EWS: {  Male:[ ], Female: [28000,45000] },
+  "BC-A": {  Male:[ ], Female: [45000,75000] },
+  "BC-B": {  Male:[ ], Female: [38000,65000] },
+  "BC-C": {  Male:[ ], Female: [32000,55000] },
+  "BC-D": {  Male:[ ], Female: [42000,70000] },
+  "BC-E": {  Male:[ ], Female: [38000,62000] },
+  SC: {  Male:[ ], Female: [70000,130000] },
+  ST: {  Male:[ ], Female: [120000,230000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: {  Male:[ ], Female: [24000,40000] },
+  EWS: {  Male:[ ], Female: [30000,48000] },
+  "BC-A": {  Male:[ ], Female: [48000,80000] },
+  "BC-B": {  Male:[ ], Female: [40000,68000] },
+  "BC-C": {  Male:[ ], Female: [35000,60000] },
+  "BC-D": {  Male:[ ], Female: [45000,75000] },
+  "BC-E": {  Male:[ ], Female: [40000,65000] },
+  SC: {  Male:[ ], Female: [75000,140000] },
+  ST: {  Male:[ ], Female: [130000,240000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: {  Male:[ ], Female: [26000,42000] },
+  EWS: {  Male:[ ], Female: [32000,50000] },
+  "BC-A": {  Male:[ ], Female: [50000,85000] },
+  "BC-B": {  Male:[ ], Female: [42000,70000] },
+  "BC-C": {  Male:[ ], Female: [38000,65000] },
+  "BC-D": {  Male:[ ], Female: [48000,80000] },
+  "BC-E": {  Male:[ ], Female: [42000,70000] },
+  SC: {  Male:[ ], Female: [80000,150000] },
+  ST: {  Male:[ ], Female: [140000,250000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: {  Male:[ ], Female: [28000,45000] },
+  EWS: {  Male:[ ], Female: [35000,55000] },
+  "BC-A": {  Male:[ ], Female: [55000,90000] },
+  "BC-B": {  Male:[ ], Female: [45000,75000] },
+  "BC-C": {  Male:[ ], Female: [40000,68000] },
+  "BC-D": {  Male:[ ], Female: [52000,85000] },
+  "BC-E": {  Male:[ ], Female: [45000,75000] },
+  SC: {  Male:[ ], Female: [85000,160000] },
+  ST: {  Male:[ ], Female: [150000,260000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: {  Male:[ ], Female: [30000,48000] },
+  EWS: {  Male:[ ], Female: [38000,60000] },
+  "BC-A": {  Male:[ ], Female: [60000,95000] },
+  "BC-B": {  Male:[ ], Female: [48000,80000] },
+  "BC-C": {  Male:[ ], Female: [42000,72000] },
+  "BC-D": {  Male:[ ], Female: [55000,90000] },
+  "BC-E": {  Male:[ ], Female: [48000,80000] },
+  SC: {  Male:[ ], Female: [90000,170000] },
+  ST: {  Male:[ ], Female: [160000,270000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: {  Male:[ ], Female: [35000,55000] },
+  EWS: {  Male:[ ], Female: [45000,70000] },
+  "BC-A": {  Male:[ ], Female: [70000,100000] },
+  "BC-B": {  Male:[ ], Female: [55000,85000] },
+  "BC-C": {  Male:[ ], Female: [50000,80000] },
+  "BC-D": {  Male:[ ], Female: [65000,95000] },
+  "BC-E": {  Male:[ ], Female: [55000,85000] },
+  SC: {  Male:[ ], Female: [95000,180000] },
+  ST: {  Male:[ ], Female: [170000,280000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: {  Male:[ ], Female: [45000,70000] },
+  EWS: {  Male:[ ], Female: [55000,85000] },
+  "BC-A": {  Male:[ ], Female: [85000,120000] },
+  "BC-B": {  Male:[ ], Female: [70000,100000] },
+  "BC-C": {  Male:[ ], Female: [60000,90000] },
+  "BC-D": {  Male:[ ], Female: [75000,105000] },
+  "BC-E": {  Male:[ ], Female: [70000,100000] },
+  SC: {  Male:[ ], Female: [110000,190000] },
+  ST: {  Male:[ ], Female: [190000,310000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: {  Male:[ ], Female: [50000,80000] },
+  EWS: {  Male:[ ], Female: [60000,95000] },
+  "BC-A": {  Male:[ ], Female: [95000,140000] },
+  "BC-B": {  Male:[ ], Female: [80000,110000] },
+  "BC-C": {  Male:[ ], Female: [70000,100000] },
+  "BC-D": {  Male:[ ], Female: [85000,115000] },
+  "BC-E": {  Male:[ ], Female: [80000,110000] },
+  SC: {  Male:[ ], Female: [120000,200000] },
+  ST: {  Male:[ ], Female: [200000,320000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: {  Male:[ ], Female: [55000,90000] },
+  EWS: {  Male:[ ], Female: [65000,100000] },
+  "BC-A": {  Male:[ ], Female: [100000,150000] },
+  "BC-B": {  Male:[ ], Female: [90000,120000] },
+  "BC-C": {  Male:[ ], Female: [80000,110000] },
+  "BC-D": {  Male:[ ], Female: [95000,125000] },
+  "BC-E": {  Male:[ ], Female: [90000,120000] },
+  SC: {  Male:[ ], Female: [130000,210000] },
+  ST: {  Male:[ ], Female: [220000,330000] }
+});
+
+// ================= MRCET =================
+collegeId = "21";
+collegeName = "MRCET";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [28000,45000], Female: [30000,48000] },
+  EWS: { Male: [35000,60000], Female: [38000,65000] },
+  "BC-A": { Male: [60000,95000], Female: [65000,100000] },
+  "BC-B": { Male: [45000,80000], Female: [48000,85000] },
+  "BC-C": { Male: [40000,70000], Female: [42000,75000] },
+  "BC-D": { Male: [55000,90000], Female: [60000,95000] },
+  "BC-E": { Male: [45000,75000], Female: [48000,80000] },
+  SC: { Male: [90000,160000], Female: [95000,170000] },
+  ST: { Male: [150000,260000], Female: [160000,270000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [30000,50000], Female: [32000,55000] },
+  EWS: { Male: [38000,65000], Female: [40000,70000] },
+  "BC-A": { Male: [65000,105000], Female: [70000,110000] },
+  "BC-B": { Male: [50000,90000], Female: [55000,95000] },
+  "BC-C": { Male: [45000,78000], Female: [48000,82000] },
+  "BC-D": { Male: [60000,100000], Female: [65000,105000] },
+  "BC-E": { Male: [50000,85000], Female: [55000,90000] },
+  SC: { Male: [95000,170000], Female: [100000,180000] },
+  ST: { Male: [160000,270000], Female: [170000,280000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [32000,55000], Female: [35000,58000] },
+  EWS: { Male: [40000,70000], Female: [42000,75000] },
+  "BC-A": { Male: [70000,110000], Female: [75000,115000] },
+  "BC-B": { Male: [55000,95000], Female: [58000,100000] },
+  "BC-C": { Male: [48000,82000], Female: [50000,85000] },
+  "BC-D": { Male: [65000,105000], Female: [70000,110000] },
+  "BC-E": { Male: [55000,90000], Female: [58000,95000] },
+  SC: { Male: [100000,180000], Female: [110000,190000] },
+  ST: { Male: [170000,280000], Female: [180000,290000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [35000,58000], Female: [38000,60000] },
+  EWS: { Male: [42000,75000], Female: [45000,80000] },
+  "BC-A": { Male: [75000,115000], Female: [80000,120000] },
+  "BC-B": { Male: [58000,100000], Female: [60000,105000] },
+  "BC-C": { Male: [50000,85000], Female: [55000,90000] },
+  "BC-D": { Male: [70000,110000], Female: [75000,115000] },
+  "BC-E": { Male: [58000,95000], Female: [60000,100000] },
+  SC: { Male: [110000,190000], Female: [120000,200000] },
+  ST: { Male: [180000,290000], Female: [190000,300000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [38000,60000], Female: [40000,65000] },
+  EWS: { Male: [45000,80000], Female: [50000,85000] },
+  "BC-A": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-B": { Male: [60000,105000], Female: [65000,110000] },
+  "BC-C": { Male: [55000,90000], Female: [60000,95000] },
+  "BC-D": { Male: [75000,115000], Female: [80000,120000] },
+  "BC-E": { Male: [60000,100000], Female: [65000,105000] },
+  SC: { Male: [120000,200000], Female: [130000,210000] },
+  ST: { Male: [190000,300000], Female: [200000,310000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [42000,70000], Female: [45000,75000] },
+  EWS: { Male: [50000,85000], Female: [55000,90000] },
+  "BC-A": { Male: [85000,125000], Female: [90000,130000] },
+  "BC-B": { Male: [70000,110000], Female: [75000,115000] },
+  "BC-C": { Male: [60000,95000], Female: [65000,100000] },
+  "BC-D": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-E": { Male: [70000,105000], Female: [75000,110000] },
+  SC: { Male: [130000,210000], Female: [140000,220000] },
+  ST: { Male: [200000,310000], Female: [210000,320000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [50000,80000], Female: [55000,85000] },
+  EWS: { Male: [60000,95000], Female: [65000,100000] },
+  "BC-A": { Male: [95000,140000], Female: [100000,145000] },
+  "BC-B": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-C": { Male: [70000,105000], Female: [75000,110000] },
+  "BC-D": { Male: [90000,130000], Female: [95000,135000] },
+  "BC-E": { Male: [80000,120000], Female: [85000,125000] },
+  SC: { Male: [140000,220000], Female: [150000,230000] },
+  ST: { Male: [210000,320000], Female: [220000,330000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [55000,90000], Female: [60000,95000] },
+  EWS: { Male: [65000,110000], Female: [70000,115000] },
+  "BC-A": { Male: [110000,150000], Female: [115000,160000] },
+  "BC-B": { Male: [90000,130000], Female: [95000,135000] },
+  "BC-C": { Male: [80000,115000], Female: [85000,120000] },
+  "BC-D": { Male: [100000,140000], Female: [105000,145000] },
+  "BC-E": { Male: [90000,130000], Female: [95000,135000] },
+  SC: { Male: [150000,230000], Female: [160000,240000] },
+  ST: { Male: [230000,340000], Female: [240000,350000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [60000,95000], Female: [65000,100000] },
+  EWS: { Male: [70000,115000], Female: [75000,120000] },
+  "BC-A": { Male: [115000,160000], Female: [120000,170000] },
+  "BC-B": { Male: [95000,135000], Female: [100000,140000] },
+  "BC-C": { Male: [85000,120000], Female: [90000,130000] },
+  "BC-D": { Male: [105000,145000], Female: [110000,150000] },
+  "BC-E": { Male: [95000,135000], Female: [100000,140000] },
+  SC: { Male: [160000,240000], Female: [170000,250000] },
+  ST: { Male: [240000,350000], Female: [250000,360000] }
+});
+
+// ================= MRIT =================
+collegeId = "22";
+collegeName = "MRIT";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [30000,50000], Female: [32000,55000] },
+  EWS: { Male: [38000,65000], Female: [40000,70000] },
+  "BC-A": { Male: [65000,105000], Female: [70000,110000] },
+  "BC-B": { Male: [50000,90000], Female: [55000,95000] },
+  "BC-C": { Male: [45000,78000], Female: [48000,82000] },
+  "BC-D": { Male: [60000,100000], Female: [65000,105000] },
+  "BC-E": { Male: [50000,85000], Female: [55000,90000] },
+  SC: { Male: [95000,170000], Female: [100000,180000] },
+  ST: { Male: [160000,270000], Female: [170000,280000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [32000,55000], Female: [35000,58000] },
+  EWS: { Male: [40000,70000], Female: [42000,75000] },
+  "BC-A": { Male: [70000,110000], Female: [75000,115000] },
+  "BC-B": { Male: [55000,95000], Female: [58000,100000] },
+  "BC-C": { Male: [48000,82000], Female: [50000,85000] },
+  "BC-D": { Male: [65000,105000], Female: [70000,110000] },
+  "BC-E": { Male: [55000,90000], Female: [58000,95000] },
+  SC: { Male: [100000,180000], Female: [110000,190000] },
+  ST: { Male: [170000,280000], Female: [180000,290000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [35000,58000], Female: [38000,60000] },
+  EWS: { Male: [42000,75000], Female: [45000,80000] },
+  "BC-A": { Male: [75000,115000], Female: [80000,120000] },
+  "BC-B": { Male: [58000,100000], Female: [60000,105000] },
+  "BC-C": { Male: [50000,85000], Female: [55000,90000] },
+  "BC-D": { Male: [70000,110000], Female: [75000,115000] },
+  "BC-E": { Male: [58000,95000], Female: [60000,100000] },
+  SC: { Male: [110000,190000], Female: [120000,200000] },
+  ST: { Male: [180000,290000], Female: [190000,300000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [38000,60000], Female: [40000,65000] },
+  EWS: { Male: [45000,80000], Female: [50000,85000] },
+  "BC-A": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-B": { Male: [60000,105000], Female: [65000,110000] },
+  "BC-C": { Male: [55000,90000], Female: [60000,95000] },
+  "BC-D": { Male: [75000,115000], Female: [80000,120000] },
+  "BC-E": { Male: [60000,100000], Female: [65000,105000] },
+  SC: { Male: [120000,200000], Female: [130000,210000] },
+  ST: { Male: [190000,300000], Female: [200000,310000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [40000,65000], Female: [42000,70000] },
+  EWS: { Male: [50000,85000], Female: [55000,90000] },
+  "BC-A": { Male: [85000,125000], Female: [90000,130000] },
+  "BC-B": { Male: [65000,110000], Female: [70000,115000] },
+  "BC-C": { Male: [60000,95000], Female: [65000,100000] },
+  "BC-D": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-E": { Male: [65000,105000], Female: [70000,110000] },
+  SC: { Male: [130000,210000], Female: [140000,220000] },
+  ST: { Male: [200000,310000], Female: [210000,320000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [45000,75000], Female: [48000,80000] },
+  EWS: { Male: [55000,90000], Female: [60000,95000] },
+  "BC-A": { Male: [90000,130000], Female: [95000,140000] },
+  "BC-B": { Male: [75000,115000], Female: [80000,120000] },
+  "BC-C": { Male: [65000,100000], Female: [70000,105000] },
+  "BC-D": { Male: [85000,125000], Female: [90000,130000] },
+  "BC-E": { Male: [75000,110000], Female: [80000,120000] },
+  SC: { Male: [140000,220000], Female: [150000,230000] },
+  ST: { Male: [210000,320000], Female: [220000,330000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [50000,85000], Female: [55000,90000] },
+  EWS: { Male: [60000,100000], Female: [65000,105000] },
+  "BC-A": { Male: [100000,140000], Female: [105000,145000] },
+  "BC-B": { Male: [85000,120000], Female: [90000,125000] },
+  "BC-C": { Male: [75000,110000], Female: [80000,115000] },
+  "BC-D": { Male: [95000,130000], Female: [100000,135000] },
+  "BC-E": { Male: [85000,120000], Female: [90000,125000] },
+  SC: { Male: [150000,230000], Female: [160000,240000] },
+  ST: { Male: [220000,330000], Female: [240000,350000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [55000,90000], Female: [60000,95000] },
+  EWS: { Male: [65000,110000], Female: [70000,115000] },
+  "BC-A": { Male: [110000,150000], Female: [115000,160000] },
+  "BC-B": { Male: [90000,130000], Female: [95000,135000] },
+  "BC-C": { Male: [80000,115000], Female: [85000,120000] },
+  "BC-D": { Male: [100000,140000], Female: [105000,145000] },
+  "BC-E": { Male: [90000,130000], Female: [95000,135000] },
+  SC: { Male: [160000,240000], Female: [170000,250000] },
+  ST: { Male: [240000,350000], Female: [250000,360000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [60000,95000], Female: [65000,100000] },
+  EWS: { Male: [70000,115000], Female: [75000,120000] },
+  "BC-A": { Male: [115000,160000], Female: [120000,170000] },
+  "BC-B": { Male: [95000,135000], Female: [100000,140000] },
+  "BC-C": { Male: [85000,120000], Female: [90000,130000] },
+  "BC-D": { Male: [105000,145000], Female: [110000,150000] },
+  "BC-E": { Male: [95000,135000], Female: [100000,140000] },
+  SC: { Male: [170000,250000], Female: [180000,260000] },
+  ST: { Male: [250000,360000], Female: [260000,370000] }
+});
+
+// ================= MRITS =================
+collegeId = "23";
+collegeName = "MRITS";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [32000,52000], Female: [35000,58000] },
+  EWS: { Male: [40000,70000], Female: [42000,75000] },
+  "BC-A": { Male: [70000,110000], Female: [75000,115000] },
+  "BC-B": { Male: [52000,90000], Female: [58000,95000] },
+  "BC-C": { Male: [45000,80000], Female: [50000,85000] },
+  "BC-D": { Male: [65000,105000], Female: [70000,110000] },
+  "BC-E": { Male: [52000,85000], Female: [58000,90000] },
+  SC: { Male: [100000,180000], Female: [110000,190000] },
+  ST: { Male: [170000,280000], Female: [180000,290000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [35000,58000], Female: [38000,60000] },
+  EWS: { Male: [42000,75000], Female: [45000,80000] },
+  "BC-A": { Male: [75000,115000], Female: [80000,120000] },
+  "BC-B": { Male: [58000,95000], Female: [60000,100000] },
+  "BC-C": { Male: [50000,85000], Female: [55000,90000] },
+  "BC-D": { Male: [70000,110000], Female: [75000,115000] },
+  "BC-E": { Male: [58000,90000], Female: [60000,95000] },
+  SC: { Male: [110000,190000], Female: [120000,200000] },
+  ST: { Male: [180000,290000], Female: [190000,300000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [38000,60000], Female: [40000,65000] },
+  EWS: { Male: [45000,80000], Female: [50000,85000] },
+  "BC-A": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-B": { Male: [60000,100000], Female: [65000,105000] },
+  "BC-C": { Male: [55000,90000], Female: [60000,95000] },
+  "BC-D": { Male: [75000,115000], Female: [80000,120000] },
+  "BC-E": { Male: [60000,95000], Female: [65000,100000] },
+  SC: { Male: [120000,200000], Female: [130000,210000] },
+  ST: { Male: [190000,300000], Female: [200000,310000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [40000,65000], Female: [42000,70000] },
+  EWS: { Male: [50000,85000], Female: [55000,90000] },
+  "BC-A": { Male: [85000,125000], Female: [90000,130000] },
+  "BC-B": { Male: [65000,105000], Female: [70000,110000] },
+  "BC-C": { Male: [60000,95000], Female: [65000,100000] },
+  "BC-D": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-E": { Male: [65000,100000], Female: [70000,105000] },
+  SC: { Male: [130000,210000], Female: [140000,220000] },
+  ST: { Male: [200000,310000], Female: [210000,320000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [42000,70000], Female: [45000,75000] },
+  EWS: { Male: [55000,90000], Female: [60000,95000] },
+  "BC-A": { Male: [90000,130000], Female: [95000,140000] },
+  "BC-B": { Male: [70000,110000], Female: [75000,115000] },
+  "BC-C": { Male: [65000,100000], Female: [70000,105000] },
+  "BC-D": { Male: [85000,125000], Female: [90000,130000] },
+  "BC-E": { Male: [70000,105000], Female: [75000,110000] },
+  SC: { Male: [140000,220000], Female: [150000,230000] },
+  ST: { Male: [210000,320000], Female: [220000,330000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [45000,75000], Female: [50000,80000] },
+  EWS: { Male: [60000,95000], Female: [65000,100000] },
+  "BC-A": { Male: [95000,140000], Female: [100000,145000] },
+  "BC-B": { Male: [75000,115000], Female: [80000,120000] },
+  "BC-C": { Male: [70000,105000], Female: [75000,110000] },
+  "BC-D": { Male: [90000,130000], Female: [95000,135000] },
+  "BC-E": { Male: [75000,110000], Female: [80000,120000] },
+  SC: { Male: [150000,230000], Female: [160000,240000] },
+  ST: { Male: [220000,330000], Female: [240000,340000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [50000,80000], Female: [55000,85000] },
+  EWS: { Male: [65000,100000], Female: [70000,105000] },
+  "BC-A": { Male: [100000,145000], Female: [105000,150000] },
+  "BC-B": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-C": { Male: [75000,110000], Female: [80000,115000] },
+  "BC-D": { Male: [95000,135000], Female: [100000,140000] },
+  "BC-E": { Male: [80000,120000], Female: [85000,125000] },
+  SC: { Male: [160000,240000], Female: [170000,250000] },
+  ST: { Male: [240000,340000], Female: [250000,350000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [55000,90000], Female: [60000,95000] },
+  EWS: { Male: [70000,110000], Female: [75000,115000] },
+  "BC-A": { Male: [110000,155000], Female: [115000,160000] },
+  "BC-B": { Male: [90000,130000], Female: [95000,135000] },
+  "BC-C": { Male: [85000,120000], Female: [90000,125000] },
+  "BC-D": { Male: [105000,145000], Female: [110000,150000] },
+  "BC-E": { Male: [90000,130000], Female: [95000,135000] },
+  SC: { Male: [170000,250000], Female: [180000,260000] },
+  ST: { Male: [250000,360000], Female: [260000,370000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [60000,95000], Female: [65000,100000] },
+  EWS: { Male: [75000,115000], Female: [80000,120000] },
+  "BC-A": { Male: [115000,160000], Female: [120000,170000] },
+  "BC-B": { Male: [95000,135000], Female: [100000,140000] },
+  "BC-C": { Male: [90000,125000], Female: [95000,130000] },
+  "BC-D": { Male: [110000,150000], Female: [115000,155000] },
+  "BC-E": { Male: [95000,135000], Female: [100000,140000] },
+  SC: { Male: [180000,260000], Female: [190000,270000] },
+  ST: { Male: [260000,370000], Female: [270000,380000] }
+});
+
+// ================= MRIET =================
+collegeId = "24";
+collegeName = "MRIET";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [35000,55000], Female: [38000,60000] },
+  EWS: { Male: [42000,70000], Female: [45000,75000] },
+  "BC-A": { Male: [70000,110000], Female: [75000,115000] },
+  "BC-B": { Male: [55000,90000], Female: [60000,95000] },
+  "BC-C": { Male: [50000,80000], Female: [55000,85000] },
+  "BC-D": { Male: [65000,105000], Female: [70000,110000] },
+  "BC-E": { Male: [55000,85000], Female: [60000,90000] },
+  SC: { Male: [100000,180000], Female: [110000,190000] },
+  ST: { Male: [170000,280000], Female: [180000,290000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [38000,60000], Female: [40000,65000] },
+  EWS: { Male: [45000,75000], Female: [50000,80000] },
+  "BC-A": { Male: [75000,115000], Female: [80000,120000] },
+  "BC-B": { Male: [60000,95000], Female: [65000,100000] },
+  "BC-C": { Male: [55000,85000], Female: [60000,90000] },
+  "BC-D": { Male: [70000,110000], Female: [75000,115000] },
+  "BC-E": { Male: [60000,90000], Female: [65000,95000] },
+  SC: { Male: [110000,190000], Female: [120000,200000] },
+  ST: { Male: [180000,290000], Female: [190000,300000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [40000,65000], Female: [42000,70000] },
+  EWS: { Male: [50000,80000], Female: [55000,85000] },
+  "BC-A": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-B": { Male: [65000,100000], Female: [70000,105000] },
+  "BC-C": { Male: [60000,90000], Female: [65000,95000] },
+  "BC-D": { Male: [75000,115000], Female: [80000,120000] },
+  "BC-E": { Male: [65000,95000], Female: [70000,100000] },
+  SC: { Male: [120000,200000], Female: [130000,210000] },
+  ST: { Male: [190000,300000], Female: [200000,310000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [42000,70000], Female: [45000,75000] },
+  EWS: { Male: [55000,85000], Female: [60000,90000] },
+  "BC-A": { Male: [85000,125000], Female: [90000,130000] },
+  "BC-B": { Male: [70000,105000], Female: [75000,110000] },
+  "BC-C": { Male: [65000,95000], Female: [70000,100000] },
+  "BC-D": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-E": { Male: [70000,100000], Female: [75000,105000] },
+  SC: { Male: [130000,210000], Female: [140000,220000] },
+  ST: { Male: [200000,310000], Female: [210000,320000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [45000,75000], Female: [48000,80000] },
+  EWS: { Male: [60000,90000], Female: [65000,95000] },
+  "BC-A": { Male: [90000,130000], Female: [95000,140000] },
+  "BC-B": { Male: [75000,110000], Female: [80000,115000] },
+  "BC-C": { Male: [70000,100000], Female: [75000,105000] },
+  "BC-D": { Male: [85000,125000], Female: [90000,130000] },
+  "BC-E": { Male: [75000,105000], Female: [80000,110000] },
+  SC: { Male: [140000,220000], Female: [150000,230000] },
+  ST: { Male: [210000,320000], Female: [220000,330000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [50000,80000], Female: [52000,85000] },
+  EWS: { Male: [65000,95000], Female: [70000,100000] },
+  "BC-A": { Male: [95000,140000], Female: [100000,145000] },
+  "BC-B": { Male: [80000,115000], Female: [85000,120000] },
+  "BC-C": { Male: [75000,105000], Female: [80000,110000] },
+  "BC-D": { Male: [90000,130000], Female: [95000,135000] },
+  "BC-E": { Male: [80000,110000], Female: [85000,120000] },
+  SC: { Male: [150000,230000], Female: [160000,240000] },
+  ST: { Male: [220000,330000], Female: [230000,340000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [55000,85000], Female: [60000,90000] },
+  EWS: { Male: [70000,100000], Female: [75000,105000] },
+  "BC-A": { Male: [100000,145000], Female: [105000,150000] },
+  "BC-B": { Male: [85000,120000], Female: [90000,125000] },
+  "BC-C": { Male: [80000,110000], Female: [85000,115000] },
+  "BC-D": { Male: [95000,135000], Female: [100000,140000] },
+  "BC-E": { Male: [85000,120000], Female: [90000,125000] },
+  SC: { Male: [160000,240000], Female: [170000,250000] },
+  ST: { Male: [230000,340000], Female: [240000,350000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [60000,90000], Female: [65000,95000] },
+  EWS: { Male: [75000,110000], Female: [80000,115000] },
+  "BC-A": { Male: [110000,155000], Female: [115000,160000] },
+  "BC-B": { Male: [90000,130000], Female: [95000,135000] },
+  "BC-C": { Male: [85000,120000], Female: [90000,125000] },
+  "BC-D": { Male: [105000,145000], Female: [110000,150000] },
+  "BC-E": { Male: [90000,130000], Female: [95000,135000] },
+  SC: { Male: [170000,250000], Female: [180000,260000] },
+  ST: { Male: [250000,360000], Female: [260000,370000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [65000,95000], Female: [70000,100000] },
+  EWS: { Male: [80000,115000], Female: [85000,120000] },
+  "BC-A": { Male: [115000,160000], Female: [120000,170000] },
+  "BC-B": { Male: [95000,135000], Female: [100000,140000] },
+  "BC-C": { Male: [90000,125000], Female: [95000,130000] },
+  "BC-D": { Male: [110000,150000], Female: [115000,155000] },
+  "BC-E": { Male: [95000,135000], Female: [100000,140000] },
+  SC: { Male: [180000,260000], Female: [190000,270000] },
+  ST: { Male: [260000,370000], Female: [270000,380000] }
+});
+
+// ================= VARDHAMAN =================
+collegeId = "25";
+collegeName = "VARDHAMAN";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [12000,20000], Female: [13000,22000] },
+  EWS: { Male: [16000,28000], Female: [18000,30000] },
+  "BC-A": { Male: [28000,50000], Female: [30000,55000] },
+  "BC-B": { Male: [20000,40000], Female: [22000,42000] },
+  "BC-C": { Male: [18000,32000], Female: [20000,35000] },
+  "BC-D": { Male: [25000,45000], Female: [28000,48000] },
+  "BC-E": { Male: [20000,38000], Female: [22000,40000] },
+  SC: { Male: [45000,90000], Female: [50000,95000] },
+  ST: { Male: [80000,170000], Female: [85000,180000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [14000,23000], Female: [15000,25000] },
+  EWS: { Male: [18000,30000], Female: [20000,32000] },
+  "BC-A": { Male: [30000,55000], Female: [32000,60000] },
+  "BC-B": { Male: [23000,42000], Female: [25000,45000] },
+  "BC-C": { Male: [20000,35000], Female: [22000,38000] },
+  "BC-D": { Male: [28000,48000], Female: [30000,50000] },
+  "BC-E": { Male: [23000,40000], Female: [25000,42000] },
+  SC: { Male: [50000,95000], Female: [55000,100000] },
+  ST: { Male: [85000,180000], Female: [90000,190000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [15000,25000], Female: [16000,27000] },
+  EWS: { Male: [20000,32000], Female: [22000,35000] },
+  "BC-A": { Male: [32000,60000], Female: [35000,65000] },
+  "BC-B": { Male: [25000,45000], Female: [27000,48000] },
+  "BC-C": { Male: [22000,38000], Female: [24000,42000] },
+  "BC-D": { Male: [30000,50000], Female: [32000,55000] },
+  "BC-E": { Male: [25000,42000], Female: [27000,45000] },
+  SC: { Male: [55000,100000], Female: [60000,110000] },
+  ST: { Male: [90000,190000], Female: [95000,200000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [16000,27000], Female: [18000,30000] },
+  EWS: { Male: [22000,35000], Female: [24000,38000] },
+  "BC-A": { Male: [35000,65000], Female: [38000,70000] },
+  "BC-B": { Male: [27000,48000], Female: [30000,52000] },
+  "BC-C": { Male: [24000,42000], Female: [26000,45000] },
+  "BC-D": { Male: [32000,55000], Female: [35000,60000] },
+  "BC-E": { Male: [27000,45000], Female: [30000,50000] },
+  SC: { Male: [60000,110000], Female: [65000,120000] },
+  ST: { Male: [95000,200000], Female: [100000,210000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [17000,28000], Female: [19000,32000] },
+  EWS: { Male: [24000,38000], Female: [26000,40000] },
+  "BC-A": { Male: [38000,70000], Female: [40000,75000] },
+  "BC-B": { Male: [28000,52000], Female: [32000,55000] },
+  "BC-C": { Male: [25000,45000], Female: [28000,48000] },
+  "BC-D": { Male: [35000,60000], Female: [38000,65000] },
+  "BC-E": { Male: [28000,50000], Female: [32000,55000] },
+  SC: { Male: [65000,120000], Female: [70000,130000] },
+  ST: { Male: [100000,210000], Female: [110000,220000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [20000,32000], Female: [22000,35000] },
+  EWS: { Male: [26000,42000], Female: [30000,48000] },
+  "BC-A": { Male: [42000,75000], Female: [48000,80000] },
+  "BC-B": { Male: [32000,55000], Female: [35000,60000] },
+  "BC-C": { Male: [28000,48000], Female: [30000,52000] },
+  "BC-D": { Male: [38000,65000], Female: [42000,70000] },
+  "BC-E": { Male: [32000,55000], Female: [35000,60000] },
+  SC: { Male: [70000,130000], Female: [75000,140000] },
+  ST: { Male: [110000,220000], Female: [120000,230000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [28000,45000], Female: [30000,50000] },
+  EWS: { Male: [35000,55000], Female: [38000,60000] },
+  "BC-A": { Male: [55000,90000], Female: [60000,95000] },
+  "BC-B": { Male: [45000,70000], Female: [50000,75000] },
+  "BC-C": { Male: [40000,65000], Female: [45000,70000] },
+  "BC-D": { Male: [50000,80000], Female: [55000,85000] },
+  "BC-E": { Male: [45000,70000], Female: [50000,75000] },
+  SC: { Male: [80000,150000], Female: [85000,160000] },
+  ST: { Male: [140000,250000], Female: [150000,260000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [32000,55000], Female: [35000,60000] },
+  EWS: { Male: [40000,65000], Female: [45000,70000] },
+  "BC-A": { Male: [65000,100000], Female: [70000,105000] },
+  "BC-B": { Male: [55000,85000], Female: [60000,90000] },
+  "BC-C": { Male: [50000,80000], Female: [55000,85000] },
+  "BC-D": { Male: [60000,90000], Female: [65000,95000] },
+  "BC-E": { Male: [55000,85000], Female: [60000,90000] },
+  SC: { Male: [90000,160000], Female: [95000,170000] },
+  ST: { Male: [150000,260000], Female: [160000,270000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [35000,60000], Female: [38000,65000] },
+  EWS: { Male: [45000,70000], Female: [50000,75000] },
+  "BC-A": { Male: [70000,105000], Female: [75000,110000] },
+  "BC-B": { Male: [60000,90000], Female: [65000,95000] },
+  "BC-C": { Male: [55000,85000], Female: [60000,90000] },
+  "BC-D": { Male: [65000,95000], Female: [70000,100000] },
+  "BC-E": { Male: [60000,90000], Female: [65000,95000] },
+  SC: { Male: [95000,170000], Female: [100000,180000] },
+  ST: { Male: [160000,270000], Female: [170000,280000] }
+});
+
+collegeId = "26";
+collegeName = "ST MARTINS";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [40000,65000], Female: [42000,70000] },
+  EWS: { Male: [50000,85000], Female: [55000,90000] },
+  "BC-A": { Male: [85000,130000], Female: [90000,135000] },
+  "BC-B": { Male: [65000,105000], Female: [70000,110000] },
+  "BC-C": { Male: [60000,95000], Female: [65000,100000] },
+  "BC-D": { Male: [75000,120000], Female: [80000,125000] },
+  "BC-E": { Male: [65000,100000], Female: [70000,105000] },
+  SC: { Male: [130000,210000], Female: [140000,220000] },
+  ST: { Male: [200000,320000], Female: [210000,330000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [42000,70000], Female: [45000,75000] },
+  EWS: { Male: [55000,90000], Female: [60000,95000] },
+  "BC-A": { Male: [90000,135000], Female: [95000,140000] },
+  "BC-B": { Male: [70000,110000], Female: [75000,115000] },
+  "BC-C": { Male: [65000,100000], Female: [70000,105000] },
+  "BC-D": { Male: [80000,125000], Female: [85000,130000] },
+  "BC-E": { Male: [70000,105000], Female: [75000,110000] },
+  SC: { Male: [140000,220000], Female: [150000,230000] },
+  ST: { Male: [210000,330000], Female: [220000,340000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [45000,75000], Female: [48000,80000] },
+  EWS: { Male: [60000,95000], Female: [65000,100000] },
+  "BC-A": { Male: [95000,140000], Female: [100000,145000] },
+  "BC-B": { Male: [75000,115000], Female: [80000,120000] },
+  "BC-C": { Male: [70000,105000], Female: [75000,110000] },
+  "BC-D": { Male: [85000,130000], Female: [90000,135000] },
+  "BC-E": { Male: [75000,110000], Female: [80000,120000] },
+  SC: { Male: [150000,230000], Female: [160000,240000] },
+  ST: { Male: [220000,340000], Female: [230000,350000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [48000,80000], Female: [50000,85000] },
+  EWS: { Male: [65000,100000], Female: [70000,105000] },
+  "BC-A": { Male: [100000,145000], Female: [105000,150000] },
+  "BC-B": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-C": { Male: [75000,110000], Female: [80000,115000] },
+  "BC-D": { Male: [90000,135000], Female: [95000,140000] },
+  "BC-E": { Male: [80000,120000], Female: [85000,125000] },
+  SC: { Male: [160000,240000], Female: [170000,250000] },
+  ST: { Male: [230000,350000], Female: [240000,360000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [50000,85000], Female: [52000,90000] },
+  EWS: { Male: [70000,105000], Female: [75000,110000] },
+  "BC-A": { Male: [105000,150000], Female: [110000,155000] },
+  "BC-B": { Male: [85000,125000], Female: [90000,130000] },
+  "BC-C": { Male: [80000,115000], Female: [85000,120000] },
+  "BC-D": { Male: [95000,140000], Female: [100000,145000] },
+  "BC-E": { Male: [85000,125000], Female: [90000,130000] },
+  SC: { Male: [170000,250000], Female: [180000,260000] },
+  ST: { Male: [240000,360000], Female: [250000,370000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [55000,90000], Female: [58000,95000] },
+  EWS: { Male: [75000,110000], Female: [80000,115000] },
+  "BC-A": { Male: [110000,155000], Female: [115000,160000] },
+  "BC-B": { Male: [90000,130000], Female: [95000,135000] },
+  "BC-C": { Male: [85000,120000], Female: [90000,125000] },
+  "BC-D": { Male: [100000,145000], Female: [105000,150000] },
+  "BC-E": { Male: [90000,130000], Female: [95000,135000] },
+  SC: { Male: [180000,260000], Female: [190000,270000] },
+  ST: { Male: [250000,370000], Female: [260000,380000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [60000,95000], Female: [65000,100000] },
+  EWS: { Male: [80000,115000], Female: [85000,120000] },
+  "BC-A": { Male: [115000,160000], Female: [120000,170000] },
+  "BC-B": { Male: [95000,135000], Female: [100000,140000] },
+  "BC-C": { Male: [90000,125000], Female: [95000,130000] },
+  "BC-D": { Male: [105000,150000], Female: [110000,155000] },
+  "BC-E": { Male: [95000,135000], Female: [100000,140000] },
+  SC: { Male: [190000,270000], Female: [200000,280000] },
+  ST: { Male: [260000,380000], Female: [270000,390000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [65000,100000], Female: [70000,110000] },
+  EWS: { Male: [85000,120000], Female: [90000,130000] },
+  "BC-A": { Male: [120000,170000], Female: [130000,180000] },
+  "BC-B": { Male: [100000,140000], Female: [110000,150000] },
+  "BC-C": { Male: [95000,130000], Female: [100000,140000] },
+  "BC-D": { Male: [110000,155000], Female: [120000,165000] },
+  "BC-E": { Male: [100000,140000], Female: [110000,150000] },
+  SC: { Male: [200000,280000], Female: [210000,290000] },
+  ST: { Male: [270000,390000], Female: [280000,400000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [70000,110000], Female: [75000,120000] },
+  EWS: { Male: [90000,130000], Female: [95000,140000] },
+  "BC-A": { Male: [130000,180000], Female: [140000,190000] },
+  "BC-B": { Male: [110000,150000], Female: [120000,160000] },
+  "BC-C": { Male: [100000,140000], Female: [110000,150000] },
+  "BC-D": { Male: [120000,165000], Female: [130000,175000] },
+  "BC-E": { Male: [110000,150000], Female: [120000,160000] },
+  SC: { Male: [210000,290000], Female: [220000,300000] },
+  ST: { Male: [280000,400000], Female: [290000,410000] }
+});
+
+collegeId = "27";
+collegeName = "METHODIST";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [38000,60000], Female: [40000,65000] },
+  EWS: { Male: [48000,80000], Female: [50000,85000] },
+  "BC-A": { Male: [80000,125000], Female: [85000,130000] },
+  "BC-B": { Male: [60000,100000], Female: [65000,105000] },
+  "BC-C": { Male: [55000,90000], Female: [60000,95000] },
+  "BC-D": { Male: [70000,115000], Female: [75000,120000] },
+  "BC-E": { Male: [60000,95000], Female: [65000,100000] },
+  SC: { Male: [120000,200000], Female: [130000,210000] },
+  ST: { Male: [190000,310000], Female: [200000,320000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [40000,65000], Female: [42000,70000] },
+  EWS: { Male: [50000,85000], Female: [55000,90000] },
+  "BC-A": { Male: [85000,130000], Female: [90000,135000] },
+  "BC-B": { Male: [65000,105000], Female: [70000,110000] },
+  "BC-C": { Male: [60000,95000], Female: [65000,100000] },
+  "BC-D": { Male: [75000,120000], Female: [80000,125000] },
+  "BC-E": { Male: [65000,100000], Female: [70000,105000] },
+  SC: { Male: [130000,210000], Female: [140000,220000] },
+  ST: { Male: [200000,320000], Female: [210000,330000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [42000,70000], Female: [45000,75000] },
+  EWS: { Male: [55000,90000], Female: [60000,95000] },
+  "BC-A": { Male: [90000,135000], Female: [95000,140000] },
+  "BC-B": { Male: [70000,110000], Female: [75000,115000] },
+  "BC-C": { Male: [65000,100000], Female: [70000,105000] },
+  "BC-D": { Male: [80000,125000], Female: [85000,130000] },
+  "BC-E": { Male: [70000,105000], Female: [75000,110000] },
+  SC: { Male: [140000,220000], Female: [150000,230000] },
+  ST: { Male: [210000,330000], Female: [220000,340000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [45000,75000], Female: [48000,80000] },
+  EWS: { Male: [60000,95000], Female: [65000,100000] },
+  "BC-A": { Male: [95000,140000], Female: [100000,145000] },
+  "BC-B": { Male: [75000,115000], Female: [80000,120000] },
+  "BC-C": { Male: [70000,105000], Female: [75000,110000] },
+  "BC-D": { Male: [85000,130000], Female: [90000,135000] },
+  "BC-E": { Male: [75000,110000], Female: [80000,120000] },
+  SC: { Male: [150000,230000], Female: [160000,240000] },
+  ST: { Male: [220000,340000], Female: [230000,350000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [48000,80000], Female: [50000,85000] },
+  EWS: { Male: [65000,100000], Female: [70000,105000] },
+  "BC-A": { Male: [100000,145000], Female: [105000,150000] },
+  "BC-B": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-C": { Male: [75000,110000], Female: [80000,115000] },
+  "BC-D": { Male: [90000,135000], Female: [95000,140000] },
+  "BC-E": { Male: [80000,120000], Female: [85000,125000] },
+  SC: { Male: [160000,240000], Female: [170000,250000] },
+  ST: { Male: [230000,350000], Female: [240000,360000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [52000,85000], Female: [55000,90000] },
+  EWS: { Male: [70000,105000], Female: [75000,110000] },
+  "BC-A": { Male: [105000,150000], Female: [110000,155000] },
+  "BC-B": { Male: [85000,125000], Female: [90000,130000] },
+  "BC-C": { Male: [80000,115000], Female: [85000,120000] },
+  "BC-D": { Male: [95000,140000], Female: [100000,145000] },
+  "BC-E": { Male: [85000,125000], Female: [90000,130000] },
+  SC: { Male: [170000,250000], Female: [180000,260000] },
+  ST: { Male: [240000,360000], Female: [250000,370000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [60000,90000], Female: [65000,95000] },
+  EWS: { Male: [75000,110000], Female: [80000,115000] },
+  "BC-A": { Male: [110000,155000], Female: [115000,160000] },
+  "BC-B": { Male: [90000,130000], Female: [95000,135000] },
+  "BC-C": { Male: [85000,120000], Female: [90000,125000] },
+  "BC-D": { Male: [100000,145000], Female: [105000,150000] },
+  "BC-E": { Male: [90000,130000], Female: [95000,135000] },
+  SC: { Male: [180000,260000], Female: [190000,270000] },
+  ST: { Male: [250000,370000], Female: [260000,380000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [65000,100000], Female: [70000,110000] },
+  EWS: { Male: [80000,120000], Female: [90000,130000] },
+  "BC-A": { Male: [120000,170000], Female: [130000,180000] },
+  "BC-B": { Male: [100000,140000], Female: [110000,150000] },
+  "BC-C": { Male: [95000,130000], Female: [100000,140000] },
+  "BC-D": { Male: [110000,155000], Female: [120000,165000] },
+  "BC-E": { Male: [100000,140000], Female: [110000,150000] },
+  SC: { Male: [200000,280000], Female: [210000,290000] },
+  ST: { Male: [270000,390000], Female: [280000,400000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [70000,110000], Female: [75000,120000] },
+  EWS: { Male: [90000,130000], Female: [95000,140000] },
+  "BC-A": { Male: [130000,180000], Female: [140000,190000] },
+  "BC-B": { Male: [110000,150000], Female: [120000,160000] },
+  "BC-C": { Male: [100000,140000], Female: [110000,150000] },
+  "BC-D": { Male: [120000,165000], Female: [130000,175000] },
+  "BC-E": { Male: [110000,150000], Female: [120000,160000] },
+  SC: { Male: [210000,290000], Female: [220000,300000] },
+  ST: { Male: [280000,400000], Female: [290000,410000] }
+});
+
+collegeId = "28";
+collegeName = "LORDS";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [45000,75000], Female: [48000,80000] },
+  EWS: { Male: [60000,95000], Female: [65000,100000] },
+  "BC-A": { Male: [95000,140000], Female: [100000,145000] },
+  "BC-B": { Male: [75000,115000], Female: [80000,120000] },
+  "BC-C": { Male: [70000,105000], Female: [75000,110000] },
+  "BC-D": { Male: [85000,130000], Female: [90000,135000] },
+  "BC-E": { Male: [75000,110000], Female: [80000,120000] },
+  SC: { Male: [150000,230000], Female: [160000,240000] },
+  ST: { Male: [220000,340000], Female: [230000,350000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [48000,80000], Female: [50000,85000] },
+  EWS: { Male: [65000,100000], Female: [70000,105000] },
+  "BC-A": { Male: [100000,145000], Female: [105000,150000] },
+  "BC-B": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-C": { Male: [75000,110000], Female: [80000,115000] },
+  "BC-D": { Male: [90000,135000], Female: [95000,140000] },
+  "BC-E": { Male: [80000,120000], Female: [85000,125000] },
+  SC: { Male: [160000,240000], Female: [170000,250000] },
+  ST: { Male: [230000,350000], Female: [240000,360000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [50000,85000], Female: [52000,90000] },
+  EWS: { Male: [70000,105000], Female: [75000,110000] },
+  "BC-A": { Male: [105000,150000], Female: [110000,155000] },
+  "BC-B": { Male: [85000,125000], Female: [90000,130000] },
+  "BC-C": { Male: [80000,115000], Female: [85000,120000] },
+  "BC-D": { Male: [95000,140000], Female: [100000,145000] },
+  "BC-E": { Male: [85000,125000], Female: [90000,130000] },
+  SC: { Male: [170000,250000], Female: [180000,260000] },
+  ST: { Male: [240000,360000], Female: [250000,370000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [52000,90000], Female: [55000,95000] },
+  EWS: { Male: [75000,110000], Female: [80000,115000] },
+  "BC-A": { Male: [110000,155000], Female: [115000,160000] },
+  "BC-B": { Male: [90000,130000], Female: [95000,135000] },
+  "BC-C": { Male: [85000,120000], Female: [90000,125000] },
+  "BC-D": { Male: [100000,145000], Female: [105000,150000] },
+  "BC-E": { Male: [90000,130000], Female: [95000,135000] },
+  SC: { Male: [180000,260000], Female: [190000,270000] },
+  ST: { Male: [250000,370000], Female: [260000,380000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [55000,95000], Female: [58000,100000] },
+  EWS: { Male: [80000,115000], Female: [85000,120000] },
+  "BC-A": { Male: [115000,160000], Female: [120000,170000] },
+  "BC-B": { Male: [95000,135000], Female: [100000,140000] },
+  "BC-C": { Male: [90000,125000], Female: [95000,130000] },
+  "BC-D": { Male: [105000,150000], Female: [110000,155000] },
+  "BC-E": { Male: [95000,135000], Female: [100000,140000] },
+  SC: { Male: [190000,270000], Female: [200000,280000] },
+  ST: { Male: [260000,380000], Female: [270000,390000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [60000,100000], Female: [65000,105000] },
+  EWS: { Male: [85000,120000], Female: [90000,125000] },
+  "BC-A": { Male: [120000,170000], Female: [125000,175000] },
+  "BC-B": { Male: [100000,140000], Female: [105000,145000] },
+  "BC-C": { Male: [95000,130000], Female: [100000,135000] },
+  "BC-D": { Male: [110000,155000], Female: [115000,160000] },
+  "BC-E": { Male: [100000,140000], Female: [105000,145000] },
+  SC: { Male: [200000,280000], Female: [210000,290000] },
+  ST: { Male: [270000,390000], Female: [280000,400000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [65000,105000], Female: [70000,110000] },
+  EWS: { Male: [90000,125000], Female: [95000,130000] },
+  "BC-A": { Male: [125000,175000], Female: [130000,180000] },
+  "BC-B": { Male: [105000,145000], Female: [110000,150000] },
+  "BC-C": { Male: [100000,135000], Female: [105000,140000] },
+  "BC-D": { Male: [115000,160000], Female: [120000,165000] },
+  "BC-E": { Male: [105000,145000], Female: [110000,150000] },
+  SC: { Male: [210000,290000], Female: [220000,300000] },
+  ST: { Male: [280000,400000], Female: [290000,410000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [70000,110000], Female: [75000,120000] },
+  EWS: { Male: [95000,130000], Female: [100000,140000] },
+  "BC-A": { Male: [130000,180000], Female: [140000,190000] },
+  "BC-B": { Male: [110000,150000], Female: [120000,160000] },
+  "BC-C": { Male: [105000,140000], Female: [110000,150000] },
+  "BC-D": { Male: [120000,165000], Female: [130000,175000] },
+  "BC-E": { Male: [110000,150000], Female: [120000,160000] },
+  SC: { Male: [220000,300000], Female: [230000,310000] },
+  ST: { Male: [290000,410000], Female: [300000,420000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [75000,120000], Female: [80000,130000] },
+  EWS: { Male: [100000,140000], Female: [110000,150000] },
+  "BC-A": { Male: [140000,190000], Female: [150000,200000] },
+  "BC-B": { Male: [120000,160000], Female: [130000,170000] },
+  "BC-C": { Male: [110000,150000], Female: [120000,160000] },
+  "BC-D": { Male: [130000,175000], Female: [140000,185000] },
+  "BC-E": { Male: [120000,160000], Female: [130000,170000] },
+  SC: { Male: [230000,310000], Female: [240000,320000] },
+  ST: { Male: [300000,420000], Female: [310000,430000] }
+});
+
+collegeId = "29";
+collegeName = "DECCAN";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [50000,85000], Female: [52000,90000] },
+  EWS: { Male: [65000,105000], Female: [70000,110000] },
+  "BC-A": { Male: [105000,150000], Female: [110000,155000] },
+  "BC-B": { Male: [85000,125000], Female: [90000,130000] },
+  "BC-C": { Male: [80000,115000], Female: [85000,120000] },
+  "BC-D": { Male: [95000,140000], Female: [100000,145000] },
+  "BC-E": { Male: [85000,125000], Female: [90000,130000] },
+  SC: { Male: [170000,250000], Female: [180000,260000] },
+  ST: { Male: [240000,360000], Female: [250000,370000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [52000,90000], Female: [55000,95000] },
+  EWS: { Male: [70000,110000], Female: [75000,115000] },
+  "BC-A": { Male: [110000,155000], Female: [115000,160000] },
+  "BC-B": { Male: [90000,130000], Female: [95000,135000] },
+  "BC-C": { Male: [85000,120000], Female: [90000,125000] },
+  "BC-D": { Male: [100000,145000], Female: [105000,150000] },
+  "BC-E": { Male: [90000,130000], Female: [95000,135000] },
+  SC: { Male: [180000,260000], Female: [190000,270000] },
+  ST: { Male: [250000,370000], Female: [260000,380000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [55000,95000], Female: [58000,100000] },
+  EWS: { Male: [75000,115000], Female: [80000,120000] },
+  "BC-A": { Male: [115000,160000], Female: [120000,170000] },
+  "BC-B": { Male: [95000,135000], Female: [100000,140000] },
+  "BC-C": { Male: [90000,125000], Female: [95000,130000] },
+  "BC-D": { Male: [105000,150000], Female: [110000,155000] },
+  "BC-E": { Male: [95000,135000], Female: [100000,140000] },
+  SC: { Male: [190000,270000], Female: [200000,280000] },
+  ST: { Male: [260000,380000], Female: [270000,390000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [58000,100000], Female: [60000,105000] },
+  EWS: { Male: [80000,120000], Female: [85000,125000] },
+  "BC-A": { Male: [120000,170000], Female: [125000,175000] },
+  "BC-B": { Male: [100000,140000], Female: [105000,145000] },
+  "BC-C": { Male: [95000,130000], Female: [100000,135000] },
+  "BC-D": { Male: [110000,155000], Female: [115000,160000] },
+  "BC-E": { Male: [100000,140000], Female: [105000,145000] },
+  SC: { Male: [200000,280000], Female: [210000,290000] },
+  ST: { Male: [270000,390000], Female: [280000,400000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [65000,105000], Female: [70000,110000] },
+  EWS: { Male: [90000,125000], Female: [95000,130000] },
+  "BC-A": { Male: [125000,175000], Female: [130000,180000] },
+  "BC-B": { Male: [105000,145000], Female: [110000,150000] },
+  "BC-C": { Male: [100000,135000], Female: [105000,140000] },
+  "BC-D": { Male: [115000,160000], Female: [120000,165000] },
+  "BC-E": { Male: [105000,145000], Female: [110000,150000] },
+  SC: { Male: [210000,290000], Female: [220000,300000] },
+  ST: { Male: [280000,400000], Female: [290000,410000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [70000,110000], Female: [75000,120000] },
+  EWS: { Male: [95000,130000], Female: [100000,140000] },
+  "BC-A": { Male: [130000,180000], Female: [140000,190000] },
+  "BC-B": { Male: [110000,150000], Female: [120000,160000] },
+  "BC-C": { Male: [105000,140000], Female: [110000,150000] },
+  "BC-D": { Male: [120000,165000], Female: [130000,175000] },
+  "BC-E": { Male: [110000,150000], Female: [120000,160000] },
+  SC: { Male: [220000,300000], Female: [230000,310000] },
+  ST: { Male: [290000,410000], Female: [300000,420000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [75000,120000], Female: [80000,130000] },
+  EWS: { Male: [100000,140000], Female: [110000,150000] },
+  "BC-A": { Male: [140000,190000], Female: [150000,200000] },
+  "BC-B": { Male: [120000,160000], Female: [130000,170000] },
+  "BC-C": { Male: [110000,150000], Female: [120000,160000] },
+  "BC-D": { Male: [130000,175000], Female: [140000,185000] },
+  "BC-E": { Male: [120000,160000], Female: [130000,170000] },
+  SC: { Male: [230000,310000], Female: [240000,320000] },
+  ST: { Male: [300000,420000], Female: [310000,430000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [80000,130000], Female: [85000,140000] },
+  EWS: { Male: [110000,150000], Female: [120000,160000] },
+  "BC-A": { Male: [150000,200000], Female: [160000,210000] },
+  "BC-B": { Male: [130000,170000], Female: [140000,180000] },
+  "BC-C": { Male: [120000,160000], Female: [130000,170000] },
+  "BC-D": { Male: [140000,185000], Female: [150000,195000] },
+  "BC-E": { Male: [130000,170000], Female: [140000,180000] },
+  SC: { Male: [240000,320000], Female: [250000,330000] },
+  ST: { Male: [310000,430000], Female: [320000,440000] }
+});
+
+collegeId = "30";
+collegeName = "MATRUSRI";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [42000,70000], Female: [45000,75000] },
+  EWS: { Male: [55000,90000], Female: [60000,95000] },
+  "BC-A": { Male: [90000,135000], Female: [95000,140000] },
+  "BC-B": { Male: [70000,110000], Female: [75000,115000] },
+  "BC-C": { Male: [65000,100000], Female: [70000,105000] },
+  "BC-D": { Male: [80000,125000], Female: [85000,130000] },
+  "BC-E": { Male: [70000,105000], Female: [75000,110000] },
+  SC: { Male: [140000,220000], Female: [150000,230000] },
+  ST: { Male: [210000,330000], Female: [220000,340000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [45000,75000], Female: [48000,80000] },
+  EWS: { Male: [60000,95000], Female: [65000,100000] },
+  "BC-A": { Male: [95000,140000], Female: [100000,145000] },
+  "BC-B": { Male: [75000,115000], Female: [80000,120000] },
+  "BC-C": { Male: [70000,105000], Female: [75000,110000] },
+  "BC-D": { Male: [85000,130000], Female: [90000,135000] },
+  "BC-E": { Male: [75000,110000], Female: [80000,120000] },
+  SC: { Male: [150000,230000], Female: [160000,240000] },
+  ST: { Male: [220000,340000], Female: [230000,350000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [48000,80000], Female: [50000,85000] },
+  EWS: { Male: [65000,100000], Female: [70000,105000] },
+  "BC-A": { Male: [100000,145000], Female: [105000,150000] },
+  "BC-B": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-C": { Male: [75000,110000], Female: [80000,115000] },
+  "BC-D": { Male: [90000,135000], Female: [95000,140000] },
+  "BC-E": { Male: [80000,120000], Female: [85000,125000] },
+  SC: { Male: [160000,240000], Female: [170000,250000] },
+  ST: { Male: [230000,350000], Female: [240000,360000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [50000,85000], Female: [52000,90000] },
+  EWS: { Male: [70000,105000], Female: [75000,110000] },
+  "BC-A": { Male: [105000,150000], Female: [110000,155000] },
+  "BC-B": { Male: [85000,125000], Female: [90000,130000] },
+  "BC-C": { Male: [80000,115000], Female: [85000,120000] },
+  "BC-D": { Male: [95000,140000], Female: [100000,145000] },
+  "BC-E": { Male: [85000,125000], Female: [90000,130000] },
+  SC: { Male: [170000,250000], Female: [180000,260000] },
+  ST: { Male: [240000,360000], Female: [250000,370000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [52000,90000], Female: [55000,95000] },
+  EWS: { Male: [75000,110000], Female: [80000,115000] },
+  "BC-A": { Male: [110000,155000], Female: [115000,160000] },
+  "BC-B": { Male: [90000,130000], Female: [95000,135000] },
+  "BC-C": { Male: [85000,120000], Female: [90000,125000] },
+  "BC-D": { Male: [100000,145000], Female: [105000,150000] },
+  "BC-E": { Male: [90000,130000], Female: [95000,135000] },
+  SC: { Male: [180000,260000], Female: [190000,270000] },
+  ST: { Male: [250000,370000], Female: [260000,380000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [58000,95000], Female: [60000,100000] },
+  EWS: { Male: [80000,115000], Female: [85000,120000] },
+  "BC-A": { Male: [115000,160000], Female: [120000,170000] },
+  "BC-B": { Male: [95000,135000], Female: [100000,140000] },
+  "BC-C": { Male: [90000,125000], Female: [95000,130000] },
+  "BC-D": { Male: [105000,150000], Female: [110000,155000] },
+  "BC-E": { Male: [95000,135000], Female: [100000,140000] },
+  SC: { Male: [190000,270000], Female: [200000,280000] },
+  ST: { Male: [260000,380000], Female: [270000,390000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [65000,100000], Female: [70000,110000] },
+  EWS: { Male: [85000,120000], Female: [90000,130000] },
+  "BC-A": { Male: [120000,170000], Female: [130000,180000] },
+  "BC-B": { Male: [100000,140000], Female: [110000,150000] },
+  "BC-C": { Male: [95000,130000], Female: [100000,140000] },
+  "BC-D": { Male: [110000,155000], Female: [120000,165000] },
+  "BC-E": { Male: [100000,140000], Female: [110000,150000] },
+  SC: { Male: [200000,280000], Female: [210000,290000] },
+  ST: { Male: [270000,390000], Female: [280000,400000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [70000,110000], Female: [75000,120000] },
+  EWS: { Male: [90000,130000], Female: [100000,140000] },
+  "BC-A": { Male: [130000,180000], Female: [140000,190000] },
+  "BC-B": { Male: [110000,150000], Female: [120000,160000] },
+  "BC-C": { Male: [100000,140000], Female: [110000,150000] },
+  "BC-D": { Male: [120000,165000], Female: [130000,175000] },
+  "BC-E": { Male: [110000,150000], Female: [120000,160000] },
+  SC: { Male: [210000,290000], Female: [220000,300000] },
+  ST: { Male: [280000,400000], Female: [290000,410000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [75000,120000], Female: [80000,130000] },
+  EWS: { Male: [100000,140000], Female: [110000,150000] },
+  "BC-A": { Male: [140000,190000], Female: [150000,200000] },
+  "BC-B": { Male: [120000,160000], Female: [130000,170000] },
+  "BC-C": { Male: [110000,150000], Female: [120000,160000] },
+  "BC-D": { Male: [130000,175000], Female: [140000,185000] },
+  "BC-E": { Male: [120000,160000], Female: [130000,170000] },
+  SC: { Male: [220000,300000], Female: [230000,310000] },
+  ST: { Male: [290000,410000], Female: [300000,420000] }
+});
+
+collegeId = "31";
+collegeName = "NSAKCET";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [60000,95000], Female: [65000,100000] },
+  EWS: { Male: [80000,120000], Female: [85000,125000] },
+  "BC-A": { Male: [120000,170000], Female: [125000,175000] },
+  "BC-B": { Male: [95000,135000], Female: [100000,140000] },
+  "BC-C": { Male: [90000,125000], Female: [95000,130000] },
+  "BC-D": { Male: [105000,150000], Female: [110000,155000] },
+  "BC-E": { Male: [95000,135000], Female: [100000,140000] },
+  SC: { Male: [190000,270000], Female: [200000,280000] },
+  ST: { Male: [260000,380000], Female: [270000,390000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [65000,100000], Female: [70000,105000] },
+  EWS: { Male: [85000,125000], Female: [90000,130000] },
+  "BC-A": { Male: [125000,175000], Female: [130000,180000] },
+  "BC-B": { Male: [100000,140000], Female: [105000,145000] },
+  "BC-C": { Male: [95000,130000], Female: [100000,135000] },
+  "BC-D": { Male: [110000,155000], Female: [115000,160000] },
+  "BC-E": { Male: [100000,140000], Female: [105000,145000] },
+  SC: { Male: [200000,280000], Female: [210000,290000] },
+  ST: { Male: [270000,390000], Female: [280000,400000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [70000,105000], Female: [75000,110000] },
+  EWS: { Male: [90000,130000], Female: [95000,135000] },
+  "BC-A": { Male: [130000,180000], Female: [135000,185000] },
+  "BC-B": { Male: [105000,145000], Female: [110000,150000] },
+  "BC-C": { Male: [100000,135000], Female: [105000,140000] },
+  "BC-D": { Male: [115000,160000], Female: [120000,165000] },
+  "BC-E": { Male: [105000,145000], Female: [110000,150000] },
+  SC: { Male: [210000,290000], Female: [220000,300000] },
+  ST: { Male: [280000,400000], Female: [290000,410000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [75000,110000], Female: [80000,115000] },
+  EWS: { Male: [95000,135000], Female: [100000,140000] },
+  "BC-A": { Male: [135000,185000], Female: [140000,190000] },
+  "BC-B": { Male: [110000,150000], Female: [115000,155000] },
+  "BC-C": { Male: [105000,140000], Female: [110000,145000] },
+  "BC-D": { Male: [120000,165000], Female: [125000,170000] },
+  "BC-E": { Male: [110000,150000], Female: [115000,155000] },
+  SC: { Male: [220000,300000], Female: [230000,310000] },
+  ST: { Male: [290000,410000], Female: [300000,420000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [70000,105000], Female: [75000,110000] },
+  EWS: { Male: [90000,130000], Female: [95000,135000] },
+  "BC-A": { Male: [130000,180000], Female: [135000,185000] },
+  "BC-B": { Male: [105000,145000], Female: [110000,150000] },
+  "BC-C": { Male: [100000,135000], Female: [105000,140000] },
+  "BC-D": { Male: [115000,160000], Female: [120000,165000] },
+  "BC-E": { Male: [105000,145000], Female: [110000,150000] },
+  SC: { Male: [210000,290000], Female: [220000,300000] },
+  ST: { Male: [280000,400000], Female: [290000,410000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [75000,110000], Female: [80000,120000] },
+  EWS: { Male: [100000,140000], Female: [105000,145000] },
+  "BC-A": { Male: [140000,190000], Female: [145000,195000] },
+  "BC-B": { Male: [110000,150000], Female: [120000,160000] },
+  "BC-C": { Male: [105000,140000], Female: [110000,150000] },
+  "BC-D": { Male: [120000,165000], Female: [130000,175000] },
+  "BC-E": { Male: [110000,150000], Female: [120000,160000] },
+  SC: { Male: [220000,300000], Female: [230000,310000] },
+  ST: { Male: [290000,410000], Female: [300000,420000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [80000,120000], Female: [85000,130000] },
+  EWS: { Male: [105000,145000], Female: [110000,150000] },
+  "BC-A": { Male: [145000,195000], Female: [150000,200000] },
+  "BC-B": { Male: [120000,160000], Female: [130000,170000] },
+  "BC-C": { Male: [110000,150000], Female: [120000,160000] },
+  "BC-D": { Male: [130000,175000], Female: [140000,185000] },
+  "BC-E": { Male: [120000,160000], Female: [130000,170000] },
+  SC: { Male: [230000,310000], Female: [240000,320000] },
+  ST: { Male: [300000,420000], Female: [310000,430000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [85000,130000], Female: [90000,140000] },
+  EWS: { Male: [110000,150000], Female: [120000,160000] },
+  "BC-A": { Male: [150000,200000], Female: [160000,210000] },
+  "BC-B": { Male: [130000,170000], Female: [140000,180000] },
+  "BC-C": { Male: [120000,160000], Female: [130000,170000] },
+  "BC-D": { Male: [140000,185000], Female: [150000,195000] },
+  "BC-E": { Male: [130000,170000], Female: [140000,180000] },
+  SC: { Male: [240000,320000], Female: [250000,330000] },
+  ST: { Male: [310000,430000], Female: [320000,440000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [90000,140000], Female: [95000,150000] },
+  EWS: { Male: [120000,160000], Female: [130000,170000] },
+  "BC-A": { Male: [160000,210000], Female: [170000,220000] },
+  "BC-B": { Male: [140000,180000], Female: [150000,190000] },
+  "BC-C": { Male: [130000,170000], Female: [140000,180000] },
+  "BC-D": { Male: [150000,195000], Female: [160000,205000] },
+  "BC-E": { Male: [140000,180000], Female: [150000,190000] },
+  SC: { Male: [250000,330000], Female: [260000,340000] },
+  ST: { Male: [320000,440000], Female: [330000,450000] }
+});
+
+collegeId = "32";
+collegeName = "SHADAN";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [65000,100000], Female: [70000,105000] },
+  EWS: { Male: [85000,125000], Female: [90000,130000] },
+  "BC-A": { Male: [125000,175000], Female: [130000,180000] },
+  "BC-B": { Male: [100000,140000], Female: [105000,145000] },
+  "BC-C": { Male: [95000,130000], Female: [100000,135000] },
+  "BC-D": { Male: [110000,155000], Female: [115000,160000] },
+  "BC-E": { Male: [100000,140000], Female: [105000,145000] },
+  SC: { Male: [200000,280000], Female: [210000,290000] },
+  ST: { Male: [270000,390000], Female: [280000,400000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [70000,105000], Female: [75000,110000] },
+  EWS: { Male: [90000,130000], Female: [95000,135000] },
+  "BC-A": { Male: [130000,180000], Female: [135000,185000] },
+  "BC-B": { Male: [105000,145000], Female: [110000,150000] },
+  "BC-C": { Male: [100000,135000], Female: [105000,140000] },
+  "BC-D": { Male: [115000,160000], Female: [120000,165000] },
+  "BC-E": { Male: [105000,145000], Female: [110000,150000] },
+  SC: { Male: [210000,290000], Female: [220000,300000] },
+  ST: { Male: [280000,400000], Female: [290000,410000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [75000,110000], Female: [80000,115000] },
+  EWS: { Male: [95000,135000], Female: [100000,140000] },
+  "BC-A": { Male: [135000,185000], Female: [140000,190000] },
+  "BC-B": { Male: [110000,150000], Female: [115000,155000] },
+  "BC-C": { Male: [105000,140000], Female: [110000,145000] },
+  "BC-D": { Male: [120000,165000], Female: [125000,170000] },
+  "BC-E": { Male: [110000,150000], Female: [115000,155000] },
+  SC: { Male: [220000,300000], Female: [230000,310000] },
+  ST: { Male: [290000,410000], Female: [300000,420000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [80000,115000], Female: [85000,120000] },
+  EWS: { Male: [100000,140000], Female: [105000,145000] },
+  "BC-A": { Male: [140000,190000], Female: [145000,195000] },
+  "BC-B": { Male: [115000,155000], Female: [120000,160000] },
+  "BC-C": { Male: [110000,145000], Female: [115000,150000] },
+  "BC-D": { Male: [125000,170000], Female: [130000,175000] },
+  "BC-E": { Male: [115000,155000], Female: [120000,160000] },
+  SC: { Male: [230000,310000], Female: [240000,320000] },
+  ST: { Male: [300000,420000], Female: [310000,430000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [80000,120000], Female: [85000,130000] },
+  EWS: { Male: [105000,145000], Female: [110000,150000] },
+  "BC-A": { Male: [145000,195000], Female: [150000,200000] },
+  "BC-B": { Male: [120000,160000], Female: [130000,170000] },
+  "BC-C": { Male: [110000,150000], Female: [120000,160000] },
+  "BC-D": { Male: [130000,175000], Female: [140000,185000] },
+  "BC-E": { Male: [120000,160000], Female: [130000,170000] },
+  SC: { Male: [230000,310000], Female: [240000,320000] },
+  ST: { Male: [300000,420000], Female: [310000,430000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [85000,130000], Female: [90000,140000] },
+  EWS: { Male: [110000,150000], Female: [120000,160000] },
+  "BC-A": { Male: [150000,200000], Female: [160000,210000] },
+  "BC-B": { Male: [130000,170000], Female: [140000,180000] },
+  "BC-C": { Male: [120000,160000], Female: [130000,170000] },
+  "BC-D": { Male: [140000,185000], Female: [150000,195000] },
+  "BC-E": { Male: [130000,170000], Female: [140000,180000] },
+  SC: { Male: [240000,320000], Female: [250000,330000] },
+  ST: { Male: [310000,430000], Female: [320000,440000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [90000,140000], Female: [95000,150000] },
+  EWS: { Male: [120000,160000], Female: [130000,170000] },
+  "BC-A": { Male: [160000,210000], Female: [170000,220000] },
+  "BC-B": { Male: [140000,180000], Female: [150000,190000] },
+  "BC-C": { Male: [130000,170000], Female: [140000,180000] },
+  "BC-D": { Male: [150000,195000], Female: [160000,205000] },
+  "BC-E": { Male: [140000,180000], Female: [150000,190000] },
+  SC: { Male: [250000,330000], Female: [260000,340000] },
+  ST: { Male: [320000,440000], Female: [330000,450000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [95000,150000], Female: [100000,160000] },
+  EWS: { Male: [130000,170000], Female: [140000,180000] },
+  "BC-A": { Male: [170000,220000], Female: [180000,230000] },
+  "BC-B": { Male: [150000,190000], Female: [160000,200000] },
+  "BC-C": { Male: [140000,180000], Female: [150000,190000] },
+  "BC-D": { Male: [160000,205000], Female: [170000,215000] },
+  "BC-E": { Male: [150000,190000], Female: [160000,200000] },
+  SC: { Male: [260000,340000], Female: [270000,350000] },
+  ST: { Male: [330000,450000], Female: [340000,460000] }
+});
+
+collegeId = "33";
+collegeName = "SHADANW";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [], Female: [75000,115000] },
+  EWS: { Male: [], Female: [95000,140000] },
+  "BC-A": { Male: [], Female: [140000,190000] },
+  "BC-B": { Male: [], Female: [115000,155000] },
+  "BC-C": { Male: [], Female: [110000,145000] },
+  "BC-D": { Male: [], Female: [125000,170000] },
+  "BC-E": { Male: [], Female: [115000,155000] },
+  SC: { Male: [], Female: [230000,310000] },
+  ST: { Male: [], Female: [300000,420000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [], Female: [80000,120000] },
+  EWS: { Male: [], Female: [100000,145000] },
+  "BC-A": { Male: [], Female: [145000,195000] },
+  "BC-B": { Male: [], Female: [120000,160000] },
+  "BC-C": { Male: [], Female: [115000,150000] },
+  "BC-D": { Male: [], Female: [130000,175000] },
+  "BC-E": { Male: [], Female: [120000,160000] },
+  SC: { Male: [], Female: [240000,320000] },
+  ST: { Male: [], Female: [310000,430000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [], Female: [82000,125000] },
+  EWS: { Male: [], Female: [105000,150000] },
+  "BC-A": { Male: [], Female: [150000,200000] },
+  "BC-B": { Male: [], Female: [125000,165000] },
+  "BC-C": { Male: [], Female: [120000,155000] },
+  "BC-D": { Male: [], Female: [135000,180000] },
+  "BC-E": { Male: [], Female: [125000,165000] },
+  SC: { Male: [], Female: [250000,330000] },
+  ST: { Male: [], Female: [320000,440000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [], Female: [85000,130000] },
+  EWS: { Male: [], Female: [110000,155000] },
+  "BC-A": { Male: [], Female: [155000,205000] },
+  "BC-B": { Male: [], Female: [130000,170000] },
+  "BC-C": { Male: [], Female: [125000,160000] },
+  "BC-D": { Male: [], Female: [140000,185000] },
+  "BC-E": { Male: [], Female: [130000,170000] },
+  SC: { Male: [], Female: [260000,340000] },
+  ST: { Male: [], Female: [330000,450000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [], Female: [90000,135000] },
+  EWS: { Male: [], Female: [115000,160000] },
+  "BC-A": { Male: [], Female: [160000,210000] },
+  "BC-B": { Male: [], Female: [135000,175000] },
+  "BC-C": { Male: [], Female: [130000,165000] },
+  "BC-D": { Male: [], Female: [145000,190000] },
+  "BC-E": { Male: [], Female: [135000,175000] },
+  SC: { Male: [], Female: [270000,350000] },
+  ST: { Male: [], Female: [340000,460000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [], Female: [95000,145000] },
+  EWS: { Male: [], Female: [125000,170000] },
+  "BC-A": { Male: [], Female: [170000,220000] },
+  "BC-B": { Male: [], Female: [145000,185000] },
+  "BC-C": { Male: [], Female: [140000,175000] },
+  "BC-D": { Male: [], Female: [155000,200000] },
+  "BC-E": { Male: [], Female: [145000,185000] },
+  SC: { Male: [], Female: [280000,360000] },
+  ST: { Male: [], Female: [350000,470000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [], Female: [100000,150000] },
+  EWS: { Male: [], Female: [130000,180000] },
+  "BC-A": { Male: [], Female: [180000,230000] },
+  "BC-B": { Male: [], Female: [150000,190000] },
+  "BC-C": { Male: [], Female: [145000,180000] },
+  "BC-D": { Male: [], Female: [160000,205000] },
+  "BC-E": { Male: [], Female: [150000,190000] },
+  SC: { Male: [], Female: [290000,370000] },
+  ST: { Male: [], Female: [360000,480000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [], Female: [105000,160000] },
+  EWS: { Male: [], Female: [140000,190000] },
+  "BC-A": { Male: [], Female: [190000,240000] },
+  "BC-B": { Male: [], Female: [160000,200000] },
+  "BC-C": { Male: [], Female: [150000,190000] },
+  "BC-D": { Male: [], Female: [170000,215000] },
+  "BC-E": { Male: [], Female: [160000,200000] },
+  SC: { Male: [], Female: [300000,380000] },
+  ST: { Male: [], Female: [370000,490000] }
+});
+
+collegeId = "34";
+collegeName = "MJCET";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [18000,30000], Female: [20000,32000] },
+  EWS: { Male: [24000,38000], Female: [26000,40000] },
+  "BC-A": { Male: [38000,65000], Female: [40000,70000] },
+  "BC-B": { Male: [30000,55000], Female: [32000,58000] },
+  "BC-C": { Male: [27000,45000], Female: [29000,48000] },
+  "BC-D": { Male: [35000,60000], Female: [38000,65000] },
+  "BC-E": { Male: [30000,52000], Female: [32000,55000] },
+  SC: { Male: [60000,120000], Female: [65000,130000] },
+  ST: { Male: [100000,200000], Female: [110000,210000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [20000,33000], Female: [22000,35000] },
+  EWS: { Male: [27000,42000], Female: [30000,45000] },
+  "BC-A": { Male: [42000,70000], Female: [45000,75000] },
+  "BC-B": { Male: [33000,58000], Female: [35000,62000] },
+  "BC-C": { Male: [30000,50000], Female: [32000,52000] },
+  "BC-D": { Male: [38000,65000], Female: [42000,70000] },
+  "BC-E": { Male: [33000,58000], Female: [35000,60000] },
+  SC: { Male: [65000,130000], Female: [70000,140000] },
+  ST: { Male: [110000,210000], Female: [120000,220000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [22000,35000], Female: [24000,38000] },
+  EWS: { Male: [30000,45000], Female: [32000,48000] },
+  "BC-A": { Male: [45000,75000], Female: [48000,80000] },
+  "BC-B": { Male: [35000,62000], Female: [38000,65000] },
+  "BC-C": { Male: [32000,52000], Female: [35000,55000] },
+  "BC-D": { Male: [42000,70000], Female: [45000,75000] },
+  "BC-E": { Male: [35000,60000], Female: [38000,65000] },
+  SC: { Male: [70000,140000], Female: [75000,150000] },
+  ST: { Male: [120000,220000], Female: [130000,230000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [24000,38000], Female: [26000,40000] },
+  EWS: { Male: [32000,48000], Female: [35000,50000] },
+  "BC-A": { Male: [48000,80000], Female: [50000,85000] },
+  "BC-B": { Male: [38000,65000], Female: [40000,68000] },
+  "BC-C": { Male: [35000,55000], Female: [38000,58000] },
+  "BC-D": { Male: [45000,75000], Female: [48000,78000] },
+  "BC-E": { Male: [38000,65000], Female: [40000,70000] },
+  SC: { Male: [75000,150000], Female: [80000,160000] },
+  ST: { Male: [130000,230000], Female: [140000,240000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [26000,40000], Female: [28000,42000] },
+  EWS: { Male: [35000,50000], Female: [38000,55000] },
+  "BC-A": { Male: [50000,85000], Female: [55000,90000] },
+  "BC-B": { Male: [40000,68000], Female: [42000,70000] },
+  "BC-C": { Male: [38000,58000], Female: [40000,60000] },
+  "BC-D": { Male: [48000,78000], Female: [50000,80000] },
+  "BC-E": { Male: [40000,70000], Female: [42000,72000] },
+  SC: { Male: [80000,160000], Female: [85000,170000] },
+  ST: { Male: [140000,240000], Female: [150000,250000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [30000,48000], Female: [32000,50000] },
+  EWS: { Male: [40000,60000], Female: [42000,65000] },
+  "BC-A": { Male: [60000,95000], Female: [65000,100000] },
+  "BC-B": { Male: [48000,75000], Female: [50000,78000] },
+  "BC-C": { Male: [45000,70000], Female: [47000,72000] },
+  "BC-D": { Male: [55000,85000], Female: [58000,90000] },
+  "BC-E": { Male: [48000,75000], Female: [50000,80000] },
+  SC: { Male: [90000,170000], Female: [95000,180000] },
+  ST: { Male: [150000,260000], Female: [160000,270000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [35000,55000], Female: [38000,60000] },
+  EWS: { Male: [45000,70000], Female: [50000,75000] },
+  "BC-A": { Male: [70000,110000], Female: [75000,115000] },
+  "BC-B": { Male: [55000,85000], Female: [60000,90000] },
+  "BC-C": { Male: [50000,80000], Female: [55000,85000] },
+  "BC-D": { Male: [65000,95000], Female: [70000,100000] },
+  "BC-E": { Male: [55000,85000], Female: [60000,90000] },
+  SC: { Male: [100000,180000], Female: [110000,190000] },
+  ST: { Male: [170000,280000], Female: [180000,290000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [40000,65000], Female: [45000,70000] },
+  EWS: { Male: [55000,80000], Female: [60000,85000] },
+  "BC-A": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-B": { Male: [65000,95000], Female: [70000,100000] },
+  "BC-C": { Male: [60000,90000], Female: [65000,95000] },
+  "BC-D": { Male: [75000,105000], Female: [80000,110000] },
+  "BC-E": { Male: [65000,95000], Female: [70000,100000] },
+  SC: { Male: [120000,200000], Female: [130000,210000] },
+  ST: { Male: [190000,300000], Female: [200000,310000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [45000,70000], Female: [48000,75000] },
+  EWS: { Male: [60000,85000], Female: [65000,90000] },
+  "BC-A": { Male: [85000,125000], Female: [90000,130000] },
+  "BC-B": { Male: [70000,100000], Female: [75000,105000] },
+  "BC-C": { Male: [65000,95000], Female: [70000,100000] },
+  "BC-D": { Male: [80000,110000], Female: [85000,115000] },
+  "BC-E": { Male: [70000,100000], Female: [75000,105000] },
+  SC: { Male: [130000,210000], Female: [140000,220000] },
+  ST: { Male: [200000,310000], Female: [210000,320000] }
+});
+
+collegeId = "35";
+collegeName = "BRECW";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [], Female: [30000,55000] },
+  EWS: { Male: [], Female: [40000,70000] },
+  "BC-A": { Male: [], Female: [70000,110000] },
+  "BC-B": { Male: [], Female: [55000,90000] },
+  "BC-C": { Male: [], Female: [50000,80000] },
+  "BC-D": { Male: [], Female: [65000,100000] },
+  "BC-E": { Male: [], Female: [55000,90000] },
+  SC: { Male: [], Female: [100000,180000] },
+  ST: { Male: [], Female: [160000,280000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [], Female: [32000,58000] },
+  EWS: { Male: [], Female: [42000,75000] },
+  "BC-A": { Male: [], Female: [75000,115000] },
+  "BC-B": { Male: [], Female: [58000,95000] },
+  "BC-C": { Male: [], Female: [52000,85000] },
+  "BC-D": { Male: [], Female: [70000,105000] },
+  "BC-E": { Male: [], Female: [58000,95000] },
+  SC: { Male: [], Female: [110000,190000] },
+  ST: { Male: [], Female: [170000,290000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [], Female: [35000,60000] },
+  EWS: { Male: [], Female: [45000,80000] },
+  "BC-A": { Male: [], Female: [80000,120000] },
+  "BC-B": { Male: [], Female: [60000,100000] },
+  "BC-C": { Male: [], Female: [55000,90000] },
+  "BC-D": { Male: [], Female: [75000,110000] },
+  "BC-E": { Male: [], Female: [60000,100000] },
+  SC: { Male: [], Female: [120000,200000] },
+  ST: { Male: [], Female: [180000,300000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [], Female: [38000,65000] },
+  EWS: { Male: [], Female: [50000,85000] },
+  "BC-A": { Male: [], Female: [85000,125000] },
+  "BC-B": { Male: [], Female: [65000,105000] },
+  "BC-C": { Male: [], Female: [60000,95000] },
+  "BC-D": { Male: [], Female: [80000,115000] },
+  "BC-E": { Male: [], Female: [65000,105000] },
+  SC: { Male: [], Female: [130000,210000] },
+  ST: { Male: [], Female: [190000,310000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [], Female: [38000,65000] },
+  EWS: { Male: [], Female: [50000,85000] },
+  "BC-A": { Male: [], Female: [85000,125000] },
+  "BC-B": { Male: [], Female: [65000,105000] },
+  "BC-C": { Male: [], Female: [60000,95000] },
+  "BC-D": { Male: [], Female: [80000,115000] },
+  "BC-E": { Male: [], Female: [65000,105000] },
+  SC: { Male: [], Female: [130000,210000] },
+  ST: { Male: [], Female: [190000,310000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [], Female: [42000,75000] },
+  EWS: { Male: [], Female: [55000,95000] },
+  "BC-A": { Male: [], Female: [95000,140000] },
+  "BC-B": { Male: [], Female: [75000,115000] },
+  "BC-C": { Male: [], Female: [70000,105000] },
+  "BC-D": { Male: [], Female: [90000,130000] },
+  "BC-E": { Male: [], Female: [75000,115000] },
+  SC: { Male: [], Female: [150000,230000] },
+  ST: { Male: [], Female: [210000,330000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [], Female: [48000,85000] },
+  EWS: { Male: [], Female: [60000,105000] },
+  "BC-A": { Male: [], Female: [105000,150000] },
+  "BC-B": { Male: [], Female: [85000,125000] },
+  "BC-C": { Male: [], Female: [80000,115000] },
+  "BC-D": { Male: [], Female: [95000,135000] },
+  "BC-E": { Male: [], Female: [85000,125000] },
+  SC: { Male: [], Female: [160000,240000] },
+  ST: { Male: [], Female: [220000,340000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [], Female: [55000,95000] },
+  EWS: { Male: [], Female: [70000,115000] },
+  "BC-A": { Male: [], Female: [115000,160000] },
+  "BC-B": { Male: [], Female: [95000,135000] },
+  "BC-C": { Male: [], Female: [90000,125000] },
+  "BC-D": { Male: [], Female: [105000,150000] },
+  "BC-E": { Male: [], Female: [95000,135000] },
+  SC: { Male: [], Female: [180000,260000] },
+  ST: { Male: [], Female: [240000,360000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [], Female: [60000,100000] },
+  EWS: { Male: [], Female: [75000,120000] },
+  "BC-A": { Male: [], Female: [120000,170000] },
+  "BC-B": { Male: [], Female: [100000,140000] },
+  "BC-C": { Male: [], Female: [95000,130000] },
+  "BC-D": { Male: [], Female: [110000,155000] },
+  "BC-E": { Male: [], Female: [100000,140000] },
+  SC: { Male: [], Female: [190000,270000] },
+  ST: { Male: [], Female: [260000,380000] }
+});
+
+collegeId = "36";
+collegeName = "STANLEY";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [], Female: [20000,38000] },
+  EWS: { Male: [], Female: [28000,50000] },
+  "BC-A": { Male: [], Female: [50000,85000] },
+  "BC-B": { Male: [], Female: [38000,70000] },
+  "BC-C": { Male: [], Female: [35000,60000] },
+  "BC-D": { Male: [], Female: [45000,80000] },
+  "BC-E": { Male: [], Female: [38000,70000] },
+  SC: { Male: [], Female: [80000,150000] },
+  ST: { Male: [], Female: [130000,230000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [], Female: [22000,40000] },
+  EWS: { Male: [], Female: [30000,55000] },
+  "BC-A": { Male: [], Female: [55000,90000] },
+  "BC-B": { Male: [], Female: [40000,75000] },
+  "BC-C": { Male: [], Female: [37000,65000] },
+  "BC-D": { Male: [], Female: [48000,85000] },
+  "BC-E": { Male: [], Female: [40000,75000] },
+  SC: { Male: [], Female: [85000,160000] },
+  ST: { Male: [], Female: [140000,240000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [], Female: [24000,42000] },
+  EWS: { Male: [], Female: [32000,58000] },
+  "BC-A": { Male: [], Female: [58000,95000] },
+  "BC-B": { Male: [], Female: [42000,78000] },
+  "BC-C": { Male: [], Female: [40000,68000] },
+  "BC-D": { Male: [], Female: [52000,90000] },
+  "BC-E": { Male: [], Female: [42000,78000] },
+  SC: { Male: [], Female: [90000,170000] },
+  ST: { Male: [], Female: [150000,250000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [], Female: [26000,45000] },
+  EWS: { Male: [], Female: [35000,60000] },
+  "BC-A": { Male: [], Female: [60000,100000] },
+  "BC-B": { Male: [], Female: [45000,82000] },
+  "BC-C": { Male: [], Female: [42000,70000] },
+  "BC-D": { Male: [], Female: [55000,95000] },
+  "BC-E": { Male: [], Female: [45000,82000] },
+  SC: { Male: [], Female: [95000,180000] },
+  ST: { Male: [], Female: [160000,260000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [], Female: [26000,45000] },
+  EWS: { Male: [], Female: [35000,60000] },
+  "BC-A": { Male: [], Female: [60000,100000] },
+  "BC-B": { Male: [], Female: [45000,82000] },
+  "BC-C": { Male: [], Female: [42000,70000] },
+  "BC-D": { Male: [], Female: [55000,95000] },
+  "BC-E": { Male: [], Female: [45000,82000] },
+  SC: { Male: [], Female: [95000,180000] },
+  ST: { Male: [], Female: [160000,260000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [], Female: [30000,55000] },
+  EWS: { Male: [], Female: [40000,70000] },
+  "BC-A": { Male: [], Female: [70000,110000] },
+  "BC-B": { Male: [], Female: [55000,90000] },
+  "BC-C": { Male: [], Female: [50000,80000] },
+  "BC-D": { Male: [], Female: [65000,100000] },
+  "BC-E": { Male: [], Female: [55000,90000] },
+  SC: { Male: [], Female: [100000,180000] },
+  ST: { Male: [], Female: [170000,270000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [], Female: [35000,65000] },
+  EWS: { Male: [], Female: [45000,80000] },
+  "BC-A": { Male: [], Female: [80000,125000] },
+  "BC-B": { Male: [], Female: [65000,100000] },
+  "BC-C": { Male: [], Female: [60000,90000] },
+  "BC-D": { Male: [], Female: [75000,110000] },
+  "BC-E": { Male: [], Female: [65000,100000] },
+  SC: { Male: [], Female: [110000,190000] },
+  ST: { Male: [], Female: [180000,280000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [], Female: [42000,75000] },
+  EWS: { Male: [], Female: [55000,95000] },
+  "BC-A": { Male: [], Female: [95000,140000] },
+  "BC-B": { Male: [], Female: [75000,115000] },
+  "BC-C": { Male: [], Female: [70000,105000] },
+  "BC-D": { Male: [], Female: [90000,130000] },
+  "BC-E": { Male: [], Female: [75000,115000] },
+  SC: { Male: [], Female: [140000,220000] },
+  ST: { Male: [], Female: [210000,320000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [], Female: [45000,80000] },
+  EWS: { Male: [], Female: [60000,100000] },
+  "BC-A": { Male: [], Female: [100000,150000] },
+  "BC-B": { Male: [], Female: [80000,120000] },
+  "BC-C": { Male: [], Female: [75000,110000] },
+  "BC-D": { Male: [], Female: [95000,135000] },
+  "BC-E": { Male: [], Female: [80000,120000] },
+  SC: { Male: [], Female: [150000,230000] },
+  ST: { Male: [], Female: [220000,330000] }
+});
+
+collegeId = "37";
+collegeName = "SREYAS";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [30000,55000], Female: [32000,58000] },
+  EWS: { Male: [40000,70000], Female: [42000,75000] },
+  "BC-A": { Male: [70000,110000], Female: [75000,115000] },
+  "BC-B": { Male: [55000,90000], Female: [58000,95000] },
+  "BC-C": { Male: [50000,80000], Female: [52000,85000] },
+  "BC-D": { Male: [65000,100000], Female: [70000,105000] },
+  "BC-E": { Male: [55000,90000], Female: [58000,95000] },
+  SC: { Male: [110000,190000], Female: [120000,200000] },
+  ST: { Male: [180000,300000], Female: [190000,310000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [32000,58000], Female: [35000,62000] },
+  EWS: { Male: [42000,75000], Female: [45000,80000] },
+  "BC-A": { Male: [75000,115000], Female: [80000,120000] },
+  "BC-B": { Male: [58000,95000], Female: [62000,100000] },
+  "BC-C": { Male: [52000,85000], Female: [55000,90000] },
+  "BC-D": { Male: [70000,105000], Female: [75000,110000] },
+  "BC-E": { Male: [58000,95000], Female: [62000,100000] },
+  SC: { Male: [120000,200000], Female: [130000,210000] },
+  ST: { Male: [190000,310000], Female: [200000,320000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [35000,62000], Female: [38000,65000] },
+  EWS: { Male: [45000,80000], Female: [50000,85000] },
+  "BC-A": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-B": { Male: [62000,100000], Female: [65000,105000] },
+  "BC-C": { Male: [55000,90000], Female: [60000,95000] },
+  "BC-D": { Male: [75000,110000], Female: [80000,115000] },
+  "BC-E": { Male: [62000,100000], Female: [65000,105000] },
+  SC: { Male: [130000,210000], Female: [140000,220000] },
+  ST: { Male: [200000,320000], Female: [210000,330000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [38000,65000], Female: [40000,70000] },
+  EWS: { Male: [50000,85000], Female: [55000,90000] },
+  "BC-A": { Male: [85000,125000], Female: [90000,130000] },
+  "BC-B": { Male: [65000,105000], Female: [70000,110000] },
+  "BC-C": { Male: [60000,95000], Female: [65000,100000] },
+  "BC-D": { Male: [80000,115000], Female: [85000,120000] },
+  "BC-E": { Male: [65000,105000], Female: [70000,110000] },
+  SC: { Male: [140000,220000], Female: [150000,230000] },
+  ST: { Male: [210000,330000], Female: [220000,340000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [38000,65000], Female: [42000,72000] },
+  EWS: { Male: [50000,85000], Female: [55000,90000] },
+  "BC-A": { Male: [85000,125000], Female: [90000,130000] },
+  "BC-B": { Male: [65000,105000], Female: [72000,115000] },
+  "BC-C": { Male: [60000,95000], Female: [65000,100000] },
+  "BC-D": { Male: [80000,115000], Female: [85000,120000] },
+  "BC-E": { Male: [65000,105000], Female: [72000,115000] },
+  SC: { Male: [140000,220000], Female: [150000,230000] },
+  ST: { Male: [210000,330000], Female: [220000,340000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [42000,75000], Female: [45000,80000] },
+  EWS: { Male: [55000,95000], Female: [60000,100000] },
+  "BC-A": { Male: [95000,140000], Female: [100000,150000] },
+  "BC-B": { Male: [75000,115000], Female: [80000,120000] },
+  "BC-C": { Male: [70000,105000], Female: [75000,110000] },
+  "BC-D": { Male: [90000,130000], Female: [95000,135000] },
+  "BC-E": { Male: [75000,115000], Female: [80000,120000] },
+  SC: { Male: [150000,230000], Female: [160000,240000] },
+  ST: { Male: [220000,340000], Female: [230000,350000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [48000,85000], Female: [52000,90000] },
+  EWS: { Male: [60000,105000], Female: [65000,110000] },
+  "BC-A": { Male: [105000,150000], Female: [110000,155000] },
+  "BC-B": { Male: [85000,125000], Female: [90000,130000] },
+  "BC-C": { Male: [80000,115000], Female: [85000,120000] },
+  "BC-D": { Male: [95000,135000], Female: [100000,145000] },
+  "BC-E": { Male: [85000,125000], Female: [90000,130000] },
+  SC: { Male: [160000,240000], Female: [170000,250000] },
+  ST: { Male: [230000,350000], Female: [240000,360000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [55000,95000], Female: [60000,100000] },
+  EWS: { Male: [70000,115000], Female: [75000,120000] },
+  "BC-A": { Male: [115000,160000], Female: [120000,170000] },
+  "BC-B": { Male: [95000,135000], Female: [100000,140000] },
+  "BC-C": { Male: [90000,125000], Female: [95000,130000] },
+  "BC-D": { Male: [105000,150000], Female: [110000,155000] },
+  "BC-E": { Male: [95000,135000], Female: [100000,140000] },
+  SC: { Male: [180000,260000], Female: [190000,270000] },
+  ST: { Male: [250000,370000], Female: [260000,380000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [60000,100000], Female: [65000,105000] },
+  EWS: { Male: [75000,120000], Female: [80000,125000] },
+  "BC-A": { Male: [120000,170000], Female: [125000,175000] },
+  "BC-B": { Male: [100000,140000], Female: [105000,145000] },
+  "BC-C": { Male: [95000,130000], Female: [100000,135000] },
+  "BC-D": { Male: [110000,155000], Female: [115000,160000] },
+  "BC-E": { Male: [100000,140000], Female: [105000,145000] },
+  SC: { Male: [190000,270000], Female: [200000,280000] },
+  ST: { Male: [260000,380000], Female: [270000,390000] }
+});
+
+collegeId = "38";
+collegeName = "AURORA";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [35000,65000], Female: [38000,70000] },
+  EWS: { Male: [45000,85000], Female: [50000,90000] },
+  "BC-A": { Male: [85000,130000], Female: [90000,135000] },
+  "BC-B": { Male: [65000,105000], Female: [70000,110000] },
+  "BC-C": { Male: [60000,95000], Female: [65000,100000] },
+  "BC-D": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-E": { Male: [65000,105000], Female: [70000,110000] },
+  SC: { Male: [140000,220000], Female: [150000,230000] },
+  ST: { Male: [210000,330000], Female: [220000,340000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [38000,70000], Female: [40000,75000] },
+  EWS: { Male: [50000,90000], Female: [55000,95000] },
+  "BC-A": { Male: [90000,135000], Female: [95000,140000] },
+  "BC-B": { Male: [70000,110000], Female: [75000,115000] },
+  "BC-C": { Male: [65000,100000], Female: [70000,105000] },
+  "BC-D": { Male: [85000,125000], Female: [90000,130000] },
+  "BC-E": { Male: [70000,110000], Female: [75000,115000] },
+  SC: { Male: [150000,230000], Female: [160000,240000] },
+  ST: { Male: [220000,340000], Female: [230000,350000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [40000,75000], Female: [42000,80000] },
+  EWS: { Male: [55000,95000], Female: [60000,100000] },
+  "BC-A": { Male: [95000,140000], Female: [100000,145000] },
+  "BC-B": { Male: [75000,115000], Female: [80000,120000] },
+  "BC-C": { Male: [70000,105000], Female: [75000,110000] },
+  "BC-D": { Male: [90000,130000], Female: [95000,135000] },
+  "BC-E": { Male: [75000,115000], Female: [80000,120000] },
+  SC: { Male: [160000,240000], Female: [170000,250000] },
+  ST: { Male: [230000,350000], Female: [240000,360000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [42000,80000], Female: [45000,85000] },
+  EWS: { Male: [60000,100000], Female: [65000,105000] },
+  "BC-A": { Male: [100000,145000], Female: [105000,150000] },
+  "BC-B": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-C": { Male: [75000,110000], Female: [80000,115000] },
+  "BC-D": { Male: [95000,135000], Female: [100000,140000] },
+  "BC-E": { Male: [80000,120000], Female: [85000,125000] },
+  SC: { Male: [170000,250000], Female: [180000,260000] },
+  ST: { Male: [240000,360000], Female: [250000,370000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [42000,80000], Female: [45000,85000] },
+  EWS: { Male: [60000,100000], Female: [65000,105000] },
+  "BC-A": { Male: [100000,145000], Female: [105000,150000] },
+  "BC-B": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-C": { Male: [75000,110000], Female: [80000,115000] },
+  "BC-D": { Male: [95000,135000], Female: [100000,140000] },
+  "BC-E": { Male: [80000,120000], Female: [85000,125000] },
+  SC: { Male: [170000,250000], Female: [180000,260000] },
+  ST: { Male: [240000,360000], Female: [250000,370000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [45000,85000], Female: [48000,90000] },
+  EWS: { Male: [65000,105000], Female: [70000,110000] },
+  "BC-A": { Male: [105000,150000], Female: [110000,155000] },
+  "BC-B": { Male: [85000,125000], Female: [90000,130000] },
+  "BC-C": { Male: [80000,115000], Female: [85000,120000] },
+  "BC-D": { Male: [100000,140000], Female: [105000,145000] },
+  "BC-E": { Male: [85000,125000], Female: [90000,130000] },
+  SC: { Male: [180000,260000], Female: [190000,270000] },
+  ST: { Male: [250000,370000], Female: [260000,380000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [50000,90000], Female: [55000,95000] },
+  EWS: { Male: [70000,110000], Female: [75000,115000] },
+  "BC-A": { Male: [110000,155000], Female: [115000,160000] },
+  "BC-B": { Male: [90000,130000], Female: [95000,135000] },
+  "BC-C": { Male: [85000,120000], Female: [90000,125000] },
+  "BC-D": { Male: [105000,145000], Female: [110000,150000] },
+  "BC-E": { Male: [90000,130000], Female: [95000,135000] },
+  SC: { Male: [190000,270000], Female: [200000,280000] },
+  ST: { Male: [260000,380000], Female: [270000,390000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [55000,95000], Female: [60000,100000] },
+  EWS: { Male: [75000,115000], Female: [80000,120000] },
+  "BC-A": { Male: [115000,160000], Female: [120000,170000] },
+  "BC-B": { Male: [95000,135000], Female: [100000,140000] },
+  "BC-C": { Male: [90000,125000], Female: [95000,130000] },
+  "BC-D": { Male: [110000,150000], Female: [115000,155000] },
+  "BC-E": { Male: [95000,135000], Female: [100000,140000] },
+  SC: { Male: [200000,280000], Female: [210000,290000] },
+  ST: { Male: [270000,390000], Female: [280000,400000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [60000,100000], Female: [65000,105000] },
+  EWS: { Male: [80000,120000], Female: [85000,125000] },
+  "BC-A": { Male: [120000,170000], Female: [125000,175000] },
+  "BC-B": { Male: [100000,140000], Female: [105000,145000] },
+  "BC-C": { Male: [95000,130000], Female: [100000,135000] },
+  "BC-D": { Male: [115000,155000], Female: [120000,160000] },
+  "BC-E": { Male: [100000,140000], Female: [105000,145000] },
+  SC: { Male: [210000,290000], Female: [220000,300000] },
+  ST: { Male: [280000,400000], Female: [290000,410000] }
+});
+
+collegeId = "39";
+collegeName = "ATRI";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [40000,70000], Female: [42000,75000] },
+  EWS: { Male: [55000,90000], Female: [60000,95000] },
+  "BC-A": { Male: [90000,135000], Female: [95000,140000] },
+  "BC-B": { Male: [70000,110000], Female: [75000,115000] },
+  "BC-C": { Male: [65000,100000], Female: [70000,105000] },
+  "BC-D": { Male: [85000,125000], Female: [90000,130000] },
+  "BC-E": { Male: [70000,110000], Female: [75000,115000] },
+  SC: { Male: [150000,230000], Female: [160000,240000] },
+  ST: { Male: [220000,340000], Female: [230000,350000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [42000,75000], Female: [45000,80000] },
+  EWS: { Male: [60000,95000], Female: [65000,100000] },
+  "BC-A": { Male: [95000,140000], Female: [100000,145000] },
+  "BC-B": { Male: [75000,115000], Female: [80000,120000] },
+  "BC-C": { Male: [70000,105000], Female: [75000,110000] },
+  "BC-D": { Male: [90000,130000], Female: [95000,135000] },
+  "BC-E": { Male: [75000,115000], Female: [80000,120000] },
+  SC: { Male: [160000,240000], Female: [170000,250000] },
+  ST: { Male: [230000,350000], Female: [240000,360000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [45000,80000], Female: [48000,85000] },
+  EWS: { Male: [65000,100000], Female: [70000,105000] },
+  "BC-A": { Male: [100000,145000], Female: [105000,150000] },
+  "BC-B": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-C": { Male: [75000,110000], Female: [80000,115000] },
+  "BC-D": { Male: [95000,135000], Female: [100000,140000] },
+  "BC-E": { Male: [80000,120000], Female: [85000,125000] },
+  SC: { Male: [170000,250000], Female: [180000,260000] },
+  ST: { Male: [240000,360000], Female: [250000,370000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [48000,85000], Female: [50000,90000] },
+  EWS: { Male: [70000,105000], Female: [75000,110000] },
+  "BC-A": { Male: [105000,150000], Female: [110000,155000] },
+  "BC-B": { Male: [85000,125000], Female: [90000,130000] },
+  "BC-C": { Male: [80000,115000], Female: [85000,120000] },
+  "BC-D": { Male: [100000,140000], Female: [105000,145000] },
+  "BC-E": { Male: [85000,125000], Female: [90000,130000] },
+  SC: { Male: [180000,260000], Female: [190000,270000] },
+  ST: { Male: [250000,370000], Female: [260000,380000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [48000,85000], Female: [52000,90000] },
+  EWS: { Male: [70000,105000], Female: [75000,110000] },
+  "BC-A": { Male: [105000,150000], Female: [110000,155000] },
+  "BC-B": { Male: [85000,125000], Female: [90000,130000] },
+  "BC-C": { Male: [80000,115000], Female: [85000,120000] },
+  "BC-D": { Male: [100000,140000], Female: [105000,145000] },
+  "BC-E": { Male: [85000,125000], Female: [90000,130000] },
+  SC: { Male: [180000,260000], Female: [190000,270000] },
+  ST: { Male: [250000,370000], Female: [260000,380000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [50000,90000], Female: [55000,95000] },
+  EWS: { Male: [75000,110000], Female: [80000,115000] },
+  "BC-A": { Male: [110000,155000], Female: [115000,160000] },
+  "BC-B": { Male: [90000,130000], Female: [95000,135000] },
+  "BC-C": { Male: [85000,120000], Female: [90000,125000] },
+  "BC-D": { Male: [105000,145000], Female: [110000,150000] },
+  "BC-E": { Male: [90000,130000], Female: [95000,135000] },
+  SC: { Male: [190000,270000], Female: [200000,280000] },
+  ST: { Male: [260000,380000], Female: [270000,390000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [55000,95000], Female: [60000,100000] },
+  EWS: { Male: [80000,115000], Female: [85000,120000] },
+  "BC-A": { Male: [115000,160000], Female: [120000,170000] },
+  "BC-B": { Male: [95000,135000], Female: [100000,140000] },
+  "BC-C": { Male: [90000,125000], Female: [95000,130000] },
+  "BC-D": { Male: [110000,150000], Female: [115000,155000] },
+  "BC-E": { Male: [95000,135000], Female: [100000,140000] },
+  SC: { Male: [200000,280000], Female: [210000,290000] },
+  ST: { Male: [270000,390000], Female: [280000,400000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [60000,100000], Female: [65000,105000] },
+  EWS: { Male: [85000,120000], Female: [90000,125000] },
+  "BC-A": { Male: [120000,170000], Female: [125000,175000] },
+  "BC-B": { Male: [100000,140000], Female: [105000,145000] },
+  "BC-C": { Male: [95000,130000], Female: [100000,135000] },
+  "BC-D": { Male: [115000,155000], Female: [120000,160000] },
+  "BC-E": { Male: [100000,140000], Female: [105000,145000] },
+  SC: { Male: [210000,290000], Female: [220000,300000] },
+  ST: { Male: [280000,400000], Female: [290000,410000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [65000,105000], Female: [70000,110000] },
+  EWS: { Male: [90000,125000], Female: [95000,130000] },
+  "BC-A": { Male: [125000,175000], Female: [130000,180000] },
+  "BC-B": { Male: [105000,145000], Female: [110000,150000] },
+  "BC-C": { Male: [100000,135000], Female: [105000,140000] },
+  "BC-D": { Male: [120000,160000], Female: [125000,165000] },
+  "BC-E": { Male: [105000,145000], Female: [110000,150000] },
+  SC: { Male: [220000,300000], Female: [230000,310000] },
+  ST: { Male: [290000,410000], Female: [300000,420000] }
+});
+
+collegeId = "40";
+collegeName = "GEETHANJALI";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [12000,22000], Female: [14000,24000] },
+  EWS: { Male: [16000,30000], Female: [18000,32000] },
+  "BC-A": { Male: [30000,55000], Female: [32000,60000] },
+  "BC-B": { Male: [22000,45000], Female: [24000,48000] },
+  "BC-C": { Male: [20000,35000], Female: [22000,38000] },
+  "BC-D": { Male: [26000,50000], Female: [28000,55000] },
+  "BC-E": { Male: [22000,42000], Female: [24000,45000] },
+  SC: { Male: [50000,100000], Female: [55000,110000] },
+  ST: { Male: [90000,180000], Female: [100000,190000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [14000,25000], Female: [16000,27000] },
+  EWS: { Male: [18000,35000], Female: [20000,38000] },
+  "BC-A": { Male: [35000,60000], Female: [38000,65000] },
+  "BC-B": { Male: [25000,50000], Female: [27000,52000] },
+  "BC-C": { Male: [22000,40000], Female: [24000,42000] },
+  "BC-D": { Male: [30000,55000], Female: [32000,60000] },
+  "BC-E": { Male: [25000,48000], Female: [27000,50000] },
+  SC: { Male: [55000,110000], Female: [60000,120000] },
+  ST: { Male: [100000,190000], Female: [110000,200000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [16000,28000], Female: [18000,30000] },
+  EWS: { Male: [22000,40000], Female: [24000,42000] },
+  "BC-A": { Male: [40000,65000], Female: [42000,70000] },
+  "BC-B": { Male: [28000,55000], Female: [30000,58000] },
+  "BC-C": { Male: [25000,45000], Female: [28000,48000] },
+  "BC-D": { Male: [35000,60000], Female: [38000,65000] },
+  "BC-E": { Male: [28000,52000], Female: [30000,55000] },
+  SC: { Male: [60000,120000], Female: [65000,130000] },
+  ST: { Male: [110000,200000], Female: [120000,210000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [18000,30000], Female: [20000,32000] },
+  EWS: { Male: [24000,42000], Female: [26000,45000] },
+  "BC-A": { Male: [42000,70000], Female: [45000,75000] },
+  "BC-B": { Male: [30000,58000], Female: [32000,60000] },
+  "BC-C": { Male: [28000,48000], Female: [30000,50000] },
+  "BC-D": { Male: [38000,65000], Female: [40000,70000] },
+  "BC-E": { Male: [30000,55000], Female: [32000,58000] },
+  SC: { Male: [65000,130000], Female: [70000,140000] },
+  ST: { Male: [120000,210000], Female: [130000,220000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [18000,30000], Female: [20000,32000] },
+  EWS: { Male: [24000,42000], Female: [26000,45000] },
+  "BC-A": { Male: [42000,70000], Female: [45000,75000] },
+  "BC-B": { Male: [30000,58000], Female: [32000,60000] },
+  "BC-C": { Male: [28000,48000], Female: [30000,50000] },
+  "BC-D": { Male: [38000,65000], Female: [40000,70000] },
+  "BC-E": { Male: [30000,55000], Female: [32000,58000] },
+  SC: { Male: [65000,130000], Female: [70000,140000] },
+  ST: { Male: [120000,210000], Female: [130000,220000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [20000,35000], Female: [22000,38000] },
+  EWS: { Male: [28000,45000], Female: [30000,48000] },
+  "BC-A": { Male: [45000,75000], Female: [48000,80000] },
+  "BC-B": { Male: [35000,60000], Female: [38000,65000] },
+  "BC-C": { Male: [32000,55000], Female: [35000,58000] },
+  "BC-D": { Male: [42000,70000], Female: [45000,75000] },
+  "BC-E": { Male: [35000,60000], Female: [38000,65000] },
+  SC: { Male: [75000,140000], Female: [80000,150000] },
+  ST: { Male: [130000,220000], Female: [140000,230000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [25000,45000], Female: [28000,48000] },
+  EWS: { Male: [32000,60000], Female: [35000,65000] },
+  "BC-A": { Male: [60000,95000], Female: [65000,100000] },
+  "BC-B": { Male: [45000,75000], Female: [48000,80000] },
+  "BC-C": { Male: [40000,70000], Female: [45000,75000] },
+  "BC-D": { Male: [55000,85000], Female: [60000,90000] },
+  "BC-E": { Male: [45000,75000], Female: [48000,80000] },
+  SC: { Male: [90000,160000], Female: [95000,170000] },
+  ST: { Male: [150000,240000], Female: [160000,250000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [30000,55000], Female: [32000,60000] },
+  EWS: { Male: [40000,75000], Female: [42000,80000] },
+  "BC-A": { Male: [75000,110000], Female: [80000,115000] },
+  "BC-B": { Male: [55000,90000], Female: [60000,95000] },
+  "BC-C": { Male: [50000,80000], Female: [55000,85000] },
+  "BC-D": { Male: [65000,100000], Female: [70000,105000] },
+  "BC-E": { Male: [55000,90000], Female: [60000,95000] },
+  SC: { Male: [100000,180000], Female: [110000,190000] },
+  ST: { Male: [180000,270000], Female: [190000,280000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [32000,60000], Female: [35000,65000] },
+  EWS: { Male: [42000,80000], Female: [45000,85000] },
+  "BC-A": { Male: [80000,115000], Female: [85000,120000] },
+  "BC-B": { Male: [60000,95000], Female: [65000,100000] },
+  "BC-C": { Male: [55000,85000], Female: [60000,90000] },
+  "BC-D": { Male: [70000,105000], Female: [75000,110000] },
+  "BC-E": { Male: [60000,95000], Female: [65000,100000] },
+  SC: { Male: [110000,190000], Female: [120000,200000] },
+  ST: { Male: [190000,280000], Female: [200000,290000] }
+});
+
+collegeId = "41";
+collegeName = "SIDDHARTHA";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [45000,80000], Female: [48000,85000] },
+  EWS: { Male: [60000,100000], Female: [65000,105000] },
+  "BC-A": { Male: [100000,150000], Female: [105000,155000] },
+  "BC-B": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-C": { Male: [75000,110000], Female: [80000,115000] },
+  "BC-D": { Male: [95000,135000], Female: [100000,140000] },
+  "BC-E": { Male: [80000,120000], Female: [85000,125000] },
+  SC: { Male: [170000,250000], Female: [180000,260000] },
+  ST: { Male: [240000,360000], Female: [250000,370000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [48000,85000], Female: [50000,90000] },
+  EWS: { Male: [65000,105000], Female: [70000,110000] },
+  "BC-A": { Male: [105000,155000], Female: [110000,160000] },
+  "BC-B": { Male: [85000,125000], Female: [90000,130000] },
+  "BC-C": { Male: [80000,115000], Female: [85000,120000] },
+  "BC-D": { Male: [100000,140000], Female: [105000,145000] },
+  "BC-E": { Male: [85000,125000], Female: [90000,130000] },
+  SC: { Male: [180000,260000], Female: [190000,270000] },
+  ST: { Male: [250000,370000], Female: [260000,380000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [50000,90000], Female: [52000,95000] },
+  EWS: { Male: [70000,110000], Female: [75000,115000] },
+  "BC-A": { Male: [110000,160000], Female: [115000,165000] },
+  "BC-B": { Male: [90000,130000], Female: [95000,135000] },
+  "BC-C": { Male: [85000,120000], Female: [90000,125000] },
+  "BC-D": { Male: [105000,145000], Female: [110000,150000] },
+  "BC-E": { Male: [90000,130000], Female: [95000,135000] },
+  SC: { Male: [190000,270000], Female: [200000,280000] },
+  ST: { Male: [260000,380000], Female: [270000,390000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [52000,95000], Female: [55000,100000] },
+  EWS: { Male: [75000,115000], Female: [80000,120000] },
+  "BC-A": { Male: [115000,165000], Female: [120000,170000] },
+  "BC-B": { Male: [95000,135000], Female: [100000,140000] },
+  "BC-C": { Male: [90000,125000], Female: [95000,130000] },
+  "BC-D": { Male: [110000,150000], Female: [115000,155000] },
+  "BC-E": { Male: [95000,135000], Female: [100000,140000] },
+  SC: { Male: [200000,280000], Female: [210000,290000] },
+  ST: { Male: [270000,390000], Female: [280000,400000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [52000,95000], Female: [55000,100000] },
+  EWS: { Male: [75000,115000], Female: [80000,120000] },
+  "BC-A": { Male: [115000,165000], Female: [120000,170000] },
+  "BC-B": { Male: [95000,135000], Female: [100000,140000] },
+  "BC-C": { Male: [90000,125000], Female: [95000,130000] },
+  "BC-D": { Male: [110000,150000], Female: [115000,155000] },
+  "BC-E": { Male: [95000,135000], Female: [100000,140000] },
+  SC: { Male: [200000,280000], Female: [210000,290000] },
+  ST: { Male: [270000,390000], Female: [280000,400000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [55000,100000], Female: [60000,105000] },
+  EWS: { Male: [80000,120000], Female: [85000,125000] },
+  "BC-A": { Male: [120000,170000], Female: [125000,175000] },
+  "BC-B": { Male: [100000,140000], Female: [105000,145000] },
+  "BC-C": { Male: [95000,130000], Female: [100000,135000] },
+  "BC-D": { Male: [115000,155000], Female: [120000,160000] },
+  "BC-E": { Male: [100000,140000], Female: [105000,145000] },
+  SC: { Male: [210000,290000], Female: [220000,300000] },
+  ST: { Male: [280000,400000], Female: [290000,410000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [60000,105000], Female: [65000,110000] },
+  EWS: { Male: [85000,125000], Female: [90000,130000] },
+  "BC-A": { Male: [125000,175000], Female: [130000,180000] },
+  "BC-B": { Male: [105000,145000], Female: [110000,150000] },
+  "BC-C": { Male: [100000,135000], Female: [105000,140000] },
+  "BC-D": { Male: [120000,160000], Female: [125000,165000] },
+  "BC-E": { Male: [105000,145000], Female: [110000,150000] },
+  SC: { Male: [220000,300000], Female: [230000,310000] },
+  ST: { Male: [290000,410000], Female: [300000,420000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [65000,110000], Female: [70000,115000] },
+  EWS: { Male: [90000,130000], Female: [95000,135000] },
+  "BC-A": { Male: [130000,180000], Female: [135000,185000] },
+  "BC-B": { Male: [110000,150000], Female: [115000,155000] },
+  "BC-C": { Male: [105000,140000], Female: [110000,145000] },
+  "BC-D": { Male: [125000,165000], Female: [130000,170000] },
+  "BC-E": { Male: [110000,150000], Female: [115000,155000] },
+  SC: { Male: [230000,310000], Female: [240000,320000] },
+  ST: { Male: [300000,420000], Female: [310000,430000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [70000,115000], Female: [75000,120000] },
+  EWS: { Male: [95000,135000], Female: [100000,140000] },
+  "BC-A": { Male: [135000,185000], Female: [140000,190000] },
+  "BC-B": { Male: [115000,155000], Female: [120000,160000] },
+  "BC-C": { Male: [110000,145000], Female: [115000,150000] },
+  "BC-D": { Male: [130000,170000], Female: [135000,175000] },
+  "BC-E": { Male: [115000,155000], Female: [120000,160000] },
+  SC: { Male: [240000,320000], Female: [250000,330000] },
+  ST: { Male: [310000,430000], Female: [320000,440000] }
+});
+
+collegeId = "42";
+collegeName = "SBIT";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [50000,90000], Female: [52000,95000] },
+  EWS: { Male: [70000,110000], Female: [75000,115000] },
+  "BC-A": { Male: [110000,160000], Female: [115000,165000] },
+  "BC-B": { Male: [90000,130000], Female: [95000,135000] },
+  "BC-C": { Male: [85000,120000], Female: [90000,125000] },
+  "BC-D": { Male: [105000,145000], Female: [110000,150000] },
+  "BC-E": { Male: [90000,130000], Female: [95000,135000] },
+  SC: { Male: [180000,260000], Female: [190000,270000] },
+  ST: { Male: [250000,370000], Female: [260000,380000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [52000,95000], Female: [55000,100000] },
+  EWS: { Male: [75000,115000], Female: [80000,120000] },
+  "BC-A": { Male: [115000,165000], Female: [120000,170000] },
+  "BC-B": { Male: [95000,135000], Female: [100000,140000] },
+  "BC-C": { Male: [90000,125000], Female: [95000,130000] },
+  "BC-D": { Male: [110000,150000], Female: [115000,155000] },
+  "BC-E": { Male: [95000,135000], Female: [100000,140000] },
+  SC: { Male: [190000,270000], Female: [200000,280000] },
+  ST: { Male: [260000,380000], Female: [270000,390000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [55000,100000], Female: [58000,105000] },
+  EWS: { Male: [80000,120000], Female: [85000,125000] },
+  "BC-A": { Male: [120000,170000], Female: [125000,175000] },
+  "BC-B": { Male: [100000,140000], Female: [105000,145000] },
+  "BC-C": { Male: [95000,130000], Female: [100000,135000] },
+  "BC-D": { Male: [115000,155000], Female: [120000,160000] },
+  "BC-E": { Male: [100000,140000], Female: [105000,145000] },
+  SC: { Male: [200000,280000], Female: [210000,290000] },
+  ST: { Male: [270000,390000], Female: [280000,400000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [58000,105000], Female: [60000,110000] },
+  EWS: { Male: [85000,125000], Female: [90000,130000] },
+  "BC-A": { Male: [125000,175000], Female: [130000,180000] },
+  "BC-B": { Male: [105000,145000], Female: [110000,150000] },
+  "BC-C": { Male: [100000,135000], Female: [105000,140000] },
+  "BC-D": { Male: [120000,160000], Female: [125000,165000] },
+  "BC-E": { Male: [105000,145000], Female: [110000,150000] },
+  SC: { Male: [210000,290000], Female: [220000,300000] },
+  ST: { Male: [280000,400000], Female: [290000,410000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [58000,105000], Female: [62000,110000] },
+  EWS: { Male: [85000,125000], Female: [90000,130000] },
+  "BC-A": { Male: [125000,175000], Female: [130000,180000] },
+  "BC-B": { Male: [105000,145000], Female: [110000,150000] },
+  "BC-C": { Male: [100000,135000], Female: [105000,140000] },
+  "BC-D": { Male: [120000,160000], Female: [125000,165000] },
+  "BC-E": { Male: [105000,145000], Female: [110000,150000] },
+  SC: { Male: [210000,290000], Female: [220000,300000] },
+  ST: { Male: [280000,400000], Female: [290000,410000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [60000,110000], Female: [65000,115000] },
+  EWS: { Male: [90000,130000], Female: [95000,135000] },
+  "BC-A": { Male: [130000,180000], Female: [135000,185000] },
+  "BC-B": { Male: [110000,150000], Female: [115000,155000] },
+  "BC-C": { Male: [105000,140000], Female: [110000,145000] },
+  "BC-D": { Male: [125000,165000], Female: [130000,170000] },
+  "BC-E": { Male: [110000,150000], Female: [115000,155000] },
+  SC: { Male: [220000,300000], Female: [230000,310000] },
+  ST: { Male: [290000,410000], Female: [300000,420000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [65000,115000], Female: [70000,120000] },
+  EWS: { Male: [95000,135000], Female: [100000,140000] },
+  "BC-A": { Male: [135000,185000], Female: [140000,190000] },
+  "BC-B": { Male: [115000,155000], Female: [120000,160000] },
+  "BC-C": { Male: [110000,145000], Female: [115000,150000] },
+  "BC-D": { Male: [130000,170000], Female: [135000,175000] },
+  "BC-E": { Male: [115000,155000], Female: [120000,160000] },
+  SC: { Male: [230000,310000], Female: [240000,320000] },
+  ST: { Male: [300000,420000], Female: [310000,430000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [70000,120000], Female: [75000,125000] },
+  EWS: { Male: [100000,140000], Female: [105000,145000] },
+  "BC-A": { Male: [140000,190000], Female: [145000,195000] },
+  "BC-B": { Male: [120000,160000], Female: [125000,165000] },
+  "BC-C": { Male: [115000,150000], Female: [120000,155000] },
+  "BC-D": { Male: [135000,175000], Female: [140000,180000] },
+  "BC-E": { Male: [120000,160000], Female: [125000,165000] },
+  SC: { Male: [240000,320000], Female: [250000,330000] },
+  ST: { Male: [310000,430000], Female: [320000,440000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [75000,125000], Female: [80000,130000] },
+  EWS: { Male: [105000,145000], Female: [110000,150000] },
+  "BC-A": { Male: [145000,195000], Female: [150000,200000] },
+  "BC-B": { Male: [125000,165000], Female: [130000,170000] },
+  "BC-C": { Male: [120000,155000], Female: [125000,160000] },
+  "BC-D": { Male: [140000,180000], Female: [145000,185000] },
+  "BC-E": { Male: [125000,165000], Female: [130000,170000] },
+  SC: { Male: [250000,330000], Female: [260000,340000] },
+  ST: { Male: [320000,440000], Female: [330000,450000] }
+});
+
+collegeId = "43";
+collegeName = "GNITC";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [20000,40000], Female: [22000,42000] },
+  EWS: { Male: [28000,55000], Female: [30000,58000] },
+  "BC-A": { Male: [55000,90000], Female: [58000,95000] },
+  "BC-B": { Male: [40000,70000], Female: [42000,75000] },
+  "BC-C": { Male: [35000,60000], Female: [38000,65000] },
+  "BC-D": { Male: [50000,80000], Female: [52000,85000] },
+  "BC-E": { Male: [40000,70000], Female: [42000,75000] },
+  SC: { Male: [80000,150000], Female: [90000,160000] },
+  ST: { Male: [130000,230000], Female: [140000,240000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [22000,42000], Female: [25000,45000] },
+  EWS: { Male: [30000,58000], Female: [32000,62000] },
+  "BC-A": { Male: [58000,95000], Female: [62000,100000] },
+  "BC-B": { Male: [42000,75000], Female: [45000,80000] },
+  "BC-C": { Male: [38000,65000], Female: [40000,70000] },
+  "BC-D": { Male: [52000,85000], Female: [55000,90000] },
+  "BC-E": { Male: [42000,75000], Female: [45000,80000] },
+  SC: { Male: [90000,160000], Female: [100000,170000] },
+  ST: { Male: [140000,240000], Female: [150000,250000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [25000,45000], Female: [27000,48000] },
+  EWS: { Male: [32000,62000], Female: [35000,65000] },
+  "BC-A": { Male: [62000,100000], Female: [65000,105000] },
+  "BC-B": { Male: [45000,80000], Female: [48000,85000] },
+  "BC-C": { Male: [40000,70000], Female: [42000,75000] },
+  "BC-D": { Male: [55000,90000], Female: [58000,95000] },
+  "BC-E": { Male: [45000,80000], Female: [48000,85000] },
+  SC: { Male: [100000,170000], Female: [110000,180000] },
+  ST: { Male: [150000,250000], Female: [160000,260000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [27000,48000], Female: [30000,52000] },
+  EWS: { Male: [35000,65000], Female: [38000,70000] },
+  "BC-A": { Male: [65000,105000], Female: [70000,110000] },
+  "BC-B": { Male: [48000,85000], Female: [52000,90000] },
+  "BC-C": { Male: [42000,75000], Female: [45000,80000] },
+  "BC-D": { Male: [58000,95000], Female: [62000,100000] },
+  "BC-E": { Male: [48000,85000], Female: [52000,90000] },
+  SC: { Male: [110000,180000], Female: [120000,190000] },
+  ST: { Male: [160000,260000], Female: [170000,270000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [27000,48000], Female: [30000,52000] },
+  EWS: { Male: [35000,65000], Female: [38000,70000] },
+  "BC-A": { Male: [65000,105000], Female: [70000,110000] },
+  "BC-B": { Male: [48000,85000], Female: [52000,90000] },
+  "BC-C": { Male: [42000,75000], Female: [45000,80000] },
+  "BC-D": { Male: [58000,95000], Female: [62000,100000] },
+  "BC-E": { Male: [48000,85000], Female: [52000,90000] },
+  SC: { Male: [110000,180000], Female: [120000,190000] },
+  ST: { Male: [160000,260000], Female: [170000,270000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [30000,55000], Female: [32000,60000] },
+  EWS: { Male: [40000,75000], Female: [42000,80000] },
+  "BC-A": { Male: [75000,115000], Female: [80000,120000] },
+  "BC-B": { Male: [55000,90000], Female: [60000,95000] },
+  "BC-C": { Male: [50000,80000], Female: [55000,85000] },
+  "BC-D": { Male: [65000,100000], Female: [70000,105000] },
+  "BC-E": { Male: [55000,90000], Female: [60000,95000] },
+  SC: { Male: [120000,200000], Female: [130000,210000] },
+  ST: { Male: [180000,280000], Female: [190000,290000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [35000,65000], Female: [38000,70000] },
+  EWS: { Male: [45000,85000], Female: [50000,90000] },
+  "BC-A": { Male: [85000,130000], Female: [90000,135000] },
+  "BC-B": { Male: [65000,105000], Female: [70000,110000] },
+  "BC-C": { Male: [60000,95000], Female: [65000,100000] },
+  "BC-D": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-E": { Male: [65000,105000], Female: [70000,110000] },
+  SC: { Male: [140000,220000], Female: [150000,230000] },
+  ST: { Male: [210000,320000], Female: [220000,330000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [42000,75000], Female: [45000,80000] },
+  EWS: { Male: [55000,95000], Female: [60000,100000] },
+  "BC-A": { Male: [95000,140000], Female: [100000,150000] },
+  "BC-B": { Male: [75000,115000], Female: [80000,120000] },
+  "BC-C": { Male: [70000,105000], Female: [75000,110000] },
+  "BC-D": { Male: [90000,130000], Female: [95000,135000] },
+  "BC-E": { Male: [75000,115000], Female: [80000,120000] },
+  SC: { Male: [160000,240000], Female: [170000,250000] },
+  ST: { Male: [230000,340000], Female: [240000,350000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [45000,80000], Female: [48000,85000] },
+  EWS: { Male: [60000,100000], Female: [65000,105000] },
+  "BC-A": { Male: [100000,150000], Female: [105000,155000] },
+  "BC-B": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-C": { Male: [75000,110000], Female: [80000,115000] },
+  "BC-D": { Male: [95000,135000], Female: [100000,140000] },
+  "BC-E": { Male: [80000,120000], Female: [85000,125000] },
+  SC: { Male: [170000,250000], Female: [180000,260000] },
+  ST: { Male: [240000,350000], Female: [250000,360000] }
+});
+
+collegeId = "44";
+collegeName = "GNIT";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [35000,65000], Female: [38000,70000] },
+  EWS: { Male: [45000,85000], Female: [50000,90000] },
+  "BC-A": { Male: [85000,130000], Female: [90000,135000] },
+  "BC-B": { Male: [65000,105000], Female: [70000,110000] },
+  "BC-C": { Male: [60000,95000], Female: [65000,100000] },
+  "BC-D": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-E": { Male: [65000,105000], Female: [70000,110000] },
+  SC: { Male: [140000,220000], Female: [150000,230000] },
+  ST: { Male: [210000,330000], Female: [220000,340000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [38000,70000], Female: [40000,75000] },
+  EWS: { Male: [50000,90000], Female: [55000,95000] },
+  "BC-A": { Male: [90000,135000], Female: [95000,140000] },
+  "BC-B": { Male: [70000,110000], Female: [75000,115000] },
+  "BC-C": { Male: [65000,100000], Female: [70000,105000] },
+  "BC-D": { Male: [85000,125000], Female: [90000,130000] },
+  "BC-E": { Male: [70000,110000], Female: [75000,115000] },
+  SC: { Male: [150000,230000], Female: [160000,240000] },
+  ST: { Male: [220000,340000], Female: [230000,350000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [40000,75000], Female: [42000,80000] },
+  EWS: { Male: [55000,95000], Female: [60000,100000] },
+  "BC-A": { Male: [95000,140000], Female: [100000,145000] },
+  "BC-B": { Male: [75000,115000], Female: [80000,120000] },
+  "BC-C": { Male: [70000,105000], Female: [75000,110000] },
+  "BC-D": { Male: [90000,130000], Female: [95000,135000] },
+  "BC-E": { Male: [75000,115000], Female: [80000,120000] },
+  SC: { Male: [160000,240000], Female: [170000,250000] },
+  ST: { Male: [230000,350000], Female: [240000,360000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [42000,80000], Female: [45000,85000] },
+  EWS: { Male: [60000,100000], Female: [65000,105000] },
+  "BC-A": { Male: [100000,145000], Female: [105000,150000] },
+  "BC-B": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-C": { Male: [75000,110000], Female: [80000,115000] },
+  "BC-D": { Male: [95000,135000], Female: [100000,140000] },
+  "BC-E": { Male: [80000,120000], Female: [85000,125000] },
+  SC: { Male: [170000,250000], Female: [180000,260000] },
+  ST: { Male: [240000,360000], Female: [250000,370000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [42000,80000], Female: [45000,85000] },
+  EWS: { Male: [60000,100000], Female: [65000,105000] },
+  "BC-A": { Male: [100000,145000], Female: [105000,150000] },
+  "BC-B": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-C": { Male: [75000,110000], Female: [80000,115000] },
+  "BC-D": { Male: [95000,135000], Female: [100000,140000] },
+  "BC-E": { Male: [80000,120000], Female: [85000,125000] },
+  SC: { Male: [170000,250000], Female: [180000,260000] },
+  ST: { Male: [240000,360000], Female: [250000,370000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [45000,85000], Female: [48000,90000] },
+  EWS: { Male: [65000,105000], Female: [70000,110000] },
+  "BC-A": { Male: [105000,150000], Female: [110000,155000] },
+  "BC-B": { Male: [85000,125000], Female: [90000,130000] },
+  "BC-C": { Male: [80000,115000], Female: [85000,120000] },
+  "BC-D": { Male: [100000,140000], Female: [105000,145000] },
+  "BC-E": { Male: [85000,125000], Female: [90000,130000] },
+  SC: { Male: [180000,260000], Female: [190000,270000] },
+  ST: { Male: [250000,370000], Female: [260000,380000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [50000,90000], Female: [55000,95000] },
+  EWS: { Male: [70000,110000], Female: [75000,115000] },
+  "BC-A": { Male: [110000,155000], Female: [115000,160000] },
+  "BC-B": { Male: [90000,130000], Female: [95000,135000] },
+  "BC-C": { Male: [85000,120000], Female: [90000,125000] },
+  "BC-D": { Male: [105000,145000], Female: [110000,150000] },
+  "BC-E": { Male: [90000,130000], Female: [95000,135000] },
+  SC: { Male: [190000,270000], Female: [200000,280000] },
+  ST: { Male: [260000,380000], Female: [270000,390000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [55000,95000], Female: [60000,100000] },
+  EWS: { Male: [75000,115000], Female: [80000,120000] },
+  "BC-A": { Male: [115000,160000], Female: [120000,170000] },
+  "BC-B": { Male: [95000,135000], Female: [100000,140000] },
+  "BC-C": { Male: [90000,125000], Female: [95000,130000] },
+  "BC-D": { Male: [110000,150000], Female: [115000,155000] },
+  "BC-E": { Male: [95000,135000], Female: [100000,140000] },
+  SC: { Male: [200000,280000], Female: [210000,290000] },
+  ST: { Male: [270000,390000], Female: [280000,400000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [60000,100000], Female: [65000,105000] },
+  EWS: { Male: [80000,120000], Female: [85000,125000] },
+  "BC-A": { Male: [120000,170000], Female: [125000,175000] },
+  "BC-B": { Male: [100000,140000], Female: [105000,145000] },
+  "BC-C": { Male: [95000,130000], Female: [100000,135000] },
+  "BC-D": { Male: [115000,155000], Female: [120000,160000] },
+  "BC-E": { Male: [100000,140000], Female: [105000,145000] },
+  SC: { Male: [210000,290000], Female: [220000,300000] },
+  ST: { Male: [280000,400000], Female: [290000,410000] }
+});
+
+collegeId = "45";
+collegeName = "ACE Engineering College";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [25000,45000], Female: [28000,48000] },
+  EWS: { Male: [35000,65000], Female: [38000,70000] },
+  "BC-A": { Male: [65000,105000], Female: [70000,110000] },
+  "BC-B": { Male: [45000,80000], Female: [48000,85000] },
+  "BC-C": { Male: [40000,70000], Female: [42000,75000] },
+  "BC-D": { Male: [55000,90000], Female: [60000,95000] },
+  "BC-E": { Male: [45000,80000], Female: [48000,85000] },
+  SC: { Male: [90000,160000], Female: [100000,170000] },
+  ST: { Male: [150000,260000], Female: [160000,270000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [28000,48000], Female: [30000,52000] },
+  EWS: { Male: [38000,70000], Female: [40000,75000] },
+  "BC-A": { Male: [70000,110000], Female: [75000,115000] },
+  "BC-B": { Male: [48000,85000], Female: [52000,90000] },
+  "BC-C": { Male: [42000,75000], Female: [45000,80000] },
+  "BC-D": { Male: [60000,95000], Female: [65000,100000] },
+  "BC-E": { Male: [48000,85000], Female: [52000,90000] },
+  SC: { Male: [100000,170000], Female: [110000,180000] },
+  ST: { Male: [160000,270000], Female: [170000,280000] }
+});
+
+// -------- AI & DS --------
+addBranch("AI & DS", {
+  OC: { Male: [30000,52000], Female: [32000,55000] },
+  EWS: { Male: [40000,75000], Female: [42000,80000] },
+  "BC-A": { Male: [75000,115000], Female: [80000,120000] },
+  "BC-B": { Male: [52000,90000], Female: [55000,95000] },
+  "BC-C": { Male: [45000,80000], Female: [48000,85000] },
+  "BC-D": { Male: [65000,100000], Female: [70000,105000] },
+  "BC-E": { Male: [52000,90000], Female: [55000,95000] },
+  SC: { Male: [110000,180000], Female: [120000,190000] },
+  ST: { Male: [170000,280000], Female: [180000,290000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [32000,55000], Female: [35000,60000] },
+  EWS: { Male: [42000,80000], Female: [45000,85000] },
+  "BC-A": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-B": { Male: [55000,95000], Female: [60000,100000] },
+  "BC-C": { Male: [48000,85000], Female: [50000,90000] },
+  "BC-D": { Male: [70000,105000], Female: [75000,110000] },
+  "BC-E": { Male: [55000,95000], Female: [60000,100000] },
+  SC: { Male: [120000,190000], Female: [130000,200000] },
+  ST: { Male: [180000,290000], Female: [190000,300000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [32000,55000], Female: [35000,60000] },
+  EWS: { Male: [42000,80000], Female: [45000,85000] },
+  "BC-A": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-B": { Male: [55000,95000], Female: [60000,100000] },
+  "BC-C": { Male: [48000,85000], Female: [50000,90000] },
+  "BC-D": { Male: [70000,105000], Female: [75000,110000] },
+  "BC-E": { Male: [55000,95000], Female: [60000,100000] },
+  SC: { Male: [120000,190000], Female: [130000,200000] },
+  ST: { Male: [180000,290000], Female: [190000,300000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [35000,60000], Female: [38000,65000] },
+  EWS: { Male: [45000,85000], Female: [50000,90000] },
+  "BC-A": { Male: [85000,125000], Female: [90000,130000] },
+  "BC-B": { Male: [60000,100000], Female: [65000,105000] },
+  "BC-C": { Male: [50000,90000], Female: [55000,95000] },
+  "BC-D": { Male: [75000,110000], Female: [80000,115000] },
+  "BC-E": { Male: [60000,100000], Female: [65000,105000] },
+  SC: { Male: [130000,200000], Female: [140000,210000] },
+  ST: { Male: [190000,300000], Female: [200000,310000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [40000,70000], Female: [42000,75000] },
+  EWS: { Male: [55000,95000], Female: [60000,100000] },
+  "BC-A": { Male: [95000,140000], Female: [100000,145000] },
+  "BC-B": { Male: [70000,110000], Female: [75000,115000] },
+  "BC-C": { Male: [65000,100000], Female: [70000,105000] },
+  "BC-D": { Male: [85000,120000], Female: [90000,130000] },
+  "BC-E": { Male: [70000,110000], Female: [75000,115000] },
+  SC: { Male: [150000,220000], Female: [160000,230000] },
+  ST: { Male: [220000,320000], Female: [230000,330000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [45000,80000], Female: [48000,85000] },
+  EWS: { Male: [60000,100000], Female: [65000,105000] },
+  "BC-A": { Male: [100000,145000], Female: [105000,150000] },
+  "BC-B": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-C": { Male: [75000,110000], Female: [80000,115000] },
+  "BC-D": { Male: [95000,135000], Female: [100000,140000] },
+  "BC-E": { Male: [80000,120000], Female: [85000,125000] },
+  SC: { Male: [160000,240000], Female: [170000,250000] },
+  ST: { Male: [240000,340000], Female: [250000,350000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [48000,85000], Female: [50000,90000] },
+  EWS: { Male: [65000,105000], Female: [70000,110000] },
+  "BC-A": { Male: [105000,150000], Female: [110000,155000] },
+  "BC-B": { Male: [85000,125000], Female: [90000,130000] },
+  "BC-C": { Male: [80000,115000], Female: [85000,120000] },
+  "BC-D": { Male: [100000,140000], Female: [105000,145000] },
+  "BC-E": { Male: [85000,125000], Female: [90000,130000] },
+  SC: { Male: [170000,250000], Female: [180000,260000] },
+  ST: { Male: [250000,350000], Female: [260000,360000] }
+});
+
+collegeId = "46";
+collegeName = "ACE Institute of Technology";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC:   { Male: [55000,100000], Female: [60000,105000] },
+  EWS:  { Male: [75000,120000], Female: [80000,125000] },
+  "BC-A": { Male: [120000,170000], Female: [125000,175000] },
+  "BC-B": { Male: [100000,140000], Female: [105000,145000] },
+  "BC-C": { Male: [95000,130000],  Female: [100000,135000] },
+  "BC-D": { Male: [115000,155000], Female: [120000,160000] },
+  "BC-E": { Male: [100000,140000], Female: [105000,145000] },
+  SC:   { Male: [210000,290000], Female: [220000,300000] },
+  ST:   { Male: [280000,400000], Female: [290000,410000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC:   { Male: [60000,105000], Female: [65000,110000] },
+  EWS:  { Male: [80000,125000], Female: [85000,130000] },
+  "BC-A": { Male: [125000,175000], Female: [130000,180000] },
+  "BC-B": { Male: [105000,145000], Female: [110000,150000] },
+  "BC-C": { Male: [100000,135000], Female: [105000,140000] },
+  "BC-D": { Male: [120000,160000], Female: [125000,165000] },
+  "BC-E": { Male: [105000,145000], Female: [110000,150000] },
+  SC:   { Male: [220000,300000], Female: [230000,310000] },
+  ST:   { Male: [290000,410000], Female: [300000,420000] }
+});
+
+// -------- Data Science (CSD) --------
+addBranch("CSD", {
+  OC:   { Male: [65000,110000], Female: [70000,115000] },
+  EWS:  { Male: [85000,130000], Female: [90000,135000] },
+  "BC-A": { Male: [130000,180000], Female: [135000,185000] },
+  "BC-B": { Male: [110000,150000], Female: [115000,155000] },
+  "BC-C": { Male: [105000,140000], Female: [110000,145000] },
+  "BC-D": { Male: [125000,165000], Female: [130000,170000] },
+  "BC-E": { Male: [110000,150000], Female: [115000,155000] },
+  SC:   { Male: [230000,310000], Female: [240000,320000] },
+  ST:   { Male: [300000,420000], Female: [310000,430000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC:   { Male: [65000,110000], Female: [70000,115000] },
+  EWS:  { Male: [85000,130000], Female: [90000,135000] },
+  "BC-A": { Male: [130000,180000], Female: [135000,185000] },
+  "BC-B": { Male: [110000,150000], Female: [115000,155000] },
+  "BC-C": { Male: [105000,140000], Female: [110000,145000] },
+  "BC-D": { Male: [125000,165000], Female: [130000,170000] },
+  "BC-E": { Male: [110000,150000], Female: [115000,155000] },
+  SC:   { Male: [230000,310000], Female: [240000,320000] },
+  ST:   { Male: [300000,420000], Female: [310000,430000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC:   { Male: [70000,115000], Female: [75000,120000] },
+  EWS:  { Male: [90000,135000], Female: [95000,140000] },
+  "BC-A": { Male: [135000,185000], Female: [140000,190000] },
+  "BC-B": { Male: [115000,155000], Female: [120000,160000] },
+  "BC-C": { Male: [110000,145000], Female: [115000,150000] },
+  "BC-D": { Male: [130000,170000], Female: [135000,175000] },
+  "BC-E": { Male: [115000,155000], Female: [120000,160000] },
+  SC:   { Male: [240000,320000], Female: [250000,330000] },
+  ST:   { Male: [310000,430000], Female: [320000,440000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC:   { Male: [75000,120000], Female: [80000,125000] },
+  EWS:  { Male: [95000,140000], Female: [100000,145000] },
+  "BC-A": { Male: [140000,190000], Female: [145000,195000] },
+  "BC-B": { Male: [120000,160000], Female: [125000,165000] },
+  "BC-C": { Male: [115000,150000], Female: [120000,155000] },
+  "BC-D": { Male: [135000,175000], Female: [140000,180000] },
+  "BC-E": { Male: [120000,160000], Female: [125000,165000] },
+  SC:   { Male: [250000,330000], Female: [260000,340000] },
+  ST:   { Male: [320000,440000], Female: [330000,450000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC:   { Male: [80000,130000], Female: [85000,135000] },
+  EWS:  { Male: [100000,150000], Female: [105000,155000] },
+  "BC-A": { Male: [150000,200000], Female: [155000,205000] },
+  "BC-B": { Male: [130000,170000], Female: [135000,175000] },
+  "BC-C": { Male: [125000,160000], Female: [130000,165000] },
+  "BC-D": { Male: [145000,185000], Female: [150000,190000] },
+  "BC-E": { Male: [130000,170000], Female: [135000,175000] },
+  SC:   { Male: [260000,340000], Female: [270000,350000] },
+  ST:   { Male: [330000,450000], Female: [340000,460000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC:   { Male: [85000,135000], Female: [90000,140000] },
+  EWS:  { Male: [105000,155000], Female: [110000,160000] },
+  "BC-A": { Male: [155000,205000], Female: [160000,210000] },
+  "BC-B": { Male: [135000,175000], Female: [140000,180000] },
+  "BC-C": { Male: [130000,165000], Female: [135000,170000] },
+  "BC-D": { Male: [150000,190000], Female: [155000,195000] },
+  "BC-E": { Male: [135000,175000], Female: [140000,180000] },
+  SC:   { Male: [270000,350000], Female: [280000,360000] },
+  ST:   { Male: [340000,460000], Female: [350000,470000] }
+});
+
+collegeId = "47";
+collegeName = "Sreenidhi Institute of Science & Technology";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC:   { Male: [12000,25000], Female: [14000,27000] },
+  EWS:  { Male: [18000,35000], Female: [20000,38000] },
+  "BC-A": { Male: [35000,65000], Female: [38000,70000] },
+  "BC-B": { Male: [25000,50000], Female: [27000,55000] },
+  "BC-C": { Male: [22000,45000], Female: [24000,48000] },
+  "BC-D": { Male: [30000,55000], Female: [32000,60000] },
+  "BC-E": { Male: [25000,50000], Female: [27000,55000] },
+  SC:   { Male: [60000,120000], Female: [70000,130000] },
+  ST:   { Male: [100000,180000], Female: [110000,190000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC:   { Male: [14000,28000], Female: [16000,30000] },
+  EWS:  { Male: [20000,38000], Female: [22000,40000] },
+  "BC-A": { Male: [38000,70000], Female: [40000,75000] },
+  "BC-B": { Male: [28000,55000], Female: [30000,60000] },
+  "BC-C": { Male: [25000,48000], Female: [27000,52000] },
+  "BC-D": { Male: [32000,60000], Female: [35000,65000] },
+  "BC-E": { Male: [28000,55000], Female: [30000,60000] },
+  SC:   { Male: [70000,130000], Female: [80000,140000] },
+  ST:   { Male: [110000,190000], Female: [120000,200000] }
+});
+
+// -------- Data Science (CSD) --------
+addBranch("CSD", {
+  OC:   { Male: [15000,30000], Female: [17000,32000] },
+  EWS:  { Male: [22000,40000], Female: [24000,42000] },
+  "BC-A": { Male: [40000,75000], Female: [42000,80000] },
+  "BC-B": { Male: [30000,60000], Female: [32000,65000] },
+  "BC-C": { Male: [27000,52000], Female: [29000,55000] },
+  "BC-D": { Male: [35000,65000], Female: [38000,70000] },
+  "BC-E": { Male: [30000,60000], Female: [32000,65000] },
+  SC:   { Male: [80000,140000], Female: [90000,150000] },
+  ST:   { Male: [120000,200000], Female: [130000,210000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC:   { Male: [16000,32000], Female: [18000,35000] },
+  EWS:  { Male: [24000,42000], Female: [26000,45000] },
+  "BC-A": { Male: [42000,80000], Female: [45000,85000] },
+  "BC-B": { Male: [32000,65000], Female: [35000,70000] },
+  "BC-C": { Male: [29000,55000], Female: [32000,60000] },
+  "BC-D": { Male: [38000,70000], Female: [40000,75000] },
+  "BC-E": { Male: [32000,65000], Female: [35000,70000] },
+  SC:   { Male: [90000,150000], Female: [100000,160000] },
+  ST:   { Male: [130000,210000], Female: [140000,220000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC:   { Male: [16000,32000], Female: [18000,35000] },
+  EWS:  { Male: [24000,42000], Female: [26000,45000] },
+  "BC-A": { Male: [42000,80000], Female: [45000,85000] },
+  "BC-B": { Male: [32000,65000], Female: [35000,70000] },
+  "BC-C": { Male: [29000,55000], Female: [32000,60000] },
+  "BC-D": { Male: [38000,70000], Female: [40000,75000] },
+  "BC-E": { Male: [32000,65000], Female: [35000,70000] },
+  SC:   { Male: [90000,150000], Female: [100000,160000] },
+  ST:   { Male: [130000,210000], Female: [140000,220000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC:   { Male: [20000,40000], Female: [22000,45000] },
+  EWS:  { Male: [28000,55000], Female: [30000,60000] },
+  "BC-A": { Male: [55000,90000], Female: [60000,95000] },
+  "BC-B": { Male: [40000,70000], Female: [45000,75000] },
+  "BC-C": { Male: [35000,65000], Female: [40000,70000] },
+  "BC-D": { Male: [50000,80000], Female: [55000,85000] },
+  "BC-E": { Male: [40000,70000], Female: [45000,75000] },
+  SC:   { Male: [100000,180000], Female: [110000,190000] },
+  ST:   { Male: [150000,250000], Female: [160000,260000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC:   { Male: [30000,55000], Female: [32000,60000] },
+  EWS:  { Male: [40000,75000], Female: [42000,80000] },
+  "BC-A": { Male: [75000,115000], Female: [80000,120000] },
+  "BC-B": { Male: [55000,90000], Female: [60000,95000] },
+  "BC-C": { Male: [50000,80000], Female: [55000,85000] },
+  "BC-D": { Male: [65000,100000], Female: [70000,105000] },
+  "BC-E": { Male: [55000,90000], Female: [60000,95000] },
+  SC:   { Male: [120000,200000], Female: [130000,210000] },
+  ST:   { Male: [180000,280000], Female: [190000,290000] }
+});
+
+collegeId = "46";
+collegeName = "ACE Institute of Technology";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [55000,100000], Female: [60000,105000] },
+  EWS: { Male: [75000,120000], Female: [80000,125000] },
+  "BC-A": { Male: [120000,170000], Female: [125000,175000] },
+  "BC-B": { Male: [100000,140000], Female: [105000,145000] },
+  "BC-C": { Male: [95000,130000], Female: [100000,135000] },
+  "BC-D": { Male: [115000,155000], Female: [120000,160000] },
+  "BC-E": { Male: [100000,140000], Female: [105000,145000] },
+  SC: { Male: [210000,290000], Female: [220000,300000] },
+  ST: { Male: [280000,400000], Female: [290000,410000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [60000,105000], Female: [65000,110000] },
+  EWS: { Male: [80000,125000], Female: [85000,130000] },
+  "BC-A": { Male: [125000,175000], Female: [130000,180000] },
+  "BC-B": { Male: [105000,145000], Female: [110000,150000] },
+  "BC-C": { Male: [100000,135000], Female: [105000,140000] },
+  "BC-D": { Male: [120000,160000], Female: [125000,165000] },
+  "BC-E": { Male: [105000,145000], Female: [110000,150000] },
+  SC: { Male: [220000,300000], Female: [230000,310000] },
+  ST: { Male: [290000,410000], Female: [300000,420000] }
+});
+
+// -------- DATA SCIENCE --------
+addBranch("DATA SCIENCE", {
+  OC: { Male: [65000,110000], Female: [70000,115000] },
+  EWS: { Male: [85000,130000], Female: [90000,135000] },
+  "BC-A": { Male: [130000,180000], Female: [135000,185000] },
+  "BC-B": { Male: [110000,150000], Female: [115000,155000] },
+  "BC-C": { Male: [105000,140000], Female: [110000,145000] },
+  "BC-D": { Male: [125000,165000], Female: [130000,170000] },
+  "BC-E": { Male: [110000,150000], Female: [115000,155000] },
+  SC: { Male: [230000,310000], Female: [240000,320000] },
+  ST: { Male: [300000,420000], Female: [310000,430000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [65000,110000], Female: [70000,115000] },
+  EWS: { Male: [85000,130000], Female: [90000,135000] },
+  "BC-A": { Male: [130000,180000], Female: [135000,185000] },
+  "BC-B": { Male: [110000,150000], Female: [115000,155000] },
+  "BC-C": { Male: [105000,140000], Female: [110000,145000] },
+  "BC-D": { Male: [125000,165000], Female: [130000,170000] },
+  "BC-E": { Male: [110000,150000], Female: [115000,155000] },
+  SC: { Male: [230000,310000], Female: [240000,320000] },
+  ST: { Male: [300000,420000], Female: [310000,430000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [70000,115000], Female: [75000,120000] },
+  EWS: { Male: [90000,135000], Female: [95000,140000] },
+  "BC-A": { Male: [135000,185000], Female: [140000,190000] },
+  "BC-B": { Male: [115000,155000], Female: [120000,160000] },
+  "BC-C": { Male: [110000,145000], Female: [115000,150000] },
+  "BC-D": { Male: [130000,170000], Female: [135000,175000] },
+  "BC-E": { Male: [115000,155000], Female: [120000,160000] },
+  SC: { Male: [240000,320000], Female: [250000,330000] },
+  ST: { Male: [310000,430000], Female: [320000,440000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [75000,120000], Female: [80000,125000] },
+  EWS: { Male: [95000,140000], Female: [100000,145000] },
+  "BC-A": { Male: [140000,190000], Female: [145000,195000] },
+  "BC-B": { Male: [120000,160000], Female: [125000,165000] },
+  "BC-C": { Male: [115000,150000], Female: [120000,155000] },
+  "BC-D": { Male: [135000,175000], Female: [140000,180000] },
+  "BC-E": { Male: [120000,160000], Female: [125000,165000] },
+  SC: { Male: [250000,330000], Female: [260000,340000] },
+  ST: { Male: [320000,440000], Female: [330000,450000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [80000,130000], Female: [85000,135000] },
+  EWS: { Male: [100000,150000], Female: [105000,155000] },
+  "BC-A": { Male: [150000,200000], Female: [155000,205000] },
+  "BC-B": { Male: [130000,170000], Female: [135000,175000] },
+  "BC-C": { Male: [125000,160000], Female: [130000,165000] },
+  "BC-D": { Male: [145000,185000], Female: [150000,190000] },
+  "BC-E": { Male: [130000,170000], Female: [135000,175000] },
+  SC: { Male: [260000,340000], Female: [270000,350000] },
+  ST: { Male: [330000,450000], Female: [340000,460000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [85000,135000], Female: [90000,140000] },
+  EWS: { Male: [105000,155000], Female: [110000,160000] },
+  "BC-A": { Male: [155000,205000], Female: [160000,210000] },
+  "BC-B": { Male: [135000,175000], Female: [140000,180000] },
+  "BC-C": { Male: [130000,165000], Female: [135000,170000] },
+  "BC-D": { Male: [150000,190000], Female: [155000,195000] },
+  "BC-E": { Male: [135000,175000], Female: [140000,180000] },
+  SC: { Male: [270000,350000], Female: [280000,360000] },
+  ST: { Male: [340000,460000], Female: [350000,470000] }
+});
+
+collegeId = "49";
+collegeName = "MLR Institute of Technology";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [20000,40000], Female: [22000,42000] },
+  EWS: { Male: [28000,55000], Female: [30000,58000] },
+  "BC-A": { Male: [55000,90000], Female: [58000,95000] },
+  "BC-B": { Male: [40000,70000], Female: [42000,75000] },
+  "BC-C": { Male: [35000,65000], Female: [38000,70000] },
+  "BC-D": { Male: [50000,80000], Female: [52000,85000] },
+  "BC-E": { Male: [40000,70000], Female: [42000,75000] },
+  SC: { Male: [80000,150000], Female: [90000,160000] },
+  ST: { Male: [130000,230000], Female: [140000,240000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [22000,42000], Female: [25000,45000] },
+  EWS: { Male: [30000,58000], Female: [32000,62000] },
+  "BC-A": { Male: [58000,95000], Female: [62000,100000] },
+  "BC-B": { Male: [42000,75000], Female: [45000,80000] },
+  "BC-C": { Male: [38000,70000], Female: [40000,75000] },
+  "BC-D": { Male: [52000,85000], Female: [55000,90000] },
+  "BC-E": { Male: [42000,75000], Female: [45000,80000] },
+  SC: { Male: [90000,160000], Female: [100000,170000] },
+  ST: { Male: [140000,240000], Female: [150000,250000] }
+});
+
+// -------- DATA SCIENCE --------
+addBranch("DATA SCIENCE", {
+  OC: { Male: [25000,45000], Female: [27000,48000] },
+  EWS: { Male: [32000,62000], Female: [35000,65000] },
+  "BC-A": { Male: [62000,100000], Female: [65000,105000] },
+  "BC-B": { Male: [45000,80000], Female: [48000,85000] },
+  "BC-C": { Male: [40000,75000], Female: [42000,80000] },
+  "BC-D": { Male: [55000,90000], Female: [58000,95000] },
+  "BC-E": { Male: [45000,80000], Female: [48000,85000] },
+  SC: { Male: [100000,170000], Female: [110000,180000] },
+  ST: { Male: [150000,250000], Female: [160000,260000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [27000,48000], Female: [30000,52000] },
+  EWS: { Male: [35000,65000], Female: [38000,70000] },
+  "BC-A": { Male: [65000,105000], Female: [70000,110000] },
+  "BC-B": { Male: [48000,85000], Female: [52000,90000] },
+  "BC-C": { Male: [42000,80000], Female: [45000,85000] },
+  "BC-D": { Male: [58000,95000], Female: [62000,100000] },
+  "BC-E": { Male: [48000,85000], Female: [52000,90000] },
+  SC: { Male: [110000,180000], Female: [120000,190000] },
+  ST: { Male: [160000,260000], Female: [170000,270000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [27000,48000], Female: [30000,52000] },
+  EWS: { Male: [35000,65000], Female: [38000,70000] },
+  "BC-A": { Male: [65000,105000], Female: [70000,110000] },
+  "BC-B": { Male: [48000,85000], Female: [52000,90000] },
+  "BC-C": { Male: [42000,80000], Female: [45000,85000] },
+  "BC-D": { Male: [58000,95000], Female: [62000,100000] },
+  "BC-E": { Male: [48000,85000], Female: [52000,90000] },
+  SC: { Male: [110000,180000], Female: [120000,190000] },
+  ST: { Male: [160000,260000], Female: [170000,270000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [30000,55000], Female: [32000,60000] },
+  EWS: { Male: [40000,75000], Female: [42000,80000] },
+  "BC-A": { Male: [75000,115000], Female: [80000,120000] },
+  "BC-B": { Male: [55000,90000], Female: [60000,95000] },
+  "BC-C": { Male: [50000,85000], Female: [55000,90000] },
+  "BC-D": { Male: [65000,100000], Female: [70000,105000] },
+  "BC-E": { Male: [55000,90000], Female: [60000,95000] },
+  SC: { Male: [120000,200000], Female: [130000,210000] },
+  ST: { Male: [180000,280000], Female: [190000,290000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [35000,65000], Female: [38000,70000] },
+  EWS: { Male: [45000,85000], Female: [50000,90000] },
+  "BC-A": { Male: [85000,130000], Female: [90000,135000] },
+  "BC-B": { Male: [65000,105000], Female: [70000,110000] },
+  "BC-C": { Male: [60000,95000], Female: [65000,100000] },
+  "BC-D": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-E": { Male: [65000,105000], Female: [70000,110000] },
+  SC: { Male: [140000,220000], Female: [150000,230000] },
+  ST: { Male: [210000,320000], Female: [220000,330000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [42000,75000], Female: [45000,80000] },
+  EWS: { Male: [55000,95000], Female: [60000,100000] },
+  "BC-A": { Male: [95000,140000], Female: [100000,145000] },
+  "BC-B": { Male: [75000,115000], Female: [80000,120000] },
+  "BC-C": { Male: [70000,105000], Female: [75000,110000] },
+  "BC-D": { Male: [90000,130000], Female: [95000,135000] },
+  "BC-E": { Male: [75000,115000], Female: [80000,120000] },
+  SC: { Male: [160000,240000], Female: [170000,250000] },
+  ST: { Male: [230000,340000], Female: [240000,350000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [45000,80000], Female: [48000,85000] },
+  EWS: { Male: [60000,100000], Female: [65000,105000] },
+  "BC-A": { Male: [100000,145000], Female: [105000,150000] },
+  "BC-B": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-C": { Male: [75000,110000], Female: [80000,115000] },
+  "BC-D": { Male: [95000,135000], Female: [100000,140000] },
+  "BC-E": { Male: [80000,120000], Female: [85000,125000] },
+  SC: { Male: [170000,250000], Female: [180000,260000] },
+  ST: { Male: [240000,350000], Female: [250000,360000] }
+});
+
+collegeId = "50";
+collegeName = "Hyderabad Institute of Technology & Management";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [35000,65000], Female: [38000,70000] },
+  EWS: { Male: [50000,90000], Female: [55000,95000] },
+  "BC-A": { Male: [90000,130000], Female: [95000,135000] },
+  "BC-B": { Male: [65000,105000], Female: [70000,110000] },
+  "BC-C": { Male: [60000,95000], Female: [65000,100000] },
+  "BC-D": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-E": { Male: [65000,105000], Female: [70000,110000] },
+  SC: { Male: [140000,220000], Female: [150000,230000] },
+  ST: { Male: [210000,320000], Female: [220000,330000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [38000,70000], Female: [40000,75000] },
+  EWS: { Male: [55000,95000], Female: [60000,100000] },
+  "BC-A": { Male: [95000,135000], Female: [100000,140000] },
+  "BC-B": { Male: [70000,110000], Female: [75000,115000] },
+  "BC-C": { Male: [65000,100000], Female: [70000,105000] },
+  "BC-D": { Male: [85000,125000], Female: [90000,130000] },
+  "BC-E": { Male: [70000,110000], Female: [75000,115000] },
+  SC: { Male: [150000,230000], Female: [160000,240000] },
+  ST: { Male: [220000,330000], Female: [230000,340000] }
+});
+
+// -------- DATA SCIENCE --------
+addBranch("DATA SCIENCE", {
+  OC: { Male: [40000,75000], Female: [42000,80000] },
+  EWS: { Male: [60000,100000], Female: [65000,105000] },
+  "BC-A": { Male: [100000,140000], Female: [105000,145000] },
+  "BC-B": { Male: [75000,115000], Female: [80000,120000] },
+  "BC-C": { Male: [70000,105000], Female: [75000,110000] },
+  "BC-D": { Male: [90000,130000], Female: [95000,135000] },
+  "BC-E": { Male: [75000,115000], Female: [80000,120000] },
+  SC: { Male: [160000,240000], Female: [170000,250000] },
+  ST: { Male: [230000,340000], Female: [240000,350000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [40000,75000], Female: [42000,80000] },
+  EWS: { Male: [60000,100000], Female: [65000,105000] },
+  "BC-A": { Male: [100000,140000], Female: [105000,145000] },
+  "BC-B": { Male: [75000,115000], Female: [80000,120000] },
+  "BC-C": { Male: [70000,105000], Female: [75000,110000] },
+  "BC-D": { Male: [90000,130000], Female: [95000,135000] },
+  "BC-E": { Male: [75000,115000], Female: [80000,120000] },
+  SC: { Male: [160000,240000], Female: [170000,250000] },
+  ST: { Male: [230000,340000], Female: [240000,350000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [42000,80000], Female: [45000,85000] },
+  EWS: { Male: [65000,105000], Female: [70000,110000] },
+  "BC-A": { Male: [105000,145000], Female: [110000,150000] },
+  "BC-B": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-C": { Male: [75000,110000], Female: [80000,115000] },
+  "BC-D": { Male: [95000,135000], Female: [100000,140000] },
+  "BC-E": { Male: [80000,120000], Female: [85000,125000] },
+  SC: { Male: [170000,250000], Female: [180000,260000] },
+  ST: { Male: [240000,350000], Female: [250000,360000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [48000,90000], Female: [50000,95000] },
+  EWS: { Male: [70000,110000], Female: [75000,115000] },
+  "BC-A": { Male: [110000,150000], Female: [115000,155000] },
+  "BC-B": { Male: [90000,125000], Female: [95000,130000] },
+  "BC-C": { Male: [85000,115000], Female: [90000,120000] },
+  "BC-D": { Male: [100000,140000], Female: [105000,145000] },
+  "BC-E": { Male: [90000,125000], Female: [95000,130000] },
+  SC: { Male: [180000,260000], Female: [190000,270000] },
+  ST: { Male: [250000,360000], Female: [260000,370000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [52000,95000], Female: [55000,100000] },
+  EWS: { Male: [75000,115000], Female: [80000,120000] },
+  "BC-A": { Male: [115000,155000], Female: [120000,160000] },
+  "BC-B": { Male: [95000,130000], Female: [100000,135000] },
+  "BC-C": { Male: [90000,120000], Female: [95000,125000] },
+  "BC-D": { Male: [105000,145000], Female: [110000,150000] },
+  "BC-E": { Male: [95000,130000], Female: [100000,135000] },
+  SC: { Male: [190000,270000], Female: [200000,280000] },
+  ST: { Male: [260000,370000], Female: [270000,380000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [55000,100000], Female: [58000,105000] },
+  EWS: { Male: [80000,120000], Female: [85000,125000] },
+  "BC-A": { Male: [120000,160000], Female: [125000,165000] },
+  "BC-B": { Male: [100000,135000], Female: [105000,140000] },
+  "BC-C": { Male: [95000,125000], Female: [100000,130000] },
+  "BC-D": { Male: [110000,150000], Female: [115000,155000] },
+  "BC-E": { Male: [100000,135000], Female: [105000,140000] },
+  SC: { Male: [200000,280000], Female: [210000,290000] },
+  ST: { Male: [270000,380000], Female: [280000,390000] }
+});
+
+collegeId = "46";
+collegeName = "ACE Institute of Technology";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [55000,100000], Female: [60000,105000] },
+  EWS: { Male: [75000,120000], Female: [80000,125000] },
+  "BC-A": { Male: [120000,170000], Female: [125000,175000] },
+  "BC-B": { Male: [100000,140000], Female: [105000,145000] },
+  "BC-C": { Male: [95000,130000], Female: [100000,135000] },
+  "BC-D": { Male: [115000,155000], Female: [120000,160000] },
+  "BC-E": { Male: [100000,140000], Female: [105000,145000] },
+  SC: { Male: [210000,290000], Female: [220000,300000] },
+  ST: { Male: [280000,400000], Female: [290000,410000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [60000,105000], Female: [65000,110000] },
+  EWS: { Male: [80000,125000], Female: [85000,130000] },
+  "BC-A": { Male: [125000,175000], Female: [130000,180000] },
+  "BC-B": { Male: [105000,145000], Female: [110000,150000] },
+  "BC-C": { Male: [100000,135000], Female: [105000,140000] },
+  "BC-D": { Male: [120000,160000], Female: [125000,165000] },
+  "BC-E": { Male: [105000,145000], Female: [110000,150000] },
+  SC: { Male: [220000,300000], Female: [230000,310000] },
+  ST: { Male: [290000,410000], Female: [300000,420000] }
+});
+
+// -------- CSD --------
+addBranch("CSD", {
+  OC: { Male: [65000,110000], Female: [70000,115000] },
+  EWS: { Male: [85000,130000], Female: [90000,135000] },
+  "BC-A": { Male: [130000,180000], Female: [135000,185000] },
+  "BC-B": { Male: [110000,150000], Female: [115000,155000] },
+  "BC-C": { Male: [105000,140000], Female: [110000,145000] },
+  "BC-D": { Male: [125000,165000], Female: [130000,170000] },
+  "BC-E": { Male: [110000,150000], Female: [115000,155000] },
+  SC: { Male: [230000,310000], Female: [240000,320000] },
+  ST: { Male: [300000,420000], Female: [310000,430000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [65000,110000], Female: [70000,115000] },
+  EWS: { Male: [85000,130000], Female: [90000,135000] },
+  "BC-A": { Male: [130000,180000], Female: [135000,185000] },
+  "BC-B": { Male: [110000,150000], Female: [115000,155000] },
+  "BC-C": { Male: [105000,140000], Female: [110000,145000] },
+  "BC-D": { Male: [125000,165000], Female: [130000,170000] },
+  "BC-E": { Male: [110000,150000], Female: [115000,155000] },
+  SC: { Male: [230000,310000], Female: [240000,320000] },
+  ST: { Male: [300000,420000], Female: [310000,430000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [70000,115000], Female: [75000,120000] },
+  EWS: { Male: [90000,135000], Female: [95000,140000] },
+  "BC-A": { Male: [135000,185000], Female: [140000,190000] },
+  "BC-B": { Male: [115000,155000], Female: [120000,160000] },
+  "BC-C": { Male: [110000,145000], Female: [115000,150000] },
+  "BC-D": { Male: [130000,170000], Female: [135000,175000] },
+  "BC-E": { Male: [115000,155000], Female: [120000,160000] },
+  SC: { Male: [240000,320000], Female: [250000,330000] },
+  ST: { Male: [310000,430000], Female: [320000,440000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [75000,120000], Female: [80000,125000] },
+  EWS: { Male: [95000,140000], Female: [100000,145000] },
+  "BC-A": { Male: [140000,190000], Female: [145000,195000] },
+  "BC-B": { Male: [120000,160000], Female: [125000,165000] },
+  "BC-C": { Male: [115000,150000], Female: [120000,155000] },
+  "BC-D": { Male: [135000,175000], Female: [140000,180000] },
+  "BC-E": { Male: [120000,160000], Female: [125000,165000] },
+  SC: { Male: [250000,330000], Female: [260000,340000] },
+  ST: { Male: [320000,440000], Female: [330000,450000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [80000,130000], Female: [85000,135000] },
+  EWS: { Male: [100000,150000], Female: [105000,155000] },
+  "BC-A": { Male: [150000,200000], Female: [155000,205000] },
+  "BC-B": { Male: [130000,170000], Female: [135000,175000] },
+  "BC-C": { Male: [125000,160000], Female: [130000,165000] },
+  "BC-D": { Male: [145000,185000], Female: [150000,190000] },
+  "BC-E": { Male: [130000,170000], Female: [135000,175000] },
+  SC: { Male: [260000,340000], Female: [270000,350000] },
+  ST: { Male: [330000,450000], Female: [340000,460000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [85000,135000], Female: [90000,140000] },
+  EWS: { Male: [105000,155000], Female: [110000,160000] },
+  "BC-A": { Male: [155000,205000], Female: [160000,210000] },
+  "BC-B": { Male: [135000,175000], Female: [140000,180000] },
+  "BC-C": { Male: [130000,165000], Female: [135000,170000] },
+  "BC-D": { Male: [150000,190000], Female: [155000,195000] },
+  "BC-E": { Male: [135000,175000], Female: [140000,180000] },
+  SC: { Male: [270000,350000], Female: [280000,360000] },
+  ST: { Male: [340000,460000], Female: [350000,470000] }
+});
+
+collegeId = "52";
+collegeName = "Vidya Jyothi Institute of Technology";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [15000,30000], Female: [18000,32000] },
+  EWS: { Male: [22000,45000], Female: [25000,48000] },
+  "BC-A": { Male: [45000,80000], Female: [48000,85000] },
+  "BC-B": { Male: [30000,60000], Female: [32000,65000] },
+  "BC-C": { Male: [28000,55000], Female: [30000,60000] },
+  "BC-D": { Male: [38000,70000], Female: [40000,75000] },
+  "BC-E": { Male: [30000,60000], Female: [32000,65000] },
+  SC: { Male: [70000,130000], Female: [80000,140000] },
+  ST: { Male: [120000,200000], Female: [130000,210000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [18000,32000], Female: [20000,35000] },
+  EWS: { Male: [25000,48000], Female: [28000,52000] },
+  "BC-A": { Male: [48000,85000], Female: [52000,90000] },
+  "BC-B": { Male: [32000,65000], Female: [35000,70000] },
+  "BC-C": { Male: [30000,60000], Female: [32000,65000] },
+  "BC-D": { Male: [40000,75000], Female: [42000,80000] },
+  "BC-E": { Male: [32000,65000], Female: [35000,70000] },
+  SC: { Male: [80000,140000], Female: [90000,150000] },
+  ST: { Male: [130000,210000], Female: [140000,220000] }
+});
+
+// -------- CSD --------
+addBranch("CSD", {
+  OC: { Male: [20000,35000], Female: [22000,38000] },
+  EWS: { Male: [28000,52000], Female: [30000,55000] },
+  "BC-A": { Male: [52000,90000], Female: [55000,95000] },
+  "BC-B": { Male: [35000,70000], Female: [38000,75000] },
+  "BC-C": { Male: [32000,65000], Female: [35000,70000] },
+  "BC-D": { Male: [42000,80000], Female: [45000,85000] },
+  "BC-E": { Male: [35000,70000], Female: [38000,75000] },
+  SC: { Male: [90000,150000], Female: [100000,160000] },
+  ST: { Male: [140000,220000], Female: [150000,230000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [22000,38000], Female: [25000,40000] },
+  EWS: { Male: [30000,55000], Female: [32000,60000] },
+  "BC-A": { Male: [55000,95000], Female: [60000,100000] },
+  "BC-B": { Male: [38000,75000], Female: [40000,80000] },
+  "BC-C": { Male: [35000,70000], Female: [38000,75000] },
+  "BC-D": { Male: [45000,85000], Female: [48000,90000] },
+  "BC-E": { Male: [38000,75000], Female: [40000,80000] },
+  SC: { Male: [100000,160000], Female: [110000,170000] },
+  ST: { Male: [150000,230000], Female: [160000,240000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [22000,38000], Female: [25000,40000] },
+  EWS: { Male: [30000,55000], Female: [32000,60000] },
+  "BC-A": { Male: [55000,95000], Female: [60000,100000] },
+  "BC-B": { Male: [38000,75000], Female: [40000,80000] },
+  "BC-C": { Male: [35000,70000], Female: [38000,75000] },
+  "BC-D": { Male: [45000,85000], Female: [48000,90000] },
+  "BC-E": { Male: [38000,75000], Female: [40000,80000] },
+  SC: { Male: [100000,160000], Female: [110000,170000] },
+  ST: { Male: [150000,230000], Female: [160000,240000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [25000,45000], Female: [28000,48000] },
+  EWS: { Male: [35000,65000], Female: [38000,70000] },
+  "BC-A": { Male: [65000,105000], Female: [70000,110000] },
+  "BC-B": { Male: [45000,80000], Female: [48000,85000] },
+  "BC-C": { Male: [40000,75000], Female: [42000,80000] },
+  "BC-D": { Male: [55000,90000], Female: [60000,95000] },
+  "BC-E": { Male: [45000,80000], Female: [48000,85000] },
+  SC: { Male: [110000,180000], Female: [120000,190000] },
+  ST: { Male: [170000,260000], Female: [180000,270000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [30000,55000], Female: [32000,60000] },
+  EWS: { Male: [40000,75000], Female: [42000,80000] },
+  "BC-A": { Male: [75000,115000], Female: [80000,120000] },
+  "BC-B": { Male: [55000,90000], Female: [60000,95000] },
+  "BC-C": { Male: [50000,85000], Female: [55000,90000] },
+  "BC-D": { Male: [65000,100000], Female: [70000,105000] },
+  "BC-E": { Male: [55000,90000], Female: [60000,95000] },
+  SC: { Male: [120000,200000], Female: [130000,210000] },
+  ST: { Male: [180000,280000], Female: [190000,290000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [35000,65000], Female: [38000,70000] },
+  EWS: { Male: [45000,85000], Female: [50000,90000] },
+  "BC-A": { Male: [85000,130000], Female: [90000,135000] },
+  "BC-B": { Male: [65000,105000], Female: [70000,110000] },
+  "BC-C": { Male: [60000,95000], Female: [65000,100000] },
+  "BC-D": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-E": { Male: [65000,105000], Female: [70000,110000] },
+  SC: { Male: [140000,220000], Female: [150000,230000] },
+  ST: { Male: [210000,320000], Female: [220000,330000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [38000,70000], Female: [40000,75000] },
+  EWS: { Male: [50000,90000], Female: [55000,95000] },
+  "BC-A": { Male: [90000,135000], Female: [95000,140000] },
+  "BC-B": { Male: [70000,110000], Female: [75000,115000] },
+  "BC-C": { Male: [65000,100000], Female: [70000,105000] },
+  "BC-D": { Male: [85000,125000], Female: [90000,130000] },
+  "BC-E": { Male: [70000,110000], Female: [75000,115000] },
+  SC: { Male: [150000,230000], Female: [160000,240000] },
+  ST: { Male: [220000,330000], Female: [230000,340000] }
+});
+
+collegeId = "53";
+collegeName = "Teegala Krishna Reddy Engineering College";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [35000,70000], Female: [38000,75000] },
+  EWS: { Male: [50000,95000], Female: [55000,100000] },
+  "BC-A": { Male: [95000,140000], Female: [100000,145000] },
+  "BC-B": { Male: [70000,110000], Female: [75000,115000] },
+  "BC-C": { Male: [65000,100000], Female: [70000,105000] },
+  "BC-D": { Male: [85000,125000], Female: [90000,130000] },
+  "BC-E": { Male: [70000,110000], Female: [75000,115000] },
+  SC: { Male: [150000,240000], Female: [160000,250000] },
+  ST: { Male: [230000,350000], Female: [240000,360000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [38000,75000], Female: [40000,80000] },
+  EWS: { Male: [55000,100000], Female: [60000,105000] },
+  "BC-A": { Male: [100000,145000], Female: [105000,150000] },
+  "BC-B": { Male: [75000,115000], Female: [80000,120000] },
+  "BC-C": { Male: [70000,105000], Female: [75000,110000] },
+  "BC-D": { Male: [90000,130000], Female: [95000,135000] },
+  "BC-E": { Male: [75000,115000], Female: [80000,120000] },
+  SC: { Male: [160000,250000], Female: [170000,260000] },
+  ST: { Male: [240000,360000], Female: [250000,370000] }
+});
+
+// -------- CSD --------
+addBranch("CSD", {
+  OC: { Male: [40000,80000], Female: [42000,85000] },
+  EWS: { Male: [60000,105000], Female: [65000,110000] },
+  "BC-A": { Male: [105000,150000], Female: [110000,155000] },
+  "BC-B": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-C": { Male: [75000,110000], Female: [80000,115000] },
+  "BC-D": { Male: [95000,135000], Female: [100000,140000] },
+  "BC-E": { Male: [80000,120000], Female: [85000,125000] },
+  SC: { Male: [170000,260000], Female: [180000,270000] },
+  ST: { Male: [250000,370000], Female: [260000,380000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [42000,85000], Female: [45000,90000] },
+  EWS: { Male: [65000,110000], Female: [70000,115000] },
+  "BC-A": { Male: [110000,155000], Female: [115000,160000] },
+  "BC-B": { Male: [85000,125000], Female: [90000,130000] },
+  "BC-C": { Male: [80000,115000], Female: [85000,120000] },
+  "BC-D": { Male: [100000,140000], Female: [105000,145000] },
+  "BC-E": { Male: [85000,125000], Female: [90000,130000] },
+  SC: { Male: [180000,270000], Female: [190000,280000] },
+  ST: { Male: [260000,380000], Female: [270000,390000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [42000,85000], Female: [45000,90000] },
+  EWS: { Male: [65000,110000], Female: [70000,115000] },
+  "BC-A": { Male: [110000,155000], Female: [115000,160000] },
+  "BC-B": { Male: [85000,125000], Female: [90000,130000] },
+  "BC-C": { Male: [80000,115000], Female: [85000,120000] },
+  "BC-D": { Male: [100000,140000], Female: [105000,145000] },
+  "BC-E": { Male: [85000,125000], Female: [90000,130000] },
+  SC: { Male: [180000,270000], Female: [190000,280000] },
+  ST: { Male: [260000,380000], Female: [270000,390000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [45000,90000], Female: [48000,95000] },
+  EWS: { Male: [70000,115000], Female: [75000,120000] },
+  "BC-A": { Male: [115000,160000], Female: [120000,165000] },
+  "BC-B": { Male: [90000,130000], Female: [95000,135000] },
+  "BC-C": { Male: [85000,120000], Female: [90000,125000] },
+  "BC-D": { Male: [105000,145000], Female: [110000,150000] },
+  "BC-E": { Male: [90000,130000], Female: [95000,135000] },
+  SC: { Male: [190000,280000], Female: [200000,290000] },
+  ST: { Male: [270000,390000], Female: [280000,400000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [50000,95000], Female: [52000,100000] },
+  EWS: { Male: [75000,120000], Female: [80000,125000] },
+  "BC-A": { Male: [120000,165000], Female: [125000,170000] },
+  "BC-B": { Male: [95000,135000], Female: [100000,140000] },
+  "BC-C": { Male: [90000,125000], Female: [95000,130000] },
+  "BC-D": { Male: [110000,150000], Female: [115000,155000] },
+  "BC-E": { Male: [95000,135000], Female: [100000,140000] },
+  SC: { Male: [200000,290000], Female: [210000,300000] },
+  ST: { Male: [280000,400000], Female: [290000,410000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [55000,100000], Female: [58000,105000] },
+  EWS: { Male: [80000,125000], Female: [85000,130000] },
+  "BC-A": { Male: [125000,170000], Female: [130000,175000] },
+  "BC-B": { Male: [100000,140000], Female: [105000,145000] },
+  "BC-C": { Male: [95000,130000], Female: [100000,135000] },
+  "BC-D": { Male: [115000,155000], Female: [120000,160000] },
+  "BC-E": { Male: [100000,140000], Female: [105000,145000] },
+  SC: { Male: [210000,300000], Female: [220000,310000] },
+  ST: { Male: [290000,410000], Female: [300000,420000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [58000,105000], Female: [60000,110000] },
+  EWS: { Male: [85000,130000], Female: [90000,135000] },
+  "BC-A": { Male: [130000,175000], Female: [135000,180000] },
+  "BC-B": { Male: [105000,145000], Female: [110000,150000] },
+  "BC-C": { Male: [100000,135000], Female: [105000,140000] },
+  "BC-D": { Male: [120000,160000], Female: [125000,165000] },
+  "BC-E": { Male: [105000,145000], Female: [110000,150000] },
+  SC: { Male: [220000,310000], Female: [230000,320000] },
+  ST: { Male: [300000,420000], Female: [310000,430000] }
+});
+
+collegeId = "55";
+collegeName = "Bharat Institute of Engineering & Technology";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [50000, 90000], Female: [52000, 95000] },
+  EWS: { Male: [70000, 120000], Female: [75000, 125000] },
+  "BC-A": { Male: [120000, 165000], Female: [125000, 170000] },
+  "BC-B": { Male: [90000, 130000], Female: [95000, 135000] },
+  "BC-C": { Male: [85000, 120000], Female: [90000, 125000] },
+  "BC-D": { Male: [105000, 145000], Female: [110000, 150000] },
+  "BC-E": { Male: [90000, 130000], Female: [95000, 135000] },
+  SC: { Male: [200000, 290000], Female: [210000, 300000] },
+  ST: { Male: [280000, 400000], Female: [290000, 410000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [52000, 95000], Female: [55000, 100000] },
+  EWS: { Male: [75000, 125000], Female: [80000, 130000] },
+  "BC-A": { Male: [125000, 170000], Female: [130000, 175000] },
+  "BC-B": { Male: [95000, 135000], Female: [100000, 140000] },
+  "BC-C": { Male: [90000, 125000], Female: [95000, 130000] },
+  "BC-D": { Male: [110000, 150000], Female: [115000, 155000] },
+  "BC-E": { Male: [95000, 135000], Female: [100000, 140000] },
+  SC: { Male: [210000, 300000], Female: [220000, 310000] },
+  ST: { Male: [290000, 410000], Female: [300000, 420000] }
+});
+
+// -------- CSD --------
+addBranch("CSD", {
+  OC: { Male: [55000, 100000], Female: [58000, 105000] },
+  EWS: { Male: [80000, 130000], Female: [85000, 135000] },
+  "BC-A": { Male: [130000, 175000], Female: [135000, 180000] },
+  "BC-B": { Male: [100000, 140000], Female: [105000, 145000] },
+  "BC-C": { Male: [95000, 130000], Female: [100000, 135000] },
+  "BC-D": { Male: [115000, 155000], Female: [120000, 160000] },
+  "BC-E": { Male: [100000, 140000], Female: [105000, 145000] },
+  SC: { Male: [220000, 310000], Female: [230000, 320000] },
+  ST: { Male: [300000, 420000], Female: [310000, 430000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [58000, 105000], Female: [60000, 110000] },
+  EWS: { Male: [85000, 135000], Female: [90000, 140000] },
+  "BC-A": { Male: [135000, 180000], Female: [140000, 185000] },
+  "BC-B": { Male: [105000, 145000], Female: [110000, 150000] },
+  "BC-C": { Male: [100000, 135000], Female: [105000, 140000] },
+  "BC-D": { Male: [120000, 160000], Female: [125000, 165000] },
+  "BC-E": { Male: [105000, 145000], Female: [110000, 150000] },
+  SC: { Male: [230000, 320000], Female: [240000, 330000] },
+  ST: { Male: [310000, 430000], Female: [320000, 440000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [58000, 105000], Female: [60000, 110000] },
+  EWS: { Male: [85000, 135000], Female: [90000, 140000] },
+  "BC-A": { Male: [135000, 180000], Female: [140000, 185000] },
+  "BC-B": { Male: [105000, 145000], Female: [110000, 150000] },
+  "BC-C": { Male: [100000, 135000], Female: [105000, 140000] },
+  "BC-D": { Male: [120000, 160000], Female: [125000, 165000] },
+  "BC-E": { Male: [105000, 145000], Female: [110000, 150000] },
+  SC: { Male: [230000, 320000], Female: [240000, 330000] },
+  ST: { Male: [310000, 430000], Female: [320000, 440000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [60000, 110000], Female: [62000, 115000] },
+  EWS: { Male: [90000, 140000], Female: [95000, 145000] },
+  "BC-A": { Male: [140000, 185000], Female: [145000, 190000] },
+  "BC-B": { Male: [110000, 150000], Female: [115000, 155000] },
+  "BC-C": { Male: [105000, 140000], Female: [110000, 145000] },
+  "BC-D": { Male: [125000, 165000], Female: [130000, 170000] },
+  "BC-E": { Male: [110000, 150000], Female: [115000, 155000] },
+  SC: { Male: [240000, 330000], Female: [250000, 340000] },
+  ST: { Male: [320000, 440000], Female: [330000, 450000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [65000, 115000], Female: [68000, 120000] },
+  EWS: { Male: [95000, 145000], Female: [100000, 150000] },
+  "BC-A": { Male: [145000, 190000], Female: [150000, 195000] },
+  "BC-B": { Male: [115000, 155000], Female: [120000, 160000] },
+  "BC-C": { Male: [110000, 145000], Female: [115000, 150000] },
+  "BC-D": { Male: [130000, 170000], Female: [135000, 175000] },
+  "BC-E": { Male: [115000, 155000], Female: [120000, 160000] },
+  SC: { Male: [250000, 340000], Female: [260000, 350000] },
+  ST: { Male: [330000, 450000], Female: [340000, 460000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [70000, 120000], Female: [75000, 125000] },
+  EWS: { Male: [100000, 150000], Female: [105000, 155000] },
+  "BC-A": { Male: [150000, 195000], Female: [155000, 200000] },
+  "BC-B": { Male: [120000, 160000], Female: [125000, 165000] },
+  "BC-C": { Male: [115000, 150000], Female: [120000, 155000] },
+  "BC-D": { Male: [135000, 175000], Female: [140000, 180000] },
+  "BC-E": { Male: [120000, 160000], Female: [125000, 165000] },
+  SC: { Male: [260000, 350000], Female: [270000, 360000] },
+  ST: { Male: [340000, 460000], Female: [350000, 470000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [75000, 125000], Female: [80000, 130000] },
+  EWS: { Male: [105000, 155000], Female: [110000, 160000] },
+  "BC-A": { Male: [155000, 200000], Female: [160000, 205000] },
+  "BC-B": { Male: [125000, 165000], Female: [130000, 170000] },
+  "BC-C": { Male: [120000, 155000], Female: [125000, 160000] },
+  "BC-D": { Male: [140000, 180000], Female: [145000, 185000] },
+  "BC-E": { Male: [125000, 165000], Female: [130000, 170000] },
+  SC: { Male: [270000, 360000], Female: [280000, 370000] },
+  ST: { Male: [350000, 470000], Female: [360000, 480000] }
+});
+
+collegeId = "55";
+collegeName = "Bharat Institute of Engineering & Technology";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [45000,85000], Female: [48000,90000] },
+  EWS: { Male: [65000,115000], Female: [70000,120000] },
+  "BC-A": { Male: [115000,160000], Female: [120000,165000] },
+  "BC-B": { Male: [85000,125000], Female: [90000,130000] },
+  "BC-C": { Male: [80000,115000], Female: [85000,120000] },
+  "BC-D": { Male: [100000,140000], Female: [105000,145000] },
+  "BC-E": { Male: [85000,125000], Female: [90000,130000] },
+  SC: { Male: [180000,270000], Female: [190000,280000] },
+  ST: { Male: [260000,380000], Female: [270000,390000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [48000,90000], Female: [50000,95000] },
+  EWS: { Male: [70000,120000], Female: [75000,125000] },
+  "BC-A": { Male: [120000,165000], Female: [125000,170000] },
+  "BC-B": { Male: [90000,130000], Female: [95000,135000] },
+  "BC-C": { Male: [85000,120000], Female: [90000,125000] },
+  "BC-D": { Male: [105000,145000], Female: [110000,150000] },
+  "BC-E": { Male: [90000,130000], Female: [95000,135000] },
+  SC: { Male: [190000,280000], Female: [200000,290000] },
+  ST: { Male: [270000,390000], Female: [280000,400000] }
+});
+
+// -------- CSD --------
+addBranch("CSD", {
+  OC: { Male: [50000,95000], Female: [52000,100000] },
+  EWS: { Male: [75000,125000], Female: [80000,130000] },
+  "BC-A": { Male: [125000,170000], Female: [130000,175000] },
+  "BC-B": { Male: [95000,135000], Female: [100000,140000] },
+  "BC-C": { Male: [90000,125000], Female: [95000,130000] },
+  "BC-D": { Male: [110000,150000], Female: [115000,155000] },
+  "BC-E": { Male: [95000,135000], Female: [100000,140000] },
+  SC: { Male: [200000,290000], Female: [210000,300000] },
+  ST: { Male: [280000,400000], Female: [290000,410000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [52000,100000], Female: [55000,105000] },
+  EWS: { Male: [80000,130000], Female: [85000,135000] },
+  "BC-A": { Male: [130000,175000], Female: [135000,180000] },
+  "BC-B": { Male: [100000,140000], Female: [105000,145000] },
+  "BC-C": { Male: [95000,130000], Female: [100000,135000] },
+  "BC-D": { Male: [115000,155000], Female: [120000,160000] },
+  "BC-E": { Male: [100000,140000], Female: [105000,145000] },
+  SC: { Male: [210000,300000], Female: [220000,310000] },
+  ST: { Male: [290000,410000], Female: [300000,420000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [52000,100000], Female: [55000,105000] },
+  EWS: { Male: [80000,130000], Female: [85000,135000] },
+  "BC-A": { Male: [130000,175000], Female: [135000,180000] },
+  "BC-B": { Male: [100000,140000], Female: [105000,145000] },
+  "BC-C": { Male: [95000,130000], Female: [100000,135000] },
+  "BC-D": { Male: [115000,155000], Female: [120000,160000] },
+  "BC-E": { Male: [100000,140000], Female: [105000,145000] },
+  SC: { Male: [210000,300000], Female: [220000,310000] },
+  ST: { Male: [290000,410000], Female: [300000,420000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [55000,105000], Female: [58000,110000] },
+  EWS: { Male: [85000,135000], Female: [90000,140000] },
+  "BC-A": { Male: [135000,180000], Female: [140000,185000] },
+  "BC-B": { Male: [105000,145000], Female: [110000,150000] },
+  "BC-C": { Male: [100000,135000], Female: [105000,140000] },
+  "BC-D": { Male: [120000,160000], Female: [125000,165000] },
+  "BC-E": { Male: [105000,145000], Female: [110000,150000] },
+  SC: { Male: [220000,310000], Female: [230000,320000] },
+  ST: { Male: [300000,420000], Female: [310000,430000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [60000,110000], Female: [62000,115000] },
+  EWS: { Male: [90000,140000], Female: [95000,145000] },
+  "BC-A": { Male: [140000,185000], Female: [145000,190000] },
+  "BC-B": { Male: [110000,150000], Female: [115000,155000] },
+  "BC-C": { Male: [105000,140000], Female: [110000,145000] },
+  "BC-D": { Male: [125000,165000], Female: [130000,170000] },
+  "BC-E": { Male: [110000,150000], Female: [115000,155000] },
+  SC: { Male: [230000,320000], Female: [240000,330000] },
+  ST: { Male: [310000,430000], Female: [320000,440000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [65000,115000], Female: [68000,120000] },
+  EWS: { Male: [95000,145000], Female: [100000,150000] },
+  "BC-A": { Male: [145000,190000], Female: [150000,195000] },
+  "BC-B": { Male: [115000,155000], Female: [120000,160000] },
+  "BC-C": { Male: [110000,145000], Female: [115000,150000] },
+  "BC-D": { Male: [130000,170000], Female: [135000,175000] },
+  "BC-E": { Male: [115000,155000], Female: [120000,160000] },
+  SC: { Male: [240000,330000], Female: [250000,340000] },
+  ST: { Male: [320000,440000], Female: [330000,450000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [68000,120000], Female: [70000,125000] },
+  EWS: { Male: [100000,150000], Female: [105000,155000] },
+  "BC-A": { Male: [150000,195000], Female: [155000,200000] },
+  "BC-B": { Male: [120000,160000], Female: [125000,165000] },
+  "BC-C": { Male: [115000,150000], Female: [120000,155000] },
+  "BC-D": { Male: [135000,175000], Female: [140000,180000] },
+  "BC-E": { Male: [120000,160000], Female: [125000,165000] },
+  SC: { Male: [250000,340000], Female: [260000,350000] },
+  ST: { Male: [330000,450000], Female: [340000,460000] }
+});
+
+collegeId = "56";
+collegeName = "MVSR Engineering College";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [12000,25000], Female: [14000,27000] },
+  EWS: { Male: [18000,35000], Female: [20000,38000] },
+  "BC-A": { Male: [35000,65000], Female: [38000,70000] },
+  "BC-B": { Male: [25000,50000], Female: [27000,55000] },
+  "BC-C": { Male: [22000,45000], Female: [24000,48000] },
+  "BC-D": { Male: [30000,55000], Female: [32000,60000] },
+  "BC-E": { Male: [25000,50000], Female: [27000,55000] },
+  SC: { Male: [60000,120000], Female: [70000,130000] },
+  ST: { Male: [100000,180000], Female: [110000,190000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [14000,28000], Female: [16000,30000] },
+  EWS: { Male: [20000,38000], Female: [22000,40000] },
+  "BC-A": { Male: [38000,70000], Female: [40000,75000] },
+  "BC-B": { Male: [28000,55000], Female: [30000,60000] },
+  "BC-C": { Male: [25000,48000], Female: [27000,52000] },
+  "BC-D": { Male: [32000,60000], Female: [35000,65000] },
+  "BC-E": { Male: [28000,55000], Female: [30000,60000] },
+  SC: { Male: [70000,130000], Female: [80000,140000] },
+  ST: { Male: [110000,190000], Female: [120000,200000] }
+});
+
+// -------- CSD --------
+addBranch("CSD", {
+  OC: { Male: [15000,30000], Female: [17000,32000] },
+  EWS: { Male: [22000,40000], Female: [24000,42000] },
+  "BC-A": { Male: [40000,75000], Female: [42000,80000] },
+  "BC-B": { Male: [30000,60000], Female: [32000,65000] },
+  "BC-C": { Male: [27000,52000], Female: [29000,55000] },
+  "BC-D": { Male: [35000,65000], Female: [38000,70000] },
+  "BC-E": { Male: [30000,60000], Female: [32000,65000] },
+  SC: { Male: [80000,140000], Female: [90000,150000] },
+  ST: { Male: [120000,200000], Female: [130000,210000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [15000,30000], Female: [17000,32000] },
+  EWS: { Male: [22000,40000], Female: [24000,42000] },
+  "BC-A": { Male: [40000,75000], Female: [42000,80000] },
+  "BC-B": { Male: [30000,60000], Female: [32000,65000] },
+  "BC-C": { Male: [27000,52000], Female: [29000,55000] },
+  "BC-D": { Male: [35000,65000], Female: [38000,70000] },
+  "BC-E": { Male: [30000,60000], Female: [32000,65000] },
+  SC: { Male: [80000,140000], Female: [90000,150000] },
+  ST: { Male: [120000,200000], Female: [130000,210000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [18000,35000], Female: [20000,38000] },
+  EWS: { Male: [25000,50000], Female: [28000,55000] },
+  "BC-A": { Male: [50000,85000], Female: [55000,90000] },
+  "BC-B": { Male: [35000,65000], Female: [38000,70000] },
+  "BC-C": { Male: [30000,60000], Female: [32000,65000] },
+  "BC-D": { Male: [45000,75000], Female: [48000,80000] },
+  "BC-E": { Male: [35000,65000], Female: [38000,70000] },
+  SC: { Male: [90000,160000], Female: [100000,170000] },
+  ST: { Male: [140000,230000], Female: [150000,240000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [25000,45000], Female: [28000,48000] },
+  EWS: { Male: [35000,65000], Female: [38000,70000] },
+  "BC-A": { Male: [65000,105000], Female: [70000,110000] },
+  "BC-B": { Male: [45000,80000], Female: [48000,85000] },
+  "BC-C": { Male: [40000,75000], Female: [42000,80000] },
+  "BC-D": { Male: [55000,90000], Female: [60000,95000] },
+  "BC-E": { Male: [45000,80000], Female: [48000,85000] },
+  SC: { Male: [110000,180000], Female: [120000,190000] },
+  ST: { Male: [170000,260000], Female: [180000,270000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [30000,55000], Female: [32000,60000] },
+  EWS: { Male: [40000,75000], Female: [42000,80000] },
+  "BC-A": { Male: [75000,115000], Female: [80000,120000] },
+  "BC-B": { Male: [55000,90000], Female: [60000,95000] },
+  "BC-C": { Male: [50000,85000], Female: [55000,90000] },
+  "BC-D": { Male: [65000,100000], Female: [70000,105000] },
+  "BC-E": { Male: [55000,90000], Female: [60000,95000] },
+  SC: { Male: [120000,200000], Female: [130000,210000] },
+  ST: { Male: [180000,280000], Female: [190000,290000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [32000,60000], Female: [35000,65000] },
+  EWS: { Male: [42000,80000], Female: [45000,85000] },
+  "BC-A": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-B": { Male: [60000,95000], Female: [65000,100000] },
+  "BC-C": { Male: [55000,90000], Female: [60000,95000] },
+  "BC-D": { Male: [70000,105000], Female: [75000,110000] },
+  "BC-E": { Male: [60000,95000], Female: [65000,100000] },
+  SC: { Male: [130000,210000], Female: [140000,220000] },
+  ST: { Male: [190000,290000], Female: [200000,300000] }
+});
+
+collegeId = "57";
+collegeName = "Narasimha Reddy Engineering College";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [50000,95000], Female: [52000,100000] },
+  EWS: { Male: [75000,125000], Female: [80000,130000] },
+  "BC-A": { Male: [125000,170000], Female: [130000,175000] },
+  "BC-B": { Male: [95000,135000], Female: [100000,140000] },
+  "BC-C": { Male: [90000,125000], Female: [95000,130000] },
+  "BC-D": { Male: [110000,150000], Female: [115000,155000] },
+  "BC-E": { Male: [95000,135000], Female: [100000,140000] },
+  SC: { Male: [200000,290000], Female: [210000,300000] },
+  ST: { Male: [280000,400000], Female: [290000,410000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [52000,100000], Female: [55000,105000] },
+  EWS: { Male: [80000,130000], Female: [85000,135000] },
+  "BC-A": { Male: [130000,175000], Female: [135000,180000] },
+  "BC-B": { Male: [100000,140000], Female: [105000,145000] },
+  "BC-C": { Male: [95000,130000], Female: [100000,135000] },
+  "BC-D": { Male: [115000,155000], Female: [120000,160000] },
+  "BC-E": { Male: [100000,140000], Female: [105000,145000] },
+  SC: { Male: [210000,300000], Female: [220000,310000] },
+  ST: { Male: [290000,410000], Female: [300000,420000] }
+});
+
+// -------- CSD --------
+addBranch("CSD", {
+  OC: { Male: [55000,105000], Female: [58000,110000] },
+  EWS: { Male: [85000,135000], Female: [90000,140000] },
+  "BC-A": { Male: [135000,180000], Female: [140000,185000] },
+  "BC-B": { Male: [105000,145000], Female: [110000,150000] },
+  "BC-C": { Male: [100000,135000], Female: [105000,140000] },
+  "BC-D": { Male: [120000,160000], Female: [125000,165000] },
+  "BC-E": { Male: [105000,145000], Female: [110000,150000] },
+  SC: { Male: [220000,310000], Female: [230000,320000] },
+  ST: { Male: [300000,420000], Female: [310000,430000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [58000,110000], Female: [60000,115000] },
+  EWS: { Male: [90000,140000], Female: [95000,145000] },
+  "BC-A": { Male: [140000,185000], Female: [145000,190000] },
+  "BC-B": { Male: [110000,150000], Female: [115000,155000] },
+  "BC-C": { Male: [105000,140000], Female: [110000,145000] },
+  "BC-D": { Male: [125000,165000], Female: [130000,170000] },
+  "BC-E": { Male: [110000,150000], Female: [115000,155000] },
+  SC: { Male: [230000,320000], Female: [240000,330000] },
+  ST: { Male: [310000,430000], Female: [320000,440000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [58000,110000], Female: [60000,115000] },
+  EWS: { Male: [90000,140000], Female: [95000,145000] },
+  "BC-A": { Male: [140000,185000], Female: [145000,190000] },
+  "BC-B": { Male: [110000,150000], Female: [115000,155000] },
+  "BC-C": { Male: [105000,140000], Female: [110000,145000] },
+  "BC-D": { Male: [125000,165000], Female: [130000,170000] },
+  "BC-E": { Male: [110000,150000], Female: [115000,155000] },
+  SC: { Male: [230000,320000], Female: [240000,330000] },
+  ST: { Male: [310000,430000], Female: [320000,440000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [60000,115000], Female: [62000,120000] },
+  EWS: { Male: [95000,145000], Female: [100000,150000] },
+  "BC-A": { Male: [145000,190000], Female: [150000,195000] },
+  "BC-B": { Male: [115000,155000], Female: [120000,160000] },
+  "BC-C": { Male: [110000,145000], Female: [115000,150000] },
+  "BC-D": { Male: [130000,170000], Female: [135000,175000] },
+  "BC-E": { Male: [115000,155000], Female: [120000,160000] },
+  SC: { Male: [240000,330000], Female: [250000,340000] },
+  ST: { Male: [320000,440000], Female: [330000,450000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [65000,120000], Female: [68000,125000] },
+  EWS: { Male: [100000,150000], Female: [105000,155000] },
+  "BC-A": { Male: [150000,195000], Female: [155000,200000] },
+  "BC-B": { Male: [120000,160000], Female: [125000,165000] },
+  "BC-C": { Male: [115000,150000], Female: [120000,155000] },
+  "BC-D": { Male: [135000,175000], Female: [140000,180000] },
+  "BC-E": { Male: [120000,160000], Female: [125000,165000] },
+  SC: { Male: [250000,340000], Female: [260000,350000] },
+  ST: { Male: [330000,450000], Female: [340000,460000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [70000,125000], Female: [75000,130000] },
+  EWS: { Male: [105000,155000], Female: [110000,160000] },
+  "BC-A": { Male: [155000,200000], Female: [160000,205000] },
+  "BC-B": { Male: [125000,165000], Female: [130000,170000] },
+  "BC-C": { Male: [120000,155000], Female: [125000,160000] },
+  "BC-D": { Male: [140000,180000], Female: [145000,185000] },
+  "BC-E": { Male: [125000,165000], Female: [130000,170000] },
+  SC: { Male: [260000,350000], Female: [270000,360000] },
+  ST: { Male: [340000,460000], Female: [350000,470000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [75000,130000], Female: [80000,135000] },
+  EWS: { Male: [110000,160000], Female: [115000,165000] },
+  "BC-A": { Male: [160000,205000], Female: [165000,210000] },
+  "BC-B": { Male: [130000,170000], Female: [135000,175000] },
+  "BC-C": { Male: [125000,160000], Female: [130000,165000] },
+  "BC-D": { Male: [145000,185000], Female: [150000,190000] },
+  "BC-E": { Male: [130000,170000], Female: [135000,175000] },
+  SC: { Male: [270000,360000], Female: [280000,370000] },
+  ST: { Male: [350000,470000], Female: [360000,480000] }
+});
+
+collegeId = "58";
+collegeName = "JB Institute of Engineering & Technology";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [20000,40000], Female: [22000,42000] },
+  EWS: { Male: [30000,60000], Female: [32000,65000] },
+  "BC-A": { Male: [60000,100000], Female: [65000,105000] },
+  "BC-B": { Male: [40000,75000], Female: [42000,80000] },
+  "BC-C": { Male: [35000,70000], Female: [38000,75000] },
+  "BC-D": { Male: [50000,85000], Female: [55000,90000] },
+  "BC-E": { Male: [40000,75000], Female: [42000,80000] },
+  SC: { Male: [100000,170000], Female: [110000,180000] },
+  ST: { Male: [150000,240000], Female: [160000,250000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [22000,42000], Female: [25000,45000] },
+  EWS: { Male: [32000,65000], Female: [35000,70000] },
+  "BC-A": { Male: [65000,105000], Female: [70000,110000] },
+  "BC-B": { Male: [42000,80000], Female: [45000,85000] },
+  "BC-C": { Male: [38000,75000], Female: [40000,80000] },
+  "BC-D": { Male: [55000,90000], Female: [58000,95000] },
+  "BC-E": { Male: [42000,80000], Female: [45000,85000] },
+  SC: { Male: [110000,180000], Female: [120000,190000] },
+  ST: { Male: [160000,250000], Female: [170000,260000] }
+});
+
+// -------- CSD --------
+addBranch("CSD", {
+  OC: { Male: [25000,45000], Female: [27000,48000] },
+  EWS: { Male: [35000,70000], Female: [38000,75000] },
+  "BC-A": { Male: [70000,110000], Female: [75000,115000] },
+  "BC-B": { Male: [45000,85000], Female: [48000,90000] },
+  "BC-C": { Male: [40000,80000], Female: [42000,85000] },
+  "BC-D": { Male: [58000,95000], Female: [60000,100000] },
+  "BC-E": { Male: [45000,85000], Female: [48000,90000] },
+  SC: { Male: [120000,190000], Female: [130000,200000] },
+  ST: { Male: [170000,260000], Female: [180000,270000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [27000,48000], Female: [30000,50000] },
+  EWS: { Male: [38000,75000], Female: [40000,80000] },
+  "BC-A": { Male: [75000,115000], Female: [80000,120000] },
+  "BC-B": { Male: [48000,90000], Female: [50000,95000] },
+  "BC-C": { Male: [42000,85000], Female: [45000,90000] },
+  "BC-D": { Male: [60000,100000], Female: [65000,105000] },
+  "BC-E": { Male: [48000,90000], Female: [50000,95000] },
+  SC: { Male: [130000,200000], Female: [140000,210000] },
+  ST: { Male: [180000,270000], Female: [190000,280000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [27000,48000], Female: [30000,50000] },
+  EWS: { Male: [38000,75000], Female: [40000,80000] },
+  "BC-A": { Male: [75000,115000], Female: [80000,120000] },
+  "BC-B": { Male: [48000,90000], Female: [50000,95000] },
+  "BC-C": { Male: [42000,85000], Female: [45000,90000] },
+  "BC-D": { Male: [60000,100000], Female: [65000,105000] },
+  "BC-E": { Male: [48000,90000], Female: [50000,95000] },
+  SC: { Male: [130000,200000], Female: [140000,210000] },
+  ST: { Male: [180000,270000], Female: [190000,280000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [30000,55000], Female: [32000,60000] },
+  EWS: { Male: [40000,80000], Female: [42000,85000] },
+  "BC-A": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-B": { Male: [55000,95000], Female: [60000,100000] },
+  "BC-C": { Male: [50000,90000], Female: [55000,95000] },
+  "BC-D": { Male: [70000,110000], Female: [75000,115000] },
+  "BC-E": { Male: [55000,95000], Female: [60000,100000] },
+  SC: { Male: [140000,220000], Female: [150000,230000] },
+  ST: { Male: [200000,300000], Female: [210000,310000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [35000,65000], Female: [38000,70000] },
+  EWS: { Male: [45000,90000], Female: [50000,95000] },
+  "BC-A": { Male: [90000,130000], Female: [95000,135000] },
+  "BC-B": { Male: [65000,105000], Female: [70000,110000] },
+  "BC-C": { Male: [60000,95000], Female: [65000,100000] },
+  "BC-D": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-E": { Male: [65000,105000], Female: [70000,110000] },
+  SC: { Male: [160000,240000], Female: [170000,250000] },
+  ST: { Male: [230000,340000], Female: [240000,350000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [40000,75000], Female: [42000,80000] },
+  EWS: { Male: [55000,100000], Female: [60000,105000] },
+  "BC-A": { Male: [100000,140000], Female: [105000,145000] },
+  "BC-B": { Male: [75000,115000], Female: [80000,120000] },
+  "BC-C": { Male: [70000,105000], Female: [75000,110000] },
+  "BC-D": { Male: [90000,130000], Female: [95000,135000] },
+  "BC-E": { Male: [75000,115000], Female: [80000,120000] },
+  SC: { Male: [180000,260000], Female: [190000,270000] },
+  ST: { Male: [260000,360000], Female: [270000,370000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [42000,80000], Female: [45000,85000] },
+  EWS: { Male: [60000,105000], Female: [65000,110000] },
+  "BC-A": { Male: [105000,145000], Female: [110000,150000] },
+  "BC-B": { Male: [80000,120000], Female: [85000,125000] },
+  "BC-C": { Male: [75000,110000], Female: [80000,115000] },
+  "BC-D": { Male: [95000,135000], Female: [100000,140000] },
+  "BC-E": { Male: [80000,120000], Female: [85000,125000] },
+  SC: { Male: [190000,270000], Female: [200000,280000] },
+  ST: { Male: [270000,370000], Female: [280000,380000] }
+});
+
+collegeId = "59";
+collegeName = "CVR College of Engineering";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [8000,18000], Female: [9000,20000] },
+  EWS: { Male: [12000,25000], Female: [14000,28000] },
+  "BC-A": { Male: [25000,50000], Female: [28000,55000] },
+  "BC-B": { Male: [18000,40000], Female: [20000,45000] },
+  "BC-C": { Male: [15000,35000], Female: [17000,38000] },
+  "BC-D": { Male: [20000,45000], Female: [23000,50000] },
+  "BC-E": { Male: [18000,40000], Female: [20000,45000] },
+  SC: { Male: [50000,90000], Female: [55000,100000] },
+  ST: { Male: [80000,150000], Female: [90000,160000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [9000,20000], Female: [10000,22000] },
+  EWS: { Male: [14000,28000], Female: [15000,30000] },
+  "BC-A": { Male: [28000,55000], Female: [30000,60000] },
+  "BC-B": { Male: [20000,45000], Female: [22000,50000] },
+  "BC-C": { Male: [17000,38000], Female: [18000,40000] },
+  "BC-D": { Male: [23000,50000], Female: [25000,55000] },
+  "BC-E": { Male: [20000,45000], Female: [22000,50000] },
+  SC: { Male: [55000,100000], Female: [60000,110000] },
+  ST: { Male: [90000,160000], Female: [100000,170000] }
+});
+
+// -------- CSD --------
+addBranch("CSD", {
+  OC: { Male: [10000,22000], Female: [11000,24000] },
+  EWS: { Male: [15000,30000], Female: [17000,32000] },
+  "BC-A": { Male: [30000,60000], Female: [32000,65000] },
+  "BC-B": { Male: [22000,50000], Female: [24000,55000] },
+  "BC-C": { Male: [18000,40000], Female: [20000,42000] },
+  "BC-D": { Male: [25000,55000], Female: [27000,60000] },
+  "BC-E": { Male: [22000,50000], Female: [24000,55000] },
+  SC: { Male: [60000,110000], Female: [65000,120000] },
+  ST: { Male: [100000,170000], Female: [110000,180000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [11000,24000], Female: [12000,26000] },
+  EWS: { Male: [17000,32000], Female: [18000,35000] },
+  "BC-A": { Male: [32000,65000], Female: [35000,70000] },
+  "BC-B": { Male: [24000,55000], Female: [26000,60000] },
+  "BC-C": { Male: [20000,42000], Female: [22000,45000] },
+  "BC-D": { Male: [27000,60000], Female: [30000,65000] },
+  "BC-E": { Male: [24000,55000], Female: [26000,60000] },
+  SC: { Male: [65000,120000], Female: [70000,130000] },
+  ST: { Male: [110000,180000], Female: [120000,190000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [11000,24000], Female: [12000,26000] },
+  EWS: { Male: [17000,32000], Female: [18000,35000] },
+  "BC-A": { Male: [32000,65000], Female: [35000,70000] },
+  "BC-B": { Male: [24000,55000], Female: [26000,60000] },
+  "BC-C": { Male: [20000,42000], Female: [22000,45000] },
+  "BC-D": { Male: [27000,60000], Female: [30000,65000] },
+  "BC-E": { Male: [24000,55000], Female: [26000,60000] },
+  SC: { Male: [65000,120000], Female: [70000,130000] },
+  ST: { Male: [110000,180000], Female: [120000,190000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [12000,26000], Female: [14000,28000] },
+  EWS: { Male: [18000,35000], Female: [20000,38000] },
+  "BC-A": { Male: [35000,70000], Female: [38000,75000] },
+  "BC-B": { Male: [26000,60000], Female: [28000,65000] },
+  "BC-C": { Male: [22000,45000], Female: [24000,50000] },
+  "BC-D": { Male: [30000,65000], Female: [32000,70000] },
+  "BC-E": { Male: [26000,60000], Female: [28000,65000] },
+  SC: { Male: [70000,130000], Female: [80000,140000] },
+  ST: { Male: [120000,190000], Female: [130000,200000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [15000,30000], Female: [17000,32000] },
+  EWS: { Male: [22000,40000], Female: [25000,42000] },
+  "BC-A": { Male: [40000,80000], Female: [42000,85000] },
+  "BC-B": { Male: [30000,65000], Female: [32000,70000] },
+  "BC-C": { Male: [27000,60000], Female: [29000,65000] },
+  "BC-D": { Male: [35000,70000], Female: [38000,75000] },
+  "BC-E": { Male: [30000,65000], Female: [32000,70000] },
+  SC: { Male: [90000,150000], Female: [100000,160000] },
+  ST: { Male: [140000,220000], Female: [150000,230000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [20000,40000], Female: [22000,42000] },
+  EWS: { Male: [30000,50000], Female: [32000,55000] },
+  "BC-A": { Male: [50000,90000], Female: [55000,95000] },
+  "BC-B": { Male: [40000,75000], Female: [42000,80000] },
+  "BC-C": { Male: [35000,70000], Female: [38000,75000] },
+  "BC-D": { Male: [45000,80000], Female: [50000,85000] },
+  "BC-E": { Male: [40000,75000], Female: [42000,80000] },
+  SC: { Male: [110000,180000], Female: [120000,190000] },
+  ST: { Male: [170000,260000], Female: [180000,270000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [22000,42000], Female: [25000,45000] },
+  EWS: { Male: [32000,55000], Female: [35000,60000] },
+  "BC-A": { Male: [55000,95000], Female: [60000,100000] },
+  "BC-B": { Male: [42000,80000], Female: [45000,85000] },
+  "BC-C": { Male: [38000,75000], Female: [40000,80000] },
+  "BC-D": { Male: [50000,85000], Female: [55000,90000] },
+  "BC-E": { Male: [42000,80000], Female: [45000,85000] },
+  SC: { Male: [120000,190000], Female: [130000,200000] },
+  ST: { Male: [180000,270000], Female: [190000,280000] }
+});
+
+collegeId = "60";
+collegeName = "Mahaveer Institute of Science & Technology";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [60000,110000], Female: [65000,115000] },
+  EWS: { Male: [90000,140000], Female: [95000,145000] },
+  "BC-A": { Male: [140000,180000], Female: [145000,185000] },
+  "BC-B": { Male: [110000,150000], Female: [115000,155000] },
+  "BC-C": { Male: [100000,135000], Female: [105000,140000] },
+  "BC-D": { Male: [120000,160000], Female: [125000,165000] },
+  "BC-E": { Male: [110000,150000], Female: [115000,155000] },
+  SC: { Male: [220000,300000], Female: [230000,310000] },
+  ST: { Male: [300000,420000], Female: [310000,430000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [65000,115000], Female: [70000,120000] },
+  EWS: { Male: [95000,145000], Female: [100000,150000] },
+  "BC-A": { Male: [145000,185000], Female: [150000,190000] },
+  "BC-B": { Male: [115000,155000], Female: [120000,160000] },
+  "BC-C": { Male: [105000,140000], Female: [110000,145000] },
+  "BC-D": { Male: [125000,165000], Female: [130000,170000] },
+  "BC-E": { Male: [115000,155000], Female: [120000,160000] },
+  SC: { Male: [230000,310000], Female: [240000,320000] },
+  ST: { Male: [310000,430000], Female: [320000,440000] }
+});
+
+// -------- CSD --------
+addBranch("CSD", {
+  OC: { Male: [70000,120000], Female: [75000,125000] },
+  EWS: { Male: [100000,150000], Female: [105000,155000] },
+  "BC-A": { Male: [150000,190000], Female: [155000,195000] },
+  "BC-B": { Male: [120000,160000], Female: [125000,165000] },
+  "BC-C": { Male: [110000,145000], Female: [115000,150000] },
+  "BC-D": { Male: [130000,170000], Female: [135000,175000] },
+  "BC-E": { Male: [120000,160000], Female: [125000,165000] },
+  SC: { Male: [240000,320000], Female: [250000,330000] },
+  ST: { Male: [320000,440000], Female: [330000,450000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [75000,125000], Female: [80000,130000] },
+  EWS: { Male: [105000,155000], Female: [110000,160000] },
+  "BC-A": { Male: [155000,195000], Female: [160000,200000] },
+  "BC-B": { Male: [125000,165000], Female: [130000,170000] },
+  "BC-C": { Male: [115000,150000], Female: [120000,155000] },
+  "BC-D": { Male: [135000,175000], Female: [140000,180000] },
+  "BC-E": { Male: [125000,165000], Female: [130000,170000] },
+  SC: { Male: [250000,330000], Female: [260000,340000] },
+  ST: { Male: [330000,450000], Female: [340000,460000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [75000,125000], Female: [80000,130000] },
+  EWS: { Male: [105000,155000], Female: [110000,160000] },
+  "BC-A": { Male: [155000,195000], Female: [160000,200000] },
+  "BC-B": { Male: [125000,165000], Female: [130000,170000] },
+  "BC-C": { Male: [115000,150000], Female: [120000,155000] },
+  "BC-D": { Male: [135000,175000], Female: [140000,180000] },
+  "BC-E": { Male: [125000,165000], Female: [130000,170000] },
+  SC: { Male: [250000,330000], Female: [260000,340000] },
+  ST: { Male: [330000,450000], Female: [340000,460000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [80000,130000], Female: [85000,135000] },
+  EWS: { Male: [110000,160000], Female: [115000,165000] },
+  "BC-A": { Male: [160000,200000], Female: [165000,205000] },
+  "BC-B": { Male: [130000,170000], Female: [135000,175000] },
+  "BC-C": { Male: [120000,155000], Female: [125000,160000] },
+  "BC-D": { Male: [140000,180000], Female: [145000,185000] },
+  "BC-E": { Male: [130000,170000], Female: [135000,175000] },
+  SC: { Male: [260000,340000], Female: [270000,350000] },
+  ST: { Male: [340000,460000], Female: [350000,470000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [85000,135000], Female: [90000,140000] },
+  EWS: { Male: [115000,165000], Female: [120000,170000] },
+  "BC-A": { Male: [165000,205000], Female: [170000,210000] },
+  "BC-B": { Male: [135000,175000], Female: [140000,180000] },
+  "BC-C": { Male: [125000,160000], Female: [130000,165000] },
+  "BC-D": { Male: [145000,185000], Female: [150000,190000] },
+  "BC-E": { Male: [135000,175000], Female: [140000,180000] },
+  SC: { Male: [270000,350000], Female: [280000,360000] },
+  ST: { Male: [350000,470000], Female: [360000,480000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [90000,140000], Female: [95000,145000] },
+  EWS: { Male: [120000,170000], Female: [125000,175000] },
+  "BC-A": { Male: [170000,210000], Female: [175000,215000] },
+  "BC-B": { Male: [140000,180000], Female: [145000,185000] },
+  "BC-C": { Male: [130000,165000], Female: [135000,170000] },
+  "BC-D": { Male: [150000,190000], Female: [155000,195000] },
+  "BC-E": { Male: [140000,180000], Female: [145000,185000] },
+  SC: { Male: [280000,360000], Female: [290000,370000] },
+  ST: { Male: [360000,480000], Female: [370000,490000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [95000,145000], Female: [100000,150000] },
+  EWS: { Male: [125000,175000], Female: [130000,180000] },
+  "BC-A": { Male: [175000,215000], Female: [180000,220000] },
+  "BC-B": { Male: [145000,185000], Female: [150000,190000] },
+  "BC-C": { Male: [135000,170000], Female: [140000,175000] },
+  "BC-D": { Male: [155000,195000], Female: [160000,200000] },
+  "BC-E": { Male: [145000,185000], Female: [150000,190000] },
+  SC: { Male: [290000,370000], Female: [300000,380000] },
+  ST: { Male: [370000,490000], Female: [380000,500000] }
+});
+
+collegeId = "61";
+collegeName = "DRK Institute of Science & Technology";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [80000,140000], Female: [85000,145000] },
+  EWS: { Male: [110000,170000], Female: [115000,175000] },
+  "BC-A": { Male: [170000,220000], Female: [175000,225000] },
+  "BC-B": { Male: [140000,180000], Female: [145000,185000] },
+  "BC-C": { Male: [130000,165000], Female: [135000,170000] },
+  "BC-D": { Male: [150000,190000], Female: [155000,195000] },
+  "BC-E": { Male: [140000,180000], Female: [145000,185000] },
+  SC: { Male: [260000,340000], Female: [270000,350000] },
+  ST: { Male: [340000,460000], Female: [350000,470000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [85000,145000], Female: [90000,150000] },
+  EWS: { Male: [115000,175000], Female: [120000,180000] },
+  "BC-A": { Male: [175000,225000], Female: [180000,230000] },
+  "BC-B": { Male: [145000,185000], Female: [150000,190000] },
+  "BC-C": { Male: [135000,170000], Female: [140000,175000] },
+  "BC-D": { Male: [155000,195000], Female: [160000,200000] },
+  "BC-E": { Male: [145000,185000], Female: [150000,190000] },
+  SC: { Male: [270000,350000], Female: [280000,360000] },
+  ST: { Male: [350000,470000], Female: [360000,480000] }
+});
+
+// -------- CSD --------
+addBranch("CSD", {
+  OC: { Male: [90000,150000], Female: [95000,155000] },
+  EWS: { Male: [120000,180000], Female: [125000,185000] },
+  "BC-A": { Male: [180000,230000], Female: [185000,235000] },
+  "BC-B": { Male: [150000,190000], Female: [155000,195000] },
+  "BC-C": { Male: [140000,175000], Female: [145000,180000] },
+  "BC-D": { Male: [160000,200000], Female: [165000,205000] },
+  "BC-E": { Male: [150000,190000], Female: [155000,195000] },
+  SC: { Male: [280000,360000], Female: [290000,370000] },
+  ST: { Male: [360000,480000], Female: [370000,490000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [95000,155000], Female: [100000,160000] },
+  EWS: { Male: [125000,185000], Female: [130000,190000] },
+  "BC-A": { Male: [185000,235000], Female: [190000,240000] },
+  "BC-B": { Male: [155000,195000], Female: [160000,200000] },
+  "BC-C": { Male: [145000,180000], Female: [150000,185000] },
+  "BC-D": { Male: [165000,205000], Female: [170000,210000] },
+  "BC-E": { Male: [155000,195000], Female: [160000,200000] },
+  SC: { Male: [290000,370000], Female: [300000,380000] },
+  ST: { Male: [370000,490000], Female: [380000,500000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [95000,155000], Female: [100000,160000] },
+  EWS: { Male: [125000,185000], Female: [130000,190000] },
+  "BC-A": { Male: [185000,235000], Female: [190000,240000] },
+  "BC-B": { Male: [155000,195000], Female: [160000,200000] },
+  "BC-C": { Male: [145000,180000], Female: [150000,185000] },
+  "BC-D": { Male: [165000,205000], Female: [170000,210000] },
+  "BC-E": { Male: [155000,195000], Female: [160000,200000] },
+  SC: { Male: [290000,370000], Female: [300000,380000] },
+  ST: { Male: [370000,490000], Female: [380000,500000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [100000,160000], Female: [105000,165000] },
+  EWS: { Male: [130000,190000], Female: [135000,195000] },
+  "BC-A": { Male: [190000,240000], Female: [195000,245000] },
+  "BC-B": { Male: [160000,200000], Female: [165000,205000] },
+  "BC-C": { Male: [150000,185000], Female: [155000,190000] },
+  "BC-D": { Male: [170000,210000], Female: [175000,215000] },
+  "BC-E": { Male: [160000,200000], Female: [165000,205000] },
+  SC: { Male: [300000,380000], Female: [310000,390000] },
+  ST: { Male: [380000,500000], Female: [390000,510000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [105000,165000], Female: [110000,170000] },
+  EWS: { Male: [135000,195000], Female: [140000,200000] },
+  "BC-A": { Male: [195000,245000], Female: [200000,250000] },
+  "BC-B": { Male: [165000,205000], Female: [170000,210000] },
+  "BC-C": { Male: [155000,190000], Female: [160000,195000] },
+  "BC-D": { Male: [175000,215000], Female: [180000,220000] },
+  "BC-E": { Male: [165000,205000], Female: [170000,210000] },
+  SC: { Male: [310000,390000], Female: [320000,400000] },
+  ST: { Male: [390000,510000], Female: [400000,520000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [110000,170000], Female: [115000,175000] },
+  EWS: { Male: [140000,200000], Female: [145000,205000] },
+  "BC-A": { Male: [200000,250000], Female: [205000,255000] },
+  "BC-B": { Male: [170000,210000], Female: [175000,215000] },
+  "BC-C": { Male: [160000,195000], Female: [165000,200000] },
+  "BC-D": { Male: [180000,220000], Female: [185000,225000] },
+  "BC-E": { Male: [170000,210000], Female: [175000,215000] },
+  SC: { Male: [320000,400000], Female: [330000,410000] },
+  ST: { Male: [400000,520000], Female: [410000,530000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [115000,175000], Female: [120000,180000] },
+  EWS: { Male: [145000,205000], Female: [150000,210000] },
+  "BC-A": { Male: [205000,255000], Female: [210000,260000] },
+  "BC-B": { Male: [175000,215000], Female: [180000,220000] },
+  "BC-C": { Male: [165000,200000], Female: [170000,205000] },
+  "BC-D": { Male: [185000,225000], Female: [190000,230000] },
+  "BC-E": { Male: [175000,215000], Female: [180000,220000] },
+  SC: { Male: [330000,410000], Female: [340000,420000] },
+  ST: { Male: [410000,530000], Female: [420000,540000] }
+});
+
+collegeId = "62";
+collegeName = "VIF College of Engineering & Technology";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [100000,180000], Female: [110000,190000] },
+  EWS: { Male: [140000,210000], Female: [150000,220000] },
+  "BC-A": { Male: [210000,280000], Female: [220000,290000] },
+  "BC-B": { Male: [180000,240000], Female: [190000,250000] },
+  "BC-C": { Male: [160000,220000], Female: [170000,230000] },
+  "BC-D": { Male: [200000,260000], Female: [210000,270000] },
+  "BC-E": { Male: [180000,240000], Female: [190000,250000] },
+  SC: { Male: [300000,420000], Female: [310000,430000] },
+  ST: { Male: [400000,550000], Female: [410000,560000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [110000,190000], Female: [120000,200000] },
+  EWS: { Male: [150000,220000], Female: [160000,230000] },
+  "BC-A": { Male: [220000,290000], Female: [230000,300000] },
+  "BC-B": { Male: [190000,250000], Female: [200000,260000] },
+  "BC-C": { Male: [170000,230000], Female: [180000,240000] },
+  "BC-D": { Male: [210000,270000], Female: [220000,280000] },
+  "BC-E": { Male: [190000,250000], Female: [200000,260000] },
+  SC: { Male: [310000,430000], Female: [320000,440000] },
+  ST: { Male: [410000,560000], Female: [420000,570000] }
+});
+
+// -------- CSD --------
+addBranch("CSD", {
+  OC: { Male: [120000,200000], Female: [130000,210000] },
+  EWS: { Male: [160000,230000], Female: [170000,240000] },
+  "BC-A": { Male: [230000,300000], Female: [240000,310000] },
+  "BC-B": { Male: [200000,260000], Female: [210000,270000] },
+  "BC-C": { Male: [180000,240000], Female: [190000,250000] },
+  "BC-D": { Male: [220000,280000], Female: [230000,290000] },
+  "BC-E": { Male: [200000,260000], Female: [210000,270000] },
+  SC: { Male: [320000,440000], Female: [330000,450000] },
+  ST: { Male: [420000,570000], Female: [430000,580000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [130000,210000], Female: [140000,220000] },
+  EWS: { Male: [170000,240000], Female: [180000,250000] },
+  "BC-A": { Male: [240000,310000], Female: [250000,320000] },
+  "BC-B": { Male: [210000,270000], Female: [220000,280000] },
+  "BC-C": { Male: [190000,250000], Female: [200000,260000] },
+  "BC-D": { Male: [230000,290000], Female: [240000,300000] },
+  "BC-E": { Male: [210000,270000], Female: [220000,280000] },
+  SC: { Male: [330000,450000], Female: [340000,460000] },
+  ST: { Male: [430000,580000], Female: [440000,590000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [130000,210000], Female: [140000,220000] },
+  EWS: { Male: [170000,240000], Female: [180000,250000] },
+  "BC-A": { Male: [240000,310000], Female: [250000,320000] },
+  "BC-B": { Male: [210000,270000], Female: [220000,280000] },
+  "BC-C": { Male: [190000,250000], Female: [200000,260000] },
+  "BC-D": { Male: [230000,290000], Female: [240000,300000] },
+  "BC-E": { Male: [210000,270000], Female: [220000,280000] },
+  SC: { Male: [330000,450000], Female: [340000,460000] },
+  ST: { Male: [430000,580000], Female: [440000,590000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [140000,220000], Female: [150000,230000] },
+  EWS: { Male: [180000,250000], Female: [190000,260000] },
+  "BC-A": { Male: [250000,320000], Female: [260000,330000] },
+  "BC-B": { Male: [220000,280000], Female: [230000,290000] },
+  "BC-C": { Male: [200000,260000], Female: [210000,270000] },
+  "BC-D": { Male: [240000,300000], Female: [250000,310000] },
+  "BC-E": { Male: [220000,280000], Female: [230000,290000] },
+  SC: { Male: [340000,460000], Female: [350000,470000] },
+  ST: { Male: [440000,590000], Female: [450000,600000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [150000,230000], Female: [160000,240000] },
+  EWS: { Male: [190000,260000], Female: [200000,270000] },
+  "BC-A": { Male: [260000,330000], Female: [270000,340000] },
+  "BC-B": { Male: [230000,290000], Female: [240000,300000] },
+  "BC-C": { Male: [210000,270000], Female: [220000,280000] },
+  "BC-D": { Male: [250000,310000], Female: [260000,320000] },
+  "BC-E": { Male: [230000,290000], Female: [240000,300000] },
+  SC: { Male: [350000,470000], Female: [360000,480000] },
+  ST: { Male: [450000,600000], Female: [460000,610000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [160000,240000], Female: [170000,250000] },
+  EWS: { Male: [200000,270000], Female: [210000,280000] },
+  "BC-A": { Male: [270000,340000], Female: [280000,350000] },
+  "BC-B": { Male: [240000,300000], Female: [250000,310000] },
+  "BC-C": { Male: [220000,280000], Female: [230000,290000] },
+  "BC-D": { Male: [260000,320000], Female: [270000,330000] },
+  "BC-E": { Male: [240000,300000], Female: [250000,310000] },
+  SC: { Male: [360000,480000], Female: [370000,490000] },
+  ST: { Male: [460000,610000], Female: [470000,620000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [170000,250000], Female: [180000,260000] },
+  EWS: { Male: [210000,280000], Female: [220000,290000] },
+  "BC-A": { Male: [280000,350000], Female: [290000,360000] },
+  "BC-B": { Male: [250000,310000], Female: [260000,320000] },
+  "BC-C": { Male: [230000,290000], Female: [240000,300000] },
+  "BC-D": { Male: [270000,330000], Female: [280000,340000] },
+  "BC-E": { Male: [250000,310000], Female: [260000,320000] },
+  SC: { Male: [370000,490000], Female: [380000,500000] },
+  ST: { Male: [470000,620000], Female: [480000,630000] }
+});
+
+collegeId = "63";
+collegeName = "Holy Mary Institute of Technology & Science";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [110000,140000], Female: [115000,145000] },
+  EWS: { Male: [120000,150000], Female: [125000,155000] },
+  "BC-A": { Male: [120000,145000], Female: [125000,150000] },
+  "BC-B": { Male: [125000,150000], Female: [130000,155000] },
+  "BC-C": { Male: [90000,120000], Female: [95000,125000] },
+  "BC-D": { Male: [125000,150000], Female: [130000,155000] },
+  "BC-E": { Male: [120000,140000], Female: [125000,145000] },
+  SC: { Male: [135000,145000], Female: [140000,150000] },
+  ST: { Male: [135000,150000], Female: [140000,155000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [125000,145000], Female: [130000,150000] },
+  EWS: { Male: [130000,155000], Female: [135000,160000] },
+  "BC-A": { Male: [130000,150000], Female: [135000,155000] },
+  "BC-B": { Male: [135000,155000], Female: [140000,160000] },
+  "BC-C": { Male: [100000,130000], Female: [105000,135000] },
+  "BC-D": { Male: [135000,155000], Female: [140000,160000] },
+  "BC-E": { Male: [130000,150000], Female: [135000,155000] },
+  SC: { Male: [140000,150000], Female: [145000,155000] },
+  ST: { Male: [140000,150000], Female: [145000,155000] }
+});
+
+// -------- CSD --------
+addBranch("CSD", {
+  OC: { Male: [115000,135000], Female: [120000,140000] },
+  EWS: { Male: [120000,145000], Female: [125000,150000] },
+  "BC-A": { Male: [120000,140000], Female: [125000,145000] },
+  "BC-B": { Male: [125000,145000], Female: [130000,150000] },
+  "BC-C": { Male: [95000,125000], Female: [100000,130000] },
+  "BC-D": { Male: [125000,145000], Female: [130000,150000] },
+  "BC-E": { Male: [120000,140000], Female: [125000,145000] },
+  SC: { Male: [135000,145000], Female: [140000,150000] },
+  ST: { Male: [140000,150000], Female: [145000,155000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [105000,130000], Female: [110000,135000] },
+  EWS: { Male: [110000,140000], Female: [115000,145000] },
+  "BC-A": { Male: [110000,135000], Female: [115000,140000] },
+  "BC-B": { Male: [115000,140000], Female: [120000,145000] },
+  "BC-C": { Male: [85000,115000], Female: [90000,120000] },
+  "BC-D": { Male: [115000,140000], Female: [120000,145000] },
+  "BC-E": { Male: [110000,135000], Female: [115000,140000] },
+  SC: { Male: [135000,145000], Female: [140000,150000] },
+  ST: { Male: [140000,150000], Female: [145000,155000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [100000,130000], Female: [105000,135000] },
+  EWS: { Male: [105000,135000], Female: [110000,140000] },
+  "BC-A": { Male: [105000,130000], Female: [110000,135000] },
+  "BC-B": { Male: [110000,135000], Female: [115000,140000] },
+  "BC-C": { Male: [80000,110000], Female: [85000,115000] },
+  "BC-D": { Male: [110000,135000], Female: [115000,140000] },
+  "BC-E": { Male: [105000,130000], Female: [110000,135000] },
+  SC: { Male: [135000,145000], Female: [140000,150000] },
+  ST: { Male: [140000,150000], Female: [145000,155000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [105000,135000], Female: [110000,140000] },
+  EWS: { Male: [110000,140000], Female: [115000,145000] },
+  "BC-A": { Male: [110000,135000], Female: [115000,140000] },
+  "BC-B": { Male: [115000,140000], Female: [120000,145000] },
+  "BC-C": { Male: [85000,115000], Female: [90000,120000] },
+  "BC-D": { Male: [115000,140000], Female: [120000,145000] },
+  "BC-E": { Male: [110000,135000], Female: [115000,140000] },
+  SC: { Male: [130000,140000], Female: [135000,145000] },
+  ST: { Male: [140000,150000], Female: [145000,155000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [105000,135000], Female: [110000,140000] },
+  EWS: { Male: [110000,140000], Female: [115000,145000] },
+  "BC-A": { Male: [110000,135000], Female: [115000,140000] },
+  "BC-B": { Male: [115000,140000], Female: [120000,145000] },
+  "BC-C": { Male: [85000,115000], Female: [90000,120000] },
+  "BC-D": { Male: [115000,140000], Female: [120000,145000] },
+  "BC-E": { Male: [110000,135000], Female: [115000,140000] },
+  SC: { Male: [140000,150000], Female: [145000,155000] },
+  ST: { Male: [140000,150000], Female: [145000,155000] }
+});
+
+collegeId = "64";
+collegeName = "St. Mary’s Engineering College";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [100000,160000], Female: [110000,170000] },
+  EWS: { Male: [120000,180000], Female: [130000,190000] },
+  "BC-A": { Male: [150000,210000], Female: [160000,220000] },
+  "BC-B": { Male: [130000,180000], Female: [140000,190000] },
+  "BC-C": { Male: [110000,150000], Female: [120000,160000] },
+  "BC-D": { Male: [140000,190000], Female: [150000,200000] },
+  "BC-E": { Male: [130000,180000], Female: [140000,190000] },
+  SC: { Male: [250000,330000], Female: [260000,340000] },
+  ST: { Male: [300000,420000], Female: [310000,430000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [110000,170000], Female: [120000,180000] },
+  EWS: { Male: [130000,190000], Female: [140000,200000] },
+  "BC-A": { Male: [160000,220000], Female: [170000,230000] },
+  "BC-B": { Male: [140000,190000], Female: [150000,200000] },
+  "BC-C": { Male: [120000,160000], Female: [130000,170000] },
+  "BC-D": { Male: [150000,200000], Female: [160000,210000] },
+  "BC-E": { Male: [140000,190000], Female: [150000,200000] },
+  SC: { Male: [260000,340000], Female: [270000,350000] },
+  ST: { Male: [310000,430000], Female: [320000,440000] }
+});
+
+// -------- CSD --------
+addBranch("CSD", {
+  OC: { Male: [120000,180000], Female: [130000,190000] },
+  EWS: { Male: [140000,200000], Female: [150000,210000] },
+  "BC-A": { Male: [170000,230000], Female: [180000,240000] },
+  "BC-B": { Male: [150000,200000], Female: [160000,210000] },
+  "BC-C": { Male: [130000,170000], Female: [140000,180000] },
+  "BC-D": { Male: [160000,210000], Female: [170000,220000] },
+  "BC-E": { Male: [150000,200000], Female: [160000,210000] },
+  SC: { Male: [270000,350000], Female: [280000,360000] },
+  ST: { Male: [320000,440000], Female: [330000,450000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [130000,190000], Female: [140000,200000] },
+  EWS: { Male: [150000,210000], Female: [160000,220000] },
+  "BC-A": { Male: [180000,240000], Female: [190000,250000] },
+  "BC-B": { Male: [160000,210000], Female: [170000,220000] },
+  "BC-C": { Male: [140000,180000], Female: [150000,190000] },
+  "BC-D": { Male: [170000,220000], Female: [180000,230000] },
+  "BC-E": { Male: [160000,210000], Female: [170000,220000] },
+  SC: { Male: [280000,360000], Female: [290000,370000] },
+  ST: { Male: [330000,450000], Female: [340000,460000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [130000,190000], Female: [140000,200000] },
+  EWS: { Male: [150000,210000], Female: [160000,220000] },
+  "BC-A": { Male: [180000,240000], Female: [190000,250000] },
+  "BC-B": { Male: [160000,210000], Female: [170000,220000] },
+  "BC-C": { Male: [140000,180000], Female: [150000,190000] },
+  "BC-D": { Male: [170000,220000], Female: [180000,230000] },
+  "BC-E": { Male: [160000,210000], Female: [170000,220000] },
+  SC: { Male: [280000,360000], Female: [290000,370000] },
+  ST: { Male: [330000,450000], Female: [340000,460000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [120000,170000], Female: [130000,180000] },
+  EWS: { Male: [140000,190000], Female: [150000,200000] },
+  "BC-A": { Male: [170000,230000], Female: [180000,240000] },
+  "BC-B": { Male: [150000,200000], Female: [160000,210000] },
+  "BC-C": { Male: [130000,170000], Female: [140000,180000] },
+  "BC-D": { Male: [160000,210000], Female: [170000,220000] },
+  "BC-E": { Male: [150000,200000], Female: [160000,210000] },
+  SC: { Male: [270000,350000], Female: [280000,360000] },
+  ST: { Male: [320000,440000], Female: [330000,450000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [130000,180000], Female: [140000,190000] },
+  EWS: { Male: [150000,200000], Female: [160000,210000] },
+  "BC-A": { Male: [180000,240000], Female: [190000,250000] },
+  "BC-B": { Male: [160000,210000], Female: [170000,220000] },
+  "BC-C": { Male: [140000,180000], Female: [150000,190000] },
+  "BC-D": { Male: [170000,220000], Female: [180000,230000] },
+  "BC-E": { Male: [160000,210000], Female: [170000,220000] },
+  SC: { Male: [280000,360000], Female: [290000,370000] },
+  ST: { Male: [330000,450000], Female: [340000,460000] }
+});
+
+// -------- MECH --------
+addBranch("MECH", {
+  OC: { Male: [140000,190000], Female: [150000,200000] },
+  EWS: { Male: [160000,210000], Female: [170000,220000] },
+  "BC-A": { Male: [190000,250000], Female: [200000,260000] },
+  "BC-B": { Male: [170000,220000], Female: [180000,230000] },
+  "BC-C": { Male: [150000,190000], Female: [160000,200000] },
+  "BC-D": { Male: [180000,230000], Female: [190000,240000] },
+  "BC-E": { Male: [170000,220000], Female: [180000,230000] },
+  SC: { Male: [290000,370000], Female: [300000,380000] },
+  ST: { Male: [340000,460000], Female: [350000,470000] }
+});
+
+// -------- CIVIL --------
+addBranch("CIVIL", {
+  OC: { Male: [150000,200000], Female: [160000,210000] },
+  EWS: { Male: [170000,220000], Female: [180000,230000] },
+  "BC-A": { Male: [200000,260000], Female: [210000,270000] },
+  "BC-B": { Male: [180000,230000], Female: [190000,240000] },
+  "BC-C": { Male: [160000,200000], Female: [170000,210000] },
+  "BC-D": { Male: [190000,240000], Female: [200000,250000] },
+  "BC-E": { Male: [180000,230000], Female: [190000,240000] },
+  SC: { Male: [300000,380000], Female: [310000,390000] },
+  ST: { Male: [350000,470000], Female: [360000,480000] }
+});
+
+collegeId = "65";
+collegeName = "Neil Gogte Institute of Technology";
+
+// -------- CSE --------
+addBranch("CSE", {
+  OC: { Male: [18000,32000], Female: [20000,35000] },
+  EWS: { Male: [25000,40000], Female: [28000,42000] },
+  "BC-A": { Male: [40000,65000], Female: [42000,68000] },
+  "BC-B": { Male: [30000,50000], Female: [32000,52000] },
+  "BC-C": { Male: [25000,42000], Female: [27000,45000] },
+  "BC-D": { Male: [35000,55000], Female: [37000,58000] },
+  "BC-E": { Male: [30000,50000], Female: [32000,52000] },
+  SC: { Male: [70000,120000], Female: [75000,125000] },
+  ST: { Male: [90000,150000], Female: [95000,155000] }
+});
+
+// -------- AI & ML --------
+addBranch("AI & ML", {
+  OC: { Male: [22000,38000], Female: [25000,40000] },
+  EWS: { Male: [30000,45000], Female: [32000,47000] },
+  "BC-A": { Male: [45000,70000], Female: [47000,72000] },
+  "BC-B": { Male: [35000,55000], Female: [37000,57000] },
+  "BC-C": { Male: [30000,48000], Female: [32000,50000] },
+  "BC-D": { Male: [40000,60000], Female: [42000,62000] },
+  "BC-E": { Male: [35000,55000], Female: [37000,57000] },
+  SC: { Male: [80000,130000], Female: [85000,135000] },
+  ST: { Male: [100000,160000], Female: [105000,165000] }
+});
+
+// -------- CSD --------
+addBranch("CSD", {
+  OC: { Male: [24000,40000], Female: [26000,42000] },
+  EWS: { Male: [32000,48000], Female: [35000,50000] },
+  "BC-A": { Male: [48000,75000], Female: [50000,78000] },
+  "BC-B": { Male: [38000,58000], Female: [40000,60000] },
+  "BC-C": { Male: [33000,52000], Female: [35000,54000] },
+  "BC-D": { Male: [43000,65000], Female: [45000,68000] },
+  "BC-E": { Male: [38000,58000], Female: [40000,60000] },
+  SC: { Male: [85000,135000], Female: [90000,140000] },
+  ST: { Male: [105000,165000], Female: [110000,170000] }
+});
+
+// -------- Cyber Security --------
+addBranch("Cyber Security", {
+  OC: { Male: [26000,42000], Female: [28000,45000] },
+  EWS: { Male: [35000,50000], Female: [38000,52000] },
+  "BC-A": { Male: [50000,78000], Female: [52000,80000] },
+  "BC-B": { Male: [40000,60000], Female: [42000,62000] },
+  "BC-C": { Male: [35000,54000], Female: [37000,56000] },
+  "BC-D": { Male: [45000,68000], Female: [48000,70000] },
+  "BC-E": { Male: [40000,60000], Female: [42000,62000] },
+  SC: { Male: [90000,140000], Female: [95000,145000] },
+  ST: { Male: [110000,170000], Female: [115000,175000] }
+});
+
+// -------- IT --------
+addBranch("IT", {
+  OC: { Male: [26000,42000], Female: [28000,45000] },
+  EWS: { Male: [35000,50000], Female: [38000,52000] },
+  "BC-A": { Male: [50000,78000], Female: [52000,80000] },
+  "BC-B": { Male: [40000,60000], Female: [42000,62000] },
+  "BC-C": { Male: [35000,54000], Female: [37000,56000] },
+  "BC-D": { Male: [45000,68000], Female: [48000,70000] },
+  "BC-E": { Male: [40000,60000], Female: [42000,62000] },
+  SC: { Male: [90000,140000], Female: [95000,145000] },
+  ST: { Male: [110000,170000], Female: [115000,175000] }
+});
+
+// -------- ECE --------
+addBranch("ECE", {
+  OC: { Male: [30000,50000], Female: [32000,52000] },
+  EWS: { Male: [38000,55000], Female: [40000,58000] },
+  "BC-A": { Male: [55000,85000], Female: [58000,88000] },
+  "BC-B": { Male: [45000,65000], Female: [47000,67000] },
+  "BC-C": { Male: [38000,58000], Female: [40000,60000] },
+  "BC-D": { Male: [50000,75000], Female: [52000,78000] },
+  "BC-E": { Male: [45000,65000], Female: [47000,67000] },
+  SC: { Male: [95000,150000], Female: [100000,155000] },
+  ST: { Male: [120000,180000], Female: [125000,185000] }
+});
+
+// -------- EEE --------
+addBranch("EEE", {
+  OC: { Male: [35000,55000], Female: [37000,58000] },
+  EWS: { Male: [42000,60000], Female: [45000,62000] },
+  "BC-A": { Male: [60000,90000], Female: [63000,93000] },
+  "BC-B": { Male: [50000,70000], Female: [52000,72000] },
+  "BC-C": { Male: [42000,62000], Female: [45000,65000] },
+  "BC-D": { Male: [55000,80000], Female: [58000,82000] },
+  "BC-E": { Male: [50000,70000], Female: [52000,72000] },
+  SC: { Male: [100000,160000], Female: [105000,165000] },
+  ST: { Male: [130000,200000], Female: [135000,205000] }
+});
+  
+// ================= SORT =================
+  const priority = { High: 1, Medium: 2, Low: 3 };
 
   const sorted = results.sort((a, b) => {
     if (priority[a.chance] !== priority[b.chance]) {
@@ -3635,24 +11730,6 @@ export const predictorMockLogic = (rank) => {
     }
     return a.cutoff - b.cutoff;
   });
-
-  // ---------------- NO RESULT MESSAGE ----------------
-  const hasChance = sorted.some(r => r.chance !== "Very Low");
-
-  if (!hasChance) {
-    return [
-      {
-        collegeId: "no-data",
-        collegeName: "No Colleges Available",
-        branch: "-",
-        cutoff: "-",
-        chance: "No Chance",
-        rating: 0,
-        message: "Based on your rank, there are currently no suitable colleges available in our database. We are continuously updating our data. Please check back later."
-      }
-    ];
-  }
-  
 
   return sorted;
 };

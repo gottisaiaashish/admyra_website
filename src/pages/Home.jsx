@@ -1,18 +1,17 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import {
-  Search,
   Target,
-  Users,    
-  Bot,
+  Users,
+  Book,
   MapPin,
   ArrowRight,
-  GraduationCap,
   BarChart3,
 } from "lucide-react";
 
 import { Card, Button, Badge, RatingStars, Input } from "../components/ui";
 import { colleges } from "../data/mock-data";
+import DarkVeil from "../components/DarkVeil";
 
 export function Home() {
   const navigate = useNavigate();
@@ -22,34 +21,43 @@ export function Home() {
     <div className="w-full pb-24">
 
       {/* HERO */}
-      <section className="pt-28 pb-20 text-center max-w-6xl mx-auto px-4">
-        <Badge variant="brand" className="mb-6">
-          Admyra — Admit My Rank
-        </Badge>
+      <section className="relative h-[620px] sm:h-[680px] overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <DarkVeil />
+          <div className="absolute inset-0 bg-slate-950/80" />
+        </div>
 
-        <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
-          Know Where You Stand. <br />
-          <span className="bg-gradient-to-r from-primary-start to-primary-end bg-clip-text text-transparent">
-            Choose the Right College.
-          </span>
-        </h1>
+        <div className="relative z-10 flex h-full items-center justify-center px-4">
+          <div className="w-full max-w-4xl text-center">
+            <Badge variant="brand" className="mb-6 text-sm">
+              Admyra — Admit My Rank
+            </Badge>
 
-        <p className="text-lg md:text-xl text-text-muted max-w-2xl mx-auto mb-10">
-          Enter your rank and instantly discover colleges you can get into —
-          powered by real cutoff data and student insights.
-        </p>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight tracking-tight text-white mb-6">
+              Know Where You Stand.
+              <span className="block bg-gradient-to-r from-primary-start to-primary-end bg-clip-text text-transparent">
+                Choose the Right College.
+              </span>
+            </h1>
 
-        {/* PRIMARY ACTION */}
-        <div className="max-w-2xl mx-auto bg-card border border-border-subtle rounded-2xl p-3 flex gap-2 shadow-lg">
-          <Input placeholder="Need help? Talk to our AI." type="number" />
-          
-        </div><Button onClick={() => navigate("/predictor")}>
-           <Bot/>AI
-          </Button>
+            <p className="mx-auto mb-10 max-w-2xl text-base sm:text-lg text-slate-200">
+              Enter your rank and instantly discover colleges you can get into — powered by real cutoff data and student insights.
+            </p>
 
-        <p className="text-xs text-text-muted mt-4">
-          Used by thousands of students • Updated for 2026
-        </p>
+            <div className="mx-auto flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Button size="lg" className="px-8 py-5" onClick={() => navigate("/predictor") }>
+                <Book className="h-4 w-4 mr-2" /> Predict
+              </Button>
+              <Button variant="outline" size="lg" className="px-8 py-5" onClick={() => navigate("/colleges") }>
+                Explore Colleges
+              </Button>
+            </div>
+
+            <p className="mt-6 text-sm text-slate-300">
+              Used by thousands of students • Updated for 2026
+            </p>
+          </div>
+        </div>
       </section>
 
       {/* TRUST / SOCIAL PROOF */}
