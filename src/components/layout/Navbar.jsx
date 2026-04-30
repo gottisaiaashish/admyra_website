@@ -61,6 +61,23 @@ export function Navbar() {
           </div>
         </div>
       </div>
+
+      <div className="md:hidden px-4 pb-4">
+        <div className="flex flex-wrap justify-center gap-3">
+          {navLinks.map((link) => (
+            <NavLink
+              key={link.name}
+              to={link.path}
+              className={({ isActive }) => cn(
+                "text-sm font-medium transition-colors hover:text-primary-start",
+                isActive ? "text-accent-cyan" : "text-text-muted"
+              )}
+            >
+              {link.name}
+            </NavLink>
+          ))}
+        </div>
+      </div>
     </nav>
   );
 }
