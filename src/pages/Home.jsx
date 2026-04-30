@@ -12,6 +12,7 @@ import {
 import { Card, Button, Badge, RatingStars, Input } from "../components/ui";
 import { colleges } from "../data/mock-data";
 import DarkVeil from "../components/DarkVeil";
+import { VelocityText } from "../components/VelocityText";
 
 export function Home() {
   const navigate = useNavigate();
@@ -24,16 +25,16 @@ export function Home() {
       <section className="relative h-[620px] sm:h-[680px] overflow-hidden">
         <div className="absolute inset-0 z-0">
           <DarkVeil />
-          <div className="absolute inset-0 bg-slate-950/80" />
+          <div className="absolute inset-100 bg-slate-950/80" />
         </div>
 
-        <div className="relative z-10 flex h-full items-center justify-center px-4">
+        <div className="relative z-10 flex h-full items-center justify-center px-6">
           <div className="w-full max-w-4xl text-center">
-            <Badge variant="brand" className="mb-6 text-sm">
+            <Badge variant="brand" className="mb-9 text-sm">
               Admyra — Admit My Rank
             </Badge>
 
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight tracking-tight text-white mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6x1 font-extrabold leading-tight tracking-tight text-white mb-6">
               Know Where You Stand.
               <span className="block bg-gradient-to-r from-primary-start to-primary-end bg-clip-text text-transparent">
                 Choose the Right College.
@@ -43,12 +44,11 @@ export function Home() {
             <p className="mx-auto mb-10 max-w-2xl text-base sm:text-lg text-slate-200">
               Enter your rank and instantly discover colleges you can get into — powered by real cutoff data and student insights.
             </p>
-
             <div className="mx-auto flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button size="lg" className="px-8 py-5" onClick={() => navigate("/predictor") }>
                 <Book className="h-4 w-4 mr-2" /> Predict
               </Button>
-              <Button variant="outline" size="lg" className="px-8 py-5" onClick={() => navigate("/colleges") }>
+              <Button colour="primary" size="lg" className="px-8 py-5" onClick={() => navigate("/colleges") }>
                 Explore Colleges
               </Button>
             </div>
@@ -171,6 +171,8 @@ export function Home() {
         </div>
 
       </section>
+
+       <VelocityText />
 
       {/* FINAL CTA */}
     <section className="relative py-28 px-6 overflow-hidden">

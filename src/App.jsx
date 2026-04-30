@@ -15,7 +15,12 @@ function Layout() {
       </main>
       <footer className="border-t border-gray-800 py-8 bg-background">
         <div className="max-w-7xl mx-auto px-4 text-center text-gray-400">
-          <p>© {new Date().getFullYear()} Admyra. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Admyra. All rights reserved. 
+          </p>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 text-center text-gray-400">
+          <p> any queries? contact us at teamadmyra@gmail.com
+          </p>
         </div>
       </footer>
     </div>
@@ -28,7 +33,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="colleges" element={<Colleges />} />
+          <Route path="colleges" element={< Colleges />} />
           <Route path="colleges/:id" element={<CollegeDetails />} />
           <Route path="predictor" element={<Predictor />} />
         </Route>
