@@ -188,3 +188,5 @@ export const RatingStars = ({ rating }) => {
     </div>
   );
 };
+
+export { ShinyButton } from './ShinyButton';

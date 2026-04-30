@@ -12,19 +12,12 @@ export function Navbar() {
     { name: 'Home', path: '/' },
     { name: 'Colleges', path: '/colleges' },
     { name: 'Predictor', path: '/predictor' },
-    { name: 'Ai mentor', path: '/aimentor' },
   ];
 
   return (
     <nav className="floating-navbar">
-      <div className="px-4 sm:px-5 lg:px-">
-        <div className="flex items-center justify-between h-15">
-          <div className="flex-shrink-0 flex items-center gap-000000">
-            <GraduationCap className="h-0 w-8 text-primary-start" />
-            <span className="font-bold text-xl tracking-tight bg-to-r from-primary-start to-primary-end bg-clip-text text-transparent">
-              Admyra
-            </span>
-          </div>
+      <div className="px-2 sm:px-5 lg:px-0 max-w-7xl mx-auto">
+        <div className="flex items-center justify-between h-5">
           
           <div className="hidden md:block">
             <div className="ml-1 flex items-baseline space-x-8">
@@ -48,7 +41,7 @@ export function Navbar() {
             </div>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="hidden md:flex items-center gap-4">
             <button 
               onClick={toggleTheme} 
               className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition text-text-muted hover:text-text-main"
@@ -62,22 +55,33 @@ export function Navbar() {
         </div>
       </div>
 
-      <div className="md:hidden px-4 pb-4">
-        <div className="flex flex-wrap justify-center gap-3">
-          {navLinks.map((link) => (
-            <NavLink
-              key={link.name}
-              to={link.path}
-              className={({ isActive }) => cn(
-                "text-sm font-medium transition-colors hover:text-primary-start",
-                isActive ? "text-accent-cyan" : "text-text-muted"
-              )}
-            >
-              {link.name}
-            </NavLink>
-          ))}
+      <div className="md:hidden px-3 py-0 pb-2 h-10">
+        <div className="flex items-center gap-11">
+          <div className="flex-1 flex items-center justify-between gap-4">
+            {navLinks.map((link) => (
+              <NavLink
+                key={link.name}
+                to={link.path}
+                className={({ isActive }) => cn(
+                  "flex-1 min-w-0 text-sm font-semibold transition-colors hover:text-primary-start rounded-full text-center truncate",
+                  isActive ? "text-accent-cyan" : "text-text-muted"
+                )}
+              >
+                {link.name}
+              </NavLink>
+            ))}
+          </div>
+
+          <button 
+            onClick={toggleTheme} 
+            className="px-2 py-0 flex-none p-1 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition text-text-muted hover:text-text-main"
+            aria-label="Toggle Theme"
+          >
+            {theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+          </button>
         </div>
       </div>
     </nav>
   );
 }
+

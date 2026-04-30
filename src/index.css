@@ -33,7 +33,7 @@
   --bg-card: #111827;
   --text-main: #ffffff;
   --text-muted: #9ca3af;
-  --border-subtle: #000307;
+  --border-subtle: #1f2937;
 }
 
 @layer base {
@@ -66,4 +66,3 @@
   -webkit-backdrop-filter: blur(18px);
   backdrop-filter: blur(18px);
 }
-

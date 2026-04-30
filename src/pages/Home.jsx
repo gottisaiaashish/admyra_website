@@ -9,7 +9,7 @@ import {
   BarChart3,
 } from "lucide-react";
 
-import { Card, Button, Badge, RatingStars, Input } from "../components/ui";
+import { Card, Button, Badge, RatingStars, Input, ShinyButton } from "../components/ui";
 import { colleges } from "../data/mock-data";
 import DarkVeil from "../components/DarkVeil";
 import { VelocityText } from "../components/VelocityText";
@@ -22,48 +22,49 @@ export function Home() {
     <div className="w-full pb-24">
 
       {/* HERO */}
-      <section className="relative h-[620px] sm:h-[680px] overflow-hidden">
+      <section className="relative h-[700px] sm:h-[680px] overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <div style={{ width: '2016px', height: '1080px', position: 'relative' }}>
-  <DarkVeil
-    hueShift={342}
-    noiseIntensity={0.06}
-    scanlineIntensity={0.100}
-    speed={1.6}
-    scanlineFrequency={0.9}
-    warpAmount={0}
-    resolutionScale={1}
-  />
-</div>
-          <div className="absolute inset-100 bg-slate-950/80" />
+          <div className="absolute inset-0">
+            <DarkVeil
+              hueShift={342}
+              noiseIntensity={0}
+              scanlineIntensity={1}
+              speed={6}
+              scanlineFrequency={0.8}
+              warpAmount={0}
+              resolutionScale={2}
+            />
+          </div>
+          <div className="absolute inset-0 bg-slate-80/80" />
         </div>
 
-        <div className="relative z-10 flex h-full items-center justify-center px-6">
+        <div className="relative z-10 flex h-full items-center justify-center px-0">
           <div className="w-full max-w-4xl text-center">
-            <Badge variant="brand" className="mb-9 text-sm">
+            <Badge variant="brand" className="mb-4 text-sm">
               Admyra — Admit My Rank
             </Badge>
 
-            <h1 className="text-4xl sm:text-5xl md:text-6x1 font-extrabold leading-tight tracking-tight text-white mb-6">
+            <h1 className="px-0 py-4 text-2xl sm:text-5xl md:text-6xl font-extrabold leading-tight tracking-tight text-white mb-6">
               Know Where You Stand.
-              <span className="block bg-gradient-to-r from-primary-start to-primary-end bg-clip-text text-transparent">
-                Choose the Right College.
+              <span className="px-0 py-0 block bg-gradient-to-r from-primary-start to-primary-end bg-clip-text text-transparent">
+                ChooseTheRightCollege.
               </span>
             </h1>
 
-            <p className="mx-auto mb-10 max-w-2xl text-base sm:text-lg text-slate-200">
+            <p className="px-2 mx-auto mb-11 max-w-2xl text-base sm:text-lg text-slate-200">
               Enter your rank and instantly discover colleges you can get into — powered by real cutoff data and student insights.
             </p>
             <div className="mx-auto flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Button size="lg" className="px-8 py-5" onClick={() => navigate("/predictor") }>
-                <Book className="h-4 w-4 mr-2" /> Predict
-              </Button>
-              <Button colour="primary" size="lg" className="px-8 py-5" onClick={() => navigate("/colleges") }>
+              <ShinyButton className="px-8 py-3" onClick={() => navigate("/predictor") }>
+                {/* <Book className="h-4 w-4 mr-2" /> Predict */}
+                predict my college
+              </ShinyButton>
+              <ShinyButton className="px-4 py-3" onClick={() => navigate("/colleges") }>
                 Explore Colleges
-              </Button>
+              </ShinyButton>
             </div>
 
-            <p className="mt-6 text-sm text-slate-300">
+            <p className="px-16 h-0 mr-0 mt-20 text-sm text-slate-300">
               Used by thousands of students • Updated for 2026
             </p>
           </div>
@@ -71,7 +72,7 @@ export function Home() {
       </section>
 
       {/* TRUST / SOCIAL PROOF */}
-      <section className="border-y border-border-subtle py-6 text-center text-sm text-text-muted">
+      <section className="border-y border-border-subtle py-5 text-center text-s text-muted">
         Built with real cutoff data • Trusted by students • No guesswork
       </section>
 
@@ -210,21 +211,19 @@ export function Home() {
 
     {/* Buttons */}
     <div className="flex flex-col sm:flex-row justify-center gap-4">
-      <Button
-        size="lg"
+      <ShinyButton
         className="px-8 py-6 text-lg shadow-md"
         onClick={() => navigate("/predictor")}
       >
         Predict My College
-      </Button>
+      </ShinyButton>
 
-      <Button
-        variant="outline"
-        size="lg"
+      <ShinyButton
         className="px-8 py-6 text-lg"
+        onClick={() => navigate("/colleges")}
       >
         Explore Colleges
-      </Button>
+      </ShinyButton>
     </div>
 
     {/* Trust Line */}
