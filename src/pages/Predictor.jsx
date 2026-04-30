@@ -54,7 +54,7 @@ export function Predictor() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-12">
+    <div className="max-w-7xl mx-auto px-4 py-30">
       {/* Header Section */}
       <div className="text-center max-w-3xl mx-auto mb-16 flex flex-col items-center">
         <div className="h-20 w-20 bg-accent-cyan/10 rounded-3xl flex items-center justify-center mb-6 shadow-sm border border-accent-cyan/20">

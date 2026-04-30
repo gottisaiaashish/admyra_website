@@ -24,7 +24,17 @@ export function Home() {
       {/* HERO */}
       <section className="relative h-[620px] sm:h-[680px] overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <DarkVeil />
+          <div style={{ width: '2016px', height: '1080px', position: 'relative' }}>
+  <DarkVeil
+    hueShift={342}
+    noiseIntensity={0.06}
+    scanlineIntensity={0.100}
+    speed={1.6}
+    scanlineFrequency={0.9}
+    warpAmount={0}
+    resolutionScale={1}
+  />
+</div>
           <div className="absolute inset-100 bg-slate-950/80" />
         </div>
 

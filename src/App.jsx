@@ -4,6 +4,7 @@ import { Navbar } from './components/layout/Navbar';
 import { Home } from './pages/Home';
 import { Colleges } from './pages/Colleges';
 import { Predictor } from './pages/Predictor';
+import { AiMentor } from './pages/aimentor';
 import { CollegeDetails } from './pages/CollegeDetails';
 
 function Layout() {
@@ -36,6 +37,7 @@ function App() {
           <Route path="colleges" element={< Colleges />} />
           <Route path="colleges/:id" element={<CollegeDetails />} />
           <Route path="predictor" element={<Predictor />} />
+          <Route path="aimentor" element={<AiMentor />} />
         </Route>
       </Routes>
     </BrowserRouter>

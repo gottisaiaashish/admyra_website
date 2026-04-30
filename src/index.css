@@ -50,3 +50,20 @@
     user-drag: none;
   }
 }
+
+.floating-navbar {
+  position: fixed;
+  left: 50%;
+  top: 12px;
+  z-index: 50;
+  width: calc(100% - 1.5rem);
+  max-width: 80rem;
+  transform: translateX(-50%);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 28px;
+  background: rgba(15, 23, 42, 0.26);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.14);
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+}
+

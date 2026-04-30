@@ -11,33 +11,39 @@ export function Navbar() {
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'Colleges', path: '/colleges' },
-    { name: 'Predictor', path: '/predictor' }
+    { name: 'Predictor', path: '/predictor' },
+    { name: 'Ai mentor', path: '/aimentor' },
   ];
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-b border-border-subtle bg-background/80 backdrop-blur-md">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <div className="flex-shrink-0 flex items-center gap-2">
-            <GraduationCap className="h-8 w-8 text-primary-start" />
-            <span className="font-bold text-xl tracking-tight bg-black from-primary-start to-primary-end bg-clip-text text-transparent">
+    <nav className="floating-navbar">
+      <div className="px-4 sm:px-5 lg:px-">
+        <div className="flex items-center justify-between h-15">
+          <div className="flex-shrink-0 flex items-center gap-000000">
+            <GraduationCap className="h-0 w-8 text-primary-start" />
+            <span className="font-bold text-xl tracking-tight bg-to-r from-primary-start to-primary-end bg-clip-text text-transparent">
               Admyra
             </span>
           </div>
           
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+            <div className="ml-1 flex items-baseline space-x-8">
               {navLinks.map((link) => (
-                <NavLink
-                  key={link.name}
-                  to={link.path}
-                  className={({ isActive }) => cn(
-                    "text-sm font-medium transition-colors hover:text-primary-start",
-                    isActive ? "text-accent-cyan" : "text-text-muted"
-                  )}
-                >
-                  {link.name}
-                </NavLink>
+                  <NavLink
+                    key={link.name}
+                    to={link.path}
+                    className={({ isActive }) => cn(
+                      "text-sm font-medium transition-colors hover:text-primary-start inline-flex items-center gap-2",
+                      isActive ? "text-accent-cyan" : "text-text-muted"
+                    )}
+                  >
+                    <span>{link.name}</span>
+                    {link.comingSoon && (
+                      <span className="rounded-full bg-primary-start/10 text-primary-start text-[10px] font-semibold uppercase tracking-[0.24em] px-2 py-1">
+                        Coming soon
+                      </span>
+                    )}
+                  </NavLink>
               ))}
             </div>
           </div>
@@ -50,8 +56,8 @@ export function Navbar() {
             >
               {theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
             </button>
-            <Button variant="ghost" className="hidden sm:inline-flex">Log in</Button>
-            <Button variant="primary">Sign up</Button>
+            <Button variant="ghost"  ></Button>
+            <Button variant="ghost"></Button>
           </div>
         </div>
       </div>
