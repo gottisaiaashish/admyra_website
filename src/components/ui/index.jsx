@@ -63,16 +63,21 @@ export const Input = React.forwardRef(({ className, type, ...props }, ref) => (
 Input.displayName = "Input";
 
 export const Select = React.forwardRef(({ className, children, ...props }, ref) => (
-  <select
-    className={cn(
-      "flex h-12 w-full items-center justify-between rounded-xl border border-border-subtle bg-background px-4 py-2 text-sm text-text-main ring-offset-background placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-accent-indigo focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 transition-all appearance-none",
-      className
-    )}
-    ref={ref}
-    {...props}
-  >
-    {children}
-  </select>
+  <div className="relative w-full">
+    <select
+      className={cn(
+        "flex h-12 w-full items-center justify-between rounded-xl border border-border-subtle bg-background px-4 py-2 text-sm text-text-main ring-offset-background placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-accent-indigo focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 transition-all appearance-none",
+        className
+      )}
+      ref={ref}
+      {...props}
+    >
+      {children}
+    </select>
+    <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
+      <ChevronDown className="h-4 w-4 text-text-muted" />
+    </div>
+  </div>
 ));
 Select.displayName = "Select";
 

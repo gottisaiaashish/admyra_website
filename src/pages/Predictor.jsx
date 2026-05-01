@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Target, AlertCircle, Check } from 'lucide-react';
-import { Button, Card, Input, Select, Badge, RatingStars } from '../components/ui';
+import { Button, Card, Input, Select, Badge, RatingStars, MultiSelect } from '../components/ui';
 import { predictorMockLogic } from '../data/mock-data';
 
 const EXAM_CARD = {
@@ -10,22 +10,65 @@ const EXAM_CARD = {
   tags: ['ENGINEERING', 'rank'],
 };
 
+const BRANCH_OPTIONS = [
+  "CSE", "IT", "ECE", "EEE", "MECH", "CIVIL", "AI & DS", "CSE (AI & ML)", "CSE (Cyber Security)", "Data Science", "Chemical", "EIE"
+];
+
 export function Predictor() {
   const navigate = useNavigate();
-  const [currentStep, setCurrentStep] = useState(1);
-  const [selectedExam, setSelectedExam] = useState('');
-  const [rank, setRank] = useState('');
-  const [category, setCategory] = useState('');
-  const [gender, setGender] = useState('');
-  const [results, setResults] = useState(null);
+  
+  // Load initial state from sessionStorage if available
+  const getInitialState = (key, defaultValue) => {
+    const saved = sessionStorage.getItem(`predictor_${key}`);
+    try {
+      return saved ? JSON.parse(saved) : defaultValue;
+    } catch {
+      return defaultValue;
+    }
+  };
+
+  const [currentStep, setCurrentStep] = useState(() => getInitialState('currentStep', 1));
+  const [selectedExam, setSelectedExam] = useState(() => getInitialState('selectedExam', ''));
+  const [rank, setRank] = useState(() => getInitialState('rank', ''));
+  const [category, setCategory] = useState(() => getInitialState('category', ''));
+  const [gender, setGender] = useState(() => getInitialState('gender', ''));
+  const [selectedBranches, setSelectedBranches] = useState(() => getInitialState('selectedBranches', []));
+  const [results, setResults] = useState(() => getInitialState('results', null));
   const [loading, setLoading] = useState(false);
 
+  // Save state to sessionStorage whenever it changes
+  React.useEffect(() => {
+    sessionStorage.setItem('predictor_currentStep', JSON.stringify(currentStep));
+    sessionStorage.setItem('predictor_selectedExam', JSON.stringify(selectedExam));
+    sessionStorage.setItem('predictor_rank', JSON.stringify(rank));
+    sessionStorage.setItem('predictor_category', JSON.stringify(category));
+    sessionStorage.setItem('predictor_gender', JSON.stringify(gender));
+    sessionStorage.setItem('predictor_selectedBranches', JSON.stringify(selectedBranches));
+    sessionStorage.setItem('predictor_results', JSON.stringify(results));
+  }, [currentStep, selectedExam, rank, category, gender, selectedBranches, results]);
+
+  // Clear results if user changes critical info (only if we are NOT on the results view)
+  // We use a ref to prevent clearing results on initial load when inputs are restored
+  const isFirstMount = React.useRef(true);
+  React.useEffect(() => {
+    if (isFirstMount.current) {
+      isFirstMount.current = false;
+      return;
+    }
+    // Only clear results if we are actually editing the inputs
+    // If results already exist and we are just viewing them, don't clear
+    if (currentStep < 4) {
+      setResults(null);
+    }
+  }, [rank, category, gender, selectedBranches]);
+
   const handleSelectExam = (exam) => setSelectedExam(exam);
-  const goNext = () => setCurrentStep((step) => Math.min(3, step + 1));
+  const goNext = () => setCurrentStep((step) => Math.min(4, step + 1));
   const goBack = () => setCurrentStep((step) => Math.max(1, step - 1));
   const canContinueStep1 = selectedExam === EXAM_CARD.name;
   const canContinueStep2 = rank.trim().length > 0;
-  const canPredict = category.length > 0 && gender.length > 0;
+  const canContinueStep3 = category.length > 0 && gender.length > 0;
+  const canPredict = selectedBranches.length > 0;
 
   const handlePredict = (e) => {
     e.preventDefault();
@@ -33,15 +76,21 @@ export function Predictor() {
 
     setLoading(true);
     setTimeout(() => {
-      const predicted = predictorMockLogic(
+      let predicted = predictorMockLogic(
         selectedExam,
         parseInt(rank, 10),
         category,
         gender
       );
+
+      // Filter by selected branches if any
+      if (selectedBranches.length > 0) {
+        predicted = predicted.filter(item => selectedBranches.includes(item.branch));
+      }
+
       setResults(predicted);
       setLoading(false);
-    }, 1000);
+    }, 300);
   };
 
   const getChanceColor = (chance) => {
@@ -73,13 +122,16 @@ export function Predictor() {
             <div className="mb-8">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                 <div>
-                  <p className="text-sm uppercase tracking-[0.3em] text-text-muted">Step {currentStep} of 3</p>
+                  <p className="text-sm uppercase tracking-[0.3em] text-text-muted">Step {currentStep} of 4</p>
                   <h2 className="text-2xl font-bold mt-3">
-                    {currentStep === 1 ? 'Select Exam' : currentStep === 2 ? 'Enter Exam Rank' : 'Details'}
+                    {currentStep === 1 ? 'Select Exam' : 
+                     currentStep === 2 ? 'Enter Exam Rank' : 
+                     currentStep === 3 ? 'Category & Gender' : 
+                     'Select Branches'}
                   </h2>
                 </div>
                 <div className="hidden sm:flex items-center gap-2">
-                  {['1', '2', '3'].map((step) => (
+                  {['1', '2', '3', '4'].map((step) => (
                     <div
                       key={step}
                       className={
@@ -146,7 +198,7 @@ export function Predictor() {
                 </div>
               )}
 
-              {currentStep === 3 && (
+               {currentStep === 3 && (
                 <>
                   <div>
                     <label className="block text-sm font-bold text-text-main mb-2 ml-1">Category</label>
@@ -183,6 +235,22 @@ export function Predictor() {
                 </>
               )}
 
+              {currentStep === 4 && (
+                <div>
+                  <label className="block text-sm font-bold text-text-main mb-2 ml-1">Preferred Branches</label>
+                  <MultiSelect
+                    options={BRANCH_OPTIONS}
+                    value={selectedBranches}
+                    onChange={setSelectedBranches}
+                    placeholder="Search and select branches..."
+                    className="rounded-2xl border-border-subtle/70 h-14 text-base"
+                  />
+                  <p className="mt-4 text-sm text-text-muted leading-relaxed">
+                    Select the branches you are interested in. We will filter the predictions to show only these options.
+                  </p>
+                </div>
+              )}
+
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 pt-4">
                 <div className="w-full sm:w-auto">
                   {currentStep > 1 && (
@@ -197,11 +265,15 @@ export function Predictor() {
                   )}
                 </div>
 
-                {currentStep < 3 ? (
+                {currentStep < 4 ? (
                   <Button
                     type="button"
                     className="w-full sm:w-auto"
-                    disabled={currentStep === 1 ? !canContinueStep1 : !canContinueStep2}
+                    disabled={
+                      currentStep === 1 ? !canContinueStep1 : 
+                      currentStep === 2 ? !canContinueStep2 : 
+                      !canContinueStep3
+                    }
                     onClick={goNext}
                   >
                     Continue
@@ -267,14 +339,14 @@ export function Predictor() {
               
               <div className="space-y-4">
                 {results.map((result) => (
-                  <Card key={`${result.collegeId}-${result.branch}`} className="p-8 hover:border-primary-start/40 transition-all hover:shadow-xl hover:shadow-primary-start/5 group rounded-3xl">
+                  <Card key={`${result.collegeId}-${result.branch}`} className="p-7 md:p-8 hover:border-primary-start/40 transition-all hover:shadow-xl hover:shadow-primary-start/5 group rounded-3xl">
                     <div className="flex flex-col md:flex-row md:items-center justify-between gap-8">
                       <div className="flex-1">
-                        <div className="flex items-center gap-4 mb-3">
-                          <h3 className="font-bold text-2xl text-text-main group-hover:text-primary-start transition-colors">
+                        <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-3">
+                          <h3 className="font-bold text-base md:text-2xl text-text-main group-hover:text-primary-start transition-colors leading-tight line-clamp-2">
                             {result.collegeName}
                           </h3>
-                          <Badge variant={getChanceColor(result.chance)} className="rounded-lg px-3">
+                          <Badge variant={getChanceColor(result.chance)} className="rounded-lg px-3 w-fit self-start">
                             {result.chance} Chance
                           </Badge>
                         </div>

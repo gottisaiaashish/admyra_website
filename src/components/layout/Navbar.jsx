@@ -1,85 +1,110 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { GraduationCap, Sun, Moon } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { GraduationCap, Sun, Moon, Menu, X } from 'lucide-react';
 import { Button } from '../ui';
 import { cn } from '../../lib/utils';
 import { useTheme } from '../ThemeProvider';
 
 export function Navbar() {
   const { theme, toggleTheme } = useTheme();
-  
+  const [isOpen, setIsOpen] = React.useState(false);
+
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'Colleges', path: '/colleges' },
     { name: 'Predictor', path: '/predictor' },
+    { name: 'AI Mentor', path: '/aimentor' },
   ];
 
   return (
-    <nav className="floating-navbar">
-      <div className="px-2 sm:px-5 lg:px-0 max-w-7xl mx-auto">
-        <div className="flex items-center justify-between h-5">
-          
+    <nav className={cn(
+      "floating-navbar transition-all duration-300 overflow-hidden",
+      isOpen ? "h-auto pb-4" : ""
+    )}>
+      <div className=" hidden md:block px-2 sm:px-8 lg:px-0 max-w-7xl mx-auto">
+        <div className="flex items-center justify-between h-16">
           <div className="hidden md:block">
             <div className="ml-1 flex items-baseline space-x-8">
               {navLinks.map((link) => (
-                  <NavLink
-                    key={link.name}
-                    to={link.path}
-                    className={({ isActive }) => cn(
-                      "text-sm font-medium transition-colors hover:text-primary-start inline-flex items-center gap-2",
-                      isActive ? "text-accent-cyan" : "text-text-muted"
-                    )}
-                  >
-                    <span>{link.name}</span>
-                    {link.comingSoon && (
-                      <span className="rounded-full bg-primary-start/10 text-primary-start text-[10px] font-semibold uppercase tracking-[0.24em] px-2 py-1">
-                        Coming soon
-                      </span>
-                    )}
-                  </NavLink>
+                <NavLink
+                  key={link.name}
+                  to={link.path}
+                  className={({ isActive }) => cn(
+                    "text-sm font-medium transition-colors hover:text-primary-start inline-flex items-center gap-2",
+                    isActive ? "text-accent-cyan" : "text-text-muted"
+                  )}
+                >
+                  <span>{link.name}</span>
+                </NavLink>
               ))}
             </div>
           </div>
 
           <div className="hidden md:flex items-center gap-4">
-            <button 
-              onClick={toggleTheme} 
+            <button
+              onClick={toggleTheme}
               className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition text-text-muted hover:text-text-main"
               aria-label="Toggle Theme"
             >
               {theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
             </button>
-            <Button variant="ghost"  ></Button>
-            <Button variant="ghost"></Button>
           </div>
         </div>
       </div>
 
-      <div className="md:hidden px-3 py-0 pb-2 h-10">
-        <div className="flex items-center gap-11">
-          <div className="flex-1 flex items-center justify-between gap-4">
-            {navLinks.map((link) => (
-              <NavLink
-                key={link.name}
-                to={link.path}
-                className={({ isActive }) => cn(
-                  "flex-1 min-w-0 text-sm font-semibold transition-colors hover:text-primary-start rounded-full text-center truncate",
-                  isActive ? "text-accent-cyan" : "text-text-muted"
-                )}
-              >
-                {link.name}
-              </NavLink>
-            ))}
+      <div className="md:hidden px-4">
+        <div className="flex items-center justify-between h-16">
+          <NavLink to="/" className="text-base font-bold text-text-muted">
+            Admyra
+          </NavLink>
+          
+          <div className="flex items-center gap-4">
+            <button 
+              onClick={toggleTheme} 
+              className="p-2 rounded-full transition text-text-muted hover:text-text-main"
+            >
+              {theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+            </button>
+            <button 
+              onClick={() => setIsOpen(!isOpen)}
+              className="p-2 rounded-xl text-text-muted transition-all active:scale-95"
+            >
+              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
           </div>
-
-          <button 
-            onClick={toggleTheme} 
-            className="px-2 py-0 flex-none p-1 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition text-text-muted hover:text-text-main"
-            aria-label="Toggle Theme"
-          >
-            {theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-          </button>
         </div>
+
+        {/* Mobile Menu Dropdown with Animation */}
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div 
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: 'auto', opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.3, ease: 'easeInOut' }}
+              className="overflow-hidden"
+            >
+              <div className="pt-2 pb-6 space-y-1">
+                {navLinks.map((link) => (
+                  <NavLink
+                    key={link.name}
+                    to={link.path}
+                    onClick={() => setIsOpen(false)}
+                    className={({ isActive }) => cn(
+                      "block px-4 py-3 rounded-xl text-sm font-bold transition-all",
+                      isActive 
+                        ? "text-text-main" 
+                        : "text-text-muted hover:text-text-main"
+                    )}
+                  >
+                    {link.name}
+                  </NavLink>
+                ))}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </nav>
   );
