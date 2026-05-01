@@ -4,7 +4,9 @@ import {
   MapPin, Trophy, Star, Info, 
   Users, ShieldAlert, Zap, 
   ShieldCheck, ArrowRight, Library, 
-  Map as MapIcon, Heart
+  Map as MapIcon, Heart, CheckCircle2,
+  Activity, ThumbsUp, Flag, Camera,
+  Globe, ChevronRight
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Card, Badge, RatingStars, Button, Input } from '../components/ui';
@@ -54,30 +56,26 @@ export function CollegeDetails() {
             {/* Navigation removed as requested */}
 
              <div className="space-y-4 md:space-y-8 w-full px-4 flex flex-col items-center">
-               <div className="flex flex-col items-center gap-4">
-                  <div className="text-[10px] font-black text-indigo-400/60 uppercase tracking-[0.4em] mb-2">College Details</div>
-                  
-                  <div className="flex items-center gap-6 md:gap-10">
-                    <div className="flex items-center gap-2 text-white/40 font-bold text-[10px] md:text-sm uppercase tracking-widest">
-                      <MapPin size={16} className="text-indigo-500/50" />
-                      {college.location}
-                    </div>
-                    <div className="h-4 w-px bg-white/10" />
-                    <div className="flex items-center gap-2 text-yellow-500/80 font-black text-[10px] md:text-sm uppercase tracking-widest">
-                      <Star size={16} fill="currentColor" className="text-yellow-500/50" />
-                      {college.rating} Rating
-                    </div>
+                <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
+                  <div className="flex items-center gap-2 text-white/40 font-bold text-[10px] md:text-sm uppercase tracking-widest">
+                    <MapPin size={16} className="text-indigo-500/50" />
+                    {college.location}
                   </div>
-               </div>
+                  <div className="h-4 w-px bg-white/10" />
+                  <div className="flex items-center gap-2 text-yellow-500/80 font-black text-[10px] md:text-sm uppercase tracking-widest">
+                    <Star size={16} fill="currentColor" className="text-yellow-500/50" />
+                    {college.rating} Rating
+                  </div>
+                  <div className="h-4 w-px bg-white/10" />
+                  <div className="flex items-center gap-2 text-emerald-500/50 font-bold text-[10px] md:text-sm uppercase tracking-widest">
+                    <ShieldCheck size={16} />
+                    Verified
+                  </div>
+                </div>
 
                <h1 className="text-3xl md:text-6xl lg:text-7xl font-black tracking-tight leading-tight md:leading-[1.1] bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent italic break-words max-w-4xl">
                  {college.name}
                </h1>
-
-               <div className="flex items-center gap-2 text-white/20 font-bold text-[9px] uppercase tracking-widest pt-2">
-                  <ShieldCheck size={14} className="text-emerald-500/40" />
-                  Verified Institution
-               </div>
              </div>
           </motion.div>
         </div>
