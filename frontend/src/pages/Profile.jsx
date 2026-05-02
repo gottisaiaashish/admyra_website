@@ -39,7 +39,8 @@ import {
   Trash2,
   Pin,
   SmilePlus,
-  ArrowUp
+  ArrowUp,
+  GraduationCap
 } from 'lucide-react';
 import { fetchUserProfile, fetchPosts, createPost, toggleLike, toggleSave } from '../api';
 import { Button, Card, Badge } from '../components/ui';
@@ -266,16 +267,24 @@ export function Profile() {
 
   const startCamera = async () => {
     try {
-      const stream = await navigator.mediaDevices.getUserMedia({ 
-        video: { facingMode: isCameraFront ? 'user' : 'environment' },
+      // For mobile, we should explicitly request video
+      const constraints = { 
+        video: { 
+          facingMode: isCameraFront ? 'user' : 'environment',
+          width: { ideal: 1280 },
+          height: { ideal: 720 }
+        },
         audio: creatorType === 'REEL' 
-      });
+      };
+      
+      const stream = await navigator.mediaDevices.getUserMedia(constraints);
       if (cameraVideoRef.current) {
         cameraVideoRef.current.srcObject = stream;
         streamRef.current = stream;
       }
     } catch (err) {
-      alert('Camera/Mic access denied or not available');
+      console.error('Camera Error:', err);
+      alert(`Camera Error: ${err.message}. Please ensure you have given camera permissions.`);
     }
   };
 
@@ -403,6 +412,10 @@ export function Profile() {
       <input type="file" ref={fileInputRef} className="hidden" accept="image/*,video/*" onChange={(e) => {
         const file = e.target.files[0];
         if (file) {
+          if (file.name.toLowerCase().endsWith('.heic') || file.type === 'image/heic') {
+            alert('HEIC format (iPhone) is not supported by browsers. Please use JPG or PNG.');
+            return;
+          }
           const reader = new FileReader();
           reader.onloadend = () => {
             setSelectedMedia(reader.result);

@@ -53,6 +53,10 @@ export function EditProfile() {
   const handleFileChange = (e) => {
     const file = e.target.files[0];
     if (file) {
+      if (file.name.toLowerCase().endsWith('.heic') || file.type === 'image/heic') {
+        alert('HEIC format (iPhone) is not supported by browsers. Please use JPG or PNG.');
+        return;
+      }
       if (file.size > 2 * 1024 * 1024) {
          setError('Image size should be less than 2MB');
          return;
