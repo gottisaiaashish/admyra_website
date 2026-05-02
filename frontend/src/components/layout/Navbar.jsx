@@ -140,23 +140,49 @@ export function Navbar() {
                   </NavLink>
                 ))}
                 <div className="pt-4 px-4 flex flex-col items-center">
-                  <NavLink to="/login" onClick={() => setIsOpen(false)} className="w-full">
-                    <Button variant="outline" className="w-full py-3 rounded-xl font-bold text-xs">
-                      Login
-                    </Button>
-                  </NavLink>
-                  
-                  <div className="flex items-center gap-4 w-full my-3">
-                    <div className="h-px bg-border-subtle flex-1" />
-                    <span className="text-[10px] text-text-muted font-medium uppercase tracking-widest">or</span>
-                    <div className="h-px bg-border-subtle flex-1" />
-                  </div>
+                  {loggedInUser ? (
+                    <div className="w-full space-y-3">
+                      <NavLink 
+                        to="/profile" 
+                        onClick={() => setIsOpen(false)}
+                        className="w-full flex items-center gap-4 p-4 rounded-2xl bg-white/5 border border-white/10"
+                      >
+                        <div className="h-12 w-12 rounded-xl p-0.5 bg-gradient-to-br from-indigo-500 to-purple-500">
+                          <div className="w-full h-full rounded-[0.6rem] bg-[#0A0C14] overflow-hidden flex items-center justify-center">
+                            {loggedInUser.avatar ? (
+                              <img src={loggedInUser.avatar} alt="" className="w-full h-full object-cover" />
+                            ) : (
+                              <GraduationCap className="h-6 w-6 text-indigo-500/50" />
+                            )}
+                          </div>
+                        </div>
+                        <div className="flex flex-col">
+                          <span className="text-sm font-black text-white italic">{loggedInUser.name}</span>
+                          <span className="text-[10px] font-bold text-indigo-400 uppercase tracking-widest">Account Settings</span>
+                        </div>
+                      </NavLink>
+                    </div>
+                  ) : (
+                    <>
+                      <NavLink to="/login" onClick={() => setIsOpen(false)} className="w-full">
+                        <Button variant="outline" className="w-full py-3 rounded-xl font-bold text-xs">
+                          Login
+                        </Button>
+                      </NavLink>
+                      
+                      <div className="flex items-center gap-4 w-full my-3">
+                        <div className="h-px bg-border-subtle flex-1" />
+                        <span className="text-[10px] text-text-muted font-medium uppercase tracking-widest">or</span>
+                        <div className="h-px bg-border-subtle flex-1" />
+                      </div>
 
-                  <NavLink to="/signup" onClick={() => setIsOpen(false)} className="w-full">
-                    <Button className="w-full py-3 rounded-xl font-bold text-xs shadow-lg">
-                      Sign Up
-                    </Button>
-                  </NavLink>
+                      <NavLink to="/signup" onClick={() => setIsOpen(false)} className="w-full">
+                        <Button className="w-full py-3 rounded-xl font-bold text-xs shadow-lg">
+                          Sign Up
+                        </Button>
+                      </NavLink>
+                    </>
+                  )}
                 </div>
               </div>
             </motion.div>
