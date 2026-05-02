@@ -68,6 +68,8 @@ const googleAuth = async (req, res) => {
   try {
     let name, email, picture, googleId;
 
+    console.log('Received token:', idToken.substring(0, 10) + '...', 'Type:', idToken.includes('.') ? 'JWT' : 'Access Token');
+
     if (idToken.includes('.')) {
       const ticket = await client.verifyIdToken({
         idToken,
