@@ -18,9 +18,8 @@ export function Signup() {
     try {
       setLoading(true);
       setError('');
-      const { data } = await api.post('/auth/google', { 
-        idToken: credentialResponse.credential 
-      });
+      // Use the imported googleAuth function
+      const { data } = await googleAuth(credentialResponse.credential || credentialResponse.access_token);
       localStorage.setItem('userInfo', JSON.stringify(data));
       navigate('/');
     } catch (err) {
