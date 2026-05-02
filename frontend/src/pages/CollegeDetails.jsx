@@ -313,8 +313,7 @@ export function CollegeDetails() {
                                </div>
                                <div>
                                   <div className="text-base font-black italic">{g.user?.name || 'Anonymous Student'}</div>
-                                  <div className="text-[9px] font-black text-indigo-400/80 uppercase tracking-widest mt-0.5">{g.user?.email || 'No email provided'}</div>
-                                  <div className="text-[8px] font-bold text-white/20 uppercase tracking-widest mt-1">{new Date(g.createdAt).toLocaleDateString()}</div>
+                                  <div className="text-[9px] font-bold text-white/20 uppercase tracking-widest mt-1">{new Date(g.createdAt).toLocaleDateString()}</div>
                                </div>
                             </div>
                             <Badge className={cn(
