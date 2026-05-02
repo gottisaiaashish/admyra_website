@@ -1,5 +1,6 @@
 import prisma from '../config/prisma.js';
 import bcrypt from 'bcryptjs';
+import axios from 'axios';
 import generateToken from '../utils/generateToken.js';
 import { OAuth2Client } from 'google-auth-library';
 
@@ -65,12 +66,34 @@ const googleAuth = async (req, res) => {
   const { idToken } = req.body;
 
   try {
-    const ticket = await client.verifyIdToken({
-      idToken,
-      audience: process.env.GOOGLE_CLIENT_ID,
-    });
+    let name, email, picture, googleId;
 
-    const { name, email, picture, sub: googleId } = ticket.getPayload();
+    // Check if it's a JWT (ID Token) or an Access Token
+    if (idToken.includes('.')) {
+      // ID Token (JWT)
+      const ticket = await client.verifyIdToken({
+        idToken,
+        audience: process.env.GOOGLE_CLIENT_ID,
+      });
+      const payload = ticket.getPayload();
+      name = payload.name;
+      email = payload.email;
+      picture = payload.picture;
+      googleId = payload.sub;
+    } else {
+      // Access Token - Fetch from Google UserInfo API
+      const response = await axios.get(`https://www.googleapis.com/oauth2/v3/userinfo?access_token=${idToken}`);
+      const data = response.data;
+      
+      if (!data.email) {
+        throw new Error('Invalid access token');
+      }
+
+      name = data.name;
+      email = data.email;
+      picture = data.picture;
+      googleId = data.sub;
+    }
 
     let user = await prisma.user.findUnique({ where: { email } });
 
@@ -100,7 +123,7 @@ const googleAuth = async (req, res) => {
       token: generateToken(user.id),
     });
   } catch (error) {
-    console.error(error);
+    console.error('Google Auth Error:', error.message);
     res.status(401).json({ message: 'Google auth failed' });
   }
 };

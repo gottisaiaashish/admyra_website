@@ -14,6 +14,22 @@ export function Signup() {
   const [error, setError] = useState('');
   const navigate = useNavigate();
 
+  const handleGoogleSuccess = async (credentialResponse) => {
+    try {
+      setLoading(true);
+      setError('');
+      const { data } = await api.post('/auth/google', { 
+        idToken: credentialResponse.credential 
+      });
+      localStorage.setItem('userInfo', JSON.stringify(data));
+      navigate('/');
+    } catch (err) {
+      setError(err.response?.data?.message || 'Google signup failed');
+    } finally {
+      setLoading(false);
+    }
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
