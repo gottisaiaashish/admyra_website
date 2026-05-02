@@ -18,8 +18,8 @@ export function Signup() {
     try {
       setLoading(true);
       setError('');
-      // Use the imported googleAuth function
-      const { data } = await googleAuth(credentialResponse.credential || credentialResponse.access_token);
+      // Use the imported googleAuth function with type 'signup'
+      const { data } = await googleAuth(credentialResponse.credential || credentialResponse.access_token, 'signup');
       localStorage.setItem('userInfo', JSON.stringify(data));
       navigate('/');
     } catch (err) {

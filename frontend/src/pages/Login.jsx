@@ -31,11 +31,11 @@ export function Login() {
   const handleGoogleLogin = useGoogleLogin({
     onSuccess: async (response) => {
       try {
-        const { data } = await googleAuth(response.access_token);
+        const { data } = await googleAuth(response.access_token, 'login');
         localStorage.setItem('userInfo', JSON.stringify(data));
         navigate('/');
       } catch (err) {
-        setError('Google login failed');
+        setError(err.response?.data?.message || 'Google login failed');
       }
     },
     onError: () => setError('Google Login Failed'),

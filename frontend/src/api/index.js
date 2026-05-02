@@ -16,7 +16,7 @@ API.interceptors.request.use((req) => {
 // Auth APIs
 export const login = (formData) => API.post('/auth/login', formData);
 export const signup = (formData) => API.post('/auth/signup', formData);
-export const googleAuth = (idToken) => API.post('/auth/google', { idToken });
+export const googleAuth = (idToken, type = 'login') => API.post('/auth/google', { idToken, type });
 
 // Grievance APIs
 export const fetchGrievances = () => API.get('/grievances');

@@ -63,14 +63,12 @@ const registerUser = async (req, res) => {
 
 // @desc    Auth with Google
 const googleAuth = async (req, res) => {
-  const { idToken } = req.body;
+  const { idToken, type } = req.body; // type: 'login' or 'signup'
 
   try {
     let name, email, picture, googleId;
 
-    // Check if it's a JWT (ID Token) or an Access Token
     if (idToken.includes('.')) {
-      // ID Token (JWT)
       const ticket = await client.verifyIdToken({
         idToken,
         audience: process.env.GOOGLE_CLIENT_ID,
@@ -81,14 +79,9 @@ const googleAuth = async (req, res) => {
       picture = payload.picture;
       googleId = payload.sub;
     } else {
-      // Access Token - Fetch from Google UserInfo API
       const response = await axios.get(`https://www.googleapis.com/oauth2/v3/userinfo?access_token=${idToken}`);
       const data = response.data;
-      
-      if (!data.email) {
-        throw new Error('Invalid access token');
-      }
-
+      if (!data.email) throw new Error('Invalid access token');
       name = data.name;
       email = data.email;
       picture = data.picture;
@@ -97,14 +90,12 @@ const googleAuth = async (req, res) => {
 
     let user = await prisma.user.findUnique({ where: { email } });
 
-    if (user) {
-      if (!user.googleId) {
-        user = await prisma.user.update({
-          where: { email },
-          data: { googleId },
-        });
+    if (!user) {
+      if (type === 'login') {
+        return res.status(404).json({ message: 'Account not found. Please Sign up first.' });
       }
-    } else {
+      
+      // Create user if it's a signup request
       user = await prisma.user.create({
         data: {
           name,
@@ -112,6 +103,12 @@ const googleAuth = async (req, res) => {
           googleId,
           avatar: picture,
         },
+      });
+    } else if (!user.googleId) {
+      // Link google account if user exists but hasn't linked yet
+      user = await prisma.user.update({
+        where: { email },
+        data: { googleId },
       });
     }
 
