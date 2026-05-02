@@ -4,42 +4,45 @@ import prisma from '../config/prisma.js';
 const reportIssue = async (req, res) => {
   const { college, issueType, description, isAnonymous } = req.body;
 
-  const grievance = await prisma.grievance.create({
-    data: {
-      userId: req.user.id,
-      college,
-      issueType,
-      description,
-      isAnonymous,
-    },
-  });
+  try {
+    const grievance = await prisma.grievance.create({
+      data: {
+        userId: req.user.id,
+        college,
+        issueType,
+        description,
+        isAnonymous,
+      },
+    });
 
-  if (grievance) {
     res.status(201).json(grievance);
-  } else {
+  } catch (error) {
     res.status(400).json({ message: 'Invalid grievance data' });
   }
 };
 
 // @desc    Get all grievances
 const getGrievances = async (req, res) => {
-  const grievances = await prisma.grievance.findMany({
-    include: {
-      user: {
-        select: { name: true }
-      }
-    },
-    orderBy: { createdAt: 'desc' }
-  });
-  
-  const maskedGrievances = grievances.map(g => {
-    if (g.isAnonymous) {
-      return { ...g, user: { name: 'Anonymous Student' } };
-    }
-    return g;
-  });
+  try {
+    const grievances = await prisma.grievance.findMany({
+      include: {
+        user: {
+          select: {
+            name: true,
+            email: true,
+          },
+        },
+      },
+      orderBy: {
+        createdAt: 'desc',
+      },
+    });
 
-  res.json(maskedGrievances);
+    // We can handle anonymous masking here if needed later
+    res.json(grievances);
+  } catch (error) {
+    res.status(500).json({ message: 'Error fetching grievances' });
+  }
 };
 
 export { reportIssue, getGrievances };
