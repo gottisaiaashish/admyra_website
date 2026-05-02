@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 import { 
   MapPin, Trophy, Star, Info, 
   Users, ShieldAlert, Zap, 
   ShieldCheck, ArrowRight, Library, 
   Map as MapIcon, Heart, CheckCircle2,
   Activity, ThumbsUp, Flag, Camera,
-  Globe, ChevronRight, X
+  Globe, ChevronRight, X, User as UserIcon
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Card, Badge, RatingStars, Button, Input } from '../components/ui';
@@ -305,15 +305,27 @@ export function CollegeDetails() {
                       )}>
                          <div className="flex flex-wrap justify-between items-start gap-4 mb-8">
                             <div className="flex items-center gap-3">
-                               <div className={cn(
-                                 "h-12 w-12 rounded-2xl flex items-center justify-center",
-                                 g.status === 'Reported' ? "bg-rose-500/10 text-rose-500" : "bg-emerald-500/10 text-emerald-500"
-                               )}>
-                                  {g.status === 'Reported' ? <ShieldAlert size={24} /> : <CheckCircle2 size={24} />}
-                               </div>
+                               <Link to={`/profile/${g.userId}`} className="h-12 w-12 rounded-2xl p-0.5 bg-gradient-to-br from-indigo-500/20 to-purple-500/20 hover:from-indigo-500/40 hover:to-purple-500/40 transition-all overflow-hidden shrink-0">
+                                  <div className="w-full h-full rounded-[0.9rem] bg-[#0A0C14] flex items-center justify-center">
+                                     {g.user?.avatar ? (
+                                       <img src={g.user.avatar} alt="" className="w-full h-full object-cover" />
+                                     ) : (
+                                       <div className={cn(
+                                         "h-full w-full flex items-center justify-center",
+                                         g.status === 'Reported' ? "text-rose-500" : "text-emerald-500"
+                                       )}>
+                                          <UserIcon size={20} />
+                                       </div>
+                                     )}
+                                  </div>
+                               </Link>
                                <div>
-                                  <div className="text-base font-black italic">{g.user?.name || 'Anonymous Student'}</div>
-                                  <div className="text-[9px] font-bold text-white/20 uppercase tracking-widest mt-1">{new Date(g.createdAt).toLocaleDateString()}</div>
+                                  <Link to={`/profile/${g.userId}`} className="text-base font-black italic hover:text-indigo-400 transition-colors">
+                                    {g.user?.name || 'Anonymous Student'}
+                                  </Link>
+                                  <div className="text-[9px] font-bold text-white/20 uppercase tracking-widest mt-1">
+                                    {new Date(g.createdAt).toLocaleDateString()}
+                                  </div>
                                </div>
                             </div>
                             <Badge className={cn(

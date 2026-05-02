@@ -30,6 +30,8 @@ const getGrievances = async (req, res) => {
           select: {
             name: true,
             email: true,
+            avatar: true,
+            username: true,
           },
         },
       },

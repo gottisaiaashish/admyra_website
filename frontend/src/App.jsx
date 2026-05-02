@@ -8,6 +8,8 @@ import { AiMentor } from './pages/aimentor';
 import { CollegeDetails } from './pages/CollegeDetails';
 import { Login } from './pages/Login';
 import { Signup } from './pages/Signup';
+import { Profile } from './pages/Profile';
+import { EditProfile } from './pages/EditProfile';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
@@ -55,6 +57,9 @@ function App() {
           <Route path="aimentor" element={<AiMentor />} />
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<Signup />} />
+          <Route path="profile/:id" element={<Profile />} />
+          <Route path="profile" element={<Profile />} />
+          <Route path="edit-profile" element={<EditProfile />} />
         </Route>
       </Routes>
     </BrowserRouter>

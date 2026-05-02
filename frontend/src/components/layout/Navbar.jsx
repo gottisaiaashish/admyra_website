@@ -9,6 +9,7 @@ import { useTheme } from '../ThemeProvider';
 export function Navbar() {
   const { theme, toggleTheme } = useTheme();
   const [isOpen, setIsOpen] = React.useState(false);
+  const loggedInUser = JSON.parse(localStorage.getItem('userInfo'));
 
   const navLinks = [
     { name: 'Home', path: '/' },
@@ -54,19 +55,38 @@ export function Navbar() {
             >
               {theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
             </button>
-            <div className="flex items-center gap-2">
-              <NavLink to="/login">
-                <Button variant="ghost" className="rounded-xl px-4 py-1.5 h-auto text-xs font-bold hover:bg-white/5">
-                  Login
-                </Button>
+            
+            {loggedInUser ? (
+              <NavLink to="/profile" className="flex items-center gap-3 group">
+                <div className="flex flex-col items-end">
+                  <span className="text-[10px] font-black text-white uppercase tracking-widest leading-none mb-0.5">{loggedInUser.name}</span>
+                  <span className="text-[8px] font-bold text-white/40 uppercase tracking-widest leading-none">View Profile</span>
+                </div>
+                <div className="h-10 w-10 rounded-xl p-0.5 bg-gradient-to-br from-indigo-500/20 to-purple-500/20 group-hover:from-indigo-500 group-hover:to-purple-500 transition-all duration-500">
+                  <div className="w-full h-full rounded-[0.6rem] bg-[#0A0C14] overflow-hidden flex items-center justify-center">
+                    {loggedInUser.avatar ? (
+                      <img src={loggedInUser.avatar} alt="" className="w-full h-full object-cover" />
+                    ) : (
+                      <GraduationCap className="h-5 w-5 text-indigo-500/50" />
+                    )}
+                  </div>
+                </div>
               </NavLink>
-              <div className="h-4 w-px bg-border-subtle mx-1" />
-              <NavLink to="/signup">
-                <Button className="rounded-xl px-5 py-1.5 h-auto text-xs font-bold shadow-md">
-                  Sign Up
-                </Button>
-              </NavLink>
-            </div>
+            ) : (
+              <div className="flex items-center gap-2">
+                <NavLink to="/login">
+                  <Button variant="ghost" className="rounded-xl px-4 py-1.5 h-auto text-xs font-bold hover:bg-white/5">
+                    Login
+                  </Button>
+                </NavLink>
+                <div className="h-4 w-px bg-border-subtle mx-1" />
+                <NavLink to="/signup">
+                  <Button className="rounded-xl px-5 py-1.5 h-auto text-xs font-bold shadow-md">
+                    Sign Up
+                  </Button>
+                </NavLink>
+              </div>
+            )}
           </div>
         </div>
       </div>

@@ -33,7 +33,12 @@ export function Login() {
       try {
         const { data } = await googleAuth(response.access_token, 'login');
         localStorage.setItem('userInfo', JSON.stringify(data));
-        navigate('/');
+        
+        if (!data.username) {
+          navigate('/edit-profile');
+        } else {
+          navigate('/');
+        }
       } catch (err) {
         setError(err.response?.data?.message || 'Google login failed');
       }

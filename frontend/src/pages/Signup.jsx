@@ -21,7 +21,12 @@ export function Signup() {
       // Use the imported googleAuth function with type 'signup'
       const { data } = await googleAuth(credentialResponse.credential || credentialResponse.access_token, 'signup');
       localStorage.setItem('userInfo', JSON.stringify(data));
-      navigate('/');
+      
+      if (!data.username) {
+        navigate('/edit-profile');
+      } else {
+        navigate('/');
+      }
     } catch (err) {
       setError(err.response?.data?.message || 'Google signup failed');
     } finally {

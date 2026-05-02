@@ -25,4 +25,9 @@ export const createGrievance = (grievanceData) => API.post('/grievances', grieva
 // Partner APIs
 export const applyPartner = (partnerData) => API.post('/partners/apply', partnerData);
 
+// User APIs
+export const fetchUserProfile = (id) => API.get(`/users/profile/${id}`);
+export const updateUserProfile = (formData) => API.put('/users/profile', formData);
+export const fetchMyProfile = () => API.get('/users/me'); // Optional if we want a dedicated /me route
+
 export default API;

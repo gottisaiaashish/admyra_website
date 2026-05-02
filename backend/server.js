@@ -5,6 +5,7 @@ import morgan from 'morgan';
 import authRoutes from './routes/authRoutes.js';
 import grievanceRoutes from './routes/grievanceRoutes.js';
 import partnerRoutes from './routes/partnerRoutes.js';
+import userRoutes from './routes/userRoutes.js';
 
 dotenv.config();
 
@@ -20,6 +21,7 @@ app.use(morgan('dev'));
 app.use('/api/auth', authRoutes);
 app.use('/api/grievances', grievanceRoutes);
 app.use('/api/partners', partnerRoutes);
+app.use('/api/users', userRoutes);
 
 // Basic route
 app.get('/', (req, res) => {
