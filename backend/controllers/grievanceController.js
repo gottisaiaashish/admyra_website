@@ -1,17 +1,17 @@
-import Grievance from '../models/Grievance.js';
+import prisma from '../config/prisma.js';
 
 // @desc    Report a new issue
-// @route   POST /api/grievances
-// @access  Private
 const reportIssue = async (req, res) => {
   const { college, issueType, description, isAnonymous } = req.body;
 
-  const grievance = await Grievance.create({
-    user: req.user._id,
-    college,
-    issueType,
-    description,
-    isAnonymous,
+  const grievance = await prisma.grievance.create({
+    data: {
+      userId: req.user.id,
+      college,
+      issueType,
+      description,
+      isAnonymous,
+    },
   });
 
   if (grievance) {
@@ -21,21 +21,22 @@ const reportIssue = async (req, res) => {
   }
 };
 
-// @desc    Get all grievances (for the wall)
-// @route   GET /api/grievances
-// @access  Public
+// @desc    Get all grievances
 const getGrievances = async (req, res) => {
-  const grievances = await Grievance.find({})
-    .populate('user', 'name')
-    .sort({ createdAt: -1 });
+  const grievances = await prisma.grievance.findMany({
+    include: {
+      user: {
+        select: { name: true }
+      }
+    },
+    orderBy: { createdAt: 'desc' }
+  });
   
-  // Mask user names if anonymous
   const maskedGrievances = grievances.map(g => {
-    const grievanceObj = g.toObject();
     if (g.isAnonymous) {
-      grievanceObj.user = { name: 'Anonymous Student' };
+      return { ...g, user: { name: 'Anonymous Student' } };
     }
-    return grievanceObj;
+    return g;
   });
 
   res.json(maskedGrievances);

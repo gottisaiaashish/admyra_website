@@ -1,4 +1,5 @@
-import User from '../models/User.js';
+import prisma from '../config/prisma.js';
+import bcrypt from 'bcryptjs';
 import generateToken from '../utils/generateToken.js';
 import { OAuth2Client } from 'google-auth-library';
 
@@ -6,19 +7,18 @@ const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 
 // @desc    Auth user & get token
 // @route   POST /api/auth/login
-// @access  Public
 const authUser = async (req, res) => {
   const { email, password } = req.body;
 
-  const user = await User.findOne({ email });
+  const user = await prisma.user.findUnique({ where: { email } });
 
-  if (user && (await user.matchPassword(password))) {
+  if (user && (await bcrypt.compare(password, user.password))) {
     res.json({
-      _id: user._id,
+      id: user.id,
       name: user.name,
       email: user.email,
       role: user.role,
-      token: generateToken(user._id),
+      token: generateToken(user.id),
     });
   } else {
     res.status(401).json({ message: 'Invalid email or password' });
@@ -27,30 +27,33 @@ const authUser = async (req, res) => {
 
 // @desc    Register a new user
 // @route   POST /api/auth/signup
-// @access  Public
 const registerUser = async (req, res) => {
   const { name, email, password } = req.body;
 
-  const userExists = await User.findOne({ email });
+  const userExists = await prisma.user.findUnique({ where: { email } });
 
   if (userExists) {
     res.status(400).json({ message: 'User already exists' });
     return;
   }
 
-  const user = await User.create({
-    name,
-    email,
-    password,
+  const hashedPassword = await bcrypt.hash(password, 10);
+
+  const user = await prisma.user.create({
+    data: {
+      name,
+      email,
+      password: hashedPassword,
+    },
   });
 
   if (user) {
     res.status(201).json({
-      _id: user._id,
+      id: user.id,
       name: user.name,
       email: user.email,
       role: user.role,
-      token: generateToken(user._id),
+      token: generateToken(user.id),
     });
   } else {
     res.status(400).json({ message: 'Invalid user data' });
@@ -58,8 +61,6 @@ const registerUser = async (req, res) => {
 };
 
 // @desc    Auth with Google
-// @route   POST /api/auth/google
-// @access  Public
 const googleAuth = async (req, res) => {
   const { idToken } = req.body;
 
@@ -71,29 +72,32 @@ const googleAuth = async (req, res) => {
 
     const { name, email, picture, sub: googleId } = ticket.getPayload();
 
-    let user = await User.findOne({ email });
+    let user = await prisma.user.findUnique({ where: { email } });
 
     if (user) {
-      // Update googleId if not present
       if (!user.googleId) {
-        user.googleId = googleId;
-        await user.save();
+        user = await prisma.user.update({
+          where: { email },
+          data: { googleId },
+        });
       }
     } else {
-      user = await User.create({
-        name,
-        email,
-        googleId,
-        avatar: picture,
+      user = await prisma.user.create({
+        data: {
+          name,
+          email,
+          googleId,
+          avatar: picture,
+        },
       });
     }
 
     res.json({
-      _id: user._id,
+      id: user.id,
       name: user.name,
       email: user.email,
       role: user.role,
-      token: generateToken(user._id),
+      token: generateToken(user.id),
     });
   } catch (error) {
     console.error(error);

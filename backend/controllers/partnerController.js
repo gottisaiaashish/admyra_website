@@ -1,17 +1,17 @@
-import Partner from '../models/Partner.js';
+import prisma from '../config/prisma.js';
 
 // @desc    Apply to become a verified partner
-// @route   POST /api/partners/apply
-// @access  Public
 const applyPartner = async (req, res) => {
   const { name, email, organization, website, message } = req.body;
 
-  const partner = await Partner.create({
-    name,
-    email,
-    organization,
-    website,
-    message,
+  const partner = await prisma.partner.create({
+    data: {
+      name,
+      email,
+      organization,
+      website,
+      message,
+    },
   });
 
   if (partner) {
@@ -22,10 +22,10 @@ const applyPartner = async (req, res) => {
 };
 
 // @desc    Get all partner applications (Admin only)
-// @route   GET /api/partners
-// @access  Private/Admin
 const getPartners = async (req, res) => {
-  const partners = await Partner.find({}).sort({ createdAt: -1 });
+  const partners = await prisma.partner.findMany({
+    orderBy: { createdAt: 'desc' }
+  });
   res.json(partners);
 };
 

@@ -2,15 +2,11 @@ import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import morgan from 'morgan';
-import connectDB from './config/db.js';
 import authRoutes from './routes/authRoutes.js';
 import grievanceRoutes from './routes/grievanceRoutes.js';
 import partnerRoutes from './routes/partnerRoutes.js';
 
 dotenv.config();
-
-// Connect to Database
-connectDB();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -30,7 +26,7 @@ app.get('/', (req, res) => {
   res.json({ message: 'Admyra Backend API is running' });
 });
 
-// Error handling middleware (optional but good)
+// Error handling middleware
 app.use((err, req, res, next) => {
   const statusCode = res.statusCode === 200 ? 500 : res.statusCode;
   res.status(statusCode).json({
