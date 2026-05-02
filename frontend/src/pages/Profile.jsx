@@ -143,18 +143,11 @@ export function Profile() {
         setSavedPosts(data.saves.map(s => s.postId));
       }
     } catch (err) {
-      console.warn('Using demo data due to API delay or error');
-      setUser({
-        id: 'demo-123',
-        name: 'Demo Student',
-        username: 'demostudent',
-        avatar: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200&h=200&auto=format&fit=crop',
-        bio: 'This is a demo profile to show you the beautiful glassmorphism UI. You can report grievances and manage your settings here.',
-        grievances: [
-          { id: 'g1', college: 'JNTU Hyderabad', description: 'Infrastructure issues in Block A.', status: 'Reported', createdAt: new Date() },
-          { id: 'g2', college: 'JNTU Hyderabad', description: 'Library access timing needs to be extended.', status: 'Cleared', createdAt: new Date() }
-        ]
-      });
+      console.error('Failed to load real profile:', err);
+      // If we can't load the profile and there's no ID, redirect to login
+      if (!id) {
+        navigate('/');
+      }
     } finally { 
       setLoading(false); 
     }
@@ -267,13 +260,86 @@ export function Profile() {
      setTimeout(() => setShowShareSuccess(false), 2000);
   };
 
+  const [isRecording, setIsRecording] = useState(false);
+  const mediaRecorderRef = useRef(null);
+  const recordedChunks = useRef([]);
+
+  const startCamera = async () => {
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ 
+        video: { facingMode: isCameraFront ? 'user' : 'environment' },
+        audio: creatorType === 'REEL' 
+      });
+      if (cameraVideoRef.current) {
+        cameraVideoRef.current.srcObject = stream;
+        streamRef.current = stream;
+      }
+    } catch (err) {
+      alert('Camera/Mic access denied or not available');
+    }
+  };
+
+  const stopCamera = () => {
+    if (streamRef.current) {
+      streamRef.current.getTracks().forEach(track => track.stop());
+      streamRef.current = null;
+    }
+  };
+
+  useEffect(() => {
+    if (showCreatorMode && !selectedMedia) {
+      startCamera();
+    } else {
+      stopCamera();
+    }
+    return () => stopCamera();
+  }, [showCreatorMode, isCameraFront, selectedMedia, creatorType]);
+
   const handleCapture = () => {
-    const mockUrl = creatorType === 'REEL' ? 'https://assets.mixkit.co/videos/preview/mixkit-girl-in-neon-light-39832-large.mp4' : 'https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=500';
-    setSelectedMedia(mockUrl);
-    if (creatorType === 'STORY') {
-      setStories([{ id: Date.now(), url: mockUrl, type: 'STORY' }, ...stories]);
-      setShowCreatorMode(false);
-    } else setShowDraftView(true);
+    if (creatorType === 'REEL') {
+      if (isRecording) {
+        // Stop recording
+        mediaRecorderRef.current.stop();
+        setIsRecording(false);
+      } else {
+        // Start recording
+        recordedChunks.current = [];
+        const options = { mimeType: 'video/webm;codecs=vp9,opus' };
+        if (!MediaRecorder.isTypeSupported(options.mimeType)) {
+          options.mimeType = 'video/webm';
+        }
+        mediaRecorderRef.current = new MediaRecorder(streamRef.current, options);
+        mediaRecorderRef.current.ondataavailable = (e) => {
+          if (e.data.size > 0) recordedChunks.current.push(e.data);
+        };
+        mediaRecorderRef.current.onstop = () => {
+          const blob = new Blob(recordedChunks.current, { type: 'video/webm' });
+          const url = URL.createObjectURL(blob);
+          // For simplicity in this demo/MVP, we'll use object URL. 
+          // Real backend would need a multipart upload.
+          setSelectedMedia(url);
+          setShowDraftView(true);
+        };
+        mediaRecorderRef.current.start();
+        setIsRecording(true);
+      }
+    } else {
+      // Photo capture
+      if (cameraVideoRef.current) {
+        const canvas = document.createElement('canvas');
+        canvas.width = cameraVideoRef.current.videoWidth;
+        canvas.height = cameraVideoRef.current.videoHeight;
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(cameraVideoRef.current, 0, 0);
+        const dataUrl = canvas.toDataURL('image/jpeg');
+        setSelectedMedia(dataUrl);
+        stopCamera();
+        if (creatorType === 'STORY') {
+          setStories([{ id: Date.now(), url: dataUrl, type: 'STORY' }, ...stories]);
+          setShowCreatorMode(false);
+        } else setShowDraftView(true);
+      }
+    }
   };
 
   const handleFinalShare = async () => {
@@ -715,19 +781,36 @@ export function Profile() {
                 </div>
                 
                 <div className="flex-1 relative bg-black flex items-center justify-center overflow-hidden">
-                   <div className="absolute inset-0 flex flex-col items-center justify-center space-y-4 opacity-20">
-                      <Camera size={80} strokeWidth={1} />
-                      <p className="text-[10px] font-black uppercase tracking-[0.3em]">Camera Access Requested</p>
-                   </div>
+                   {!selectedMedia ? (
+                     <video 
+                       ref={cameraVideoRef} 
+                       autoPlay 
+                       playsInline 
+                       className={cn("w-full h-full object-cover", isCameraFront ? "-scale-x-100" : "")}
+                   ) : (
+                     creatorType === 'REEL' ? (
+                       <video src={selectedMedia} autoPlay loop className="w-full h-full object-cover" />
+                     ) : (
+                       <img src={selectedMedia} className="w-full h-full object-cover" />
+                     )
+                   )}
                    <div className="absolute bottom-12 flex flex-col items-center gap-8">
-                      <button onClick={handleCapture} className="h-20 w-20 rounded-full border-4 border-white flex items-center justify-center group active:scale-90 transition-all">
-                         <div className={cn("h-16 w-16 rounded-full transition-all", creatorType === 'REEL' ? "bg-rose-500" : "bg-white group-hover:scale-95")} />
-                      </button>
+                       {isRecording && (
+                         <div className="flex items-center gap-2 px-3 py-1 bg-rose-500 rounded-full animate-pulse">
+                            <div className="h-2 w-2 rounded-full bg-white" />
+                            <span className="text-[9px] font-black uppercase tracking-widest">Recording</span>
+                         </div>
+                       )}
+                       <button onClick={handleCapture} className="h-20 w-20 rounded-full border-4 border-white flex items-center justify-center group active:scale-90 transition-all">
+                          <div className={cn(
+                            "transition-all duration-300",
+                            isRecording ? "h-10 w-10 rounded-sm bg-rose-500" : (creatorType === 'REEL' ? "h-16 w-16 rounded-full bg-rose-500" : "h-16 w-16 rounded-full bg-white group-hover:scale-95")
+                          )} />
+                       </button>
                       <button onClick={() => fileInputRef.current.click()} className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-white/40"><ImageIcon size={16} /> Gallery</button>
                    </div>
                 </div>
               </>
-            ) : (
               <div className="flex flex-col h-full">
                 <div className="p-6 flex items-center justify-between border-b border-white/5">
                   <button onClick={() => setShowDraftView(false)} className="text-[10px] font-black uppercase">Back</button>

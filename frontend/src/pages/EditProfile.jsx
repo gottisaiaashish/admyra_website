@@ -28,15 +28,7 @@ export function EditProfile() {
 
   useEffect(() => {
     if (!loggedInUser) {
-      // For demo purposes, we'll use a mock user if not logged in
-      console.warn('Demo Mode: Using mock data for editing');
-      setFormData({
-        name: 'Demo Student',
-        username: 'demostudent',
-        bio: 'This is a demo bio.',
-        avatar: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200&h=200&auto=format&fit=crop'
-      });
-      setFetching(false);
+      navigate('/');
       return;
     }
     loadProfile();
@@ -79,11 +71,7 @@ export function EditProfile() {
     setError('');
     
     if (!loggedInUser) {
-      // Mock save for demo
-      setTimeout(() => {
-        setLoading(false);
-        navigate('/profile');
-      }, 1000);
+      navigate('/');
       return;
     }
 
