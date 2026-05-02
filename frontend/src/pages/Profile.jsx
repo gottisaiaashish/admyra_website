@@ -787,6 +787,7 @@ export function Profile() {
                        autoPlay 
                        playsInline 
                        className={cn("w-full h-full object-cover", isCameraFront ? "-scale-x-100" : "")}
+                     />
                    ) : (
                      creatorType === 'REEL' ? (
                        <video src={selectedMedia} autoPlay loop className="w-full h-full object-cover" />
@@ -811,6 +812,7 @@ export function Profile() {
                    </div>
                 </div>
               </>
+            ) : (
               <div className="flex flex-col h-full">
                 <div className="p-6 flex items-center justify-between border-b border-white/5">
                   <button onClick={() => setShowDraftView(false)} className="text-[10px] font-black uppercase">Back</button>
