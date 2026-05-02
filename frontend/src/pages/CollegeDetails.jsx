@@ -12,6 +12,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Card, Badge, RatingStars, Button, Input } from '../components/ui';
 import { colleges, reviews } from '../data/mock-data';
 import { cn } from '../lib/utils';
+import { fetchGrievances, createGrievance, applyPartner } from '../api';
 
 export function CollegeDetails() {
   const { id } = useParams();
@@ -26,26 +27,8 @@ export function CollegeDetails() {
   const [showPartnerModal, setShowPartnerModal] = useState(false);
   const [partnerFormSuccess, setPartnerFormSuccess] = useState(false);
   const [partnerData, setPartnerData] = useState({ instagram: '', purpose: '' });
-  const [grievances, setGrievances] = useState([
-    {
-      id: 1,
-      user: 'Verified_Student_24',
-      date: '2 days ago',
-      text: "The academic pressure is real, but the lab infrastructure in the older blocks needs immediate attention. Some machines are outdated and slow.",
-      status: 'Reported',
-      agrees: 124,
-      isNew: false
-    },
-    {
-      id: 2,
-      user: 'Senior_Batch_2025',
-      date: '1 week ago',
-      text: "The hostel Wi-Fi has been extremely patchy in Block B. It makes it impossible to complete assignments after 8 PM.",
-      status: 'Cleared',
-      agrees: 0,
-      isNew: false
-    }
-  ]);
+  const [grievances, setGrievances] = useState([]);
+  const [loadingGrievances, setLoadingGrievances] = useState(false);
   const [hasAgreed, setHasAgreed] = useState({});
 
   useEffect(() => {
@@ -53,7 +36,52 @@ export function CollegeDetails() {
     if (college) {
       document.title = `${college.name} - College Details | Admyra`;
     }
+    loadGrievances();
   }, [collegeId, college]);
+
+  const loadGrievances = async () => {
+    setLoadingGrievances(true);
+    try {
+      const { data } = await fetchGrievances();
+      // Filter for current college (or just show all if that's the wall design)
+      setGrievances(data);
+    } catch (err) {
+      console.error('Failed to load grievances');
+    } finally {
+      setLoadingGrievances(false);
+    }
+  };
+
+  const handleReportSubmit = async () => {
+    try {
+      await createGrievance({
+        college: college.name,
+        issueType: 'Institutional',
+        description: reportText,
+        isAnonymous: true
+      });
+      setReportSubmitted(true);
+      setReportText('');
+      loadGrievances(); // Refresh list
+    } catch (err) {
+      alert('Failed to submit report. Please login first.');
+    }
+  };
+
+  const handlePartnerSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await applyPartner({
+        name: 'Applicant', // These could be gathered from user profile if logged in
+        email: 'applicant@example.com',
+        organization: partnerData.instagram,
+        message: partnerData.purpose
+      });
+      setPartnerFormSuccess(true);
+    } catch (err) {
+      alert('Failed to submit partner application');
+    }
+  };
 
   useEffect(() => {
     if (reportSubmitted) {
@@ -284,22 +312,22 @@ export function CollegeDetails() {
                                   {g.status === 'Reported' ? <ShieldAlert size={24} /> : <CheckCircle2 size={24} />}
                                </div>
                                <div>
-                                  <div className="text-base font-black italic">{g.user}</div>
-                                  <div className="text-[9px] font-black text-white/20 uppercase tracking-widest mt-1">{g.date}</div>
+                                  <div className="text-base font-black italic">{g.user?.name || 'Anonymous'}</div>
+                                  <div className="text-[9px] font-black text-white/20 uppercase tracking-widest mt-1">{new Date(g.createdAt).toLocaleDateString()}</div>
                                </div>
                             </div>
                             <Badge className={cn(
                               "border-none px-4 py-1.5 rounded-xl text-[10px] font-black uppercase italic tracking-wider",
-                              g.status === 'Reported' ? "bg-rose-500/10 text-rose-500" : "bg-emerald-500/10 text-emerald-500"
+                              g.status === 'pending' || g.status === 'Reported' ? "bg-rose-500/10 text-rose-500" : "bg-emerald-500/10 text-emerald-500"
                             )}>
-                              {g.status === 'Reported' ? 'Reported' : 'Issue Cleared'}
+                              {g.status === 'pending' || g.status === 'Reported' ? 'Reported' : 'Issue Cleared'}
                             </Badge>
                          </div>
                          <p className={cn(
                            "text-lg md:text-xl font-bold leading-relaxed italic mb-8",
-                           g.status === 'Reported' ? "text-white/80" : "text-white/40 line-through decoration-white/10"
+                           g.status === 'pending' || g.status === 'Reported' ? "text-white/80" : "text-white/40 line-through decoration-white/10"
                          )}>
-                            "{g.text}"
+                            "{g.description || g.text}"
                          </p>
                          <div className="flex items-center justify-between pt-8 border-t border-white/5">
                             {g.status === 'Reported' ? (
@@ -532,20 +560,7 @@ export function CollegeDetails() {
                     
                     <Button 
                       disabled={!reportText.trim()}
-                      onClick={() => {
-                        const newGrievance = {
-                          id: Date.now(),
-                          user: 'Anonymous_Student',
-                          date: 'Just now',
-                          text: reportText,
-                          status: 'Reported',
-                          agrees: 0,
-                          isNew: true
-                        };
-                        setGrievances([newGrievance, ...grievances]);
-                        setReportSubmitted(true);
-                        setReportText('');
-                      }}
+                      onClick={handleReportSubmit}
                       className="w-full h-14 bg-indigo-600 hover:bg-indigo-500 text-white font-black uppercase tracking-[0.2em] text-[10px] rounded-xl shadow-xl shadow-indigo-600/20 disabled:opacity-50 disabled:grayscale transition-all"
                     >
                       Verify & Submit
@@ -592,10 +607,7 @@ export function CollegeDetails() {
                         <p className="text-sm text-white/30 font-medium">Apply to join our network of verified institutional hubs.</p>
                      </div>
 
-                     <form className="space-y-6" onSubmit={(e) => {
-                       e.preventDefault();
-                       setPartnerFormSuccess(true);
-                     }}>
+                     <form className="space-y-6" onSubmit={handlePartnerSubmit}>
                         <div className="space-y-2">
                            <label className="text-[9px] font-black text-white/20 uppercase tracking-widest ml-1">Instagram handle / URL</label>
                            <input 
