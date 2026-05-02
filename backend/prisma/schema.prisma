@@ -17,6 +17,8 @@ model User {
   password  String?
   googleId  String?  @unique
   avatar    String?
+  username  String?  @unique
+  bio       String?
   role      String   @default("student")
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
