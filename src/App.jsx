@@ -6,6 +6,8 @@ import { Colleges } from './pages/Colleges';
 import { Predictor } from './pages/Predictor';
 import { AiMentor } from './pages/aimentor';
 import { CollegeDetails } from './pages/CollegeDetails';
+import { Login } from './pages/Login';
+import { Signup } from './pages/Signup';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
@@ -51,6 +53,8 @@ function App() {
           <Route path="colleges/:id" element={<CollegeDetails />} />
           <Route path="predictor" element={<Predictor />} />
           <Route path="aimentor" element={<AiMentor />} />
+          <Route path="login" element={<Login />} />
+          <Route path="signup" element={<Signup />} />
         </Route>
       </Routes>
     </BrowserRouter>

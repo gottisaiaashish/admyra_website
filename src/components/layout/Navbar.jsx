@@ -24,53 +24,71 @@ export function Navbar() {
     )}>
       <div className=" hidden md:block px-2 sm:px-8 lg:px-0 max-w-7xl mx-auto">
         <div className="flex items-center justify-between h-16">
-          <div className="hidden md:block">
-            <div className="ml-1 flex items-baseline space-x-8">
-              {navLinks.map((link) => (
-                <NavLink
-                  key={link.name}
-                  to={link.path}
-                  className={({ isActive }) => cn(
-                    "text-sm font-medium transition-colors hover:text-primary-start inline-flex items-center gap-2",
-                    isActive ? "text-accent-cyan" : "text-text-muted"
-                  )}
-                >
-                  <span>{link.name}</span>
-                </NavLink>
-              ))}
+          <div className="flex items-center gap-8">
+            <NavLink to="/" className="text-xl font-bold text-text-main mr-4">
+              Admyra
+            </NavLink>
+            <div className="hidden md:block">
+              <div className="flex items-baseline space-x-8">
+                {navLinks.map((link) => (
+                  <NavLink
+                    key={link.name}
+                    to={link.path}
+                    className={({ isActive }) => cn(
+                      "text-sm font-medium transition-colors hover:text-primary-start inline-flex items-center gap-2",
+                      isActive ? "text-accent-cyan" : "text-text-muted"
+                    )}
+                  >
+                    <span>{link.name}</span>
+                  </NavLink>
+                ))}
+              </div>
             </div>
           </div>
 
           <div className="hidden md:flex items-center gap-4">
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition text-text-muted hover:text-text-main"
+              className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition text-text-muted hover:text-text-main mr-2"
               aria-label="Toggle Theme"
             >
               {theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
             </button>
+            <div className="flex items-center gap-2">
+              <NavLink to="/login">
+                <Button variant="ghost" className="rounded-xl px-4 py-1.5 h-auto text-xs font-bold hover:bg-white/5">
+                  Login
+                </Button>
+              </NavLink>
+              <div className="h-4 w-px bg-border-subtle mx-1" />
+              <NavLink to="/signup">
+                <Button className="rounded-xl px-5 py-1.5 h-auto text-xs font-bold shadow-md">
+                  Sign Up
+                </Button>
+              </NavLink>
+            </div>
           </div>
         </div>
       </div>
 
       <div className="md:hidden px-4">
         <div className="flex items-center justify-between h-16">
-          <NavLink to="/" className="text-base font-bold text-text-muted">
+          <NavLink to="/" className="text-lg font-bold text-text-main">
             Admyra
           </NavLink>
           
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2">
             <button 
               onClick={toggleTheme} 
               className="p-2 rounded-full transition text-text-muted hover:text-text-main"
             >
-              {theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+              {theme === 'dark' ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
             </button>
             <button 
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-xl text-text-muted transition-all active:scale-95"
+              className="p-2 rounded-lg text-text-muted transition-all active:scale-95"
             >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </button>
           </div>
         </div>
@@ -101,6 +119,25 @@ export function Navbar() {
                     {link.name}
                   </NavLink>
                 ))}
+                <div className="pt-4 px-4 flex flex-col items-center">
+                  <NavLink to="/login" onClick={() => setIsOpen(false)} className="w-full">
+                    <Button variant="outline" className="w-full py-3 rounded-xl font-bold text-xs">
+                      Login
+                    </Button>
+                  </NavLink>
+                  
+                  <div className="flex items-center gap-4 w-full my-3">
+                    <div className="h-px bg-border-subtle flex-1" />
+                    <span className="text-[10px] text-text-muted font-medium uppercase tracking-widest">or</span>
+                    <div className="h-px bg-border-subtle flex-1" />
+                  </div>
+
+                  <NavLink to="/signup" onClick={() => setIsOpen(false)} className="w-full">
+                    <Button className="w-full py-3 rounded-xl font-bold text-xs shadow-lg">
+                      Sign Up
+                    </Button>
+                  </NavLink>
+                </div>
               </div>
             </motion.div>
           )}

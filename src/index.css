@@ -19,12 +19,12 @@
 }
 
 :root {
-  /* Light Mode (Default) */
-  --bg-main: #f9f9f9;
-  --bg-card: #ffffff;
-  --text-main: #111827;
-  --text-muted: #6b7280;
-  --border-subtle: #e5e7eb;
+  /* Default Theme (Dark) */
+  --bg-main: #0B0F1A;
+  --bg-card: #111827;
+  --text-main: #ffffff;
+  --text-muted: #9ca3af;
+  --border-subtle: #1f2937;
 }
 
 .dark {
@@ -61,8 +61,17 @@
   transform: translateX(-50%);
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 28px;
-  background: rgba(15, 23, 42, 0.26);
+  background: rgba(15, 23, 42, 0.7);
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.14);
   -webkit-backdrop-filter: blur(18px);
   backdrop-filter: blur(18px);
+  color: #ffffff !important;
+}
+
+.floating-navbar * {
+  color: #ffffff !important;
+}
+
+.floating-navbar button:not(.bg-gradient-to-r) {
+  color: #ffffff !important;
 }

@@ -96,10 +96,10 @@ export function Colleges() {
             className="w-full lg:w-auto flex items-center gap-3 relative"
           >
             <div className="relative group w-full sm:w-64">
-              <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-text-muted group-focus-within:text-primary-start transition-colors" />
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-white/40 group-focus-within:text-primary-start transition-colors" />
               <Input 
                 placeholder="Search..." 
-                className="pl-12 h-14 rounded-2xl bg-white/50 dark:bg-gray-900/50 border-border-subtle focus:ring-primary-start/20 transition-all shadow-sm"
+                className="pl-12 h-14 rounded-2xl bg-white/[0.05] border-white/10 focus:border-primary-start focus:ring-primary-start/20 transition-all text-white placeholder:text-white/20"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
               />
@@ -109,11 +109,11 @@ export function Colleges() {
                 variant={selectedFilter !== 'all' ? 'primary' : 'outline'}
                 onClick={() => setIsFilterOpen(!isFilterOpen)}
                 className={cn(
-                  "h-14 w-14 rounded-2xl p-0 flex-none border-border-subtle bg-white/50 dark:bg-gray-900/50 transition-all",
+                  "h-14 w-14 rounded-2xl p-0 flex-none border-white/10 bg-white/[0.05] hover:bg-white/[0.08] transition-all",
                   selectedFilter !== 'all' && "bg-primary-start text-white border-primary-start shadow-lg shadow-primary-start/20"
                 )}
               >
-                <SlidersHorizontal className="h-5 w-5" />
+                <SlidersHorizontal className="h-5 w-5 text-white/60" />
               </Button>
 
               {/* Filter Dropdown */}
@@ -181,9 +181,9 @@ export function Colleges() {
                   />
                   {/* Rating & Truth Pills on Image */}
                   <div className="absolute top-4 right-4 z-20 flex flex-col items-end gap-2">
-                    <div className="flex items-center gap-1 px-3 py-1.5 rounded-full bg-white/90 dark:bg-gray-900/90 backdrop-blur-md border border-white/20 shadow-lg">
+                    <div className="flex items-center gap-1 px-3 py-1.5 rounded-full bg-white/95 backdrop-blur-md border border-white/20 shadow-lg">
                       <Star className="h-3.5 w-3.5 fill-yellow-400 text-yellow-400" />
-                      <span className="text-xs font-bold text-text-main">{college.rating}</span>
+                      <span className="text-xs font-black text-gray-900">{college.rating}</span>
                     </div>
                   </div>
                 </div>
@@ -201,10 +201,10 @@ export function Colleges() {
                   
 
                   
-                  <div className="mt-auto pt-6">
+                  <div className="mt-auto pt-2">
                     <button 
                       onClick={() => navigate(`/colleges/${college.id}`)}
-                      className="w-full py-4 rounded-2xl bg-gradient-to-r from-primary-start/20 to-accent-cyan/20 hover:from-primary-start hover:to-accent-cyan text-gray-900 hover:text-white border border-primary-start/20 transition-all duration-500 font-bold text-sm shadow-sm hover:shadow-xl hover:shadow-primary-start/30 flex items-center justify-center gap-2 group/btn"
+                      className="w-full py-3.5 rounded-2xl bg-gradient-to-r from-primary-start to-accent-cyan text-white shadow-lg shadow-primary-start/25 transition-all duration-300 font-black text-[11px] uppercase tracking-wider flex items-center justify-center gap-2 group/btn active:scale-95"
                     >
                       View Details
                     </button>

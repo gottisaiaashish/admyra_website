@@ -30,14 +30,14 @@ export const VelocityText = () => {
   return (
     <section
       ref={targetRef}
-      className="h-[1000vh] bg-neutral-50 text-neutral-950"
+      className="h-[300vh] bg-background text-text-main"
     >
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <motion.p
           style={{ skewX, x }}
-          className="origin-bottom-left whitespace-nowrap text-5xl font-black uppercase leading-[0.85] md:text-7xl md:leading-[0.85]"
+          className="origin-center whitespace-nowrap text-4xl md:text-6xl font-serif italic font-medium uppercase tracking-tighter opacity-10"
         >
-          admyra.in    admyra.in    admyra.in    admyra.in    admyra.in    admyra.in    admyra.in    admyra.in    admyra.in    admyra.in    admyra.in    admyra.in    admyra.in    admyra.in    admyra.in    admyra.in    admyra.in    admyra.in    admyra.in    admyra.in    
+          PREDICT YOUR FUTURE • ADMIT MY RANK • TOP ENGINEERING COLLEGES • REAL DATA • NO GUESSWORK • PREDICT YOUR FUTURE • ADMIT MY RANK • TOP ENGINEERING COLLEGES • REAL DATA • NO GUESSWORK • 
         </motion.p>
       </div>
     </section>

@@ -6,7 +6,7 @@ import {
   ShieldCheck, ArrowRight, Library, 
   Map as MapIcon, Heart, CheckCircle2,
   Activity, ThumbsUp, Flag, Camera,
-  Globe, ChevronRight
+  Globe, ChevronRight, X
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Card, Badge, RatingStars, Button, Input } from '../components/ui';
@@ -20,6 +20,33 @@ export function CollegeDetails() {
   const college = colleges.find(c => String(c.id) === String(collegeId)) || colleges[0];
   
   const [activeTab, setActiveTab] = useState('insights');
+  const [showReportModal, setShowReportModal] = useState(false);
+  const [reportText, setReportText] = useState('');
+  const [reportSubmitted, setReportSubmitted] = useState(false);
+  const [showPartnerModal, setShowPartnerModal] = useState(false);
+  const [partnerFormSuccess, setPartnerFormSuccess] = useState(false);
+  const [partnerData, setPartnerData] = useState({ instagram: '', purpose: '' });
+  const [grievances, setGrievances] = useState([
+    {
+      id: 1,
+      user: 'Verified_Student_24',
+      date: '2 days ago',
+      text: "The academic pressure is real, but the lab infrastructure in the older blocks needs immediate attention. Some machines are outdated and slow.",
+      status: 'Reported',
+      agrees: 124,
+      isNew: false
+    },
+    {
+      id: 2,
+      user: 'Senior_Batch_2025',
+      date: '1 week ago',
+      text: "The hostel Wi-Fi has been extremely patchy in Block B. It makes it impossible to complete assignments after 8 PM.",
+      status: 'Cleared',
+      agrees: 0,
+      isNew: false
+    }
+  ]);
+  const [hasAgreed, setHasAgreed] = useState({});
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -27,6 +54,16 @@ export function CollegeDetails() {
       document.title = `${college.name} - College Details | Admyra`;
     }
   }, [collegeId, college]);
+
+  useEffect(() => {
+    if (reportSubmitted) {
+      const timer = setTimeout(() => {
+        setShowReportModal(false);
+        setReportSubmitted(false);
+      }, 2000);
+      return () => clearTimeout(timer);
+    }
+  }, [reportSubmitted]);
 
   if (!college) return <div className="p-20 text-center">College not found</div>;
 
@@ -206,38 +243,100 @@ export function CollegeDetails() {
 
             {activeTab === 'grievances' && (
               <div className="max-w-3xl mx-auto space-y-12 md:space-y-20">
-                <div className="text-center space-y-4 md:space-y-6">
-                   <h2 className="text-4xl md:text-7xl font-black italic tracking-tighter">Grievance Wall.</h2>
-                   <p className="text-base md:text-lg text-white/40 font-medium leading-relaxed">
-                      Anonymous reports verified through our student network.
-                   </p>
+                <div className="text-center space-y-6 md:space-y-10">
+                   <div className="space-y-4">
+                      <h2 className="text-4xl md:text-7xl font-black italic tracking-tighter">Grievance Wall.</h2>
+                      <p className="text-base md:text-lg text-white/40 font-medium leading-relaxed max-w-2xl mx-auto">
+                         Anonymous reports verified through our student network. We track issues until they are resolved.
+                      </p>
+                   </div>
+                   
+                   <Button 
+                    variant="outline"
+                    onClick={() => setShowReportModal(true)}
+                    className="h-14 px-10 border-indigo-500/20 bg-indigo-500/5 text-indigo-400 font-black uppercase tracking-[0.2em] text-[10px] rounded-2xl hover:bg-indigo-500/10 transition-all group"
+                   >
+                    <ShieldAlert size={16} className="mr-3 group-hover:scale-110 transition-transform" />
+                    Report An Issue
+                   </Button>
                 </div>
 
-                <Card className="p-8 md:p-12 border-2 border-rose-500/10 bg-rose-500/[0.01]">
-                   <div className="flex flex-wrap justify-between items-start gap-4 mb-8">
-                      <div className="flex items-center gap-3">
-                         <div className="h-10 w-10 rounded-xl bg-rose-500/10 flex items-center justify-center text-rose-500">
-                            <ShieldAlert size={20} />
+                <div className="space-y-8">
+                  {grievances.map((g) => (
+                    <motion.div
+                      key={g.id}
+                      initial={g.isNew ? { opacity: 0, y: -20, scale: 0.95 } : false}
+                      animate={{ opacity: 1, y: 0, scale: 1 }}
+                      transition={{ duration: 0.5, type: "spring" }}
+                    >
+                      <Card className={cn(
+                        "p-8 md:p-12 transition-all",
+                        g.status === 'Reported' 
+                          ? "border-2 border-rose-500/10 bg-rose-500/[0.01] hover:border-rose-500/20" 
+                          : "border border-emerald-500/10 bg-emerald-500/[0.02] hover:border-emerald-500/20"
+                      )}>
+                         <div className="flex flex-wrap justify-between items-start gap-4 mb-8">
+                            <div className="flex items-center gap-3">
+                               <div className={cn(
+                                 "h-12 w-12 rounded-2xl flex items-center justify-center",
+                                 g.status === 'Reported' ? "bg-rose-500/10 text-rose-500" : "bg-emerald-500/10 text-emerald-500"
+                               )}>
+                                  {g.status === 'Reported' ? <ShieldAlert size={24} /> : <CheckCircle2 size={24} />}
+                               </div>
+                               <div>
+                                  <div className="text-base font-black italic">{g.user}</div>
+                                  <div className="text-[9px] font-black text-white/20 uppercase tracking-widest mt-1">{g.date}</div>
+                               </div>
+                            </div>
+                            <Badge className={cn(
+                              "border-none px-4 py-1.5 rounded-xl text-[10px] font-black uppercase italic tracking-wider",
+                              g.status === 'Reported' ? "bg-rose-500/10 text-rose-500" : "bg-emerald-500/10 text-emerald-500"
+                            )}>
+                              {g.status === 'Reported' ? 'Reported' : 'Issue Cleared'}
+                            </Badge>
                          </div>
-                         <div>
-                            <div className="text-base font-black italic">Verified_Student_24</div>
-                            <div className="text-[9px] font-black text-white/20 uppercase tracking-widest mt-1">2 days ago</div>
+                         <p className={cn(
+                           "text-lg md:text-xl font-bold leading-relaxed italic mb-8",
+                           g.status === 'Reported' ? "text-white/80" : "text-white/40 line-through decoration-white/10"
+                         )}>
+                            "{g.text}"
+                         </p>
+                         <div className="flex items-center justify-between pt-8 border-t border-white/5">
+                            {g.status === 'Reported' ? (
+                              <button 
+                                onClick={() => {
+                                  if (!hasAgreed[g.id]) {
+                                    setGrievances(prev => prev.map(item => 
+                                      item.id === g.id ? { ...item, agrees: item.agrees + 1 } : item
+                                    ));
+                                    setHasAgreed(prev => ({ ...prev, [g.id]: true }));
+                                  }
+                                }}
+                                className={cn(
+                                  "flex items-center gap-2 text-[10px] font-black transition-all uppercase group",
+                                  hasAgreed[g.id] ? "text-emerald-400" : "text-white/40 hover:text-white"
+                                )}
+                              >
+                                 <ThumbsUp size={16} className={cn("transition-transform", hasAgreed[g.id] ? "text-emerald-500 scale-110" : "text-indigo-500 group-hover:scale-110")} /> 
+                                 {g.agrees} Agree
+                              </button>
+                            ) : (
+                              <div className="flex items-center gap-3 text-[10px] font-black text-emerald-500/60 uppercase tracking-widest">
+                                 <Zap size={14} /> Resolved by Management
+                              </div>
+                            )}
+                            <div className="text-[10px] font-black text-white/20 hover:text-rose-500 uppercase tracking-widest flex items-center gap-2 transition-colors">
+                               {g.status === 'Reported' ? (
+                                 <><Flag size={14} /> Report Junk</>
+                               ) : (
+                                 <span className="text-white/10">Closed Thread</span>
+                               )}
+                            </div>
                          </div>
-                      </div>
-                      <Badge className="bg-rose-500/10 text-rose-500 border-none px-3 py-1 rounded-lg text-[9px] font-black uppercase italic">Reported</Badge>
-                   </div>
-                   <p className="text-lg md:text-xl font-bold leading-relaxed text-white/80 italic mb-8">
-                      "The academic pressure is real, but the lab infrastructure in the older blocks needs immediate attention. Some machines are outdated."
-                   </p>
-                   <div className="flex items-center justify-between pt-8 border-t border-white/5">
-                      <button className="flex items-center gap-2 text-[10px] font-black text-white/40 hover:text-white transition-all uppercase">
-                         <ThumbsUp size={16} className="text-indigo-500" /> 124 Agree
-                      </button>
-                      <button className="text-[10px] font-black text-white/20 hover:text-rose-500 uppercase tracking-widest flex items-center gap-2">
-                         <Flag size={14} /> Report
-                      </button>
-                   </div>
-                </Card>
+                      </Card>
+                    </motion.div>
+                  ))}
+                </div>
               </div>
             )}
 
@@ -245,27 +344,40 @@ export function CollegeDetails() {
               <div className="space-y-12 md:space-y-24">
                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                     <div className="space-y-6 md:space-y-8 text-center lg:text-left">
-                       <h2 className="text-4xl md:text-6xl font-black italic tracking-tighter">Community Hub.</h2>
-                       <p className="text-lg text-white/40 leading-relaxed font-medium">
-                          We partner with elite student bodies to verify every claim.
+                       <h2 className="text-4xl md:text-6xl font-black italic tracking-tighter">Verified Network.</h2>
+                       <p className="text-base text-white/30 leading-relaxed font-medium max-w-md">
+                          We collaborate with elite student bodies and institutional hubs to maintain the highest standards of data integrity.
                        </p>
-                       <Button className="h-14 px-10 bg-indigo-600 text-white font-black uppercase tracking-widest text-[9px] rounded-xl">
-                          Collab
-                       </Button>
                     </div>
                     
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                        {college.collaborators?.map((partner, i) => (
-                         <div key={i} className="p-8 rounded-[2rem] bg-[#0A0C14] border border-white/5 text-center group">
-                            <div className="h-12 w-12 rounded-2xl bg-indigo-500/10 flex items-center justify-center mx-auto mb-4 text-indigo-500">
-                               {partner.platform === 'Instagram' ? <Camera size={20} /> : <Globe size={20} />}
-                            </div>
-                            <h4 className="text-base font-black italic">{partner.name}</h4>
-                            <div className="text-[9px] font-black text-white/20 uppercase tracking-widest mt-2">{partner.followers}</div>
-                         </div>
+                          <a 
+                            key={i} 
+                            href={partner.url} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="p-6 rounded-3xl bg-white/[0.02] border border-white/5 hover:border-white/20 hover:bg-white/[0.04] transition-all duration-500 group flex items-center gap-5 cursor-pointer"
+                          >
+                             <div className="h-14 w-14 rounded-2xl bg-white/5 flex items-center justify-center text-white/40 group-hover:text-white group-hover:bg-white/10 transition-all">
+                                {partner.platform === 'Instagram' ? <Camera size={22} /> : <Globe size={22} />}
+                             </div>
+                             <div className="text-left">
+                                <h4 className="text-lg font-black text-white tracking-tight">{partner.name}</h4>
+                                <div className="text-[10px] font-black text-white/20 uppercase tracking-widest mt-0.5">{partner.followers} Reach</div>
+                             </div>
+                          </a>
                        ))}
                     </div>
                  </div>
+                  <div className="flex justify-center mt-16">
+                     <Button 
+                        onClick={() => setShowPartnerModal(true)}
+                        className="h-14 px-12 bg-white text-black hover:bg-white/90 font-black uppercase tracking-widest text-[10px] rounded-full transition-all duration-500 shadow-2xl shadow-white/5"
+                     >
+                        Become a Verified Partner
+                     </Button>
+                  </div>
               </div>
             )}
 
@@ -361,7 +473,186 @@ export function CollegeDetails() {
             <ShieldAlert size={32} className="text-indigo-600/30" />
             <p className="text-white/20 font-black uppercase tracking-[0.4em] text-[9px]">The Transparency Pact</p>
          </div>
-      </footer>
+       </footer>
+
+      {/* Report Issue Modal */}
+      <AnimatePresence>
+        {showReportModal && (
+          <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
+            <motion.div 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setShowReportModal(false)}
+              className="absolute inset-0 bg-black/80 backdrop-blur-md"
+            />
+            
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.9, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.9, y: 20 }}
+              className="relative w-full max-w-lg bg-[#0A0C14] border border-white/10 rounded-[2.5rem] p-8 md:p-12 shadow-2xl overflow-hidden"
+            >
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-indigo-500 to-transparent opacity-50" />
+              
+              <button 
+                onClick={() => setShowReportModal(false)}
+                className="absolute top-6 right-6 text-white/20 hover:text-white transition-colors"
+              >
+                <X size={20} />
+              </button>
+
+              {reportSubmitted ? (
+                <div className="py-12 text-center space-y-6">
+                  <div className="h-20 w-20 rounded-full bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mx-auto text-emerald-500">
+                    <CheckCircle2 size={40} className="animate-bounce" />
+                  </div>
+                  <div className="space-y-2">
+                    <h3 className="text-2xl font-black italic">Report Received.</h3>
+                    <p className="text-white/40 text-sm font-medium">Our student community will verify this shortly.</p>
+                  </div>
+                </div>
+              ) : (
+                <div className="space-y-8">
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2 text-indigo-500 text-[10px] font-black uppercase tracking-widest mb-1">
+                      <ShieldAlert size={14} /> Anonymous Reporting
+                    </div>
+                    <h3 className="text-3xl font-black italic tracking-tight">Submit Grievance.</h3>
+                    <p className="text-white/40 text-sm font-medium">Describe the issue clearly. Your identity remains hidden.</p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <textarea 
+                      value={reportText}
+                      onChange={(e) => setReportText(e.target.value)}
+                      placeholder="e.g. The laboratory equipment in the Mechanical dept is outdated..."
+                      className="w-full h-40 bg-white/[0.02] border border-white/10 rounded-2xl p-6 text-white placeholder:text-white/10 focus:outline-none focus:border-indigo-500/50 transition-all resize-none text-sm font-medium leading-relaxed"
+                    />
+                    
+                    <Button 
+                      disabled={!reportText.trim()}
+                      onClick={() => {
+                        const newGrievance = {
+                          id: Date.now(),
+                          user: 'Anonymous_Student',
+                          date: 'Just now',
+                          text: reportText,
+                          status: 'Reported',
+                          agrees: 0,
+                          isNew: true
+                        };
+                        setGrievances([newGrievance, ...grievances]);
+                        setReportSubmitted(true);
+                        setReportText('');
+                      }}
+                      className="w-full h-14 bg-indigo-600 hover:bg-indigo-500 text-white font-black uppercase tracking-[0.2em] text-[10px] rounded-xl shadow-xl shadow-indigo-600/20 disabled:opacity-50 disabled:grayscale transition-all"
+                    >
+                      Verify & Submit
+                    </Button>
+                  </div>
+                </div>
+              )}
+            </motion.div>
+          </div>
+        )}
+        {showPartnerModal && (
+          <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
+            <motion.div 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="absolute inset-0 bg-[#05060A]/95 backdrop-blur-xl"
+              onClick={() => {
+                setShowPartnerModal(false);
+                setPartnerFormSuccess(false);
+              }}
+            />
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.9, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.9, y: 20 }}
+              className="relative w-full max-w-xl bg-white/[0.02] border border-white/10 rounded-[3rem] p-8 md:p-12 shadow-2xl"
+            >
+               <button 
+                  onClick={() => {
+                    setShowPartnerModal(false);
+                    setPartnerFormSuccess(false);
+                  }} 
+                  className="absolute top-8 right-8 text-white/20 hover:text-white transition-colors"
+               >
+                  <X size={24} />
+               </button>
+
+               {!partnerFormSuccess ? (
+                  <div className="space-y-8">
+                     <div className="space-y-2">
+                        <div className="inline-flex px-3 py-1 rounded-full bg-white/5 text-white/40 text-[9px] font-black uppercase tracking-widest mb-2">Verification Portal</div>
+                        <h2 className="text-3xl md:text-4xl font-black italic tracking-tighter">Partner with Admyra.</h2>
+                        <p className="text-sm text-white/30 font-medium">Apply to join our network of verified institutional hubs.</p>
+                     </div>
+
+                     <form className="space-y-6" onSubmit={(e) => {
+                       e.preventDefault();
+                       setPartnerFormSuccess(true);
+                     }}>
+                        <div className="space-y-2">
+                           <label className="text-[9px] font-black text-white/20 uppercase tracking-widest ml-1">Instagram handle / URL</label>
+                           <input 
+                              required
+                              type="text"
+                              value={partnerData.instagram}
+                              onChange={(e) => setPartnerData({...partnerData, instagram: e.target.value})}
+                              className="w-full bg-white/[0.03] border border-white/10 rounded-2xl p-4 text-sm text-white outline-none focus:border-white/30 transition-all"
+                              placeholder="@your_community_page"
+                           />
+                        </div>
+
+                        <div className="space-y-2">
+                           <label className="text-[9px] font-black text-white/20 uppercase tracking-widest ml-1">Community Purpose</label>
+                           <input 
+                              required
+                              type="text"
+                              value={partnerData.purpose}
+                              onChange={(e) => setPartnerData({...partnerData, purpose: e.target.value})}
+                              className="w-full bg-white/[0.03] border border-white/10 rounded-2xl p-4 text-sm text-white outline-none focus:border-white/30 transition-all"
+                              placeholder="What is your community's mission?"
+                           />
+                        </div>
+
+                        <Button 
+                           type="submit"
+                           className="w-full h-14 bg-white text-black font-black uppercase tracking-widest text-[10px] rounded-2xl hover:bg-white/90 transition-all duration-500"
+                        >
+                           Submit Application
+                        </Button>
+                     </form>
+                  </div>
+               ) : (
+                  <div className="text-center py-12 space-y-8">
+                     <div className="space-y-3">
+                        <h2 className="text-4xl font-black italic tracking-tighter">Application Received.</h2>
+                        <p className="text-base text-white/30 font-medium max-w-xs mx-auto leading-relaxed">
+                           Our verification team will audit your credentials and reach out to your Instagram handle within 48 hours.
+                        </p>
+                     </div>
+                     <Button 
+                        variant="outline"
+                        onClick={() => {
+                          setShowPartnerModal(false);
+                          setPartnerFormSuccess(false);
+                          setPartnerData({ instagram: '', purpose: '' });
+                        }}
+                        className="px-12 h-14 bg-white/5 border border-white/10 text-white font-black uppercase tracking-widest text-[10px] rounded-full hover:bg-white/10 shadow-none transition-all"
+                     >
+                        Close Portal
+                     </Button>
+                  </div>
+               )}
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
