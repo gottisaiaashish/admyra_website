@@ -1,26 +1,28 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate, Link } from 'react-router-dom';
+import { useParams, useNavigate, Link, useLocation } from 'react-router-dom';
 import { 
   MapPin, Trophy, Star, Info, 
   Users, ShieldAlert, Zap, 
   ShieldCheck, ArrowRight, Library, 
   Map as MapIcon, Heart, CheckCircle2,
-  Activity, ThumbsUp, Flag, Camera,
-  Globe, ChevronRight, X, User as UserIcon
+  Activity, ThumbsUp, Flag, Camera, Play,
+  Globe, ChevronRight, X, User as UserIcon, MessageCircle, Send, ChevronLeft
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Card, Badge, RatingStars, Button, Input } from '../components/ui';
 import { colleges, reviews } from '../data/mock-data';
 import { cn } from '../lib/utils';
-import { fetchGrievances, createGrievance, applyPartner } from '../api';
+import { fetchGrievances, createGrievance, applyPartner, fetchCollegePosts, toggleGrievanceAgree, resolveGrievance } from '../api';
 
 export function CollegeDetails() {
   const { id } = useParams();
   const navigate = useNavigate();
+  const location = useLocation();
   const collegeId = id || "1";
   const college = colleges.find(c => String(c.id) === String(collegeId)) || colleges[0];
   
-  const [activeTab, setActiveTab] = useState('insights');
+  const [activeTab, setActiveTab] = useState(location.state?.activeTab || 'insights');
+  const currentUser = JSON.parse(localStorage.getItem('userInfo') || '{}');
   const [showReportModal, setShowReportModal] = useState(false);
   const [reportText, setReportText] = useState('');
   const [reportSubmitted, setReportSubmitted] = useState(false);
@@ -30,6 +32,9 @@ export function CollegeDetails() {
   const [grievances, setGrievances] = useState([]);
   const [loadingGrievances, setLoadingGrievances] = useState(false);
   const [hasAgreed, setHasAgreed] = useState({});
+  const [selectedPostId, setSelectedPostId] = useState(null);
+  const [collegePosts, setCollegePosts] = useState([]);
+  const [loadingPosts, setLoadingPosts] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -37,7 +42,21 @@ export function CollegeDetails() {
       document.title = `${college.name} - College Details | Admyra`;
     }
     loadGrievances();
+    loadCollegePosts();
   }, [collegeId, college]);
+
+  const loadCollegePosts = async () => {
+    if (!college?.name) return;
+    setLoadingPosts(true);
+    try {
+      const { data } = await fetchCollegePosts(college.name);
+      setCollegePosts(data);
+    } catch (err) {
+      console.error('Failed to load college posts');
+    } finally {
+      setLoadingPosts(false);
+    }
+  };
 
   const loadGrievances = async () => {
     setLoadingGrievances(true);
@@ -98,10 +117,50 @@ export function CollegeDetails() {
   const tabs = [
     { id: 'insights', label: 'About', icon: Info },
     { id: 'grievances', label: 'Grievances', icon: ShieldAlert },
+    { id: 'gallery', label: 'Gallery', icon: Camera },
     { id: 'community', label: 'Partners', icon: Heart },
     { id: 'facilities', label: 'Infra', icon: Library },
     { id: 'location', label: 'Map', icon: MapIcon }
   ];
+
+  const handleDragEnd = (event, info) => {
+    const swipeThreshold = 50;
+    const currentIndex = tabs.findIndex(t => t.id === activeTab);
+    
+    if (info.offset.x > swipeThreshold && currentIndex > 0) {
+      setActiveTab(tabs[currentIndex - 1].id);
+    } else if (info.offset.x < -swipeThreshold && currentIndex < tabs.length - 1) {
+      setActiveTab(tabs[currentIndex + 1].id);
+    }
+  };
+
+  const [showCommentDrawer, setShowCommentDrawer] = useState(false);
+  const [selectedGrievance, setSelectedGrievance] = useState(null);
+  const [newComment, setNewComment] = useState('');
+  const [comments, setComments] = useState([]);
+  const [loadingComments, setLoadingComments] = useState(false);
+
+  const openComments = (g) => {
+    setSelectedGrievance(g);
+    setShowCommentDrawer(true);
+    // In a real app, we would fetch comments for this grievance
+    setComments([
+      { id: 1, text: "Totally agree with this! The labs need urgent upgrade.", user: { name: "Rahul K.", avatar: "" }, createdAt: new Date(), isPinned: true },
+      { id: 2, text: "I've complained about this too, but no response yet.", user: { name: "Anjali M.", avatar: "" }, createdAt: new Date() }
+    ]);
+  };
+
+  const handleAddComment = () => {
+    if (!newComment.trim()) return;
+    const comment = {
+      id: Date.now(),
+      text: newComment,
+      user: { name: "You", avatar: "" },
+      createdAt: new Date()
+    };
+    setComments([comment, ...comments]);
+    setNewComment('');
+  };
 
   return (
     <div className="min-h-screen bg-[#05060A] text-white selection:bg-indigo-500/30 font-sans overflow-x-hidden">
@@ -177,10 +236,14 @@ export function CollegeDetails() {
         <AnimatePresence mode="wait">
           <motion.div
             key={activeTab}
+            drag="x"
+            dragConstraints={{ left: 0, right: 0 }}
+            onDragEnd={handleDragEnd}
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -20 }}
             transition={{ duration: 0.3 }}
+            className="cursor-grab active:cursor-grabbing"
           >
             {activeTab === 'insights' && (
               <div className="space-y-24 md:space-y-40">
@@ -342,29 +405,51 @@ export function CollegeDetails() {
                             "{g.description || g.text}"
                          </p>
                          <div className="flex items-center justify-between pt-8 border-t border-white/5">
-                            {g.status === 'Reported' ? (
-                              <button 
-                                onClick={() => {
-                                  if (!hasAgreed[g.id]) {
-                                    setGrievances(prev => prev.map(item => 
-                                      item.id === g.id ? { ...item, agrees: item.agrees + 1 } : item
-                                    ));
-                                    setHasAgreed(prev => ({ ...prev, [g.id]: true }));
-                                  }
-                                }}
-                                className={cn(
-                                  "flex items-center gap-2 text-[10px] font-black transition-all uppercase group",
-                                  hasAgreed[g.id] ? "text-emerald-400" : "text-white/40 hover:text-white"
-                                )}
-                              >
-                                 <ThumbsUp size={16} className={cn("transition-transform", hasAgreed[g.id] ? "text-emerald-500 scale-110" : "text-indigo-500 group-hover:scale-110")} /> 
-                                 {g.agrees} Agree
-                              </button>
-                            ) : (
-                              <div className="flex items-center gap-3 text-[10px] font-black text-emerald-500/60 uppercase tracking-widest">
-                                 <Zap size={14} /> Resolved by Management
-                              </div>
-                            )}
+                             {g.status === 'Reported' ? (
+                               <button 
+                                 onClick={async () => {
+                                   try {
+                                     const { data } = await toggleGrievanceAgree(g.id);
+                                     setGrievances(prev => prev.map(item => 
+                                       item.id === g.id ? { ...item, agrees: data.agreed ? item.agrees + 1 : item.agrees - 1 } : item
+                                     ));
+                                     setHasAgreed(prev => ({ ...prev, [g.id]: data.agreed }));
+                                   } catch (err) {
+                                     alert('Please login to agree with reports');
+                                   }
+                                 }}
+                                 className={cn(
+                                   "flex items-center gap-2 text-[10px] font-black transition-all uppercase group",
+                                   hasAgreed[g.id] ? "text-emerald-400" : "text-white/40 hover:text-white"
+                                 )}
+                               >
+                                  <ThumbsUp size={16} className={cn("transition-transform", hasAgreed[g.id] ? "text-emerald-500 scale-110" : "text-indigo-500 group-hover:scale-110")} /> 
+                                  {g.agrees} Agree
+                               </button>
+                             ) : (
+                               <div className="flex items-center gap-3 text-[10px] font-black text-emerald-500/60 uppercase tracking-widest">
+                                  <Zap size={14} /> Resolved by Management
+                               </div>
+                             )}
+
+                             {g.userId === currentUser.id && (g.status === 'pending' || g.status === 'Reported') && (
+                               <button 
+                                 onClick={async () => {
+                                   if (window.confirm('Mark this issue as cleared?')) {
+                                     try {
+                                       await resolveGrievance(g.id);
+                                       loadGrievances();
+                                     } catch (err) {
+                                       alert('Failed to update status');
+                                     }
+                                   }
+                                 }}
+                                 className="px-4 py-1.5 rounded-xl border border-emerald-500/20 bg-emerald-500/5 text-emerald-400 text-[9px] font-black uppercase tracking-wider hover:bg-emerald-500/10 transition-all"
+                               >
+                                  Mark as Cleared
+                               </button>
+                             )}
+
                             <div className="text-[10px] font-black text-white/20 hover:text-rose-500 uppercase tracking-widest flex items-center gap-2 transition-colors">
                                {g.status === 'Reported' ? (
                                  <><Flag size={14} /> Report Junk</>
@@ -376,6 +461,46 @@ export function CollegeDetails() {
                       </Card>
                     </motion.div>
                   ))}
+                </div>
+              </div>
+            )}
+
+            {activeTab === 'gallery' && (
+              <div className="space-y-12 md:space-y-20">
+                <div className="text-center space-y-6 md:space-y-10">
+                   <div className="space-y-4">
+                      <h2 className="text-4xl md:text-7xl font-black italic tracking-tighter">Campus Gallery.</h2>
+                      <p className="text-base md:text-lg text-white/40 font-medium leading-relaxed max-w-2xl mx-auto">
+                         Live visual feed from the student community at {college.name}. Tag the college to contribute.
+                      </p>
+                   </div>
+                </div>
+
+                <div className="grid grid-cols-3 gap-0.5 md:gap-4 md:px-0 -mx-4 md:mx-0">
+                   {collegePosts.map((post) => (
+                      <motion.div 
+                        key={post.id} 
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        onClick={() => setSelectedPostId(post.id)}
+                        className="aspect-square bg-white/5 relative group cursor-pointer overflow-hidden rounded-sm md:rounded-[2rem] border border-white/5"
+                      >
+                         {post.type === 'reel' || post.type === 'REEL' ? (
+                            <video src={post.mediaUrl} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                         ) : (
+                            <img src={post.mediaUrl} alt="" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                         )}
+                         <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center gap-1">
+                            <div className="flex items-center gap-2 text-white">
+                               <Heart size={16} className="fill-white" />
+                               <span className="text-xs font-black italic">{post._count?.likes || 0}</span>
+                            </div>
+                            <span className="text-[8px] font-black uppercase tracking-widest text-white/60">@{post.user?.username || 'user'}</span>
+                         </div>
+                         {(post.type === 'reel' || post.type === 'REEL') && <Play size={16} className="absolute top-3 right-3 text-white/60 drop-shadow-lg" />}
+                      </motion.div>
+                   ))}
                 </div>
               </div>
             )}
@@ -506,6 +631,70 @@ export function CollegeDetails() {
           </motion.div>
         </AnimatePresence>
       </main>
+
+      {/* Post Modal (Gallery View) */}
+      <AnimatePresence>
+        {selectedPostId && (
+          <>
+            <motion.div 
+              initial={{ opacity: 0 }} 
+              animate={{ opacity: 1 }} 
+              exit={{ opacity: 0 }} 
+              onClick={() => setSelectedPostId(null)} 
+              className="fixed inset-0 bg-black/95 z-[400] backdrop-blur-sm" 
+            />
+            <motion.div 
+              initial={{ y: '100%' }} 
+              animate={{ y: 0 }} 
+              exit={{ y: '100%' }} 
+              className="fixed inset-0 z-[401] overflow-y-auto no-scrollbar bg-[#05060A]"
+            >
+              <div className="sticky top-0 bg-[#05060A]/80 backdrop-blur-xl p-4 flex items-center justify-between border-b border-white/5 z-20">
+                <button onClick={() => setSelectedPostId(null)} className="p-2 flex items-center gap-2 text-sm font-black uppercase text-white/60 hover:text-white transition-colors">
+                  <ChevronLeft /> Gallery
+                </button>
+                <button onClick={() => setSelectedPostId(null)} className="p-2 text-white/60 hover:text-white"><X size={24} /></button>
+              </div>
+
+              <div className="max-w-xl mx-auto pb-20">
+                {collegePosts.filter(p => p.id === selectedPostId).map(p => (
+                  <div key={p.id} className="mb-10">
+                    <div className="p-4 flex items-center justify-between">
+                      <div className="flex items-center gap-3">
+                          <Link to={`/profile/${p.userId}`} className="h-8 w-8 rounded-full bg-white/5 overflow-hidden border border-white/10">
+                            <img src={p.user?.avatar || `https://api.dicebear.com/7.x/avataaars/svg?seed=${p.userId}`} className="w-full h-full object-cover" />
+                          </Link>
+                          <div className="flex flex-col">
+                            <Link to={`/profile/${p.userId}`} className="text-xs font-black italic hover:text-indigo-400 transition-colors">@{p.user?.username || 'user'}</Link>
+                            <span className="text-[8px] text-indigo-400 font-black uppercase tracking-widest">{college.name}</span>
+                          </div>
+                      </div>
+                    </div>
+                    <div className="aspect-square bg-black overflow-hidden flex items-center relative">
+                       {p.type === 'REEL' ? <video src={p.mediaUrl} autoPlay loop muted playsInline className="w-full h-full object-contain" /> : <img src={p.mediaUrl} className="w-full h-full object-cover" />}
+                    </div>
+                    <div className="p-6 space-y-4">
+                       <div className="flex gap-6">
+                          <Heart size={26} className="text-white hover:fill-rose-500 hover:text-rose-500 transition-colors cursor-pointer" />
+                          <MessageCircle size={26} className="text-white hover:text-indigo-400 transition-colors cursor-pointer" />
+                          <Send size={26} className="text-white hover:text-indigo-400 transition-colors cursor-pointer" />
+                       </div>
+                       <div className="text-sm font-black italic tracking-tight">{(p._count?.likes || 0).toLocaleString()} likes</div>
+                       <p className="text-sm font-medium text-white/90 leading-relaxed">
+                          <Link to={`/profile/${p.userId}`} className="font-black italic mr-2 hover:text-indigo-400 transition-colors">@{p.user?.username || 'user'}</Link>
+                          {p.caption}
+                       </p>
+                       <div className="text-[9px] font-black text-white/20 uppercase tracking-[0.2em] pt-2">
+                          {new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long' })}
+                       </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
 
       {/* Simplified Footer */}
       <footer className="max-w-7xl mx-auto px-6 py-24 border-t border-white/5 text-center">

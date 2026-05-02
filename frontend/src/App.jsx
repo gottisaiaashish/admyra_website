@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Outlet, useLocation } from 'react-router-dom';
 import { Navbar } from './components/layout/Navbar';
 import { Home } from './pages/Home';
 import { Colleges } from './pages/Colleges';
@@ -11,7 +11,6 @@ import { Signup } from './pages/Signup';
 import { Profile } from './pages/Profile';
 import { EditProfile } from './pages/EditProfile';
 import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -24,22 +23,28 @@ function ScrollToTop() {
 }
 
 function Layout() {
+  const location = useLocation();
+  // Hide footer on profile and edit-profile pages
+  const isProfilePage = location.pathname.includes('/profile') || location.pathname === '/edit-profile';
+
   return (
     <div className="min-h-screen flex flex-col bg-background text-text-main">
       <Navbar />
       <main className="flex-grow">
         <Outlet />
       </main>
-      <footer className="border-t border-gray-800 py-8 bg-background">
-        <div className="max-w-7xl mx-auto px-4 text-center text-gray-400">
-          <p>© {new Date().getFullYear()} Admyra. All rights reserved. 
-          </p>
-        </div>
-        <div className="max-w-7xl mx-auto px-4 text-center text-gray-400">
-          <p> any queries? contact us at teamadmyra@gmail.com
-          </p>
-        </div>
-      </footer>
+      {!isProfilePage && (
+        <footer className="border-t border-gray-800 py-8 bg-background">
+          <div className="max-w-7xl mx-auto px-4 text-center text-gray-400">
+            <p>© {new Date().getFullYear()} Admyra. All rights reserved. 
+            </p>
+          </div>
+          <div className="max-w-7xl mx-auto px-4 text-center text-gray-400">
+            <p> any queries? contact us at teamadmyra@gmail.com
+            </p>
+          </div>
+        </footer>
+      )}
     </div>
   );
 }

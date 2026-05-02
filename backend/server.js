@@ -6,6 +6,10 @@ import authRoutes from './routes/authRoutes.js';
 import grievanceRoutes from './routes/grievanceRoutes.js';
 import partnerRoutes from './routes/partnerRoutes.js';
 import userRoutes from './routes/userRoutes.js';
+import postRoutes from './routes/postRoutes.js';
+import commentRoutes from './routes/commentRoutes.js';
+import storyRoutes from './routes/storyRoutes.js';
+import socialRoutes from './routes/socialRoutes.js';
 
 dotenv.config();
 
@@ -22,6 +26,10 @@ app.use('/api/auth', authRoutes);
 app.use('/api/grievances', grievanceRoutes);
 app.use('/api/partners', partnerRoutes);
 app.use('/api/users', userRoutes);
+app.use('/api/posts', postRoutes);
+app.use('/api/comments', commentRoutes);
+app.use('/api/stories', storyRoutes);
+app.use('/api/social', socialRoutes);
 
 // Basic route
 app.get('/', (req, res) => {

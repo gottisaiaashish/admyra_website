@@ -6,8 +6,8 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider = "sqlite"
+  url      = "file:./dev.db"
 }
 
 model User {
@@ -23,6 +23,66 @@ model User {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   grievances Grievance[]
+  comments   Comment[]
+  posts      Post[]
+  likes      Like[]
+  saves      Save[]
+  agrees     GrievanceAgree[]
+  stories    Story[]
+  followers  Follow[] @relation("UserFollowers")
+  following  Follow[] @relation("UserFollowing")
+}
+
+model Story {
+  id        String   @id @default(uuid())
+  mediaUrl  String
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+  createdAt DateTime @default(now())
+  expiresAt DateTime
+}
+
+model Follow {
+  id          String @id @default(uuid())
+  followerId  String
+  followingId String
+  follower    User   @relation("UserFollowing", fields: [followerId], references: [id])
+  following   User   @relation("UserFollowers", fields: [followingId], references: [id])
+  @@unique([followerId, followingId])
+}
+
+model Post {
+// ... existing Post fields ...
+  id          String   @id @default(uuid())
+  type        String   @default("photo") // "reel" or "photo"
+  mediaUrl    String
+  caption     String?
+  collegeTag  String?  // The tagged college name/ID
+  userId      String
+  user        User     @relation(fields: [userId], references: [id])
+  likes       Like[]
+  saves       Save[]
+  comments    Comment[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Like {
+  id      String @id @default(uuid())
+  userId  String
+  postId  String
+  user    User   @relation(fields: [userId], references: [id])
+  post    Post   @relation(fields: [postId], references: [id])
+  @@unique([userId, postId])
+}
+
+model Save {
+  id      String @id @default(uuid())
+  userId  String
+  postId  String
+  user    User   @relation(fields: [userId], references: [id])
+  post    Post   @relation(fields: [postId], references: [id])
+  @@unique([userId, postId])
 }
 
 model Grievance {
@@ -31,11 +91,35 @@ model Grievance {
   issueType   String
   description String
   status      String   @default("pending")
+  agrees      Int      @default(0)
   isAnonymous Boolean  @default(false)
   userId      String
   user        User     @relation(fields: [userId], references: [id])
+  comments    Comment[]
+  agrees_list GrievanceAgree[]
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
+}
+
+model GrievanceAgree {
+  id          String    @id @default(uuid())
+  userId      String
+  grievanceId String
+  user        User      @relation(fields: [userId], references: [id])
+  grievance   Grievance @relation(fields: [grievanceId], references: [id])
+  @@unique([userId, grievanceId])
+}
+
+model Comment {
+  id          String     @id @default(uuid())
+  text        String
+  userId      String
+  user        User       @relation(fields: [userId], references: [id])
+  grievanceId String?
+  grievance   Grievance? @relation(fields: [grievanceId], references: [id])
+  postId      String?
+  post        Post?      @relation(fields: [postId], references: [id])
+  createdAt   DateTime   @default(now())
 }
 
 model Partner {

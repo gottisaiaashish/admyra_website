@@ -28,7 +28,15 @@ export function EditProfile() {
 
   useEffect(() => {
     if (!loggedInUser) {
-      navigate('/login');
+      // For demo purposes, we'll use a mock user if not logged in
+      console.warn('Demo Mode: Using mock data for editing');
+      setFormData({
+        name: 'Demo Student',
+        username: 'demostudent',
+        bio: 'This is a demo bio.',
+        avatar: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200&h=200&auto=format&fit=crop'
+      });
+      setFetching(false);
       return;
     }
     loadProfile();
@@ -50,10 +58,35 @@ export function EditProfile() {
     }
   };
 
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      if (file.size > 2 * 1024 * 1024) {
+         setError('Image size should be less than 2MB');
+         return;
+      }
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setFormData({ ...formData, avatar: reader.result });
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
     setError('');
+    
+    if (!loggedInUser) {
+      // Mock save for demo
+      setTimeout(() => {
+        setLoading(false);
+        navigate('/profile');
+      }, 1000);
+      return;
+    }
+
     try {
       const { data } = await updateUserProfile(formData);
       // Update local storage info if name/avatar changed
@@ -97,29 +130,52 @@ export function EditProfile() {
           
           {/* Avatar Section */}
           <div className="flex flex-col items-center space-y-6">
-             <div className="relative group">
-                <div className="h-32 w-32 rounded-[2.5rem] p-1 bg-gradient-to-br from-indigo-500 to-purple-600">
-                   <div className="w-full h-full rounded-[2.2rem] bg-[#0A0C14] overflow-hidden flex items-center justify-center">
-                      {formData.avatar ? (
-                        <img src={formData.avatar} alt="Preview" className="w-full h-full object-cover" />
-                      ) : (
+             <div 
+               className="relative group cursor-pointer"
+               onClick={() => document.getElementById('avatar-upload').click()}
+             >
+                <div className="h-32 w-32 md:h-40 md:w-40 rounded-full overflow-hidden shadow-2xl relative">
+                   {formData.avatar ? (
+                     <img src={formData.avatar} alt="Preview" className="w-full h-full object-cover" />
+                   ) : (
+                     <div className="w-full h-full bg-white/5 flex items-center justify-center">
                         <UserIcon size={48} className="text-white/10" />
-                      )}
+                     </div>
+                   )}
+                   {/* Hover Overlay */}
+                   <div className="absolute inset-0 bg-indigo-600/60 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
+                      <Camera size={24} className="text-white mb-2" />
+                      <span className="text-[8px] font-black uppercase tracking-widest text-white">Change</span>
                    </div>
                 </div>
-                <div className="absolute inset-0 bg-black/40 rounded-[2.5rem] opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity pointer-events-none">
-                   <Camera size={24} className="text-white" />
-                </div>
+                <input 
+                  id="avatar-upload"
+                  type="file" 
+                  accept="image/*"
+                  className="hidden" 
+                  onChange={handleFileChange}
+                />
              </div>
              
-             <div className="w-full space-y-2">
-                <label className="text-[9px] font-black text-white/20 uppercase tracking-widest ml-1">Profile Image URL</label>
-                <Input 
-                  value={formData.avatar}
-                  onChange={(e) => setFormData({...formData, avatar: e.target.value})}
-                  placeholder="https://images.unsplash.com/photo-..."
-                  className="bg-white/[0.02] border-white/10"
-                />
+             <div className="w-full text-center space-y-4">
+                <Button 
+                   type="button"
+                   variant="ghost" 
+                   onClick={() => document.getElementById('avatar-upload').click()}
+                   className="text-indigo-400 font-black text-[10px] uppercase tracking-[0.2em] hover:bg-indigo-500/10 h-10 px-6 rounded-xl"
+                >
+                   <Camera size={14} className="mr-2" /> Choose from Gallery
+                </Button>
+                
+                <div className="space-y-2">
+                   <label className="text-[9px] font-black text-white/20 uppercase tracking-widest ml-1">Or Paste Image URL</label>
+                   <Input 
+                     value={formData.avatar}
+                     onChange={(e) => setFormData({...formData, avatar: e.target.value})}
+                     placeholder="https://images.unsplash.com/photo-..."
+                     className="bg-white/[0.02] border-white/10 text-center italic"
+                   />
+                </div>
              </div>
           </div>
 
