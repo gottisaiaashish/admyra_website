@@ -24,12 +24,12 @@ function ScrollToTop() {
 
 function Layout() {
   const location = useLocation();
-  // Hide footer on profile and edit-profile pages
+  const hideNavbar = location.pathname === '/edit-profile';
   const isProfilePage = location.pathname.includes('/profile') || location.pathname === '/edit-profile';
 
   return (
     <div className="min-h-screen flex flex-col bg-background text-text-main">
-      <Navbar />
+      {!hideNavbar && <Navbar />}
       <main className="flex-grow">
         <Outlet />
       </main>
