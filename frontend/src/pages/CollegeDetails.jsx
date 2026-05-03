@@ -425,7 +425,8 @@ export function CollegeDetails() {
                                        ));
                                        setHasAgreed(prev => ({ ...prev, [g.id]: data.agreed }));
                                      } catch (err) {
-                                       alert('Please login to agree with reports');
+                                       const msg = err.response?.data?.message || 'Failed to update agreement. Please ensure you are logged in.';
+                                       alert(msg);
                                      }
                                    }}
                                    className={cn(
