@@ -171,39 +171,6 @@ export function Navbar() {
                       {link.name}
                     </NavLink>
                   ))}
-                  <div className="pt-4 px-4 flex flex-col items-center">
-                    {loggedInUser ? (
-                      <div className="w-full space-y-3">
-                        <div 
-                          onClick={() => {
-                            setIsOpen(false);
-                            handleProfileClick();
-                          }}
-                          className="w-full flex items-center gap-4 p-4 rounded-2xl bg-white/5 border border-white/10 cursor-pointer"
-                        >
-                          <div className="h-12 w-12 rounded-full overflow-hidden border border-white/10">
-                            <div className="w-full h-full bg-[#0A0C14] flex items-center justify-center">
-                              {loggedInUser?.avatar ? (
-                                <img src={loggedInUser.avatar} alt="" className="w-full h-full object-cover" />
-                              ) : (
-                                <GraduationCap className="h-6 w-6 text-indigo-500/50" />
-                              )}
-                            </div>
-                          </div>
-                          <div className="flex flex-col">
-                            <span className="text-sm font-black text-white italic">{loggedInUser?.name}</span>
-                            <span className="text-[10px] font-bold text-indigo-400 uppercase tracking-widest">Account Settings</span>
-                          </div>
-                        </div>
-                      </div>
-                    ) : (
-                      <div onClick={() => { setIsOpen(false); handleProfileClick(); }} className="w-full mb-3 cursor-pointer">
-                        <Button className="w-full py-4 rounded-xl font-black text-[10px] uppercase tracking-[0.2em] bg-gradient-to-r from-indigo-600 to-purple-600 shadow-xl shadow-indigo-600/20">
-                          Login / Create Account
-                        </Button>
-                      </div>
-                    )}
-                  </div>
                 </div>
               </motion.div>
             )}

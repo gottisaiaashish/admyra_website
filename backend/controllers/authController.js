@@ -63,6 +63,7 @@ const registerUser = async (req, res) => {
       email,
       username,
       password: hashedPassword,
+      bio: 'bio',
     },
   });
 

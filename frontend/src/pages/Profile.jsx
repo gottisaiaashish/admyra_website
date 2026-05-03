@@ -409,20 +409,39 @@ export function Profile() {
 
   return (
     <div className="min-h-screen bg-[#05060A] text-white selection:bg-indigo-500/30 pb-20 overflow-x-hidden -mt-16 md:-mt-20">
-      <input type="file" ref={fileInputRef} className="hidden" accept="image/*,video/*" onChange={(e) => {
+      <input type="file" ref={fileInputRef} className="hidden" accept="image/*,video/*" onChange={async (e) => {
         const file = e.target.files[0];
         if (file) {
-          if (file.name.toLowerCase().endsWith('.heic') || file.type === 'image/heic') {
-            alert('HEIC format (iPhone) is not supported by browsers. Please use JPG or PNG.');
-            return;
+          setLoading(true);
+          try {
+            let fileToProcess = file;
+            
+            // Handle HEIC format from iPhones
+            if (file.name.toLowerCase().endsWith('.heic') || file.type === 'image/heic') {
+              const heic2any = (await import('heic2any')).default;
+              const convertedBlob = await heic2any({
+                blob: file,
+                toType: 'image/jpeg',
+                quality: 0.8
+              });
+              fileToProcess = new File([convertedBlob], file.name.replace(/\.heic$/i, '.jpg'), {
+                type: 'image/jpeg'
+              });
+            }
+
+            const reader = new FileReader();
+            reader.onloadend = () => {
+              setSelectedMedia(reader.result);
+              setShowCreatorMode(true);
+              setShowDraftView(true);
+              setLoading(false);
+            };
+            reader.readAsDataURL(fileToProcess);
+          } catch (err) {
+            console.error('Image processing error:', err);
+            alert('Failed to process image. Please try another one.');
+            setLoading(false);
           }
-          const reader = new FileReader();
-          reader.onloadend = () => {
-            setSelectedMedia(reader.result);
-            setShowCreatorMode(true);
-            setShowDraftView(true);
-          };
-          reader.readAsDataURL(file);
         }
       }} />
 
@@ -830,7 +849,13 @@ export function Profile() {
                 <div className="p-6 flex items-center justify-between border-b border-white/5">
                   <button onClick={() => setShowDraftView(false)} className="text-[10px] font-black uppercase">Back</button>
                   <h3 className="text-sm font-black italic">New {creatorType}</h3>
-                  <button onClick={handleFinalShare} className="text-[10px] font-black uppercase text-indigo-400">Share</button>
+                  <button 
+                    disabled={loading}
+                    onClick={handleFinalShare} 
+                    className={cn("text-[10px] font-black uppercase", loading ? "text-white/20 cursor-wait" : "text-indigo-400")}
+                  >
+                    {loading ? 'Sharing...' : 'Share'}
+                  </button>
                 </div>
                 <div className="p-6 space-y-8 flex-1 overflow-y-auto">
                    <div className="flex gap-4">

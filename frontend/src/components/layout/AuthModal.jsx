@@ -4,7 +4,7 @@ import { ArrowLeft, Mail, Lock, User, ArrowRight } from 'lucide-react';
 import { Button } from '../ui';
 import { login, signup, googleAuth } from '../../api';
 
-export function AuthModal({ isOpen, onClose, initialMode = 'login' }) {
+export function AuthModal({ isOpen, onClose, initialMode = 'choice' }) {
   const [mode, setMode] = useState(initialMode);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
@@ -63,129 +63,161 @@ export function AuthModal({ isOpen, onClose, initialMode = 'login' }) {
           </button>
 
           <div className="relative z-10">
-            <div className="text-center mb-8">
-              <h2 className="text-3xl font-black italic tracking-tighter text-white mb-2">
-                {mode === 'login' ? 'WELCOME BACK' : 'JOIN ADMYRA'}
-              </h2>
-              <p className="text-sm text-white/40 font-medium">
-                {mode === 'login' ? 'Enter your credentials to continue' : 'Create an account to get started'}
-              </p>
-            </div>
+            {mode === 'choice' ? (
+              <div className="text-center py-8">
+                <div className="h-20 w-20 bg-indigo-600/10 rounded-full flex items-center justify-center mx-auto mb-8 border border-indigo-500/20">
+                  <User size={32} className="text-indigo-400" />
+                </div>
+                <h2 className="text-3xl font-black italic tracking-tighter text-white mb-4 uppercase">
+                  Login or Signup First.
+                </h2>
+                <p className="text-sm text-white/40 font-medium mb-10 max-w-[240px] mx-auto leading-relaxed italic">
+                  You need to have an account to access this feature.
+                </p>
+                <div className="space-y-4">
+                  <Button 
+                    onClick={() => setMode('signup')}
+                    className="w-full py-5 rounded-2xl font-black text-xs uppercase tracking-[0.2em] bg-white text-black hover:bg-white/90 shadow-xl shadow-white/5"
+                  >
+                    Signup Now <ArrowRight size={16} className="ml-2 inline" />
+                  </Button>
+                  <Button 
+                    variant="ghost"
+                    onClick={() => setMode('login')}
+                    className="w-full py-5 rounded-2xl font-black text-xs uppercase tracking-[0.2em] text-white/60 hover:text-white hover:bg-white/5"
+                  >
+                    Already have an account? Login
+                  </Button>
+                </div>
+              </div>
+            ) : (
+              <>
+                <div className="text-center mb-8">
+                  <h2 className="text-3xl font-black italic tracking-tighter text-white mb-2">
+                    {mode === 'login' ? 'WELCOME BACK' : 'JOIN ADMYRA'}
+                  </h2>
+                  <p className="text-sm text-white/40 font-medium">
+                    {mode === 'login' ? 'Enter your credentials to continue' : 'Create an account to get started'}
+                  </p>
+                </div>
 
-            {error && (
-              <motion.div 
-                initial={{ opacity: 0, x: -10 }}
-                animate={{ opacity: 1, x: 0 }}
-                className="mb-6 p-4 rounded-2xl bg-rose-500/10 border border-rose-500/20 text-rose-500 text-xs font-bold text-center italic"
-              >
-                {error}
-              </motion.div>
-            )}
+                {error && (
+                  <motion.div 
+                    initial={{ opacity: 0, x: -10 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    className="mb-6 p-4 rounded-2xl bg-rose-500/10 border border-rose-500/20 text-rose-500 text-xs font-bold text-center italic"
+                  >
+                    {error}
+                  </motion.div>
+                )}
 
-            <form onSubmit={handleSubmit} className="space-y-4">
-              {mode === 'signup' && (
-                <>
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  {mode === 'signup' && (
+                    <>
+                      <div className="space-y-2">
+                        <label className="text-[10px] font-black uppercase tracking-widest text-white/40 ml-1">Full Name</label>
+                        <div className="relative group">
+                          <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-white/20 group-focus-within:text-indigo-400 transition-colors">
+                            <User size={18} />
+                          </div>
+                          <input
+                            type="text"
+                            name="name"
+                            value={formData.name}
+                            onChange={handleChange}
+                            className="w-full bg-white/5 border border-white/10 rounded-2xl py-3.5 pl-12 pr-4 text-white placeholder:text-white/10 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 transition-all font-medium text-sm"
+                            placeholder="John Doe"
+                            required
+                          />
+                        </div>
+                      </div>
+
+                      <div className="space-y-2">
+                        <label className="text-[10px] font-black uppercase tracking-widest text-white/40 ml-1">Username</label>
+                        <div className="relative group">
+                          <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-white/20 group-focus-within:text-indigo-400 transition-colors">
+                            <span className="font-bold text-lg">@</span>
+                          </div>
+                          <input
+                            type="text"
+                            name="username"
+                            value={formData.username}
+                            onChange={handleChange}
+                            className="w-full bg-white/5 border border-white/10 rounded-2xl py-3.5 pl-10 pr-4 text-white placeholder:text-white/10 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 transition-all font-medium text-sm"
+                            placeholder="johndoe"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </>
+                  )}
+
                   <div className="space-y-2">
-                    <label className="text-[10px] font-black uppercase tracking-widest text-white/40 ml-1">Full Name</label>
+                    <label className="text-[10px] font-black uppercase tracking-widest text-white/40 ml-1">
+                      {mode === 'login' ? 'Email or Username' : 'Email Address'}
+                    </label>
                     <div className="relative group">
                       <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-white/20 group-focus-within:text-indigo-400 transition-colors">
-                        <User size={18} />
+                        <Mail size={18} />
                       </div>
                       <input
-                        type="text"
-                        name="name"
-                        value={formData.name}
+                        type={mode === 'login' ? 'text' : 'email'}
+                        name="email"
+                        value={formData.email}
                         onChange={handleChange}
                         className="w-full bg-white/5 border border-white/10 rounded-2xl py-3.5 pl-12 pr-4 text-white placeholder:text-white/10 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 transition-all font-medium text-sm"
-                        placeholder="John Doe"
+                        placeholder={mode === 'login' ? "Username or email" : "name@example.com"}
                         required
                       />
                     </div>
                   </div>
 
                   <div className="space-y-2">
-                    <label className="text-[10px] font-black uppercase tracking-widest text-white/40 ml-1">Username</label>
+                    <div className="flex justify-between items-center px-1">
+                      <label className="text-[10px] font-black uppercase tracking-widest text-white/40">Password</label>
+                      {mode === 'login' && (
+                        <button type="button" className="text-[10px] font-bold text-indigo-400 hover:underline">Forgot?</button>
+                      )}
+                    </div>
                     <div className="relative group">
                       <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-white/20 group-focus-within:text-indigo-400 transition-colors">
-                        <span className="font-bold">@</span>
+                        <Lock size={18} />
                       </div>
                       <input
-                        type="text"
-                        name="username"
-                        value={formData.username}
+                        type="password"
+                        name="password"
+                        value={formData.password}
                         onChange={handleChange}
-                        className="w-full bg-white/5 border border-white/10 rounded-2xl py-3.5 pl-10 pr-4 text-white placeholder:text-white/10 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 transition-all font-medium text-sm"
-                        placeholder="johndoe"
+                        className="w-full bg-white/5 border border-white/10 rounded-2xl py-3.5 pl-12 pr-4 text-white placeholder:text-white/10 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 transition-all font-medium text-sm"
+                        placeholder="••••••••"
                         required
                       />
                     </div>
                   </div>
-                </>
-              )}
 
-              <div className="space-y-2">
-                <label className="text-[10px] font-black uppercase tracking-widest text-white/40 ml-1">
-                  {mode === 'login' ? 'Email or Username' : 'Email Address'}
-                </label>
-                <div className="relative group">
-                  <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-white/20 group-focus-within:text-indigo-400 transition-colors">
-                    <Mail size={18} />
+                  <Button 
+                    type="submit" 
+                    disabled={loading}
+                    className="w-full py-4 rounded-2xl font-black text-xs uppercase tracking-[0.2em] bg-white text-black hover:bg-white/90 shadow-xl shadow-white/5 mt-4"
+                  >
+                    {loading ? 'PROCESSING...' : (mode === 'login' ? 'LOGIN NOW' : 'CREATE ACCOUNT')}
+                  </Button>
+
+                  <div className="mt-8 text-center">
+                    <p className="text-[10px] font-bold text-white/40 uppercase tracking-widest">
+                      {mode === 'login' ? "Don't have an account?" : "Already have an account?"}
+                      <button 
+                        type="button"
+                        onClick={() => setMode(mode === 'login' ? 'signup' : 'login')}
+                        className="ml-2 text-indigo-400 hover:text-indigo-300 transition-colors"
+                      >
+                        {mode === 'login' ? 'SIGNUP NOW' : 'LOGIN HERE'}
+                      </button>
+                    </p>
                   </div>
-                  <input
-                    type={mode === 'login' ? 'text' : 'email'}
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="w-full bg-white/5 border border-white/10 rounded-2xl py-3.5 pl-12 pr-4 text-white placeholder:text-white/10 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 transition-all font-medium text-sm"
-                    placeholder={mode === 'login' ? "Username or email" : "name@example.com"}
-                    required
-                  />
-                </div>
-              </div>
-
-              <div className="space-y-2">
-                <div className="flex justify-between items-center px-1">
-                  <label className="text-[10px] font-black uppercase tracking-widest text-white/40">Password</label>
-                  {mode === 'login' && (
-                    <button type="button" className="text-[10px] font-bold text-indigo-400 hover:underline">Forgot?</button>
-                  )}
-                </div>
-                <div className="relative group">
-                  <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-white/20 group-focus-within:text-indigo-400 transition-colors">
-                    <Lock size={18} />
-                  </div>
-                  <input
-                    type="password"
-                    name="password"
-                    value={formData.password}
-                    onChange={handleChange}
-                    className="w-full bg-white/5 border border-white/10 rounded-2xl py-3.5 pl-12 pr-4 text-white placeholder:text-white/10 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 transition-all font-medium text-sm"
-                    placeholder="••••••••"
-                    required
-                  />
-                </div>
-              </div>
-
-              <Button 
-                type="submit" 
-                disabled={loading}
-                className="w-full py-4 rounded-2xl font-black text-xs uppercase tracking-[0.2em] bg-white text-black hover:bg-white/90 shadow-xl shadow-white/5 mt-4"
-              >
-                {loading ? 'PROCESSING...' : (mode === 'login' ? 'LOGIN NOW' : 'CREATE ACCOUNT')}
-              </Button>
-            </form>
-
-            <div className="mt-8 text-center">
-              <p className="text-[10px] font-bold text-white/40 uppercase tracking-widest">
-                {mode === 'login' ? "Don't have an account?" : "Already have an account?"}
-                <button 
-                  onClick={() => setMode(mode === 'login' ? 'signup' : 'login')}
-                  className="ml-2 text-indigo-400 hover:text-indigo-300 transition-colors"
-                >
-                  {mode === 'login' ? 'SIGNUP NOW' : 'LOGIN HERE'}
-                </button>
-              </p>
-            </div>
+                </form>
+              </>
+            )}
           </div>
         </motion.div>
       </div>

@@ -50,22 +50,44 @@ export function EditProfile() {
     }
   };
 
-  const handleFileChange = (e) => {
+  const handleFileChange = async (e) => {
     const file = e.target.files[0];
     if (file) {
-      if (file.name.toLowerCase().endsWith('.heic') || file.type === 'image/heic') {
-        alert('HEIC format (iPhone) is not supported by browsers. Please use JPG or PNG.');
-        return;
+      setLoading(true);
+      setError('');
+      try {
+        let fileToProcess = file;
+        
+        // Handle HEIC format from iPhones
+        if (file.name.toLowerCase().endsWith('.heic') || file.type === 'image/heic') {
+          const heic2any = (await import('heic2any')).default;
+          const convertedBlob = await heic2any({
+            blob: file,
+            toType: 'image/jpeg',
+            quality: 0.8
+          });
+          fileToProcess = new File([convertedBlob], file.name.replace(/\.heic$/i, '.jpg'), {
+            type: 'image/jpeg'
+          });
+        }
+
+        if (fileToProcess.size > 2 * 1024 * 1024) {
+          setError('Image size should be less than 2MB');
+          setLoading(false);
+          return;
+        }
+
+        const reader = new FileReader();
+        reader.onloadend = () => {
+          setFormData({ ...formData, avatar: reader.result });
+          setLoading(false);
+        };
+        reader.readAsDataURL(fileToProcess);
+      } catch (err) {
+        console.error('Image processing error:', err);
+        setError('Failed to process image. Please try another one.');
+        setLoading(false);
       }
-      if (file.size > 2 * 1024 * 1024) {
-         setError('Image size should be less than 2MB');
-         return;
-      }
-      const reader = new FileReader();
-      reader.onloadend = () => {
-        setFormData({ ...formData, avatar: reader.result });
-      };
-      reader.readAsDataURL(file);
     }
   };
 
