@@ -92,7 +92,7 @@ export function Navbar() {
               {loggedInUser ? (
                 <div className="flex items-center gap-4">
                   <button 
-                    onClick={() => { localStorage.clear(); window.location.href = '/'; }}
+                    onClick={() => { localStorage.clear(); navigate('/'); }}
                     className="p-2 rounded-full transition text-rose-500/60 hover:text-rose-500 hover:bg-rose-500/5"
                     title="Logout"
                   >
@@ -130,12 +130,13 @@ export function Navbar() {
             
             <div className="flex items-center gap-2">
               {loggedInUser && (
-                <button 
-                  onClick={() => { localStorage.clear(); window.location.href = '/'; }}
-                  className="p-2 rounded-full transition text-rose-500/60"
-                >
-                  <LogOut className="h-5 w-5" />
-                </button>
+                  <button 
+                    onClick={() => { localStorage.clear(); navigate('/'); }}
+                    className="p-2 rounded-full transition text-rose-500/60 hover:text-rose-500 hover:bg-rose-500/5"
+                    title="Logout"
+                  >
+                    <LogOut className="h-5 w-5" />
+                  </button>
               )}
               <button 
                 onClick={handleProfileClick}

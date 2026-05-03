@@ -1197,7 +1197,7 @@ export function Profile() {
                     </div>
 
                     <div className="pt-8">
-                       <button onClick={() => { localStorage.clear(); navigate('/login'); }} className="w-full p-6 bg-rose-500/10 border border-rose-500/20 rounded-[2.5rem] text-rose-500 font-black text-xs uppercase tracking-widest hover:bg-rose-500/20 transition-all">Log Out</button>
+                       <button onClick={() => { localStorage.clear(); navigate('/'); }} className="w-full p-6 bg-rose-500/10 border border-rose-500/20 rounded-[2.5rem] text-rose-500 font-black text-xs uppercase tracking-widest hover:bg-rose-500/20 transition-all">Log Out</button>
                     </div>
                   </>
                 )}
