@@ -409,56 +409,58 @@ export function CollegeDetails() {
                             "{g.description || g.text}"
                          </p>
                          <div className="flex items-center justify-between pt-8 border-t border-white/5">
-                             {g.status === 'Reported' ? (
-                               <button 
-                                 onClick={async () => {
-                                   try {
-                                     const { data } = await toggleGrievanceAgree(g.id);
-                                     setGrievances(prev => prev.map(item => 
-                                       item.id === g.id ? { ...item, agrees: data.agreed ? item.agrees + 1 : item.agrees - 1 } : item
-                                     ));
-                                     setHasAgreed(prev => ({ ...prev, [g.id]: data.agreed }));
-                                   } catch (err) {
-                                     alert('Please login to agree with reports');
-                                   }
-                                 }}
-                                 className={cn(
-                                   "flex items-center gap-2 text-[10px] font-black transition-all uppercase group",
-                                   hasAgreed[g.id] ? "text-emerald-400" : "text-white/40 hover:text-white"
+                             {g.status === 'Reported' || g.status === 'pending' ? (
+                               <div className="flex flex-wrap items-center gap-6">
+                                 <button 
+                                   onClick={async () => {
+                                     try {
+                                       const { data } = await toggleGrievanceAgree(g.id);
+                                       setGrievances(prev => prev.map(item => 
+                                         item.id === g.id ? { ...item, agrees: data.agreed ? item.agrees + 1 : item.agrees - 1 } : item
+                                       ));
+                                       setHasAgreed(prev => ({ ...prev, [g.id]: data.agreed }));
+                                     } catch (err) {
+                                       alert('Please login to agree with reports');
+                                     }
+                                   }}
+                                   className={cn(
+                                     "flex items-center gap-2 text-[10px] font-black transition-all uppercase group",
+                                     hasAgreed[g.id] ? "text-emerald-400" : "text-white/40 hover:text-white"
+                                   )}
+                                 >
+                                    <ThumbsUp size={16} className={cn("transition-transform", hasAgreed[g.id] ? "text-emerald-500 scale-110" : "text-indigo-500 group-hover:scale-110")} /> 
+                                    {g.agrees} Agree
+                                 </button>
+
+                                 {g.userId === currentUser.id && (
+                                   <button 
+                                     onClick={async () => {
+                                       if (window.confirm('Mark this issue as cleared?')) {
+                                         try {
+                                           await resolveGrievance(g.id);
+                                           loadGrievances();
+                                         } catch (err) {
+                                           alert('Failed to update status');
+                                         }
+                                       }
+                                     }}
+                                     className="px-6 py-2 rounded-xl border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 text-[9px] font-black uppercase tracking-wider hover:bg-emerald-500/20 transition-all shadow-lg shadow-emerald-500/5"
+                                   >
+                                      ISSUE CLEARED
+                                   </button>
                                  )}
-                               >
-                                  <ThumbsUp size={16} className={cn("transition-transform", hasAgreed[g.id] ? "text-emerald-500 scale-110" : "text-indigo-500 group-hover:scale-110")} /> 
-                                  {g.agrees} Agree
-                               </button>
+                               </div>
                              ) : (
-                               <div className="flex items-center gap-3 text-[10px] font-black text-emerald-500/60 uppercase tracking-widest">
-                                  <Zap size={14} /> Resolved by Management
+                               <div className="flex items-center gap-3 text-[10px] font-black text-emerald-400 uppercase tracking-widest bg-emerald-500/5 px-4 py-2 rounded-lg border border-emerald-500/10">
+                                  <CheckCircle2 size={16} /> Resolution Verified
                                </div>
                              )}
 
-                             {g.userId === currentUser.id && (g.status === 'pending' || g.status === 'Reported') && (
-                               <button 
-                                 onClick={async () => {
-                                   if (window.confirm('Mark this issue as cleared?')) {
-                                     try {
-                                       await resolveGrievance(g.id);
-                                       loadGrievances();
-                                     } catch (err) {
-                                       alert('Failed to update status');
-                                     }
-                                   }
-                                 }}
-                                 className="px-4 py-1.5 rounded-xl border border-emerald-500/20 bg-emerald-500/5 text-emerald-400 text-[9px] font-black uppercase tracking-wider hover:bg-emerald-500/10 transition-all"
-                               >
-                                  Mark as Cleared
-                               </button>
-                             )}
-
-                            <div className="text-[10px] font-black text-white/20 hover:text-rose-500 uppercase tracking-widest flex items-center gap-2 transition-colors">
-                               {g.status === 'Reported' ? (
+                            <div className="text-[10px] font-black text-white/10 hover:text-rose-500/40 uppercase tracking-widest flex items-center gap-2 transition-colors">
+                               {g.status === 'Reported' || g.status === 'pending' ? (
                                  <><Flag size={14} /> Report Junk</>
                                ) : (
-                                 <span className="text-white/10">Closed Thread</span>
+                                 <span className="opacity-0">.</span>
                                )}
                             </div>
                          </div>
