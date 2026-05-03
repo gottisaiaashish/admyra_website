@@ -15,8 +15,8 @@ const authUser = async (req, res) => {
   const user = await prisma.user.findFirst({
     where: {
       OR: [
-        { email: email },
-        { username: emailInput.trim() }
+        { email: { equals: email, mode: 'insensitive' } },
+        { username: { equals: emailInput.trim(), mode: 'insensitive' } }
       ]
     }
   });
@@ -49,7 +49,11 @@ const registerUser = async (req, res) => {
   const { name, email: emailInput, password, username } = req.body;
   const email = emailInput.toLowerCase().trim();
 
-  const userExists = await prisma.user.findUnique({ where: { email } });
+  const userExists = await prisma.user.findFirst({ 
+    where: { 
+      email: { equals: email, mode: 'insensitive' } 
+    } 
+  });
 
   if (userExists) {
     res.status(400).json({ message: 'Email is already registered. Please login instead.' });
