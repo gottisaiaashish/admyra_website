@@ -12,21 +12,27 @@ const authUser = async (req, res) => {
   const { email: emailInput, password } = req.body;
   const email = emailInput.toLowerCase().trim();
 
-  const user = await prisma.user.findFirst({
-    where: {
-      OR: [
-        { email: { equals: email, mode: 'insensitive' } },
-        { username: { equals: emailInput.trim(), mode: 'insensitive' } }
-      ]
-    }
-  });
+  try {
+    const user = await prisma.user.findFirst({
+      where: {
+        OR: [
+          { email: { equals: email, mode: 'insensitive' } },
+          { username: { equals: emailInput.trim(), mode: 'insensitive' } }
+        ]
+      }
+    });
 
-  if (user) {
-    if (!user.password) {
-      return res.status(401).json({ message: 'Account exists via Social Login. Please use Google to login.' });
+    if (!user) {
+      return res.status(401).json({ message: 'User not found. Check your email or signup again.' });
     }
+
+    if (!user.password) {
+      return res.status(401).json({ message: 'Account exists via Google. Please use Google Login.' });
+    }
+
+    const isMatch = await bcrypt.compare(password, user.password);
     
-    if (await bcrypt.compare(password, user.password)) {
+    if (isMatch) {
       res.json({
         id: user.id,
         name: user.name,
@@ -36,10 +42,10 @@ const authUser = async (req, res) => {
         token: generateToken(user.id),
       });
     } else {
-      res.status(401).json({ message: 'Invalid password. Please try again.' });
+      res.status(401).json({ message: 'Incorrect password. If you reset it, please wait 2 mins for deploy.' });
     }
-  } else {
-    res.status(401).json({ message: 'User not found. Please Sign up first.' });
+  } catch (error) {
+    res.status(500).json({ message: 'Server error. Please try again later.' });
   }
 };
 
