@@ -91,13 +91,7 @@ export function Navbar() {
 
               {loggedInUser ? (
                 <div className="flex items-center gap-4">
-                  <button 
-                    onClick={() => { localStorage.clear(); navigate('/'); }}
-                    className="p-2 rounded-full transition text-rose-500/60 hover:text-rose-500 hover:bg-rose-500/5"
-                    title="Logout"
-                  >
-                    <LogOut className="h-5 w-5" />
-                  </button>
+
 
                   <div onClick={handleProfileClick} className="h-10 w-10 rounded-full overflow-hidden border border-white/5 hover:border-indigo-500/50 transition-all duration-500 cursor-pointer">
                     <div className="w-full h-full bg-[#0A0C14] flex items-center justify-center">
@@ -129,15 +123,6 @@ export function Navbar() {
             </NavLink>
             
             <div className="flex items-center gap-2">
-              {loggedInUser && (
-                  <button 
-                    onClick={() => { localStorage.clear(); navigate('/'); }}
-                    className="p-2 rounded-full transition text-rose-500/60 hover:text-rose-500 hover:bg-rose-500/5"
-                    title="Logout"
-                  >
-                    <LogOut className="h-5 w-5" />
-                  </button>
-              )}
               <button 
                 onClick={handleProfileClick}
                 className="p-2 rounded-full transition text-text-muted hover:text-text-main"
