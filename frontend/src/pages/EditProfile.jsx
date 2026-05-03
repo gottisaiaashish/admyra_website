@@ -206,15 +206,7 @@ export function EditProfile() {
                    <Camera size={14} className="mr-2" /> Choose from Gallery
                 </Button>
                 
-                <div className="space-y-2">
-                   <label className="text-[9px] font-black text-white/20 uppercase tracking-widest ml-1">Or Paste Image URL</label>
-                   <Input 
-                     value={formData.avatar}
-                     onChange={(e) => setFormData({...formData, avatar: e.target.value})}
-                     placeholder="https://images.unsplash.com/photo-..."
-                     className="bg-white/[0.02] border-white/10 text-center italic"
-                   />
-                </div>
+
              </div>
           </div>
 
