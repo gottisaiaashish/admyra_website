@@ -112,6 +112,9 @@ export function Profile() {
 
   useEffect(() => { loadProfile(); }, [id]);
 
+  const loggedInUser = JSON.parse(localStorage.getItem('userInfo') || '{}');
+  const isOwnProfile = String(user?.id) === String(loggedInUser?.id);
+
   useEffect(() => {
     if (selectedPostId && postRefs.current[selectedPostId]) {
       postRefs.current[selectedPostId].scrollIntoView({ behavior: 'auto', block: 'center' });
@@ -489,12 +492,14 @@ export function Profile() {
                 <span className="text-[10px] font-black uppercase tracking-[0.2em] text-indigo-400">@{user?.username || 'demostudent'}</span>
                 <ChevronLeft size={12} className="-rotate-90 text-indigo-400/40 group-hover:text-indigo-400 transition-colors" />
              </div>
-             <button 
-               onClick={() => setShowSettings(true)}
-               className="h-9 w-9 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 transition-all text-white/40 hover:text-white"
-             >
-                <MoreHorizontal size={20} />
-             </button>
+              {isOwnProfile && (
+                <button 
+                  onClick={() => setShowSettings(true)}
+                  className="h-9 w-9 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 transition-all text-white/40 hover:text-white"
+                >
+                   <MoreHorizontal size={20} />
+                </button>
+              )}
           </div>
 
           <div className="relative mb-6 cursor-pointer" onClick={() => stories.length > 0 && setShowStoryViewer(true)}>
@@ -518,9 +523,11 @@ export function Profile() {
               <Send size={16} className="text-indigo-400 group-hover:scale-110 transition-transform" />
               <span>Share Profile</span>
             </Button>
-            <Button className="flex-1 bg-white text-black h-12 rounded-2xl font-black text-[10px] uppercase tracking-[0.15em] hover:bg-white/90 shadow-xl shadow-white/5 flex items-center justify-center" onClick={() => navigate('/edit-profile')}>
-              Edit Profile
-            </Button>
+            {isOwnProfile && (
+              <Button className="flex-1 bg-white text-black h-12 rounded-2xl font-black text-[10px] uppercase tracking-[0.15em] hover:bg-white/90 shadow-xl shadow-white/5 flex items-center justify-center" onClick={() => navigate('/edit-profile')}>
+                Edit Profile
+              </Button>
+            )}
           </div>
 
           <div className="mt-4 text-left w-full">
@@ -666,7 +673,9 @@ export function Profile() {
                       </div>
                       <div className="flex items-center gap-1">
                         <button onClick={() => handleToggleHideLikes(p.id)} className="p-2 text-white/40">{p.hideLikes ? <EyeOff size={18} /> : <Eye size={18} />}</button>
-                        <button onClick={() => handleDeletePost(p.id)} className="p-2 text-rose-500/40"><Trash2 size={18} /></button>
+                        {isOwnProfile && (
+                          <button onClick={() => handleDeletePost(p.id)} className="p-2 text-rose-500/40"><Trash2 size={18} /></button>
+                        )}
                       </div>
                     </div>
                     <div className="aspect-square bg-black overflow-hidden flex items-center relative" onDoubleClick={() => handleLike(p.id)}>
@@ -978,9 +987,11 @@ export function Profile() {
                     <div className="text-sm font-black italic">Your Story</div>
                  </div>
                  <div className="flex items-center gap-4">
-                    <button onClick={() => handleDeleteStory(stories[currentStoryIndex].id)} className="text-white/40 hover:text-rose-500 transition-colors">
-                       <Trash2 size={22} />
-                    </button>
+                    {isOwnProfile && (
+                      <button onClick={() => handleDeleteStory(stories[currentStoryIndex].id)} className="text-white/40 hover:text-rose-500 transition-colors">
+                         <Trash2 size={22} />
+                      </button>
+                    )}
                     <button onClick={() => setShowStoryViewer(false)}>
                        <CloseIcon size={28} />
                     </button>
