@@ -81,23 +81,6 @@ export function Navbar() {
             </div>
 
             <div className="hidden md:flex items-center gap-4">
-              <button 
-                onClick={handleProfileClick}
-                className="p-2 rounded-full transition text-text-muted hover:text-text-main"
-                aria-label="View Profile"
-              >
-                <UserIcon className="h-5 w-5" />
-              </button>
-              
-              {loggedInUser && (
-                <button 
-                  onClick={() => { localStorage.clear(); window.location.href = '/'; }}
-                  className="p-2 rounded-full transition text-rose-500/60 hover:text-rose-500 hover:bg-rose-500/5"
-                  title="Logout"
-                >
-                  <LogOut className="h-5 w-5" />
-                </button>
-              )}
               <button
                 onClick={toggleTheme}
                 className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition text-text-muted hover:text-text-main mr-2"
@@ -105,23 +88,40 @@ export function Navbar() {
               >
                 {theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
               </button>
-              
-              {loggedInUser && (
-                <div onClick={handleProfileClick} className="flex items-center gap-3 group cursor-pointer">
-                  <div className="flex flex-col items-end">
-                    <span className="text-[10px] font-black text-white uppercase tracking-widest leading-none mb-0.5">{loggedInUser?.name}</span>
-                    <span className="text-[8px] font-bold text-white/40 uppercase tracking-widest leading-none">View Profile</span>
-                  </div>
-                  <div className="h-10 w-10 rounded-full overflow-hidden border border-white/5 group-hover:border-indigo-500/50 transition-all duration-500">
-                    <div className="w-full h-full bg-[#0A0C14] flex items-center justify-center">
-                      {loggedInUser?.avatar ? (
-                        <img src={loggedInUser.avatar} alt="" className="w-full h-full object-cover" />
-                      ) : (
-                        <GraduationCap className="h-5 w-5 text-indigo-500/50" />
-                      )}
+
+              {loggedInUser ? (
+                <div className="flex items-center gap-4">
+                  <button 
+                    onClick={() => { localStorage.clear(); window.location.href = '/'; }}
+                    className="p-2 rounded-full transition text-rose-500/60 hover:text-rose-500 hover:bg-rose-500/5"
+                    title="Logout"
+                  >
+                    <LogOut className="h-5 w-5" />
+                  </button>
+
+                  <div onClick={handleProfileClick} className="flex items-center gap-3 group cursor-pointer">
+                    <div className="flex flex-col items-end">
+                      <span className="text-[10px] font-black text-white uppercase tracking-widest leading-none">{loggedInUser?.name}</span>
+                    </div>
+                    <div className="h-10 w-10 rounded-full overflow-hidden border border-white/5 group-hover:border-indigo-500/50 transition-all duration-500">
+                      <div className="w-full h-full bg-[#0A0C14] flex items-center justify-center">
+                        {loggedInUser?.avatar ? (
+                          <img src={loggedInUser.avatar} alt="" className="w-full h-full object-cover" />
+                        ) : (
+                          <GraduationCap className="h-5 w-5 text-indigo-500/50" />
+                        )}
+                      </div>
                     </div>
                   </div>
                 </div>
+              ) : (
+                <button 
+                  onClick={handleProfileClick}
+                  className="p-2 rounded-full transition text-text-muted hover:text-text-main"
+                  aria-label="Login"
+                >
+                  <UserIcon className="h-5 w-5" />
+                </button>
               )}
             </div>
           </div>
