@@ -74,14 +74,43 @@ export function EditProfile() {
 
 
         const reader = new FileReader();
-        reader.onloadend = () => {
-          setFormData({ ...formData, avatar: reader.result });
-          setLoading(false);
+        reader.onloadend = async () => {
+          const img = new Image();
+          img.src = reader.result;
+          img.onload = () => {
+            const canvas = document.createElement('canvas');
+            let width = img.width;
+            let height = img.height;
+            
+            // Max dimensions for profile pic
+            const MAX_SIZE = 1200;
+            if (width > height) {
+              if (width > MAX_SIZE) {
+                height *= MAX_SIZE / width;
+                width = MAX_SIZE;
+              }
+            } else {
+              if (height > MAX_SIZE) {
+                width *= MAX_SIZE / height;
+                height = MAX_SIZE;
+              }
+            }
+            
+            canvas.width = width;
+            canvas.height = height;
+            const ctx = canvas.getContext('2d');
+            ctx.drawImage(img, 0, 0, width, height);
+            
+            // Compress as JPEG
+            const compressedBase64 = canvas.toDataURL('image/jpeg', 0.7);
+            setFormData({ ...formData, avatar: compressedBase64 });
+            setLoading(false);
+          };
         };
         reader.readAsDataURL(fileToProcess);
       } catch (err) {
         console.error('Image processing error:', err);
-        setError('Failed to process image. Please try another one.');
+        setError('Failed to process image. Please try a different photo.');
         setLoading(false);
       }
     }
