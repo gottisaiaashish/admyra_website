@@ -137,10 +137,40 @@ const getAllPosts = async (req, res) => {
   }
 };
 
+// @desc    Delete a post
+// @route   DELETE /api/posts/:id
+const deletePost = async (req, res) => {
+  const postId = req.params.id;
+  const userId = req.user.id;
+
+  try {
+    const post = await prisma.post.findUnique({
+      where: { id: postId },
+    });
+
+    if (!post) {
+      return res.status(404).json({ message: 'Post not found' });
+    }
+
+    if (post.userId !== userId) {
+      return res.status(403).json({ message: 'Not authorized to delete this post' });
+    }
+
+    await prisma.post.delete({
+      where: { id: postId },
+    });
+
+    res.json({ message: 'Post removed' });
+  } catch (error) {
+    res.status(400).json({ message: 'Error deleting post' });
+  }
+};
+
 export { 
   createPost, 
   toggleLike, 
   toggleSave, 
   getPostsByCollege, 
-  getAllPosts 
+  getAllPosts,
+  deletePost
 };

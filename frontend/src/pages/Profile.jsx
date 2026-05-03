@@ -42,7 +42,7 @@ import {
   ArrowUp,
   GraduationCap
 } from 'lucide-react';
-import { fetchUserProfile, fetchPosts, createPost, toggleLike, toggleSave, changePassword } from '../api';
+import { fetchUserProfile, fetchPosts, createPost, toggleLike, toggleSave, changePassword, deletePost } from '../api';
 import { Button, Card, Badge } from '../components/ui';
 import { colleges } from '../data/mock-data';
 
@@ -236,11 +236,17 @@ export function Profile() {
     setPosts(updateFn(posts)); setReels(updateFn(reels));
   };
 
-  const handleDeletePost = (postId) => {
+  const handleDeletePost = async (postId) => {
     if (window.confirm('Delete this post?')) {
-      setPosts(prev => prev.filter(p => p.id !== postId));
-      setReels(prev => prev.filter(p => p.id !== postId));
-      if (selectedPostId === postId) setSelectedPostId(null);
+      try {
+        await deletePost(postId);
+        setPosts(prev => prev.filter(p => p.id !== postId));
+        setReels(prev => prev.filter(p => p.id !== postId));
+        if (selectedPostId === postId) setSelectedPostId(null);
+      } catch (err) {
+        console.error('Failed to delete post:', err);
+        alert('Failed to delete post. Please try again.');
+      }
     }
   };
 

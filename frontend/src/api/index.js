@@ -38,6 +38,7 @@ export const fetchPosts = () => API.get('/posts');
 export const createPost = (postData) => API.post('/posts', postData);
 export const toggleLike = (id) => API.post(`/posts/${id}/like`);
 export const toggleSave = (id) => API.post(`/posts/${id}/save`);
+export const deletePost = (id) => API.delete(`/posts/${id}`);
 export const fetchCollegePosts = (tagName) => API.get(`/posts/college/${tagName}`);
 
 // Comment APIs

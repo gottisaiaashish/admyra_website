@@ -62,8 +62,12 @@ export function CollegeDetails() {
     setLoadingGrievances(true);
     try {
       const { data } = await fetchGrievances();
-      // Filter for current college (or just show all if that's the wall design)
-      setGrievances(data);
+      const filtered = data.filter(g => {
+        const gName = g.college?.toLowerCase() || '';
+        const cName = college.name?.toLowerCase() || '';
+        return gName === cName || cName.includes(gName) || gName.includes(cName);
+      });
+      setGrievances(filtered);
     } catch (err) {
       console.error('Failed to load grievances');
     } finally {
