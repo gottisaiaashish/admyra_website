@@ -126,14 +126,15 @@ export function Profile() {
     const timeout = new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), 1500));
     
     try {
+      const stored = localStorage.getItem('userInfo');
       let storedUserId = null;
-      try {
-        const stored = localStorage.getItem('userInfo');
-        if (stored) storedUserId = JSON.parse(stored)?.id;
-      } catch (e) { console.error('Parse error'); }
+      if (stored && stored !== "undefined") {
+        storedUserId = JSON.parse(stored)?.id;
+      }
 
+      // If no ID in URL and no logged in user, redirect to home
       if (!id && !storedUserId) {
-        setLoading(false);
+        navigate('/');
         return;
       }
 
