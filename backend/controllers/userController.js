@@ -92,19 +92,23 @@ const changePassword = async (req, res) => {
   const { currentPassword, newPassword } = req.body;
 
   try {
+    if (!currentPassword || !newPassword) {
+      return res.status(400).json({ message: 'Both current and new passwords are required' });
+    }
+
     const user = await prisma.user.findUnique({ where: { id: req.user.id } });
 
     if (!user) {
-      return res.status(404).json({ message: 'User not found' });
+      return res.status(404).json({ message: 'User session invalid. Please logout and login again.' });
     }
 
     if (!user.password) {
-      return res.status(400).json({ message: 'User signed up via social login. Password cannot be changed this way.' });
+      return res.status(400).json({ message: 'Social login detected. Password cannot be set this way.' });
     }
 
     const isMatch = await bcrypt.compare(currentPassword, user.password);
     if (!isMatch) {
-      return res.status(400).json({ message: 'Current password is incorrect' });
+      return res.status(400).json({ message: 'Current password mismatch. Use Admyra@123 if you reset it.' });
     }
 
     const salt = await bcrypt.genSalt(10);
@@ -117,7 +121,8 @@ const changePassword = async (req, res) => {
 
     res.json({ message: 'Password updated successfully' });
   } catch (error) {
-    res.status(500).json({ message: 'Error updating password' });
+    console.error('Password Update Error:', error.message);
+    res.status(500).json({ message: `Server error: ${error.message}` });
   }
 };
 
