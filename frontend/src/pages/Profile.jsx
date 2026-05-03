@@ -411,7 +411,12 @@ export function Profile() {
     }
   };
 
-  if (loading) return <div className="min-h-screen bg-[#05060A] flex items-center justify-center"><div className="w-12 h-12 border-4 border-t-indigo-500 rounded-full animate-spin" /></div>;
+  if (loading) return (
+    <div className="min-h-screen bg-[#05060A] flex flex-col items-center justify-center gap-4">
+      <div className="w-12 h-12 border-4 border-t-indigo-500 rounded-full animate-spin" />
+      <p className="text-[10px] font-black uppercase tracking-[0.2em] text-white/40">Processing Media...</p>
+    </div>
+  );
 
   const currentFeed = activeTab === 'saved' 
     ? [...posts, ...reels].filter(p => savedPosts.includes(p.id) && (savedSubTab === 'reels' ? p.type === 'REEL' : true)) 
@@ -468,7 +473,11 @@ export function Profile() {
         }
       }} />
 
-      <motion.div drag="x" dragConstraints={{ left: 0, right: 0 }} onDragEnd={(_, { offset }) => offset.x > 100 && setShowCreatorMode(true)}>
+      <motion.div 
+        drag={isOwnProfile ? "x" : false} 
+        dragConstraints={{ left: 0, right: 0 }} 
+        onDragEnd={(_, { offset }) => isOwnProfile && offset.x > 100 && setShowCreatorMode(true)}
+      >
         <div className="relative h-64 md:h-80 w-full overflow-hidden bg-gradient-to-b from-indigo-600/20 to-[#05060A]">
             <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20" />
         </div>
@@ -559,10 +568,10 @@ export function Profile() {
                 {activeTab === 'activity' ? (
                    user?.grievances?.length > 0 ? (
                      <motion.div 
-                        className="space-y-4 cursor-grab active:cursor-grabbing"
-                        drag="x"
+                        className={cn("space-y-4", isOwnProfile ? "cursor-grab active:cursor-grabbing" : "")}
+                        drag={isOwnProfile ? "x" : false}
                         dragConstraints={{ left: 0, right: 0 }}
-                        onDragEnd={handleTabDragEnd}
+                        onDragEnd={isOwnProfile ? handleTabDragEnd : undefined}
                      >
                         {user.grievances.map(g => (
                           <Card 
@@ -610,10 +619,10 @@ export function Profile() {
                   )
                 ) : (
                   <motion.div 
-                    className="grid grid-cols-3 gap-0.5 w-[calc(100%+2rem)] -mx-4 md:mx-0 md:w-full"
-                    drag="x"
+                    className={cn("grid grid-cols-3 gap-0.5 w-[calc(100%+2rem)] -mx-4 md:mx-0 md:w-full", isOwnProfile ? "cursor-grab active:cursor-grabbing" : "")}
+                    drag={isOwnProfile ? "x" : false}
                     dragConstraints={{ left: 0, right: 0 }}
-                    onDragEnd={handleTabDragEnd}
+                    onDragEnd={isOwnProfile ? handleTabDragEnd : undefined}
                   >
                     {currentFeed.map(p => (
                       <div key={p.id} onClick={() => setSelectedPostId(p.id)} className="aspect-square bg-white/5 overflow-hidden cursor-pointer active:scale-[0.98] transition-transform relative">
