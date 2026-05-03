@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, useNavigate, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { GraduationCap, Sun, Moon, Menu, X, ShieldCheck, PlusSquare, User as UserIcon } from 'lucide-react';
+import { GraduationCap, Sun, Moon, Menu, X, ShieldCheck, PlusSquare, User as UserIcon, LogOut } from 'lucide-react';
 import { Button } from '../ui';
 import { cn } from '../../lib/utils';
 import { useTheme } from '../ThemeProvider';
@@ -88,6 +88,16 @@ export function Navbar() {
               >
                 <UserIcon className="h-5 w-5" />
               </button>
+              
+              {loggedInUser && (
+                <button 
+                  onClick={() => { localStorage.clear(); window.location.href = '/'; }}
+                  className="p-2 rounded-full transition text-rose-500/60 hover:text-rose-500 hover:bg-rose-500/5"
+                  title="Logout"
+                >
+                  <LogOut className="h-5 w-5" />
+                </button>
+              )}
               <button
                 onClick={toggleTheme}
                 className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition text-text-muted hover:text-text-main mr-2"
@@ -124,6 +134,14 @@ export function Navbar() {
             </NavLink>
             
             <div className="flex items-center gap-2">
+              {loggedInUser && (
+                <button 
+                  onClick={() => { localStorage.clear(); window.location.href = '/'; }}
+                  className="p-2 rounded-full transition text-rose-500/60"
+                >
+                  <LogOut className="h-5 w-5" />
+                </button>
+              )}
               <button 
                 onClick={handleProfileClick}
                 className="p-2 rounded-full transition text-text-muted hover:text-text-main"
