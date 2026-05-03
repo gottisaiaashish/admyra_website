@@ -42,7 +42,7 @@ import {
   ArrowUp,
   GraduationCap
 } from 'lucide-react';
-import { fetchUserProfile, fetchPosts, createPost, toggleLike, toggleSave } from '../api';
+import { fetchUserProfile, fetchPosts, createPost, toggleLike, toggleSave, changePassword } from '../api';
 import { Button, Card, Badge } from '../components/ui';
 import { colleges } from '../data/mock-data';
 
@@ -259,6 +259,26 @@ export function Profile() {
   const handleSendPost = (postId) => {
      setShowShareSuccess(true);
      setTimeout(() => setShowShareSuccess(false), 2000);
+  };
+
+  const handlePasswordChange = async () => {
+    if (!passwordForm.current || !passwordForm.new || passwordForm.new !== passwordForm.confirm) return;
+    
+    setLoading(true);
+    try {
+      await changePassword({ 
+        currentPassword: passwordForm.current, 
+        newPassword: passwordForm.new 
+      });
+      alert('Password updated successfully!');
+      setPasswordForm({ current: '', new: '', confirm: '' });
+      setSettingsView('main');
+    } catch (err) {
+      console.error('Password change error:', err);
+      alert(err.response?.data?.message || 'Failed to update password');
+    } finally {
+      setLoading(false);
+    }
   };
 
   const [isRecording, setIsRecording] = useState(false);
@@ -1188,10 +1208,11 @@ export function Profile() {
                            <input type="password" value={passwordForm.confirm} onChange={(e) => setPasswordForm({...passwordForm, confirm: e.target.value})} className="w-full bg-white/5 border border-white/10 rounded-2xl h-14 px-6 outline-none focus:border-indigo-500 transition-colors" />
                         </div>
                         <Button 
-                          disabled={!passwordForm.new || passwordForm.new !== passwordForm.confirm}
+                          disabled={loading || !passwordForm.new || passwordForm.new !== passwordForm.confirm}
+                          onClick={handlePasswordChange}
                           className="w-full bg-indigo-500 h-14 rounded-2xl font-black text-[10px] uppercase tracking-widest mt-4"
                         >
-                           Update Password
+                           {loading ? 'Updating...' : 'Update Password'}
                         </Button>
                      </div>
                   </div>
