@@ -124,6 +124,7 @@ const googleAuth = async (req, res) => {
           email,
           googleId,
           avatar: picture,
+          bio: 'bio',
         },
       });
     } else if (!user.googleId) {

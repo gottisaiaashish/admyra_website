@@ -499,8 +499,8 @@ export function Profile() {
 
           <div className="relative mb-6 cursor-pointer" onClick={() => stories.length > 0 && setShowStoryViewer(true)}>
             {stories.length > 0 && <div className="absolute -inset-2 bg-gradient-to-tr from-yellow-400 via-rose-500 to-purple-600 rounded-full animate-spin-slow opacity-60" />}
-            <div className="h-40 w-40 md:h-52 md:w-52 rounded-full overflow-hidden shadow-[0_0_50px_rgba(0,0,0,0.5)] ring-1 ring-white/10 relative z-10">
-               <img src={user?.avatar} className="w-full h-full object-cover" />
+            <div className="h-40 w-40 md:h-52 md:w-52 rounded-full overflow-hidden shadow-[0_0_50px_rgba(0,0,0,0.5)] ring-1 ring-white/10 relative z-10 bg-[#0A0C14]">
+               <img src={user?.avatar || `https://api.dicebear.com/7.x/avataaars/svg?seed=${user?.username || 'default'}`} className="w-full h-full object-cover" />
             </div>
           </div>
 
@@ -510,7 +510,7 @@ export function Profile() {
                <Badge className="bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 uppercase text-[9px] font-black italic tracking-[0.15em] px-4 py-1.5 rounded-lg">Verified Student</Badge>
             </div>
             <p className="text-white/40 text-sm md:text-base italic max-w-xl mx-auto leading-relaxed font-medium">
-               {user?.bio || 'This is a demo profile to show you the beautiful glassmorphism UI.'}
+               {user?.bio || (user ? 'No bio yet.' : 'This is a demo profile to show you the beautiful glassmorphism UI.')}
             </p>
           </div>
           <div className="flex gap-4 w-full max-w-2xl mx-auto px-4">
