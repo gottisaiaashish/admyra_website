@@ -13,6 +13,13 @@ export function Login() {
   const [error, setError] = useState('');
   const navigate = useNavigate();
 
+  React.useEffect(() => {
+    const saved = localStorage.getItem('userInfo');
+    if (saved && saved !== "undefined") {
+      navigate('/');
+    }
+  }, [navigate]);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);

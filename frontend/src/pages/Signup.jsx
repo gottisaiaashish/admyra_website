@@ -15,6 +15,13 @@ export function Signup() {
   const [error, setError] = useState('');
   const navigate = useNavigate();
 
+  React.useEffect(() => {
+    const saved = localStorage.getItem('userInfo');
+    if (saved && saved !== "undefined") {
+      navigate('/');
+    }
+  }, [navigate]);
+
   const handleGoogleSuccess = async (credentialResponse) => {
     try {
       setLoading(true);
