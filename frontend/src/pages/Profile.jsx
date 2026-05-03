@@ -612,14 +612,14 @@ export function Profile() {
                       <div key={p.id} onClick={() => setSelectedPostId(p.id)} className="aspect-square bg-white/5 overflow-hidden cursor-pointer active:scale-[0.98] transition-transform relative">
                         {p.type === 'REEL' ? (
                           <div className="relative w-full h-full">
-                             <video src={p.url} className="w-full h-full object-cover" />
+                             <video src={p.mediaUrl} className="w-full h-full object-cover" />
                              <div className="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
                                 <Play size={24} className="text-white drop-shadow-2xl" />
                              </div>
                              <Play size={14} className="absolute bottom-2 left-2 text-white/60 shadow-lg" />
                           </div>
                         ) : (
-                          <img src={p.url} className="w-full h-full object-cover" />
+                          <img src={p.mediaUrl} className="w-full h-full object-cover" />
                         )}
                         {likedPosts.includes(p.id) && <div className="absolute top-2 right-2"><Heart size={12} className="fill-rose-500 text-rose-500" /></div>}
                       </div>
@@ -670,7 +670,7 @@ export function Profile() {
                       </div>
                     </div>
                     <div className="aspect-square bg-black overflow-hidden flex items-center relative" onDoubleClick={() => handleLike(p.id)}>
-                       {p.type === 'REEL' ? <video src={p.url} autoPlay loop muted playsInline className="w-full" /> : <img src={p.url} className="w-full h-full object-cover" />}
+                       {p.type === 'REEL' ? <video src={p.mediaUrl} autoPlay loop muted playsInline className="w-full" /> : <img src={p.mediaUrl} className="w-full h-full object-cover" />}
                     </div>
                     <div className="p-6 space-y-4">
                           <div className="flex justify-between">
@@ -1354,11 +1354,11 @@ export function Profile() {
                           <div key={p.id} onClick={() => { setSelectedPostId(p.id); setShowSettings(false); }} className="aspect-square bg-white/5 overflow-hidden cursor-pointer active:scale-95 transition-transform relative">
                              {p.type === 'REEL' ? (
                                <div className="relative w-full h-full">
-                                  <video src={p.url} className="w-full h-full object-cover" />
+                                  <video src={p.mediaUrl} className="w-full h-full object-cover" />
                                   <Play size={14} className="absolute bottom-2 left-2 text-white/60" />
                                </div>
                              ) : (
-                               <img src={p.url} className="w-full h-full object-cover" />
+                               <img src={p.mediaUrl} className="w-full h-full object-cover" />
                              )}
                           </div>
                         ))}
