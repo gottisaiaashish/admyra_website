@@ -71,11 +71,7 @@ export function EditProfile() {
           });
         }
 
-        if (fileToProcess.size > 2 * 1024 * 1024) {
-          setError('Image size should be less than 2MB');
-          setLoading(false);
-          return;
-        }
+
 
         const reader = new FileReader();
         reader.onloadend = () => {
