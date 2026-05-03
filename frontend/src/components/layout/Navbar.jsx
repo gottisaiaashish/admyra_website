@@ -43,7 +43,7 @@ export function Navbar() {
   ];
 
   const handleProfileClick = () => {
-    if (loggedInUser && loggedInUser.id) {
+    if (loggedInUser && loggedInUser.id && loggedInUser.id !== 'undefined') {
       navigate(`/profile/${loggedInUser.id}`);
     } else {
       setIsAuthModalOpen(true);

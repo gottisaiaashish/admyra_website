@@ -132,8 +132,7 @@ export function Profile() {
         storedUserId = JSON.parse(stored)?.id;
       }
 
-      // If no ID in URL and no logged in user, redirect to home
-      if (!id && !storedUserId) {
+      if (!id || id === 'undefined' || !storedUserId || storedUserId === 'undefined') {
         navigate('/');
         return;
       }
