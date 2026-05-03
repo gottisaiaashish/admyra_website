@@ -132,7 +132,12 @@ export function Profile() {
         if (stored) storedUserId = JSON.parse(stored)?.id;
       } catch (e) { console.error('Parse error'); }
 
-      const fetchPromise = fetchUserProfile(id || storedUserId || 'demo-123');
+      if (!id && !storedUserId) {
+        setLoading(false);
+        return;
+      }
+
+      const fetchPromise = fetchUserProfile(id || storedUserId);
       const { data } = await Promise.race([fetchPromise, timeout]);
       setUser(data);
       
@@ -504,7 +509,7 @@ export function Profile() {
                onClick={() => setShowAboutAccount(true)}
                className="bg-indigo-500/5 border border-indigo-500/20 px-6 py-2 rounded-full flex items-center gap-2 group cursor-pointer hover:bg-indigo-500/10 transition-all"
              >
-                <span className="text-[10px] font-black uppercase tracking-[0.2em] text-indigo-400">@{user?.username || 'demostudent'}</span>
+                <span className="text-[10px] font-black uppercase tracking-[0.2em] text-indigo-400">@{user?.username || 'user'}</span>
                 <ChevronLeft size={12} className="-rotate-90 text-indigo-400/40 group-hover:text-indigo-400 transition-colors" />
              </div>
               {isOwnProfile && (
@@ -530,7 +535,7 @@ export function Profile() {
                <Badge className="bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 uppercase text-[9px] font-black italic tracking-[0.15em] px-4 py-1.5 rounded-lg">Verified Student</Badge>
             </div>
             <p className="text-white/40 text-sm md:text-base italic max-w-xl mx-auto leading-relaxed font-medium">
-               {user?.bio || (user ? 'No bio yet.' : 'This is a demo profile to show you the beautiful glassmorphism UI.')}
+               {user?.bio || 'No bio yet.'}
             </p>
           </div>
           <div className="flex gap-4 w-full max-w-2xl mx-auto px-4">
