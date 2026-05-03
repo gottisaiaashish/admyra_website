@@ -89,29 +89,21 @@ export function Navbar() {
                 {theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
               </button>
 
-              {loggedInUser ? (
-                <div className="flex items-center gap-4">
-
-
-                  <div onClick={handleProfileClick} className="h-10 w-10 rounded-full overflow-hidden border border-white/5 hover:border-indigo-500/50 transition-all duration-500 cursor-pointer">
-                    <div className="w-full h-full bg-[#0A0C14] flex items-center justify-center">
-                      {loggedInUser?.avatar ? (
-                        <img src={loggedInUser.avatar} alt="" className="w-full h-full object-cover" />
-                      ) : (
-                        <UserIcon className="h-5 w-5 text-indigo-500/50" />
-                      )}
-                    </div>
-                  </div>
+              <div onClick={handleProfileClick} className="h-10 w-10 rounded-full overflow-hidden border border-white/5 hover:border-indigo-500/50 transition-all duration-500 cursor-pointer">
+                <div className="w-full h-full bg-[#0A0C14] flex items-center justify-center">
+                  {loggedInUser ? (
+                    loggedInUser.avatar ? (
+                      <img src={loggedInUser.avatar} alt="" className="w-full h-full object-cover" />
+                    ) : (
+                      <div className="bg-indigo-500/10 w-full h-full flex items-center justify-center">
+                        <UserIcon className="h-5 w-5 text-indigo-400" />
+                      </div>
+                    )
+                  ) : (
+                    <UserIcon className="h-5 w-5 text-text-muted" />
+                  )}
                 </div>
-              ) : (
-                <button 
-                  onClick={handleProfileClick}
-                  className="p-2 rounded-full transition text-text-muted hover:text-text-main"
-                  aria-label="Login"
-                >
-                  <UserIcon className="h-5 w-5" />
-                </button>
-              )}
+              </div>
             </div>
           </div>
         </div>
@@ -124,17 +116,26 @@ export function Navbar() {
             
             <div className="flex items-center gap-2">
               <button 
-                onClick={handleProfileClick}
-                className="p-2 rounded-full transition text-text-muted hover:text-text-main"
-              >
-                <UserIcon className="h-5 w-5" />
-              </button>
-              <button 
                 onClick={toggleTheme} 
                 className="p-2 rounded-full transition text-text-muted hover:text-text-main"
               >
                 {theme === 'dark' ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
               </button>
+              
+              <div onClick={handleProfileClick} className="h-9 w-9 rounded-full overflow-hidden border border-white/10 flex items-center justify-center cursor-pointer">
+                {loggedInUser ? (
+                  loggedInUser.avatar ? (
+                    <img src={loggedInUser.avatar} alt="" className="w-full h-full object-cover" />
+                  ) : (
+                    <div className="bg-indigo-500/10 w-full h-full flex items-center justify-center">
+                      <UserIcon className="h-4 w-4 text-indigo-400" />
+                    </div>
+                  )
+                ) : (
+                  <UserIcon className="h-4 w-4 text-text-muted" />
+                )}
+              </div>
+
               <button 
                 onClick={() => setIsOpen(!isOpen)}
                 className="p-2 rounded-lg text-text-muted transition-all active:scale-95"
