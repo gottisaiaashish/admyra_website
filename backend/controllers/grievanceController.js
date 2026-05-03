@@ -8,7 +8,7 @@ const reportIssue = async (req, res) => {
     const grievance = await prisma.grievance.create({
       data: {
         userId: req.user.id,
-        college,
+        college: college.trim(),
         issueType,
         description,
         isAnonymous,

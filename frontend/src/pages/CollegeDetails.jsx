@@ -62,10 +62,15 @@ export function CollegeDetails() {
     setLoadingGrievances(true);
     try {
       const { data } = await fetchGrievances();
+      // Robust filtering: handles guest users and potential name mismatches
       const filtered = data.filter(g => {
-        const gName = g.college?.toLowerCase() || '';
-        const cName = college.name?.toLowerCase() || '';
-        return gName === cName || cName.includes(gName) || gName.includes(cName);
+        const dbCollege = (g.college || '').trim().toLowerCase();
+        const currentCollege = (college?.name || '').trim().toLowerCase();
+        
+        // Exact match or partial match (e.g., "VNR" in "VNR Vignana Jyothi")
+        return dbCollege === currentCollege || 
+               currentCollege.includes(dbCollege) || 
+               dbCollege.includes(currentCollege);
       });
       setGrievances(filtered);
     } catch (err) {
