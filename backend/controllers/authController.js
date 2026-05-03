@@ -9,35 +9,45 @@ const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 // @desc    Auth user & get token
 // @route   POST /api/auth/login
 const authUser = async (req, res) => {
-  const { email, password } = req.body; // 'email' field in body can contain username or email
+  const { email: emailInput, password } = req.body;
+  const email = emailInput.toLowerCase().trim();
 
   const user = await prisma.user.findFirst({
     where: {
       OR: [
         { email: email },
-        { username: email }
+        { username: emailInput.trim() }
       ]
     }
   });
 
-  if (user && user.password && (await bcrypt.compare(password, user.password))) {
-    res.json({
-      id: user.id,
-      name: user.name,
-      email: user.email,
-      username: user.username,
-      role: user.role,
-      token: generateToken(user.id),
-    });
+  if (user) {
+    if (!user.password) {
+      return res.status(401).json({ message: 'Account exists via Social Login. Please use Google to login.' });
+    }
+    
+    if (await bcrypt.compare(password, user.password)) {
+      res.json({
+        id: user.id,
+        name: user.name,
+        email: user.email,
+        username: user.username,
+        role: user.role,
+        token: generateToken(user.id),
+      });
+    } else {
+      res.status(401).json({ message: 'Invalid password. Please try again.' });
+    }
   } else {
-    res.status(401).json({ message: 'Invalid email/username or password' });
+    res.status(401).json({ message: 'User not found. Please Sign up first.' });
   }
 };
 
 // @desc    Register a new user
 // @route   POST /api/auth/signup
 const registerUser = async (req, res) => {
-  const { name, email, password, username } = req.body;
+  const { name, email: emailInput, password, username } = req.body;
+  const email = emailInput.toLowerCase().trim();
 
   const userExists = await prisma.user.findUnique({ where: { email } });
 
