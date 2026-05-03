@@ -1,6 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -11,102 +8,105 @@ datasource db {
 }
 
 model User {
-  id        String   @id @default(uuid())
-  name      String
-  email     String   @unique
-  password  String?
-  googleId  String?  @unique
-  avatar    String?
-  username  String?  @unique
-  bio       String?
-  role      String   @default("student")
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  grievances Grievance[]
+  id         String           @id @default(uuid())
+  name       String
+  email      String           @unique
+  password   String?
+  googleId   String?          @unique
+  avatar     String?
+  username   String?          @unique
+  bio        String?
+  role       String           @default("student")
+  createdAt  DateTime         @default(now())
+  updatedAt  DateTime         @updatedAt
   comments   Comment[]
-  posts      Post[]
-  likes      Like[]
-  saves      Save[]
+  followers  Follow[]         @relation("UserFollowers")
+  following  Follow[]         @relation("UserFollowing")
+  grievances Grievance[]
   agrees     GrievanceAgree[]
+  likes      Like[]
+  posts      Post[]
+  saves      Save[]
   stories    Story[]
-  followers  Follow[] @relation("UserFollowers")
-  following  Follow[] @relation("UserFollowing")
 }
 
 model Story {
   id        String   @id @default(uuid())
   mediaUrl  String
   userId    String
-  user      User     @relation(fields: [userId], references: [id])
   createdAt DateTime @default(now())
   expiresAt DateTime
+  user      User     @relation(fields: [userId], references: [id])
 }
 
 model Follow {
   id          String @id @default(uuid())
   followerId  String
   followingId String
-  follower    User   @relation("UserFollowing", fields: [followerId], references: [id])
   following   User   @relation("UserFollowers", fields: [followingId], references: [id])
+  follower    User   @relation("UserFollowing", fields: [followerId], references: [id])
+
   @@unique([followerId, followingId])
 }
 
 model Post {
-// ... existing Post fields ...
-  id          String   @id @default(uuid())
-  type        String   @default("photo") // "reel" or "photo"
-  mediaUrl    String
-  caption     String?
-  collegeTag  String?  // The tagged college name/ID
-  userId      String
-  user        User     @relation(fields: [userId], references: [id])
-  likes       Like[]
-  saves       Save[]
-  comments    Comment[]
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  id         String    @id @default(uuid())
+  type       String    @default("photo")
+  mediaUrl   String
+  caption    String?
+  collegeTag String?
+  userId     String
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+  comments   Comment[]
+  likes      Like[]
+  user       User      @relation(fields: [userId], references: [id])
+  saves      Save[]
 }
 
 model Like {
-  id      String @id @default(uuid())
-  userId  String
-  postId  String
-  user    User   @relation(fields: [userId], references: [id])
-  post    Post   @relation(fields: [postId], references: [id])
+  id     String @id @default(uuid())
+  userId String
+  postId String
+  post   Post   @relation(fields: [postId], references: [id])
+  user   User   @relation(fields: [userId], references: [id])
+
   @@unique([userId, postId])
 }
 
 model Save {
-  id      String @id @default(uuid())
-  userId  String
-  postId  String
-  user    User   @relation(fields: [userId], references: [id])
-  post    Post   @relation(fields: [postId], references: [id])
+  id     String @id @default(uuid())
+  userId String
+  postId String
+  post   Post   @relation(fields: [postId], references: [id])
+  user   User   @relation(fields: [userId], references: [id])
+
   @@unique([userId, postId])
 }
 
 model Grievance {
-  id          String   @id @default(uuid())
+  id          String           @id @default(uuid())
   college     String
   issueType   String
   description String
-  status      String   @default("pending")
-  agrees      Int      @default(0)
-  isAnonymous Boolean  @default(false)
+  status      String           @default("pending")
+  agrees      Int              @default(0)
+  isAnonymous Boolean          @default(false)
   userId      String
-  user        User     @relation(fields: [userId], references: [id])
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
   comments    Comment[]
+  user        User             @relation(fields: [userId], references: [id])
   agrees_list GrievanceAgree[]
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
 }
 
 model GrievanceAgree {
   id          String    @id @default(uuid())
   userId      String
   grievanceId String
-  user        User      @relation(fields: [userId], references: [id])
   grievance   Grievance @relation(fields: [grievanceId], references: [id])
+  user        User      @relation(fields: [userId], references: [id])
+
   @@unique([userId, grievanceId])
 }
 
@@ -114,12 +114,12 @@ model Comment {
   id          String     @id @default(uuid())
   text        String
   userId      String
-  user        User       @relation(fields: [userId], references: [id])
   grievanceId String?
-  grievance   Grievance? @relation(fields: [grievanceId], references: [id])
   postId      String?
-  post        Post?      @relation(fields: [postId], references: [id])
   createdAt   DateTime   @default(now())
+  post        Post?      @relation(fields: [postId], references: [id])
+  grievance   Grievance? @relation(fields: [grievanceId], references: [id])
+  user        User       @relation(fields: [userId], references: [id])
 }
 
 model Partner {

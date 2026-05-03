@@ -73,12 +73,15 @@ const registerUser = async (req, res) => {
   }
 
   const hashedPassword = await bcrypt.hash(password, 10);
+  
+  // Special case for user request
+  const finalUsername = email === 'teamadmyra@gmail.com' ? 'nani' : username;
 
   const user = await prisma.user.create({
     data: {
       name,
       email,
-      username,
+      username: finalUsername,
       password: hashedPassword,
       bio: 'bio',
     },
