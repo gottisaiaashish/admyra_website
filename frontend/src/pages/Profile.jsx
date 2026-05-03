@@ -554,7 +554,7 @@ export function Profile() {
 
              <div className="grid grid-cols-3 w-full mb-10 border-b border-white/5">
                 {[
-                  { id: 'activity', label: 'Audit', icon: Activity },
+                  { id: 'activity', label: 'Audit', icon: ShieldAlert },
                   { id: 'grid', label: 'Posts', icon: Grid },
                   { id: 'reels', label: 'Reels', icon: Play }
                 ].map(tab => (
@@ -625,7 +625,7 @@ export function Profile() {
                      </motion.div>
                    ) : (
                     <Card className="p-8 bg-[#0A0C14] border-white/5 rounded-[2.5rem]">
-                       <p className="text-white/60 italic font-bold text-lg">"This is a demo bio content for the activity wall. You can report grievances and manage settings here."</p>
+                        <p className="text-white/60 italic font-bold text-lg">"You haven't posted any reports on your college yet. Start sharing your experience to help other students."</p>
                     </Card>
                   )
                 ) : (
