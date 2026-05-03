@@ -99,18 +99,13 @@ export function Navbar() {
                     <LogOut className="h-5 w-5" />
                   </button>
 
-                  <div onClick={handleProfileClick} className="flex items-center gap-3 group cursor-pointer">
-                    <div className="flex flex-col items-end">
-                      <span className="text-[10px] font-black text-white uppercase tracking-widest leading-none">{loggedInUser?.name}</span>
-                    </div>
-                    <div className="h-10 w-10 rounded-full overflow-hidden border border-white/5 group-hover:border-indigo-500/50 transition-all duration-500">
-                      <div className="w-full h-full bg-[#0A0C14] flex items-center justify-center">
-                        {loggedInUser?.avatar ? (
-                          <img src={loggedInUser.avatar} alt="" className="w-full h-full object-cover" />
-                        ) : (
-                          <GraduationCap className="h-5 w-5 text-indigo-500/50" />
-                        )}
-                      </div>
+                  <div onClick={handleProfileClick} className="h-10 w-10 rounded-full overflow-hidden border border-white/5 hover:border-indigo-500/50 transition-all duration-500 cursor-pointer">
+                    <div className="w-full h-full bg-[#0A0C14] flex items-center justify-center">
+                      {loggedInUser?.avatar ? (
+                        <img src={loggedInUser.avatar} alt="" className="w-full h-full object-cover" />
+                      ) : (
+                        <UserIcon className="h-5 w-5 text-indigo-500/50" />
+                      )}
                     </div>
                   </div>
                 </div>
