@@ -17,7 +17,8 @@ const authUser = async (req, res) => {
       where: {
         OR: [
           { email: email },
-          { username: emailInput.trim() }
+          { username: emailInput.trim() },
+          { username: email } // Also check lowercased version
         ]
       }
     });
@@ -66,7 +67,7 @@ const registerUser = async (req, res) => {
   if (username) {
     const usernameExists = await prisma.user.findUnique({ where: { username } });
     if (usernameExists) {
-      res.status(400).json({ message: 'Username is already exists' });
+      res.status(400).json({ message: 'Username already taken. Please try another one.' });
       return;
     }
   }
@@ -134,10 +135,14 @@ const googleAuth = async (req, res) => {
       }
       
       // Create user if it's a signup request
+      // Generate a default username from email
+      const defaultUsername = email.split('@')[0] + Math.floor(Math.random() * 1000);
+      
       user = await prisma.user.create({
         data: {
           name,
           email,
+          username: defaultUsername,
           googleId,
           avatar: picture,
           bio: 'bio',

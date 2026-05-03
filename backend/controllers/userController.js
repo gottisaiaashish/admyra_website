@@ -59,7 +59,7 @@ const updateUserProfile = async (req, res) => {
     if (username) {
       const existingUser = await prisma.user.findUnique({ where: { username } });
       if (existingUser && existingUser.id !== req.user.id) {
-        return res.status(400).json({ message: 'Username is already exists' });
+        return res.status(400).json({ message: 'Username already taken. Please try another one.' });
       }
     }
 

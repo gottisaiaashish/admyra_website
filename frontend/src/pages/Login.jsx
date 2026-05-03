@@ -74,17 +74,17 @@ export function Login() {
 
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="space-y-2">
-              <label className="text-sm font-medium text-text-muted ml-1">Email Address</label>
+              <label className="text-sm font-medium text-text-muted ml-1">Email or Username</label>
               <div className="relative group">
                 <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-text-muted group-focus-within:text-primary-start transition-colors">
                   <Mail size={18} />
                 </div>
                 <input
-                  type="email"
+                  type="text"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="w-full bg-white/5 border border-white/10 rounded-2xl py-3 pl-12 pr-4 text-text-main focus:outline-none focus:ring-2 focus:ring-primary-start/50 focus:border-primary-start transition-all"
-                  placeholder="name@example.com"
+                  placeholder="name@example.com or username"
                   required
                 />
               </div>
