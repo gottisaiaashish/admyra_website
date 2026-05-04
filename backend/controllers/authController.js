@@ -214,7 +214,7 @@ export const forgotPassword = async (req, res) => {
     console.log(`Attempting to send OTP via Resend to: ${user.email}`);
     
     const { data: resendData, error: resendError } = await resend.emails.send({
-      from: 'Admyra <onboarding@resend.dev>',
+      from: 'Admyra <otp@admyra.in>',
       to: user.email,
       subject: 'Password Reset OTP - Admyra',
       html: `
