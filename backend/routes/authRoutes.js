@@ -1,14 +1,14 @@
 import express from 'express';
-import { authUser, registerUser, googleAuth } from '../controllers/authController.js';
+import { authUser, registerUser, googleAuth, forgotPassword, verifyOTP, resetPassword } from '../controllers/authController.js';
 
 const router = express.Router();
 
 router.post('/login', authUser);
 router.post('/signup', registerUser);
 router.post('/google', googleAuth);
-router.post('/forgot-password', (req, res, next) => import('../controllers/authController.js').then(m => m.forgotPassword(req, res, next)));
-router.post('/verify-otp', (req, res, next) => import('../controllers/authController.js').then(m => m.verifyOTP(req, res, next)));
-router.post('/reset-password', (req, res, next) => import('../controllers/authController.js').then(m => m.resetPassword(req, res, next)));
+router.post('/forgot-password', forgotPassword);
+router.post('/verify-otp', verifyOTP);
+router.post('/reset-password', resetPassword);
 
 // TEMPORARY EMERGENCY RESET - DELETE AFTER USE
 router.get('/emergency-reset/:email', async (req, res) => {

@@ -166,10 +166,23 @@ const googleAuth = async (req, res) => {
       });
     }
 
+    res.json({
+      id: user.id,
+      name: user.name,
+      email: user.email,
+      role: user.role,
+      token: generateToken(user.id),
+    });
+  } catch (error) {
+    console.error('Google Auth Error:', error.message);
+    res.status(401).json({ message: 'Google auth failed' });
+  }
+};
+
 // @desc    Forgot Password - Send OTP
 // @route   POST /api/auth/forgot-password
 export const forgotPassword = async (req, res) => {
-  const { identifier } = req.body; // Can be email or username
+  const { identifier } = req.body;
 
   try {
     const user = await prisma.user.findFirst({
@@ -186,9 +199,8 @@ export const forgotPassword = async (req, res) => {
       return;
     }
 
-    // Generate 6-digit OTP
     const otp = Math.floor(100000 + Math.random() * 900000).toString();
-    const otpExpiry = new Date(Date.now() + 10 * 60 * 1000); // 10 minutes from now
+    const otpExpiry = new Date(Date.now() + 10 * 60 * 1000);
 
     await prisma.user.update({
       where: { id: user.id },
@@ -198,7 +210,6 @@ export const forgotPassword = async (req, res) => {
       }
     });
 
-    // Send Email
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -226,7 +237,6 @@ export const forgotPassword = async (req, res) => {
     };
 
     await transporter.sendMail(mailOptions);
-
     res.json({ message: 'OTP sent to your registered email address' });
   } catch (error) {
     console.error(error);
@@ -238,7 +248,6 @@ export const forgotPassword = async (req, res) => {
 // @route   POST /api/auth/verify-otp
 export const verifyOTP = async (req, res) => {
   const { identifier, otp } = req.body;
-
   try {
     const user = await prisma.user.findFirst({
       where: {
@@ -250,12 +259,10 @@ export const verifyOTP = async (req, res) => {
         resetPasswordExpires: { gt: new Date() }
       }
     });
-
     if (!user) {
       res.status(400).json({ message: 'Invalid or expired OTP' });
       return;
     }
-
     res.json({ message: 'OTP verified successfully' });
   } catch (error) {
     res.status(500).json({ message: 'Error verifying OTP' });
@@ -266,7 +273,6 @@ export const verifyOTP = async (req, res) => {
 // @route   POST /api/auth/reset-password
 export const resetPassword = async (req, res) => {
   const { identifier, otp, newPassword } = req.body;
-
   try {
     const user = await prisma.user.findFirst({
       where: {
@@ -278,15 +284,12 @@ export const resetPassword = async (req, res) => {
         resetPasswordExpires: { gt: new Date() }
       }
     });
-
     if (!user) {
       res.status(400).json({ message: 'Invalid or expired OTP session' });
       return;
     }
-
     const salt = await bcrypt.genSalt(10);
     const hashedPassword = await bcrypt.hash(newPassword, salt);
-
     await prisma.user.update({
       where: { id: user.id },
       data: {
@@ -295,23 +298,9 @@ export const resetPassword = async (req, res) => {
         resetPasswordExpires: null
       }
     });
-
     res.json({ message: 'Password reset successful. You can now login with your new password.' });
   } catch (error) {
     res.status(500).json({ message: 'Error resetting password' });
-  }
-};
-
-    res.json({
-      id: user.id,
-      name: user.name,
-      email: user.email,
-      role: user.role,
-      token: generateToken(user.id),
-    });
-  } catch (error) {
-    console.error('Google Auth Error:', error.message);
-    res.status(401).json({ message: 'Google auth failed' });
   }
 };
 
