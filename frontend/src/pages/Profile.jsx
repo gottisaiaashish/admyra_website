@@ -86,6 +86,8 @@ export function Profile() {
   const [isChangingEmail, setIsChangingEmail] = useState(false);
   const [newEmail, setNewEmail] = useState('');
   const [savedSubTab, setSavedSubTab] = useState('all'); // all, reels
+  const [showSwipeHint, setShowSwipeHint] = useState(true);
+
 
   const fileInputRef = useRef(null);
   const videoInputRef = useRef(null);
@@ -109,6 +111,14 @@ export function Profile() {
     const timer = setInterval(() => setTimeSpent(prev => prev + 1), 1000);
     return () => clearInterval(timer);
   }, []);
+
+  useEffect(() => {
+    if (showSwipeHint) {
+      const timer = setTimeout(() => setShowSwipeHint(false), 6000); // Hide after ~3 animations
+      return () => clearTimeout(timer);
+    }
+  }, [showSwipeHint]);
+
 
   useEffect(() => { loadProfile(); }, [id]);
 
@@ -487,8 +497,33 @@ export function Profile() {
       <motion.div 
         drag={isOwnProfile ? "x" : false} 
         dragConstraints={{ left: 0, right: 0 }} 
-        onDragEnd={(_, { offset }) => isOwnProfile && offset.x > 100 && setShowCreatorMode(true)}
+        onDragEnd={(_, { offset }) => isOwnProfile && offset.x < -100 && setShowCreatorMode(true)}
       >
+        <AnimatePresence>
+          {showSwipeHint && isOwnProfile && (
+            <motion.div 
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ 
+                opacity: [0, 1, 1, 0],
+                x: [20, -40, -40, -60]
+              }}
+              transition={{ 
+                duration: 2,
+                repeat: 2,
+                times: [0, 0.2, 0.8, 1]
+              }}
+              className="fixed right-10 top-1/2 -translate-y-1/2 z-[100] pointer-events-none"
+            >
+              <div className="bg-indigo-500/20 backdrop-blur-md border border-indigo-500/30 px-6 py-3 rounded-2xl flex items-center gap-3">
+                <span className="text-[10px] font-black uppercase tracking-[0.2em] text-white">Swipe to Post</span>
+                <div className="w-8 h-8 rounded-full bg-indigo-500 flex items-center justify-center animate-pulse">
+                  <ChevronLeft size={18} className="text-white" />
+                </div>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+
         <div className="relative h-64 md:h-80 w-full overflow-hidden bg-gradient-to-b from-indigo-600/20 to-[#05060A]">
             <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20" />
         </div>
@@ -1355,22 +1390,11 @@ export function Profile() {
 
                 {settingsView === 'notifications' && (
                   <div className="space-y-4">
-                     {[
-                       { type: 'LIKE', user: 'rahul_22', msg: 'liked your post.', time: '2m' },
-                       { type: 'COMMENT', user: 'sneha_1', msg: 'commented: "Awesome look!"', time: '1h' },
-                       { type: 'SYSTEM', user: 'Admyra', msg: 'Your grievance was cleared.', time: '5h' }
-                     ].map((n, i) => (
-                       <div key={i} className="flex items-center justify-between p-4 bg-white/5 rounded-[1.5rem] border border-white/5">
-                          <div className="flex items-center gap-3">
-                             <div className="h-10 w-10 rounded-full bg-indigo-500/10 flex items-center justify-center font-black italic text-xs text-indigo-400">{n.user[0].toUpperCase()}</div>
-                             <div>
-                                <p className="text-xs font-medium"><span className="font-black italic mr-1">@{n.user}</span> {n.msg}</p>
-                                <span className="text-[9px] text-white/20 font-bold uppercase">{n.time} ago</span>
-                             </div>
-                          </div>
-                          {n.type === 'LIKE' && <Heart size={14} className="fill-rose-500 text-rose-500" />}
-                       </div>
-                     ))}
+                     {/* Fetch real notifications if model exists, currently showing empty state */}
+                     <div className="py-20 text-center space-y-4">
+                        <ShieldAlert size={48} className="mx-auto text-white/10" />
+                        <p className="text-white/40 text-sm italic font-medium">"No new notifications. We'll alert you when someone interacts with your posts or grievances."</p>
+                     </div>
                   </div>
                 )}
                 {settingsView === 'saved' && (

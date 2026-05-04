@@ -63,8 +63,14 @@ const registerUser = async (req, res) => {
     return;
   }
 
-  // Also check if username is taken
+  // Username validation rules: small letters, numbers, and underscores only
+  const usernameRegex = /^[a-z0-9_]+$/;
   if (username) {
+    if (!usernameRegex.test(username)) {
+      res.status(400).json({ message: 'Username can only contain small letters, numbers, and underscores (_). No spaces or special characters.' });
+      return;
+    }
+
     const usernameExists = await prisma.user.findUnique({ where: { username } });
     if (usernameExists) {
       res.status(400).json({ message: 'Username already taken. Please try another one.' });

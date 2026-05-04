@@ -115,12 +115,16 @@ export function Signup() {
                 <input
                   type="text"
                   value={username}
-                  onChange={(e) => setUsername(e.target.value)}
+                  onChange={(e) => {
+                    const val = e.target.value.toLowerCase().replace(/[^a-z0-9_]/g, '');
+                    setUsername(val);
+                  }}
                   className="w-full bg-white/5 border border-white/10 rounded-2xl py-3 pl-10 pr-4 text-text-main focus:outline-none focus:ring-2 focus:ring-primary-start/50 focus:border-primary-start transition-all"
                   placeholder="johndoe"
                   required
                 />
               </div>
+              <p className="text-[9px] text-white/20 ml-1">Small letters, numbers, and underscores only.</p>
             </div>
 
             <div className="space-y-2">
