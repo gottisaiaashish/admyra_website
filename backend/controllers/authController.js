@@ -236,7 +236,15 @@ export const forgotPassword = async (req, res) => {
       `
     };
 
-    await transporter.sendMail(mailOptions);
+    console.log(`Attempting to send OTP to: ${user.email}`);
+    
+    // Send Email with 15s timeout
+    await Promise.race([
+      transporter.sendMail(mailOptions),
+      new Promise((_, reject) => setTimeout(() => reject(new Error('Email sending timed out. Check SMTP credentials.')), 15000))
+    ]);
+
+    console.log(`OTP successfully sent to: ${user.email}`);
     res.json({ message: 'OTP sent to your registered email address' });
   } catch (error) {
     console.error(error);
