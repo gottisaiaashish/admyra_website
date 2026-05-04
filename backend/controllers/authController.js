@@ -212,14 +212,14 @@ export const forgotPassword = async (req, res) => {
 
     const transporter = nodemailer.createTransport({
       host: 'smtp.gmail.com',
-      port: 587,
-      secure: false, // Use STARTTLS
+      port: 465,
+      secure: true, // Use SSL
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS
       },
       tls: {
-        rejectUnauthorized: false // Helps with some cloud hosting environments
+        rejectUnauthorized: false
       }
     });
 
@@ -243,10 +243,10 @@ export const forgotPassword = async (req, res) => {
 
     console.log(`Attempting to send OTP to: ${user.email}`);
     
-    // Send Email with 15s timeout
+    // Send Email with 30s timeout
     await Promise.race([
       transporter.sendMail(mailOptions),
-      new Promise((_, reject) => setTimeout(() => reject(new Error('Email sending timed out. Check SMTP credentials.')), 15000))
+      new Promise((_, reject) => setTimeout(() => reject(new Error('Email sending timed out. Check SMTP credentials.')), 30000))
     ]);
 
     console.log(`OTP successfully sent to: ${user.email}`);
