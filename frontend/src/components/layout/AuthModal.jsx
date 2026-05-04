@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, Mail, Lock, User, ArrowRight } from 'lucide-react';
+import { ArrowLeft, Mail, Lock, User, ArrowRight, Eye, EyeOff } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import { Button } from '../ui';
 import { login, signup, googleAuth } from '../../api';
+import { useGoogleLogin } from '@react-oauth/google';
 
 export function AuthModal({ isOpen, onClose, initialMode = 'choice' }) {
   const [mode, setMode] = useState(initialMode);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate();
   
   // Form State
   const [formData, setFormData] = useState({
@@ -39,6 +43,23 @@ export function AuthModal({ isOpen, onClose, initialMode = 'choice' }) {
       setLoading(false);
     }
   };
+
+  const handleGoogleLogin = useGoogleLogin({
+    onSuccess: async (response) => {
+      setLoading(true);
+      try {
+        const { data } = await googleAuth(response.access_token, mode === 'login' ? 'login' : 'signup');
+        localStorage.setItem('userInfo', JSON.stringify(data));
+        onClose();
+        window.location.reload();
+      } catch (err) {
+        setError(err.response?.data?.message || 'Google Auth Failed');
+      } finally {
+        setLoading(false);
+      }
+    },
+    onError: () => setError('Google Login Failed')
+  });
 
   if (!isOpen) return null;
 
@@ -176,7 +197,13 @@ export function AuthModal({ isOpen, onClose, initialMode = 'choice' }) {
                     <div className="flex justify-between items-center px-1">
                       <label className="text-[10px] font-black uppercase tracking-widest text-white/40">Password</label>
                       {mode === 'login' && (
-                        <button type="button" className="text-[10px] font-bold text-indigo-400 hover:underline">Forgot?</button>
+                        <button 
+                          type="button" 
+                          onClick={() => { onClose(); navigate('/forgot-password'); }}
+                          className="text-[10px] font-bold text-indigo-400 hover:underline"
+                        >
+                          Forgot?
+                        </button>
                       )}
                     </div>
                     <div className="relative group">
@@ -184,14 +211,21 @@ export function AuthModal({ isOpen, onClose, initialMode = 'choice' }) {
                         <Lock size={18} />
                       </div>
                       <input
-                        type="password"
+                        type={showPassword ? "text" : "password"}
                         name="password"
                         value={formData.password}
                         onChange={handleChange}
-                        className="w-full bg-white/5 border border-white/10 rounded-2xl py-3.5 pl-12 pr-4 text-white placeholder:text-white/10 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 transition-all font-medium text-sm"
+                        className="w-full bg-white/5 border border-white/10 rounded-2xl py-3.5 pl-12 pr-12 text-white placeholder:text-white/10 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 transition-all font-medium text-sm"
                         placeholder="••••••••"
                         required
                       />
+                      <button
+                        type="button"
+                        onClick={() => setShowPassword(!showPassword)}
+                        className="absolute inset-y-0 right-0 pr-4 flex items-center text-white/20 hover:text-white/60 transition-colors"
+                      >
+                        {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
+                      </button>
                     </div>
                   </div>
 
@@ -202,6 +236,24 @@ export function AuthModal({ isOpen, onClose, initialMode = 'choice' }) {
                   >
                     {loading ? 'PROCESSING...' : (mode === 'login' ? 'LOGIN NOW' : 'CREATE ACCOUNT')}
                   </Button>
+
+                  <div className="relative my-6">
+                    <div className="absolute inset-0 flex items-center">
+                      <div className="w-full border-t border-white/5"></div>
+                    </div>
+                    <div className="relative flex justify-center text-[10px] uppercase tracking-widest font-black">
+                      <span className="bg-[#0A0C14] px-4 text-white/20">Or continue with</span>
+                    </div>
+                  </div>
+
+                  <button
+                    type="button"
+                    onClick={() => handleGoogleLogin()}
+                    className="w-full py-4 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center gap-3 text-white font-bold text-xs uppercase tracking-widest hover:bg-white/10 transition-all"
+                  >
+                    <img src="https://www.google.com/favicon.ico" className="w-4 h-4" alt="Google" />
+                    Continue with Google
+                  </button>
 
                   <div className="mt-8 text-center">
                     <p className="text-[10px] font-bold text-white/40 uppercase tracking-widest">
