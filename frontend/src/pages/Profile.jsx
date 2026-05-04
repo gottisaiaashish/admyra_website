@@ -497,7 +497,13 @@ export function Profile() {
       <motion.div 
         drag={isOwnProfile ? "x" : false} 
         dragConstraints={{ left: 0, right: 0 }} 
-        onDragEnd={(_, { offset }) => isOwnProfile && offset.x < -100 && setShowCreatorMode(true)}
+        dragElastic={0.7}
+        onDragEnd={(e, info) => {
+          console.log("Drag offset:", info.offset.x);
+          if (isOwnProfile && info.offset.x < -50) {
+            setShowCreatorMode(true);
+          }
+        }}
       >
         <AnimatePresence>
           {showSwipeHint && isOwnProfile && (
