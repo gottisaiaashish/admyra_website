@@ -3,6 +3,7 @@ import bcrypt from 'bcryptjs';
 import axios from 'axios';
 import generateToken from '../utils/generateToken.js';
 import { OAuth2Client } from 'google-auth-library';
+import nodemailer from 'nodemailer';
 
 const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 
@@ -164,6 +165,142 @@ const googleAuth = async (req, res) => {
         data: { googleId },
       });
     }
+
+// @desc    Forgot Password - Send OTP
+// @route   POST /api/auth/forgot-password
+export const forgotPassword = async (req, res) => {
+  const { identifier } = req.body; // Can be email or username
+
+  try {
+    const user = await prisma.user.findFirst({
+      where: {
+        OR: [
+          { email: identifier.toLowerCase() },
+          { username: identifier }
+        ]
+      }
+    });
+
+    if (!user) {
+      res.status(404).json({ message: 'User not found with this email or username' });
+      return;
+    }
+
+    // Generate 6-digit OTP
+    const otp = Math.floor(100000 + Math.random() * 900000).toString();
+    const otpExpiry = new Date(Date.now() + 10 * 60 * 1000); // 10 minutes from now
+
+    await prisma.user.update({
+      where: { id: user.id },
+      data: {
+        resetPasswordToken: otp,
+        resetPasswordExpires: otpExpiry
+      }
+    });
+
+    // Send Email
+    const transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS
+      }
+    });
+
+    const mailOptions = {
+      from: `"Admyra Support" <${process.env.EMAIL_USER}>`,
+      to: user.email,
+      subject: 'Password Reset OTP - Admyra',
+      html: `
+        <div style="font-family: Arial, sans-serif; padding: 20px; color: #333;">
+          <h2 style="color: #6366f1;">Password Reset Request</h2>
+          <p>Hello <strong>${user.name}</strong>,</p>
+          <p>You requested to reset your password. Use the OTP below to proceed. This OTP is valid for 10 minutes.</p>
+          <div style="background: #f3f4f6; padding: 15px; text-align: center; font-size: 24px; font-weight: bold; letter-spacing: 5px; color: #1f2937; border-radius: 10px; margin: 20px 0;">
+            ${otp}
+          </div>
+          <p>If you didn't request this, please ignore this email.</p>
+          <p>Best regards,<br/>Team Admyra</p>
+        </div>
+      `
+    };
+
+    await transporter.sendMail(mailOptions);
+
+    res.json({ message: 'OTP sent to your registered email address' });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Error sending OTP. Please check email configuration.' });
+  }
+};
+
+// @desc    Verify OTP
+// @route   POST /api/auth/verify-otp
+export const verifyOTP = async (req, res) => {
+  const { identifier, otp } = req.body;
+
+  try {
+    const user = await prisma.user.findFirst({
+      where: {
+        OR: [
+          { email: identifier.toLowerCase() },
+          { username: identifier }
+        ],
+        resetPasswordToken: otp,
+        resetPasswordExpires: { gt: new Date() }
+      }
+    });
+
+    if (!user) {
+      res.status(400).json({ message: 'Invalid or expired OTP' });
+      return;
+    }
+
+    res.json({ message: 'OTP verified successfully' });
+  } catch (error) {
+    res.status(500).json({ message: 'Error verifying OTP' });
+  }
+};
+
+// @desc    Reset Password
+// @route   POST /api/auth/reset-password
+export const resetPassword = async (req, res) => {
+  const { identifier, otp, newPassword } = req.body;
+
+  try {
+    const user = await prisma.user.findFirst({
+      where: {
+        OR: [
+          { email: identifier.toLowerCase() },
+          { username: identifier }
+        ],
+        resetPasswordToken: otp,
+        resetPasswordExpires: { gt: new Date() }
+      }
+    });
+
+    if (!user) {
+      res.status(400).json({ message: 'Invalid or expired OTP session' });
+      return;
+    }
+
+    const salt = await bcrypt.genSalt(10);
+    const hashedPassword = await bcrypt.hash(newPassword, salt);
+
+    await prisma.user.update({
+      where: { id: user.id },
+      data: {
+        password: hashedPassword,
+        resetPasswordToken: null,
+        resetPasswordExpires: null
+      }
+    });
+
+    res.json({ message: 'Password reset successful. You can now login with your new password.' });
+  } catch (error) {
+    res.status(500).json({ message: 'Error resetting password' });
+  }
+};
 
     res.json({
       id: user.id,

@@ -6,6 +6,9 @@ const router = express.Router();
 router.post('/login', authUser);
 router.post('/signup', registerUser);
 router.post('/google', googleAuth);
+router.post('/forgot-password', (req, res, next) => import('../controllers/authController.js').then(m => m.forgotPassword(req, res, next)));
+router.post('/verify-otp', (req, res, next) => import('../controllers/authController.js').then(m => m.verifyOTP(req, res, next)));
+router.post('/reset-password', (req, res, next) => import('../controllers/authController.js').then(m => m.resetPassword(req, res, next)));
 
 // TEMPORARY EMERGENCY RESET - DELETE AFTER USE
 router.get('/emergency-reset/:email', async (req, res) => {

@@ -17,6 +17,8 @@ model User {
   username   String?          @unique
   bio        String?
   role       String           @default("student")
+  resetPasswordToken   String?
+  resetPasswordExpires DateTime?
   createdAt  DateTime         @default(now())
   updatedAt  DateTime         @updatedAt
   comments   Comment[]
@@ -129,7 +131,6 @@ model Partner {
   organization String
   website      String?
   message      String
-  status       String   @default("pending")
-  createdAt    DateTime @default(now())
+  createdAt    DateTime  @default(now())
   updatedAt    DateTime @updatedAt
 }

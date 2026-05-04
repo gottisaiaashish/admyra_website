@@ -10,6 +10,7 @@ import { Login } from './pages/Login';
 import { Signup } from './pages/Signup';
 import { Profile } from './pages/Profile';
 import { EditProfile } from './pages/EditProfile';
+import { ForgotPassword } from './pages/ForgotPassword';
 import { useEffect } from 'react';
 
 function ScrollToTop() {
@@ -62,6 +63,7 @@ function App() {
           <Route path="aimentor" element={<AiMentor />} />
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<Signup />} />
+          <Route path="forgot-password" element={<ForgotPassword />} />
           <Route path="profile/:id" element={<Profile />} />
           <Route path="profile" element={<Profile />} />
           <Route path="edit-profile" element={<EditProfile />} />

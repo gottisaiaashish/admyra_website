@@ -17,6 +17,9 @@ API.interceptors.request.use((req) => {
 export const login = (formData) => API.post('/auth/login', formData);
 export const signup = (formData) => API.post('/auth/signup', formData);
 export const googleAuth = (idToken, type = 'login') => API.post('/auth/google', { idToken, type });
+export const forgotPassword = (identifier) => API.post('/auth/forgot-password', { identifier });
+export const verifyOTP = (identifier, otp) => API.post('/auth/verify-otp', { identifier, otp });
+export const resetPassword = (data) => API.post('/auth/reset-password', data);
 
 // Grievance APIs
 export const fetchGrievances = () => API.get('/grievances');
