@@ -500,7 +500,7 @@ export function Profile() {
         dragElastic={0.7}
         onDragEnd={(e, info) => {
           console.log("Drag offset:", info.offset.x);
-          if (isOwnProfile && info.offset.x < -50) {
+          if (isOwnProfile && Math.abs(info.offset.x) > 40) {
             setShowCreatorMode(true);
           }
         }}
@@ -508,23 +508,21 @@ export function Profile() {
         <AnimatePresence>
           {showSwipeHint && isOwnProfile && (
             <motion.div 
-              initial={{ opacity: 0, x: 20 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={{ 
                 opacity: [0, 1, 1, 0],
-                x: [20, -40, -40, -60]
+                x: [0, -20, 20, 0]
               }}
               transition={{ 
                 duration: 2,
-                repeat: 2,
-                times: [0, 0.2, 0.8, 1]
+                repeat: 2
               }}
-              className="fixed right-10 top-1/2 -translate-y-1/2 z-[100] pointer-events-none"
+              className="fixed inset-x-0 bottom-32 z-[100] flex justify-center pointer-events-none"
             >
-              <div className="bg-indigo-500/20 backdrop-blur-md border border-indigo-500/30 px-6 py-3 rounded-2xl flex items-center gap-3">
-                <span className="text-[10px] font-black uppercase tracking-[0.2em] text-white">Swipe to Post</span>
-                <div className="w-8 h-8 rounded-full bg-indigo-500 flex items-center justify-center animate-pulse">
-                  <ChevronLeft size={18} className="text-white" />
-                </div>
+              <div className="bg-indigo-500/20 backdrop-blur-md border border-indigo-500/30 px-6 py-3 rounded-full flex items-center gap-3">
+                <ChevronLeft size={14} className="text-indigo-400 animate-pulse" />
+                <span className="text-[9px] font-black uppercase tracking-[0.2em] text-white">Swipe to Post</span>
+                <ChevronLeft size={14} className="text-indigo-400 animate-pulse rotate-180" />
               </div>
             </motion.div>
           )}
