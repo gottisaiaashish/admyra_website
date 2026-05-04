@@ -211,7 +211,9 @@ export const forgotPassword = async (req, res) => {
     });
 
     const transporter = nodemailer.createTransport({
-      service: 'gmail',
+      host: 'smtp.gmail.com',
+      port: 465,
+      secure: true, // Use SSL
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS
@@ -247,8 +249,8 @@ export const forgotPassword = async (req, res) => {
     console.log(`OTP successfully sent to: ${user.email}`);
     res.json({ message: 'OTP sent to your registered email address' });
   } catch (error) {
-    console.error(error);
-    res.status(500).json({ message: 'Error sending OTP. Please check email configuration.' });
+    console.error('OTP Sending Error:', error);
+    res.status(500).json({ message: `Error sending OTP: ${error.message}` });
   }
 };
 
