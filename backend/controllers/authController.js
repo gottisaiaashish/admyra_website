@@ -3,9 +3,10 @@ import bcrypt from 'bcryptjs';
 import axios from 'axios';
 import generateToken from '../utils/generateToken.js';
 import { OAuth2Client } from 'google-auth-library';
-import nodemailer from 'nodemailer';
+import { Resend } from 'resend';
 
 const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 // @desc    Auth user & get token
 // @route   POST /api/auth/login
@@ -210,21 +211,10 @@ export const forgotPassword = async (req, res) => {
       }
     });
 
-    const transporter = nodemailer.createTransport({
-      host: 'smtp.gmail.com',
-      port: 465,
-      secure: true, // Use SSL
-      auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS
-      },
-      tls: {
-        rejectUnauthorized: false
-      }
-    });
-
-    const mailOptions = {
-      from: `"Admyra Support" <${process.env.EMAIL_USER}>`,
+    console.log(`Attempting to send OTP via Resend to: ${user.email}`);
+    
+    const { data: resendData, error: resendError } = await resend.emails.send({
+      from: 'Admyra <onboarding@resend.dev>',
       to: user.email,
       subject: 'Password Reset OTP - Admyra',
       html: `
@@ -239,17 +229,13 @@ export const forgotPassword = async (req, res) => {
           <p>Best regards,<br/>Team Admyra</p>
         </div>
       `
-    };
+    });
 
-    console.log(`Attempting to send OTP to: ${user.email}`);
-    
-    // Send Email with 30s timeout
-    await Promise.race([
-      transporter.sendMail(mailOptions),
-      new Promise((_, reject) => setTimeout(() => reject(new Error('Email sending timed out. Check SMTP credentials.')), 30000))
-    ]);
+    if (resendError) {
+      throw new Error(resendError.message);
+    }
 
-    console.log(`OTP successfully sent to: ${user.email}`);
+    console.log(`OTP successfully sent via Resend to: ${user.email}`);
     res.json({ message: 'OTP sent to your registered email address' });
   } catch (error) {
     console.error('OTP Sending Error:', error);
