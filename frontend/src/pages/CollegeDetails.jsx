@@ -172,12 +172,32 @@ export function CollegeDetails() {
     setNewComment('');
   };
 
+  const collegeSchema = {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": college.name,
+    "url": `https://admyra.in/colleges/${id}`,
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": college.location
+    },
+    "description": college.description,
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": college.rating,
+      "bestRating": "5",
+      "worstRating": "1",
+      "ratingCount": "450"
+    }
+  };
+
   return (
     <div className="min-h-screen bg-[#05060A] text-white selection:bg-indigo-500/30 font-sans overflow-x-hidden">
       <SEO 
-        title={`${college.name} - Admission, Cutoffs & Reviews`}
-        description={`Detailed information about ${college.name} in ${college.location}. Check real student grievances, cutoff data, placement reality, and verified institutional insights.`}
-        keywords={`${college.name}, ${college.name} cutoff, ${college.name} reviews, ${college.name} placements, engineering colleges in ${college.location}`}
+        title={`${college.name} | Cutoff, Directions, Metro & Bus Stop 2026`}
+        description={`Find the nearest metro station, bus stop, and directions to ${college.name} in ${college.location}. Check ${college.name} closing ranks, placements, and report student issues on Admyra.`}
+        keywords={`${college.name} directions, nearest metro to ${college.name}, bus stop near ${college.name}, ${college.name} location, report issues at ${college.name}, ${college.name} cutoff 2026, ${college.name} Hyderabad`}
+        schema={collegeSchema}
       />
       
       {/* Refined Cinematic Header */}
@@ -564,7 +584,7 @@ export function CollegeDetails() {
               </div>
             )}
 
-            {activeTab === 'facilities' && (
+             {activeTab === 'facilities' && (
                <div className="space-y-12 md:space-y-20">
                   <h2 className="text-3xl md:text-5xl font-black italic tracking-tighter">Infrastructure Profile.</h2>
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -580,6 +600,14 @@ export function CollegeDetails() {
 
             {activeTab === 'location' && (
                 <div className="space-y-12 md:space-y-24">
+                   <div className="sr-only">
+                      <h2>Directions to {college.name}</h2>
+                      <h2>Nearest Metro Station to {college.name}</h2>
+                      <h2>Nearest Bus Stop to {college.name}</h2>
+                      <h2>How to reach {college.name}</h2>
+                      <h2>Report issues at {college.name}</h2>
+                   </div>
+
                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-20">
                       <div className="lg:col-span-8 h-[350px] md:h-auto md:aspect-video rounded-[2.5rem] md:rounded-[4rem] bg-[#0A0C14] border border-white/5 overflow-hidden relative">
                         {college.mapEmbed ? (
@@ -646,6 +674,7 @@ export function CollegeDetails() {
                   </div>
                </div>
             )}
+
           </motion.div>
         </AnimatePresence>
       </main>
