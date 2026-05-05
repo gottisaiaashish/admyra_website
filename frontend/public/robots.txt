@@ -1,5 +1,13 @@
 User-agent: *
 Allow: /
-
-# Sitemap
 Sitemap: https://admyra.in/sitemap.xml
+
+# AI Crawlers Optimization
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /

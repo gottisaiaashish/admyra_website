@@ -213,7 +213,7 @@ export function Home() {
               <div className="flex flex-col items-center">
                 <div className="h-10 w-10 rounded-full border border-indigo-600/50 flex items-center justify-center text-white font-bold">3</div>
               </div>
-              <div>
+              <div className="pb-10">
                 <h4 className="text-xl font-bold mb-3 text-white">Final Selection</h4>
                 <p className="text-white/40 text-sm max-w-xl">Access your personalized shortlist with detailed institutional reality scores and metrics.</p>
               </div>

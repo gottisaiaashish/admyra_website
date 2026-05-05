@@ -527,7 +527,11 @@ export function CollegeDetails() {
                          {post.type === 'reel' || post.type === 'REEL' ? (
                             <video src={post.mediaUrl} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                          ) : (
-                            <img src={post.mediaUrl} alt="" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                            <img 
+                              src={post.mediaUrl} 
+                              alt={`Campus of ${college.name} - Student ${post.type} by @${post.user?.username || 'user'}`} 
+                              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
+                            />
                          )}
                          <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center gap-1">
                             <div className="flex items-center gap-2 text-white">
@@ -718,7 +722,15 @@ export function CollegeDetails() {
                       </div>
                     </div>
                     <div className="aspect-square bg-black overflow-hidden flex items-center relative">
-                       {p.type === 'REEL' ? <video src={p.mediaUrl} autoPlay loop muted playsInline className="w-full h-full object-contain" /> : <img src={p.mediaUrl} className="w-full h-full object-cover" />}
+                       {p.type === 'REEL' ? (
+                          <video src={p.mediaUrl} autoPlay loop muted playsInline className="w-full h-full object-contain" />
+                       ) : (
+                          <img 
+                            src={p.mediaUrl} 
+                            alt={`${college.name} Student Experience Post by @${p.user?.username || 'user'}`} 
+                            className="w-full h-full object-cover" 
+                          />
+                       )}
                     </div>
                     <div className="p-6 space-y-4">
                        <div className="flex gap-6">
