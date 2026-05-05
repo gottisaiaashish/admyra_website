@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Button, Card, Input, RatingStars, Badge } from '../components/ui';
 import { colleges } from '../data/mock-data';
 import { cn } from '../lib/utils';
+import SEO from '../components/SEO';
 
 export function Colleges() {
   const navigate = useNavigate();
@@ -57,8 +58,33 @@ export function Colleges() {
     return matchesSearch && matchesFilter;
   });
 
+  const listSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": filteredColleges.slice(0, 10).map((college, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "url": `https://admyra.in/colleges/${college.id}`,
+      "name": college.name
+    }))
+  };
+
+  const orgSchema = {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Admyra",
+    "url": "https://admyra.in",
+    "description": "Premium college discovery and predictor platform for engineering students in Telangana and Andhra Pradesh."
+  };
+
   return (
     <div className="max-w-7xl mx-auto px-4 py-32">
+      <SEO 
+        title="Top Engineering Colleges in Telangana & AP 2026 | Explore List"
+        description="Rank #1 source for engineering colleges in Hyderabad, Warangal, and AP. Compare JNTU, OU, CBIT, VNR, and top tier private institutions with detailed reviews and cutoff data."
+        keywords="top engineering colleges in Telangana, best B.Tech colleges Hyderabad, JNTUH affiliated colleges list, TS EAMCET top colleges, TG EAPCET colleges 2026, OU engineering colleges, engineering admission Telangana"
+        schema={[listSchema, orgSchema]}
+      />
       {/* Advanced Header Section */}
       <div className={cn(
         "relative mb-12 p-8 sm:p-12 rounded-[2.5rem] bg-card/40 border border-border-subtle backdrop-blur-xl shadow-[0_30px_70px_rgba(15,23,42,0.04)]",

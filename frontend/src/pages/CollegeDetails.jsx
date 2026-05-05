@@ -13,6 +13,7 @@ import { Card, Badge, RatingStars, Button, Input } from '../components/ui';
 import { colleges, reviews } from '../data/mock-data';
 import { cn } from '../lib/utils';
 import { fetchGrievances, createGrievance, applyPartner, fetchCollegePosts, toggleGrievanceAgree, resolveGrievance } from '../api';
+import SEO from '../components/SEO';
 
 export function CollegeDetails() {
   const { id } = useParams();
@@ -173,6 +174,11 @@ export function CollegeDetails() {
 
   return (
     <div className="min-h-screen bg-[#05060A] text-white selection:bg-indigo-500/30 font-sans overflow-x-hidden">
+      <SEO 
+        title={`${college.name} - Admission, Cutoffs & Reviews`}
+        description={`Detailed information about ${college.name} in ${college.location}. Check real student grievances, cutoff data, placement reality, and verified institutional insights.`}
+        keywords={`${college.name}, ${college.name} cutoff, ${college.name} reviews, ${college.name} placements, engineering colleges in ${college.location}`}
+      />
       
       {/* Refined Cinematic Header */}
       <section className="relative pt-32 pb-20 px-4 md:px-6">

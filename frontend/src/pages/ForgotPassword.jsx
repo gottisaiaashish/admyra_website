@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Mail, Lock, Key, ArrowRight, ShieldCheck, ChevronLeft, Eye, EyeOff } from 'lucide-react';
 import { Button } from '../components/ui';
 import { forgotPassword, verifyOTP, resetPassword } from '../api';
+import SEO from '../components/SEO';
 
 export function ForgotPassword() {
   const [step, setStep] = useState(1); // 1: Identifier, 2: OTP, 3: New Password
@@ -68,6 +69,10 @@ export function ForgotPassword() {
 
   return (
     <div className="min-h-[calc(100vh-64px)] flex items-center justify-center p-4">
+      <SEO 
+        title="Reset Your Password"
+        description="Recover your Admyra account access securely. Enter your email or username to receive a password reset OTP."
+      />
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

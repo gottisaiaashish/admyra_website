@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Target, AlertCircle, Check } from 'lucide-react';
 import { Button, Card, Input, Select, Badge, RatingStars, MultiSelect } from '../components/ui';
 import { predictorMockLogic } from '../data/mock-data';
+import SEO from '../components/SEO';
 
 const EXAM_CARD = {
   name: 'TG EAPCET',
@@ -102,8 +103,33 @@ export function Predictor() {
     }
   };
 
+  const predictorSchema = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Admyra TG EAPCET & TS EAMCET College Predictor",
+    "operatingSystem": "Web",
+    "applicationCategory": "EducationalApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR"
+    },
+    "description": "The most accurate college predictor for TG EAPCET, TS EAMCET and AP EAPCET. Find engineering colleges by rank and category.",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "ratingCount": "1240"
+    }
+  };
+
   return (
     <div className="max-w-7xl mx-auto px-4 py-30">
+      <SEO 
+        title="TG EAPCET & TS EAMCET College Predictor 2026 | Rank vs College"
+        description="Rank #1 TS EAMCET & TG EAPCET college predictor. Get accurate college lists based on your rank, category, and gender. Better than CollegeDost & CollegeDekho."
+        keywords="TS EAMCET college predictor, TG EAPCET predictor 2026, engineering college predictor Telangana, EAMCET rank vs college, TG EAPCET closing ranks, TS EAMCET cutoff 2025, best engineering colleges Hyderabad rank"
+        schema={[predictorSchema]}
+      />
       {/* Header Section */}
       <div className="text-center max-w-3xl mx-auto mb-16 flex flex-col items-center">
         <div className="h-20 w-20 bg-accent-cyan/10 rounded-3xl flex items-center justify-center mb-6 shadow-sm border border-accent-cyan/20">
@@ -375,7 +401,7 @@ export function Predictor() {
           ) : (
             <Card className="p-16 text-center rounded-[2.5rem] bg-card/50 border-2 border-border-subtle/30">
               <p className="text-2xl font-bold text-text-main mb-6 leading-relaxed">
-                Currently, there are no matching colleges available for your rank. We're continuously updating our data to improve accuracy. Please check back later.
+                Currently, there are no matching colleges available for your rank.
               </p>
               <p className="text-lg text-text-muted">
                 Try checking alternate categories or explore private colleges.

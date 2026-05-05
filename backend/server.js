@@ -10,6 +10,7 @@ import postRoutes from './routes/postRoutes.js';
 import commentRoutes from './routes/commentRoutes.js';
 import storyRoutes from './routes/storyRoutes.js';
 import socialRoutes from './routes/socialRoutes.js';
+import seoRoutes from './routes/seoRoutes.js';
 
 dotenv.config();
 
@@ -31,6 +32,7 @@ app.use('/api/posts', postRoutes);
 app.use('/api/comments', commentRoutes);
 app.use('/api/stories', storyRoutes);
 app.use('/api/social', socialRoutes);
+app.use('/', seoRoutes); // Serve sitemap at the root or via /sitemap.xml
 
 // Basic route
 app.get('/', (req, res) => {

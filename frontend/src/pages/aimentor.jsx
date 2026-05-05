@@ -1,12 +1,17 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '../components/ui';
+import SEO from '../components/SEO';
 
 export function AiMentor() {
   const navigate = useNavigate();
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-24 min-h-[80dvh] flex items-center justify-center">
+      <SEO 
+        title="AI Mentor - Coming Soon"
+        description="Admyra AI Mentor is leveling up. Stay tuned for a smarter, more personalized AI guidance system for college choices and career paths."
+      />
       <div className="w-full rounded-[2.5rem] border border-border-subtle bg-card/50 p-8 sm:p-16 text-center shadow-2xl backdrop-blur-xl relative overflow-hidden">
         {/* Decorative elements */}
         <div className="absolute -top-24 -right-24 w-64 h-64 bg-primary-start/10 rounded-full blur-3xl" />

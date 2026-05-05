@@ -5,6 +5,7 @@ import { Mail, Lock, ArrowRight, Eye, EyeOff } from 'lucide-react';
 import { Button } from '../components/ui';
 import { useGoogleLogin } from '@react-oauth/google';
 import { login, googleAuth } from '../api';
+import SEO from '../components/SEO';
 
 export function Login() {
   const [email, setEmail] = useState('');
@@ -56,6 +57,10 @@ export function Login() {
 
   return (
     <div className="min-h-[calc(100vh-64px)] flex items-center justify-center p-4">
+      <SEO 
+        title="Login to Your Account"
+        description="Log in to your Admyra account to access personalized college predictions, campus galleries, and institutional insights."
+      />
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

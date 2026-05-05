@@ -14,6 +14,7 @@ import { Card, Button, Badge, RatingStars, Input, ShinyButton } from "../compone
 import { colleges } from "../data/mock-data";
 import DarkVeil from "../components/DarkVeil";
 import LogoLoop from "../components/ui/LogoLoop";
+import SEO from "../components/SEO";
 
 export function Home() {
   const navigate = useNavigate();
@@ -31,8 +32,51 @@ export function Home() {
     { node: <span className="font-bold text-text-main opacity-80 hover:opacity-100 transition-opacity whitespace-nowrap tracking-wider">G.NARAYANAMMA (GNITS)</span> }
   ], []);
 
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Admyra",
+    "url": "https://admyra.in",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://admyra.in/colleges?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://admyra.in"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "College Predictor",
+        "item": "https://admyra.in/predictor"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Explore Colleges",
+        "item": "https://admyra.in/colleges"
+      }
+    ]
+  };
+
   return (
     <div className="w-full pb-24 bg-[#05060A]">
+      <SEO 
+        title="Predict Your Engineering College | TS EAMCET & TG EAPCET 2026"
+        description="Admyra is the #1 TG EAPCET & TS EAMCET college predictor. Get 99% accurate college predictions based on rank, category, and verified student feedback. Better than CollegeDost."
+        keywords="TS EAMCET college predictor, TG EAPCET predictor 2026, engineering colleges in Telangana, EAMCET rank predictor, best colleges in Hyderabad for rank, TG EAPCET cutoff ranks, Admyra college predictor"
+        schema={[websiteSchema, breadcrumbSchema]}
+      />
 
       {/* HERO */}
       <section className="relative h-[700px] sm:h-[680px] overflow-hidden">

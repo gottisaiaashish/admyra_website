@@ -5,6 +5,7 @@ import { Mail, Lock, User, ArrowRight, Eye, EyeOff } from 'lucide-react';
 import { Button } from '../components/ui';
 import { useGoogleLogin } from '@react-oauth/google';
 import { signup, googleAuth } from '../api';
+import SEO from '../components/SEO';
 
 export function Signup() {
   const [name, setName] = useState('');
@@ -73,6 +74,10 @@ export function Signup() {
 
   return (
     <div className="min-h-[calc(100vh-64px)] flex items-center justify-center p-4">
+      <SEO 
+        title="Create Your Account"
+        description="Join the Admyra community to get personalized college predictions, access verified institutional networks, and share your campus experiences."
+      />
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

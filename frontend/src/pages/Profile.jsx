@@ -45,6 +45,7 @@ import {
 import { fetchUserProfile, fetchPosts, createPost, toggleLike, toggleSave, changePassword, deletePost } from '../api';
 import { Button, Card, Badge } from '../components/ui';
 import { colleges } from '../data/mock-data';
+import SEO from '../components/SEO';
 
 export function Profile() {
   const { id } = useParams();
@@ -458,6 +459,11 @@ export function Profile() {
 
   return (
     <div className="min-h-screen bg-[#05060A] text-white selection:bg-indigo-500/30 pb-20 overflow-x-hidden -mt-16 md:-mt-20">
+      <SEO 
+        title={`${user?.name || 'User'} (@${user?.username || 'user'})`}
+        description={`View ${user?.name}'s profile on Admyra. Check their campus updates, college grievances, and institutional insights.`}
+        image={user?.avatar}
+      />
       <input type="file" ref={fileInputRef} className="hidden" accept="image/*,video/*" onChange={async (e) => {
         const file = e.target.files[0];
         if (file) {
