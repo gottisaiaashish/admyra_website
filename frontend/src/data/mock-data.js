@@ -2440,6 +2440,50 @@ export const colleges =
         { year: 4, title: "Peak Career", description: "Securing job offers in firms like Amazon and finishing final projects." }
       ]
     },
+    {
+      id: "66",
+      name: "Anurag Engineering College (AEC)",
+      location: "Aushapur, Ghatkesar, Hyderabad",
+      rating: 4.1,
+      description: "Anurag Engineering College (AEC), established in 2002, is a well-known private engineering institution located in Aushapur, Ghatkesar, Medchal-Malkajgiri District. Affiliated with JNTU Hyderabad and approved by AICTE, the college offers undergraduate and postgraduate programs in engineering disciplines including Computer Science, Electronics and Communication, Mechanical, Civil, and Information Technology. AEC is recognized for its dedicated faculty, modern infrastructure, and consistent focus on student development through technical training, industry exposure, and placement support.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "4.2 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "Accenture", "Capgemini", "Tech Mahindra", "HCL"]
+      },
+      facilities: [
+        "Well-Equipped Engineering Laboratories",
+        "Central Library with Digital Resources",
+        "Separate Hostels for Boys & Girls",
+        "Cafeteria with Hygienic Food",
+        "Auditorium & Seminar Halls",
+        "Sports Facilities (Cricket, Volleyball, Basketball)",
+        "Indoor Games Room",
+        "Campus Wi-Fi",
+        "Transportation (Bus Facility)",
+        "Health Centre",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 4.0,
+        placements: 3.9,
+        hostel: 3.6,
+        campusLife: 4.0
+      },
+      experience: [
+        { year: 1, title: "Foundation Year", description: "Building strong academic fundamentals in science, mathematics, and introductory engineering concepts." },
+        { year: 2, title: "Core Learning", description: "Diving into departmental core subjects with hands-on laboratory practice and technical workshops." },
+        { year: 3, title: "Industry Exposure", description: "Participating in internships, technical fests, and skill development programs for career readiness." },
+        { year: 4, title: "Career Takeoff", description: "Completing capstone projects and securing placements through campus drives and placement cell support." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.8!2d78.6248!3d17.4350!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9e5b5b5b5b5b%3A0x1234567890abcdef!2sAnurag%20Engineering%20College!5e0!3m2!1sen!2sin!4v1714596000000!5m2!1sen!2sin",
+      coordinates: { lat: 17.4350, lng: 78.6248 },
+      connectivity: {
+        metro: { name: "Uppal Metro Station", dist: "10.0 KM" },
+        bus: { name: "Ghatkesar Bus Stop", dist: "3.0 KM" },
+        railway: { name: "Ghatkesar Railway Station", dist: "4.5 KM" }
+      }
+    },
   ];
 
 export const reviews = [
