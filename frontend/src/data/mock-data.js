@@ -2448,7 +2448,7 @@ export const colleges =
       description: "Anurag Engineering College (AEC), established in 2002, is a well-known private engineering institution located in Aushapur, Ghatkesar, Medchal-Malkajgiri District. Affiliated with JNTU Hyderabad and approved by AICTE, the college offers undergraduate and postgraduate programs in engineering disciplines including Computer Science, Electronics and Communication, Mechanical, Civil, and Information Technology. AEC is recognized for its dedicated faculty, modern infrastructure, and consistent focus on student development through technical training, industry exposure, and placement support.",
       image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
       placements: {
-        avgPackage: "4.2 LPA",
+        avgPackage: "4.5 LPA",
         topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "Accenture", "Capgemini", "Tech Mahindra", "HCL"]
       },
       facilities: [
@@ -2482,6 +2482,8070 @@ export const colleges =
         metro: { name: "Uppal Metro Station", dist: "10.0 KM" },
         bus: { name: "Ghatkesar Bus Stop", dist: "3.0 KM" },
         railway: { name: "Ghatkesar Railway Station", dist: "4.5 KM" }
+      }
+    },
+    {
+      id: "67",
+      name: "Anu Bose Institute of Technology (ABIT)",
+      location: "Paloncha, Bhadradri Kothagudem",
+      rating: 3.6,
+      description: "Anu Bose Institute of Technology (ABIT), established in Paloncha, Bhadradri Kothagudem District, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The college offers undergraduate programs in engineering disciplines including Computer Science, Electronics and Communication, Mechanical, and Civil Engineering. ABIT focuses on providing quality technical education with dedicated faculty, modern laboratories, and a supportive learning environment for students from rural and semi-urban backgrounds.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.0 LPA",
+        topRecruiters: ["Infosys", "Wipro", "TCS", "IBM", "Tech Mahindra", "Genpact", "HCL"]
+      },
+      facilities: [
+        "Central Library with Digital Resources",
+        "Well-Equipped Engineering Laboratories",
+        "Computer Labs with Internet Access",
+        "Sports Grounds",
+        "Cafeteria",
+        "Medical Assistance",
+        "Women Empowerment Cell",
+        "Entrepreneurship Development Cell",
+        "Student Activity Cell",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.6,
+        placements: 3.3,
+        hostel: 3.2,
+        campusLife: 3.5
+      },
+      experience: [
+        { year: 1, title: "Foundation Start", description: "Building core academic fundamentals in science and engineering basics." },
+        { year: 2, title: "Technical Growth", description: "Diving into departmental subjects with practical laboratory exposure." },
+        { year: 3, title: "Skill Building", description: "Participating in workshops, seminars, and soft skills training programs." },
+        { year: 4, title: "Career Readiness", description: "Completing major projects and preparing for campus recruitment drives." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.0!2d80.7050!3d17.6050!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3400000000000%3A0xabcdef1234567890!2sAnu%20Bose%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1714596100000!5m2!1sen!2sin",
+      coordinates: { lat: 17.6050, lng: 80.7050 },
+      connectivity: {
+        bus: { name: "Paloncha Bus Stand", dist: "2.0 KM" },
+        railway: { name: "Paloncha Railway Station", dist: "2.5 KM" }
+      }
+    },
+    {
+      id: "68",
+      name: "Avanthi Institute of Engineering & Technology (AIET)",
+      location: "Gunthapally, Hayathnagar, Hyderabad",
+      rating: 3.8,
+      description: "Avanthi Institute of Engineering & Technology (AIET), located in Gunthapally near Hayathnagar, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers undergraduate and postgraduate programs in engineering disciplines including Computer Science, Electronics and Communication, Electrical, and Mechanical Engineering. AIET is known for its industry-oriented curriculum, placement training, and focus on developing technical and soft skills for career readiness.",
+      image: "https://images.static-collegedunia.com/public/college_data/images/appImage/1509430093cover.jpg",
+      placements: {
+        avgPackage: "4.0 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "Accenture", "Amazon", "Tech Mahindra"]
+      },
+      facilities: [
+        "Well-Equipped Laboratories",
+        "Central Library with Digital Resources",
+        "Smart Classrooms with Projectors",
+        "Campus Wi-Fi",
+        "Hostel Facilities",
+        "Canteen",
+        "Sports Facilities",
+        "Technical Fest & Cultural Events",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.8,
+        placements: 3.7,
+        hostel: 3.4,
+        campusLife: 3.8
+      },
+      experience: [
+        { year: 1, title: "Academic Foundation", description: "Establishing strong basics in mathematics, science, and introductory engineering." },
+        { year: 2, title: "Core Specialization", description: "Focusing on departmental subjects with hands-on lab work and projects." },
+        { year: 3, title: "Industry Readiness", description: "Internship preparation, workshops, and participation in coding competitions." },
+        { year: 4, title: "Placement Drive", description: "Final year projects and securing offers through campus recruitment drives." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.5!2d78.5650!3d17.3250!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba0000000000%3A0xfedcba0987654321!2sAvanthi%20Institute%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1714596200000!5m2!1sen!2sin",
+      coordinates: { lat: 17.3250, lng: 78.5650 },
+      connectivity: {
+        metro: { name: "L.B. Nagar Metro Station", dist: "8.0 KM" },
+        bus: { name: "Hayathnagar Bus Stop", dist: "3.0 KM" },
+        railway: { name: "Umdanagar Railway Station", dist: "10.0 KM" }
+      }
+    },
+    {
+      id: "69",
+      name: "AVN Institute of Engineering & Technology (AVNIET)",
+      location: "Ibrahimpatnam, Hyderabad",
+      rating: 3.9,
+      description: "AVN Institute of Engineering & Technology (AVNIET), located in Ibrahimpatnam near Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics and Communication, Electrical, Mechanical, and Civil Engineering. AVNIET is known for its structured placement training, modern laboratories, smart classrooms, and a strong focus on campus recruitment with partnerships across 100+ companies.",
+      image: "https://images.shiksha.com/mediadata/images/1595846985phpW2q9ja.jpeg",
+      placements: {
+        avgPackage: "3.8 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Amazon", "Accenture", "Cognizant", "IBM", "Tech Mahindra", "Capgemini"]
+      },
+      facilities: [
+        "Smart & Digital Classrooms",
+        "Well-Equipped Engineering Laboratories",
+        "Central Library with Digital Resources",
+        "Sports Facilities (Basketball, Volleyball, Cricket)",
+        "Gymnasium",
+        "Cafeteria & Canteen",
+        "Transportation (Bus Service)",
+        "24/7 CCTV Security",
+        "Health Center",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.9,
+        placements: 3.8,
+        hostel: 3.3,
+        campusLife: 3.8
+      },
+      experience: [
+        { year: 1, title: "New Beginnings", description: "Adapting to college life and building strong engineering fundamentals." },
+        { year: 2, title: "Technical Depth", description: "Core departmental subjects with practical laboratory sessions and mini-projects." },
+        { year: 3, title: "Career Prep", description: "CRT training, mock interviews, and aptitude workshops for placement readiness." },
+        { year: 4, title: "Final Sprint", description: "Completing capstone projects and attending campus recruitment drives." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3809.0!2d78.5850!3d17.2650!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba5000000000%3A0x1122334455667788!2sAVN%20Institute%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1714596300000!5m2!1sen!2sin",
+      coordinates: { lat: 17.2650, lng: 78.5850 },
+      connectivity: {
+        metro: { name: "L.B. Nagar Metro Station", dist: "14.0 KM" },
+        bus: { name: "Ibrahimpatnam Bus Stop", dist: "1.5 KM" },
+        railway: { name: "Umdanagar Railway Station", dist: "15.0 KM" }
+      }
+    },
+    {
+      id: "70",
+      name: "Brilliant Institute of Engineering & Technology (BIET)",
+      location: "Abdullapur, Abdullapurmet, Hyderabad",
+      rating: 3.7,
+      description: "Brilliant Institute of Engineering & Technology (BIET), part of the Brilliant Group of Technical Institutions, is located on a 70-acre campus in Abdullapur near Hyderabad. Affiliated with JNTU Hyderabad and approved by AICTE, the college offers undergraduate and postgraduate programs in engineering and technology. BIET is known for its spacious green campus, modern smart classrooms, well-equipped laboratories, and an active placement cell partnering with 100+ companies for campus recruitment.",
+      image: "https://images.shiksha.com/mediadata/images/1595846985phpW2q9ja.jpeg",
+      placements: {
+        avgPackage: "3.5 LPA",
+        topRecruiters: ["TCS", "Wipro", "HCL", "Genpact", "IBM", "Capgemini", "Sutherland", "GlobalLogic"]
+      },
+      facilities: [
+        "Smart Classrooms",
+        "Well-Equipped Engineering Laboratories",
+        "Central Library with Books & Digital Resources",
+        "Separate Hostels for Boys & Girls",
+        "Sports Facilities (Indoor & Outdoor)",
+        "Gymnasium",
+        "Canteen & Food Services",
+        "Campus Wi-Fi",
+        "Medical Facilities",
+        "Transportation Service",
+        "Entrepreneurship Development Cell",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.7,
+        placements: 3.5,
+        hostel: 3.5,
+        campusLife: 3.8
+      },
+      experience: [
+        { year: 1, title: "Campus Welcome", description: "Exploring the spacious 70-acre campus and building academic discipline." },
+        { year: 2, title: "Core Engineering", description: "Deep dive into departmental subjects with hands-on lab-based learning." },
+        { year: 3, title: "Industry Bridge", description: "Workshops, internships, and entrepreneurship activities for career development." },
+        { year: 4, title: "Placement Season", description: "Final year projects and campus recruitment through 100+ company partnerships." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3809.5!2d78.6450!3d17.2350!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba8000000000%3A0x9988776655443322!2sBrilliant%20Institute%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1714596400000!5m2!1sen!2sin",
+      coordinates: { lat: 17.2350, lng: 78.6450 },
+      connectivity: {
+        metro: { name: "L.B. Nagar Metro Station", dist: "16.0 KM" },
+        bus: { name: "Abdullapurmet Bus Stop", dist: "2.0 KM" },
+        railway: { name: "Ghatkesar Railway Station", dist: "18.0 KM" }
+      }
+    },
+    {
+      id: "71",
+      name: "Balaji Institute of Technology & Science (BITS)",
+      location: "Narsampet, Warangal",
+      rating: 3.9,
+      description: "Balaji Institute of Technology and Science (BITS), established in 2001 in Narsampet, Warangal, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. Accredited by NAAC and NBA, the institute offers B.Tech, M.Tech, and MBA programs across multiple disciplines. Spread across a 35-acre campus, BITS is known for its quality education, hostel facilities, Wi-Fi-enabled campus, and a dedicated placement cell with recruiters like Amazon, TCS, and Deloitte.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "5.4 LPA",
+        topRecruiters: ["Amazon", "TCS", "Infosys", "Wipro", "Cognizant", "Deloitte", "Byju's"]
+      },
+      facilities: [
+        "Well-Equipped Laboratories",
+        "Central Library with Books & Digital Resources",
+        "Separate Hostels for Boys & Girls",
+        "Campus Wi-Fi",
+        "Auditorium",
+        "Cafeteria & Canteen",
+        "Sports Facilities & Playgrounds",
+        "Health Centre with Ambulance",
+        "24/7 ATM Facility",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.9,
+        placements: 3.8,
+        hostel: 3.7,
+        campusLife: 3.9
+      },
+      experience: [
+        { year: 1, title: "Campus Immersion", description: "Settling into the green 35-acre campus and building strong academic foundations." },
+        { year: 2, title: "Core Subjects", description: "Intensive departmental courses with hands-on laboratory sessions." },
+        { year: 3, title: "Industry Connect", description: "Workshops, internships, and participation in technical fests for career readiness." },
+        { year: 4, title: "Placement Season", description: "Campus drives with top companies and completing major capstone projects." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.0!2d79.8950!3d17.9250!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a334000000000%3A0xaabbccddee001122!2sBalaji%20Institute%20of%20Technology%20and%20Science!5e0!3m2!1sen!2sin!4v1714596500000!5m2!1sen!2sin",
+      coordinates: { lat: 17.9250, lng: 79.8950 },
+      connectivity: {
+        bus: { name: "Narsampet Bus Stand", dist: "2.0 KM" },
+        railway: { name: "Warangal Railway Station", dist: "35.0 KM" }
+      }
+    },
+    {
+      id: "72",
+      name: "CMR Academy School of Engineering & Technology (CAS)",
+      location: "Medchal, Hyderabad",
+      rating: 3.8,
+      description: "CMR Academy School of Engineering & Technology (CAS), part of the CMR Group of Institutions, is located in Medchal, Hyderabad. Affiliated with JNTU Hyderabad and approved by AICTE, the college offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. CAS provides modern infrastructure, smart classrooms, and industry-oriented training through its active placement cell, helping students build professional skills and secure career opportunities.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "4.0 LPA",
+        topRecruiters: ["Amazon", "Accenture", "Capgemini", "Cognizant", "Infosys", "Wipro", "TCS"]
+      },
+      facilities: [
+        "Smart Classrooms with Digital Boards",
+        "Well-Equipped Laboratories",
+        "Central Library with Digital Resources",
+        "Separate Hostels for Boys & Girls",
+        "Auditorium & Seminar Halls",
+        "Cafeteria",
+        "Sports Facilities & Gymnasium",
+        "Campus Wi-Fi",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.8,
+        placements: 3.7,
+        hostel: 3.6,
+        campusLife: 3.8
+      },
+      experience: [
+        { year: 1, title: "CMR Start", description: "Orientation to the CMR ecosystem and establishing core academic discipline." },
+        { year: 2, title: "Technical Focus", description: "Departmental core subjects with lab-integrated practical learning." },
+        { year: 3, title: "Career Preparation", description: "Industry workshops, coding bootcamps, and soft skills training." },
+        { year: 4, title: "Final Placement", description: "Completing projects and attending campus recruitment drives with top companies." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.0!2d78.4850!3d17.6350!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb96cd88888888%3A0xee22334455667788!2sCMR%20Academy%20School%20of%20Engineering!5e0!3m2!1sen!2sin!4v1714596600000!5m2!1sen!2sin",
+      coordinates: { lat: 17.6350, lng: 78.4850 },
+      connectivity: {
+        bus: { name: "Medchal Bus Stop", dist: "1.5 KM" },
+        railway: { name: "Medchal Railway Station", dist: "2.0 KM" }
+      }
+    },
+    {
+      id: "73",
+      name: "Christu Jyothi Institute of Technology & Science (CJITS)",
+      location: "Jangaon, Telangana",
+      rating: 3.5,
+      description: "Christu Jyothi Institute of Technology & Science (CJITS), located in Jangaon, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers undergraduate programs in Computer Science, Electronics, Mechanical, and Civil Engineering. CJITS provides a green campus environment with a dedicated placement and training centre, hostel facilities, and transportation services connecting to surrounding areas like Hanamkonda and Jangaon.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.0 LPA",
+        topRecruiters: ["HCL", "Deloitte", "TCS", "Infosys", "Wipro", "Cognizant"]
+      },
+      facilities: [
+        "Central Library with Reference Books & Resources",
+        "Engineering Laboratories",
+        "Hostel Facilities",
+        "Transportation (Hanamkonda & Jangaon Routes)",
+        "Green Campus Environment",
+        "Cafeteria",
+        "Sports Grounds",
+        "Entrepreneurship Development Cell",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.5,
+        placements: 3.2,
+        hostel: 3.0,
+        campusLife: 3.4
+      },
+      experience: [
+        { year: 1, title: "Academic Start", description: "Building foundational engineering knowledge in a peaceful campus setting." },
+        { year: 2, title: "Core Studies", description: "Focused departmental subjects with basic laboratory exposure." },
+        { year: 3, title: "Training Phase", description: "Pre-placement training in soft skills, communication, and interview preparation." },
+        { year: 4, title: "Career Launch", description: "Final year projects and participating in campus recruitment drives." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.0!2d79.1750!3d17.7350!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a33b0000000000%3A0xccddee0011223344!2sChristu%20Jyothi%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1714596700000!5m2!1sen!2sin",
+      coordinates: { lat: 17.7350, lng: 79.1750 },
+      connectivity: {
+        bus: { name: "Jangaon Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Jangaon Railway Station", dist: "4.0 KM" }
+      }
+    },
+    {
+      id: "74",
+      name: "Ellenki College of Engineering & Technology (ECET)",
+      location: "Patancheru, Hyderabad",
+      rating: 4.0,
+      description: "Ellenki College of Engineering & Technology (ECET), located in Patancheru, Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Electrical, Mechanical, and Civil Engineering. ECET is known for its modern infrastructure including smart classrooms, well-equipped labs, a large library with 50,000+ books, and an active placement cell achieving up to 95% placement rates with companies like Amazon, Infosys, and TCS.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "4.5 LPA",
+        topRecruiters: ["Amazon", "Infosys", "Wipro", "TCS", "IBM", "Capgemini", "Cognizant", "Tech Mahindra"]
+      },
+      facilities: [
+        "Smart Classrooms with Digital Boards",
+        "Well-Equipped Engineering Laboratories",
+        "Central Library (50,000+ Books & E-Resources)",
+        "Separate Hostels for Boys & Girls (AC & Non-AC)",
+        "Sports Complex (Cricket, Football, Basketball, Badminton)",
+        "Gymnasium",
+        "Auditorium & Seminar Halls",
+        "Cafeteria",
+        "24/7 Medical Facilities",
+        "Transportation (Bus Service)",
+        "AI & Web Development Student Clubs",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 4.0,
+        placements: 4.1,
+        hostel: 3.7,
+        campusLife: 4.0
+      },
+      experience: [
+        { year: 1, title: "Strong Start", description: "Adapting to the modern campus and building core engineering fundamentals." },
+        { year: 2, title: "Technical Growth", description: "Departmental specialization with lab-intensive courses and mini-projects." },
+        { year: 3, title: "Industry Readiness", description: "CRT programs, mock interviews, and internship opportunities with MNCs." },
+        { year: 4, title: "Dream Placements", description: "Final projects and securing offers through campus drives with 100+ companies." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.5!2d78.2650!3d17.5350!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9000000000%3A0xddee001122334455!2sEllenki%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1714596800000!5m2!1sen!2sin",
+      coordinates: { lat: 17.5350, lng: 78.2650 },
+      connectivity: {
+        metro: { name: "Miyapur Metro Station", dist: "12.0 KM" },
+        bus: { name: "Patancheru Bus Stop", dist: "2.0 KM" },
+        railway: { name: "Lingampally Railway Station", dist: "14.0 KM" }
+      }
+    },
+    {
+      id: "75",
+      name: "Gate Institute of Technology & Sciences (GITS)",
+      location: "Kodad, Suryapet",
+      rating: 3.4,
+      description: "Gate Institute of Technology & Sciences (GITS), established in 2008 in Kodad, Suryapet District, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers undergraduate programs in engineering disciplines including Computer Science, Electronics, Mechanical, and Civil Engineering. GITS focuses on providing quality technical education with basic infrastructure, dedicated faculty, and a training and placement cell to support students in their academic and career goals.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.8 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Engineering Laboratories",
+        "Central Library",
+        "Computer Labs with Internet",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.4,
+        placements: 3.1,
+        hostel: 3.0,
+        campusLife: 3.3
+      },
+      experience: [
+        { year: 1, title: "Foundation Year", description: "Building basic engineering fundamentals in a focused learning environment." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory-based practical training." },
+        { year: 3, title: "Skill Development", description: "Workshops and training programs for technical and soft skill improvement." },
+        { year: 4, title: "Career Start", description: "Completing final projects and preparing for campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.0!2d79.9750!3d16.9950!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35e0000000000%3A0xeeff001122334455!2sGate%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1714596900000!5m2!1sen!2sin",
+      coordinates: { lat: 16.9950, lng: 79.9750 },
+      connectivity: {
+        bus: { name: "Kodad Bus Stand", dist: "2.0 KM" },
+        railway: { name: "Kodad Railway Station", dist: "1.5 KM" }
+      }
+    },
+    {
+      id: "76",
+      name: "Hasvita Institute of Engineering & Technology (HIET)",
+      location: "Keesara, Medchal-Malkajgiri",
+      rating: 3.3,
+      description: "Hasvita Institute of Engineering & Technology (HIET), located in Keesara, Medchal-Malkajgiri District near Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech and M.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. HIET focuses on providing accessible technical education with standard academic facilities, laboratories, and a library to support student learning.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Engineering Laboratories",
+        "Central Library",
+        "Computer Labs with Internet",
+        "Cafeteria",
+        "Sports Grounds",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 2.8,
+        hostel: 3.0,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "Foundation Year", description: "Building basic engineering concepts and academic discipline." },
+        { year: 2, title: "Core Learning", description: "Departmental subjects with introductory laboratory sessions." },
+        { year: 3, title: "Skill Development", description: "Technical workshops and preparation for industry-oriented skills." },
+        { year: 4, title: "Career Preparation", description: "Final projects and exploring placement opportunities through the training cell." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.5!2d78.6150!3d17.5250!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9e0000000001%3A0xaa11223344556677!2sHasvita%20Institute%20of%20Engineering!5e0!3m2!1sen!2sin!4v1714597000000!5m2!1sen!2sin",
+      coordinates: { lat: 17.5250, lng: 78.6150 },
+      connectivity: {
+        bus: { name: "Keesara Bus Stop", dist: "2.0 KM" },
+        railway: { name: "Ghatkesar Railway Station", dist: "8.0 KM" }
+      }
+    },
+    {
+      id: "77",
+      name: "Indur Institute of Engineering & Technology (IIET)",
+      location: "Siddipet, Telangana",
+      rating: 3.7,
+      description: "Indur Institute of Engineering and Technology (IIET), located in Siddipet, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. IIET provides a well-equipped campus with hostels, Wi-Fi connectivity, transportation services, and a dedicated placement cell facilitating recruitment by companies like Amazon, Oracle, and TCS with packages reaching up to 12 LPA.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.5 LPA",
+        topRecruiters: ["HCL", "Wipro", "TCS", "Tech Mahindra", "Cognizant", "Amazon", "Oracle", "Microsoft"]
+      },
+      facilities: [
+        "Well-Equipped Laboratories",
+        "Central Library with Digital Resources",
+        "Separate Hostels for Boys & Girls",
+        "Campus Wi-Fi",
+        "Auditorium",
+        "Cafeteria",
+        "Sports Facilities (Indoor & Outdoor)",
+        "Health Centre",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.7,
+        placements: 3.5,
+        hostel: 3.4,
+        campusLife: 3.6
+      },
+      experience: [
+        { year: 1, title: "Academic Start", description: "Establishing engineering foundations in a campus away from the city bustle." },
+        { year: 2, title: "Core Subjects", description: "Intensive departmental courses with laboratory-based practical learning." },
+        { year: 3, title: "Industry Prep", description: "Workshops, webinars, and soft skills training for placement readiness." },
+        { year: 4, title: "Career Launch", description: "Campus recruitment drives and completing capstone projects." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.0!2d78.8550!3d18.1050!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc0000000000%3A0xbb22334455667788!2sIndur%20Institute%20of%20Engineering!5e0!3m2!1sen!2sin!4v1714597100000!5m2!1sen!2sin",
+      coordinates: { lat: 18.1050, lng: 78.8550 },
+      connectivity: {
+        bus: { name: "Siddipet Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Kamareddy Railway Station", dist: "45.0 KM" }
+      }
+    },
+    {
+      id: "78",
+      name: "ISL Engineering College (ISLEC)",
+      location: "Bandlaguda, Hyderabad",
+      rating: 3.6,
+      description: "ISL Engineering College (ISLEC), located on International Airport Road, Bandlaguda, Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. Situated in an urban location approximately 12-15 KM from the city center, ISLEC provides standard academic infrastructure, a dedicated placement cell, and sports facilities for holistic student development.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.5 LPA",
+        topRecruiters: ["Microsoft", "Oracle", "Deloitte", "Infosys", "TCS", "Wipro", "Cognizant"]
+      },
+      facilities: [
+        "Classrooms with AV Aids",
+        "Engineering Laboratories",
+        "Central Library with Digital Resources",
+        "Campus Wi-Fi",
+        "Cafeteria & Canteen",
+        "Auditorium & Seminar Halls",
+        "Sports Facilities (Basketball, Football, Volleyball)",
+        "Gymnasium",
+        "Health Center",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.6,
+        placements: 3.4,
+        hostel: 3.1,
+        campusLife: 3.5
+      },
+      experience: [
+        { year: 1, title: "Urban Start", description: "Beginning the engineering journey in a well-connected urban campus." },
+        { year: 2, title: "Technical Focus", description: "Core departmental subjects with practical lab sessions." },
+        { year: 3, title: "Career Building", description: "Aptitude training, mock interviews, and early placement preparation." },
+        { year: 4, title: "Final Goal", description: "Completing projects and securing placements through campus drives." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.5!2d78.4450!3d17.3350!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9900000000%3A0xcc33445566778899!2sISL%20Engineering%20College!5e0!3m2!1sen!2sin!4v1714597200000!5m2!1sen!2sin",
+      coordinates: { lat: 17.3350, lng: 78.4450 },
+      connectivity: {
+        metro: { name: "Falaknuma Metro Station", dist: "5.0 KM" },
+        bus: { name: "Bandlaguda Bus Stop", dist: "0.5 KM" },
+        railway: { name: "Falaknuma Railway Station", dist: "6.0 KM" }
+      }
+    },
+    {
+      id: "79",
+      name: "Joginpally B.R Engineering College (JBREC)",
+      location: "Yenkapally, Moinabad, Hyderabad",
+      rating: 3.8,
+      description: "Joginpally B.R Engineering College (JBREC), located in Yenkapally, Moinabad near Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs across multiple engineering disciplines with a focus on quality education and holistic development. JBREC features a well-equipped campus with Wi-Fi connectivity, separate hostels, a health center associated with Bhaskar General Hospital, sports facilities, and a dedicated training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.8 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Accenture", "Cognizant", "Capgemini", "Tech Mahindra"]
+      },
+      facilities: [
+        "Wi-Fi Enabled Campus",
+        "Well-Equipped Laboratories",
+        "Central Library with DELNET & NPTEL Access",
+        "Separate Hostels for Boys & Girls",
+        "Health Center (Bhaskar General Hospital)",
+        "Multiple Canteens",
+        "Sports Facilities (Cricket, Volleyball, Table Tennis, Chess)",
+        "Gymnasium & Yoga Center",
+        "Auditorium & Seminar Halls",
+        "Solar Power & Generator Backup",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.8,
+        placements: 3.6,
+        hostel: 3.5,
+        campusLife: 3.8
+      },
+      experience: [
+        { year: 1, title: "Green Campus Welcome", description: "Settling into the scenic Moinabad campus and building academic foundations." },
+        { year: 2, title: "Core Engineering", description: "Intensive departmental studies with laboratory and project-based learning." },
+        { year: 3, title: "Industry Readiness", description: "Soft skills workshops, mock interviews, and internship opportunities." },
+        { year: 4, title: "Career Takeoff", description: "Final year projects and securing placements through campus recruitment drives." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.0!2d78.2850!3d17.3550!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb8800000000%3A0xdd44556677889900!2sJoginpally%20BR%20Engineering%20College!5e0!3m2!1sen!2sin!4v1714597300000!5m2!1sen!2sin",
+      coordinates: { lat: 17.3550, lng: 78.2850 },
+      connectivity: {
+        bus: { name: "Moinabad Bus Stop", dist: "3.0 KM" },
+        railway: { name: "Lingampally Railway Station", dist: "20.0 KM" }
+      }
+    },
+    {
+      id: "80",
+      name: "KLR College of Engineering & Technology (KLRCET)",
+      location: "Paloncha, Bhadradri Kothagudem",
+      rating: 3.6,
+      description: "KLR College of Engineering & Technology (KLRCET), located in Paloncha, Bhadradri Kothagudem District, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. KLRCET features a Career Development Centre (CDC), a central library with 10,500+ volumes, Wi-Fi-enabled campus, separate hostels, and the Sidhardha Auditorium for events and workshops.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "4.2 LPA",
+        topRecruiters: ["Wipro", "BGR Energy", "Gammon India", "ICICI Bank", "Byju's", "Eureka Forbes", "3i Infotech"]
+      },
+      facilities: [
+        "Central Library (10,500+ Volumes & Digital Resources)",
+        "Well-Equipped Laboratories",
+        "Sidhardha Auditorium & Seminar Halls",
+        "Separate Hostels for Boys & Girls",
+        "Campus Wi-Fi",
+        "Sports Facilities (Indoor & Outdoor)",
+        "Cafeteria",
+        "Medical Facilities",
+        "Transportation Service",
+        "Career Development Centre (CDC)"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.6,
+        placements: 3.5,
+        hostel: 3.3,
+        campusLife: 3.5
+      },
+      experience: [
+        { year: 1, title: "Campus Entry", description: "Beginning engineering education in a focused rural campus environment." },
+        { year: 2, title: "Technical Depth", description: "Core subjects with practical lab sessions and department projects." },
+        { year: 3, title: "Career Training", description: "CDC-led soft skills, aptitude, and communication skill development." },
+        { year: 4, title: "Recruitment Season", description: "On-campus and off-campus placement drives and final year project completion." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.0!2d80.6950!3d17.6150!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3410000000000%3A0xee55667788990011!2sKLR%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1714597400000!5m2!1sen!2sin",
+      coordinates: { lat: 17.6150, lng: 80.6950 },
+      connectivity: {
+        bus: { name: "Paloncha Bus Stand", dist: "2.0 KM" },
+        railway: { name: "Paloncha Railway Station", dist: "2.5 KM" }
+      }
+    },
+    {
+      id: "81",
+      name: "KLR Institute of Technology (KLRIT)",
+      location: "Ranga Sahampet, Khammam",
+      rating: 3.5,
+      description: "KLR Institute of Technology (KLRIT), located near Khammam in Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. KLRIT provides standard academic infrastructure with well-ventilated classrooms, departmental laboratories, a central library, and a dedicated placement cell facilitating recruitment by companies like Wipro, TCS, and Cognizant.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.5 LPA",
+        topRecruiters: ["Wipro", "Tech Mahindra", "Accenture", "HCL", "Cognizant", "TCS", "3i Infotech"]
+      },
+      facilities: [
+        "Well-Ventilated Classrooms with Projectors",
+        "Departmental Laboratories",
+        "Central Library with Digital Resources",
+        "Separate Hostels for Boys & Girls",
+        "Campus Wi-Fi",
+        "Cafeteria & Canteen",
+        "Sports Facilities",
+        "Medical Dispensary",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.5,
+        placements: 3.3,
+        hostel: 3.2,
+        campusLife: 3.4
+      },
+      experience: [
+        { year: 1, title: "Foundation Year", description: "Building basic engineering fundamentals in a focused campus environment." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with hands-on laboratory practice." },
+        { year: 3, title: "Skill Training", description: "Soft skills, aptitude preparation, and early placement training." },
+        { year: 4, title: "Placement Drives", description: "Final year projects and campus recruitment with IT and core companies." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.0!2d80.1550!3d17.2550!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3500000000001%3A0xff11223344556677!2sKLR%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1714597500000!5m2!1sen!2sin",
+      coordinates: { lat: 17.2550, lng: 80.1550 },
+      connectivity: {
+        bus: { name: "Khammam Bus Stand", dist: "5.0 KM" },
+        railway: { name: "Khammam Railway Station", dist: "6.0 KM" }
+      }
+    },
+    {
+      id: "82",
+      name: "Kakatiya University College of Engineering & Technology (KUCET)",
+      location: "Kakatiya University Campus, Warangal",
+      rating: 4.3,
+      description: "Kakatiya University College of Engineering & Technology (KUCET), located on the prestigious Kakatiya University campus in Warangal, is a government engineering college offering B.Tech and M.Tech programs in Computer Science, Electronics, Mechanical, Civil, and Metallurgical Engineering. Known for its strong academic reputation, experienced faculty, and university-backed infrastructure, KUCET attracts students who pursue both placements and higher education at top Indian and international universities.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "5.0 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "Genpact", "Amazon", "HCL", "Value Labs", "Teradata"]
+      },
+      facilities: [
+        "University Library with Extensive Collection",
+        "Modern Computer Labs",
+        "Departmental Laboratories",
+        "Separate Hostels for Boys & Girls",
+        "Auditorium & Seminar Halls",
+        "Sports Facilities (Tennis, Football, Basketball)",
+        "Gymnasium",
+        "Cafeteria & Canteen",
+        "Banking & ATM Services",
+        "Campus Wi-Fi",
+        "Medical Facilities",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 4.3,
+        placements: 4.0,
+        hostel: 3.6,
+        campusLife: 4.2
+      },
+      experience: [
+        { year: 1, title: "University Life", description: "Immersing into the historic Kakatiya University campus and building strong basics." },
+        { year: 2, title: "Academic Rigor", description: "Deep dive into core engineering with experienced university faculty." },
+        { year: 3, title: "Research & Skills", description: "TASK training, industry interactions, and preparation for higher studies or placements." },
+        { year: 4, title: "Career Milestone", description: "Campus drives with top MNCs and GATE/GRE preparation for higher education." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.0!2d79.5250!3d17.9850!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3345000000000%3A0xaa22334455667788!2sKakatiya%20University%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1714597600000!5m2!1sen!2sin",
+      coordinates: { lat: 17.9850, lng: 79.5250 },
+      connectivity: {
+        bus: { name: "Kakatiya University Bus Stop", dist: "0.5 KM" },
+        railway: { name: "Warangal Railway Station", dist: "6.0 KM" }
+      }
+    },
+    {
+      id: "83",
+      name: "Malla Reddy Engineering College & Management Sciences (MREM)",
+      location: "Kistapur, Medchal, Hyderabad",
+      rating: 4.0,
+      description: "Malla Reddy Engineering College and Management Sciences (MREM), located in Kistapur, Medchal near Hyderabad, is an autonomous private engineering college affiliated with JNTU Hyderabad and approved by AICTE. Spread across a 10-acre green campus, the institute offers B.Tech, M.Tech, and MBA programs. MREM is known for its consistent placement performance with companies like Amazon, TCS, and Deloitte, modern laboratories, and a focus on industry-relevant technical education.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "5.0 LPA",
+        topRecruiters: ["Amazon", "TCS", "Deloitte", "Tech Mahindra", "Cognizant", "Wipro", "IBM"]
+      },
+      facilities: [
+        "Modern Computer & Departmental Laboratories",
+        "Central Library with Books & Journals",
+        "Hostel Facilities (Nearby Partnership)",
+        "Campus Wi-Fi",
+        "Cafeteria & Canteen",
+        "Sports Facilities (Indoor & Outdoor)",
+        "Gymnasium & Yoga Center",
+        "Medical Facilities",
+        "Transportation Service",
+        "Green Campus Environment",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 4.0,
+        placements: 4.1,
+        hostel: 3.5,
+        campusLife: 3.9
+      },
+      experience: [
+        { year: 1, title: "Malla Reddy Welcome", description: "Adapting to the green campus and building core engineering fundamentals." },
+        { year: 2, title: "Technical Depth", description: "Intensive departmental courses with lab-based practical learning." },
+        { year: 3, title: "Industry Readiness", description: "Internships, soft skills training, and corporate interaction programs." },
+        { year: 4, title: "Placement Success", description: "Securing offers from top companies through dedicated campus recruitment drives." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.0!2d78.4850!3d17.6250!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb96cd99999999%3A0xbb33445566778899!2sMalla%20Reddy%20Engineering%20College%20Management%20Sciences!5e0!3m2!1sen!2sin!4v1714597700000!5m2!1sen!2sin",
+      coordinates: { lat: 17.6250, lng: 78.4850 },
+      connectivity: {
+        bus: { name: "Medchal Bus Stop", dist: "2.0 KM" },
+        railway: { name: "Medchal Railway Station", dist: "3.0 KM" }
+      }
+    },
+    {
+      id: "84",
+      name: "Megha Institute of Engineering & Technology for Women (MIETW)",
+      location: "Ghatkesar, Hyderabad",
+      rating: 3.8, type: "women",
+      description: "Megha Institute of Engineering and Technology for Women (MIETW), located in Ghatkesar near Hyderabad, is a private women's engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Electrical, and Mechanical Engineering. MIETW features a Wi-Fi-enabled campus with smart classrooms, a central library with DELNET access, hostel facilities, and an active training and placement cell with recruiters like TCS, Wipro, Infosys, and Accenture.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "4.0 LPA",
+        topRecruiters: ["TCS", "Wipro", "Infosys", "Accenture", "Cognizant", "IBM", "Tech Mahindra"]
+      },
+      facilities: [
+        "Smart Classrooms with Projectors",
+        "Well-Equipped Laboratories",
+        "Central Library with DELNET & Digital Resources",
+        "Hostel Facilities for Women",
+        "Campus Wi-Fi",
+        "AC Auditorium with Multimedia",
+        "Cafeteria with Hygienic Food",
+        "Sports Facilities (Cricket, Volleyball, Chess)",
+        "Gymnasium",
+        "Health Center",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.8,
+        placements: 3.7,
+        hostel: 3.6,
+        campusLife: 3.7
+      },
+      experience: [
+        { year: 1, title: "Women in Tech", description: "Beginning the engineering journey in a supportive women-focused campus." },
+        { year: 2, title: "Core Specialization", description: "Focusing on departmental subjects with smart classroom learning." },
+        { year: 3, title: "Career Training", description: "Aptitude, coding workshops, and mock interviews for placement readiness." },
+        { year: 4, title: "Placement Drive", description: "Final projects and securing offers through campus recruitment with top MNCs." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.8!2d78.6050!3d17.4450!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9e1111111111%3A0xcc44556677889900!2sMegha%20Institute%20of%20Engineering%20for%20Women!5e0!3m2!1sen!2sin!4v1714597800000!5m2!1sen!2sin",
+      coordinates: { lat: 17.4450, lng: 78.6050 },
+      connectivity: {
+        metro: { name: "Uppal Metro Station", dist: "10.0 KM" },
+        bus: { name: "Ghatkesar Bus Stop", dist: "2.0 KM" },
+        railway: { name: "Ghatkesar Railway Station", dist: "3.0 KM" }
+      }
+    },
+    {
+      id: "85",
+      name: "Mother Teresa Institute of Science & Technology (MIST)",
+      location: "Sathupally, Khammam",
+      rating: 3.6,
+      description: "Mother Teresa Institute of Science & Technology (MIST), located in Sathupally, Khammam District, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech and M.Tech programs in engineering disciplines including Computer Science, Electronics, Mechanical, and Civil Engineering. MIST features a Wi-Fi-enabled campus with a two-floor central library, modern laboratories, separate hostels, an auditorium, and a dedicated training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.2 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Capgemini", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Two-Floor Central Library with E-Journals",
+        "Modern Classrooms with Projectors & A-View",
+        "Well-Equipped Laboratories",
+        "Separate Hostels for Boys & Girls (Solar Water Heaters)",
+        "Campus Wi-Fi (100 Mbps)",
+        "Auditorium & Seminar Halls",
+        "Cafeteria",
+        "Sports Complex & Gymnasium",
+        "On-Campus Medical Doctor",
+        "Transportation (Bus Fleet)",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.6,
+        placements: 3.3,
+        hostel: 3.4,
+        campusLife: 3.5
+      },
+      experience: [
+        { year: 1, title: "Campus Welcome", description: "Settling into the Sathupally campus and building engineering fundamentals." },
+        { year: 2, title: "Core Engineering", description: "Intensive departmental subjects with lab-based practical training." },
+        { year: 3, title: "Industry Prep", description: "Skill development workshops, seminars, and placement training programs." },
+        { year: 4, title: "Career Start", description: "Campus recruitment drives and final year project completion." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3812.0!2d80.8650!3d17.2050!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3520000000000%3A0xdd55667788990011!2sMother%20Teresa%20Institute%20of%20Science!5e0!3m2!1sen!2sin!4v1714597900000!5m2!1sen!2sin",
+      coordinates: { lat: 17.2050, lng: 80.8650 },
+      connectivity: {
+        bus: { name: "Sathupally Bus Stand", dist: "2.0 KM" },
+        railway: { name: "Khammam Railway Station", dist: "35.0 KM" }
+      }
+    },
+    {
+      id: "86",
+      name: "Nigama Engineering College (NEC)",
+      location: "Karimnagar, Telangana",
+      rating: 3.3,
+      description: "Nigama Engineering College (NEC), located in Karimnagar, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. NEC provides basic academic infrastructure with laboratories, a library, and a training and placement cell to support students in their technical education and career development.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Engineering Laboratories",
+        "Central Library",
+        "Computer Labs with Internet",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.0,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "Foundation Year", description: "Building basic engineering concepts and academic discipline." },
+        { year: 2, title: "Core Learning", description: "Departmental subjects with laboratory sessions and practical exposure." },
+        { year: 3, title: "Skill Development", description: "Technical workshops and soft skills training for career readiness." },
+        { year: 4, title: "Career Start", description: "Final projects and exploring placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.5!2d79.1350!3d18.4350!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc5000000000%3A0xaa66778899001122!2sNigama%20Engineering%20College!5e0!3m2!1sen!2sin!4v1714598000000!5m2!1sen!2sin",
+      coordinates: { lat: 18.4350, lng: 79.1350 },
+      connectivity: {
+        bus: { name: "Karimnagar Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Peddapalli Railway Station", dist: "25.0 KM" }
+      }
+    },
+    {
+      id: "87",
+      name: "University College of Engineering for Women, OU (UCEW-OU)",
+      location: "Koti, Hyderabad",
+      rating: 4.4, type: "women",
+      description: "University College of Engineering for Women (UCEW), part of Osmania University, is a prestigious government women's engineering college located in Koti, Hyderabad. Established under the historic Osmania University, the college offers B.E. programs in Computer Science, Electronics, Electrical, and Civil Engineering. Known for its strong academic legacy, experienced faculty, autonomous status with NBA/NAAC accreditation, and a robust placement cell with recruiters like Deloitte, JP Morgan, Wipro, and Accenture.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "6.0 LPA",
+        topRecruiters: ["Deloitte", "JP Morgan", "Wipro", "Accenture", "TCS", "Infosys", "Cognizant", "Amazon"]
+      },
+      facilities: [
+        "Well-Equipped Science & Computer Labs",
+        "Central Library with INFLIBNET Access",
+        "Hostel Facilities for Women",
+        "Seminar Halls & Auditorium",
+        "Cafeteria & Canteen",
+        "Sports Complex & Gymnasium",
+        "Medical Facilities",
+        "Campus Wi-Fi",
+        "Serene Campus Environment",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 4.5,
+        placements: 4.3,
+        hostel: 3.8,
+        campusLife: 4.3
+      },
+      experience: [
+        { year: 1, title: "OU Legacy", description: "Joining the historic Osmania University community and building strong academic roots." },
+        { year: 2, title: "Core Engineering", description: "Rigorous engineering coursework with experienced university faculty." },
+        { year: 3, title: "Industry Connect", description: "Internships, skill development programs, and corporate interactions." },
+        { year: 4, title: "Career Excellence", description: "Campus drives with top MNCs and preparation for higher studies." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.5!2d78.4950!3d17.3850!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99a000000000%3A0xbb77889900112233!2sOsmania%20University%20College%20for%20Women!5e0!3m2!1sen!2sin!4v1714598100000!5m2!1sen!2sin",
+      coordinates: { lat: 17.3850, lng: 78.4950 },
+      connectivity: {
+        metro: { name: "Sultan Bazaar Metro Station", dist: "0.8 KM" },
+        bus: { name: "Koti Bus Stop", dist: "0.3 KM" },
+        railway: { name: "Kacheguda Railway Station", dist: "2.0 KM" }
+      }
+    },
+    {
+      id: "88",
+      name: "Pallavi Engineering College (PEC)",
+      location: "Kuntloor, Hayathnagar, Hyderabad",
+      rating: 3.9,
+      description: "Pallavi Engineering College (PEC), located in Kuntloor, Hayathnagar near Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs across multiple engineering disciplines with a focus on quality education, industry-oriented training, and holistic development. PEC features ICT-enabled classrooms, smart labs, an incubation center, R&D cell, and a dedicated training and placement division achieving placement rates of 65-90%.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "4.5 LPA",
+        topRecruiters: ["Infosys", "Wipro", "TCS", "Tech Mahindra", "Capgemini", "Cognizant"]
+      },
+      facilities: [
+        "ICT-Enabled & Smart Classrooms",
+        "State-of-the-Art Laboratories",
+        "Central Library with Digital Resources",
+        "Separate Hostels for Boys & Girls",
+        "Incubation Center & R&D Cell",
+        "Sports Facilities & Gymnasium",
+        "Yoga & Meditation Center",
+        "Cafeteria",
+        "Health Center",
+        "Transportation (Bus Service)",
+        "Training & Placement Division"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.9,
+        placements: 3.8,
+        hostel: 3.5,
+        campusLife: 3.8
+      },
+      experience: [
+        { year: 1, title: "Tech Entry", description: "Adapting to the ICT-enabled campus and building engineering fundamentals." },
+        { year: 2, title: "Core Specialization", description: "Intensive departmental courses with smart lab sessions." },
+        { year: 3, title: "Industry Bridge", description: "CRT training, internships, and incubation center involvement." },
+        { year: 4, title: "Placement Success", description: "Campus drives and securing offers from top IT companies." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3809.0!2d78.5750!3d17.2750!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba3000000000%3A0xcc88990011223344!2sPallavi%20Engineering%20College!5e0!3m2!1sen!2sin!4v1714598200000!5m2!1sen!2sin",
+      coordinates: { lat: 17.2750, lng: 78.5750 },
+      connectivity: {
+        metro: { name: "L.B. Nagar Metro Station", dist: "10.0 KM" },
+        bus: { name: "Kuntloor Bus Stop", dist: "1.0 KM" },
+        railway: { name: "Umdanagar Railway Station", dist: "12.0 KM" }
+      }
+    },
+    {
+      id: "89",
+      name: "Princeton College of Engineering & Technology (PCET)",
+      location: "Ghatkesar, Hyderabad",
+      rating: 3.5,
+      description: "Princeton College of Engineering & Technology (PCET), located in the Ghatkesar area near Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. PCET provides standard academic infrastructure with classrooms, laboratories, a library, and a training and placement cell facilitating campus recruitment drives.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.2 LPA",
+        topRecruiters: ["TCS", "Tech Mahindra", "Infosys", "Wipro", "IBM", "Cognizant"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Engineering Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Auditorium & Seminar Halls",
+        "Sports Grounds",
+        "Medical Facilities",
+        "Transportation (Bus Service)",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.5,
+        placements: 3.2,
+        hostel: 3.1,
+        campusLife: 3.4
+      },
+      experience: [
+        { year: 1, title: "Academic Start", description: "Building foundational engineering knowledge and campus orientation." },
+        { year: 2, title: "Core Studies", description: "Departmental subjects with introductory laboratory work." },
+        { year: 3, title: "Skill Building", description: "Soft skills training, seminars, and placement preparation activities." },
+        { year: 4, title: "Campus Drives", description: "Final year projects and participating in campus recruitment." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.8!2d78.6150!3d17.4250!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9e2222222222%3A0xdd99001122334455!2sPrinceton%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1714598300000!5m2!1sen!2sin",
+      coordinates: { lat: 17.4250, lng: 78.6150 },
+      connectivity: {
+        metro: { name: "Uppal Metro Station", dist: "11.0 KM" },
+        bus: { name: "Ghatkesar Bus Stop", dist: "2.0 KM" },
+        railway: { name: "Ghatkesar Railway Station", dist: "3.0 KM" }
+      }
+    },
+    {
+      id: "90",
+      name: "Ramappa Engineering College (REC)",
+      location: "Hanamkonda, Warangal",
+      rating: 3.6,
+      description: "Ramappa Engineering College (REC), established in 1999 in Hanamkonda, Warangal, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech and M.Tech programs in Computer Science, Electronics, Mechanical, Civil, and AI & ML. Located approximately 4 KM from Warangal Railway Station, REC provides a dedicated placement cell, hostel facilities, and bus transportation services for students.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.5 LPA",
+        topRecruiters: ["Infosys", "Wipro", "TCS", "Genpact", "Syntel", "Cognizant"]
+      },
+      facilities: [
+        "Well-Equipped Classrooms",
+        "Engineering Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Seminar Halls",
+        "Sports Grounds",
+        "Transportation (Bus Service)",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.6,
+        placements: 3.4,
+        hostel: 3.2,
+        campusLife: 3.5
+      },
+      experience: [
+        { year: 1, title: "Warangal Welcome", description: "Joining the Hanamkonda campus and establishing academic foundations." },
+        { year: 2, title: "Core Engineering", description: "Deep dive into departmental subjects with lab-based training." },
+        { year: 3, title: "Career Prep", description: "Placement training, workshops, and industry interaction programs." },
+        { year: 4, title: "Recruitment Drives", description: "Final projects and campus placement drives with IT companies." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.5!2d79.5650!3d17.9950!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3346000000000%3A0xee00112233445566!2sRamappa%20Engineering%20College!5e0!3m2!1sen!2sin!4v1714598400000!5m2!1sen!2sin",
+      coordinates: { lat: 17.9950, lng: 79.5650 },
+      connectivity: {
+        bus: { name: "Hanamkonda Bus Stand", dist: "2.0 KM" },
+        railway: { name: "Warangal Railway Station", dist: "4.0 KM" }
+      }
+    },
+    {
+      id: "91",
+      name: "RRS College of Engineering & Technology (RRSCET)",
+      location: "Muthangi, Patancheru, Hyderabad",
+      rating: 3.2,
+      description: "RRS College of Engineering & Technology (RRSCET), established in 2003 in Muthangi near Patancheru, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. RRSCET provides basic academic infrastructure with classrooms, laboratories, a digital library, and a placement cell in a calm and peaceful campus environment.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.2 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms & Laboratories",
+        "Central Library with Digital Resources",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Auditorium",
+        "Sports & Indoor Games",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.2,
+        placements: 2.8,
+        hostel: 3.0,
+        campusLife: 3.1
+      },
+      experience: [
+        { year: 1, title: "Foundation Year", description: "Building basic engineering fundamentals in a peaceful campus." },
+        { year: 2, title: "Core Learning", description: "Departmental subjects with introductory laboratory sessions." },
+        { year: 3, title: "Skill Building", description: "Technical workshops and placement preparation activities." },
+        { year: 4, title: "Career Search", description: "Final projects and exploring placement and career opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.5!2d78.2450!3d17.5450!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9100000000%3A0xaa11334455667788!2sRRS%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1714598500000!5m2!1sen!2sin",
+      coordinates: { lat: 17.5450, lng: 78.2450 },
+      connectivity: {
+        metro: { name: "Miyapur Metro Station", dist: "14.0 KM" },
+        bus: { name: "Muthangi Bus Stop", dist: "1.0 KM" },
+        railway: { name: "Lingampally Railway Station", dist: "16.0 KM" }
+      }
+    },
+    {
+      id: "92",
+      name: "Samskruti College of Engineering & Technology (SCET)",
+      location: "Kondapur, Ghatkesar, Hyderabad",
+      rating: 3.8,
+      description: "Samskruti College of Engineering and Technology (SCET), located in Kondapur, Ghatkesar near Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in multiple engineering disciplines. SCET features modern classrooms with LCD screens, a spacious library with digital resources, separate hostels, an incubation center, and an active placement cell with recruiters like Amazon, Google, Infosys, and TCS.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "4.2 LPA",
+        topRecruiters: ["Amazon", "Google", "Infosys", "TCS", "Wipro", "Cognizant", "Accenture", "IBM", "HCL", "Genpact"]
+      },
+      facilities: [
+        "Modern Classrooms with LCD Screens",
+        "State-of-the-Art Laboratories",
+        "Spacious Library with E-Journals & Digital Resources",
+        "Separate Hostels for Boys & Girls",
+        "Campus Wi-Fi",
+        "Auditorium",
+        "Sports Facilities & Gymnasium",
+        "Health Center",
+        "Cafeteria & ATM",
+        "Incubation Center",
+        "Transportation (Bus Fleet)",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.8,
+        placements: 3.9,
+        hostel: 3.5,
+        campusLife: 3.7
+      },
+      experience: [
+        { year: 1, title: "Tech Foundation", description: "Beginning the engineering journey with modern classroom technology." },
+        { year: 2, title: "Core Depth", description: "Intensive departmental subjects with state-of-the-art lab sessions." },
+        { year: 3, title: "Industry Ready", description: "Pre-placement training, mock interviews, and internship preparation." },
+        { year: 4, title: "Placement Drive", description: "Campus recruitment with top companies including Amazon and Google." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.8!2d78.6250!3d17.4350!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9e3333333333%3A0xbb22445566778899!2sSamskruti%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1714598600000!5m2!1sen!2sin",
+      coordinates: { lat: 17.4350, lng: 78.6250 },
+      connectivity: {
+        metro: { name: "Uppal Metro Station", dist: "10.0 KM" },
+        bus: { name: "Ghatkesar Bus Stop", dist: "2.0 KM" },
+        railway: { name: "Ghatkesar Railway Station", dist: "3.0 KM" }
+      }
+    },
+    {
+      id: "93",
+      name: "Scient Institute of Technology (SIT)",
+      location: "Ibrahimpatnam, Hyderabad",
+      rating: 3.9,
+      description: "Scient Institute of Technology (SIT), located in Ibrahimpatnam near Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. SIT is known for its consistent placement record (70-86%), ICT-enabled smart classrooms, well-equipped laboratories, R&D labs, and an active placement cell with recruiters like TCS, Wipro, Amazon, and Capgemini.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "4.5 LPA",
+        topRecruiters: ["TCS", "Wipro", "Infosys", "IBM", "Capgemini", "Accenture", "Tech Mahindra", "Amazon", "Virtusa"]
+      },
+      facilities: [
+        "ICT-Enabled Smart Classrooms",
+        "Well-Equipped Departmental Laboratories",
+        "Central Library with Digital Resources",
+        "Workshop & R&D Labs",
+        "Campus Wi-Fi",
+        "Hostel Facilities",
+        "Sports Facilities (Cricket, Basketball, Tennis, Volleyball)",
+        "Gymnasium",
+        "Cafeteria",
+        "Health Center",
+        "Transportation Service",
+        "Auditorium & Seminar Halls",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.9,
+        placements: 4.0,
+        hostel: 3.4,
+        campusLife: 3.8
+      },
+      experience: [
+        { year: 1, title: "Smart Start", description: "Adapting to ICT-enabled classrooms and building engineering basics." },
+        { year: 2, title: "Technical Mastery", description: "Core subjects with intensive lab sessions and mini-projects." },
+        { year: 3, title: "Career Bootcamp", description: "Placement training, mock interviews, and internship opportunities." },
+        { year: 4, title: "Job Ready", description: "Final projects and securing offers through campus drives with top IT firms." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3809.0!2d78.5750!3d17.2650!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba4000000000%3A0xcc33556677889900!2sScient%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1714598700000!5m2!1sen!2sin",
+      coordinates: { lat: 17.2650, lng: 78.5750 },
+      connectivity: {
+        metro: { name: "L.B. Nagar Metro Station", dist: "14.0 KM" },
+        bus: { name: "Ibrahimpatnam Bus Stop", dist: "1.5 KM" },
+        railway: { name: "Umdanagar Railway Station", dist: "15.0 KM" }
+      }
+    },
+    {
+      id: "94",
+      name: "Sri Indu College of Engineering & Technology (SICET)",
+      location: "Ibrahimpatnam, Hyderabad",
+      rating: 4.0,
+      description: "Sri Indu College of Engineering & Technology (SICET), located in Ibrahimpatnam near Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs across multiple engineering disciplines. SICET is known for its 80% placement ratio with packages up to 20 LPA, a state-of-the-art library with 30,000+ volumes, girls' hostel with 350 capacity, large bus fleet, and an active placement cell with recruiters like Amazon, TCS, and Cognizant.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "4.5 LPA",
+        topRecruiters: ["Amazon", "TCS", "Infosys", "Cognizant", "Tech Mahindra", "HCL", "Wipro"]
+      },
+      facilities: [
+        "Modern Classrooms & Laboratories",
+        "State-of-the-Art Library (30,000+ Volumes)",
+        "Girls' Hostel (350 Capacity, CCTV & Wi-Fi)",
+        "Campus Wi-Fi",
+        "Auditorium & Open-Air Stage",
+        "Sports Facilities (Indoor & Outdoor)",
+        "Gymnasium",
+        "Cafeteria & Canteen",
+        "Health Center",
+        "Large Bus Fleet (Twin City Coverage)",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 4.0,
+        placements: 4.1,
+        hostel: 3.7,
+        campusLife: 3.9
+      },
+      experience: [
+        { year: 1, title: "Sri Indu Welcome", description: "Joining the vibrant campus and building core engineering foundations." },
+        { year: 2, title: "Core Specialization", description: "Intensive departmental courses with hands-on laboratory work." },
+        { year: 3, title: "Industry Bridge", description: "Soft skills training, coding workshops, and internship opportunities." },
+        { year: 4, title: "Dream Placements", description: "Securing top offers through campus drives with Amazon, TCS, and more." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3809.0!2d78.5850!3d17.2550!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba5111111111%3A0xdd44667788990011!2sSri%20Indu%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1714598800000!5m2!1sen!2sin",
+      coordinates: { lat: 17.2550, lng: 78.5850 },
+      connectivity: {
+        metro: { name: "L.B. Nagar Metro Station", dist: "14.0 KM" },
+        bus: { name: "Ibrahimpatnam Bus Stop", dist: "1.0 KM" },
+        railway: { name: "Umdanagar Railway Station", dist: "15.0 KM" }
+      }
+    },
+    {
+      id: "95",
+      name: "Sri Indu Institute of Engineering & Technology (SIIET)",
+      location: "Ibrahimpatnam, Hyderabad",
+      rating: 3.9,
+      description: "Sri Indu Institute of Engineering & Technology (SIIET), located in Ibrahimpatnam near Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech and M.Tech programs in Computer Science, Electronics, Electrical, Mechanical, and Biotechnology. SIIET features a 3,000+ capacity auditorium, state-of-the-art labs, Wi-Fi-enabled campus, girls' hostel, large bus fleet, and a dedicated training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "4.0 LPA",
+        topRecruiters: ["TCS", "Amazon", "Tech Mahindra", "Cognizant", "Wipro", "Infosys", "HCL"]
+      },
+      facilities: [
+        "State-of-the-Art Laboratories",
+        "Central Library with Digital Resources",
+        "3,000+ Capacity Auditorium",
+        "Seminar Halls & Conference Rooms",
+        "Girls' Hostel with CCTV Security",
+        "Campus Wi-Fi",
+        "Sports Facilities & Gymnasium",
+        "Yoga & Meditation Area",
+        "Cafeteria & Canteen",
+        "Health Center",
+        "Large Bus Fleet (Twin City Coverage)",
+        "Day-Care Center for Staff",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.9,
+        placements: 3.8,
+        hostel: 3.5,
+        campusLife: 3.8
+      },
+      experience: [
+        { year: 1, title: "Campus Orientation", description: "Exploring the large campus and establishing academic discipline." },
+        { year: 2, title: "Technical Growth", description: "Core engineering subjects with state-of-the-art laboratory training." },
+        { year: 3, title: "Industry Readiness", description: "Placement training, workshops, and industry partnership programs." },
+        { year: 4, title: "Career Launch", description: "Final projects and campus recruitment drives with top companies." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3809.0!2d78.5900!3d17.2500!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba5222222222%3A0xee55778899001122!2sSri%20Indu%20Institute%20of%20Engineering!5e0!3m2!1sen!2sin!4v1714598900000!5m2!1sen!2sin",
+      coordinates: { lat: 17.2500, lng: 78.5900 },
+      connectivity: {
+        metro: { name: "L.B. Nagar Metro Station", dist: "15.0 KM" },
+        bus: { name: "Ibrahimpatnam Bus Stop", dist: "1.5 KM" },
+        railway: { name: "Umdanagar Railway Station", dist: "16.0 KM" }
+      }
+    },
+    {
+      id: "96",
+      name: "Sree Dattha Group of Institutions (SDGI)",
+      location: "Sheriguda, Ibrahimpatnam, Hyderabad",
+      rating: 3.6,
+      description: "Sree Dattha Group of Institutions (SDGI), located in Sheriguda near Ibrahimpatnam, Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. SDGI provides a well-maintained campus with laboratories, a central library, hostel facilities, AC/Non-AC transportation, and a dedicated placement cell with recruiters like TCS, Infosys, HCL, and Amazon.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.8 LPA",
+        topRecruiters: ["TCS", "Infosys", "HCL", "Cognizant", "Capgemini", "Amazon"]
+      },
+      facilities: [
+        "Engineering Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "AC & Non-AC Transportation",
+        "Cafeteria & Canteen",
+        "Campus Wi-Fi",
+        "Sports Facilities",
+        "Well-Maintained Campus & Landscaping",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.6,
+        placements: 3.5,
+        hostel: 3.3,
+        campusLife: 3.5
+      },
+      experience: [
+        { year: 1, title: "Campus Start", description: "Settling into the well-maintained Sheriguda campus and building basics." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory-based practical learning." },
+        { year: 3, title: "Industry Prep", description: "Mock interviews, workshops, and industry-oriented training." },
+        { year: 4, title: "Placement Season", description: "Campus recruitment drives and completing final year projects." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3809.0!2d78.5650!3d17.2850!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba4555555555%3A0xaa66889900112233!2sSree%20Dattha%20Group%20of%20Institutions!5e0!3m2!1sen!2sin!4v1714599000000!5m2!1sen!2sin",
+      coordinates: { lat: 17.2850, lng: 78.5650 },
+      connectivity: {
+        metro: { name: "L.B. Nagar Metro Station", dist: "12.0 KM" },
+        bus: { name: "Sheriguda Bus Stop", dist: "1.0 KM" },
+        railway: { name: "Umdanagar Railway Station", dist: "13.0 KM" }
+      }
+    },
+    {
+      id: "97",
+      name: "Swami Vivekananda Institute of Technology (SVIT)",
+      location: "Mahbub College Campus, Secunderabad",
+      rating: 3.7,
+      description: "Swami Vivekananda Institute of Technology (SVIT), established in 2004 at the historic Mahbub College Campus in Secunderabad, is an autonomous private engineering college affiliated with JNTU Hyderabad and approved by AICTE. Located in the heart of Secunderabad, the institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. SVIT benefits from excellent urban connectivity via road, rail, and metro, with a dedicated placement cell and modern academic infrastructure.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.8 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "IBM", "Accenture", "Cognizant"]
+      },
+      facilities: [
+        "Classrooms with Projectors",
+        "Engineering Laboratories",
+        "Central Library",
+        "Auditorium",
+        "Cafeteria & Canteen",
+        "Central Urban Location (No Hostel)",
+        "Well-Connected by Public Transport",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.7,
+        placements: 3.5,
+        hostel: 0,
+        campusLife: 3.6
+      },
+      experience: [
+        { year: 1, title: "City Campus", description: "Starting engineering education in the vibrant heart of Secunderabad." },
+        { year: 2, title: "Core Engineering", description: "Intensive departmental subjects with lab-based learning." },
+        { year: 3, title: "Career Preparation", description: "Aptitude training, mock interviews, and industry exposure." },
+        { year: 4, title: "Final Placement", description: "Securing offers through campus and off-campus recruitment drives." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.0!2d78.5050!3d17.4350!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9a0000000000%3A0xbb77990011223344!2sSwami%20Vivekananda%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1714599100000!5m2!1sen!2sin",
+      coordinates: { lat: 17.4350, lng: 78.5050 },
+      connectivity: {
+        metro: { name: "Gandhi Hospital Metro Station", dist: "1.5 KM" },
+        bus: { name: "Secunderabad Bus Stand", dist: "1.0 KM" },
+        railway: { name: "Secunderabad Railway Station", dist: "1.5 KM" }
+      }
+    },
+    {
+      id: "98",
+      name: "Vaagdevi College of Engineering (VCE)",
+      location: "Bollikunta, Warangal",
+      rating: 4.0,
+      description: "Vaagdevi College of Engineering (VCE), located in Bollikunta, Warangal, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Electrical, Mechanical, and Civil Engineering. VCE is known for its strong placement record with packages reaching 8-12 LPA, a well-stocked digital library with NPTEL access, separate hostels, well-organized bus fleet, and an active placement cell with CRT training programs.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "5.0 LPA",
+        topRecruiters: ["TCS", "Wipro", "Infosys", "Accenture", "Cognizant", "Capgemini", "HCL", "Genpact", "Amazon"]
+      },
+      facilities: [
+        "Well-Equipped Classrooms with Projectors",
+        "Departmental Laboratories",
+        "Central Library with Digital Resources & NPTEL",
+        "Separate Hostels for Boys & Girls",
+        "Campus Wi-Fi",
+        "Auditorium with AV Aids",
+        "Seminar Halls",
+        "Sports Facilities & Gymnasium",
+        "Cafeteria & Canteen",
+        "Bank/ATM Facility",
+        "Medical Assistance",
+        "Bus Fleet (Warangal & Surrounding Areas)",
+        "Training & Placement Cell with CRT"
+      ],
+      ratingsBreakdown: {
+        faculty: 4.0,
+        placements: 4.1,
+        hostel: 3.6,
+        campusLife: 3.9
+      },
+      experience: [
+        { year: 1, title: "VCE Welcome", description: "Joining the spacious campus and building strong academic foundations." },
+        { year: 2, title: "Academic Rigor", description: "Core engineering subjects with hands-on laboratory sessions." },
+        { year: 3, title: "CRT Training", description: "Campus Recruitment Training, soft skills, and industry readiness programs." },
+        { year: 4, title: "Top Placements", description: "Securing offers from TCS, Amazon, and other top recruiters." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.0!2d79.5350!3d17.9550!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3345555555555%3A0xcc88001122334455!2sVaagdevi%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1714599200000!5m2!1sen!2sin",
+      coordinates: { lat: 17.9550, lng: 79.5350 },
+      connectivity: {
+        bus: { name: "Bollikunta Bus Stop", dist: "1.0 KM" },
+        railway: { name: "Warangal Railway Station", dist: "5.0 KM" }
+      }
+    },
+    {
+      id: "99",
+      name: "Vathsalya Institute of Science & Technology (VIST)",
+      location: "Bhongir, Yadadri Bhuvanagiri",
+      rating: 3.5,
+      description: "Vathsalya Institute of Science & Technology (VIST), established in 2001 in Bhongir, Yadadri Bhuvanagiri District, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. VIST features smart classrooms with LCD projectors, a library with 25,000+ volumes, separate hostels, sports facilities, and a dedicated placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.0 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Smart Classrooms with LCD Projectors",
+        "Well-Equipped Laboratories",
+        "Central Library (25,000+ Volumes & Journals)",
+        "Separate Hostels for Boys & Girls",
+        "Sports Facilities (Indoor & Outdoor)",
+        "Cafeteria",
+        "Cultural Activities & Events",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.5,
+        placements: 3.2,
+        hostel: 3.3,
+        campusLife: 3.4
+      },
+      experience: [
+        { year: 1, title: "Bhongir Start", description: "Beginning engineering education near the historic Bhongir Fort." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with practical laboratory training." },
+        { year: 3, title: "Career Prep", description: "Soft skills training and placement preparation by the placement cell." },
+        { year: 4, title: "Campus Drives", description: "Final projects and participating in campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.5!2d78.8850!3d17.5150!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba9000000000%3A0xdd99112233445566!2sVathsalya%20Institute%20of%20Science!5e0!3m2!1sen!2sin!4v1714599300000!5m2!1sen!2sin",
+      coordinates: { lat: 17.5150, lng: 78.8850 },
+      connectivity: {
+        bus: { name: "Bhongir Bus Stand", dist: "2.0 KM" },
+        railway: { name: "Bhongir Railway Station", dist: "3.0 KM" }
+      }
+    },
+    {
+      id: "100",
+      name: "Warangal Institute of Technology & Science (WITS)",
+      location: "Hasanparthy, Warangal",
+      rating: 3.5,
+      description: "Warangal Institute of Technology & Science (WITS), established in 2009 in Hasanparthy, Warangal, is a private engineering college affiliated with Kakatiya University and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. WITS provides standard academic infrastructure with laboratories, a central library with digital resources, separate hostels, sports facilities, and a training and placement cell with CRT programs.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.2 LPA",
+        topRecruiters: ["TCS", "Wipro", "Tech Mahindra", "Infosys", "Cognizant", "HCL"]
+      },
+      facilities: [
+        "Engineering Laboratories",
+        "Central Library with Digital Resources",
+        "Separate Hostels for Boys & Girls",
+        "Auditorium & Seminar Halls",
+        "Sports Facilities & Gymnasium",
+        "Cafeteria & Canteen",
+        "Transportation Service",
+        "Training & Placement Cell with CRT"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.5,
+        placements: 3.3,
+        hostel: 3.2,
+        campusLife: 3.4
+      },
+      experience: [
+        { year: 1, title: "Foundation Year", description: "Building engineering basics in the Warangal campus environment." },
+        { year: 2, title: "Core Studies", description: "Departmental subjects with hands-on laboratory sessions." },
+        { year: 3, title: "CRT Training", description: "Campus Recruitment Training, soft skills, and aptitude preparation." },
+        { year: 4, title: "Career Launch", description: "Final projects and campus placement drives with IT companies." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.5!2d79.5050!3d17.9250!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3346666666666%3A0xee00223344556677!2sWarangal%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1714599400000!5m2!1sen!2sin",
+      coordinates: { lat: 17.9250, lng: 79.5050 },
+      connectivity: {
+        bus: { name: "Hasanparthy Bus Stop", dist: "1.5 KM" },
+        railway: { name: "Warangal Railway Station", dist: "8.0 KM" }
+      }
+    },
+    {
+      id: "101",
+      name: "SR University (SRU)",
+      location: "Ananthasagar, Hanamkonda, Warangal",
+      rating: 4.4,
+      description: "SR University (SRU), located in Ananthasagar, Hanamkonda, Warangal, is a private university established under the Telangana State Legislature. Offering B.Tech, M.Tech, MBA, and PhD programs across multiple disciplines, SRU is known for its research-driven academic environment, state-of-the-art infrastructure, international collaborations, and strong placement record. The university features modern labs, a well-equipped library, spacious hostels, and a dedicated career development center.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "6.5 LPA",
+        topRecruiters: ["Amazon", "TCS", "Infosys", "Wipro", "Deloitte", "Cognizant", "Accenture", "Google", "Microsoft"]
+      },
+      facilities: [
+        "State-of-the-Art Laboratories & Research Centers",
+        "Central Library with Digital & International Resources",
+        "Separate Hostels for Boys & Girls (AC & Non-AC)",
+        "Campus Wi-Fi",
+        "Auditorium & Conference Halls",
+        "Sports Complex (Cricket, Football, Basketball, Tennis)",
+        "Gymnasium & Fitness Center",
+        "Cafeteria & Food Courts",
+        "Medical Facilities",
+        "Transportation (Bus Fleet)",
+        "International Collaborations & MoUs",
+        "Career Development Center"
+      ],
+      ratingsBreakdown: {
+        faculty: 4.5,
+        placements: 4.4,
+        hostel: 4.0,
+        campusLife: 4.3
+      },
+      experience: [
+        { year: 1, title: "University Welcome", description: "Immersing into the research-driven university campus and building strong foundations." },
+        { year: 2, title: "Academic Excellence", description: "Deep dive into core engineering with expert faculty and modern labs." },
+        { year: 3, title: "Industry & Research", description: "Internships, international collaborations, and research project involvement." },
+        { year: 4, title: "Career Excellence", description: "Securing top packages through campus drives with Amazon, Google, and more." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.0!2d79.5450!3d17.9750!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3345777777777%3A0xaa11335577990011!2sSR%20University!5e0!3m2!1sen!2sin!4v1714599500000!5m2!1sen!2sin",
+      coordinates: { lat: 17.9750, lng: 79.5450 },
+      connectivity: {
+        bus: { name: "Hanamkonda Bus Stand", dist: "5.0 KM" },
+        railway: { name: "Warangal Railway Station", dist: "8.0 KM" }
+      }
+    },
+    {
+      id: "102",
+      name: "Jayamukhi Institute of Technological Sciences (JITS)",
+      location: "Narsampet, Warangal",
+      rating: 3.8,
+      description: "Jayamukhi Institute of Technological Sciences (JITS), located on a 40-acre campus near Narsampet, Warangal, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, Civil, and AI & ML. JITS features a Wi-Fi-enabled campus with well-equipped labs, e-classrooms, a central library, separate hostels, and a dedicated placement cell with corporate training partnerships with Infosys.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "4.0 LPA",
+        topRecruiters: ["Wipro", "Infosys", "TCS", "Tech Mahindra", "Cognizant", "Amazon", "Genpact"]
+      },
+      facilities: [
+        "40-Acre Wi-Fi Enabled Campus",
+        "Well-Equipped Departmental Laboratories",
+        "E-Classrooms with Projectors",
+        "Central Library with Books & Journals",
+        "Separate Hostels (Girls Priority)",
+        "Auditorium & Seminar Halls",
+        "Sports Grounds (Cricket, Football, Volleyball)",
+        "Indoor Games & Gymnasium",
+        "Cafeteria",
+        "Medical Facilities",
+        "Transportation (Bus Service)",
+        "Infosys Corporate Training Partnership",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.8,
+        placements: 3.7,
+        hostel: 3.4,
+        campusLife: 3.8
+      },
+      experience: [
+        { year: 1, title: "Green Campus", description: "Settling into the spacious 40-acre campus and building academic foundations." },
+        { year: 2, title: "Core Engineering", description: "Intensive departmental courses with e-classroom and lab-based learning." },
+        { year: 3, title: "Corporate Training", description: "Infosys partnership training, soft skills, and industry readiness programs." },
+        { year: 4, title: "Placement Success", description: "Campus drives with top MNCs and completing capstone projects." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.5!2d79.8750!3d17.9450!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3340000000000%3A0xbb22446688001122!2sJayamukhi%20Institute%20of%20Technological%20Sciences!5e0!3m2!1sen!2sin!4v1714599600000!5m2!1sen!2sin",
+      coordinates: { lat: 17.9450, lng: 79.8750 },
+      connectivity: {
+        bus: { name: "Narsampet Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Warangal Railway Station", dist: "30.0 KM" }
+      }
+    },
+    {
+      id: "103",
+      name: "CK College of Engineering & Technology (CKEC)",
+      location: "Medchal, Hyderabad",
+      rating: 3.3,
+      description: "CK College of Engineering & Technology (CKEC), located in the Medchal area of Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. CKEC provides standard academic infrastructure with classrooms, laboratories, a library, and a training and placement cell to support students in building engineering fundamentals and career skills.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.8 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Engineering Laboratories",
+        "Central Library",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.0,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "Foundation Year", description: "Building basic engineering knowledge and academic discipline." },
+        { year: 2, title: "Core Studies", description: "Departmental subjects with introductory laboratory sessions." },
+        { year: 3, title: "Skill Development", description: "Technical workshops and soft skills training for career readiness." },
+        { year: 4, title: "Career Start", description: "Final projects and exploring placement and career opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.0!2d78.4950!3d17.6450!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb96cd33333333%3A0xcc33557799001122!2sCK%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1714599700000!5m2!1sen!2sin",
+      coordinates: { lat: 17.6450, lng: 78.4950 },
+      connectivity: {
+        bus: { name: "Medchal Bus Stop", dist: "2.0 KM" },
+        railway: { name: "Medchal Railway Station", dist: "3.0 KM" }
+      }
+    },
+    {
+      id: "104",
+      name: "Sri Venkateswara College of Engineering & Technology (SVCET)",
+      location: "Suryapet, Telangana",
+      rating: 3.5,
+      description: "Sri Venkateswara College of Engineering & Technology (SVCET), located in Suryapet, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. SVCET features a sprawling campus with well-ventilated classrooms, departmental laboratories, a central library, sports grounds, and a dedicated placement cell with soft skills training from the first year.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.0 LPA",
+        topRecruiters: ["Wipro", "Capgemini", "Tech Mahindra", "Cognizant", "TCS", "Infosys"]
+      },
+      facilities: [
+        "Well-Ventilated Classrooms",
+        "Departmental Laboratories",
+        "Central Library",
+        "Open Auditorium",
+        "Sports Grounds (Cricket, Volleyball, Football)",
+        "Cafeteria",
+        "Parking Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.5,
+        placements: 3.2,
+        hostel: 0,
+        campusLife: 3.4
+      },
+      experience: [
+        { year: 1, title: "Campus Start", description: "Building engineering fundamentals on the sprawling Suryapet campus." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory-based practical training." },
+        { year: 3, title: "Career Prep", description: "Soft skills training, guest lectures, and industry visit programs." },
+        { year: 4, title: "Placement Drives", description: "Campus recruitment and completing final year projects." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.0!2d79.6250!3d17.1450!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35f0000000000%3A0xdd44668800112233!2sSri%20Venkateswara%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1714599800000!5m2!1sen!2sin",
+      coordinates: { lat: 17.1450, lng: 79.6250 },
+      connectivity: {
+        bus: { name: "Suryapet Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Suryapet Railway Station", dist: "4.0 KM" }
+      }
+    },
+    {
+      id: "105",
+      name: "Vivekananda Institute of Technology & Science (VITS)",
+      location: "Karimnagar, Telangana",
+      rating: 3.5,
+      description: "Vivekananda Institute of Technology & Science (VITS), established in 2004 in Karimnagar, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Electrical, Mechanical, and Civil Engineering. VITS provides a well-stocked library, departmental laboratories, separate hostels, sports facilities, a gymnasium, and a dedicated training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.0 LPA",
+        topRecruiters: ["TCS", "Wipro", "Cognizant", "Accenture", "Infosys", "HCL"]
+      },
+      facilities: [
+        "Engineering Laboratories",
+        "Central Library with Journals & Digital Resources",
+        "Separate Hostels for Boys & Girls",
+        "Auditorium & Seminar Halls",
+        "Sports Facilities (Cricket, Football, Basketball, Volleyball)",
+        "Indoor Games (Chess, Carrom, Table Tennis)",
+        "Gymnasium",
+        "Cafeteria",
+        "Health Centre",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.5,
+        placements: 3.2,
+        hostel: 3.3,
+        campusLife: 3.4
+      },
+      experience: [
+        { year: 1, title: "Karimnagar Campus", description: "Settling into the campus and building engineering fundamentals." },
+        { year: 2, title: "Core Engineering", description: "Deep dive into departmental subjects with laboratory practice." },
+        { year: 3, title: "Industry Training", description: "Placement training, workshops, and soft skills development." },
+        { year: 4, title: "Recruitment Season", description: "Campus drives with IT companies and final year project completion." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.5!2d79.1250!3d18.4250!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc5111111111%3A0xee55779900112233!2sVivekananda%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1714599900000!5m2!1sen!2sin",
+      coordinates: { lat: 18.4250, lng: 79.1250 },
+      connectivity: {
+        bus: { name: "Karimnagar Bus Stand", dist: "4.0 KM" },
+        railway: { name: "Peddapalli Railway Station", dist: "22.0 KM" }
+      }
+    },
+    {
+      id: "106",
+      name: "Arjun College of Technology & Sciences (ACTS)",
+      location: "Batasingaram, Hyderabad",
+      rating: 3.5,
+      description: "Arjun College of Technology & Sciences (ACTS), located on a 10-acre campus in Batasingaram, Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. ACTS features well-equipped laboratories, Wi-Fi-enabled campus, hostels for boys and girls, sports facilities including cricket and football grounds, and a TASK-partnered placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.2 LPA",
+        topRecruiters: ["TCS", "Infosys", "Tech Mahindra", "Wipro", "Accenture", "ICICI Bank"]
+      },
+      facilities: [
+        "10-Acre Wi-Fi Enabled Campus",
+        "Well-Equipped Laboratories & Workshops",
+        "Classrooms with Audio-Visual Aids",
+        "Central Library with Digital Facilities",
+        "Separate Hostels for Boys & Girls",
+        "Cricket & Football Grounds",
+        "Volleyball & Tennis Courts",
+        "Indoor Gymnasium",
+        "Cafeteria",
+        "24/7 Medical Facilities",
+        "Transportation Service",
+        "TASK Partnership",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.5,
+        placements: 3.2,
+        hostel: 3.3,
+        campusLife: 3.4
+      },
+      experience: [
+        { year: 1, title: "Campus Start", description: "Settling into the 10-acre campus and building engineering foundations." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with hands-on laboratory sessions." },
+        { year: 3, title: "TASK Training", description: "Industry-oriented training through TASK partnership and CRT programs." },
+        { year: 4, title: "Placement Season", description: "Campus recruitment drives and final year project completion." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.5!2d78.5550!3d17.3350!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba0000000000%3A0xaa11223355667788!2sArjun%20College%20of%20Technology!5e0!3m2!1sen!2sin!4v1714600000000!5m2!1sen!2sin",
+      coordinates: { lat: 17.3350, lng: 78.5550 },
+      connectivity: {
+        metro: { name: "L.B. Nagar Metro Station", dist: "6.0 KM" },
+        bus: { name: "Batasingaram Bus Stop", dist: "1.0 KM" },
+        railway: { name: "Umdanagar Railway Station", dist: "8.0 KM" }
+      }
+    },
+    {
+      id: "107",
+      name: "Sana Engineering College (SEC)",
+      location: "Kodad, Suryapet",
+      rating: 3.3,
+      description: "Sana Engineering College (SEC), located on a 55-acre campus in Kodad, Suryapet District, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. SEC features a spacious campus with separate hostels, departmental laboratories, a central library, gymnasium, sports facilities, and a placement cell with collaborations like Globarena for pre-placement training.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.8 LPA",
+        topRecruiters: ["Infosys", "TCS", "IBM", "Genpact", "Samsung", "Wipro"]
+      },
+      facilities: [
+        "55-Acre Campus",
+        "Departmental Laboratories",
+        "Central Library with Online Resources",
+        "Separate Hostels for Boys & Girls",
+        "Gymnasium",
+        "Sports Facilities",
+        "Cafeteria & Canteen",
+        "Health Care Center",
+        "Auditorium & Seminar Halls",
+        "Transportation (Bus Service to Khammam, Nalgonda, Suryapet)",
+        "Globarena Pre-Placement Training",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.2,
+        campusLife: 3.3
+      },
+      experience: [
+        { year: 1, title: "Kodad Campus", description: "Settling into the spacious 55-acre campus and building basics." },
+        { year: 2, title: "Core Engineering", description: "Intensive departmental subjects with lab-based training." },
+        { year: 3, title: "Pre-Placement Training", description: "Globarena collaboration, soft skills, and industrial visits." },
+        { year: 4, title: "Career Opportunities", description: "Campus drives and exploring placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.5!2d79.9850!3d17.1250!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35e0000000000%3A0xbb22334466778899!2sSana%20Engineering%20College!5e0!3m2!1sen!2sin!4v1714600100000!5m2!1sen!2sin",
+      coordinates: { lat: 17.1250, lng: 79.9850 },
+      connectivity: {
+        bus: { name: "Kodad Bus Stand", dist: "2.0 KM" },
+        railway: { name: "Kodad Railway Station", dist: "3.0 KM" }
+      }
+    },
+    {
+      id: "108",
+      name: "Bomma Institute of Technology & Science (BITS)",
+      location: "Khammam, Telangana",
+      rating: 3.5,
+      description: "Bomma Institute of Technology & Science (BITS), located on a 25-acre campus in Khammam, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Electrical, Mechanical, and Civil Engineering. BITS features smart classrooms, a library with 27,000 volumes, Wi-Fi-enabled campus, separate hostels, a large playground, and a dedicated training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.5 LPA",
+        topRecruiters: ["TCS", "Wipro", "Accenture", "Tech Mahindra", "Infosys", "Cognizant"]
+      },
+      facilities: [
+        "25-Acre Campus with Smart Classrooms",
+        "Well-Equipped Departmental Laboratories",
+        "Central Library (27,000 Volumes & 150 Journals)",
+        "Campus Wi-Fi",
+        "Separate Hostels for Boys & Girls",
+        "Large Playground (Cricket, Football, Basketball)",
+        "Cafeteria with Hygienic Food",
+        "Auditorium & Seminar Halls",
+        "Transportation (Bus Fleet)",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.5,
+        placements: 3.3,
+        hostel: 3.3,
+        campusLife: 3.5
+      },
+      experience: [
+        { year: 1, title: "BITS Welcome", description: "Joining the 25-acre campus and building engineering fundamentals." },
+        { year: 2, title: "Core Studies", description: "Departmental subjects with smart classroom and lab learning." },
+        { year: 3, title: "Career Training", description: "Mock interviews, internship support, and placement preparation." },
+        { year: 4, title: "Recruitment Drives", description: "Campus placements with IT companies and final year projects." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.0!2d80.1450!3d17.2450!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3500555555555%3A0xcc33445577889900!2sBomma%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1714600200000!5m2!1sen!2sin",
+      coordinates: { lat: 17.2450, lng: 80.1450 },
+      connectivity: {
+        bus: { name: "Khammam Bus Stand", dist: "4.0 KM" },
+        railway: { name: "Khammam Railway Station", dist: "5.0 KM" }
+      }
+    },
+    {
+      id: "109",
+      name: "Kshatriya College of Engineering (KCEA)",
+      location: "Armoor, Nizamabad",
+      rating: 3.7,
+      description: "Kshatriya College of Engineering (KCEA), located on a 40-acre campus in Armoor, Nizamabad District, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. KCEA features digital classrooms, a central library with book bank facility, separate hostels, a sports complex, gymnasium, Wi-Fi-enabled campus, and a placement cell with recruiters like Amazon, Oracle, and Infosys.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.5 LPA",
+        topRecruiters: ["Amazon", "Infosys", "Wipro", "TCS", "Cognizant", "Oracle", "HDFC Bank", "Capgemini"]
+      },
+      facilities: [
+        "40-Acre Wi-Fi Enabled Campus",
+        "Digital Classrooms & Departmental Labs",
+        "Central Library with Book Bank",
+        "Separate Hostels for Boys & Girls",
+        "Sports Complex & Playground",
+        "Gymnasium",
+        "Cafeteria",
+        "Auditorium",
+        "Health Center",
+        "Guest House",
+        "Transportation (Bus Routes to Nizamabad, Nirmal)",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.7,
+        placements: 3.6,
+        hostel: 3.4,
+        campusLife: 3.6
+      },
+      experience: [
+        { year: 1, title: "Armoor Campus", description: "Joining the spacious 40-acre campus and building engineering foundations." },
+        { year: 2, title: "Core Specialization", description: "Digital classroom learning with departmental lab sessions." },
+        { year: 3, title: "Industry Connect", description: "Placement training and industry interaction programs." },
+        { year: 4, title: "Top Placements", description: "Campus drives with Amazon, Oracle, and other top recruiters." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3801.0!2d78.2850!3d18.7950!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc8000000000%3A0xdd44556688990011!2sKshatriya%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1714600300000!5m2!1sen!2sin",
+      coordinates: { lat: 18.7950, lng: 78.2850 },
+      connectivity: {
+        bus: { name: "Armoor Bus Stand", dist: "2.0 KM" },
+        railway: { name: "Nizamabad Railway Station", dist: "25.0 KM" }
+      }
+    },
+    {
+      id: "110",
+      name: "Trinity College of Engineering & Technology (TCET)",
+      location: "Karimnagar, Telangana",
+      rating: 3.8,
+      description: "Trinity College of Engineering & Technology (TCET), located in Karimnagar, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. TCET features smart classrooms, well-equipped laboratories, a central library with digital resources and IEEE journals, Wi-Fi-enabled hostels, swimming pool, gymnasium, ATM facility, and an active placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.5 LPA",
+        topRecruiters: ["Infosys", "TCS", "Wipro", "Capgemini", "Tech Mahindra", "Accenture", "ICICI Bank"]
+      },
+      facilities: [
+        "Smart Classrooms with Digital Teaching Aids",
+        "Well-Equipped Laboratories",
+        "Central Library with IEEE Journals & Digital Resources",
+        "Separate Hostels with Wi-Fi",
+        "Campus Wi-Fi",
+        "Swimming Pool",
+        "Gymnasium",
+        "Sports Facilities (Cricket, Basketball, Volleyball, Football)",
+        "Cafeteria & Canteen",
+        "ATM/Banking Facility",
+        "Health Center",
+        "Auditorium",
+        "Transportation (Bus Service)",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.8,
+        placements: 3.6,
+        hostel: 3.5,
+        campusLife: 3.7
+      },
+      experience: [
+        { year: 1, title: "Trinity Welcome", description: "Joining the well-equipped campus and building engineering basics." },
+        { year: 2, title: "Core Engineering", description: "Intensive departmental courses with smart classroom learning." },
+        { year: 3, title: "Career Bridge", description: "Soft skills training, mock interviews, and industry interactions." },
+        { year: 4, title: "Placement Drives", description: "Securing offers from top IT companies through campus recruitment." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.5!2d79.1450!3d18.4150!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc5222222222%3A0xee66778899001122!2sTrinity%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1714600400000!5m2!1sen!2sin",
+      coordinates: { lat: 18.4150, lng: 79.1450 },
+      connectivity: {
+        bus: { name: "Karimnagar Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Peddapalli Railway Station", dist: "20.0 KM" }
+      }
+    },
+    {
+      id: "111",
+      name: "Jaya Prakash Narayan College of Engineering (JPNCE)",
+      location: "Mahabubnagar, Telangana",
+      rating: 3.9,
+      description: "Jaya Prakash Narayan College of Engineering (JPNCE), located on a 27.5-acre campus in Mahabubnagar, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Electrical, Mechanical, and Civil Engineering. JPNCE boasts a 65-90% placement ratio with packages up to 10 LPA, a Wi-Fi-enabled campus with fiber-optic broadband, DELNET/NPTEL library access, smart classrooms, and a dedicated placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "4.0 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "Capgemini", "Tech Mahindra", "Amazon", "Accenture", "Zoho"]
+      },
+      facilities: [
+        "27.5-Acre Wi-Fi Enabled Campus (Fiber-Optic)",
+        "Smart Classrooms with Digital Projectors",
+        "Well-Equipped Departmental Laboratories",
+        "Central Library with DELNET, NPTEL & NDLI Access",
+        "Separate Hostels for Boys & Girls",
+        "AC Seminar & Conference Halls",
+        "Gymnasium",
+        "Cricket Ground, Basketball Court, Volleyball",
+        "Indoor Games (Table Tennis, Chess, Carrom)",
+        "Cafeteria with Hygienic Food",
+        "24/7 Security & Surveillance",
+        "Transportation (College Buses)",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.9,
+        placements: 4.0,
+        hostel: 3.5,
+        campusLife: 3.8
+      },
+      experience: [
+        { year: 1, title: "JPNCE Welcome", description: "Joining the sprawling 27.5-acre campus and building strong foundations." },
+        { year: 2, title: "Core Specialization", description: "Intensive departmental courses with smart classroom learning." },
+        { year: 3, title: "Career Training", description: "Soft skills, aptitude training, and placement preparation by the T&P cell." },
+        { year: 4, title: "Top Placements", description: "Securing offers from Zoho, Amazon, TCS, and other top companies." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3812.0!2d78.0050!3d16.7350!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbf0000000000%3A0xaa11223344556677!2sJPNCE%20Mahabubnagar!5e0!3m2!1sen!2sin!4v1714600500000!5m2!1sen!2sin",
+      coordinates: { lat: 16.7350, lng: 78.0050 },
+      connectivity: {
+        bus: { name: "Mahabubnagar Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Mahabubnagar Railway Station", dist: "4.0 KM" }
+      }
+    },
+    {
+      id: "112",
+      name: "Bhaskar Engineering College (BEC)",
+      location: "Yenkapally, Moinabad, Hyderabad",
+      rating: 3.5,
+      description: "Bhaskar Engineering College (BEC), established in 2007 in Yenkapally, Moinabad near Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. Spread across an 11-acre campus, the institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. BEC features a spacious library (200+ seating), Jawahar Knowledge Center (JKC) for student development, separate hostels, and a dedicated placement cell with MoU hospital access.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.0 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "Tech Mahindra", "HCL"]
+      },
+      facilities: [
+        "11-Acre Campus",
+        "Modern Classrooms & Seminar Halls",
+        "Engineering Laboratories",
+        "Spacious Library (200+ Seating Capacity)",
+        "Separate Hostels for Boys & Girls",
+        "Jawahar Knowledge Center (JKC)",
+        "Cafeteria & Canteen",
+        "Medical Facilities (MoU Hospital)",
+        "Sports Facilities (Indoor & Outdoor)",
+        "Bank & Post Office (JB Group Campus)",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.5,
+        placements: 3.2,
+        hostel: 3.3,
+        campusLife: 3.4
+      },
+      experience: [
+        { year: 1, title: "BEC Start", description: "Settling into the Moinabad campus and building engineering basics." },
+        { year: 2, title: "Core Studies", description: "Departmental subjects with laboratory-based learning." },
+        { year: 3, title: "JKC Training", description: "Jawahar Knowledge Center programs and placement preparation." },
+        { year: 4, title: "Placement Drives", description: "Campus recruitment and final year project completion." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3809.0!2d78.2650!3d17.3150!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbe0000000000%3A0xbb22334455667788!2sBhaskar%20Engineering%20College!5e0!3m2!1sen!2sin!4v1714600600000!5m2!1sen!2sin",
+      coordinates: { lat: 17.3150, lng: 78.2650 },
+      connectivity: {
+        bus: { name: "Moinabad Bus Stop", dist: "2.0 KM" },
+        railway: { name: "Lingampally Railway Station", dist: "22.0 KM" }
+      }
+    },
+    {
+      id: "113",
+      name: "Global Institute of Engineering & Technology (GIET)",
+      location: "Moinabad, Hyderabad",
+      rating: 3.6,
+      description: "Global Institute of Engineering & Technology (GIET), located on a 28-acre campus in Moinabad near Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. GIET features well-equipped laboratories, a comprehensive library with print and digital resources, separate hostels, sports facilities, and a placement cell with recruiters like Amazon, Capgemini, and TCS.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.8 LPA",
+        topRecruiters: ["Amazon", "Capgemini", "Infosys", "TCS", "Accenture", "Cognizant", "Tech Mahindra"]
+      },
+      facilities: [
+        "28-Acre Campus",
+        "Well-Equipped Laboratories",
+        "Central Library with Print & Digital Resources",
+        "Separate Hostels for Boys & Girls",
+        "Campus Wi-Fi",
+        "Sports Facilities & Grounds",
+        "Cafeteria with Hygienic Food",
+        "Auditorium & Seminar Halls",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.6,
+        placements: 3.5,
+        hostel: 3.3,
+        campusLife: 3.5
+      },
+      experience: [
+        { year: 1, title: "GIET Welcome", description: "Joining the 28-acre campus and building engineering foundations." },
+        { year: 2, title: "Core Engineering", description: "Intensive departmental subjects with hands-on lab training." },
+        { year: 3, title: "Industry Prep", description: "Personality development, soft skills, and placement readiness programs." },
+        { year: 4, title: "Career Launch", description: "Campus drives with Amazon, Capgemini, and other top companies." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3809.0!2d78.2750!3d17.3050!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbe1111111111%3A0xcc33445566778899!2sGlobal%20Institute%20of%20Engineering!5e0!3m2!1sen!2sin!4v1714600700000!5m2!1sen!2sin",
+      coordinates: { lat: 17.3050, lng: 78.2750 },
+      connectivity: {
+        bus: { name: "Moinabad Bus Stop", dist: "2.0 KM" },
+        railway: { name: "Lingampally Railway Station", dist: "23.0 KM" }
+      }
+    },
+    {
+      id: "114",
+      name: "Kasireddy Narayan Reddy College of Engineering & Research (KNRCER)",
+      location: "Abdullapurmet, Hyderabad",
+      rating: 3.6,
+      description: "Kasireddy Narayan Reddy College of Engineering & Research (KNRCER), located in Abdullapurmet near Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in CSE, AI & ML, Data Science, ECE, EEE, Mechanical, and Civil Engineering. KNRCER features a Wi-Fi-enabled campus with IEEE/NPTEL/TASK kiosks, specialized AI & ML labs, separate hostels, sports complex, gymnasium, and a dedicated placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.5 LPA",
+        topRecruiters: ["Wipro", "TCS", "IBM", "Tech Mahindra", "ICICI Bank", "Cognizant"]
+      },
+      facilities: [
+        "Wi-Fi Enabled Campus",
+        "Modern Classrooms & Seminar Halls",
+        "Engineering Laboratories (including AI & ML Lab)",
+        "Central Library with IEEE, NPTEL & TASK Kiosks",
+        "Separate Hostels for Boys & Girls",
+        "Sports Complex (Cricket, Tennis, Basketball, Volleyball)",
+        "Gymnasium",
+        "Cafeteria",
+        "Medical Center",
+        "RO Water Plant",
+        "Guest House",
+        "Transportation (Bus Service)",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.6,
+        placements: 3.4,
+        hostel: 3.4,
+        campusLife: 3.5
+      },
+      experience: [
+        { year: 1, title: "KNRCER Start", description: "Joining the campus and building engineering fundamentals." },
+        { year: 2, title: "Core Depth", description: "Departmental specialization with AI & ML lab access." },
+        { year: 3, title: "Career Grooming", description: "Personalized career counseling and industry-readiness programs." },
+        { year: 4, title: "Placement Season", description: "Campus drives with Wipro, TCS, IBM, and other companies." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.5!2d78.6050!3d17.3050!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba6000000000%3A0xdd44556677889900!2sKasireddy%20Narayan%20Reddy%20College!5e0!3m2!1sen!2sin!4v1714600800000!5m2!1sen!2sin",
+      coordinates: { lat: 17.3050, lng: 78.6050 },
+      connectivity: {
+        metro: { name: "L.B. Nagar Metro Station", dist: "12.0 KM" },
+        bus: { name: "Abdullapurmet Bus Stop", dist: "1.5 KM" },
+        railway: { name: "Umdanagar Railway Station", dist: "14.0 KM" }
+      }
+    },
+    {
+      id: "115",
+      name: "Royal Institute of Technology & Science (RITS)",
+      location: "Damergidda, Chevella, Hyderabad",
+      rating: 3.3,
+      description: "Royal Institute of Technology & Science (RITS), established in 2002 on a 26-acre campus in Damergidda, Chevella near Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech and M.Tech programs in Computer Science, Electronics, Electrical, Mechanical, and Civil Engineering. RITS provides basic academic infrastructure with laboratories, a library, hostels, Wi-Fi, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Wipro", "Infosys", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "26-Acre Campus",
+        "Engineering Laboratories",
+        "Central Library",
+        "Separate Hostels for Boys & Girls",
+        "Campus Wi-Fi",
+        "Auditorium",
+        "Sports Grounds & Gymnasium",
+        "Cafeteria",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "RITS Welcome", description: "Joining the 26-acre campus in Chevella and building basics." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with laboratory sessions." },
+        { year: 3, title: "Skill Building", description: "Communication and skill development for employability." },
+        { year: 4, title: "Career Start", description: "Campus drives and final year project completion." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3809.0!2d78.1050!3d17.3150!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbd0000000000%3A0xee55667788990011!2sRoyal%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1714600900000!5m2!1sen!2sin",
+      coordinates: { lat: 17.3150, lng: 78.1050 },
+      connectivity: {
+        bus: { name: "Chevella Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Lingampally Railway Station", dist: "28.0 KM" }
+      }
+    },
+    {
+      id: "116",
+      name: "Samatha Engineering College (SEC)",
+      location: "Karimnagar, Telangana",
+      rating: 3.3,
+      description: "Samatha Engineering College, located in Karimnagar, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. Samatha provides standard academic infrastructure with classrooms, laboratories, a library, hostel facilities, and a training and placement cell to support students in building engineering skills.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Engineering Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "Foundation Year", description: "Building basic engineering fundamentals and academic discipline." },
+        { year: 2, title: "Core Studies", description: "Departmental subjects with introductory laboratory sessions." },
+        { year: 3, title: "Skill Building", description: "Technical workshops and soft skills preparation." },
+        { year: 4, title: "Career Start", description: "Final projects and exploring placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.5!2d79.1550!3d18.4050!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc5333333333%3A0xaa11223344556677!2sSamatha%20Engineering%20College!5e0!3m2!1sen!2sin!4v1714601000000!5m2!1sen!2sin",
+      coordinates: { lat: 18.4050, lng: 79.1550 },
+      connectivity: {
+        bus: { name: "Karimnagar Bus Stand", dist: "4.0 KM" },
+        railway: { name: "Peddapalli Railway Station", dist: "23.0 KM" }
+      }
+    },
+    {
+      id: "117",
+      name: "Vaageswari College of Engineering (VCE)",
+      location: "Karimnagar, Telangana",
+      rating: 3.6,
+      description: "Vaageswari College of Engineering (VCE), located in Karimnagar, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, Civil, and AI & ML Engineering. VCE features a well-equipped campus with smart classrooms, departmental labs, a central library with digital resources, separate hostels, Wi-Fi connectivity, sports facilities, and an active placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "Capgemini", "Tech Mahindra", "Accenture"]
+      },
+      facilities: [
+        "Smart Classrooms with Projectors",
+        "Departmental Laboratories",
+        "Central Library with Digital Resources",
+        "Separate Hostels for Boys & Girls",
+        "Campus Wi-Fi",
+        "Auditorium & Seminar Halls",
+        "Sports Facilities & Gymnasium",
+        "Cafeteria",
+        "Health Center",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.6,
+        placements: 3.4,
+        hostel: 3.4,
+        campusLife: 3.5
+      },
+      experience: [
+        { year: 1, title: "VCE Welcome", description: "Joining the campus and building engineering foundations." },
+        { year: 2, title: "Core Engineering", description: "Intensive departmental subjects with smart classroom learning." },
+        { year: 3, title: "Industry Prep", description: "Soft skills, aptitude training, and placement readiness programs." },
+        { year: 4, title: "Placement Drives", description: "Campus recruitment with top IT companies." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.5!2d79.1650!3d18.4250!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc5444444444%3A0xbb22334455667788!2sVaageswari%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1714601100000!5m2!1sen!2sin",
+      coordinates: { lat: 18.4250, lng: 79.1650 },
+      connectivity: {
+        bus: { name: "Karimnagar Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Peddapalli Railway Station", dist: "22.0 KM" }
+      }
+    },
+    {
+      id: "118",
+      name: "Vikas College of Engineering & Technology (VCET)",
+      location: "Siddipet, Telangana",
+      rating: 3.4,
+      description: "Vikas College of Engineering & Technology (VCET), located in Siddipet, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. VCET features standard academic infrastructure with classrooms, departmental laboratories, a library, separate hostels, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.8 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Separate Hostels for Boys & Girls",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.4,
+        placements: 3.1,
+        hostel: 3.2,
+        campusLife: 3.3
+      },
+      experience: [
+        { year: 1, title: "Siddipet Start", description: "Beginning the engineering journey and building academic basics." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory practice." },
+        { year: 3, title: "Career Prep", description: "Technical workshops and soft skills training." },
+        { year: 4, title: "Campus Drives", description: "Placement recruitment and final year projects." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.0!2d78.8550!3d18.1050!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc0000000000%3A0xcc33445566778899!2sVikas%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1714601200000!5m2!1sen!2sin",
+      coordinates: { lat: 18.1050, lng: 78.8550 },
+      connectivity: {
+        bus: { name: "Siddipet Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Kamareddy Railway Station", dist: "40.0 KM" }
+      }
+    },
+    {
+      id: "119",
+      name: "St. Peter's Engineering College (SPEC)",
+      location: "Dullapally, Medchal, Hyderabad",
+      rating: 4.2,
+      description: "St. Peter's Engineering College (SPEC), located in Dullapally, Medchal near Hyderabad, is a UGC-Autonomous private engineering college affiliated with JNTU Hyderabad and accredited with NAAC 'A' Grade. The institute offers B.Tech programs in CSE, ECE, EEE, Mechanical, Civil, AI & ML, and Data Science with NBA-accredited programs. SPEC features smart classrooms, modern labs, a comprehensive library, Wi-Fi-enabled campus, and a strong placement cell with top MNC recruiters.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "5.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Tech Mahindra", "Accenture", "IBM", "Cognizant", "Amazon", "Deloitte"]
+      },
+      facilities: [
+        "UGC-Autonomous & NAAC 'A' Grade",
+        "Smart Classrooms with Audio-Visual Aids",
+        "Modern Engineering Laboratories",
+        "Central Library with E-Books & Journals",
+        "Girls' Hostel on Campus",
+        "Campus Wi-Fi",
+        "Auditorium & Seminar Halls",
+        "Sports Facilities (Badminton, Basketball, Volleyball, Cricket)",
+        "Cafeteria with Hygienic Food",
+        "Medical Cell",
+        "Shuttle Service",
+        "NBA-Accredited Programs (CSE, ECE, EEE)",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 4.2,
+        placements: 4.3,
+        hostel: 3.6,
+        campusLife: 4.0
+      },
+      experience: [
+        { year: 1, title: "SPEC Welcome", description: "Joining the autonomous institution and building strong foundations." },
+        { year: 2, title: "Academic Excellence", description: "NBA-accredited coursework with modern lab-based learning." },
+        { year: 3, title: "Industry Connect", description: "Pre-placement training by corporate trainers and internship programs." },
+        { year: 4, title: "Top Placements", description: "Securing offers from Amazon, Deloitte, TCS, and other top MNCs." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.5!2d78.4750!3d17.5850!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9500000000%3A0xdd44556677889900!2sSt%20Peters%20Engineering%20College!5e0!3m2!1sen!2sin!4v1714601300000!5m2!1sen!2sin",
+      coordinates: { lat: 17.5850, lng: 78.4750 },
+      connectivity: {
+        bus: { name: "Medchal Bus Stop", dist: "3.0 KM" },
+        railway: { name: "Medchal Railway Station", dist: "4.0 KM" }
+      }
+    },
+    {
+      id: "120",
+      name: "Vignan Institute of Technology & Science (VITS)",
+      location: "Deshmukhi, Yadadri-Bhuvanagiri",
+      rating: 4.1,
+      description: "Vignan Institute of Technology & Science (VITS), located on a sprawling 350-acre campus in Deshmukhi, Yadadri-Bhuvanagiri District, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech and M.Tech programs across multiple engineering disciplines. VITS features a centrally air-conditioned 'Vignana Dhara' library with NPTEL/DELNET access, modern laboratories, on-campus hostels with Wi-Fi, a median package of 6.15 LPA (NIRF 2025), and a strong placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "6.0 LPA",
+        topRecruiters: ["Infosys", "TCS", "Cognizant", "Wipro", "HCL", "Hyundai", "Amazon", "Capgemini"]
+      },
+      facilities: [
+        "350-Acre Green Campus",
+        "Modern Laboratories & Research Centers",
+        "AC Central Library 'Vignana Dhara' with NPTEL & DELNET",
+        "Separate Hostels with Wi-Fi & Digital Library Access",
+        "Campus Wi-Fi",
+        "Cricket & Football Grounds, Basketball Court",
+        "Indoor Games Zone (Table Tennis)",
+        "Multiple Canteens & Cafeterias",
+        "24/7 Medical Facility with Doctor",
+        "RO Water Purifiers & Power Backup",
+        "Transportation (Bus/Shuttle Service)",
+        "Post Office & Stationery Store",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 4.1,
+        placements: 4.2,
+        hostel: 3.8,
+        campusLife: 4.0
+      },
+      experience: [
+        { year: 1, title: "Vignan Campus", description: "Exploring the massive 350-acre campus and establishing academic roots." },
+        { year: 2, title: "Technical Depth", description: "Core engineering courses with state-of-the-art lab facilities." },
+        { year: 3, title: "Industry Readiness", description: "CRT programs, skill development, and internship opportunities." },
+        { year: 4, title: "Career Excellence", description: "Securing top packages through campus drives with major companies." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.0!2d78.7250!3d17.4550!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba8000000000%3A0xee55667788990011!2sVignan%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1714601400000!5m2!1sen!2sin",
+      coordinates: { lat: 17.4550, lng: 78.7250 },
+      connectivity: {
+        bus: { name: "Deshmukhi Bus Stop", dist: "1.5 KM" },
+        railway: { name: "Bhongir Railway Station", dist: "12.0 KM" }
+      }
+    },
+    {
+      id: "121",
+      name: "Abhinav Hi-Tech College of Engineering (AHTC)",
+      location: "Gandipet, Hyderabad",
+      rating: 3.2,
+      description: "Abhinav Hi-Tech College of Engineering (AHTC), established in 2002 near the scenic Gandipet Lake (Osman Sagar), Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech and M.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. AHTC features an eco-friendly campus with classrooms, laboratories, a library with digital resources, hostels, Wi-Fi connectivity, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "IBM", "Wipro", "Cognizant", "Tech Mahindra"]
+      },
+      facilities: [
+        "Eco-Friendly Campus near Gandipet Lake",
+        "Classrooms with Teaching Aids",
+        "Engineering Laboratories",
+        "Central Library with Digital Resources",
+        "Separate Hostels for Boys & Girls",
+        "Campus Wi-Fi",
+        "Auditorium & Seminar Halls",
+        "Cafeteria",
+        "Sports Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.2,
+        placements: 2.8,
+        hostel: 3.0,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "Gandipet Campus", description: "Settling into the eco-friendly campus near the scenic Gandipet Lake." },
+        { year: 2, title: "Core Studies", description: "Departmental subjects with laboratory-based learning." },
+        { year: 3, title: "Skill Building", description: "Technical workshops and placement preparation programs." },
+        { year: 4, title: "Career Start", description: "Final projects and exploring placement and career opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3809.5!2d78.3250!3d17.3550!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbdaaa00000000%3A0xaa11223344556677!2sAbhinav%20Hi-Tech%20College!5e0!3m2!1sen!2sin!4v1714601500000!5m2!1sen!2sin",
+      coordinates: { lat: 17.3550, lng: 78.3250 },
+      connectivity: {
+        bus: { name: "Gandipet Bus Stop", dist: "2.0 KM" },
+        railway: { name: "Lingampally Railway Station", dist: "18.0 KM" }
+      }
+    },
+    {
+      id: "122",
+      name: "Aar Mahaveer Engineering College (AARMEC)",
+      location: "Bandlaguda, Hyderabad",
+      rating: 3.4,
+      description: "Aar Mahaveer Engineering College (AARMEC), established in 2010 in Bandlaguda, Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Electrical, Mechanical, and Civil Engineering. AARMEC features a fully automated library, well-equipped laboratories, computer labs with high-speed internet, separate hostels, multimedia seminar halls, and a dedicated training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.0 LPA",
+        topRecruiters: ["TCS", "Wipro", "Cognizant", "Tech Mahindra", "Q Conneqt", "Infosys"]
+      },
+      facilities: [
+        "Well-Equipped Laboratories & Workshops",
+        "Fully Automated Library with Digital Resources",
+        "Computer Labs with High-Speed Internet",
+        "Separate Hostels for Boys & Girls",
+        "Multimedia Seminar Halls with LCD Projectors",
+        "Cafeteria",
+        "Sports Facilities (Indoor & Outdoor)",
+        "Transportation (Bus Fleet)",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.4,
+        placements: 3.2,
+        hostel: 3.2,
+        campusLife: 3.3
+      },
+      experience: [
+        { year: 1, title: "AARMEC Start", description: "Joining the Bandlaguda campus and building engineering foundations." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with automated library and lab resources." },
+        { year: 3, title: "Industry Prep", description: "Mock interviews, workshops, and industry readiness training." },
+        { year: 4, title: "Placement Season", description: "Campus recruitment drives and completing final year projects." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3809.0!2d78.4050!3d17.3350!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9bbb00000000%3A0xbb22334455667788!2sAar%20Mahaveer%20Engineering%20College!5e0!3m2!1sen!2sin!4v1714601600000!5m2!1sen!2sin",
+      coordinates: { lat: 17.3350, lng: 78.4050 },
+      connectivity: {
+        metro: { name: "Attapur Metro Station", dist: "8.0 KM" },
+        bus: { name: "Bandlaguda Bus Stop", dist: "1.0 KM" },
+        railway: { name: "Umdanagar Railway Station", dist: "6.0 KM" }
+      }
+    },
+    {
+      id: "123",
+      name: "CSI Institute of Technology (CSIIT)",
+      location: "Secunderabad, Hyderabad",
+      rating: 3.3,
+      description: "CSI Institute of Technology (CSIIT), located in Secunderabad, Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech and B.Arch programs. CSIIT features spacious smart classrooms, modern laboratories, a library with e-resources, an auditorium with 300 seating capacity, gymnasium, sports facilities, and a dedicated placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.0 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Smart Classrooms with Audio-Visual Aids",
+        "Modern Engineering Laboratories",
+        "Central Library with E-Resources",
+        "Auditorium (300 Seating Capacity)",
+        "Gymnasium",
+        "Sports Facilities (Badminton, Cricket, Football, Chess)",
+        "Cafeteria",
+        "Medical Center",
+        "Central Urban Location",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.4,
+        placements: 3.0,
+        hostel: 0,
+        campusLife: 3.3
+      },
+      experience: [
+        { year: 1, title: "City Campus", description: "Starting engineering education in the heart of Secunderabad." },
+        { year: 2, title: "Core Studies", description: "Departmental subjects with smart classroom and lab learning." },
+        { year: 3, title: "Career Training", description: "Soft skills development, mock interviews, and industry workshops." },
+        { year: 4, title: "Placement Drives", description: "Campus recruitment and final year project completion." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.0!2d78.5150!3d17.4450!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9a5555555555%3A0xcc33445566778899!2sCSI%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1714601700000!5m2!1sen!2sin",
+      coordinates: { lat: 17.4450, lng: 78.5150 },
+      connectivity: {
+        metro: { name: "Paradise Metro Station", dist: "2.0 KM" },
+        bus: { name: "Secunderabad Bus Stand", dist: "1.5 KM" },
+        railway: { name: "Secunderabad Railway Station", dist: "2.0 KM" }
+      }
+    },
+    {
+      id: "124",
+      name: "Daripally Anantha Ramulu College of Engineering (DARCE)",
+      location: "Khammam, Telangana",
+      rating: 3.3,
+      description: "Daripally Anantha Ramulu College of Engineering (DARCE), located in Khammam, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. DARCE features standard academic infrastructure with classrooms, departmental laboratories, a library, hostel facilities, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "DARCE Start", description: "Building engineering foundations in the Khammam campus." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with introductory lab sessions." },
+        { year: 3, title: "Career Prep", description: "Technical training and soft skills development programs." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.0!2d80.1550!3d17.2350!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3501000000000%3A0xdd44556677889900!2sDaripally%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1714601800000!5m2!1sen!2sin",
+      coordinates: { lat: 17.2350, lng: 80.1550 },
+      connectivity: {
+        bus: { name: "Khammam Bus Stand", dist: "5.0 KM" },
+        railway: { name: "Khammam Railway Station", dist: "6.0 KM" }
+      }
+    },
+    {
+      id: "125",
+      name: "Jyothishmathi Institute of Technology & Science (JITS)",
+      location: "Karimnagar, Telangana",
+      rating: 3.7,
+      description: "Jyothishmathi Institute of Technology & Science (JITS), located on a 25-acre campus in Karimnagar, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, Civil, and AI & ML Engineering. JITS features spacious classrooms with LCD/OHP aids, well-equipped labs, a library with e-journals, separate hostels with mess, a temple, ATM, gymnasium, and a dedicated placement cell with packages up to 12 LPA.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.8 LPA",
+        topRecruiters: ["TCS", "Infosys", "Accenture", "IBM", "HCL", "Wipro", "Cognizant"]
+      },
+      facilities: [
+        "25-Acre Campus",
+        "Spacious Classrooms with LCD & OHP Aids",
+        "Well-Equipped Departmental Laboratories",
+        "Central Library with E-Journals & References",
+        "Separate Hostels for Boys & Girls with Mess",
+        "Gymnasium",
+        "Sports Facilities (Cricket, Basketball, Volleyball, Badminton)",
+        "Indoor Games (Carrom, Chess, Table Tennis)",
+        "Cafeteria & Mess",
+        "Temple on Campus",
+        "ATM Facility",
+        "Health Center",
+        "Transportation (Bus Service to Karimnagar & Nearby Areas)",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.7,
+        placements: 3.6,
+        hostel: 3.5,
+        campusLife: 3.6
+      },
+      experience: [
+        { year: 1, title: "JITS Welcome", description: "Joining the 25-acre campus and building engineering fundamentals." },
+        { year: 2, title: "Core Engineering", description: "Intensive departmental courses with modern lab facilities." },
+        { year: 3, title: "Industry Connect", description: "Expert lectures, industrial visits, and placement training." },
+        { year: 4, title: "Top Placements", description: "Securing offers from TCS, Accenture, IBM, and other top companies." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.5!2d79.1350!3d18.4350!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc5566666666%3A0xee55667788990011!2sJyothishmathi%20Institute!5e0!3m2!1sen!2sin!4v1714601900000!5m2!1sen!2sin",
+      coordinates: { lat: 18.4350, lng: 79.1350 },
+      connectivity: {
+        bus: { name: "Karimnagar Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Peddapalli Railway Station", dist: "21.0 KM" }
+      }
+    },
+    {
+      id: "126",
+      name: "Kakatiya Institute of Technology & Science (KITSW)",
+      location: "Warangal, Telangana",
+      rating: 4.4,
+      description: "Kakatiya Institute of Technology & Science (KITSW), located on a 65-acre campus in Warangal, is an autonomous private engineering institution affiliated with Kakatiya University and accredited with NAAC 'A' Grade. Multiple programs hold NBA accreditation. KITSW offers B.Tech and M.Tech programs across all major engineering disciplines. The institute features AC classrooms, advanced research labs, a comprehensive digital library, on-campus hostels with 24/7 internet, extensive sports facilities, an on-campus dispensary with ambulance service, and a strong placement cell with packages up to 14 LPA.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "5.5 LPA",
+        topRecruiters: ["Oracle", "Cognizant", "IBM", "Deloitte", "PWC", "Infosys", "TCS", "Wipro", "Accenture"]
+      },
+      facilities: [
+        "65-Acre Autonomous Campus (NAAC 'A' Grade)",
+        "AC Classrooms & Smart Classrooms",
+        "Advanced Research Laboratories",
+        "Comprehensive Digital Library",
+        "Separate Hostels with 24/7 Internet & Gym",
+        "Campus Wi-Fi",
+        "Auditorium & Seminar Halls",
+        "Cricket & Football Grounds, Basketball, Volleyball, Tennis Courts",
+        "Indoor Game Complex",
+        "Gymnasium & Fitness Center",
+        "On-Campus Dispensary & Ambulance Service",
+        "Cafeteria & Mess",
+        "Student Activity Centers",
+        "Transportation (Shuttle/Bus Service)",
+        "NBA-Accredited Programs",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 4.5,
+        placements: 4.4,
+        hostel: 4.0,
+        campusLife: 4.3
+      },
+      experience: [
+        { year: 1, title: "KITSW Welcome", description: "Joining the prestigious 65-acre autonomous campus in Warangal." },
+        { year: 2, title: "Academic Rigor", description: "NBA-accredited coursework with advanced research lab access." },
+        { year: 3, title: "Industry Connect", description: "Internships, skill development, and pre-placement training programs." },
+        { year: 4, title: "Top Placements", description: "Securing offers from Oracle, Deloitte, IBM, and other top companies." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.0!2d79.5750!3d17.9850!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a334588888888%3A0xaa11335577990011!2sKakatiya%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1714602000000!5m2!1sen!2sin",
+      coordinates: { lat: 17.9850, lng: 79.5750 },
+      connectivity: {
+        bus: { name: "Warangal Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Warangal Railway Station", dist: "4.0 KM" }
+      }
+    },
+    {
+      id: "127",
+      name: "Maa Bharathi Institute of Technology & Science (MBITS)",
+      location: "Nalgonda, Telangana",
+      rating: 3.3,
+      description: "Maa Bharathi Institute of Technology & Science (MBITS), located in Nalgonda, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. MBITS features standard academic infrastructure with classrooms, departmental laboratories, a library, hostel facilities, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "Nalgonda Start", description: "Building engineering fundamentals in the Nalgonda campus." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory practice." },
+        { year: 3, title: "Career Prep", description: "Technical workshops and soft skills training." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.0!2d79.2750!3d17.0550!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35b0000000000%3A0xbb22334455667788!2sMaa%20Bharathi%20Institute!5e0!3m2!1sen!2sin!4v1714602100000!5m2!1sen!2sin",
+      coordinates: { lat: 17.0550, lng: 79.2750 },
+      connectivity: {
+        bus: { name: "Nalgonda Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Nalgonda Railway Station", dist: "4.0 KM" }
+      }
+    },
+    {
+      id: "128",
+      name: "Madhira Institute of Technology & Science (MITS)",
+      location: "Kodad, Suryapet",
+      rating: 3.3,
+      description: "Madhira Institute of Technology & Science (MITS), located near Kodad, Suryapet District, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. MITS provides standard academic infrastructure with classrooms, laboratories, a library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Engineering Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "MITS Start", description: "Building engineering foundations near Kodad town." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with lab-based learning." },
+        { year: 3, title: "Skill Building", description: "Technical training and career readiness programs." },
+        { year: 4, title: "Placement Season", description: "Final year projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.5!2d79.9750!3d17.1150!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35e1111111111%3A0xcc33445566778899!2sMadhira%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1714602200000!5m2!1sen!2sin",
+      coordinates: { lat: 17.1150, lng: 79.9750 },
+      connectivity: {
+        bus: { name: "Kodad Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Kodad Railway Station", dist: "4.0 KM" }
+      }
+    },
+    {
+      id: "129",
+      name: "MNR College of Engineering & Technology (MNRCET)",
+      location: "Sangareddy, Telangana",
+      rating: 3.8,
+      description: "MNR College of Engineering & Technology (MNRCET), established in 2008 on the 110-acre MNR Higher Education & Research Academy (MNR-HERA) campus in Sangareddy, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. MNRCET features smart classrooms, a digital library, separate hostels, a gymnasium, on-campus MNR Hospital with 24x7 medical support, CCTV surveillance, and a strong placement cell with 77% placement rate and packages up to 8.5 LPA.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "5.0 LPA",
+        topRecruiters: ["Infosys", "Accenture", "Google", "Olive Tech Solutions", "CMS Info Systems", "Wipro", "TCS"]
+      },
+      facilities: [
+        "110-Acre MNR-HERA Campus",
+        "Smart Classrooms & Modern Labs",
+        "Digital Library",
+        "Separate Hostels for Boys & Girls",
+        "Gymnasium & Sports Facilities",
+        "On-Campus MNR Hospital (24x7 Medical Support)",
+        "Cafeteria with Hygienic Food",
+        "CCTV Surveillance & Security",
+        "Transportation Service",
+        "Cultural & Extracurricular Facilities",
+        "Training & Placement Cell (77% Placement Rate)"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.8,
+        placements: 3.9,
+        hostel: 3.5,
+        campusLife: 3.7
+      },
+      experience: [
+        { year: 1, title: "MNR Campus", description: "Joining the massive 110-acre campus with on-campus hospital access." },
+        { year: 2, title: "Core Depth", description: "Intensive departmental courses with smart classroom learning." },
+        { year: 3, title: "Industry Connect", description: "Pre-placement training, aptitude, and soft skills development." },
+        { year: 4, title: "Top Placements", description: "Securing offers from Google, Accenture, Infosys, and other companies." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.5!2d78.0850!3d17.6250!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbed00000000%3A0xdd44556677889900!2sMNR%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1714602300000!5m2!1sen!2sin",
+      coordinates: { lat: 17.6250, lng: 78.0850 },
+      connectivity: {
+        bus: { name: "Sangareddy Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Sangareddy Railway Station", dist: "4.0 KM" }
+      }
+    },
+    {
+      id: "130",
+      name: "Noble College of Engineering & Technology for Women (NETW)",
+      location: "Hyderabad, Telangana",
+      rating: 3.4,
+      description: "Noble College of Engineering & Technology for Women (NETW), located on a 5-acre campus in Hyderabad, is a private women's engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Electrical, and Information Technology. NETW features spacious classrooms with AV aids, well-equipped labs, a resourceful library, girls' hostel with 24/7 vehicle service, gymnasium, Wi-Fi campus, and a placement cell with technical training in Embedded Systems, Java, and .Net.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.0 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Women-Only Engineering College",
+        "Spacious Classrooms with AV Aids",
+        "Well-Equipped Laboratories & Workshops",
+        "Central Library with E-Resources",
+        "Girls' Hostel with 24/7 Vehicle Service",
+        "Campus Wi-Fi & Broadband Internet",
+        "Gymnasium & Sports Facilities",
+        "Cafeteria",
+        "Health Center",
+        "Auditorium & Seminar Halls",
+        "Guest Room Facility",
+        "Training & Placement Cell (Java, .Net, Embedded Systems)"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.4,
+        placements: 3.1,
+        hostel: 3.3,
+        campusLife: 3.3
+      },
+      experience: [
+        { year: 1, title: "Noble Welcome", description: "Joining the women's engineering college and building foundations." },
+        { year: 2, title: "Core Studies", description: "Departmental specialization with hands-on lab sessions." },
+        { year: 3, title: "Technical Training", description: "Industry-specific training in Java, .Net, and Embedded Systems." },
+        { year: 4, title: "Career Launch", description: "Campus drives and completing final year projects." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.0!2d78.4850!3d17.3850!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9c0000000000%3A0xee55667788990011!2sNoble%20College%20for%20Women!5e0!3m2!1sen!2sin!4v1714602400000!5m2!1sen!2sin",
+      coordinates: { lat: 17.3850, lng: 78.4850 },
+      connectivity: {
+        metro: { name: "Ameerpet Metro Station", dist: "5.0 KM" },
+        bus: { name: "Nearest Bus Stop", dist: "0.5 KM" },
+        railway: { name: "Nampally Railway Station", dist: "6.0 KM" }
+      }
+    },
+    {
+      id: "131",
+      name: "Prathima Institute of Medical Sciences — Engineering Campus (PIMS-EC)",
+      location: "Karimnagar, Telangana",
+      rating: 3.4,
+      description: "Prathima Institute of Medical Sciences — Engineering Campus (PIMS-EC), located in Karimnagar, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. Part of the Prathima Group, the institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. The campus benefits from the Prathima Group's infrastructure including a 960+ bedded teaching hospital nearby, classrooms, laboratories, a library, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.8 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Engineering Laboratories",
+        "Central Library",
+        "Prathima Group Campus Infrastructure",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.4,
+        placements: 3.1,
+        hostel: 3.2,
+        campusLife: 3.3
+      },
+      experience: [
+        { year: 1, title: "PIMS Campus", description: "Joining the Prathima Group campus and building engineering foundations." },
+        { year: 2, title: "Core Studies", description: "Departmental subjects with laboratory-based learning." },
+        { year: 3, title: "Skill Building", description: "Technical workshops and placement preparation programs." },
+        { year: 4, title: "Career Start", description: "Campus drives and final year project completion." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.5!2d79.1050!3d18.4450!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc5700000000%3A0xaa11223344556677!2sPrathima%20Engineering!5e0!3m2!1sen!2sin!4v1714602500000!5m2!1sen!2sin",
+      coordinates: { lat: 18.4450, lng: 79.1050 },
+      connectivity: {
+        bus: { name: "Karimnagar Bus Stand", dist: "5.0 KM" },
+        railway: { name: "Peddapalli Railway Station", dist: "24.0 KM" }
+      }
+    },
+    {
+      id: "132",
+      name: "Sree Visvesvaraya Institute of Technology & Science (SVITS)",
+      location: "Mahabubnagar, Telangana",
+      rating: 3.4,
+      description: "Sree Visvesvaraya Institute of Technology & Science (SVITS), located in Mahabubnagar, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. SVITS features classrooms with modern teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a dedicated training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.8 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Modern Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Separate Hostels for Boys & Girls",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.4,
+        placements: 3.1,
+        hostel: 3.2,
+        campusLife: 3.3
+      },
+      experience: [
+        { year: 1, title: "SVITS Start", description: "Building engineering foundations in the Mahabubnagar campus." },
+        { year: 2, title: "Core Engineering", description: "Departmental specialization with lab-based learning." },
+        { year: 3, title: "Career Prep", description: "Technical training and soft skills development." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3812.0!2d77.9950!3d16.7450!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbf1111111111%3A0xbb22334455667788!2sSree%20Visvesvaraya%20Institute!5e0!3m2!1sen!2sin!4v1714602600000!5m2!1sen!2sin",
+      coordinates: { lat: 16.7450, lng: 77.9950 },
+      connectivity: {
+        bus: { name: "Mahabubnagar Bus Stand", dist: "4.0 KM" },
+        railway: { name: "Mahabubnagar Railway Station", dist: "5.0 KM" }
+      }
+    },
+    {
+      id: "133",
+      name: "Talla Padmavathi College of Engineering (TPCE)",
+      location: "Kazipet, Warangal",
+      rating: 3.6,
+      description: "Talla Padmavathi College of Engineering (TPCE), located in Tekulagudem, Kazipet, Warangal, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. TPCE features well-equipped laboratories, classrooms, a library, separate hostels, sports facilities, banking facilities on campus, and an active placement cell with recruiters like Amazon, TCS, and Cyient.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.5 LPA",
+        topRecruiters: ["TCS", "Wipro", "Infosys", "Amazon", "Cognizant", "Capgemini", "Accenture", "Virtusa", "Cyient"]
+      },
+      facilities: [
+        "Well-Equipped Laboratories",
+        "Classrooms with Teaching Aids",
+        "Central Library",
+        "Separate Hostels for Boys & Girls",
+        "Sports Facilities (Indoor & Outdoor)",
+        "Cafeteria",
+        "Banking Facilities on Campus",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.6,
+        placements: 3.5,
+        hostel: 3.3,
+        campusLife: 3.5
+      },
+      experience: [
+        { year: 1, title: "TPCE Welcome", description: "Joining the Kazipet campus and building engineering foundations." },
+        { year: 2, title: "Core Studies", description: "Intensive departmental subjects with lab-based learning." },
+        { year: 3, title: "Career Training", description: "Workshops, mock interviews, and pre-placement talks." },
+        { year: 4, title: "Top Placements", description: "Securing offers from Amazon, TCS, Cyient, and other companies." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.0!2d79.5150!3d17.9650!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3346000000000%3A0xcc33445566778899!2sTalla%20Padmavathi%20College!5e0!3m2!1sen!2sin!4v1714602700000!5m2!1sen!2sin",
+      coordinates: { lat: 17.9650, lng: 79.5150 },
+      connectivity: {
+        bus: { name: "Kazipet Bus Stand", dist: "2.0 KM" },
+        railway: { name: "Kazipet Railway Junction", dist: "3.0 KM" }
+      }
+    },
+    {
+      id: "134",
+      name: "Venkateshwara Institute of Technology (VIT)",
+      location: "Hyderabad, Telangana",
+      rating: 3.3,
+      description: "Venkateshwara Institute of Technology (VIT), located in Hyderabad, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. VIT features standard academic infrastructure with classrooms, laboratories, a library, sports facilities, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.8 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Engineering Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "VIT Start", description: "Joining the campus and building engineering fundamentals." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with practical lab sessions." },
+        { year: 3, title: "Skill Development", description: "Technical workshops and soft skills training." },
+        { year: 4, title: "Career Launch", description: "Final projects and campus placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.0!2d78.4250!3d17.3750!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9d0000000000%3A0xdd44556677889900!2sVenkateshwara%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1714602800000!5m2!1sen!2sin",
+      coordinates: { lat: 17.3750, lng: 78.4250 },
+      connectivity: {
+        metro: { name: "Ameerpet Metro Station", dist: "6.0 KM" },
+        bus: { name: "Nearest Bus Stop", dist: "1.0 KM" },
+        railway: { name: "Nampally Railway Station", dist: "7.0 KM" }
+      }
+    },
+    {
+      id: "135",
+      name: "Viveka Institute of Technology & Science (VITS)",
+      location: "Karimnagar, Telangana",
+      rating: 3.3,
+      description: "Viveka Institute of Technology & Science (VITS), located in Karimnagar, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. VITS features standard academic infrastructure with classrooms, departmental laboratories, a library, hostel facilities, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "Viveka Start", description: "Building engineering fundamentals in the Karimnagar campus." },
+        { year: 2, title: "Core Studies", description: "Departmental subjects with laboratory sessions." },
+        { year: 3, title: "Career Prep", description: "Technical training and soft skills development." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.5!2d79.1250!3d18.4150!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc5800000000%3A0xee55667788990011!2sViveka%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1714602900000!5m2!1sen!2sin",
+      coordinates: { lat: 18.4150, lng: 79.1250 },
+      connectivity: {
+        bus: { name: "Karimnagar Bus Stand", dist: "4.0 KM" },
+        railway: { name: "Peddapalli Railway Station", dist: "23.0 KM" }
+      }
+    },
+    {
+      id: "136",
+      name: "SVS Group of Institutions (SVSIT)",
+      location: "Warangal, Telangana",
+      rating: 3.7,
+      description: "SVS Group of Institutions (SVSIT), established in Warangal, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, Civil, and AI & ML Engineering. SVS features smart classrooms, departmental labs, a digital library, separate hostels, sports facilities, a yoga centre, and an active TASK-partnered placement cell with recruiters like Amazon, Microsoft, and Google.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "4.0 LPA",
+        topRecruiters: ["Infosys", "Wipro", "TCS", "Genpact", "Accenture", "IBM", "Cognizant", "Amazon", "Microsoft"]
+      },
+      facilities: [
+        "Smart Classrooms & Seminar Halls",
+        "Departmental Laboratories",
+        "Digital Library with Journals",
+        "Separate Hostels for Boys & Girls",
+        "Campus Wi-Fi",
+        "Sports Facilities (Volleyball, Cricket, Football, Shuttle)",
+        "Auditorium",
+        "Yoga Centre",
+        "Cafeteria & Canteen",
+        "Medical Support",
+        "Parking Facilities",
+        "Transportation (Bus Service)",
+        "TASK Partnership",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.7,
+        placements: 3.7,
+        hostel: 3.4,
+        campusLife: 3.6
+      },
+      experience: [
+        { year: 1, title: "SVS Welcome", description: "Joining the campus and building engineering fundamentals in Warangal." },
+        { year: 2, title: "Core Engineering", description: "Intensive departmental courses with smart classroom learning." },
+        { year: 3, title: "TASK Training", description: "Industry training through TASK partnership and placement programs." },
+        { year: 4, title: "Top Placements", description: "Securing offers from Amazon, Microsoft, Infosys, and other companies." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.0!2d79.5550!3d17.9550!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3347000000000%3A0xff66778899001122!2sSVS%20Group%20of%20Institutions!5e0!3m2!1sen!2sin!4v1714603000000!5m2!1sen!2sin",
+      coordinates: { lat: 17.9550, lng: 79.5550 },
+      connectivity: {
+        bus: { name: "Warangal Bus Stand", dist: "4.0 KM" },
+        railway: { name: "Warangal Railway Station", dist: "5.0 KM" }
+      }
+    },
+    {
+      id: "137",
+      name: "Apex College of Engineering & Technology (ACET)",
+      location: "Mahabubnagar, Telangana",
+      rating: 3.2,
+      description: "Apex College of Engineering & Technology (ACET), located in Mahabubnagar, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. ACET features standard academic infrastructure with classrooms, departmental laboratories, a library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.2,
+        placements: 2.9,
+        hostel: 3.0,
+        campusLife: 3.1
+      },
+      experience: [
+        { year: 1, title: "ACET Start", description: "Building engineering foundations in the Mahabubnagar campus." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with introductory laboratory sessions." },
+        { year: 3, title: "Career Prep", description: "Technical workshops and soft skills preparation." },
+        { year: 4, title: "Campus Drives", description: "Final projects and exploring placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3812.0!2d78.0150!3d16.7250!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbf2222222222%3A0xaa11223344556677!2sApex%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1714603100000!5m2!1sen!2sin",
+      coordinates: { lat: 16.7250, lng: 78.0150 },
+      connectivity: {
+        bus: { name: "Mahabubnagar Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Mahabubnagar Railway Station", dist: "4.0 KM" }
+      }
+    },
+    {
+      id: "138",
+      name: "Lakshya Institute of Technology & Science (LITS)",
+      location: "Khammam, Telangana",
+      rating: 3.3,
+      description: "Lakshya Institute of Technology & Science (LITS), located in Khammam, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. LITS features classrooms with teaching aids, departmental laboratories, a central library, separate hostels, sports facilities, and a dedicated training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Separate Hostels for Boys & Girls",
+        "Cafeteria",
+        "Sports Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "LITS Start", description: "Building engineering fundamentals in the Khammam campus." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with lab-based learning." },
+        { year: 3, title: "Skill Building", description: "Technical training and career readiness programs." },
+        { year: 4, title: "Placement Season", description: "Final year projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.0!2d80.1350!3d17.2550!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3502000000000%3A0xbb22334455667788!2sLakshya%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1714603200000!5m2!1sen!2sin",
+      coordinates: { lat: 17.2550, lng: 80.1350 },
+      connectivity: {
+        bus: { name: "Khammam Bus Stand", dist: "4.0 KM" },
+        railway: { name: "Khammam Railway Station", dist: "5.0 KM" }
+      }
+    },
+    {
+      id: "139",
+      name: "Pragna Bharathi Institute of Technology (PBIT)",
+      location: "Hyderabad, Telangana",
+      rating: 3.3,
+      description: "Pragna Bharathi Institute of Technology (PBIT), located in Hyderabad, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. PBIT features classrooms with modern teaching aids, engineering laboratories, a central library, sports facilities, Wi-Fi connectivity, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.8 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Modern Teaching Aids",
+        "Engineering Laboratories",
+        "Central Library",
+        "Campus Wi-Fi",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "PBIT Start", description: "Joining the campus and building engineering fundamentals." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with practical lab sessions." },
+        { year: 3, title: "Career Prep", description: "Technical workshops and soft skills training." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.5!2d78.4450!3d17.3650!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9e0000000000%3A0xcc33445566778899!2sPragna%20Bharathi%20Institute!5e0!3m2!1sen!2sin!4v1714603300000!5m2!1sen!2sin",
+      coordinates: { lat: 17.3650, lng: 78.4450 },
+      connectivity: {
+        metro: { name: "Ameerpet Metro Station", dist: "7.0 KM" },
+        bus: { name: "Nearest Bus Stop", dist: "1.0 KM" },
+        railway: { name: "Nampally Railway Station", dist: "8.0 KM" }
+      }
+    },
+    {
+      id: "140",
+      name: "Shantiniketan Engineering College (SEC)",
+      location: "Mahabubnagar, Telangana",
+      rating: 3.2,
+      description: "Shantiniketan Engineering College (SEC), located in Mahabubnagar, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. SEC features standard academic infrastructure with classrooms, departmental laboratories, a library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.3 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.2,
+        placements: 2.8,
+        hostel: 3.0,
+        campusLife: 3.1
+      },
+      experience: [
+        { year: 1, title: "Shantiniketan Start", description: "Building engineering foundations in the Mahabubnagar campus." },
+        { year: 2, title: "Core Studies", description: "Departmental subjects with introductory laboratory sessions." },
+        { year: 3, title: "Skill Building", description: "Technical training and career readiness programs." },
+        { year: 4, title: "Career Start", description: "Final projects and exploring placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3812.0!2d77.9850!3d16.7350!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbf3333333333%3A0xdd44556677889900!2sShantiniketan%20Engineering%20College!5e0!3m2!1sen!2sin!4v1714603400000!5m2!1sen!2sin",
+      coordinates: { lat: 16.7350, lng: 77.9850 },
+      connectivity: {
+        bus: { name: "Mahabubnagar Bus Stand", dist: "4.0 KM" },
+        railway: { name: "Mahabubnagar Railway Station", dist: "5.0 KM" }
+      }
+    },
+    {
+      id: "141",
+      name: "Sree Vahini Institute of Science & Technology (SVIST)",
+      location: "Suryapet, Telangana",
+      rating: 3.3,
+      description: "Sree Vahini Institute of Science & Technology (SVIST), located in Suryapet, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. SVIST features classrooms with teaching aids, departmental laboratories, a central library, separate hostels, sports facilities, and a dedicated training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Separate Hostels for Boys & Girls",
+        "Cafeteria",
+        "Sports Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "SVIST Start", description: "Building engineering foundations in the Suryapet campus." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with lab-based learning." },
+        { year: 3, title: "Skill Building", description: "Technical training and career readiness programs." },
+        { year: 4, title: "Placement Season", description: "Final year projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.5!2d79.6350!3d17.1450!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35c0000000000%3A0xaa11223344556677!2sSree%20Vahini%20Institute!5e0!3m2!1sen!2sin!4v1714603500000!5m2!1sen!2sin",
+      coordinates: { lat: 17.1450, lng: 79.6350 },
+      connectivity: {
+        bus: { name: "Suryapet Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Suryapet Railway Station", dist: "4.0 KM" }
+      }
+    },
+    {
+      id: "142",
+      name: "JNTUH University College of Engineering Wanaparthy (JNTUH UCEW)",
+      location: "Wanaparthy, Telangana",
+      rating: 3.8,
+      description: "JNTUH University College of Engineering Wanaparthy (JNTUH UCEW), established in 2022 by the Government of Telangana, is a constituent college of Jawaharlal Nehru Technological University, Hyderabad. As a government institution, it offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering at subsidized fees. The campus features classrooms, departmental labs, a computer center, library, hostels, seminar halls, NSS, dispensary, bank/ATM, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "4.0 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "Capgemini", "Tech Mahindra"]
+      },
+      facilities: [
+        "Government Constituent College (JNTUH)",
+        "Classrooms & Seminar Halls",
+        "Departmental Laboratories",
+        "Centralized Computer Center",
+        "Library",
+        "Hostel Facilities",
+        "Dispensary",
+        "Bank & ATM Facilities",
+        "NSS (National Service Scheme)",
+        "Sports Facilities",
+        "Guest House & Waiting Rooms",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.8,
+        placements: 3.5,
+        hostel: 3.5,
+        campusLife: 3.6
+      },
+      experience: [
+        { year: 1, title: "JNTUH Welcome", description: "Joining the prestigious government constituent college in Wanaparthy." },
+        { year: 2, title: "Core Engineering", description: "JNTUH curriculum with departmental lab sessions." },
+        { year: 3, title: "Career Training", description: "Placement cell training and industry readiness programs." },
+        { year: 4, title: "Campus Placements", description: "University-level placement drives and final year projects." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3813.0!2d78.0650!3d16.3650!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bca10000000000%3A0xbb22334455667788!2sJNTUH%20UCE%20Wanaparthy!5e0!3m2!1sen!2sin!4v1714603600000!5m2!1sen!2sin",
+      coordinates: { lat: 16.3650, lng: 78.0650 },
+      connectivity: {
+        bus: { name: "Wanaparthy Bus Stand", dist: "2.0 KM" },
+        railway: { name: "Wanaparthy Road Railway Station", dist: "5.0 KM" }
+      }
+    },
+    {
+      id: "143",
+      name: "JNTUH University College of Engineering Mahabubabad (JNTUH UCEM)",
+      location: "Mahabubabad, Telangana",
+      rating: 3.8,
+      description: "JNTUH University College of Engineering Mahabubabad (JNTUH UCEM), established in 2022 by the Government of Telangana, is a constituent college of Jawaharlal Nehru Technological University, Hyderabad. As a government institution, it offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering at subsidized fees. The campus features classrooms, departmental labs, a computer center, library, hostel facilities, seminar halls, NSS, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "4.0 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "Capgemini", "Tech Mahindra"]
+      },
+      facilities: [
+        "Government Constituent College (JNTUH)",
+        "Classrooms & Seminar Halls",
+        "Departmental Laboratories",
+        "Centralized Computer Center",
+        "Library",
+        "Hostel Facilities",
+        "Dispensary",
+        "NSS (National Service Scheme)",
+        "Sports Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.8,
+        placements: 3.5,
+        hostel: 3.4,
+        campusLife: 3.5
+      },
+      experience: [
+        { year: 1, title: "JNTUH Welcome", description: "Joining the prestigious government constituent college in Mahabubabad." },
+        { year: 2, title: "Core Engineering", description: "JNTUH curriculum with departmental lab sessions." },
+        { year: 3, title: "Career Training", description: "Placement cell training and industry readiness programs." },
+        { year: 4, title: "Campus Placements", description: "University-level placement drives and final year projects." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.0!2d80.0050!3d17.5950!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3360000000000%3A0xcc33445566778899!2sJNTUH%20UCE%20Mahabubabad!5e0!3m2!1sen!2sin!4v1714603700000!5m2!1sen!2sin",
+      coordinates: { lat: 17.5950, lng: 80.0050 },
+      connectivity: {
+        bus: { name: "Mahabubabad Bus Stand", dist: "2.0 KM" },
+        railway: { name: "Mahabubabad Railway Station", dist: "3.0 KM" }
+      }
+    },
+    {
+      id: "144",
+      name: "JNTUH University College of Engineering Palair (JNTUH UCEP)",
+      location: "Palair, Khammam",
+      rating: 3.7,
+      description: "JNTUH University College of Engineering Palair (JNTUH UCEP), established by the Government of Telangana, is a constituent college of Jawaharlal Nehru Technological University, Hyderabad. Located in Palair, Khammam District, it offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering at subsidized fees. The campus features classrooms, departmental laboratories, a computer center, library, hostel facilities, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.8 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "Capgemini", "Tech Mahindra"]
+      },
+      facilities: [
+        "Government Constituent College (JNTUH)",
+        "Classrooms & Seminar Halls",
+        "Departmental Laboratories",
+        "Centralized Computer Center",
+        "Library",
+        "Hostel Facilities",
+        "Sports Facilities",
+        "Cafeteria",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.7,
+        placements: 3.4,
+        hostel: 3.3,
+        campusLife: 3.4
+      },
+      experience: [
+        { year: 1, title: "JNTUH Palair", description: "Joining the government constituent college in Palair." },
+        { year: 2, title: "Core Studies", description: "JNTUH curriculum with departmental lab sessions." },
+        { year: 3, title: "Career Readiness", description: "Placement cell training and skill development." },
+        { year: 4, title: "Campus Placements", description: "University-level placement drives and final year projects." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.0!2d80.3050!3d17.0950!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35f0000000000%3A0xdd44556677889900!2sJNTUH%20UCE%20Palair!5e0!3m2!1sen!2sin!4v1714603800000!5m2!1sen!2sin",
+      coordinates: { lat: 17.0950, lng: 80.3050 },
+      connectivity: {
+        bus: { name: "Palair Bus Stand", dist: "1.5 KM" },
+        railway: { name: "Khammam Railway Station", dist: "30.0 KM" }
+      }
+    },
+    {
+      id: "145",
+      name: "Mahatma Gandhi University College of Engineering & Technology (MGUCET)",
+      location: "Nalgonda, Telangana",
+      rating: 4.0,
+      description: "Mahatma Gandhi University College of Engineering & Technology (MGUCET), located in Nalgonda, is a constituent college under Mahatma Gandhi University (MGU), Nalgonda. As a government university college, it offers B.Tech programs across multiple engineering disciplines at subsidized fees. MGUCET features a placement season running July–March with 100+ recruiting organizations, packages up to 10 LPA, partnerships with pharma giants like Dr. Reddy's and Bharat Biotech alongside top IT firms, and a structured training and placement directorate.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "4.5 LPA",
+        topRecruiters: ["TCS", "Wipro", "Cognizant", "HCL", "Dell", "Deloitte", "Dr. Reddy's", "Bharat Biotech", "Hetero Drugs"]
+      },
+      facilities: [
+        "Government University College (MGU Nalgonda)",
+        "Modern Classrooms & Seminar Halls",
+        "Well-Equipped Laboratories",
+        "Central Library with Digital Resources",
+        "Hostel Facilities",
+        "Campus Wi-Fi",
+        "Auditorium",
+        "Sports Facilities",
+        "Cafeteria",
+        "Medical Facilities",
+        "Transportation Service",
+        "Directorate of Training & Placement (100+ Recruiters)"
+      ],
+      ratingsBreakdown: {
+        faculty: 4.0,
+        placements: 4.0,
+        hostel: 3.6,
+        campusLife: 3.8
+      },
+      experience: [
+        { year: 1, title: "MGU Campus", description: "Joining the prestigious government university college in Nalgonda." },
+        { year: 2, title: "Academic Depth", description: "Intensive engineering coursework with modern lab facilities." },
+        { year: 3, title: "Industry Connect", description: "Structured training by the Directorate of Training & Placement." },
+        { year: 4, title: "Top Placements", description: "Securing offers from Dell, Deloitte, Dr. Reddy's, and other top companies." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.0!2d79.2650!3d17.0650!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35b1111111111%3A0xee55667788990011!2sMGU%20Engineering%20College!5e0!3m2!1sen!2sin!4v1714603900000!5m2!1sen!2sin",
+      coordinates: { lat: 17.0650, lng: 79.2650 },
+      connectivity: {
+        bus: { name: "Nalgonda Bus Stand", dist: "2.0 KM" },
+        railway: { name: "Nalgonda Railway Station", dist: "3.0 KM" }
+      }
+    },
+    {
+      id: "146",
+      name: "Satavahana University College of Engineering (SUCE)",
+      location: "Husnabad, Siddipet, Telangana",
+      rating: 3.5,
+      description: "Satavahana University College of Engineering (SUCE), located in Husnabad, Siddipet District, is a newly established government engineering college under Satavahana University, commencing operations from the 2025-26 academic year. The college offers B.Tech programs in CSE, CSE (AI), IT, and ECE with an intake of 60 students per program. As a government institution, it provides subsidized education and is currently developing permanent infrastructure with temporary operations at the Government Polytechnic College, Husnabad.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "Capgemini", "Tech Mahindra"]
+      },
+      facilities: [
+        "Government University College (Satavahana University)",
+        "Classrooms & Seminar Halls",
+        "Computer Laboratories",
+        "Library",
+        "B.Tech: CSE, CSE (AI), IT, ECE",
+        "Subsidized Government Fees",
+        "Infrastructure Under Development",
+        "Career Guidance & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.5,
+        placements: 3.2,
+        hostel: 3.0,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "Satavahana Start", description: "Joining the new government engineering college under Satavahana University." },
+        { year: 2, title: "Core Engineering", description: "University curriculum with CSE, AI, IT, and ECE focus areas." },
+        { year: 3, title: "Career Training", description: "University-level placement cell training and industry readiness." },
+        { year: 4, title: "Campus Placements", description: "University-coordinated placement drives and final year projects." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.5!2d78.8750!3d18.0750!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc1000000000%3A0xaa11223344556677!2sSatavahana%20University%20Engineering!5e0!3m2!1sen!2sin!4v1714604000000!5m2!1sen!2sin",
+      coordinates: { lat: 18.0750, lng: 78.8750 },
+      connectivity: {
+        bus: { name: "Husnabad Bus Stand", dist: "1.5 KM" },
+        railway: { name: "Siddipet Bus Stand", dist: "30.0 KM" }
+      }
+    },
+    {
+      id: "147",
+      name: "Osmania University College of Technology (OUCT)",
+      location: "Hyderabad, Telangana",
+      rating: 4.3,
+      description: "Osmania University College of Technology (OUCT), located within the historic Osmania University campus in Hyderabad, is an autonomous constituent college of Osmania University. One of the most prestigious technical institutions in Telangana, OUCT offers B.Tech programs in Chemical Engineering, Food Technology, Textile Technology, and other specialized disciplines. The campus features well-equipped labs, a comprehensive library, 24/7 Wi-Fi, on-campus hostels, hospital, sports facilities, banking/ATM, and a placement cell with a median package of 5 LPA (NIRF).",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "5.0 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "Accenture", "IBM", "Deloitte", "Dr. Reddy's", "Hetero"]
+      },
+      facilities: [
+        "Autonomous Constituent College (Osmania University)",
+        "Historic OU Campus",
+        "Well-Equipped Departmental Laboratories",
+        "Comprehensive Library with E-Resources & Journals",
+        "24/7 Campus Wi-Fi",
+        "Separate Hostels with Mess",
+        "On-Campus Hospital & Medical Facilities",
+        "Auditorium & Seminar Halls",
+        "Cricket, Football, Basketball, Badminton, Table Tennis",
+        "Cafeteria",
+        "Banking & ATM Services",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 4.3,
+        placements: 4.2,
+        hostel: 3.8,
+        campusLife: 4.3
+      },
+      experience: [
+        { year: 1, title: "OU Campus", description: "Joining the iconic Osmania University campus and its legacy." },
+        { year: 2, title: "Academic Excellence", description: "Autonomous curriculum with specialized engineering disciplines." },
+        { year: 3, title: "Industry Connect", description: "Internships, industrial visits, and pre-placement training." },
+        { year: 4, title: "Top Placements", description: "Securing offers from Deloitte, IBM, Dr. Reddy's, and other top companies." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.0!2d78.5250!3d17.4150!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9900000000%3A0xbb22334455667788!2sOsmania%20University%20College%20of%20Technology!5e0!3m2!1sen!2sin!4v1714604100000!5m2!1sen!2sin",
+      coordinates: { lat: 17.4150, lng: 78.5250 },
+      connectivity: {
+        metro: { name: "Tarnaka Metro Station", dist: "1.5 KM" },
+        bus: { name: "OU Bus Stop", dist: "0.5 KM" },
+        railway: { name: "Nampally Railway Station", dist: "8.0 KM" }
+      }
+    },
+    {
+      id: "148",
+      name: "Kakatiya University College of Engineering for Women (KUCEW)",
+      location: "Warangal, Telangana",
+      rating: 3.9,
+      description: "Kakatiya University College of Engineering for Women (KUCEW), located in Warangal, is a government women's engineering college under Kakatiya University. The institute offers B.Tech programs in Computer Science, Electronics, Electrical, and Mechanical Engineering exclusively for women students at subsidized fees. KUCEW features classrooms, departmental laboratories, a library, hostel facilities, sports grounds, and a training and placement cell with university-level placement drives.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "4.0 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "Capgemini", "Tech Mahindra", "Accenture"]
+      },
+      facilities: [
+        "Government Women's Engineering College (Kakatiya University)",
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Girls' Hostel with Mess",
+        "Sports Facilities",
+        "Auditorium",
+        "Cafeteria",
+        "Medical Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.9,
+        placements: 3.8,
+        hostel: 3.5,
+        campusLife: 3.7
+      },
+      experience: [
+        { year: 1, title: "KUCEW Welcome", description: "Joining the government women's engineering college under Kakatiya University." },
+        { year: 2, title: "Core Engineering", description: "University curriculum with departmental lab sessions." },
+        { year: 3, title: "Career Training", description: "University-level placement training and industry interactions." },
+        { year: 4, title: "Campus Placements", description: "Securing offers through university-coordinated placement drives." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.0!2d79.5650!3d17.9750!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a334600000000%3A0xcc33445566778899!2sKakatiya%20University%20Engineering%20Women!5e0!3m2!1sen!2sin!4v1714604200000!5m2!1sen!2sin",
+      coordinates: { lat: 17.9750, lng: 79.5650 },
+      connectivity: {
+        bus: { name: "Warangal Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Warangal Railway Station", dist: "4.0 KM" }
+      }
+    },
+    {
+      id: "149",
+      name: "Government Engineering College Kosgi (GECK)",
+      location: "Kosgi, Narayanpet, Telangana",
+      rating: 3.5,
+      description: "Government Engineering College Kosgi (GECK), located in Kosgi, Narayanpet District, Telangana, is a government engineering college established to provide affordable technical education in the region. The college offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering at subsidized government fees. GECK features classrooms, departmental laboratories, a library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.0 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Government Engineering College",
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Subsidized Government Fees",
+        "Sports Grounds",
+        "Cafeteria",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.5,
+        placements: 3.2,
+        hostel: 3.2,
+        campusLife: 3.3
+      },
+      experience: [
+        { year: 1, title: "GECK Start", description: "Joining the government engineering college in Kosgi." },
+        { year: 2, title: "Core Studies", description: "Engineering curriculum with departmental lab sessions." },
+        { year: 3, title: "Career Readiness", description: "Placement training and skill development programs." },
+        { year: 4, title: "Campus Placements", description: "Government-facilitated placement drives and final year projects." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3813.0!2d77.7550!3d16.2450!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bca00000000000%3A0xdd44556677889900!2sGovt%20Engineering%20College%20Kosgi!5e0!3m2!1sen!2sin!4v1714604300000!5m2!1sen!2sin",
+      coordinates: { lat: 16.2450, lng: 77.7550 },
+      connectivity: {
+        bus: { name: "Kosgi Bus Stand", dist: "1.5 KM" },
+        railway: { name: "Makthal Railway Station", dist: "20.0 KM" }
+      }
+    },
+    {
+      id: "150",
+      name: "University College of Engineering Nizamabad (UCEN)",
+      location: "Nizamabad, Telangana",
+      rating: 3.7,
+      description: "University College of Engineering Nizamabad (UCEN), located in Nizamabad, Telangana, is a government engineering college providing affordable technical education. The college offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering at subsidized government fees. UCEN features classrooms, departmental laboratories, a computer center, central library, hostel facilities, sports facilities, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "Capgemini", "Tech Mahindra"]
+      },
+      facilities: [
+        "Government Engineering College",
+        "Classrooms & Seminar Halls",
+        "Departmental Laboratories",
+        "Centralized Computer Center",
+        "Central Library",
+        "Hostel Facilities",
+        "Subsidized Government Fees",
+        "Sports Facilities",
+        "Cafeteria",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.7,
+        placements: 3.5,
+        hostel: 3.4,
+        campusLife: 3.5
+      },
+      experience: [
+        { year: 1, title: "UCEN Start", description: "Joining the government engineering college in Nizamabad." },
+        { year: 2, title: "Core Engineering", description: "Engineering curriculum with departmental lab sessions." },
+        { year: 3, title: "Career Training", description: "Placement cell training and industry readiness programs." },
+        { year: 4, title: "Campus Placements", description: "Government-facilitated placement drives and final year projects." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3801.5!2d78.1050!3d18.6750!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc7000000000%3A0xee55667788990011!2sUCE%20Nizamabad!5e0!3m2!1sen!2sin!4v1714604400000!5m2!1sen!2sin",
+      coordinates: { lat: 18.6750, lng: 78.1050 },
+      connectivity: {
+        bus: { name: "Nizamabad Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Nizamabad Railway Station", dist: "4.0 KM" }
+      }
+    },
+    {
+      id: "151",
+      name: "University College of Engineering Kothagudem (UCEK)",
+      location: "Kothagudem, Bhadradri-Kothagudem",
+      rating: 3.6,
+      description: "University College of Engineering Kothagudem (UCEK), located in Kothagudem, Bhadradri-Kothagudem District, is a government engineering college providing affordable technical education in the region. The college offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering at subsidized government fees. UCEK features classrooms with teaching aids, departmental laboratories, a computer center, central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.2 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Government Engineering College",
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Centralized Computer Center",
+        "Central Library",
+        "Hostel Facilities",
+        "Subsidized Government Fees",
+        "Sports Grounds",
+        "Cafeteria",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.6,
+        placements: 3.3,
+        hostel: 3.3,
+        campusLife: 3.4
+      },
+      experience: [
+        { year: 1, title: "UCEK Start", description: "Joining the government engineering college in Kothagudem." },
+        { year: 2, title: "Core Engineering", description: "Engineering curriculum with departmental lab sessions." },
+        { year: 3, title: "Career Training", description: "Placement cell training and industry readiness programs." },
+        { year: 4, title: "Campus Placements", description: "Government-facilitated placement drives and final year projects." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.0!2d80.6150!3d17.5550!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3700000000000%3A0xaa11223344556677!2sUCE%20Kothagudem!5e0!3m2!1sen!2sin!4v1714604500000!5m2!1sen!2sin",
+      coordinates: { lat: 17.5550, lng: 80.6150 },
+      connectivity: {
+        bus: { name: "Kothagudem Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Kothagudem Railway Station", dist: "4.0 KM" }
+      }
+    },
+    {
+      id: "152",
+      name: "JNTUH College of Engineering Jagtial (JNTUH CEJ)",
+      location: "Jagtial, Telangana",
+      rating: 3.8,
+      description: "JNTUH College of Engineering Jagtial (JNTUH CEJ), established by the Government of Telangana, is a constituent college of Jawaharlal Nehru Technological University, Hyderabad. Located in Jagtial, it offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering at subsidized government fees. The campus features classrooms, departmental laboratories, a computer center, library, hostel facilities, seminar halls, NSS, dispensary, and a training and placement cell with university-level placement drives.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "4.0 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "Capgemini", "Tech Mahindra", "Accenture"]
+      },
+      facilities: [
+        "Government Constituent College (JNTUH)",
+        "Classrooms & Seminar Halls",
+        "Departmental Laboratories",
+        "Centralized Computer Center",
+        "Library",
+        "Hostel Facilities",
+        "Dispensary",
+        "NSS (National Service Scheme)",
+        "Sports Facilities",
+        "Cafeteria",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.8,
+        placements: 3.6,
+        hostel: 3.5,
+        campusLife: 3.6
+      },
+      experience: [
+        { year: 1, title: "JNTUH Jagtial", description: "Joining the prestigious JNTUH constituent college in Jagtial." },
+        { year: 2, title: "Core Engineering", description: "JNTUH curriculum with departmental lab sessions." },
+        { year: 3, title: "Career Training", description: "University-level placement training and industry interactions." },
+        { year: 4, title: "Campus Placements", description: "JNTUH-coordinated placement drives and final year projects." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3802.5!2d78.9350!3d18.7950!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc9000000000%3A0xbb22334455667788!2sJNTUH%20CEJ%20Jagtial!5e0!3m2!1sen!2sin!4v1714604600000!5m2!1sen!2sin",
+      coordinates: { lat: 18.7950, lng: 78.9350 },
+      connectivity: {
+        bus: { name: "Jagtial Bus Stand", dist: "2.0 KM" },
+        railway: { name: "Jagtial Railway Station", dist: "3.0 KM" }
+      }
+    },
+    {
+      id: "153",
+      name: "University College of Engineering Sircilla (UCES)",
+      location: "Rajanna Sircilla, Telangana",
+      rating: 3.6,
+      description: "University College of Engineering Sircilla (UCES), located in Rajanna Sircilla District, Telangana, is a government engineering college providing affordable technical education in the region. The college offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering at subsidized government fees. UCES features classrooms, departmental laboratories, a computer center, library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.2 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Government Engineering College",
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Centralized Computer Center",
+        "Central Library",
+        "Hostel Facilities",
+        "Subsidized Government Fees",
+        "Sports Grounds",
+        "Cafeteria",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.6,
+        placements: 3.3,
+        hostel: 3.2,
+        campusLife: 3.4
+      },
+      experience: [
+        { year: 1, title: "UCES Start", description: "Joining the government engineering college in Sircilla." },
+        { year: 2, title: "Core Engineering", description: "Engineering curriculum with departmental lab sessions." },
+        { year: 3, title: "Career Training", description: "Placement cell training and skill development programs." },
+        { year: 4, title: "Campus Placements", description: "Government-facilitated placement drives and final year projects." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.5!2d78.8350!3d18.3950!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc3000000000%3A0xcc33445566778899!2sUCE%20Sircilla!5e0!3m2!1sen!2sin!4v1714604700000!5m2!1sen!2sin",
+      coordinates: { lat: 18.3950, lng: 78.8350 },
+      connectivity: {
+        bus: { name: "Sircilla Bus Stand", dist: "2.0 KM" },
+        railway: { name: "Karimnagar Railway Station", dist: "35.0 KM" }
+      }
+    },
+    {
+      id: "154",
+      name: "Palamuru University College of Engineering & Technology (PUCET)",
+      location: "Mahabubnagar, Telangana",
+      rating: 3.7,
+      description: "Palamuru University College of Engineering & Technology (PUCET), located in Mahabubnagar, is a government engineering college under Palamuru University. The college offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering at subsidized university fees. PUCET features classrooms with teaching aids, departmental laboratories, a computer center, central library, hostel facilities, sports grounds, and a university-level training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "Capgemini", "Tech Mahindra"]
+      },
+      facilities: [
+        "Government University College (Palamuru University)",
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Centralized Computer Center",
+        "Central Library",
+        "Hostel Facilities",
+        "Subsidized University Fees",
+        "Sports Grounds",
+        "Cafeteria",
+        "Medical Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.7,
+        placements: 3.4,
+        hostel: 3.3,
+        campusLife: 3.5
+      },
+      experience: [
+        { year: 1, title: "PUCET Start", description: "Joining the government university college under Palamuru University." },
+        { year: 2, title: "Core Engineering", description: "University curriculum with departmental lab sessions." },
+        { year: 3, title: "Career Training", description: "University-level placement training and industry readiness." },
+        { year: 4, title: "Campus Placements", description: "University-coordinated placement drives and final year projects." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3812.0!2d78.0250!3d16.7150!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbf4444444444%3A0xdd44556677889900!2sPalamuru%20University%20Engineering!5e0!3m2!1sen!2sin!4v1714604800000!5m2!1sen!2sin",
+      coordinates: { lat: 16.7150, lng: 78.0250 },
+      connectivity: {
+        bus: { name: "Mahabubnagar Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Mahabubnagar Railway Station", dist: "4.0 KM" }
+      }
+    },
+    {
+      id: "155",
+      name: "Government Engineering College Bhadradri (GECBH)",
+      location: "Kothagudem, Bhadradri-Kothagudem",
+      rating: 3.5,
+      description: "Government Engineering College Bhadradri (GECBH), located in Kothagudem, Bhadradri-Kothagudem District, is a government engineering college established to provide affordable technical education in the coal belt region. The college offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering at subsidized government fees. GECBH features classrooms, departmental laboratories, a library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.0 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Government Engineering College",
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Subsidized Government Fees",
+        "Sports Grounds",
+        "Cafeteria",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.5,
+        placements: 3.2,
+        hostel: 3.2,
+        campusLife: 3.3
+      },
+      experience: [
+        { year: 1, title: "GECBH Start", description: "Joining the government engineering college in Bhadradri-Kothagudem." },
+        { year: 2, title: "Core Studies", description: "Engineering curriculum with departmental lab sessions." },
+        { year: 3, title: "Career Readiness", description: "Placement training and skill development programs." },
+        { year: 4, title: "Campus Placements", description: "Government-facilitated placement drives and final year projects." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.0!2d80.6250!3d17.5450!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3710000000000%3A0xee55667788990011!2sGovt%20Engineering%20College%20Bhadradri!5e0!3m2!1sen!2sin!4v1714604900000!5m2!1sen!2sin",
+      coordinates: { lat: 17.5450, lng: 80.6250 },
+      connectivity: {
+        bus: { name: "Kothagudem Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Kothagudem Railway Station", dist: "4.0 KM" }
+      }
+    },
+    {
+      id: "156",
+      name: "Telangana Social Welfare Engineering College (TSEC)",
+      location: "Sangareddy, Telangana",
+      rating: 3.6,
+      description: "Telangana Social Welfare Engineering College (TSEC), located in Sangareddy, is a government residential engineering college under the Telangana Social Welfare Residential Educational Institutions Society (TSWREIS). The college offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering exclusively for students from socially disadvantaged backgrounds with fully subsidized fees, free hostel, and mess. TSEC features classrooms, laboratories, a library, residential hostel with mess, sports facilities, and a placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "Capgemini", "Tech Mahindra"]
+      },
+      facilities: [
+        "Government Social Welfare Residential College (TSWREIS)",
+        "Fully Subsidized Fees, Hostel & Mess",
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Residential Hostel with Free Mess",
+        "Sports Facilities",
+        "Cafeteria",
+        "Medical Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.6,
+        placements: 3.4,
+        hostel: 3.5,
+        campusLife: 3.5
+      },
+      experience: [
+        { year: 1, title: "TSEC Welcome", description: "Joining the social welfare residential engineering college in Sangareddy." },
+        { year: 2, title: "Core Engineering", description: "Engineering curriculum with departmental lab sessions." },
+        { year: 3, title: "Career Training", description: "Placement cell training and skill development programs." },
+        { year: 4, title: "Campus Placements", description: "Government-facilitated placement drives and final year projects." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.5!2d78.0950!3d17.6150!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbee00000000%3A0xaa11223344556677!2sTSWR%20Engineering%20College!5e0!3m2!1sen!2sin!4v1714605000000!5m2!1sen!2sin",
+      coordinates: { lat: 17.6150, lng: 78.0950 },
+      connectivity: {
+        bus: { name: "Sangareddy Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Sangareddy Railway Station", dist: "4.0 KM" }
+      }
+    },
+    {
+      id: "157",
+      name: "JNAFAU Engineering Campus",
+      location: "Masab Tank, Hyderabad",
+      rating: 3.8,
+      description: "JNAFAU Engineering Campus, the technical wing of Jawaharlal Nehru Architecture and Fine Arts University (JNAFAU), located at Masab Tank, Hyderabad. The campus offers B.Tech and B.Arch programs alongside architecture and planning disciplines. The campus features spacious smart classrooms, modern laboratories, a well-stocked library, an auditorium with 300 seating capacity, gymnasium, sports facilities, cafeteria, medical center, and a placement cell. Being centrally located in Hyderabad, students enjoy excellent metro, bus, and railway connectivity.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "L&T", "Shapoorji Pallonji"]
+      },
+      facilities: [
+        "JNAFAU University Campus",
+        "Smart Classrooms with Audio-Visual Aids",
+        "Modern Engineering & Architecture Laboratories",
+        "Library with E-Resources",
+        "Auditorium (300 Seating Capacity)",
+        "Gymnasium",
+        "Sports Facilities (Badminton, Cricket, Football, Chess)",
+        "Cafeteria",
+        "Medical Center",
+        "Central Hyderabad Location",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.8,
+        placements: 3.5,
+        hostel: 3.2,
+        campusLife: 3.7
+      },
+      experience: [
+        { year: 1, title: "JNAFAU Start", description: "Joining the university's engineering campus in the heart of Hyderabad." },
+        { year: 2, title: "Core Studies", description: "Engineering and architecture subjects with smart classroom learning." },
+        { year: 3, title: "Career Training", description: "Soft skills, mock interviews, and industry workshops." },
+        { year: 4, title: "Placement Drives", description: "Campus recruitment and final year project completion." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.5!2d78.4650!3d17.3950!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb97a000000000%3A0xbb22334455667788!2sJNAFAU%20Engineering!5e0!3m2!1sen!2sin!4v1714605100000!5m2!1sen!2sin",
+      coordinates: { lat: 17.3950, lng: 78.4650 },
+      connectivity: {
+        metro: { name: "Lakdi-Ka-Pul Metro Station", dist: "1.5 KM" },
+        bus: { name: "Masab Tank Bus Stop", dist: "0.5 KM" },
+        railway: { name: "Nampally Railway Station", dist: "3.0 KM" }
+      }
+    },
+    {
+      id: "158",
+      name: "Netaji Institute of Engineering & Technology (NIET)",
+      location: "Medak, Telangana",
+      rating: 3.3,
+      description: "Netaji Institute of Engineering & Technology (NIET), located in Medak, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. NIET features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a dedicated training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "NIET Start", description: "Building engineering foundations in the Medak campus." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Career Prep", description: "Technical training and soft skills development." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.5!2d78.2650!3d17.7650!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbc0000000000%3A0xcc33445566778899!2sNetaji%20Institute%20of%20Engineering!5e0!3m2!1sen!2sin!4v1714605200000!5m2!1sen!2sin",
+      coordinates: { lat: 17.7650, lng: 78.2650 },
+      connectivity: {
+        bus: { name: "Medak Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Medak Road Railway Station", dist: "8.0 KM" }
+      }
+    },
+    {
+      id: "159",
+      name: "Sri Lakshmi Engineering College (SLEC)",
+      location: "Adilabad, Telangana",
+      rating: 3.3,
+      description: "Sri Lakshmi Engineering College (SLEC), located in Adilabad, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. SLEC features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.3 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 2.9,
+        hostel: 3.0,
+        campusLife: 3.1
+      },
+      experience: [
+        { year: 1, title: "SLEC Start", description: "Building engineering foundations in the Adilabad campus." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with laboratory sessions." },
+        { year: 3, title: "Skill Building", description: "Technical training and soft skills development." },
+        { year: 4, title: "Career Start", description: "Final projects and exploring placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3799.0!2d78.5250!3d19.6750!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd400000000000%3A0xdd44556677889900!2sSri%20Lakshmi%20Engineering%20College!5e0!3m2!1sen!2sin!4v1714605300000!5m2!1sen!2sin",
+      coordinates: { lat: 19.6750, lng: 78.5250 },
+      connectivity: {
+        bus: { name: "Adilabad Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Adilabad Railway Station", dist: "4.0 KM" }
+      }
+    },
+    {
+      id: "160",
+      name: "KNRR College of Engineering (KNRR)",
+      location: "Karimnagar, Telangana",
+      rating: 3.4,
+      description: "KNRR College of Engineering (KNRR), located in Karimnagar, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. KNRR features classrooms with teaching aids, departmental laboratories, a central library, separate hostels, sports facilities, and a dedicated training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.8 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Separate Hostels for Boys & Girls",
+        "Cafeteria",
+        "Sports Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.4,
+        placements: 3.1,
+        hostel: 3.2,
+        campusLife: 3.3
+      },
+      experience: [
+        { year: 1, title: "KNRR Start", description: "Building engineering foundations in the Karimnagar campus." },
+        { year: 2, title: "Core Studies", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Career Prep", description: "Technical training and placement preparation programs." },
+        { year: 4, title: "Campus Drives", description: "Final projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.5!2d79.1450!3d18.4050!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc5900000000%3A0xee55667788990011!2sKNRR%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1714605400000!5m2!1sen!2sin",
+      coordinates: { lat: 18.4050, lng: 79.1450 },
+      connectivity: {
+        bus: { name: "Karimnagar Bus Stand", dist: "4.0 KM" },
+        railway: { name: "Peddapalli Railway Station", dist: "22.0 KM" }
+      }
+    },
+    {
+      id: "161",
+      name: "Methodist College of Engineering & Technology (MCET)",
+      location: "Abids, Hyderabad",
+      rating: 4.0,
+      description: "Methodist College of Engineering & Technology (MCET), located in the heart of Hyderabad at Abids, is one of the most prominent women's engineering colleges in Telangana. Affiliated with JNTU Hyderabad and approved by AICTE, MCET offers B.Tech and M.Tech programs in Computer Science, Electronics, IT, and Mechanical Engineering. The college features a heritage campus with modern smart classrooms, well-equipped labs, a comprehensive library, Wi-Fi campus, auditorium, gymnasium, and a highly active placement cell with top recruiters.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "4.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "Accenture", "Capgemini", "IBM", "Deloitte", "Amazon"]
+      },
+      facilities: [
+        "Premier Women's Engineering College",
+        "Heritage Campus in Central Hyderabad (Abids)",
+        "Smart Classrooms with Audio-Visual Aids",
+        "Well-Equipped Laboratories",
+        "Comprehensive Library with E-Resources & Journals",
+        "Campus Wi-Fi",
+        "Auditorium & Seminar Halls",
+        "Gymnasium",
+        "Sports Facilities",
+        "Cafeteria",
+        "Medical Facilities",
+        "Excellent Metro & Bus Connectivity",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 4.1,
+        placements: 4.0,
+        hostel: 3.5,
+        campusLife: 4.0
+      },
+      experience: [
+        { year: 1, title: "Methodist Welcome", description: "Joining the prestigious women's engineering college in the heart of Hyderabad." },
+        { year: 2, title: "Academic Excellence", description: "Intensive coursework with smart classroom and modern lab facilities." },
+        { year: 3, title: "Industry Connect", description: "Internships, expert lectures, and pre-placement training programs." },
+        { year: 4, title: "Top Placements", description: "Securing offers from Amazon, Deloitte, IBM, and other leading companies." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.5!2d78.4750!3d17.3900!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb97b000000000%3A0xaa11223344556677!2sMethodist%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1714605500000!5m2!1sen!2sin",
+      coordinates: { lat: 17.3900, lng: 78.4750 },
+      connectivity: {
+        metro: { name: "Nampally Metro Station", dist: "1.0 KM" },
+        bus: { name: "Abids Bus Stop", dist: "0.3 KM" },
+        railway: { name: "Nampally Railway Station", dist: "1.5 KM" }
+      }
+    },
+    {
+      id: "162",
+      name: "Trinity College of Engineering (TCE)",
+      location: "Peddapalli, Telangana",
+      rating: 3.3,
+      description: "Trinity College of Engineering (TCE), located in Peddapalli, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. TCE features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a dedicated training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "TCE Start", description: "Building engineering foundations in the Peddapalli campus." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Career Prep", description: "Technical training and soft skills development." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.0!2d79.3750!3d18.6150!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc8000000000%3A0xbb22334455667788!2sTrinity%20College%20Peddapalli!5e0!3m2!1sen!2sin!4v1714605600000!5m2!1sen!2sin",
+      coordinates: { lat: 18.6150, lng: 79.3750 },
+      connectivity: {
+        bus: { name: "Peddapalli Bus Stand", dist: "2.0 KM" },
+        railway: { name: "Peddapalli Railway Station", dist: "3.0 KM" }
+      }
+    },
+    {
+      id: "163",
+      name: "Indur Institute of Technology (IITT)",
+      location: "Nizamabad, Telangana",
+      rating: 3.3,
+      description: "Indur Institute of Technology (IITT), located in Nizamabad, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. IITT features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "IITT Start", description: "Building engineering foundations in the Nizamabad campus." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with laboratory sessions." },
+        { year: 3, title: "Skill Building", description: "Technical training and soft skills development." },
+        { year: 4, title: "Career Start", description: "Final projects and exploring placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3801.5!2d78.0950!3d18.6850!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc7100000000%3A0xcc33445566778899!2sIndur%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1714605700000!5m2!1sen!2sin",
+      coordinates: { lat: 18.6850, lng: 78.0950 },
+      connectivity: {
+        bus: { name: "Nizamabad Bus Stand", dist: "4.0 KM" },
+        railway: { name: "Nizamabad Railway Station", dist: "5.0 KM" }
+      }
+    },
+    {
+      id: "164",
+      name: "Government Engineering College Mahabubnagar (GECM)",
+      location: "Mahabubnagar, Telangana",
+      rating: 3.6,
+      description: "Government Engineering College Mahabubnagar (GECM), located in Mahabubnagar, Telangana, is a government engineering college providing affordable technical education. The college offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering at subsidized government fees. GECM features classrooms, departmental laboratories, a computer center, central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.2 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Government Engineering College",
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Centralized Computer Center",
+        "Central Library",
+        "Hostel Facilities",
+        "Subsidized Government Fees",
+        "Sports Grounds",
+        "Cafeteria",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.6,
+        placements: 3.3,
+        hostel: 3.3,
+        campusLife: 3.4
+      },
+      experience: [
+        { year: 1, title: "GECM Start", description: "Joining the government engineering college in Mahabubnagar." },
+        { year: 2, title: "Core Engineering", description: "Engineering curriculum with departmental lab sessions." },
+        { year: 3, title: "Career Training", description: "Placement cell training and skill development programs." },
+        { year: 4, title: "Campus Placements", description: "Government-facilitated placement drives and final year projects." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3812.0!2d78.0050!3d16.7550!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbf5555555555%3A0xdd44556677889900!2sGovt%20Engineering%20College%20Mahabubnagar!5e0!3m2!1sen!2sin!4v1714605800000!5m2!1sen!2sin",
+      coordinates: { lat: 16.7550, lng: 78.0050 },
+      connectivity: {
+        bus: { name: "Mahabubnagar Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Mahabubnagar Railway Station", dist: "4.0 KM" }
+      }
+    },
+    {
+      id: "165",
+      name: "Kakatiya Institute of Technology for Women (KITW)",
+      location: "Hanamkonda, Warangal",
+      rating: 3.7,
+      description: "Kakatiya Institute of Technology for Women (KITW), located in Hanamkonda, Warangal, is a women's engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Electrical, and IT Engineering exclusively for women students. KITW features classrooms with teaching aids, departmental laboratories, a central library, girls' hostel with mess, sports facilities, and a dedicated training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "Capgemini", "Tech Mahindra", "Accenture"]
+      },
+      facilities: [
+        "Women's Engineering College",
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Girls' Hostel with Mess",
+        "Sports Facilities",
+        "Auditorium & Seminar Halls",
+        "Cafeteria",
+        "Medical Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.7,
+        placements: 3.5,
+        hostel: 3.4,
+        campusLife: 3.5
+      },
+      experience: [
+        { year: 1, title: "KITW Welcome", description: "Joining the women's engineering college in Hanamkonda." },
+        { year: 2, title: "Core Engineering", description: "Intensive departmental courses with lab-based learning." },
+        { year: 3, title: "Career Training", description: "Placement training, mock interviews, and industry workshops." },
+        { year: 4, title: "Campus Placements", description: "Securing offers from TCS, Accenture, Infosys, and other companies." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.0!2d79.5850!3d17.9950!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a334700000000%3A0xee55667788990011!2sKakatiya%20Institute%20Technology%20Women!5e0!3m2!1sen!2sin!4v1714605900000!5m2!1sen!2sin",
+      coordinates: { lat: 17.9950, lng: 79.5850 },
+      connectivity: {
+        bus: { name: "Hanamkonda Bus Stand", dist: "2.0 KM" },
+        railway: { name: "Warangal Railway Station", dist: "4.0 KM" }
+      }
+    },
+    {
+      id: "166",
+      name: "Brilliant Engineering College (BEC)",
+      location: "Abdullapurmet, Hyderabad",
+      rating: 3.4,
+      description: "Brilliant Engineering College (BEC), located in Abdullapurmet, Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. BEC features classrooms with modern teaching aids, well-equipped laboratories, a central library, separate hostels, Wi-Fi campus, sports facilities, and a dedicated training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.0 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Modern Teaching Aids",
+        "Well-Equipped Laboratories",
+        "Central Library",
+        "Campus Wi-Fi",
+        "Separate Hostels for Boys & Girls",
+        "Cafeteria",
+        "Sports Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.4,
+        placements: 3.1,
+        hostel: 3.2,
+        campusLife: 3.3
+      },
+      experience: [
+        { year: 1, title: "BEC Start", description: "Joining the Abdullapurmet campus and building engineering foundations." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with lab-based learning." },
+        { year: 3, title: "Skill Building", description: "Technical workshops and placement preparation programs." },
+        { year: 4, title: "Placement Season", description: "Campus recruitment drives and final year projects." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3809.0!2d78.5950!3d17.3250!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba0000000000%3A0xaa11223344556677!2sBrilliant%20Engineering%20College!5e0!3m2!1sen!2sin!4v1714606000000!5m2!1sen!2sin",
+      coordinates: { lat: 17.3250, lng: 78.5950 },
+      connectivity: {
+        metro: { name: "Nagole Metro Station", dist: "12.0 KM" },
+        bus: { name: "Abdullapurmet Bus Stop", dist: "1.5 KM" },
+        railway: { name: "Secunderabad Railway Station", dist: "25.0 KM" }
+      }
+    },
+    {
+      id: "167",
+      name: "Maheshwara Engineering College (MEC)",
+      location: "Patancheru, Hyderabad",
+      rating: 3.4,
+      description: "Maheshwara Engineering College (MEC), located in the industrial hub of Patancheru near Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. MEC features classrooms with teaching aids, departmental laboratories, a central library, separate hostels, sports facilities, and a dedicated training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.8 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Separate Hostels for Boys & Girls",
+        "Cafeteria",
+        "Sports Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.4,
+        placements: 3.0,
+        hostel: 3.2,
+        campusLife: 3.3
+      },
+      experience: [
+        { year: 1, title: "MEC Start", description: "Joining the campus near the Patancheru industrial hub." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Career Prep", description: "Technical training and soft skills development." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.5!2d78.2650!3d17.5350!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbef00000000%3A0xbb22334455667788!2sMaheshwara%20Engineering%20College!5e0!3m2!1sen!2sin!4v1714606100000!5m2!1sen!2sin",
+      coordinates: { lat: 17.5350, lng: 78.2650 },
+      connectivity: {
+        bus: { name: "Patancheru Bus Stand", dist: "2.0 KM" },
+        railway: { name: "Lingampally Railway Station", dist: "12.0 KM" }
+      }
+    },
+    {
+      id: "168",
+      name: "Siddhartha Institute of Research & Engineering College (SIREC)",
+      location: "Ibrahimpatnam, Hyderabad",
+      rating: 3.3,
+      description: "Siddhartha Institute of Research & Engineering College (SIREC), located in Ibrahimpatnam near Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. SIREC features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "SIREC Start", description: "Building engineering foundations in the Ibrahimpatnam campus." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with lab-based learning." },
+        { year: 3, title: "Skill Building", description: "Technical training and career readiness programs." },
+        { year: 4, title: "Career Start", description: "Final projects and campus placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3809.5!2d78.5750!3d17.2650!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba1111111111%3A0xcc33445566778899!2sSiddhartha%20Institute!5e0!3m2!1sen!2sin!4v1714606200000!5m2!1sen!2sin",
+      coordinates: { lat: 17.2650, lng: 78.5750 },
+      connectivity: {
+        bus: { name: "Ibrahimpatnam Bus Stop", dist: "2.0 KM" },
+        railway: { name: "Secunderabad Railway Station", dist: "28.0 KM" }
+      }
+    },
+    {
+      id: "169",
+      name: "KGR Institute of Technology & Management (KGR)",
+      location: "Rampally, Keesara, Hyderabad",
+      rating: 3.3,
+      description: "KGR Institute of Technology & Management (KGR), located in Rampally near Keesara, Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. KGR features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "KGR Start", description: "Building engineering foundations near Keesara, Hyderabad." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Career Prep", description: "Technical workshops and soft skills training." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.0!2d78.6350!3d17.5050!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba2222222222%3A0xdd44556677889900!2sKGR%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1714606300000!5m2!1sen!2sin",
+      coordinates: { lat: 17.5050, lng: 78.6350 },
+      connectivity: {
+        bus: { name: "Keesara Bus Stop", dist: "3.0 KM" },
+        railway: { name: "Secunderabad Railway Station", dist: "20.0 KM" }
+      }
+    },
+    {
+      id: "170",
+      name: "P R R M Engineering College (PRRM)",
+      location: "Kadthal, Ranga Reddy",
+      rating: 3.3,
+      description: "P R R M Engineering College (PRRM), located in Kadthal, Ranga Reddy District near Shamshabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. PRRM features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "PRRM Start", description: "Building engineering foundations near Kadthal, Shamshabad." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with lab-based learning." },
+        { year: 3, title: "Skill Building", description: "Technical training and career readiness programs." },
+        { year: 4, title: "Placement Season", description: "Final year projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.5!2d78.4150!3d17.1950!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba3333333333%3A0xee55667788990011!2sPRRM%20Engineering%20College!5e0!3m2!1sen!2sin!4v1714606400000!5m2!1sen!2sin",
+      coordinates: { lat: 17.1950, lng: 78.4150 },
+      connectivity: {
+        bus: { name: "Kadthal Bus Stop", dist: "1.5 KM" },
+        railway: { name: "Shamshabad Railway Station", dist: "10.0 KM" }
+      }
+    },
+    {
+      id: "171",
+      name: "Dattatreya Engineering College (DEC)",
+      location: "Ibrahimpatnam, Hyderabad",
+      rating: 3.3,
+      description: "Dattatreya Engineering College (DEC), located in Ibrahimpatnam near Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. DEC features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "DEC Start", description: "Building engineering foundations in the Ibrahimpatnam campus." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Career Prep", description: "Technical training and soft skills development." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3809.5!2d78.5850!3d17.2750!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba4444444444%3A0xaa11223344556677!2sDattatreya%20Engineering%20College!5e0!3m2!1sen!2sin!4v1714606500000!5m2!1sen!2sin",
+      coordinates: { lat: 17.2750, lng: 78.5850 },
+      connectivity: {
+        bus: { name: "Ibrahimpatnam Bus Stop", dist: "2.0 KM" },
+        railway: { name: "Secunderabad Railway Station", dist: "27.0 KM" }
+      }
+    },
+    {
+      id: "172",
+      name: "Aarush Institute of Technology (AIT)",
+      location: "Sangareddy, Telangana",
+      rating: 3.3,
+      description: "Aarush Institute of Technology (AIT), located in Sangareddy, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. AIT features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "AIT Start", description: "Building engineering foundations in the Sangareddy campus." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with lab-based learning." },
+        { year: 3, title: "Skill Building", description: "Technical training and career readiness programs." },
+        { year: 4, title: "Placement Season", description: "Final year projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.5!2d78.0750!3d17.6350!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbef11111111%3A0xbb22334455667788!2sAarush%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1714606600000!5m2!1sen!2sin",
+      coordinates: { lat: 17.6350, lng: 78.0750 },
+      connectivity: {
+        bus: { name: "Sangareddy Bus Stand", dist: "4.0 KM" },
+        railway: { name: "Sangareddy Railway Station", dist: "5.0 KM" }
+      }
+    },
+    {
+      id: "173",
+      name: "Gouthami Engineering College for Women (GECW)",
+      location: "Karimnagar, Telangana",
+      rating: 3.4,
+      description: "Gouthami Engineering College for Women (GECW), located in Karimnagar, Telangana, is a private women's engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Electrical, and IT Engineering exclusively for women students. GECW features classrooms with teaching aids, departmental laboratories, a central library, girls' hostel with mess, sports facilities, and a dedicated training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.8 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Women's Engineering College",
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Girls' Hostel with Mess",
+        "Sports Facilities",
+        "Cafeteria",
+        "Medical Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.4,
+        placements: 3.1,
+        hostel: 3.2,
+        campusLife: 3.3
+      },
+      experience: [
+        { year: 1, title: "GECW Welcome", description: "Joining the women's engineering college in Karimnagar." },
+        { year: 2, title: "Core Studies", description: "Departmental specialization with hands-on lab sessions." },
+        { year: 3, title: "Career Training", description: "Placement preparation, mock interviews, and workshops." },
+        { year: 4, title: "Campus Drives", description: "Final projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.5!2d79.1150!3d18.4250!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc5a00000000%3A0xcc33445566778899!2sGouthami%20Engineering%20Women!5e0!3m2!1sen!2sin!4v1714606700000!5m2!1sen!2sin",
+      coordinates: { lat: 18.4250, lng: 79.1150 },
+      connectivity: {
+        bus: { name: "Karimnagar Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Peddapalli Railway Station", dist: "22.0 KM" }
+      }
+    },
+    {
+      id: "174",
+      name: "Mahathi Engineering College (MAHATHI)",
+      location: "Medak, Telangana",
+      rating: 3.2,
+      description: "Mahathi Engineering College (MAHATHI), located in Medak, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. Mahathi features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.3 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.2,
+        placements: 2.9,
+        hostel: 3.0,
+        campusLife: 3.1
+      },
+      experience: [
+        { year: 1, title: "Mahathi Start", description: "Building engineering foundations in the Medak campus." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with laboratory sessions." },
+        { year: 3, title: "Skill Building", description: "Technical training and career readiness programs." },
+        { year: 4, title: "Career Start", description: "Final projects and exploring placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.5!2d78.2550!3d17.7750!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbc1111111111%3A0xdd44556677889900!2sMahathi%20Engineering%20College!5e0!3m2!1sen!2sin!4v1714606800000!5m2!1sen!2sin",
+      coordinates: { lat: 17.7750, lng: 78.2550 },
+      connectivity: {
+        bus: { name: "Medak Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Medak Road Railway Station", dist: "8.0 KM" }
+      }
+    },
+    {
+      id: "175",
+      name: "Nava Bharath Institute of Engineering & Technology (NBIET)",
+      location: "Ibrahimpatnam, Hyderabad",
+      rating: 3.3,
+      description: "Nava Bharath Institute of Engineering & Technology (NBIET), located near Ibrahimpatnam, Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. NBIET features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports facilities, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "NBIET Start", description: "Building engineering foundations near Ibrahimpatnam." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with practical lab sessions." },
+        { year: 3, title: "Career Prep", description: "Technical workshops and soft skills training." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3809.5!2d78.5650!3d17.2850!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba5555555555%3A0xee55667788990011!2sNava%20Bharath%20Institute!5e0!3m2!1sen!2sin!4v1714606900000!5m2!1sen!2sin",
+      coordinates: { lat: 17.2850, lng: 78.5650 },
+      connectivity: {
+        bus: { name: "Ibrahimpatnam Bus Stop", dist: "2.0 KM" },
+        railway: { name: "Secunderabad Railway Station", dist: "26.0 KM" }
+      }
+    },
+    {
+      id: "176",
+      name: "Pratap Engineering College (PEC)",
+      location: "Nalgonda, Telangana",
+      rating: 3.3,
+      description: "Pratap Engineering College (PEC), located in Nalgonda, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. PEC features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "PEC Start", description: "Building engineering foundations in the Nalgonda campus." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Career Prep", description: "Technical training and soft skills development." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.0!2d79.2850!3d17.0450!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35b2222222222%3A0xaa11223344556677!2sPratap%20Engineering%20College!5e0!3m2!1sen!2sin!4v1714607000000!5m2!1sen!2sin",
+      coordinates: { lat: 17.0450, lng: 79.2850 },
+      connectivity: {
+        bus: { name: "Nalgonda Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Nalgonda Railway Station", dist: "4.0 KM" }
+      }
+    },
+    {
+      id: "177",
+      name: "Vardhan College of Engineering (VCE)",
+      location: "Shamshabad, Hyderabad",
+      rating: 3.3,
+      description: "Vardhan College of Engineering (VCE), located near Shamshabad, Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. VCE features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell. The campus benefits from proximity to Rajiv Gandhi International Airport.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Proximity to RGIA Airport",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "VCE Start", description: "Building engineering foundations near Shamshabad." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with lab-based learning." },
+        { year: 3, title: "Skill Building", description: "Technical training and career readiness programs." },
+        { year: 4, title: "Placement Season", description: "Final year projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.0!2d78.4350!3d17.2250!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba6666666666%3A0xbb22334455667788!2sVardhan%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1714607100000!5m2!1sen!2sin",
+      coordinates: { lat: 17.2250, lng: 78.4350 },
+      connectivity: {
+        bus: { name: "Shamshabad Bus Stop", dist: "2.0 KM" },
+        railway: { name: "Shamshabad Railway Station", dist: "5.0 KM" }
+      }
+    },
+    {
+      id: "178",
+      name: "Vasundhara College of Engineering & Technology (VCET)",
+      location: "Khammam, Telangana",
+      rating: 3.3,
+      description: "Vasundhara College of Engineering & Technology (VCET), located in Khammam, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. VCET features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "VCET Start", description: "Building engineering foundations in the Khammam campus." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Career Prep", description: "Technical training and soft skills development." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.0!2d80.1450!3d17.2450!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3503000000000%3A0xcc33445566778899!2sVasundhara%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1714607200000!5m2!1sen!2sin",
+      coordinates: { lat: 17.2450, lng: 80.1450 },
+      connectivity: {
+        bus: { name: "Khammam Bus Stand", dist: "4.0 KM" },
+        railway: { name: "Khammam Railway Station", dist: "5.0 KM" }
+      }
+    },
+    {
+      id: "179",
+      name: "Akshaya College of Engineering & Technology (ACET)",
+      location: "Mahabubnagar, Telangana",
+      rating: 3.2,
+      description: "Akshaya College of Engineering & Technology (ACET), located in Mahabubnagar, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. ACET features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.3 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.2,
+        placements: 2.9,
+        hostel: 3.0,
+        campusLife: 3.1
+      },
+      experience: [
+        { year: 1, title: "Akshaya Start", description: "Building engineering foundations in the Mahabubnagar campus." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with laboratory sessions." },
+        { year: 3, title: "Skill Building", description: "Technical training and career readiness programs." },
+        { year: 4, title: "Career Start", description: "Final projects and exploring placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3812.0!2d77.9750!3d16.7650!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbf6666666666%3A0xdd44556677889900!2sAkshaya%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1714607300000!5m2!1sen!2sin",
+      coordinates: { lat: 16.7650, lng: 77.9750 },
+      connectivity: {
+        bus: { name: "Mahabubnagar Bus Stand", dist: "4.0 KM" },
+        railway: { name: "Mahabubnagar Railway Station", dist: "5.0 KM" }
+      }
+    },
+    {
+      id: "180",
+      name: "Motherland Institute of Technology (MIT)",
+      location: "Medchal, Hyderabad",
+      rating: 3.4,
+      description: "Motherland Institute of Technology (MIT), located in Medchal near Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. MIT features classrooms with teaching aids, departmental laboratories, a central library, separate hostels, sports facilities, Wi-Fi campus, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.8 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Campus Wi-Fi",
+        "Separate Hostels for Boys & Girls",
+        "Cafeteria",
+        "Sports Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.4,
+        placements: 3.1,
+        hostel: 3.2,
+        campusLife: 3.3
+      },
+      experience: [
+        { year: 1, title: "MIT Start", description: "Building engineering foundations in the Medchal campus." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with practical lab sessions." },
+        { year: 3, title: "Career Prep", description: "Technical workshops and soft skills training." },
+        { year: 4, title: "Campus Drives", description: "Final projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.5!2d78.4950!3d17.6250!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9f0000000000%3A0xee55667788990011!2sMotherland%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1714607400000!5m2!1sen!2sin",
+      coordinates: { lat: 17.6250, lng: 78.4950 },
+      connectivity: {
+        bus: { name: "Medchal Bus Stop", dist: "2.0 KM" },
+        railway: { name: "Secunderabad Railway Station", dist: "18.0 KM" }
+      }
+    },
+    {
+      id: "181",
+      name: "Prism College of Engineering (PRISM)",
+      location: "Siddipet, Telangana",
+      rating: 3.2,
+      description: "Prism College of Engineering (PRISM), located in Siddipet, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. PRISM features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.3 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.2,
+        placements: 2.9,
+        hostel: 3.0,
+        campusLife: 3.1
+      },
+      experience: [
+        { year: 1, title: "Prism Start", description: "Building engineering foundations in the Siddipet campus." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Career Prep", description: "Technical training and soft skills development." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.5!2d78.8450!3d18.1050!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc2000000000%3A0xaa11223344556677!2sPrism%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1714607500000!5m2!1sen!2sin",
+      coordinates: { lat: 18.1050, lng: 78.8450 },
+      connectivity: {
+        bus: { name: "Siddipet Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Kamareddy Railway Station", dist: "45.0 KM" }
+      }
+    },
+    {
+      id: "182",
+      name: "Siddi Vinayaka Institute of Technology & Science (SVITS)",
+      location: "Chevella, Ranga Reddy",
+      rating: 3.2,
+      description: "Siddi Vinayaka Institute of Technology & Science (SVITS), located near Chevella, Ranga Reddy District, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. SVITS features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.3 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.2,
+        placements: 2.9,
+        hostel: 3.0,
+        campusLife: 3.1
+      },
+      experience: [
+        { year: 1, title: "SVITS Start", description: "Building engineering foundations near Chevella." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with lab-based learning." },
+        { year: 3, title: "Skill Building", description: "Technical training and career readiness programs." },
+        { year: 4, title: "Career Start", description: "Final projects and exploring placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3809.0!2d78.1350!3d17.3150!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba7777777777%3A0xbb22334455667788!2sSiddi%20Vinayaka%20Institute!5e0!3m2!1sen!2sin!4v1714607600000!5m2!1sen!2sin",
+      coordinates: { lat: 17.3150, lng: 78.1350 },
+      connectivity: {
+        bus: { name: "Chevella Bus Stop", dist: "3.0 KM" },
+        railway: { name: "Lingampally Railway Station", dist: "25.0 KM" }
+      }
+    },
+    {
+      id: "183",
+      name: "Sri Vinayaka College of Engineering & Technology (SVCET)",
+      location: "Medak, Telangana",
+      rating: 3.2,
+      description: "Sri Vinayaka College of Engineering & Technology (SVCET), located in Medak, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. SVCET features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.3 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.2,
+        placements: 2.9,
+        hostel: 3.0,
+        campusLife: 3.1
+      },
+      experience: [
+        { year: 1, title: "SVCET Start", description: "Building engineering foundations in the Medak campus." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Career Prep", description: "Technical training and soft skills development." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.5!2d78.2450!3d17.7850!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbc2222222222%3A0xcc33445566778899!2sSri%20Vinayaka%20College!5e0!3m2!1sen!2sin!4v1714607700000!5m2!1sen!2sin",
+      coordinates: { lat: 17.7850, lng: 78.2450 },
+      connectivity: {
+        bus: { name: "Medak Bus Stand", dist: "4.0 KM" },
+        railway: { name: "Medak Road Railway Station", dist: "9.0 KM" }
+      }
+    },
+    {
+      id: "184",
+      name: "Brainwave Institute of Technology (BIT)",
+      location: "Medchal, Hyderabad",
+      rating: 3.3,
+      description: "Brainwave Institute of Technology (BIT), located in Medchal near Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. BIT features classrooms with modern teaching aids, departmental laboratories, a central library, hostel facilities, Wi-Fi campus, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Modern Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Campus Wi-Fi",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "BIT Start", description: "Building engineering foundations in the Medchal campus." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with lab-based learning." },
+        { year: 3, title: "Skill Building", description: "Technical training and career readiness programs." },
+        { year: 4, title: "Placement Season", description: "Final year projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.5!2d78.5050!3d17.6350!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9f1111111111%3A0xdd44556677889900!2sBrainwave%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1714607800000!5m2!1sen!2sin",
+      coordinates: { lat: 17.6350, lng: 78.5050 },
+      connectivity: {
+        bus: { name: "Medchal Bus Stop", dist: "2.0 KM" },
+        railway: { name: "Secunderabad Railway Station", dist: "17.0 KM" }
+      }
+    },
+    {
+      id: "185",
+      name: "Dhruva Institute of Engineering & Technology (DIET)",
+      location: "Ibrahimpatnam, Hyderabad",
+      rating: 3.3,
+      description: "Dhruva Institute of Engineering & Technology (DIET), located in Ibrahimpatnam near Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. DIET features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports facilities, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "DIET Start", description: "Building engineering foundations in the Ibrahimpatnam campus." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with practical lab sessions." },
+        { year: 3, title: "Career Prep", description: "Technical workshops and soft skills training." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3809.5!2d78.5550!3d17.2950!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba8888888888%3A0xee55667788990011!2sDhruva%20Institute!5e0!3m2!1sen!2sin!4v1714607900000!5m2!1sen!2sin",
+      coordinates: { lat: 17.2950, lng: 78.5550 },
+      connectivity: {
+        bus: { name: "Ibrahimpatnam Bus Stop", dist: "2.0 KM" },
+        railway: { name: "Secunderabad Railway Station", dist: "25.0 KM" }
+      }
+    },
+    {
+      id: "186",
+      name: "Fathima Institute of Technology & Science (FITS)",
+      location: "Karimnagar, Telangana",
+      rating: 3.3,
+      description: "Fathima Institute of Technology & Science (FITS), located in Karimnagar, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. FITS features classrooms with teaching aids, departmental laboratories, a central library, separate hostels, sports facilities, and a dedicated training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Separate Hostels for Boys & Girls",
+        "Cafeteria",
+        "Sports Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "FITS Start", description: "Building engineering foundations in the Karimnagar campus." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with lab-based learning." },
+        { year: 3, title: "Career Prep", description: "Technical training and placement preparation programs." },
+        { year: 4, title: "Campus Drives", description: "Final projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.5!2d79.1350!3d18.4150!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc5b00000000%3A0xaa11223344556677!2sFathima%20Institute!5e0!3m2!1sen!2sin!4v1714608000000!5m2!1sen!2sin",
+      coordinates: { lat: 18.4150, lng: 79.1350 },
+      connectivity: {
+        bus: { name: "Karimnagar Bus Stand", dist: "4.0 KM" },
+        railway: { name: "Peddapalli Railway Station", dist: "23.0 KM" }
+      }
+    },
+    {
+      id: "187",
+      name: "New Age College of Engineering (NACE)",
+      location: "Ranga Reddy, Telangana",
+      rating: 3.3,
+      description: "New Age College of Engineering (NACE), located in Ranga Reddy District near Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. NACE features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "NACE Start", description: "Building engineering foundations in the Ranga Reddy campus." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Skill Building", description: "Technical training and soft skills development." },
+        { year: 4, title: "Placement Season", description: "Final year projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3809.5!2d78.3550!3d17.3050!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba9999999999%3A0xbb22334455667788!2sNew%20Age%20College%20Engineering!5e0!3m2!1sen!2sin!4v1714608100000!5m2!1sen!2sin",
+      coordinates: { lat: 17.3050, lng: 78.3550 },
+      connectivity: {
+        bus: { name: "Nearest Bus Stop", dist: "2.0 KM" },
+        railway: { name: "Lingampally Railway Station", dist: "15.0 KM" }
+      }
+    },
+    {
+      id: "188",
+      name: "Rise Krishna Sai Engineering College (RKSEC)",
+      location: "Suryapet, Telangana",
+      rating: 3.4,
+      description: "Rise Krishna Sai Engineering College (RKSEC), located in Suryapet, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. RKSEC features classrooms with teaching aids, departmental laboratories, a central library, separate hostels, sports facilities, and a dedicated training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.8 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Separate Hostels for Boys & Girls",
+        "Cafeteria",
+        "Sports Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.4,
+        placements: 3.1,
+        hostel: 3.2,
+        campusLife: 3.3
+      },
+      experience: [
+        { year: 1, title: "RKSEC Start", description: "Building engineering foundations in the Suryapet campus." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with lab-based learning." },
+        { year: 3, title: "Career Training", description: "Placement preparation, mock interviews, and workshops." },
+        { year: 4, title: "Campus Drives", description: "Final projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.5!2d79.6250!3d17.1550!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35c1111111111%3A0xcc33445566778899!2sRise%20Krishna%20Sai%20Engineering!5e0!3m2!1sen!2sin!4v1714608200000!5m2!1sen!2sin",
+      coordinates: { lat: 17.1550, lng: 79.6250 },
+      connectivity: {
+        bus: { name: "Suryapet Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Suryapet Railway Station", dist: "4.0 KM" }
+      }
+    },
+    {
+      id: "189",
+      name: "Triumph College of Engineering & Technology (TCET)",
+      location: "Sangareddy, Telangana",
+      rating: 3.3,
+      description: "Triumph College of Engineering & Technology (TCET), located in Sangareddy, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. TCET features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "TCET Start", description: "Building engineering foundations in the Sangareddy campus." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Career Prep", description: "Technical training and soft skills development." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.5!2d78.0850!3d17.6250!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbef22222222%3A0xdd44556677889900!2sTriumph%20College%20Engineering!5e0!3m2!1sen!2sin!4v1714608300000!5m2!1sen!2sin",
+      coordinates: { lat: 17.6250, lng: 78.0850 },
+      connectivity: {
+        bus: { name: "Sangareddy Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Sangareddy Railway Station", dist: "4.0 KM" }
+      }
+    },
+    {
+      id: "190",
+      name: "Vertex College of Engineering & Technology (VCET)",
+      location: "Hyderabad, Telangana",
+      rating: 3.4,
+      description: "Vertex College of Engineering & Technology (VCET), located in Hyderabad, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. VCET features classrooms with modern teaching aids, departmental laboratories, a central library, Wi-Fi campus, hostel facilities, sports facilities, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.8 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Modern Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Campus Wi-Fi",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.4,
+        placements: 3.1,
+        hostel: 3.2,
+        campusLife: 3.3
+      },
+      experience: [
+        { year: 1, title: "VCET Start", description: "Joining the campus and building engineering fundamentals." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with practical lab sessions." },
+        { year: 3, title: "Skill Building", description: "Technical workshops and placement preparation." },
+        { year: 4, title: "Placement Season", description: "Final year projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.0!2d78.4550!3d17.3850!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9d1111111111%3A0xee55667788990011!2sVertex%20College%20Engineering!5e0!3m2!1sen!2sin!4v1714608400000!5m2!1sen!2sin",
+      coordinates: { lat: 17.3850, lng: 78.4550 },
+      connectivity: {
+        metro: { name: "Nearest Metro Station", dist: "5.0 KM" },
+        bus: { name: "Nearest Bus Stop", dist: "1.0 KM" },
+        railway: { name: "Nampally Railway Station", dist: "7.0 KM" }
+      }
+    },
+    {
+      id: "191",
+      name: "Yashoda Technical Campus (YTC)",
+      location: "Hyderabad Rural, Telangana",
+      rating: 3.3,
+      description: "Yashoda Technical Campus (YTC), located in Hyderabad Rural, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. YTC features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "YTC Start", description: "Building engineering foundations in the Hyderabad Rural campus." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with lab-based learning." },
+        { year: 3, title: "Skill Building", description: "Technical training and career readiness programs." },
+        { year: 4, title: "Placement Season", description: "Final year projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.5!2d78.3950!3d17.3550!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba1000000000%3A0xaa11223344556677!2sYashoda%20Technical%20Campus!5e0!3m2!1sen!2sin!4v1714608500000!5m2!1sen!2sin",
+      coordinates: { lat: 17.3550, lng: 78.3950 },
+      connectivity: {
+        bus: { name: "Nearest Bus Stop", dist: "2.0 KM" },
+        railway: { name: "Lingampally Railway Station", dist: "15.0 KM" }
+      }
+    },
+    {
+      id: "192",
+      name: "Aizza College of Engineering & Technology (ACET)",
+      location: "Mancherial, Telangana",
+      rating: 3.3,
+      description: "Aizza College of Engineering & Technology (ACET), located in Mancherial, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. ACET features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "ACET Start", description: "Building engineering foundations in the Mancherial campus." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Career Prep", description: "Technical training and soft skills development." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.5!2d79.4550!3d18.8750!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd0a0000000000%3A0xbb22334455667788!2sAizza%20College%20Engineering!5e0!3m2!1sen!2sin!4v1714608600000!5m2!1sen!2sin",
+      coordinates: { lat: 18.8750, lng: 79.4550 },
+      connectivity: {
+        bus: { name: "Mancherial Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Mancherial Railway Station", dist: "4.0 KM" }
+      }
+    },
+    {
+      id: "193",
+      name: "Hyderabad Institute of Excellence & Technology (HIET)",
+      location: "Hyderabad, Telangana",
+      rating: 3.4,
+      description: "Hyderabad Institute of Excellence & Technology (HIET), located in Hyderabad, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. HIET features classrooms with modern teaching aids, departmental laboratories, a central library, Wi-Fi campus, hostel facilities, sports facilities, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.8 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Modern Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Campus Wi-Fi",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.4,
+        placements: 3.1,
+        hostel: 3.2,
+        campusLife: 3.3
+      },
+      experience: [
+        { year: 1, title: "HIET Start", description: "Joining the campus and building engineering fundamentals." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with practical lab sessions." },
+        { year: 3, title: "Skill Building", description: "Technical workshops and placement preparation." },
+        { year: 4, title: "Placement Season", description: "Final year projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.0!2d78.4850!3d17.3750!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9e2222222222%3A0xcc33445566778899!2sHIET%20Hyderabad!5e0!3m2!1sen!2sin!4v1714608700000!5m2!1sen!2sin",
+      coordinates: { lat: 17.3750, lng: 78.4850 },
+      connectivity: {
+        metro: { name: "Nearest Metro Station", dist: "6.0 KM" },
+        bus: { name: "Nearest Bus Stop", dist: "1.0 KM" },
+        railway: { name: "Nampally Railway Station", dist: "8.0 KM" }
+      }
+    },
+    {
+      id: "194",
+      name: "Iqra Engineering College (IEC)",
+      location: "Hyderabad, Telangana",
+      rating: 3.3,
+      description: "Iqra Engineering College (IEC), located in Hyderabad, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. IEC features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "IEC Start", description: "Building engineering foundations in the Hyderabad campus." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Career Prep", description: "Technical training and soft skills development." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.0!2d78.4350!3d17.3650!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9e3333333333%3A0xdd44556677889900!2sIqra%20Engineering%20College!5e0!3m2!1sen!2sin!4v1714608800000!5m2!1sen!2sin",
+      coordinates: { lat: 17.3650, lng: 78.4350 },
+      connectivity: {
+        metro: { name: "Nearest Metro Station", dist: "5.0 KM" },
+        bus: { name: "Nearest Bus Stop", dist: "1.0 KM" },
+        railway: { name: "Nampally Railway Station", dist: "7.0 KM" }
+      }
+    },
+    {
+      id: "195",
+      name: "Lucy Engineering College (LEC)",
+      location: "Khammam, Telangana",
+      rating: 3.2,
+      description: "Lucy Engineering College (LEC), located in Khammam, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. LEC features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.3 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.2,
+        placements: 2.9,
+        hostel: 3.0,
+        campusLife: 3.1
+      },
+      experience: [
+        { year: 1, title: "LEC Start", description: "Building engineering foundations in the Khammam campus." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with laboratory sessions." },
+        { year: 3, title: "Skill Building", description: "Technical training and career readiness programs." },
+        { year: 4, title: "Career Start", description: "Final projects and exploring placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.0!2d80.1550!3d17.2350!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3504000000000%3A0xee55667788990011!2sLucy%20Engineering%20College!5e0!3m2!1sen!2sin!4v1714608900000!5m2!1sen!2sin",
+      coordinates: { lat: 17.2350, lng: 80.1550 },
+      connectivity: {
+        bus: { name: "Khammam Bus Stand", dist: "4.0 KM" },
+        railway: { name: "Khammam Railway Station", dist: "5.0 KM" }
+      }
+    },
+    {
+      id: "196",
+      name: "Manair College of Engineering & Technology (MCET)",
+      location: "Karimnagar, Telangana",
+      rating: 3.3,
+      description: "Manair College of Engineering & Technology (MCET), located in Karimnagar, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. MCET features classrooms with teaching aids, departmental laboratories, a central library, separate hostels, sports facilities, and a dedicated training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Separate Hostels for Boys & Girls",
+        "Cafeteria",
+        "Sports Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "MCET Start", description: "Building engineering foundations in the Karimnagar campus." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with lab-based learning." },
+        { year: 3, title: "Career Prep", description: "Technical training and placement preparation programs." },
+        { year: 4, title: "Campus Drives", description: "Final projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.5!2d79.1250!3d18.4350!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc5c00000000%3A0xaa11223344556677!2sManair%20College%20Engineering!5e0!3m2!1sen!2sin!4v1714609000000!5m2!1sen!2sin",
+      coordinates: { lat: 18.4350, lng: 79.1250 },
+      connectivity: {
+        bus: { name: "Karimnagar Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Peddapalli Railway Station", dist: "22.0 KM" }
+      }
+    },
+    {
+      id: "197",
+      name: "Priyadarshini Institute of Science & Technology (PIST)",
+      location: "Khammam, Telangana",
+      rating: 3.3,
+      description: "Priyadarshini Institute of Science & Technology (PIST), located in Khammam, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. PIST features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "PIST Start", description: "Building engineering foundations in the Khammam campus." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Skill Building", description: "Technical training and soft skills development." },
+        { year: 4, title: "Placement Season", description: "Final year projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.0!2d80.1350!3d17.2550!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3505000000000%3A0xbb22334455667788!2sPriyadarshini%20Institute!5e0!3m2!1sen!2sin!4v1714609100000!5m2!1sen!2sin",
+      coordinates: { lat: 17.2550, lng: 80.1350 },
+      connectivity: {
+        bus: { name: "Khammam Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Khammam Railway Station", dist: "4.0 KM" }
+      }
+    },
+    {
+      id: "198",
+      name: "Sai Spurthi Institute of Technology (SSIT)",
+      location: "Khammam, Telangana",
+      rating: 3.4,
+      description: "Sai Spurthi Institute of Technology (SSIT), located in Khammam, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. SSIT features classrooms with teaching aids, departmental laboratories, a central library, separate hostels, sports facilities, and a dedicated training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.8 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Separate Hostels for Boys & Girls",
+        "Cafeteria",
+        "Sports Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.4,
+        placements: 3.1,
+        hostel: 3.2,
+        campusLife: 3.3
+      },
+      experience: [
+        { year: 1, title: "SSIT Start", description: "Building engineering foundations in the Khammam campus." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with lab-based learning." },
+        { year: 3, title: "Career Training", description: "Placement preparation, mock interviews, and workshops." },
+        { year: 4, title: "Campus Drives", description: "Final projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.0!2d80.1650!3d17.2650!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3506000000000%3A0xcc33445566778899!2sSai%20Spurthi%20Institute!5e0!3m2!1sen!2sin!4v1714609200000!5m2!1sen!2sin",
+      coordinates: { lat: 17.2650, lng: 80.1650 },
+      connectivity: {
+        bus: { name: "Khammam Bus Stand", dist: "5.0 KM" },
+        railway: { name: "Khammam Railway Station", dist: "6.0 KM" }
+      }
+    },
+    {
+      id: "199",
+      name: "Sree Kavitha Engineering College (SKEC)",
+      location: "Khammam, Telangana",
+      rating: 3.3,
+      description: "Sree Kavitha Engineering College (SKEC), located in Khammam, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. SKEC features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "SKEC Start", description: "Building engineering foundations in the Khammam campus." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Career Prep", description: "Technical training and soft skills development." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.0!2d80.1250!3d17.2450!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3507000000000%3A0xdd44556677889900!2sSree%20Kavitha%20Engineering!5e0!3m2!1sen!2sin!4v1714609300000!5m2!1sen!2sin",
+      coordinates: { lat: 17.2450, lng: 80.1250 },
+      connectivity: {
+        bus: { name: "Khammam Bus Stand", dist: "4.0 KM" },
+        railway: { name: "Khammam Railway Station", dist: "5.0 KM" }
+      }
+    },
+    {
+      id: "200",
+      name: "Sri Sunflower College of Engineering & Technology (SSCET)",
+      location: "Lankapalli, Challapalli, Hyderabad",
+      rating: 3.3,
+      description: "Sri Sunflower College of Engineering & Technology (SSCET), located near Hyderabad, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. SSCET features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "SSCET Start", description: "Building engineering foundations near Hyderabad." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with lab-based learning." },
+        { year: 3, title: "Skill Building", description: "Technical training and career readiness programs." },
+        { year: 4, title: "Placement Season", description: "Final year projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.5!2d78.5250!3d17.3450!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba2000000000%3A0xee55667788990011!2sSri%20Sunflower%20College!5e0!3m2!1sen!2sin!4v1714609400000!5m2!1sen!2sin",
+      coordinates: { lat: 17.3450, lng: 78.5250 },
+      connectivity: {
+        bus: { name: "Nearest Bus Stop", dist: "2.0 KM" },
+        railway: { name: "Secunderabad Railway Station", dist: "22.0 KM" }
+      }
+    },
+    {
+      id: "201",
+      name: "Suprabhath Institute for Management & Computer Studies (SIMCS)",
+      location: "Hyderabad, Telangana",
+      rating: 3.3,
+      description: "Suprabhath Institute for Management & Computer Studies (SIMCS), located near Hyderabad, Telangana, is a private engineering and management college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, and IT alongside MBA programs. SIMCS features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "SIMCS Start", description: "Building engineering and management foundations." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Career Prep", description: "Technical training and soft skills development." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.0!2d78.4650!3d17.3950!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9d4444444444%3A0xaa11223344556677!2sSuprabhath%20Institute!5e0!3m2!1sen!2sin!4v1714609500000!5m2!1sen!2sin",
+      coordinates: { lat: 17.3950, lng: 78.4650 },
+      connectivity: {
+        bus: { name: "Nearest Bus Stop", dist: "1.5 KM" },
+        railway: { name: "Secunderabad Railway Station", dist: "12.0 KM" }
+      }
+    },
+    {
+      id: "202",
+      name: "VMR Polytechnic & Engineering College (VMR)",
+      location: "Hanamkonda, Warangal",
+      rating: 3.3,
+      description: "VMR Polytechnic & Engineering College (VMR), located in Hanamkonda, Warangal, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering alongside diploma programs. VMR features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Polytechnic & Engineering Programs",
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "VMR Start", description: "Building engineering foundations in the Hanamkonda campus." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with lab-based learning." },
+        { year: 3, title: "Skill Building", description: "Technical training and career readiness programs." },
+        { year: 4, title: "Placement Season", description: "Final year projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.0!2d79.5750!3d18.0050!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a334800000000%3A0xbb22334455667788!2sVMR%20Engineering%20College!5e0!3m2!1sen!2sin!4v1714609600000!5m2!1sen!2sin",
+      coordinates: { lat: 18.0050, lng: 79.5750 },
+      connectivity: {
+        bus: { name: "Hanamkonda Bus Stand", dist: "2.0 KM" },
+        railway: { name: "Warangal Railway Station", dist: "4.0 KM" }
+      }
+    },
+    {
+      id: "203",
+      name: "Swami Ramanandha Tirtha Institute of Science & Technology (SRTIST)",
+      location: "Nalgonda, Telangana",
+      rating: 3.4,
+      description: "Swami Ramanandha Tirtha Institute of Science & Technology (SRTIST), located in Nalgonda, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. SRTIST features classrooms with teaching aids, departmental laboratories, a central library, separate hostels, sports facilities, and a dedicated training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.8 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Separate Hostels for Boys & Girls",
+        "Cafeteria",
+        "Sports Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.4,
+        placements: 3.1,
+        hostel: 3.2,
+        campusLife: 3.3
+      },
+      experience: [
+        { year: 1, title: "SRTIST Start", description: "Building engineering foundations in the Nalgonda campus." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Career Training", description: "Placement preparation, mock interviews, and workshops." },
+        { year: 4, title: "Campus Drives", description: "Final projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.5!2d79.2750!3d17.0550!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35b3333333333%3A0xcc33445566778899!2sSRTIST%20Nalgonda!5e0!3m2!1sen!2sin!4v1714609700000!5m2!1sen!2sin",
+      coordinates: { lat: 17.0550, lng: 79.2750 },
+      connectivity: {
+        bus: { name: "Nalgonda Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Nalgonda Railway Station", dist: "4.0 KM" }
+      }
+    },
+    {
+      id: "204",
+      name: "KPRIT College of Engineering (KPRIT)",
+      location: "Ghatkesar, Hyderabad",
+      rating: 3.5,
+      description: "KPRIT College of Engineering (KPRIT), located in Ghatkesar near Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. KPRIT features classrooms with modern teaching aids, departmental laboratories, a central library, Wi-Fi campus, separate hostels, sports facilities, and a dedicated training and placement cell. The campus benefits from proximity to Uppal Metro Station.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.0 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "Capgemini", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Modern Teaching Aids",
+        "Well-Equipped Laboratories",
+        "Central Library",
+        "Campus Wi-Fi",
+        "Separate Hostels for Boys & Girls",
+        "Cafeteria",
+        "Sports Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.5,
+        placements: 3.2,
+        hostel: 3.3,
+        campusLife: 3.4
+      },
+      experience: [
+        { year: 1, title: "KPRIT Start", description: "Joining the campus near Ghatkesar with good Hyderabad connectivity." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with lab-based learning." },
+        { year: 3, title: "Career Training", description: "Placement preparation, mock interviews, and workshops." },
+        { year: 4, title: "Campus Drives", description: "Final projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.5!2d78.6450!3d17.4550!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba3000000000%3A0xdd44556677889900!2sKPRIT%20Engineering!5e0!3m2!1sen!2sin!4v1714609800000!5m2!1sen!2sin",
+      coordinates: { lat: 17.4550, lng: 78.6450 },
+      connectivity: {
+        metro: { name: "Uppal Metro Station", dist: "8.0 KM" },
+        bus: { name: "Ghatkesar Bus Stop", dist: "1.5 KM" },
+        railway: { name: "Ghatkesar Railway Station", dist: "2.0 KM" }
+      }
+    },
+    {
+      id: "205",
+      name: "Candid Institute of Technology (CIT)",
+      location: "Warangal Rural, Telangana",
+      rating: 3.2,
+      description: "Candid Institute of Technology (CIT), located in Warangal Rural, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. CIT features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.3 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.2,
+        placements: 2.9,
+        hostel: 3.0,
+        campusLife: 3.1
+      },
+      experience: [
+        { year: 1, title: "CIT Start", description: "Building engineering foundations in Warangal Rural." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Career Prep", description: "Technical training and soft skills development." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.0!2d79.6050!3d17.9650!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a334900000000%3A0xee55667788990011!2sCandid%20Institute!5e0!3m2!1sen!2sin!4v1714609900000!5m2!1sen!2sin",
+      coordinates: { lat: 17.9650, lng: 79.6050 },
+      connectivity: {
+        bus: { name: "Warangal Bus Stand", dist: "8.0 KM" },
+        railway: { name: "Warangal Railway Station", dist: "10.0 KM" }
+      }
+    },
+    {
+      id: "206",
+      name: "MRR Institute of Technology & Science (MRRITS)",
+      location: "Uppal, Hyderabad",
+      rating: 3.5,
+      description: "MRR Institute of Technology & Science (MRRITS), located in Uppal, Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. MRRITS features classrooms with modern teaching aids, well-equipped laboratories, a central library, Wi-Fi campus, separate hostels, sports facilities, and a dedicated training and placement cell. The campus enjoys excellent metro connectivity with Uppal Metro Station just 1.5 KM away.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.0 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "Capgemini", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Modern Teaching Aids",
+        "Well-Equipped Laboratories",
+        "Central Library",
+        "Campus Wi-Fi",
+        "Separate Hostels for Boys & Girls",
+        "Cafeteria",
+        "Sports Facilities",
+        "Excellent Metro Connectivity (Uppal)",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.5,
+        placements: 3.2,
+        hostel: 3.3,
+        campusLife: 3.4
+      },
+      experience: [
+        { year: 1, title: "MRRITS Start", description: "Joining the Uppal campus with excellent Hyderabad metro connectivity." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with lab-based learning." },
+        { year: 3, title: "Career Training", description: "Placement preparation, mock interviews, and workshops." },
+        { year: 4, title: "Campus Drives", description: "Final projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.5!2d78.5550!3d17.4050!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9c5555555555%3A0xaa11223344556677!2sMRR%20Institute!5e0!3m2!1sen!2sin!4v1714610000000!5m2!1sen!2sin",
+      coordinates: { lat: 17.4050, lng: 78.5550 },
+      connectivity: {
+        metro: { name: "Uppal Metro Station", dist: "1.5 KM" },
+        bus: { name: "Uppal Bus Stop", dist: "1.0 KM" },
+        railway: { name: "Secunderabad Railway Station", dist: "10.0 KM" }
+      }
+    },
+    {
+      id: "207",
+      name: "Jagruthi Institute of Engineering & Technology (JIET)",
+      location: "Yadadri-Bhuvanagiri, Telangana",
+      rating: 3.3,
+      description: "Jagruthi Institute of Engineering & Technology (JIET), located in Yadadri-Bhuvanagiri District, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. JIET features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "JIET Start", description: "Building engineering foundations in the Yadadri campus." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Career Prep", description: "Technical training and soft skills development." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.5!2d78.7550!3d17.3550!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba4000000000%3A0xbb22334455667788!2sJagruthi%20Institute!5e0!3m2!1sen!2sin!4v1714610100000!5m2!1sen!2sin",
+      coordinates: { lat: 17.3550, lng: 78.7550 },
+      connectivity: {
+        bus: { name: "Nearest Bus Stop", dist: "2.0 KM" },
+        railway: { name: "Secunderabad Railway Station", dist: "35.0 KM" }
+      }
+    },
+    {
+      id: "208",
+      name: "Sree Swarnandhra Group of Institutions (SSGI)",
+      location: "Nalgonda, Telangana",
+      rating: 3.3,
+      description: "Sree Swarnandhra Group of Institutions (SSGI), located in Nalgonda, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. SSGI features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "SSGI Start", description: "Building engineering foundations in the Nalgonda campus." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with lab-based learning." },
+        { year: 3, title: "Skill Building", description: "Technical training and career readiness programs." },
+        { year: 4, title: "Placement Season", description: "Final year projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.5!2d79.2650!3d17.0650!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35b4444444444%3A0xcc33445566778899!2sSree%20Swarnandhra!5e0!3m2!1sen!2sin!4v1714610200000!5m2!1sen!2sin",
+      coordinates: { lat: 17.0650, lng: 79.2650 },
+      connectivity: {
+        bus: { name: "Nalgonda Bus Stand", dist: "4.0 KM" },
+        railway: { name: "Nalgonda Railway Station", dist: "5.0 KM" }
+      }
+    },
+    {
+      id: "209",
+      name: "DRS International Institute of Technology (DRIEMS)",
+      location: "Dundigal, Hyderabad",
+      rating: 3.4,
+      description: "DRS International Institute of Technology (DRIEMS), located in Dundigal near Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. DRIEMS features classrooms with modern teaching aids, departmental laboratories, a central library, Wi-Fi campus, separate hostels, sports facilities, and a training and placement cell. Located near Dundigal Air Force Academy area with good highway connectivity.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.8 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Modern Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Campus Wi-Fi",
+        "Separate Hostels for Boys & Girls",
+        "Cafeteria",
+        "Sports Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.4,
+        placements: 3.1,
+        hostel: 3.2,
+        campusLife: 3.3
+      },
+      experience: [
+        { year: 1, title: "DRIEMS Start", description: "Joining the campus near Dundigal with highway connectivity." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with practical lab sessions." },
+        { year: 3, title: "Career Prep", description: "Technical workshops and soft skills training." },
+        { year: 4, title: "Campus Drives", description: "Final projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.0!2d78.4250!3d17.5750!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9e6666666666%3A0xdd44556677889900!2sDRIEMS%20Dundigal!5e0!3m2!1sen!2sin!4v1714610300000!5m2!1sen!2sin",
+      coordinates: { lat: 17.5750, lng: 78.4250 },
+      connectivity: {
+        bus: { name: "Dundigal Bus Stop", dist: "1.5 KM" },
+        railway: { name: "Secunderabad Railway Station", dist: "22.0 KM" }
+      }
+    },
+    {
+      id: "210",
+      name: "Eshwar College of Engineering (ECE)",
+      location: "Mahabubabad, Telangana",
+      rating: 3.2,
+      description: "Eshwar College of Engineering (ECE), located in Mahabubabad, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. ECE features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.3 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.2,
+        placements: 2.9,
+        hostel: 3.0,
+        campusLife: 3.1
+      },
+      experience: [
+        { year: 1, title: "ECE Start", description: "Building engineering foundations in the Mahabubabad campus." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with laboratory sessions." },
+        { year: 3, title: "Skill Building", description: "Technical training and career readiness programs." },
+        { year: 4, title: "Career Start", description: "Final projects and exploring placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.0!2d80.0050!3d17.6050!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a352a000000000%3A0xee55667788990011!2sEshwar%20College%20Engineering!5e0!3m2!1sen!2sin!4v1714610400000!5m2!1sen!2sin",
+      coordinates: { lat: 17.6050, lng: 80.0050 },
+      connectivity: {
+        bus: { name: "Mahabubabad Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Mahabubabad Railway Station", dist: "4.0 KM" }
+      }
+    },
+    {
+      id: "211",
+      name: "Ganapathy Engineering College (GEC)",
+      location: "Warangal Rural, Telangana",
+      rating: 3.2,
+      description: "Ganapathy Engineering College (GEC), located in Warangal Rural, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. GEC features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.3 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.2,
+        placements: 2.9,
+        hostel: 3.0,
+        campusLife: 3.1
+      },
+      experience: [
+        { year: 1, title: "GEC Start", description: "Building engineering foundations in Warangal Rural." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Career Prep", description: "Technical training and soft skills development." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.0!2d79.5950!3d17.9750!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a334a000000000%3A0xaa11223344556677!2sGanapathy%20Engineering!5e0!3m2!1sen!2sin!4v1714610500000!5m2!1sen!2sin",
+      coordinates: { lat: 17.9750, lng: 79.5950 },
+      connectivity: {
+        bus: { name: "Warangal Bus Stand", dist: "7.0 KM" },
+        railway: { name: "Warangal Railway Station", dist: "9.0 KM" }
+      }
+    },
+    {
+      id: "212",
+      name: "Kodada Institute of Technology & Science for Women (KITSW)",
+      location: "Kodad, Suryapet",
+      rating: 3.3,
+      description: "Kodada Institute of Technology & Science for Women (KITSW), located in Kodad, Suryapet District, is a private women's engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Electrical, and IT Engineering exclusively for women students. KITSW features classrooms with teaching aids, departmental laboratories, a central library, girls' hostel with mess, sports facilities, and a dedicated training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Women's Engineering College",
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Girls' Hostel with Mess",
+        "Sports Facilities",
+        "Cafeteria",
+        "Medical Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.2,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "KITSW Welcome", description: "Joining the women's engineering college in Kodad." },
+        { year: 2, title: "Core Studies", description: "Departmental specialization with hands-on lab sessions." },
+        { year: 3, title: "Career Training", description: "Placement preparation, mock interviews, and workshops." },
+        { year: 4, title: "Campus Drives", description: "Final projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.5!2d79.9950!3d16.9950!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35d1111111111%3A0xbb22334455667788!2sKodada%20Institute%20Women!5e0!3m2!1sen!2sin!4v1714610600000!5m2!1sen!2sin",
+      coordinates: { lat: 16.9950, lng: 79.9950 },
+      connectivity: {
+        bus: { name: "Kodad Bus Stand", dist: "2.0 KM" },
+        railway: { name: "Kodad Railway Station", dist: "3.0 KM" }
+      }
+    },
+    {
+      id: "213",
+      name: "Mother Teresa Engineering College (MTEC)",
+      location: "Peddapalli, Telangana",
+      rating: 3.3,
+      description: "Mother Teresa Engineering College (MTEC), located in Peddapalli, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. MTEC features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "MTEC Start", description: "Building engineering foundations in the Peddapalli campus." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with lab-based learning." },
+        { year: 3, title: "Skill Building", description: "Technical training and career readiness programs." },
+        { year: 4, title: "Placement Season", description: "Final year projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.0!2d79.3850!3d18.6050!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc8100000000%3A0xcc33445566778899!2sMother%20Teresa%20Engineering!5e0!3m2!1sen!2sin!4v1714610700000!5m2!1sen!2sin",
+      coordinates: { lat: 18.6050, lng: 79.3850 },
+      connectivity: {
+        bus: { name: "Peddapalli Bus Stand", dist: "2.0 KM" },
+        railway: { name: "Peddapalli Railway Station", dist: "3.0 KM" }
+      }
+    },
+    {
+      id: "214",
+      name: "Siddhartha Institute of Technology & Sciences (SITS)",
+      location: "Ghatkesar, Hyderabad",
+      rating: 3.5,
+      description: "Siddhartha Institute of Technology & Sciences (SITS), located in Ghatkesar near Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. SITS features classrooms with modern teaching aids, well-equipped laboratories, a central library, Wi-Fi campus, separate hostels, sports facilities, and a dedicated training and placement cell. The campus benefits from proximity to Uppal Metro Station and Ghatkesar Railway Station.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.0 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "Capgemini", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Modern Teaching Aids",
+        "Well-Equipped Laboratories",
+        "Central Library",
+        "Campus Wi-Fi",
+        "Separate Hostels for Boys & Girls",
+        "Cafeteria",
+        "Sports Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.5,
+        placements: 3.2,
+        hostel: 3.3,
+        campusLife: 3.4
+      },
+      experience: [
+        { year: 1, title: "SITS Start", description: "Joining the Ghatkesar campus with good Hyderabad connectivity." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with lab-based learning." },
+        { year: 3, title: "Career Training", description: "Placement preparation, mock interviews, and workshops." },
+        { year: 4, title: "Campus Drives", description: "Final projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.5!2d78.6550!3d17.4450!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba3100000000%3A0xdd44556677889900!2sSiddhartha%20Institute!5e0!3m2!1sen!2sin!4v1714610800000!5m2!1sen!2sin",
+      coordinates: { lat: 17.4450, lng: 78.6550 },
+      connectivity: {
+        metro: { name: "Uppal Metro Station", dist: "9.0 KM" },
+        bus: { name: "Ghatkesar Bus Stop", dist: "2.0 KM" },
+        railway: { name: "Ghatkesar Railway Station", dist: "2.5 KM" }
+      }
+    },
+    {
+      id: "215",
+      name: "St. John's College of Engineering & Technology (SJCET)",
+      location: "Yemmiganur, Hyderabad",
+      rating: 3.4,
+      description: "St. John's College of Engineering & Technology (SJCET), located near Hyderabad, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. SJCET features classrooms with modern teaching aids, departmental laboratories, a central library, Wi-Fi campus, separate hostels, sports facilities, and a dedicated training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.8 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Modern Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Campus Wi-Fi",
+        "Separate Hostels for Boys & Girls",
+        "Cafeteria",
+        "Sports Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.4,
+        placements: 3.1,
+        hostel: 3.2,
+        campusLife: 3.3
+      },
+      experience: [
+        { year: 1, title: "SJCET Start", description: "Joining the campus and building engineering fundamentals." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with practical lab sessions." },
+        { year: 3, title: "Career Prep", description: "Technical workshops and soft skills training." },
+        { year: 4, title: "Campus Drives", description: "Final projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.0!2d78.4450!3d17.3750!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9e7777777777%3A0xee55667788990011!2sSt%20Johns%20College%20Engineering!5e0!3m2!1sen!2sin!4v1714610900000!5m2!1sen!2sin",
+      coordinates: { lat: 17.3750, lng: 78.4450 },
+      connectivity: {
+        bus: { name: "Nearest Bus Stop", dist: "1.5 KM" },
+        railway: { name: "Secunderabad Railway Station", dist: "15.0 KM" }
+      }
+    },
+    {
+      id: "216",
+      name: "Vijaya Engineering College (VEC)",
+      location: "Khammam, Telangana",
+      rating: 3.3,
+      description: "Vijaya Engineering College (VEC), located in Khammam, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. VEC features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "VEC Start", description: "Building engineering foundations in the Khammam campus." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Career Prep", description: "Technical training and soft skills development." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.0!2d80.1150!3d17.2550!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3508000000000%3A0xaa11223344556677!2sVijaya%20Engineering%20College!5e0!3m2!1sen!2sin!4v1714611000000!5m2!1sen!2sin",
+      coordinates: { lat: 17.2550, lng: 80.1150 },
+      connectivity: {
+        bus: { name: "Khammam Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Khammam Railway Station", dist: "4.0 KM" }
+      }
+    },
+    {
+      id: "217",
+      name: "Vision Institute of Technology & Science (VITS)",
+      location: "Boduppal, Hyderabad",
+      rating: 3.5,
+      description: "Vision Institute of Technology & Science (VITS), located in Boduppal, Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. VITS features classrooms with modern teaching aids, well-equipped laboratories, a central library, Wi-Fi campus, separate hostels, sports facilities, and a dedicated training and placement cell. The campus benefits from proximity to Nagole Metro Station.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "3.0 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "Capgemini", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Modern Teaching Aids",
+        "Well-Equipped Laboratories",
+        "Central Library",
+        "Campus Wi-Fi",
+        "Separate Hostels for Boys & Girls",
+        "Cafeteria",
+        "Sports Facilities",
+        "Excellent Metro Connectivity (Nagole)",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.5,
+        placements: 3.2,
+        hostel: 3.3,
+        campusLife: 3.4
+      },
+      experience: [
+        { year: 1, title: "VITS Start", description: "Joining the Boduppal campus with excellent Hyderabad metro connectivity." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with lab-based learning." },
+        { year: 3, title: "Career Training", description: "Placement preparation, mock interviews, and workshops." },
+        { year: 4, title: "Campus Drives", description: "Final projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.5!2d78.5750!3d17.4150!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9c8888888888%3A0xbb22334455667788!2sVision%20Institute!5e0!3m2!1sen!2sin!4v1714611100000!5m2!1sen!2sin",
+      coordinates: { lat: 17.4150, lng: 78.5750 },
+      connectivity: {
+        metro: { name: "Nagole Metro Station", dist: "3.0 KM" },
+        bus: { name: "Boduppal Bus Stop", dist: "1.0 KM" },
+        railway: { name: "Secunderabad Railway Station", dist: "12.0 KM" }
+      }
+    },
+    {
+      id: "218",
+      name: "White Horse College of Engineering (WHCE)",
+      location: "Ibrahimpatnam, Hyderabad",
+      rating: 3.3,
+      description: "White Horse College of Engineering (WHCE), located in Ibrahimpatnam near Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. WHCE features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "WHCE Start", description: "Building engineering foundations in the Ibrahimpatnam campus." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Skill Building", description: "Technical training and soft skills development." },
+        { year: 4, title: "Placement Season", description: "Final year projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3809.5!2d78.5650!3d17.2750!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba9000000000%3A0xcc33445566778899!2sWhite%20Horse%20College!5e0!3m2!1sen!2sin!4v1714611200000!5m2!1sen!2sin",
+      coordinates: { lat: 17.2750, lng: 78.5650 },
+      connectivity: {
+        bus: { name: "Ibrahimpatnam Bus Stop", dist: "2.0 KM" },
+        railway: { name: "Secunderabad Railway Station", dist: "27.0 KM" }
+      }
+    },
+    {
+      id: "219",
+      name: "Dr. A.P.J Abdul Kalam Women's Engineering College (APJAK)",
+      location: "Hyderabad, Telangana",
+      rating: 3.4,
+      description: "Dr. A.P.J Abdul Kalam Women's Engineering College (APJAK), located in Hyderabad, Telangana, is a private women's engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Electrical, and IT Engineering exclusively for women students. APJAK features classrooms with teaching aids, departmental laboratories, a central library, girls' hostel with mess, sports facilities, and a dedicated training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.8 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Women's Engineering College",
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Girls' Hostel with Mess",
+        "Sports Facilities",
+        "Cafeteria",
+        "Medical Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.4,
+        placements: 3.1,
+        hostel: 3.2,
+        campusLife: 3.3
+      },
+      experience: [
+        { year: 1, title: "APJAK Welcome", description: "Joining the women's engineering college in Hyderabad." },
+        { year: 2, title: "Core Studies", description: "Departmental specialization with hands-on lab sessions." },
+        { year: 3, title: "Career Training", description: "Placement preparation, mock interviews, and workshops." },
+        { year: 4, title: "Campus Drives", description: "Final projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.0!2d78.4550!3d17.3850!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9e8888888888%3A0xdd44556677889900!2sAbdul%20Kalam%20Womens%20Engineering!5e0!3m2!1sen!2sin!4v1714611300000!5m2!1sen!2sin",
+      coordinates: { lat: 17.3850, lng: 78.4550 },
+      connectivity: {
+        metro: { name: "Nearest Metro Station", dist: "5.0 KM" },
+        bus: { name: "Nearest Bus Stop", dist: "1.0 KM" },
+        railway: { name: "Nampally Railway Station", dist: "8.0 KM" }
+      }
+    },
+    {
+      id: "220",
+      name: "Aristotle PG College & Engineering Campus (ARISTOTLE)",
+      location: "Hyderabad, Telangana",
+      rating: 3.3,
+      description: "Aristotle PG College & Engineering Campus (ARISTOTLE), located in Hyderabad, Telangana, is a private engineering and postgraduate college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, and IT alongside postgraduate courses. Aristotle features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Engineering & PG Programs",
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "Aristotle Start", description: "Building engineering and academic foundations." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with lab-based learning." },
+        { year: 3, title: "Career Prep", description: "Technical training and career readiness programs." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.0!2d78.4750!3d17.3950!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9e9999999999%3A0xee55667788990011!2sAristotle%20PG%20College!5e0!3m2!1sen!2sin!4v1714611400000!5m2!1sen!2sin",
+      coordinates: { lat: 17.3950, lng: 78.4750 },
+      connectivity: {
+        bus: { name: "Nearest Bus Stop", dist: "1.5 KM" },
+        railway: { name: "Secunderabad Railway Station", dist: "10.0 KM" }
+      }
+    },
+    {
+      id: "221",
+      name: "Bharathi Institute of Technology & Science (BITS)",
+      location: "Ibrahimpatnam, Hyderabad",
+      rating: 3.3,
+      description: "Bharathi Institute of Technology & Science (BITS), located in Ibrahimpatnam near Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. BITS features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "BITS Start", description: "Building engineering foundations in the Ibrahimpatnam campus." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with lab-based learning." },
+        { year: 3, title: "Skill Building", description: "Technical training and career readiness programs." },
+        { year: 4, title: "Placement Season", description: "Final year projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3809.5!2d78.5750!3d17.2850!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba1200000000%3A0xaa11223344556677!2sBharathi%20Institute!5e0!3m2!1sen!2sin!4v1714611500000!5m2!1sen!2sin",
+      coordinates: { lat: 17.2850, lng: 78.5750 },
+      connectivity: {
+        bus: { name: "Ibrahimpatnam Bus Stop", dist: "2.0 KM" },
+        railway: { name: "Secunderabad Railway Station", dist: "26.0 KM" }
+      }
+    },
+    {
+      id: "222",
+      name: "Holy Mother PG College & Engineering Campus (HMPCE)",
+      location: "Hyderabad, Telangana",
+      rating: 3.3,
+      description: "Holy Mother PG College & Engineering Campus (HMPCE), located in Hyderabad, Telangana, is a private engineering and postgraduate college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, and IT alongside postgraduate courses. HMPCE features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Engineering & PG Programs",
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "HMPCE Start", description: "Building engineering and academic foundations in Hyderabad." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Career Prep", description: "Technical training and soft skills development." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.0!2d78.4650!3d17.3850!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9ea111111111%3A0xbb22334455667788!2sHoly%20Mother%20PG%20College!5e0!3m2!1sen!2sin!4v1714611600000!5m2!1sen!2sin",
+      coordinates: { lat: 17.3850, lng: 78.4650 },
+      connectivity: {
+        bus: { name: "Nearest Bus Stop", dist: "1.5 KM" },
+        railway: { name: "Secunderabad Railway Station", dist: "11.0 KM" }
+      }
+    },
+    {
+      id: "223",
+      name: "Shree Institute of Technical Education (SITE)",
+      location: "Adilabad, Telangana",
+      rating: 3.2,
+      description: "Shree Institute of Technical Education (SITE), located in Adilabad, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. SITE features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.3 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.2,
+        placements: 2.9,
+        hostel: 3.0,
+        campusLife: 3.1
+      },
+      experience: [
+        { year: 1, title: "SITE Start", description: "Building engineering foundations in the Adilabad campus." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with laboratory sessions." },
+        { year: 3, title: "Skill Building", description: "Technical training and career readiness programs." },
+        { year: 4, title: "Career Start", description: "Final projects and exploring placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3799.0!2d78.5250!3d19.6750!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd1a0000000000%3A0xcc33445566778899!2sShree%20Institute!5e0!3m2!1sen!2sin!4v1714611700000!5m2!1sen!2sin",
+      coordinates: { lat: 19.6750, lng: 78.5250 },
+      connectivity: {
+        bus: { name: "Adilabad Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Adilabad Railway Station", dist: "4.0 KM" }
+      }
+    },
+    {
+      id: "224",
+      name: "Stanford College of Engineering & Technology (SCET)",
+      location: "Siddipet, Telangana",
+      rating: 3.3,
+      description: "Stanford College of Engineering & Technology (SCET), located in Siddipet, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. SCET features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "SCET Start", description: "Building engineering foundations in the Siddipet campus." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Career Prep", description: "Technical training and soft skills development." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.5!2d78.8550!3d18.0950!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc2100000000%3A0xdd44556677889900!2sStanford%20College%20Engineering!5e0!3m2!1sen!2sin!4v1714611800000!5m2!1sen!2sin",
+      coordinates: { lat: 18.0950, lng: 78.8550 },
+      connectivity: {
+        bus: { name: "Siddipet Bus Stand", dist: "4.0 KM" },
+        railway: { name: "Kamareddy Railway Station", dist: "45.0 KM" }
+      }
+    },
+    {
+      id: "225",
+      name: "Vignan Jyothi Institute of Engineering & Technology (VJIET)",
+      location: "Karimnagar, Telangana",
+      rating: 3.4,
+      description: "Vignan Jyothi Institute of Engineering & Technology (VJIET), located in Karimnagar, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. VJIET features classrooms with teaching aids, departmental laboratories, a central library, separate hostels, sports facilities, and a dedicated training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.8 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Separate Hostels for Boys & Girls",
+        "Cafeteria",
+        "Sports Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.4,
+        placements: 3.1,
+        hostel: 3.2,
+        campusLife: 3.3
+      },
+      experience: [
+        { year: 1, title: "VJIET Start", description: "Building engineering foundations in the Karimnagar campus." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with lab-based learning." },
+        { year: 3, title: "Career Training", description: "Placement preparation, mock interviews, and workshops." },
+        { year: 4, title: "Campus Drives", description: "Final projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.5!2d79.1050!3d18.4350!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc5d00000000%3A0xee55667788990011!2sVignan%20Jyothi%20Institute!5e0!3m2!1sen!2sin!4v1714611900000!5m2!1sen!2sin",
+      coordinates: { lat: 18.4350, lng: 79.1050 },
+      connectivity: {
+        bus: { name: "Karimnagar Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Peddapalli Railway Station", dist: "22.0 KM" }
+      }
+    },
+    {
+      id: "226",
+      name: "Visweshwaraya College of Engineering & Technology (VCET)",
+      location: "Ibrahimpatnam, Hyderabad",
+      rating: 3.3,
+      description: "Visweshwaraya College of Engineering & Technology (VCET), located near Ibrahimpatnam, Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. Named after the legendary engineer Sir M. Visvesvaraya, the institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. VCET features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "VCET Start", description: "Building engineering foundations near Ibrahimpatnam." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with lab-based learning." },
+        { year: 3, title: "Skill Building", description: "Technical training and career readiness programs." },
+        { year: 4, title: "Placement Season", description: "Final year projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3809.5!2d78.5850!3d17.2650!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba1300000000%3A0xaa11223344556677!2sVisweshwaraya%20College!5e0!3m2!1sen!2sin!4v1714612000000!5m2!1sen!2sin",
+      coordinates: { lat: 17.2650, lng: 78.5850 },
+      connectivity: {
+        bus: { name: "Ibrahimpatnam Bus Stop", dist: "2.0 KM" },
+        railway: { name: "Secunderabad Railway Station", dist: "28.0 KM" }
+      }
+    },
+    {
+      id: "227",
+      name: "Warangal Women Engineering College (WWEC)",
+      location: "Hanamkonda, Warangal",
+      rating: 3.4,
+      description: "Warangal Women Engineering College (WWEC), located in Hanamkonda, Warangal, is a private women's engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Electrical, and IT Engineering exclusively for women students. WWEC features classrooms with teaching aids, departmental laboratories, a central library, girls' hostel with mess, sports facilities, and a dedicated training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.8 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Women's Engineering College",
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Girls' Hostel with Mess",
+        "Sports Facilities",
+        "Cafeteria",
+        "Medical Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.4,
+        placements: 3.1,
+        hostel: 3.2,
+        campusLife: 3.3
+      },
+      experience: [
+        { year: 1, title: "WWEC Welcome", description: "Joining the women's engineering college in Hanamkonda." },
+        { year: 2, title: "Core Studies", description: "Departmental specialization with hands-on lab sessions." },
+        { year: 3, title: "Career Training", description: "Placement preparation, mock interviews, and workshops." },
+        { year: 4, title: "Campus Drives", description: "Final projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.0!2d79.5650!3d18.0150!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a334b000000000%3A0xbb22334455667788!2sWarangal%20Women%20Engineering!5e0!3m2!1sen!2sin!4v1714612100000!5m2!1sen!2sin",
+      coordinates: { lat: 18.0150, lng: 79.5650 },
+      connectivity: {
+        bus: { name: "Hanamkonda Bus Stand", dist: "2.0 KM" },
+        railway: { name: "Warangal Railway Station", dist: "3.0 KM" }
+      }
+    },
+    {
+      id: "228",
+      name: "Sree Rama Engineering College (SREC)",
+      location: "Karimnagar, Telangana",
+      rating: 3.3,
+      description: "Sree Rama Engineering College (SREC), located in Karimnagar, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. SREC features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "SREC Start", description: "Building engineering foundations in the Karimnagar campus." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Career Prep", description: "Technical training and soft skills development." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.5!2d79.1450!3d18.4250!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc5e00000000%3A0xcc33445566778899!2sSree%20Rama%20Engineering!5e0!3m2!1sen!2sin!4v1714612200000!5m2!1sen!2sin",
+      coordinates: { lat: 18.4250, lng: 79.1450 },
+      connectivity: {
+        bus: { name: "Karimnagar Bus Stand", dist: "4.0 KM" },
+        railway: { name: "Peddapalli Railway Station", dist: "23.0 KM" }
+      }
+    },
+    {
+      id: "229",
+      name: "Sai Teja Engineering College (STEC)",
+      location: "Khammam, Telangana",
+      rating: 3.3,
+      description: "Sai Teja Engineering College (STEC), located in Khammam, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. STEC features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "STEC Start", description: "Building engineering foundations in the Khammam campus." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with lab-based learning." },
+        { year: 3, title: "Skill Building", description: "Technical training and career readiness programs." },
+        { year: 4, title: "Placement Season", description: "Final year projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.0!2d80.1050!3d17.2350!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3509000000000%3A0xdd44556677889900!2sSai%20Teja%20Engineering!5e0!3m2!1sen!2sin!4v1714612300000!5m2!1sen!2sin",
+      coordinates: { lat: 17.2350, lng: 80.1050 },
+      connectivity: {
+        bus: { name: "Khammam Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Khammam Railway Station", dist: "4.0 KM" }
+      }
+    },
+    {
+      id: "230",
+      name: "Bharat Women Engineering College (BWEC)",
+      location: "Ibrahimpatnam, Hyderabad",
+      rating: 3.3,
+      description: "Bharat Women Engineering College (BWEC), located in Ibrahimpatnam near Hyderabad, is a private women's engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Electrical, and IT Engineering exclusively for women students. BWEC features classrooms with teaching aids, departmental laboratories, a central library, girls' hostel with mess, sports facilities, and a dedicated training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Women's Engineering College",
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Girls' Hostel with Mess",
+        "Sports Facilities",
+        "Cafeteria",
+        "Medical Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.2,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "BWEC Welcome", description: "Joining the women's engineering college in Ibrahimpatnam." },
+        { year: 2, title: "Core Studies", description: "Departmental specialization with hands-on lab sessions." },
+        { year: 3, title: "Career Training", description: "Placement preparation, mock interviews, and workshops." },
+        { year: 4, title: "Campus Drives", description: "Final projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3809.5!2d78.5950!3d17.2750!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba1400000000%3A0xee55667788990011!2sBharat%20Women%20Engineering!5e0!3m2!1sen!2sin!4v1714612400000!5m2!1sen!2sin",
+      coordinates: { lat: 17.2750, lng: 78.5950 },
+      connectivity: {
+        bus: { name: "Ibrahimpatnam Bus Stop", dist: "2.0 KM" },
+        railway: { name: "Secunderabad Railway Station", dist: "27.0 KM" }
+      }
+    },
+    {
+      id: "231",
+      name: "Jyothi Engineering College for Women (JECW)",
+      location: "Warangal, Telangana",
+      rating: 3.4,
+      description: "Jyothi Engineering College for Women (JECW), located in Warangal, Telangana, is a private women's engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Electrical, and IT Engineering exclusively for women students. JECW features classrooms with teaching aids, departmental laboratories, a central library, girls' hostel with mess, sports facilities, and a dedicated training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.8 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Women's Engineering College",
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Girls' Hostel with Mess",
+        "Sports Facilities",
+        "Cafeteria",
+        "Medical Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.4,
+        placements: 3.1,
+        hostel: 3.2,
+        campusLife: 3.3
+      },
+      experience: [
+        { year: 1, title: "JECW Welcome", description: "Joining the women's engineering college in Warangal." },
+        { year: 2, title: "Core Studies", description: "Departmental specialization with hands-on lab sessions." },
+        { year: 3, title: "Career Training", description: "Placement preparation, mock interviews, and workshops." },
+        { year: 4, title: "Campus Drives", description: "Final projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.0!2d79.5850!3d17.9850!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a334c000000000%3A0xaa11223344556677!2sJyothi%20Engineering%20Women!5e0!3m2!1sen!2sin!4v1714612500000!5m2!1sen!2sin",
+      coordinates: { lat: 17.9850, lng: 79.5850 },
+      connectivity: {
+        bus: { name: "Warangal Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Warangal Railway Station", dist: "4.0 KM" }
+      }
+    },
+    {
+      id: "232",
+      name: "Kings Engineering College (KEC)",
+      location: "Ranga Reddy, Hyderabad",
+      rating: 3.3,
+      description: "Kings Engineering College (KEC), located in Ranga Reddy District on the outskirts of Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. KEC features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "KEC Start", description: "Building engineering foundations on the outskirts of Hyderabad." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with lab-based learning." },
+        { year: 3, title: "Skill Building", description: "Technical training and career readiness programs." },
+        { year: 4, title: "Placement Season", description: "Final year projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3809.0!2d78.3450!3d17.3250!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba1500000000%3A0xbb22334455667788!2sKings%20Engineering%20College!5e0!3m2!1sen!2sin!4v1714612600000!5m2!1sen!2sin",
+      coordinates: { lat: 17.3250, lng: 78.3450 },
+      connectivity: {
+        bus: { name: "Nearest Bus Stop", dist: "2.0 KM" },
+        railway: { name: "Lingampally Railway Station", dist: "14.0 KM" }
+      }
+    },
+    {
+      id: "233",
+      name: "Nagarjuna College of Engineering & Technology (NCET)",
+      location: "Nalgonda, Telangana",
+      rating: 3.3,
+      description: "Nagarjuna College of Engineering & Technology (NCET), located in Nalgonda, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. NCET features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "NCET Start", description: "Building engineering foundations in the Nalgonda campus." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Career Prep", description: "Technical training and soft skills development." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.5!2d79.2550!3d17.0750!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35b5555555555%3A0xcc33445566778899!2sNagarjuna%20College!5e0!3m2!1sen!2sin!4v1714612700000!5m2!1sen!2sin",
+      coordinates: { lat: 17.0750, lng: 79.2550 },
+      connectivity: {
+        bus: { name: "Nalgonda Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Nalgonda Railway Station", dist: "4.0 KM" }
+      }
+    },
+    {
+      id: "234",
+      name: "Sai Krishna Engineering College (SKEC)",
+      location: "Karimnagar, Telangana",
+      rating: 3.3,
+      description: "Sai Krishna Engineering College (SKEC), located in Karimnagar, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. SKEC features classrooms with teaching aids, departmental laboratories, a central library, separate hostels, sports facilities, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Separate Hostels for Boys & Girls",
+        "Cafeteria",
+        "Sports Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "SKEC Start", description: "Building engineering foundations in the Karimnagar campus." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with lab-based learning." },
+        { year: 3, title: "Career Training", description: "Placement preparation and career readiness programs." },
+        { year: 4, title: "Campus Drives", description: "Final projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.5!2d79.1550!3d18.4150!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc5f00000000%3A0xdd44556677889900!2sSai%20Krishna%20Engineering!5e0!3m2!1sen!2sin!4v1714612800000!5m2!1sen!2sin",
+      coordinates: { lat: 18.4150, lng: 79.1550 },
+      connectivity: {
+        bus: { name: "Karimnagar Bus Stand", dist: "4.0 KM" },
+        railway: { name: "Peddapalli Railway Station", dist: "24.0 KM" }
+      }
+    },
+    {
+      id: "235",
+      name: "Quest Group of Engineering Institutions (QUEST)",
+      location: "Hyderabad, Telangana",
+      rating: 3.4,
+      description: "Quest Group of Engineering Institutions (QUEST), located in Hyderabad, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. QUEST features classrooms with modern teaching aids, departmental laboratories, a central library, Wi-Fi campus, hostel facilities, sports facilities, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.8 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Modern Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Campus Wi-Fi",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.4,
+        placements: 3.1,
+        hostel: 3.2,
+        campusLife: 3.3
+      },
+      experience: [
+        { year: 1, title: "Quest Start", description: "Joining the campus and building engineering fundamentals." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with practical lab sessions." },
+        { year: 3, title: "Career Prep", description: "Technical workshops and soft skills training." },
+        { year: 4, title: "Campus Drives", description: "Final projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.0!2d78.4850!3d17.3650!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9eb111111111%3A0xee55667788990011!2sQuest%20Engineering!5e0!3m2!1sen!2sin!4v1714612900000!5m2!1sen!2sin",
+      coordinates: { lat: 17.3650, lng: 78.4850 },
+      connectivity: {
+        metro: { name: "Nearest Metro Station", dist: "6.0 KM" },
+        bus: { name: "Nearest Bus Stop", dist: "1.0 KM" },
+        railway: { name: "Nampally Railway Station", dist: "8.0 KM" }
+      }
+    },
+    {
+      id: "236",
+      name: "Shine Engineering College (SEC)",
+      location: "Khammam, Telangana",
+      rating: 3.2,
+      description: "Shine Engineering College (SEC), located in Khammam, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. SEC features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.3 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.2,
+        placements: 2.9,
+        hostel: 3.0,
+        campusLife: 3.1
+      },
+      experience: [
+        { year: 1, title: "SEC Start", description: "Building engineering foundations in the Khammam campus." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Career Prep", description: "Technical training and soft skills development." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.0!2d80.0950!3d17.2450!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a350a000000000%3A0xaa11223344556677!2sShine%20Engineering%20College!5e0!3m2!1sen!2sin!4v1714613000000!5m2!1sen!2sin",
+      coordinates: { lat: 17.2450, lng: 80.0950 },
+      connectivity: {
+        bus: { name: "Khammam Bus Stand", dist: "4.0 KM" },
+        railway: { name: "Khammam Railway Station", dist: "5.0 KM" }
+      }
+    },
+    {
+      id: "237",
+      name: "United Institute of Engineering & Science (UIES)",
+      location: "Medak, Telangana",
+      rating: 3.2,
+      description: "United Institute of Engineering & Science (UIES), located in Medak, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. UIES features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.3 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.2,
+        placements: 2.9,
+        hostel: 3.0,
+        campusLife: 3.1
+      },
+      experience: [
+        { year: 1, title: "UIES Start", description: "Building engineering foundations in the Medak campus." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with lab-based learning." },
+        { year: 3, title: "Skill Building", description: "Technical training and career readiness programs." },
+        { year: 4, title: "Career Start", description: "Final projects and exploring placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.5!2d78.2550!3d17.7750!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbc3333333333%3A0xbb22334455667788!2sUnited%20Institute!5e0!3m2!1sen!2sin!4v1714613100000!5m2!1sen!2sin",
+      coordinates: { lat: 17.7750, lng: 78.2550 },
+      connectivity: {
+        bus: { name: "Medak Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Medak Road Railway Station", dist: "9.0 KM" }
+      }
+    },
+    {
+      id: "238",
+      name: "Wisdom Engineering College (WEC)",
+      location: "Karimnagar, Telangana",
+      rating: 3.3,
+      description: "Wisdom Engineering College (WEC), located in Karimnagar, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. WEC features classrooms with teaching aids, departmental laboratories, a central library, separate hostels, sports facilities, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Separate Hostels for Boys & Girls",
+        "Cafeteria",
+        "Sports Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "WEC Start", description: "Building engineering foundations in the Karimnagar campus." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Career Prep", description: "Technical training and soft skills development." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.5!2d79.1650!3d18.4050!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc6000000000%3A0xcc33445566778899!2sWisdom%20Engineering!5e0!3m2!1sen!2sin!4v1714613200000!5m2!1sen!2sin",
+      coordinates: { lat: 18.4050, lng: 79.1650 },
+      connectivity: {
+        bus: { name: "Karimnagar Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Peddapalli Railway Station", dist: "22.0 KM" }
+      }
+    },
+    {
+      id: "239",
+      name: "Xcel Institute of Technology & Science (XITS)",
+      location: "Warangal, Telangana",
+      rating: 3.3,
+      description: "Xcel Institute of Technology & Science (XITS), located in Warangal, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. XITS features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "XITS Start", description: "Building engineering foundations in the Warangal campus." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with lab-based learning." },
+        { year: 3, title: "Skill Building", description: "Technical training and career readiness programs." },
+        { year: 4, title: "Placement Season", description: "Final year projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.0!2d79.6150!3d17.9550!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a334d000000000%3A0xdd44556677889900!2sXcel%20Institute!5e0!3m2!1sen!2sin!4v1714613300000!5m2!1sen!2sin",
+      coordinates: { lat: 17.9550, lng: 79.6150 },
+      connectivity: {
+        bus: { name: "Warangal Bus Stand", dist: "4.0 KM" },
+        railway: { name: "Warangal Railway Station", dist: "5.0 KM" }
+      }
+    },
+    {
+      id: "240",
+      name: "Zenith College of Engineering (ZCE)",
+      location: "Siddipet, Telangana",
+      rating: 3.3,
+      description: "Zenith College of Engineering (ZCE), located in Siddipet, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. ZCE features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "ZCE Start", description: "Building engineering foundations in the Siddipet campus." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Career Prep", description: "Technical training and soft skills development." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.5!2d78.8650!3d18.0850!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc2200000000%3A0xee55667788990011!2sZenith%20College%20Engineering!5e0!3m2!1sen!2sin!4v1714613400000!5m2!1sen!2sin",
+      coordinates: { lat: 18.0850, lng: 78.8650 },
+      connectivity: {
+        bus: { name: "Siddipet Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Kamareddy Railway Station", dist: "44.0 KM" }
+      }
+    },
+    {
+      id: "241",
+      name: "Brightway Institute of Engineering & Technology (BIET)",
+      location: "Nalgonda, Telangana",
+      rating: 3.2,
+      description: "Brightway Institute of Engineering & Technology (BIET), located in Nalgonda, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. BIET features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.3 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.2,
+        placements: 2.9,
+        hostel: 3.0,
+        campusLife: 3.1
+      },
+      experience: [
+        { year: 1, title: "BIET Start", description: "Building engineering foundations in the Nalgonda campus." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Career Prep", description: "Technical training and soft skills development." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.5!2d79.2450!3d17.0850!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35b6666666666%3A0xaa11223344556677!2sBrightway%20Institute!5e0!3m2!1sen!2sin!4v1714613500000!5m2!1sen!2sin",
+      coordinates: { lat: 17.0850, lng: 79.2450 },
+      connectivity: {
+        bus: { name: "Nalgonda Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Nalgonda Railway Station", dist: "4.0 KM" }
+      }
+    },
+    {
+      id: "242",
+      name: "Delta Institute of Technology (DIT)",
+      location: "Sangareddy, Telangana",
+      rating: 3.3,
+      description: "Delta Institute of Technology (DIT), located in Sangareddy, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. DIT features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "DIT Start", description: "Building engineering foundations in the Sangareddy campus." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with lab-based learning." },
+        { year: 3, title: "Skill Building", description: "Technical training and career readiness programs." },
+        { year: 4, title: "Placement Season", description: "Final year projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.5!2d78.0750!3d17.6350!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbef44444444%3A0xbb22334455667788!2sDelta%20Institute!5e0!3m2!1sen!2sin!4v1714613600000!5m2!1sen!2sin",
+      coordinates: { lat: 17.6350, lng: 78.0750 },
+      connectivity: {
+        bus: { name: "Sangareddy Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Sangareddy Railway Station", dist: "4.0 KM" }
+      }
+    },
+    {
+      id: "243",
+      name: "Everest College of Engineering (ECE)",
+      location: "Khammam, Telangana",
+      rating: 3.2,
+      description: "Everest College of Engineering (ECE), located in Khammam, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. ECE features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.3 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.2,
+        placements: 2.9,
+        hostel: 3.0,
+        campusLife: 3.1
+      },
+      experience: [
+        { year: 1, title: "ECE Start", description: "Building engineering foundations in the Khammam campus." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Career Prep", description: "Technical training and soft skills development." },
+        { year: 4, title: "Career Start", description: "Final projects and exploring placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.0!2d80.0850!3d17.2250!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a350b000000000%3A0xcc33445566778899!2sEverest%20College%20Engineering!5e0!3m2!1sen!2sin!4v1714613700000!5m2!1sen!2sin",
+      coordinates: { lat: 17.2250, lng: 80.0850 },
+      connectivity: {
+        bus: { name: "Khammam Bus Stand", dist: "4.0 KM" },
+        railway: { name: "Khammam Railway Station", dist: "5.0 KM" }
+      }
+    },
+    {
+      id: "244",
+      name: "Fusion Institute of Engineering & Technology (FIET)",
+      location: "Hyderabad, Telangana",
+      rating: 3.4,
+      description: "Fusion Institute of Engineering & Technology (FIET), located in Hyderabad, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. FIET features classrooms with modern teaching aids, departmental laboratories, a central library, Wi-Fi campus, hostel facilities, sports facilities, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.8 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Modern Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Campus Wi-Fi",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.4,
+        placements: 3.1,
+        hostel: 3.2,
+        campusLife: 3.3
+      },
+      experience: [
+        { year: 1, title: "FIET Start", description: "Joining the campus and building engineering fundamentals." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with practical lab sessions." },
+        { year: 3, title: "Skill Building", description: "Technical workshops and placement preparation." },
+        { year: 4, title: "Placement Season", description: "Final year projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.0!2d78.4950!3d17.3750!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9ec222222222%3A0xdd44556677889900!2sFusion%20Institute!5e0!3m2!1sen!2sin!4v1714613800000!5m2!1sen!2sin",
+      coordinates: { lat: 17.3750, lng: 78.4950 },
+      connectivity: {
+        metro: { name: "Nearest Metro Station", dist: "5.0 KM" },
+        bus: { name: "Nearest Bus Stop", dist: "1.0 KM" },
+        railway: { name: "Nampally Railway Station", dist: "7.0 KM" }
+      }
+    },
+    {
+      id: "245",
+      name: "Heritage Institute of Technology & Science (HITS)",
+      location: "Karimnagar, Telangana",
+      rating: 3.3,
+      description: "Heritage Institute of Technology & Science (HITS), located in Karimnagar, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. HITS features classrooms with teaching aids, departmental laboratories, a central library, separate hostels, sports facilities, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Separate Hostels for Boys & Girls",
+        "Cafeteria",
+        "Sports Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "HITS Start", description: "Building engineering foundations in the Karimnagar campus." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Career Training", description: "Placement preparation, mock interviews, and workshops." },
+        { year: 4, title: "Campus Drives", description: "Final projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.5!2d79.1750!3d18.3950!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc6100000000%3A0xee55667788990011!2sHeritage%20Institute!5e0!3m2!1sen!2sin!4v1714613900000!5m2!1sen!2sin",
+      coordinates: { lat: 18.3950, lng: 79.1750 },
+      connectivity: {
+        bus: { name: "Karimnagar Bus Stand", dist: "4.0 KM" },
+        railway: { name: "Peddapalli Railway Station", dist: "23.0 KM" }
+      }
+    },
+    {
+      id: "246",
+      name: "Ideal College of Engineering (ICE)",
+      location: "Warangal, Telangana",
+      rating: 3.3,
+      description: "Ideal College of Engineering (ICE), located in Warangal, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. ICE features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "ICE Start", description: "Building engineering foundations in the Warangal campus." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with lab-based learning." },
+        { year: 3, title: "Skill Building", description: "Technical training and career readiness programs." },
+        { year: 4, title: "Placement Season", description: "Final year projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.0!2d79.6250!3d17.9450!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a334e000000000%3A0xaa11223344556677!2sIdeal%20College%20Engineering!5e0!3m2!1sen!2sin!4v1714614000000!5m2!1sen!2sin",
+      coordinates: { lat: 17.9450, lng: 79.6250 },
+      connectivity: {
+        bus: { name: "Warangal Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Warangal Railway Station", dist: "4.0 KM" }
+      }
+    },
+    {
+      id: "247",
+      name: "Krishnaveni Engineering College (KEC)",
+      location: "Nalgonda, Telangana",
+      rating: 3.2,
+      description: "Krishnaveni Engineering College (KEC), located in Nalgonda, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. KEC features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.3 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.2,
+        placements: 2.9,
+        hostel: 3.0,
+        campusLife: 3.1
+      },
+      experience: [
+        { year: 1, title: "KEC Start", description: "Building engineering foundations in the Nalgonda campus." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Career Prep", description: "Technical training and soft skills development." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.5!2d79.2350!3d17.0950!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35b7777777777%3A0xbb22334455667788!2sKrishnaveni%20Engineering!5e0!3m2!1sen!2sin!4v1714614100000!5m2!1sen!2sin",
+      coordinates: { lat: 17.0950, lng: 79.2350 },
+      connectivity: {
+        bus: { name: "Nalgonda Bus Stand", dist: "4.0 KM" },
+        railway: { name: "Nalgonda Railway Station", dist: "5.0 KM" }
+      }
+    },
+    {
+      id: "248",
+      name: "Lotus Institute of Technology (LIT)",
+      location: "Medak, Telangana",
+      rating: 3.2,
+      description: "Lotus Institute of Technology (LIT), located in Medak, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. LIT features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.3 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.2,
+        placements: 2.9,
+        hostel: 3.0,
+        campusLife: 3.1
+      },
+      experience: [
+        { year: 1, title: "LIT Start", description: "Building engineering foundations in the Medak campus." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with laboratory sessions." },
+        { year: 3, title: "Skill Building", description: "Technical training and career readiness programs." },
+        { year: 4, title: "Career Start", description: "Final projects and exploring placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.5!2d78.2650!3d17.7650!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbc4444444444%3A0xcc33445566778899!2sLotus%20Institute!5e0!3m2!1sen!2sin!4v1714614200000!5m2!1sen!2sin",
+      coordinates: { lat: 17.7650, lng: 78.2650 },
+      connectivity: {
+        bus: { name: "Medak Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Medak Road Railway Station", dist: "8.0 KM" }
+      }
+    },
+    {
+      id: "249",
+      name: "Magna College of Engineering & Technology (MCET)",
+      location: "Ranga Reddy, Hyderabad",
+      rating: 3.3,
+      description: "Magna College of Engineering & Technology (MCET), located in Ranga Reddy District near Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. MCET features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "MCET Start", description: "Building engineering foundations near Hyderabad." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Career Prep", description: "Technical training and soft skills development." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3809.0!2d78.3550!3d17.3150!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba1600000000%3A0xdd44556677889900!2sMagna%20College%20Engineering!5e0!3m2!1sen!2sin!4v1714614300000!5m2!1sen!2sin",
+      coordinates: { lat: 17.3150, lng: 78.3550 },
+      connectivity: {
+        bus: { name: "Nearest Bus Stop", dist: "2.0 KM" },
+        railway: { name: "Lingampally Railway Station", dist: "15.0 KM" }
+      }
+    },
+    {
+      id: "250",
+      name: "Nexus Engineering Institute (NEI)",
+      location: "Hyderabad, Telangana",
+      rating: 3.4,
+      description: "Nexus Engineering Institute (NEI), located in Hyderabad, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. NEI features classrooms with modern teaching aids, departmental laboratories, a central library, Wi-Fi campus, hostel facilities, sports facilities, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.8 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Modern Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Campus Wi-Fi",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.4,
+        placements: 3.1,
+        hostel: 3.2,
+        campusLife: 3.3
+      },
+      experience: [
+        { year: 1, title: "NEI Start", description: "Joining the campus and building engineering fundamentals." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with practical lab sessions." },
+        { year: 3, title: "Career Training", description: "Technical workshops and placement preparation." },
+        { year: 4, title: "Campus Drives", description: "Final projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.0!2d78.5050!3d17.3850!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9ed333333333%3A0xee55667788990011!2sNexus%20Engineering%20Institute!5e0!3m2!1sen!2sin!4v1714614400000!5m2!1sen!2sin",
+      coordinates: { lat: 17.3850, lng: 78.5050 },
+      connectivity: {
+        metro: { name: "Nearest Metro Station", dist: "4.0 KM" },
+        bus: { name: "Nearest Bus Stop", dist: "1.0 KM" },
+        railway: { name: "Nampally Railway Station", dist: "6.0 KM" }
+      }
+    },
+    {
+      id: "251",
+      name: "Orbit College of Engineering (OCE)",
+      location: "Siddipet, Telangana",
+      rating: 3.2,
+      description: "Orbit College of Engineering (OCE), located in Siddipet, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. OCE features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.3 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.2,
+        placements: 2.9,
+        hostel: 3.0,
+        campusLife: 3.1
+      },
+      experience: [
+        { year: 1, title: "OCE Start", description: "Building engineering foundations in the Siddipet campus." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Career Prep", description: "Technical training and soft skills development." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.5!2d78.8750!3d18.0750!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc2300000000%3A0xaa11223344556677!2sOrbit%20College%20Engineering!5e0!3m2!1sen!2sin!4v1714614500000!5m2!1sen!2sin",
+      coordinates: { lat: 18.0750, lng: 78.8750 },
+      connectivity: {
+        bus: { name: "Siddipet Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Kamareddy Railway Station", dist: "43.0 KM" }
+      }
+    },
+    {
+      id: "252",
+      name: "Phoenix Institute of Technology (PIT)",
+      location: "Warangal, Telangana",
+      rating: 3.3,
+      description: "Phoenix Institute of Technology (PIT), located in Warangal, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. PIT features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "PIT Start", description: "Building engineering foundations in the Warangal campus." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with lab-based learning." },
+        { year: 3, title: "Skill Building", description: "Technical training and career readiness programs." },
+        { year: 4, title: "Placement Season", description: "Final year projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.0!2d79.6350!3d17.9350!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a334f000000000%3A0xbb22334455667788!2sPhoenix%20Institute!5e0!3m2!1sen!2sin!4v1714614600000!5m2!1sen!2sin",
+      coordinates: { lat: 17.9350, lng: 79.6350 },
+      connectivity: {
+        bus: { name: "Warangal Bus Stand", dist: "4.0 KM" },
+        railway: { name: "Warangal Railway Station", dist: "5.0 KM" }
+      }
+    },
+    {
+      id: "253",
+      name: "Quantum Engineering College (QEC)",
+      location: "Karimnagar, Telangana",
+      rating: 3.3,
+      description: "Quantum Engineering College (QEC), located in Karimnagar, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. QEC features classrooms with teaching aids, departmental laboratories, a central library, separate hostels, sports facilities, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Separate Hostels for Boys & Girls",
+        "Cafeteria",
+        "Sports Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "QEC Start", description: "Building engineering foundations in the Karimnagar campus." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Career Prep", description: "Technical training and soft skills development." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.5!2d79.1850!3d18.3850!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc6200000000%3A0xcc33445566778899!2sQuantum%20Engineering!5e0!3m2!1sen!2sin!4v1714614700000!5m2!1sen!2sin",
+      coordinates: { lat: 18.3850, lng: 79.1850 },
+      connectivity: {
+        bus: { name: "Karimnagar Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Peddapalli Railway Station", dist: "21.0 KM" }
+      }
+    },
+    {
+      id: "254",
+      name: "Radiant Institute of Engineering (RIE)",
+      location: "Sangareddy, Telangana",
+      rating: 3.3,
+      description: "Radiant Institute of Engineering (RIE), located in Sangareddy, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. RIE features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "RIE Start", description: "Building engineering foundations in the Sangareddy campus." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with lab-based learning." },
+        { year: 3, title: "Skill Building", description: "Technical training and career readiness programs." },
+        { year: 4, title: "Placement Season", description: "Final year projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.5!2d78.0850!3d17.6250!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbef55555555%3A0xdd44556677889900!2sRadiant%20Institute!5e0!3m2!1sen!2sin!4v1714614800000!5m2!1sen!2sin",
+      coordinates: { lat: 17.6250, lng: 78.0850 },
+      connectivity: {
+        bus: { name: "Sangareddy Bus Stand", dist: "4.0 KM" },
+        railway: { name: "Sangareddy Railway Station", dist: "5.0 KM" }
+      }
+    },
+    {
+      id: "255",
+      name: "Spark College of Engineering & Technology (SCET)",
+      location: "Hyderabad, Telangana",
+      rating: 3.4,
+      description: "Spark College of Engineering & Technology (SCET), located in Hyderabad, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. SCET features classrooms with modern teaching aids, departmental laboratories, a central library, Wi-Fi campus, hostel facilities, sports facilities, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.8 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Modern Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Campus Wi-Fi",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.4,
+        placements: 3.1,
+        hostel: 3.2,
+        campusLife: 3.3
+      },
+      experience: [
+        { year: 1, title: "SCET Start", description: "Joining the campus and building engineering fundamentals." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with practical lab sessions." },
+        { year: 3, title: "Career Training", description: "Technical workshops and placement preparation." },
+        { year: 4, title: "Campus Drives", description: "Final projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.0!2d78.5150!3d17.3950!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9ee444444444%3A0xee55667788990011!2sSpark%20College%20Engineering!5e0!3m2!1sen!2sin!4v1714614900000!5m2!1sen!2sin",
+      coordinates: { lat: 17.3950, lng: 78.5150 },
+      connectivity: {
+        metro: { name: "Nearest Metro Station", dist: "4.0 KM" },
+        bus: { name: "Nearest Bus Stop", dist: "1.0 KM" },
+        railway: { name: "Secunderabad Railway Station", dist: "8.0 KM" }
+      }
+    },
+    {
+      id: "256",
+      name: "Techno Institute of Engineering Sciences (TIES)",
+      location: "Medchal, Hyderabad",
+      rating: 3.3,
+      description: "Techno Institute of Engineering Sciences (TIES), located in Medchal near Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. TIES features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "TIES Start", description: "Building engineering foundations in the Medchal campus." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with lab-based learning." },
+        { year: 3, title: "Skill Building", description: "Technical training and career readiness programs." },
+        { year: 4, title: "Placement Season", description: "Final year projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.0!2d78.4850!3d17.6250!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9a1111111111%3A0xaa11223344556677!2sTechno%20Institute!5e0!3m2!1sen!2sin!4v1714615000000!5m2!1sen!2sin",
+      coordinates: { lat: 17.6250, lng: 78.4850 },
+      connectivity: {
+        bus: { name: "Medchal Bus Stop", dist: "2.0 KM" },
+        railway: { name: "Secunderabad Railway Station", dist: "18.0 KM" }
+      }
+    },
+    {
+      id: "257",
+      name: "Unity College of Engineering (UCE)",
+      location: "Khammam, Telangana",
+      rating: 3.2,
+      description: "Unity College of Engineering (UCE), located in Khammam, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. UCE features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.3 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.2,
+        placements: 2.9,
+        hostel: 3.0,
+        campusLife: 3.1
+      },
+      experience: [
+        { year: 1, title: "UCE Start", description: "Building engineering foundations in the Khammam campus." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Career Prep", description: "Technical training and soft skills development." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.0!2d80.0750!3d17.2150!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a350c000000000%3A0xbb22334455667788!2sUnity%20College%20Engineering!5e0!3m2!1sen!2sin!4v1714615100000!5m2!1sen!2sin",
+      coordinates: { lat: 17.2150, lng: 80.0750 },
+      connectivity: {
+        bus: { name: "Khammam Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Khammam Railway Station", dist: "4.0 KM" }
+      }
+    },
+    {
+      id: "258",
+      name: "Vector Institute of Technology (VIT)",
+      location: "Mahabubnagar, Telangana",
+      rating: 3.2,
+      description: "Vector Institute of Technology (VIT), located in Mahabubnagar, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. VIT features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.3 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.2,
+        placements: 2.9,
+        hostel: 3.0,
+        campusLife: 3.1
+      },
+      experience: [
+        { year: 1, title: "VIT Start", description: "Building engineering foundations in the Mahabubnagar campus." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with laboratory sessions." },
+        { year: 3, title: "Skill Building", description: "Technical training and career readiness programs." },
+        { year: 4, title: "Career Start", description: "Final projects and exploring placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3812.0!2d78.0050!3d16.7450!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc9c0000000000%3A0xcc33445566778899!2sVector%20Institute!5e0!3m2!1sen!2sin!4v1714615200000!5m2!1sen!2sin",
+      coordinates: { lat: 16.7450, lng: 78.0050 },
+      connectivity: {
+        bus: { name: "Mahabubnagar Bus Stand", dist: "3.0 KM" },
+        railway: { name: "Mahabubnagar Railway Station", dist: "4.0 KM" }
+      }
+    },
+    {
+      id: "259",
+      name: "Whitefield Engineering College (WEC)",
+      location: "Ranga Reddy, Hyderabad",
+      rating: 3.3,
+      description: "Whitefield Engineering College (WEC), located in Ranga Reddy District near Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. WEC features classrooms with teaching aids, departmental laboratories, a central library, hostel facilities, sports grounds, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.5 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Grounds",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.3,
+        placements: 3.0,
+        hostel: 3.1,
+        campusLife: 3.2
+      },
+      experience: [
+        { year: 1, title: "WEC Start", description: "Building engineering foundations near Hyderabad." },
+        { year: 2, title: "Core Subjects", description: "Departmental specialization with laboratory sessions." },
+        { year: 3, title: "Career Prep", description: "Technical training and soft skills development." },
+        { year: 4, title: "Campus Drives", description: "Final projects and placement opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3809.0!2d78.3650!3d17.3050!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba1700000000%3A0xdd44556677889900!2sWhitefield%20Engineering!5e0!3m2!1sen!2sin!4v1714615300000!5m2!1sen!2sin",
+      coordinates: { lat: 17.3050, lng: 78.3650 },
+      connectivity: {
+        bus: { name: "Nearest Bus Stop", dist: "2.0 KM" },
+        railway: { name: "Lingampally Railway Station", dist: "13.0 KM" }
+      }
+    },
+    {
+      id: "260",
+      name: "Young Minds Institute of Engineering (YMIE)",
+      location: "Hyderabad, Telangana",
+      rating: 3.4,
+      description: "Young Minds Institute of Engineering (YMIE), located in Hyderabad, Telangana, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics, Mechanical, and Civil Engineering. YMIE features classrooms with modern teaching aids, departmental laboratories, a central library, Wi-Fi campus, hostel facilities, sports facilities, and a training and placement cell.",
+      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      placements: {
+        avgPackage: "2.8 LPA",
+        topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "HCL", "Tech Mahindra"]
+      },
+      facilities: [
+        "Classrooms with Modern Teaching Aids",
+        "Departmental Laboratories",
+        "Central Library",
+        "Campus Wi-Fi",
+        "Hostel Facilities",
+        "Cafeteria",
+        "Sports Facilities",
+        "Transportation Service",
+        "Training & Placement Cell"
+      ],
+      ratingsBreakdown: {
+        faculty: 3.4,
+        placements: 3.1,
+        hostel: 3.2,
+        campusLife: 3.3
+      },
+      experience: [
+        { year: 1, title: "YMIE Start", description: "Joining the campus and building engineering fundamentals." },
+        { year: 2, title: "Core Engineering", description: "Departmental subjects with practical lab sessions." },
+        { year: 3, title: "Career Training", description: "Technical workshops and placement preparation." },
+        { year: 4, title: "Campus Drives", description: "Final projects and campus recruitment opportunities." }
+      ],
+      mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.0!2d78.5250!3d17.4050!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9ef555555555%3A0xee55667788990011!2sYoung%20Minds%20Institute!5e0!3m2!1sen!2sin!4v1714615400000!5m2!1sen!2sin",
+      coordinates: { lat: 17.4050, lng: 78.5250 },
+      connectivity: {
+        metro: { name: "Nearest Metro Station", dist: "3.5 KM" },
+        bus: { name: "Nearest Bus Stop", dist: "1.0 KM" },
+        railway: { name: "Secunderabad Railway Station", dist: "7.0 KM" }
       }
     },
   ];
