@@ -34,6 +34,7 @@ export function Predictor() {
   const [category, setCategory] = useState(() => getInitialState('category', ''));
   const [gender, setGender] = useState(() => getInitialState('gender', ''));
   const [selectedBranches, setSelectedBranches] = useState(() => getInitialState('selectedBranches', []));
+  const [showAllBranches, setShowAllBranches] = useState(() => getInitialState('showAllBranches', false));
   const [results, setResults] = useState(() => getInitialState('results', null));
   const [loading, setLoading] = useState(false);
 
@@ -45,8 +46,9 @@ export function Predictor() {
     sessionStorage.setItem('predictor_category', JSON.stringify(category));
     sessionStorage.setItem('predictor_gender', JSON.stringify(gender));
     sessionStorage.setItem('predictor_selectedBranches', JSON.stringify(selectedBranches));
+    sessionStorage.setItem('predictor_showAllBranches', JSON.stringify(showAllBranches));
     sessionStorage.setItem('predictor_results', JSON.stringify(results));
-  }, [currentStep, selectedExam, rank, category, gender, selectedBranches, results]);
+  }, [currentStep, selectedExam, rank, category, gender, selectedBranches, showAllBranches, results]);
 
   // Clear results if user changes critical info (only if we are NOT on the results view)
   // We use a ref to prevent clearing results on initial load when inputs are restored
@@ -61,7 +63,7 @@ export function Predictor() {
     if (currentStep < 4) {
       setResults(null);
     }
-  }, [rank, category, gender, selectedBranches]);
+  }, [rank, category, gender, selectedBranches, showAllBranches]);
 
   const handleSelectExam = (exam) => setSelectedExam(exam);
   const goNext = () => setCurrentStep((step) => Math.min(4, step + 1));
@@ -69,7 +71,7 @@ export function Predictor() {
   const canContinueStep1 = selectedExam === EXAM_CARD.name;
   const canContinueStep2 = rank.trim().length > 0;
   const canContinueStep3 = category.length > 0 && gender.length > 0;
-  const canPredict = selectedBranches.length > 0;
+  const canPredict = showAllBranches || selectedBranches.length > 0;
 
   const handlePredict = (e) => {
     e.preventDefault();
@@ -84,8 +86,8 @@ export function Predictor() {
         gender
       );
 
-      // Filter by selected branches if any
-      if (selectedBranches.length > 0) {
+      // Filter by selected branches if not showing all
+      if (!showAllBranches && selectedBranches.length > 0) {
         predicted = predicted.filter(item => selectedBranches.includes(item.branch));
       }
 
@@ -264,15 +266,49 @@ export function Predictor() {
               {currentStep === 4 && (
                 <div>
                   <label className="block text-sm font-bold text-text-main mb-2 ml-1">Preferred Branches</label>
-                  <MultiSelect
-                    options={BRANCH_OPTIONS}
-                    value={selectedBranches}
-                    onChange={setSelectedBranches}
-                    placeholder="Search and select branches..."
-                    className="rounded-2xl border-border-subtle/70 h-14 text-base"
-                  />
+                  
+                  {/* All Branches Toggle */}
+                  <div
+                    onClick={() => {
+                      setShowAllBranches(!showAllBranches);
+                      if (!showAllBranches) setSelectedBranches([]);
+                    }}
+                    className={
+                      'cursor-pointer rounded-2xl border p-4 mb-4 transition flex items-center justify-between ' +
+                      (showAllBranches
+                        ? 'border-primary-start bg-primary-start/10 shadow-sm'
+                        : 'border-border-subtle hover:border-primary-start/50 hover:bg-white/50')
+                    }
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className={
+                        'h-5 w-5 rounded-md border-2 flex items-center justify-center transition ' +
+                        (showAllBranches
+                          ? 'border-primary-start bg-primary-start'
+                          : 'border-border-subtle')
+                      }>
+                        {showAllBranches && <Check className="h-3 w-3 text-white" />}
+                      </div>
+                      <span className={'text-sm font-semibold ' + (showAllBranches ? 'text-primary-start' : 'text-text-main')}>
+                        All Branches
+                      </span>
+                    </div>
+                    <span className="text-xs text-text-muted">{BRANCH_OPTIONS.length} branches</span>
+                  </div>
+
+                  {!showAllBranches && (
+                    <MultiSelect
+                      options={BRANCH_OPTIONS}
+                      value={selectedBranches}
+                      onChange={setSelectedBranches}
+                      placeholder="Search and select branches..."
+                      className="rounded-2xl border-border-subtle/70 h-14 text-base"
+                    />
+                  )}
                   <p className="mt-4 text-sm text-text-muted leading-relaxed">
-                    Select the branches you are interested in. We will filter the predictions to show only these options.
+                    {showAllBranches
+                      ? 'Showing predictions for all available branches.'
+                      : 'Select the branches you are interested in. We will filter the predictions to show only these options.'}
                   </p>
                 </div>
               )}
