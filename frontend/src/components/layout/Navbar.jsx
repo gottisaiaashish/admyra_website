@@ -39,6 +39,7 @@ export function Navbar() {
     { name: 'Home', path: '/' },
     { name: 'Colleges', path: '/colleges' },
     { name: 'Predictor', path: '/predictor' },
+    { name: 'Marks vs Rank', path: '/marks-predictor' },
     { name: 'AI Mentor', path: '/aimentor' },
   ];
 
