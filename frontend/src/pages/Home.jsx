@@ -115,6 +115,9 @@ export function Home() {
               <ShinyButton className="px-8 py-3" onClick={() => navigate("/predictor") }>
                 predict my college
               </ShinyButton>
+              <ShinyButton className="px-8 py-3 bg-indigo-500/10 border-indigo-500/20 text-indigo-300" onClick={() => navigate("/marks-predictor") }>
+                Rank Estimator
+              </ShinyButton>
               <ShinyButton className="px-4 py-3" onClick={() => navigate("/colleges") }>
                 Explore Colleges
               </ShinyButton>

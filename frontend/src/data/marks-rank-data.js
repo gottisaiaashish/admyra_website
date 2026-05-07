@@ -44,12 +44,21 @@ export function predictRankFromMarks(marks, stream) {
 
   // Predicted (average of both years)
   if (results.length === 2) {
-    const avgLow = Math.round((results[0].rankLow + results[1].rankLow) / 2);
-    const avgHigh = Math.round((results[0].rankHigh + results[1].rankHigh) / 2);
+    let avgLow = Math.round((results[0].rankLow + results[1].rankLow) / 2);
+    let avgHigh = Math.round((results[0].rankHigh + results[1].rankHigh) / 2);
+
+    // Rounding to 'round figures' to look like an estimate
+    const roundToFigure = (val) => {
+      if (val <= 1) return 1;
+      if (val < 5000) return Math.round(val / 100) * 100;
+      if (val < 20000) return Math.round(val / 500) * 500;
+      return Math.round(val / 1000) * 1000;
+    };
+
     results.push({
       year: 2026,
-      rankLow: avgLow,
-      rankHigh: avgHigh,
+      rankLow: roundToFigure(avgLow),
+      rankHigh: roundToFigure(avgHigh),
       marksRange: results[0].marksRange,
       isPredicted: true,
     });
