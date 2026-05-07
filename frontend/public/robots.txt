@@ -1,13 +1,289 @@
+# =============================================
+# Admyra.in - robots.txt
+# Last Updated: 2026-05-07
+# Website: https://admyra.in
+# =============================================
+
+# ===================
+# Default Rules (All Crawlers)
+# ===================
 User-agent: *
 Allow: /
-Sitemap: https://admyra.in/sitemap.xml
+Allow: /colleges/
+Allow: /predictor
+Allow: /aimentor
+Allow: /colleges
 
-# AI Crawlers Optimization
+# Block private/auth pages from indexing
+Disallow: /login
+Disallow: /signup
+Disallow: /forgot-password
+Disallow: /edit-profile
+Disallow: /profile
+Disallow: /profile/
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /assets/
+Disallow: /node_modules/
+Disallow: /.env
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
+
+# ===================
+# Google Search Bot
+# ===================
+User-agent: Googlebot
+Allow: /
+Allow: /colleges/
+Allow: /predictor
+Allow: /aimentor
+Allow: /sitemap.xml
+Disallow: /login
+Disallow: /signup
+Disallow: /forgot-password
+Disallow: /edit-profile
+Disallow: /profile
+Disallow: /api/
+
+User-agent: Googlebot-Image
+Allow: /
+Disallow: /api/
+
+User-agent: Googlebot-Video
+Allow: /
+
+# ===================
+# Bing / MSN Bot
+# ===================
+User-agent: Bingbot
+Allow: /
+Allow: /colleges/
+Allow: /predictor
+Allow: /aimentor
+Disallow: /login
+Disallow: /signup
+Disallow: /forgot-password
+Disallow: /edit-profile
+Disallow: /profile
+Disallow: /api/
+Crawl-delay: 1
+
+User-agent: msnbot
+Allow: /
+Disallow: /login
+Disallow: /signup
+Disallow: /api/
+
+# ===================
+# Yahoo Slurp
+# ===================
+User-agent: Slurp
+Allow: /
+Allow: /colleges/
+Disallow: /login
+Disallow: /signup
+Disallow: /forgot-password
+Disallow: /edit-profile
+Disallow: /profile
+Disallow: /api/
+Crawl-delay: 1
+
+# ===================
+# Yandex Bot
+# ===================
+User-agent: YandexBot
+Allow: /
+Allow: /colleges/
+Disallow: /login
+Disallow: /signup
+Disallow: /forgot-password
+Disallow: /edit-profile
+Disallow: /profile
+Disallow: /api/
+Crawl-delay: 2
+
+# ===================
+# Baidu Spider
+# ===================
+User-agent: Baiduspider
+Allow: /
+Allow: /colleges/
+Disallow: /login
+Disallow: /signup
+Disallow: /forgot-password
+Disallow: /edit-profile
+Disallow: /profile
+Disallow: /api/
+Crawl-delay: 2
+
+# ===================
+# DuckDuckGo Bot
+# ===================
+User-agent: DuckDuckBot
+Allow: /
+Allow: /colleges/
+Disallow: /login
+Disallow: /signup
+Disallow: /forgot-password
+Disallow: /edit-profile
+Disallow: /profile
+Disallow: /api/
+
+# ===================
+# Apple Bot (Siri, Spotlight)
+# ===================
+User-agent: Applebot
+Allow: /
+Allow: /colleges/
+Disallow: /login
+Disallow: /signup
+Disallow: /forgot-password
+Disallow: /edit-profile
+Disallow: /profile
+Disallow: /api/
+
+# ===================
+# Facebook / Meta Crawler
+# ===================
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Facebot
+Allow: /
+
+# ===================
+# Twitter Bot
+# ===================
+User-agent: Twitterbot
+Allow: /
+
+# ===================
+# LinkedIn Bot
+# ===================
+User-agent: LinkedInBot
+Allow: /
+
+# ===================
+# Pinterest Bot
+# ===================
+User-agent: Pinterest
+Allow: /
+
+# ===================
+# AI Crawlers - Allow for AI visibility
+# ===================
 User-agent: GPTBot
 Allow: /
+Allow: /colleges/
+Allow: /predictor
+Allow: /aimentor
+Disallow: /login
+Disallow: /signup
+Disallow: /profile
+Disallow: /api/
 
 User-agent: ChatGPT-User
 Allow: /
+Allow: /colleges/
+Allow: /predictor
+Disallow: /login
+Disallow: /signup
+Disallow: /profile
+Disallow: /api/
 
 User-agent: Google-Extended
 Allow: /
+Allow: /colleges/
+Allow: /predictor
+Disallow: /login
+Disallow: /signup
+Disallow: /profile
+Disallow: /api/
+
+User-agent: anthropic-ai
+Allow: /
+Allow: /colleges/
+Disallow: /login
+Disallow: /signup
+Disallow: /profile
+Disallow: /api/
+
+User-agent: Claude-Web
+Allow: /
+Allow: /colleges/
+Disallow: /login
+Disallow: /signup
+Disallow: /profile
+Disallow: /api/
+
+User-agent: PerplexityBot
+Allow: /
+Allow: /colleges/
+Disallow: /login
+Disallow: /signup
+Disallow: /profile
+Disallow: /api/
+
+User-agent: Bytespider
+Allow: /
+Allow: /colleges/
+Disallow: /login
+Disallow: /signup
+Disallow: /profile
+Disallow: /api/
+
+User-agent: CCBot
+Allow: /
+Allow: /colleges/
+Disallow: /login
+Disallow: /signup
+Disallow: /profile
+Disallow: /api/
+
+# ===================
+# Block Bad Bots & Scrapers
+# ===================
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: MegaIndex.ru
+Disallow: /
+
+User-agent: Sogou
+Disallow: /
+
+User-agent: ia_archiver
+Disallow: /
+
+User-agent: Zoominfobot
+Disallow: /
+
+# ===================
+# Sitemaps
+# ===================
+Sitemap: https://admyra.in/sitemap.xml
+Sitemap: https://www.admyra.in/sitemap.xml
+
+# ===================
+# Host Directive
+# ===================
+Host: https://admyra.in
