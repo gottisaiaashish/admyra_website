@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { BarChart3, TrendingUp, ArrowRight, Info, ChevronDown, AlertTriangle } from 'lucide-react';
+import { BarChart3, TrendingUp, ArrowRight, Info, Sparkles, ChevronDown, AlertTriangle } from 'lucide-react';
 import { Card, Button, Badge } from '../components/ui';
 import { predictRankFromMarks, marksRankData } from '../data/marks-rank-data';
 import SEO from '../components/SEO';
@@ -48,19 +48,24 @@ export function MarksPredictor() {
       />
 
       {/* Hero Section */}
-      <section className="relative pt-28 sm:pt-32 pb-10 sm:pb-16 overflow-hidden">
+      <section className="relative pt-32 pb-16 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-indigo-600/8 via-transparent to-transparent pointer-events-none" />
         <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-indigo-600/5 rounded-full blur-[120px] pointer-events-none" />
 
         <div className="relative max-w-3xl mx-auto px-4 text-center">
-          <h1 className="text-2xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white mb-4 sm:mb-6 leading-tight">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-500/10 border border-indigo-500/20 mb-6">
+            <Sparkles className="h-4 w-4 text-indigo-400" />
+            <span className="text-xs font-semibold tracking-wider uppercase text-indigo-400">Based on Official EAPCET Data</span>
+          </div>
+
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
             Marks to Rank
             <span className="block bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
               Predictor
             </span>
           </h1>
 
-          <p className="text-sm sm:text-lg text-white/50 max-w-xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg text-white/50 max-w-xl mx-auto leading-relaxed">
             Enter your normalized marks (out of 160) and instantly see your predicted EAPCET rank range based on official 2024 & 2025 data.
           </p>
         </div>
@@ -69,39 +74,39 @@ export function MarksPredictor() {
       {/* Input Section */}
       <section className="max-w-2xl mx-auto px-4 mb-12">
         <form onSubmit={handlePredict}>
-          <div className="p-5 sm:p-10 rounded-2xl sm:rounded-3xl bg-white/[0.03] backdrop-blur-sm border border-white/10 shadow-2xl shadow-black/20">
+          <div className="p-8 sm:p-10 rounded-3xl bg-white/[0.03] backdrop-blur-sm border border-white/10 shadow-2xl shadow-black/20">
             {/* Stream Selector */}
-            <div className="mb-6 sm:mb-8">
-              <label className="block text-xs sm:text-sm font-bold text-white/70 mb-2 sm:mb-3 tracking-wide uppercase">Stream</label>
-              <div className="grid grid-cols-2 gap-2 sm:gap-3">
+            <div className="mb-8">
+              <label className="block text-sm font-bold text-white/70 mb-3 tracking-wide uppercase">Stream</label>
+              <div className="grid grid-cols-2 gap-3">
                 <button
                   type="button"
                   onClick={() => setStream('engineering')}
-                  className={`px-3 sm:px-4 py-3 sm:py-4 rounded-xl sm:rounded-2xl text-xs sm:text-sm font-bold transition-all duration-300 border ${
+                  className={`px-4 py-4 rounded-2xl text-sm font-bold transition-all duration-300 border ${
                     stream === 'engineering'
                       ? 'bg-indigo-500/15 border-indigo-500/50 text-indigo-300 shadow-lg shadow-indigo-500/10'
                       : 'bg-white/[0.02] border-white/10 text-white/40 hover:border-white/20 hover:text-white/60'
                   }`}
                 >
-                  Engineering (E)
+                  🎓 Engineering (E)
                 </button>
                 <button
                   type="button"
                   onClick={() => setStream('agriculture')}
-                  className={`px-3 sm:px-4 py-3 sm:py-4 rounded-xl sm:rounded-2xl text-xs sm:text-sm font-bold transition-all duration-300 border ${
+                  className={`px-4 py-4 rounded-2xl text-sm font-bold transition-all duration-300 border ${
                     stream === 'agriculture'
                       ? 'bg-emerald-500/15 border-emerald-500/50 text-emerald-300 shadow-lg shadow-emerald-500/10'
                       : 'bg-white/[0.02] border-white/10 text-white/40 hover:border-white/20 hover:text-white/60'
                   }`}
                 >
-                  Agri & Pharmacy
+                  🌿 Agriculture & Pharmacy
                 </button>
               </div>
             </div>
 
             {/* Marks Input */}
-            <div className="mb-6 sm:mb-8">
-              <label className="block text-xs sm:text-sm font-bold text-white/70 mb-2 sm:mb-3 tracking-wide uppercase">
+            <div className="mb-8">
+              <label className="block text-sm font-bold text-white/70 mb-3 tracking-wide uppercase">
                 Normalized Marks <span className="text-white/30 font-normal normal-case">(out of 160)</span>
               </label>
               <div className="relative">
@@ -114,9 +119,9 @@ export function MarksPredictor() {
                   max="160"
                   step="0.01"
                   required
-                  className="w-full h-14 sm:h-16 px-4 sm:px-6 text-base sm:text-lg font-semibold rounded-xl sm:rounded-2xl bg-white/[0.04] border border-white/10 text-white placeholder-white/20 outline-none focus:border-indigo-500/50 focus:ring-2 focus:ring-indigo-500/20 transition-all"
+                  className="w-full h-16 px-6 text-lg font-semibold rounded-2xl bg-white/[0.04] border border-white/10 text-white placeholder-white/20 outline-none focus:border-indigo-500/50 focus:ring-2 focus:ring-indigo-500/20 transition-all"
                 />
-                <span className="absolute right-4 sm:right-5 top-1/2 -translate-y-1/2 text-xs sm:text-sm text-white/20 font-medium">/160</span>
+                <span className="absolute right-5 top-1/2 -translate-y-1/2 text-sm text-white/20 font-medium">/160</span>
               </div>
               {marks && (parseFloat(marks) < 0 || parseFloat(marks) > 160) && (
                 <p className="mt-2 text-xs text-red-400 flex items-center gap-1">
@@ -129,7 +134,7 @@ export function MarksPredictor() {
             <button
               type="submit"
               disabled={!marks || parseFloat(marks) < 0 || parseFloat(marks) > 160 || animating}
-              className="w-full h-12 sm:h-14 rounded-xl sm:rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-bold text-sm sm:text-base tracking-wide hover:from-indigo-500 hover:to-purple-500 transition-all duration-300 disabled:opacity-30 disabled:cursor-not-allowed shadow-lg shadow-indigo-500/20 hover:shadow-xl hover:shadow-indigo-500/30 active:scale-[0.98]"
+              className="w-full h-14 rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-bold text-base tracking-wide hover:from-indigo-500 hover:to-purple-500 transition-all duration-300 disabled:opacity-30 disabled:cursor-not-allowed shadow-lg shadow-indigo-500/20 hover:shadow-xl hover:shadow-indigo-500/30 active:scale-[0.98]"
             >
               {animating ? (
                 <span className="flex items-center justify-center gap-3">
@@ -152,27 +157,29 @@ export function MarksPredictor() {
         <section className="max-w-2xl mx-auto px-4 mb-16 space-y-6">
           {/* Predicted 2026 Result (Hero Card) */}
           {results.filter(r => r.isPredicted).map(r => (
-            <div key="predicted" className="relative p-6 sm:p-10 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-indigo-600/10 via-purple-600/5 to-transparent border border-indigo-500/30 shadow-2xl shadow-indigo-500/10 overflow-hidden">
+            <div key="predicted" className="relative p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-indigo-600/10 via-purple-600/5 to-transparent border border-indigo-500/30 shadow-2xl shadow-indigo-500/10 overflow-hidden">
               <div className="absolute top-0 right-0 w-40 h-40 bg-indigo-500/10 rounded-full blur-[60px] pointer-events-none" />
               <div className="relative">
-                <div className="mb-1 sm:mb-2">
-                  <span className="text-[10px] sm:text-xs font-bold tracking-widest uppercase text-indigo-400">Predicted for 2026</span>
+                <div className="mb-2">
+                  <span className="text-xs font-bold tracking-widest uppercase text-indigo-400">Predicted for 2026</span>
                 </div>
-                <p className="text-white/40 text-xs sm:text-sm mb-4 sm:mb-6">Based on averaging 2024 & 2025 rank bands</p>
+                <p className="text-white/40 text-sm mb-6">Based on averaging 2024 & 2025 rank bands</p>
 
-                <div>
-                  <p className="text-xs sm:text-sm text-white/40 mb-1">Your Predicted Rank Range</p>
-                  <p className="text-2xl sm:text-5xl font-extrabold text-white tracking-tight whitespace-nowrap">
-                    {formatRank(r.rankLow)} <span className="text-white/30 text-lg sm:text-2xl">—</span> {formatRank(r.rankHigh)}
-                  </p>
+                <div className="flex flex-col sm:flex-row items-start sm:items-end gap-4 sm:gap-8">
+                  <div>
+                    <p className="text-sm text-white/40 mb-1">Your Predicted Rank Range</p>
+                    <p className="text-4xl sm:text-5xl font-extrabold text-white tracking-tight">
+                      {formatRank(r.rankLow)} <span className="text-white/30 text-2xl">—</span> {formatRank(r.rankHigh)}
+                    </p>
+                  </div>
                 </div>
 
-                <div className="mt-5 sm:mt-8">
+                <div className="mt-8">
                   <Button
                     onClick={() => navigate('/predictor')}
-                    className="bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 hover:bg-indigo-500/20 rounded-xl px-4 sm:px-6 py-2.5 sm:py-3 text-xs sm:text-sm font-bold whitespace-nowrap"
+                    className="bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 hover:bg-indigo-500/20 rounded-xl px-6 py-3 text-sm font-bold"
                   >
-                    Find Colleges for This Rank <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4 ml-1.5 sm:ml-2 inline" />
+                    Find Colleges for This Rank <ArrowRight className="h-4 w-4 ml-2 inline" />
                   </Button>
                 </div>
               </div>
@@ -182,16 +189,16 @@ export function MarksPredictor() {
           {/* Historical Cards */}
           <div className="grid sm:grid-cols-2 gap-4">
             {results.filter(r => !r.isPredicted).sort((a, b) => b.year - a.year).map(r => (
-              <div key={r.year} className="p-4 sm:p-8 rounded-xl sm:rounded-2xl bg-white/[0.03] border border-white/8 hover:border-white/15 transition-all duration-300">
-                <div className="flex items-center gap-2 mb-2 sm:mb-4">
-                  <BarChart3 className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-white/30" />
-                  <span className="text-[10px] sm:text-xs font-bold tracking-widest uppercase text-white/40">EAPCET {r.year}</span>
+              <div key={r.year} className="p-6 sm:p-8 rounded-2xl bg-white/[0.03] border border-white/8 hover:border-white/15 transition-all duration-300">
+                <div className="flex items-center gap-2 mb-4">
+                  <BarChart3 className="h-4 w-4 text-white/30" />
+                  <span className="text-xs font-bold tracking-widest uppercase text-white/40">EAPCET {r.year}</span>
                 </div>
-                <p className="text-xs sm:text-sm text-white/30 mb-1 sm:mb-2">Rank Range</p>
-                <p className="text-lg sm:text-2xl font-bold text-white tracking-tight whitespace-nowrap">
+                <p className="text-sm text-white/30 mb-2">Rank Range</p>
+                <p className="text-2xl font-bold text-white tracking-tight">
                   {formatRank(r.rankLow)} — {formatRank(r.rankHigh)}
                 </p>
-                <p className="mt-2 sm:mt-3 text-[10px] sm:text-xs text-white/20">For {r.marksRange} marks</p>
+                <p className="mt-3 text-xs text-white/20">For {r.marksRange} marks</p>
               </div>
             ))}
           </div>
