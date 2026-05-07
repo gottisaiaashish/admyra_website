@@ -1,0 +1,115 @@
+.lever-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+
+.toggle-container {
+  --knob-size: 32px;
+  --handle-width: 10px;
+  --handle-height: 55px;
+  --base-width: 65px;
+  --base-height: 35px;
+  position: relative;
+  width: var(--base-width);
+  height: var(--base-height);
+}
+
+.toggle-input {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.toggle-handle-wrapper {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: var(--knob-size);
+  height: var(--handle-height);
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  transform-origin: bottom center;
+}
+
+.toggle-handle {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.toggle-handle-knob {
+  width: var(--knob-size);
+  height: var(--knob-size);
+  background: linear-gradient(145deg, #10b981, #059669);
+  border-radius: 50%;
+  box-shadow: 
+    0 4px 10px rgba(16, 185, 129, 0.4),
+    inset 0 2px 4px rgba(255, 255, 255, 0.2);
+  z-index: 2;
+}
+
+.toggle-handle-bar-wrapper {
+  position: relative;
+  width: var(--handle-width);
+  height: calc(var(--handle-height) - var(--knob-size) / 2);
+  margin-top: calc(var(--knob-size) / -2);
+  background: #1e293b;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.toggle-handle-bar {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #334155, #0f172a);
+}
+
+.toggle-base {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #1e293b;
+  border-radius: 12px;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.5), 0 1px 2px rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+
+.toggle-base-inside {
+  width: 100%;
+  height: 100%;
+  background: #0f172a;
+  border-radius: 8px;
+}
+
+/* Toggle Logic */
+.toggle-input:checked + .toggle-handle-wrapper {
+  transform: translateX(-50%) rotateX(-120deg) translateY(-5px);
+}
+
+.toggle-input:checked ~ .toggle-base .toggle-base-inside {
+  background: #10b98120;
+  box-shadow: inset 0 0 15px rgba(16, 185, 129, 0.3);
+}
+
+/* Animations */
+@keyframes pulse-emerald {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
+
+.animate-pulse {
+  animation: pulse-emerald 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

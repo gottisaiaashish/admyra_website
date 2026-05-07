@@ -75,3 +75,16 @@
 .floating-navbar button:not(.bg-gradient-to-r) {
   color: #ffffff !important;
 }
+
+@keyframes diamond-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-diamond-rotate {
+  animation: diamond-rotate 10s linear infinite;
+}
