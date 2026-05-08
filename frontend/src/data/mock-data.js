@@ -12587,6 +12587,7 @@ export const predictorMockLogic = (exam, rank, category, gender) => {
   // Create maps for quick lookup
   const ratingsMap = colleges.reduce((acc, c) => ({ ...acc, [c.id]: c.rating }), {});
   const namesMap = colleges.reduce((acc, c) => ({ ...acc, [c.id]: c.name }), {});
+  const locationsMap = colleges.reduce((acc, c) => ({ ...acc, [c.id]: c.location }), {});
 
   const getChance = (rank, start, end) => {
     const mid = (start + end) / 2;
@@ -12612,6 +12613,7 @@ export const predictorMockLogic = (exam, rank, category, gender) => {
       results.push({
         collegeId,
         collegeName: namesMap[collegeId] || "Unknown College",
+        location: locationsMap[collegeId] || "Hyderabad, Telangana",
         branch,
         cutoff: r[1],
         chance,

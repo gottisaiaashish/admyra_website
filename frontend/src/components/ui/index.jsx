@@ -1,9 +1,10 @@
 import React from 'react';
 import { cn } from '../../lib/utils';
 import { Star, ChevronDown, X } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 export const Button = React.forwardRef(({ className, variant = 'primary', size = 'default', ...props }, ref) => {
-  const baseStyles = "inline-flex items-center justify-center rounded-xl font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-indigo disabled:opacity-50 disabled:pointer-events-none";
+  const baseStyles = "inline-flex items-center justify-center rounded-xl font-medium transition-colors focus:outline-none disabled:opacity-50 disabled:pointer-events-none";
   
   const variants = {
     primary: "bg-gradient-to-r from-primary-start to-primary-end text-white hover:opacity-90 shadow-lg shadow-primary-start/20",
@@ -30,7 +31,7 @@ Button.displayName = "Button";
 export const Card = React.forwardRef(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("rounded-2xl border border-border-subtle bg-card text-text-main shadow-sm overflow-hidden", className)}
+    className={cn("rounded-2xl border border-border-subtle bg-card text-text-main shadow-sm", className)}
     {...props}
   />
 ));
@@ -42,18 +43,18 @@ export const Badge = ({ className, variant = 'default', ...props }) => {
     success: "bg-green-500/20 text-green-600 dark:text-green-400 border border-green-500/30",
     warning: "bg-yellow-500/20 text-yellow-600 dark:text-yellow-400 border border-yellow-500/30",
     danger: "bg-red-500/20 text-red-600 dark:text-red-400 border border-red-500/30",
-    brand: "bg-accent-indigo/20 text-accent-indigo dark:text-indigo-300 border border-accent-indigo/30"
+    brand: "bg-primary-start/10 text-primary-start border border-primary-start/20"
   };
   return (
-    <div className={cn("inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-accent-indigo", variants[variant], className)} {...props} />
+    <div className={cn("inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-primary-start/40", variants[variant], className)} {...props} />
   );
 };
 
 export const Input = React.forwardRef(({ className, type, ...props }, ref) => (
-  <input
+    <input
     type={type}
     className={cn(
-      "flex h-12 w-full rounded-xl border border-border-subtle bg-background px-4 py-2 text-sm text-text-main ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-text-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-indigo focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 transition-all",
+      "flex h-12 w-full rounded-xl border border-border-subtle bg-background px-4 py-2 text-sm text-text-main file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-text-muted focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 transition-all",
       className
     )}
     ref={ref}
@@ -62,23 +63,76 @@ export const Input = React.forwardRef(({ className, type, ...props }, ref) => (
 ));
 Input.displayName = "Input";
 
-export const Select = React.forwardRef(({ className, children, ...props }, ref) => (
-  <div className="relative w-full">
-    <select
-      className={cn(
-        "flex h-12 w-full items-center justify-between rounded-xl border border-border-subtle bg-background px-4 py-2 text-sm text-text-main ring-offset-background placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-accent-indigo focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 transition-all appearance-none",
-        className
+export const Select = React.forwardRef(({ options = [], value, onChange, placeholder, className, ...props }, ref) => {
+  const [open, setOpen] = React.useState(false);
+  const containerRef = React.useRef(null);
+
+  const toggleOpen = () => setOpen((current) => !current);
+
+  const handleDocumentClick = (event) => {
+    if (containerRef.current && !containerRef.current.contains(event.target)) {
+      setOpen(false);
+    }
+  };
+
+  React.useEffect(() => {
+    document.addEventListener('mousedown', handleDocumentClick);
+    return () => document.removeEventListener('mousedown', handleDocumentClick);
+  }, []);
+
+  const handleOptionClick = (optionValue) => {
+    onChange?.({ target: { value: optionValue } });
+    setOpen(false);
+  };
+
+  const selectedOption = options.find(opt => opt.value === value) || options.find(opt => opt === value);
+  const displayLabel = selectedOption?.label || selectedOption || placeholder;
+
+  return (
+    <div ref={(node) => {
+      containerRef.current = node;
+      if (typeof ref === 'function') ref(node);
+      else if (ref) ref.current = node;
+    }} className={cn('relative w-full', className)} {...props}>
+      <button
+        type="button"
+        onClick={toggleOpen}
+        className={cn(
+          'flex h-12 w-full items-center justify-between gap-3 rounded-xl border border-border-subtle bg-background px-4 py-2 text-sm text-text-main transition-all focus:outline-none',
+          open ? 'border-primary-start/50 shadow-lg shadow-black/5' : ''
+        )}
+      >
+        <span className={!value ? 'text-text-muted' : ''}>{displayLabel}</span>
+        <ChevronDown className={cn('h-4 w-4 text-text-muted transition-transform', open && 'rotate-180')} />
+      </button>
+
+      {open && (
+        <div className="absolute z-30 mt-2 w-full overflow-hidden rounded-2xl border border-border-subtle bg-card shadow-xl shadow-black/10 animate-in fade-in zoom-in-95 duration-200">
+          <div className="max-h-60 overflow-y-auto py-1">
+            {options.map((option) => {
+              const optionValue = option.value || option;
+              const optionLabel = option.label || option;
+              const isSelected = value === optionValue;
+              return (
+                <button
+                  key={optionValue}
+                  type="button"
+                  onClick={() => handleOptionClick(optionValue)}
+                  className={cn(
+                    'flex w-full items-center px-4 py-2.5 text-left text-sm transition-colors',
+                    isSelected ? 'bg-primary-start/10 text-primary-start font-semibold' : 'hover:bg-border-subtle/50 text-text-main'
+                  )}
+                >
+                  {optionLabel}
+                </button>
+              );
+            })}
+          </div>
+        </div>
       )}
-      ref={ref}
-      {...props}
-    >
-      {children}
-    </select>
-    <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
-      <ChevronDown className="h-4 w-4 text-text-muted" />
     </div>
-  </div>
-));
+  );
+});
 Select.displayName = "Select";
 
 export const MultiSelect = React.forwardRef(({ options = [], value = [], onChange, placeholder, className, ...props }, ref) => {
@@ -121,7 +175,7 @@ export const MultiSelect = React.forwardRef(({ options = [], value = [], onChang
         type="button"
         onClick={toggleOpen}
         className={cn(
-          'flex min-h-[56px] w-full items-center justify-between gap-3 rounded-xl border border-border-subtle bg-background px-4 py-3 text-sm text-text-main transition-all focus:outline-none focus:ring-2 focus:ring-accent-indigo focus:ring-offset-2',
+          'flex min-h-[56px] w-full items-center justify-between gap-3 rounded-xl border border-border-subtle bg-background px-4 py-3 text-sm text-text-main transition-all focus:outline-none',
           open ? 'shadow-lg shadow-black/5' : ''
         )}
       >
@@ -195,3 +249,6 @@ export const RatingStars = ({ rating }) => {
 };
 
 export { ShinyButton } from './ShinyButton';
+export { GridPattern } from './grid-pattern';
+export { HandWrittenTitle } from './hand-writing-text';
+export { default as Stepper, Step } from './Stepper';

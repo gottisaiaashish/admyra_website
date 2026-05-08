@@ -1,14 +1,18 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { Target, AlertCircle, Check } from 'lucide-react';
-import { Button, Card, Input, Select, Badge, RatingStars, MultiSelect } from '../components/ui';
+import { useNavigate, useLocation } from 'react-router-dom';
+import { Target, AlertCircle, Check, Sparkles, Star } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Button, Card, Input, Select, Badge, RatingStars, MultiSelect, HandWrittenTitle, Stepper, Step } from '../components/ui';
 import { predictorMockLogic } from '../data/mock-data';
 import SEO from '../components/SEO';
+import { GridPattern } from '../components/ui/grid-pattern';
+import { cn } from '../lib/utils';
 
 const EXAM_CARD = {
+  id: 'TG EAPCET',
   name: 'TG EAPCET',
   title: 'Telangana Engineering Entrance',
-  tags: ['ENGINEERING', 'rank'],
+  tags: ['ENGINEERING'],
 };
 
 const BRANCH_OPTIONS = [
@@ -17,8 +21,17 @@ const BRANCH_OPTIONS = [
 
 export function Predictor() {
   const navigate = useNavigate();
-  
-  // Load initial state from sessionStorage if available
+  const location = useLocation();
+
+  // Handle incoming state from Rank Estimator
+  React.useEffect(() => {
+    if (location.state?.initialStep && location.state?.exam) {
+      setCurrentStep(location.state.initialStep);
+      setSelectedExam(location.state.exam);
+      // Clear the state to prevent it from re-triggering on manual refreshes
+      window.history.replaceState({}, document.title);
+    }
+  }, [location.state]);
   const getInitialState = (key, defaultValue) => {
     const saved = sessionStorage.getItem(`predictor_${key}`);
     try {
@@ -65,16 +78,23 @@ export function Predictor() {
     }
   }, [rank, category, gender, selectedBranches, showAllBranches]);
 
-  const handleSelectExam = (exam) => setSelectedExam(exam);
+  const handleSelectExam = (exam) => {
+    setSelectedExam(exam);
+    // Auto advance to next step for better UX
+    setTimeout(() => {
+      setCurrentStep(2);
+    }, 300);
+  };
+  
   const goNext = () => setCurrentStep((step) => Math.min(4, step + 1));
   const goBack = () => setCurrentStep((step) => Math.max(1, step - 1));
-  const canContinueStep1 = selectedExam === EXAM_CARD.name;
-  const canContinueStep2 = rank.trim().length > 0;
-  const canContinueStep3 = category.length > 0 && gender.length > 0;
+  const canContinueStep1 = selectedExam === EXAM_CARD.id || selectedExam === EXAM_CARD.name;
+  const canContinueStep2 = rank && rank.toString().trim().length > 0;
+  const canContinueStep3 = category && category.length > 0 && gender && gender.length > 0;
   const canPredict = showAllBranches || selectedBranches.length > 0;
 
   const handlePredict = (e) => {
-    e.preventDefault();
+    if (e && e.preventDefault) e.preventDefault();
     if (!selectedExam || !rank || !category || !gender) return;
 
     setLoading(true);
@@ -125,7 +145,19 @@ export function Predictor() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-30">
+    <div className="relative min-h-screen overflow-hidden">
+      <GridPattern
+        width={40}
+        height={40}
+        x={-1}
+        y={-1}
+        className={cn(
+          "[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)]",
+          "opacity-40"
+        )}
+      />
+      
+      <div className="max-w-7xl mx-auto px-4 pt-16 pb-32 relative z-10">
       <SEO 
         title="TG EAPCET & TS EAMCET College Predictor 2026 | Rank vs College"
         description="Rank #1 TS EAMCET & TG EAPCET college predictor. Get accurate college lists based on your rank, category, and gender. Better than CollegeDost & CollegeDekho."
@@ -133,86 +165,97 @@ export function Predictor() {
         schema={[predictorSchema]}
       />
       {/* Header Section */}
-      <div className="text-center max-w-3xl mx-auto mb-16 flex flex-col items-center">
-        <div className="h-20 w-20 bg-accent-cyan/10 rounded-3xl flex items-center justify-center mb-6 shadow-sm border border-accent-cyan/20">
-          <Target className="h-10 w-10 text-accent-cyan" />
-        </div>
-        <h1 className="text-4xl sm:text-5xl font-semibold sm:font-bold mb-6 tracking-tight text-text-main">Rank Predictor</h1>
-        <p className="text-base sm:text-xl text-text-muted font-medium leading-relaxed">
-          Enter your rank and category details to get an accurate prediction of colleges and branches you can secure.
-        </p>
+      <div className="pt-0 mb-12">
+        <HandWrittenTitle 
+          prefix="College"
+          title="Predictor" 
+          subtitle="Instantly find which engineering colleges you can secure based on your rank. Select an exam below to begin."
+        />
+        <motion.div 
+          animate={{ 
+            borderColor: ["rgba(244, 63, 94, 0.2)", "rgba(244, 63, 94, 0.4)", "rgba(244, 63, 94, 0.2)"],
+            backgroundColor: ["rgba(0,0,0,0.02)", "rgba(244, 63, 94, 0.03)", "rgba(0,0,0,0.02)"]
+          }}
+          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+          className="relative py-2 px-3 rounded-xl border border-border-subtle/50 overflow-hidden flex items-center gap-2.5 max-w-lg mx-auto text-left"
+        >
+          {/* Scanning Effect */}
+          <motion.div 
+            animate={{ left: ["-100%", "200%"] }}
+            transition={{ duration: 3.5, repeat: Infinity, ease: "linear" }}
+            className="absolute top-0 bottom-0 w-32 bg-gradient-to-r from-transparent via-rose-500/10 to-transparent skew-x-12"
+          />
+
+          <div className="relative z-10 h-6 w-6 rounded-full bg-rose-500/10 flex items-center justify-center flex-none">
+            <AlertCircle className="h-3 w-3 text-rose-500" />
+          </div>
+          <p className="relative z-10 text-[10px] text-text-muted leading-relaxed">
+            <span className="font-bold text-rose-500 mr-1 tracking-tight uppercase text-[9px]">Disclaimer:</span>
+            Calculated using previous years counseling data. Don't depend only on these predictions; research colleges thoroughly before making final decisions.
+          </p>
+        </motion.div>
       </div>
 
       <div className="grid lg:grid-cols-12 gap-10 items-start">
         {/* Form Card (Left) */}
         <div className="lg:col-span-4 h-max lg:sticky lg:top-24">
-          <Card className="p-6 sm:p-8 shadow-xl shadow-black/5 border-border-subtle/50 rounded-3xl">
-            <div className="mb-8">
-              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-                <div>
-                  <p className="text-sm uppercase tracking-[0.3em] text-text-muted">Step {currentStep} of 4</p>
-                  <h2 className="text-2xl font-bold mt-3">
-                    {currentStep === 1 ? 'Select Exam' : 
-                     currentStep === 2 ? 'Enter Exam Rank' : 
-                     currentStep === 3 ? 'Category & Gender' : 
-                     'Select Branches'}
-                  </h2>
-                </div>
-                <div className="hidden sm:flex items-center gap-2">
-                  {['1', '2', '3', '4'].map((step) => (
-                    <div
-                      key={step}
-                      className={
-                        'h-10 w-10 flex items-center justify-center rounded-full border text-sm font-semibold ' +
-                        (parseInt(step, 10) === currentStep
-                          ? 'border-primary-start bg-primary-start text-white'
-                          : 'border-border-subtle bg-background text-text-muted')
-                      }
-                    >
-                      {step}
-                    </div>
-                  ))}
-                </div>
-              </div>
+          <Card className="p-4 sm:p-5 shadow-2xl shadow-black/5 border-border-subtle rounded-3xl bg-card/70 backdrop-blur-md">
+            <div className="mb-4">
+              <h2 className="text-xl font-bold">
+                {currentStep === 1 ? 'Select Exam' : 
+                 currentStep === 2 ? 'Enter Exam Rank' : 
+                 currentStep === 3 ? 'Category & Gender' : 
+                 'Select Branches'}
+              </h2>
             </div>
 
-            <form onSubmit={handlePredict} className="space-y-6">
-              {currentStep === 1 && (
-                <div>
+            <Stepper
+              initialStep={currentStep}
+              onStepChange={(step) => setCurrentStep(step)}
+              onFinalStepCompleted={handlePredict}
+              nextButtonText="Continue"
+              backButtonText="Back"
+              nextButtonProps={{
+                disabled: currentStep === 1 ? !canContinueStep1 : 
+                          currentStep === 2 ? !canContinueStep2 : 
+                          currentStep === 3 ? !canContinueStep3 : 
+                          !canPredict || loading,
+                className: (currentStep === 1 ? !canContinueStep1 : 
+                            currentStep === 2 ? !canContinueStep2 : 
+                            currentStep === 3 ? !canContinueStep3 : 
+                            !canPredict || loading) ? 'opacity-50 cursor-not-allowed' : ''
+              }}
+            >
+              <Step>
+                <div className="space-y-4 pt-2">
                   <div
                     onClick={() => handleSelectExam(EXAM_CARD.name)}
                     className={
-                      'cursor-pointer rounded-3xl border p-4 sm:p-6 transition ' +
+                      'cursor-pointer rounded-2xl border p-3 sm:p-4 transition ' +
                       (selectedExam === EXAM_CARD.name
-                        ? 'border-primary-start bg-primary-start/10 shadow-sm'
-                        : 'border-border-subtle hover:border-primary-start hover:bg-white/70')
+                        ? 'border-primary-start bg-primary-start/5 shadow-sm'
+                        : 'border-border-subtle hover:border-primary-start/30 hover:bg-black/[0.01]')
                     }
                   >
-                    <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+                    <div className="flex flex-col gap-2">
                       <div>
-                        <p className="text-sm font-semibold text-text-muted">{EXAM_CARD.name}</p>
-                        <h3 className="mt-3 text-lg sm:text-xl font-semibold sm:font-bold text-text-main">{EXAM_CARD.title}</h3>
-                        <div className="mt-4 flex flex-wrap gap-2">
+                        <p className="text-[10px] font-bold text-text-muted uppercase tracking-wider">{EXAM_CARD.name}</p>
+                        <h3 className="mt-1 text-base font-bold text-text-main">{EXAM_CARD.title}</h3>
+                        <div className="mt-2 flex flex-wrap gap-1.5">
                           {EXAM_CARD.tags.map((tag) => (
-                            <Badge key={tag} variant="brand" className="rounded-full px-2.5 py-1 text-[10px] sm:text-xs uppercase tracking-[0.16em]">
+                            <Badge key={tag} variant="brand" className="rounded-full px-2 py-0.5 text-[9px] uppercase tracking-wider">
                               {tag}
                             </Badge>
                           ))}
                         </div>
                       </div>
-                      {selectedExam === EXAM_CARD.name && (
-                        <span className="inline-flex items-center gap-1 rounded-full bg-primary-start/10 px-2.5 py-1 text-[0.68rem] font-semibold text-primary-start">
-                          <Check className="h-3 w-3" />
-                          Selected
-                        </span>
-                      )}
                     </div>
                   </div>
                 </div>
-              )}
+              </Step>
 
-              {currentStep === 2 && (
-                <div>
+              <Step>
+                <div className="space-y-2 pt-2">
                   <label className="block text-sm font-bold text-text-main mb-2 ml-1">Exam Rank</label>
                   <Input
                     type="number"
@@ -224,28 +267,19 @@ export function Predictor() {
                     required
                   />
                 </div>
-              )}
+              </Step>
 
-               {currentStep === 3 && (
-                <>
+              <Step>
+                <div className="space-y-6 pt-2">
                   <div>
                     <label className="block text-sm font-bold text-text-main mb-2 ml-1">Category</label>
                     <Select
                       value={category}
                       onChange={(e) => setCategory(e.target.value)}
-                      className="rounded-2xl border-border-subtle/70 h-14 text-base"
-                    >
-                      <option value="">Select Category</option>
-                      <option value="OC">OC</option>
-                      <option value="EWS">EWS</option>
-                      <option value="BC-A">BC-A</option>
-                      <option value="BC-B">BC-B</option>
-                      <option value="BC-C">BC-C</option>
-                      <option value="BC-D">BC-D</option>
-                      <option value="BC-E">BC-E</option>
-                      <option value="SC">SC</option>
-                      <option value="ST">ST</option>
-                    </Select>
+                      placeholder="Select Category"
+                      options={["OC", "EWS", "BC-A", "BC-B", "BC-C", "BC-D", "BC-E", "SC", "ST"]}
+                      className="rounded-2xl border-border-subtle/70"
+                    />
                   </div>
 
                   <div>
@@ -253,18 +287,16 @@ export function Predictor() {
                     <Select
                       value={gender}
                       onChange={(e) => setGender(e.target.value)}
-                      className="rounded-2xl border-border-subtle/70 h-14 text-base"
-                    >
-                      <option value="">Select Gender</option>
-                      <option value="Male">Male</option>
-                      <option value="Female">Female</option>
-                    </Select>
+                      placeholder="Select Gender"
+                      options={["Male", "Female"]}
+                      className="rounded-2xl border-border-subtle/70"
+                    />
                   </div>
-                </>
-              )}
+                </div>
+              </Step>
 
-              {currentStep === 4 && (
-                <div>
+              <Step>
+                <div className="space-y-4 pt-2">
                   <label className="block text-sm font-bold text-text-main mb-2 ml-1">Preferred Branches</label>
                   
                   {/* All Branches Toggle */}
@@ -277,7 +309,7 @@ export function Predictor() {
                       'cursor-pointer rounded-2xl border p-4 mb-4 transition flex items-center justify-between ' +
                       (showAllBranches
                         ? 'border-primary-start bg-primary-start/10 shadow-sm'
-                        : 'border-border-subtle hover:border-primary-start/50 hover:bg-white/50')
+                        : 'border-border-subtle hover:border-primary-start/50 hover:bg-black/[0.02]')
                     }
                   >
                     <div className="flex items-center gap-3">
@@ -311,64 +343,21 @@ export function Predictor() {
                       : 'Select the branches you are interested in. We will filter the predictions to show only these options.'}
                   </p>
                 </div>
-              )}
-
-              <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 pt-4">
-                <div className="w-full sm:w-auto">
-                  {currentStep > 1 && (
-                    <Button
-                      type="button"
-                      variant="outline"
-                      className="w-full sm:w-auto"
-                      onClick={goBack}
-                    >
-                      Back
-                    </Button>
-                  )}
-                </div>
-
-                {currentStep < 4 ? (
-                  <Button
-                    type="button"
-                    className="w-full sm:w-auto"
-                    disabled={
-                      currentStep === 1 ? !canContinueStep1 : 
-                      currentStep === 2 ? !canContinueStep2 : 
-                      !canContinueStep3
-                    }
-                    onClick={goNext}
-                  >
-                    Continue
-                  </Button>
-                ) : (
-                  <Button
-                    type="submit"
-                    className="w-full sm:w-auto"
-                    disabled={!canPredict || loading}
-                  >
-                    {loading ? (
-                      <div className="flex items-center gap-2">
-                        <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                        Predicting...
-                      </div>
-                    ) : 'Predict'}
-                  </Button>
-                )}
-              </div>
-            </form>
+              </Step>
+            </Stepper>
           </Card>
         </div>
 
         {/* Results Section (Right) */}
         <div className="lg:col-span-8">
           {!results && !loading ? (
-            <Card className="py-32 px-8 border-dashed border-2 border-border-subtle/40 bg-card/30 rounded-[2.5rem] flex flex-col items-center justify-center text-center">
-              <div className="h-20 w-20 bg-border-subtle/10 rounded-full flex items-center justify-center mb-6">
-                <AlertCircle className="h-10 w-10 text-text-muted" />
+            <Card className="text-center py-12 bg-text-main/5 rounded-3xl border border-dashed border-text-main/20">
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-text-main/5 mb-4">
+                <AlertCircle className="w-6 h-6 text-text-muted" />
               </div>
-              <h3 className="text-2xl font-bold mb-3">No Predictions Yet</h3>
-              <p className="text-lg text-text-muted max-w-md">
-                Fill your details and click predict to see your options here.
+              <h3 className="text-lg font-bold text-text-main mb-2">No Matching Colleges Found</h3>
+              <p className="text-sm text-text-muted max-w-sm mx-auto px-6">
+                Currently, there are no colleges matching your rank and category. Try with a different category or wait for the next update.
               </p>
             </Card>
           ) : loading ? (
@@ -394,40 +383,57 @@ export function Predictor() {
             <div className="space-y-6">
               <div className="flex justify-between items-center mb-8">
                 <h2 className="text-3xl font-bold tracking-tight">Predicted Options</h2>
-                <Badge variant="brand" className="px-4 py-1.5 text-sm rounded-full">
-                  {results.length} Colleges Found
-                </Badge>
               </div>
               
               <div className="space-y-4">
                 {results.map((result) => (
-                  <Card key={`${result.collegeId}-${result.branch}`} className="p-7 md:p-8 hover:border-primary-start/40 transition-all hover:shadow-xl hover:shadow-primary-start/5 group rounded-3xl">
-                    <div className="flex flex-col md:flex-row md:items-center justify-between gap-8">
+                  <Card key={`${result.collegeId}-${result.branch}`} className="p-4 hover:border-text-main/20 transition-all hover:shadow-lg hover:shadow-black/5 group rounded-2xl">
+                    <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                       <div className="flex-1">
-                        <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-3">
-                          <h3 className="font-bold text-base md:text-2xl text-text-main group-hover:text-primary-start transition-colors leading-tight line-clamp-2">
-                            {result.collegeName}
-                          </h3>
-                          <Badge variant={getChanceColor(result.chance)} className="rounded-lg px-3 w-fit self-start">
+                        <div className="flex items-start justify-between gap-4 mb-1.5">
+                          <div className="flex-1">
+                            <h3 className="font-bold text-base text-text-main group-hover:text-primary-start transition-colors leading-snug">
+                              {result.collegeName}
+                            </h3>
+                            <p className="text-[11px] text-text-muted mt-0.5 font-medium">
+                              {result.location}
+                            </p>
+                          </div>
+                          <div className="flex items-center gap-1 px-2 py-0.5 bg-yellow-500/10 rounded-lg mt-1">
+                            <Star className="w-3 h-3 fill-yellow-400 text-yellow-500" />
+                            <span className="text-[10px] font-bold text-text-main">{result.rating}</span>
+                          </div>
+                        </div>
+                        <div className="flex items-center justify-between gap-3">
+                          <div className="w-fit bg-text-main/5 text-text-main border border-text-main/10 px-2.5 py-1 rounded-lg font-bold text-xs">
+                            {result.branch}
+                          </div>
+                          <Badge variant={getChanceColor(result.chance)} className="rounded-md px-2 py-0.5 text-[10px] whitespace-nowrap flex items-center gap-1">
+                            {result.chance === 'High' && (
+                              <motion.div
+                                animate={{ scale: [1, 1.2, 1] }}
+                                transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                              >
+                                <Check className="w-2.5 h-2.5 stroke-[3]" />
+                              </motion.div>
+                            )}
                             {result.chance} Chance
                           </Badge>
-                        </div>
-                        <p className="text-xl text-text-muted mb-4 font-bold">{result.branch}</p>
-                        <div className="flex items-center gap-6">
-                          <div className="flex items-center gap-2">
-                            <RatingStars rating={result.rating} />
-                            <span className="text-sm font-bold text-text-main">{result.rating}</span>
-                          </div>
                         </div>
                       </div>
                       
                       <Button 
                         variant="outline" 
-                        size="lg"
-                        className="rounded-2xl px-8 border-border-subtle/70 hover:border-primary-start hover:text-primary-start group-hover:bg-primary-start/5"
+                        size="sm"
+                        className="rounded-xl px-6 h-10 border-border-subtle/70 hover:border-text-main hover:text-text-main relative overflow-hidden"
                         onClick={() => navigate(`/colleges/${result.collegeId}`)}
                       >
-                        View Details
+                        <motion.div
+                          className="absolute inset-0 bg-gradient-to-r from-transparent via-black/5 to-transparent -translate-x-full"
+                          animate={{ x: ['100%', '-100%'] }}
+                          transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+                        />
+                        <span className="relative z-10">View Details</span>
                       </Button>
                     </div>
                   </Card>
@@ -435,16 +441,17 @@ export function Predictor() {
               </div>
             </div>
           ) : (
-            <Card className="p-16 text-center rounded-[2.5rem] bg-card/50 border-2 border-border-subtle/30">
-              <p className="text-2xl font-bold text-text-main mb-6 leading-relaxed">
+            <Card className="p-10 text-center rounded-[2.5rem] bg-card/50 border-2 border-border-subtle/30">
+              <p className="text-lg font-bold text-text-main mb-4 leading-relaxed">
                 Currently, there are no matching colleges available for your rank.
               </p>
-              <p className="text-lg text-text-muted">
+              <p className="text-sm text-text-muted">
                 Try checking alternate categories or explore private colleges.
               </p>
             </Card>
           )}
         </div>
+      </div>
       </div>
     </div>
   );

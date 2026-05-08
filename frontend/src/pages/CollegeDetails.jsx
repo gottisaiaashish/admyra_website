@@ -192,7 +192,7 @@ export function CollegeDetails() {
   };
 
   return (
-    <div className="min-h-screen bg-[#05060A] text-white selection:bg-indigo-500/30 font-sans overflow-x-hidden">
+    <div className="min-h-screen bg-background text-text-main selection:bg-indigo-500/30 font-sans overflow-x-hidden">
       <SEO 
         title={`${college.name} | Cutoff, Directions, Metro & Bus Stop 2026`}
         description={`Find the nearest metro station, bus stop, and directions to ${college.name} in ${college.location}. Check ${college.name} closing ranks, placements, and report student issues on Admyra.`}
@@ -216,11 +216,11 @@ export function CollegeDetails() {
 
              <div className="space-y-4 md:space-y-8 w-full px-4 flex flex-col items-center">
                 <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
-                  <div className="flex items-center gap-2 text-white/40 font-bold text-[10px] md:text-sm uppercase tracking-widest">
+                  <div className="flex items-center gap-2 text-text-main/40 font-bold text-[10px] md:text-sm uppercase tracking-widest">
                     <MapPin size={16} className="text-indigo-500/50" />
                     {college.location}
                   </div>
-                  <div className="h-4 w-px bg-white/10" />
+                  <div className="h-4 w-px bg-text-main/10" />
                   <div className="flex items-center gap-2 text-yellow-500/80 font-black text-[10px] md:text-sm uppercase tracking-widest">
                     <Star size={16} fill="currentColor" className="text-yellow-500/50" />
                     {college.rating} Rating
@@ -232,7 +232,7 @@ export function CollegeDetails() {
                   </div>
                 </div>
 
-               <h1 className="text-3xl md:text-6xl lg:text-7xl font-black tracking-tight leading-tight md:leading-[1.1] bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent italic break-words max-w-4xl">
+               <h1 className="text-3xl md:text-6xl lg:text-7xl font-black tracking-tight leading-tight md:leading-[1.1] bg-gradient-to-b from-text-main to-text-main/60 bg-clip-text text-transparent italic break-words max-w-4xl">
                  {college.name}
                </h1>
              </div>
@@ -241,7 +241,7 @@ export function CollegeDetails() {
       </section>
 
       {/* Improved Sticky Navigation */}
-      <div className="sticky top-0 z-50 bg-[#05060A]/90 backdrop-blur-3xl border-y border-white/5">
+      <div className="sticky top-0 z-50 bg-background/90 backdrop-blur-3xl border-y border-border-subtle">
         <div className="max-w-7xl mx-auto px-4 overflow-x-auto no-scrollbar">
           <div className="flex justify-start md:justify-center gap-6 md:gap-12 h-16 md:h-20 items-center min-w-max mx-auto px-4">
             {tabs.map((tab) => (
@@ -250,7 +250,7 @@ export function CollegeDetails() {
                 onClick={() => setActiveTab(tab.id)}
                 className={cn(
                   "flex items-center gap-2 text-[9px] md:text-[10px] font-black uppercase tracking-widest transition-all relative h-full shrink-0",
-                  activeTab === tab.id ? "text-indigo-400" : "text-white/20 hover:text-white"
+                  activeTab === tab.id ? "text-indigo-400" : "text-text-main/20 hover:text-text-main"
                 )}
               >
                 <tab.icon size={14} className={cn("transition-all duration-300", activeTab === tab.id ? "scale-110" : "opacity-50")} />
@@ -288,7 +288,7 @@ export function CollegeDetails() {
                       <h2 className="text-4xl md:text-6xl font-black tracking-tight leading-none italic">
                         Institutional <br className="hidden md:block" /> Insights.
                       </h2>
-                      <p className="text-lg md:text-xl text-white/40 leading-relaxed font-medium">
+                      <p className="text-lg md:text-xl text-text-main/40 leading-relaxed font-medium">
                         {college.description}
                       </p>
                     </div>
@@ -298,7 +298,7 @@ export function CollegeDetails() {
                           <div className="flex items-center gap-2 text-emerald-500 text-[9px] font-black uppercase tracking-widest mb-4">
                             <CheckCircle2 size={14} /> Authentic Pros
                           </div>
-                          <ul className="space-y-3 text-sm font-bold text-white/60">
+                          <ul className="space-y-3 text-sm font-bold text-text-main/60">
                              <li>• Strong Alumni Network</li>
                              <li>• Research-Led Faculty</li>
                              <li>• High Tier-1 Placements</li>
@@ -308,7 +308,7 @@ export function CollegeDetails() {
                   </div>
 
                   <div className="lg:col-span-5">
-                    <div className="p-8 md:p-12 rounded-[2rem] md:rounded-[3.5rem] bg-[#0A0C14] border border-white/5 space-y-10">
+                    <div className="p-8 md:p-12 rounded-[2rem] md:rounded-[3.5rem] bg-card border border-border-subtle space-y-10">
                        <div className="flex items-center justify-between">
                           <h3 className="text-lg font-black uppercase tracking-widest">Reality Audit</h3>
                           <Activity size={18} className="text-indigo-500" />
@@ -321,7 +321,7 @@ export function CollegeDetails() {
                             { label: 'STUDENT LIBERTY', score: 3.1 }
                           ].map((s, i) => (
                             <div key={i} className="space-y-2">
-                               <div className="flex justify-between text-[9px] font-black uppercase tracking-widest text-white/20">
+                               <div className="flex justify-between text-[9px] font-black uppercase tracking-widest text-text-main/20">
                                   <span>{s.label}</span>
                                   <span className="text-indigo-400">{s.score}</span>
                                </div>
@@ -337,7 +337,7 @@ export function CollegeDetails() {
                        </div>
                        <div className="pt-8 border-t border-white/5 grid grid-cols-2 gap-4 md:gap-8 text-center">
                           <div>
-                             <div className="text-xl font-black text-white italic">{college.placements?.avgPackage || 'N/A'}</div>
+                             <div className="text-xl font-black text-text-main italic">{college.placements?.avgPackage || 'N/A'}</div>
                              <div className="text-[8px] font-black text-white/20 uppercase mt-1 tracking-widest">Avg Package</div>
                           </div>
                           <div>
@@ -356,10 +356,10 @@ export function CollegeDetails() {
                    </div>
                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
                       {college.experience?.map((exp, i) => (
-                        <div key={i} className="p-8 rounded-[2rem] bg-[#0A0C14] border border-white/5 hover:border-indigo-500/20 transition-all">
+                        <div key={i} className="p-8 rounded-[2rem] bg-card border border-white/5 hover:border-indigo-500/20 transition-all">
                            <div className="text-3xl font-black text-indigo-500/20 mb-4 italic">0{exp.year}</div>
                            <h4 className="text-lg font-black mb-2">{exp.title}</h4>
-                           <p className="text-[12px] text-white/40 font-bold leading-relaxed">{exp.description}</p>
+                           <p className="text-[12px] text-text-main/40 font-bold leading-relaxed">{exp.description}</p>
                         </div>
                       ))}
                    </div>
@@ -404,7 +404,7 @@ export function CollegeDetails() {
                          <div className="flex flex-wrap justify-between items-start gap-4 mb-8">
                             <div className="flex items-center gap-3">
                                <Link to={`/profile/${g.userId}`} className="h-12 w-12 rounded-2xl p-0.5 bg-gradient-to-br from-indigo-500/20 to-purple-500/20 hover:from-indigo-500/40 hover:to-purple-500/40 transition-all overflow-hidden shrink-0">
-                                  <div className="w-full h-full rounded-[0.9rem] bg-[#0A0C14] flex items-center justify-center">
+                                  <div className="w-full h-full rounded-[0.9rem] bg-card flex items-center justify-center">
                                      {g.user?.avatar ? (
                                        <img src={g.user.avatar} alt="" className="w-full h-full object-cover" />
                                      ) : (
@@ -593,7 +593,7 @@ export function CollegeDetails() {
                   <h2 className="text-3xl md:text-5xl font-black italic tracking-tighter">Infrastructure Profile.</h2>
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                      {college.facilities?.map((f, i) => (
-                       <div key={i} className="p-6 md:p-8 rounded-2xl md:rounded-[2rem] bg-[#0A0C14] border border-white/5 flex items-center justify-between group">
+                       <div key={i} className="p-6 md:p-8 rounded-2xl md:rounded-[2rem] bg-card border border-white/5 flex items-center justify-between group">
                           <span className="text-base font-bold text-white/60 group-hover:text-white">{f}</span>
                           <ChevronRight size={16} className="text-white/10 group-hover:text-indigo-500" />
                        </div>
@@ -613,7 +613,7 @@ export function CollegeDetails() {
                    </div>
 
                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-20">
-                      <div className="lg:col-span-8 h-[350px] md:h-auto md:aspect-video rounded-[2.5rem] md:rounded-[4rem] bg-[#0A0C14] border border-white/5 overflow-hidden relative">
+                      <div className="lg:col-span-8 h-[350px] md:h-auto md:aspect-video rounded-[2.5rem] md:rounded-[4rem] bg-card border border-white/5 overflow-hidden relative">
                         {college.mapEmbed ? (
                           <iframe 
                             src={college.mapEmbed}
@@ -698,9 +698,9 @@ export function CollegeDetails() {
               initial={{ y: '100%' }} 
               animate={{ y: 0 }} 
               exit={{ y: '100%' }} 
-              className="fixed inset-0 z-[401] overflow-y-auto no-scrollbar bg-[#05060A]"
+              className="fixed inset-0 z-[401] overflow-y-auto no-scrollbar bg-black"
             >
-              <div className="sticky top-0 bg-[#05060A]/80 backdrop-blur-xl p-4 flex items-center justify-between border-b border-white/5 z-20">
+              <div className="sticky top-0 bg-black/80 backdrop-blur-xl p-4 flex items-center justify-between border-b border-white/5 z-20">
                 <button onClick={() => setSelectedPostId(null)} className="p-2 flex items-center gap-2 text-sm font-black uppercase text-white/60 hover:text-white transition-colors">
                   <ChevronLeft /> Gallery
                 </button>
@@ -779,7 +779,7 @@ export function CollegeDetails() {
               initial={{ opacity: 0, scale: 0.9, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.9, y: 20 }}
-              className="relative w-full max-w-lg bg-[#0A0C14] border border-white/10 rounded-[2.5rem] p-8 md:p-12 shadow-2xl overflow-hidden"
+              className="relative w-full max-w-lg bg-card border border-white/10 rounded-[2.5rem] p-8 md:p-12 shadow-2xl overflow-hidden"
             >
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-indigo-500 to-transparent opacity-50" />
               

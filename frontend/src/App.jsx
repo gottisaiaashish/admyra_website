@@ -26,7 +26,7 @@ function ScrollToTop() {
 
 function Layout() {
   const location = useLocation();
-  const hideNavbar = location.pathname === '/edit-profile' || location.pathname === '/';
+  const hideNavbar = location.pathname === '/edit-profile' || location.pathname === '/' || location.pathname === '/predictor' || location.pathname === '/marks-predictor';
   const isProfilePage = location.pathname.includes('/profile') || location.pathname === '/edit-profile';
 
   return (
@@ -36,7 +36,7 @@ function Layout() {
         <Outlet />
       </main>
       {!isProfilePage && location.pathname !== '/' && (
-        <footer className="border-t border-gray-800 py-8 bg-background">
+        <footer className="border-t border-border-subtle py-8 bg-background">
           <div className="max-w-7xl mx-auto px-4 text-center text-gray-400">
             <p>© {new Date().getFullYear()} Admyra. All rights reserved. 
             </p>

@@ -1,10 +1,12 @@
 "use client";
 
 import * as React from "react";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import { useNavigate, useLocation } from 'react-router-dom';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { cn } from "../../lib/utils";
+import { AuthModal } from '../layout/AuthModal';
 
 // Register ScrollTrigger safely for React
 if (typeof window !== "undefined") {
@@ -198,10 +200,38 @@ const MarqueeItem = () => (
 );
 
 export function CinematicFooter() {
+  const navigate = useNavigate();
+  const location = useLocation();
   const wrapperRef = useRef(null);
   const giantTextRef = useRef(null);
   const headingRef = useRef(null);
   const linksRef = useRef(null);
+
+  const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
+  const [loggedInUser, setLoggedInUser] = useState(null);
+
+  // Load user data safely
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem('userInfo');
+      if (saved && saved !== "undefined") {
+        setLoggedInUser(JSON.parse(saved));
+      } else {
+        setLoggedInUser(null);
+      }
+    } catch (e) {
+      console.error('Failed to parse user info', e);
+      setLoggedInUser(null);
+    }
+  }, [location.pathname]);
+
+  const handleProfileClick = () => {
+    if (loggedInUser && loggedInUser.id && loggedInUser.id !== 'undefined') {
+      navigate(`/profile/${loggedInUser.id}`);
+    } else {
+      setIsAuthModalOpen(true);
+    }
+  };
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -309,8 +339,8 @@ export function CinematicFooter() {
                     AI Mentor
                   </MagneticButton>
                 </div>
-                
-                <MagneticButton as="a" href="/profile" className="footer-glass-pill px-6 py-3 rounded-full text-white/40 font-medium text-xs hover:text-white">
+
+                <MagneticButton onClick={handleProfileClick} className="footer-glass-pill px-6 py-3 rounded-full text-white/40 font-medium text-xs hover:text-white">
                   Profile
                 </MagneticButton>
 
@@ -326,6 +356,10 @@ export function CinematicFooter() {
           </div>
         </footer>
       </div>
+      <AuthModal
+        isOpen={isAuthModalOpen}
+        onClose={() => setIsAuthModalOpen(false)}
+      />
     </>
   );
 }

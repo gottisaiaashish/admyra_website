@@ -122,10 +122,10 @@ export function Colleges() {
             className="w-full lg:w-auto flex items-center gap-3 relative"
           >
             <div className="relative group w-full sm:w-64">
-              <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-white/40 group-focus-within:text-primary-start transition-colors" />
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-text-muted/40 group-focus-within:text-primary-start transition-colors" />
               <Input 
                 placeholder="Search..." 
-                className="pl-12 h-14 rounded-2xl bg-white/[0.05] border-white/10 focus:border-primary-start focus:ring-primary-start/20 transition-all text-white placeholder:text-white/20"
+                className="pl-12 h-14 rounded-2xl bg-black/[0.02] border-border-subtle focus:border-primary-start focus:ring-primary-start/20 transition-all text-text-main placeholder:text-text-muted/30"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
               />
@@ -135,11 +135,11 @@ export function Colleges() {
                 variant={selectedFilter !== 'all' ? 'primary' : 'outline'}
                 onClick={() => setIsFilterOpen(!isFilterOpen)}
                 className={cn(
-                  "h-14 w-14 rounded-2xl p-0 flex-none border-white/10 bg-white/[0.05] hover:bg-white/[0.08] transition-all",
+                  "h-14 w-14 rounded-2xl p-0 flex-none border-border-subtle bg-black/[0.02] hover:bg-black/[0.05] transition-all",
                   selectedFilter !== 'all' && "bg-primary-start text-white border-primary-start shadow-lg shadow-primary-start/20"
                 )}
               >
-                <SlidersHorizontal className="h-5 w-5 text-white/60" />
+                <SlidersHorizontal className="h-5 w-5 text-text-muted" />
               </Button>
 
               {/* Filter Dropdown */}

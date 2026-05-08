@@ -118,7 +118,7 @@ export function Home() {
   };
 
   return (
-    <div ref={rootRef} className="w-full bg-[#05060A]">
+    <div ref={rootRef} className="w-full bg-background">
       <SEO 
         title="Predict Your Engineering College | TS EAMCET & TG EAPCET 2026"
         description="Admyra is the #1 TG EAPCET & TS EAMCET college predictor. Get 99% accurate college predictions based on rank, category, and verified student feedback. Better than CollegeDost."
@@ -126,22 +126,22 @@ export function Home() {
         schema={[websiteSchema, breadcrumbSchema]}
       />
 
-      <main className="relative z-10 w-full min-h-[120vh] bg-[#05060A] shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
+      <main className="relative z-10 w-full min-h-[120vh] bg-background shadow-[0_20px_50px_rgba(0,0,0,0.05)]">
         <CinematicFooter />
         
 
         {/* HOW IT WORKS */}
-        <section className="py-32 bg-[#05060A] relative overflow-hidden">
+        <section className="py-32 bg-background relative overflow-hidden">
           {/* BACKGROUND ANIMATED PATHS */}
-          <div className="absolute inset-0 opacity-100">
+          <div className="absolute inset-0 opacity-20">
             <FloatingPaths position={1} />
             <FloatingPaths position={-1} />
           </div>
 
           <div className="max-w-5xl mx-auto px-6 relative z-10">
             <div className="text-center md:text-left mb-20 md:mb-24 max-w-2xl mx-auto md:mx-0">
-              <h2 className="text-4xl sm:text-5xl md:text-7xl font-black text-white tracking-tighter mb-8 leading-[0.9] uppercase italic">
-                How Admyra <br /><span className="text-white/20">Architects Your Future.</span>
+              <h2 className="text-4xl sm:text-5xl md:text-7xl font-black text-text-main tracking-tighter mb-8 leading-[0.9] uppercase italic">
+                How Admyra <br /><span className="text-text-main/20">Architects Your Future.</span>
               </h2>
             </div>
 
@@ -152,12 +152,12 @@ export function Home() {
                 { step: "03", title: "Transparency", desc: "Access verified institutional reports with exact commute metrics and peer-vetted campus insights." }
               ].map((item, idx) => (
                 <div key={idx} className="flex gap-12 group">
-                  <div className="text-7xl md:text-9xl font-black text-white/5 group-hover:text-indigo-500/20 transition-colors duration-700 select-none">
+                  <div className="text-7xl md:text-9xl font-black text-text-main/5 group-hover:text-indigo-500/20 transition-colors duration-700 select-none">
                     {item.step}
                   </div>
                   <div className="pt-4 md:pt-10">
-                    <h4 className="text-2xl md:text-4xl font-black text-white mb-6 uppercase italic">{item.title}</h4>
-                    <TextEffect per="word" preset="blur" className="text-white/40 text-lg md:text-xl font-medium leading-relaxed">
+                    <h4 className="text-2xl md:text-4xl font-black text-text-main mb-6 uppercase italic">{item.title}</h4>
+                    <TextEffect per="word" preset="blur" className="text-text-main/40 text-lg md:text-xl font-medium leading-relaxed">
                       {item.desc}
                     </TextEffect>
                   </div>
@@ -168,12 +168,12 @@ export function Home() {
         </section>
 
         {/* CONNECTIVITY AUDIT - NEW ROADMAP */}
-        <section className="pt-20 pb-0 relative overflow-hidden bg-black border-y border-white/5">
+        <section className="pt-20 pb-0 relative overflow-hidden bg-background border-y border-border-subtle">
           <div className="max-w-7xl mx-auto px-6 relative z-10">
             <div className="text-center mb-2">
               <AnimatedUnderlineText 
                 text="Connectivity." 
-                textClassName="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase italic"
+                textClassName="text-4xl md:text-6xl font-black text-text-main tracking-tighter uppercase italic"
                 underlineClassName="text-indigo-500"
                 className="mb-16"
               />
@@ -183,11 +183,11 @@ export function Home() {
                   transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
                   className="h-1 w-1 rounded-full bg-indigo-500 shadow-[0_0_8px_rgba(99,102,241,0.8)]"
                 />
-                <p className="text-white/40 max-w-xl font-medium leading-relaxed">
+                <p className="text-text-main/40 max-w-xl font-medium leading-relaxed">
                   To ensure safety and a seamless commute for everyone—especially female students—we've clearly documented the
                 </p>
               </div>
-              <div className="text-lg md:text-xl font-bold text-white tracking-tight">
+              <div className="text-lg md:text-xl font-bold text-text-main tracking-tight">
                 Real-world distance to <br />
                 <FlipWords 
                   words={["Metro Stations", "Bus Stops", "Railway Stations", "MMTS Stations"]} 
@@ -213,8 +213,8 @@ export function Home() {
         <GrievanceWall />
 
         {/* TOP INSTITUTIONS */}
-        <section className="py-40 relative overflow-hidden bg-black">
-          <div className="absolute inset-0 bg-gradient-to-b from-[#05060A] to-black" />
+        <section className="py-40 relative overflow-hidden bg-background">
+          <div className="absolute inset-0 bg-gradient-to-b from-background to-background" />
           <div className="max-w-7xl mx-auto px-6 relative z-10">
             <div className="text-center mb-8">
               <LetterRevealHeading text="Top Institutions" />
