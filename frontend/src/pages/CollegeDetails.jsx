@@ -250,7 +250,7 @@ export function CollegeDetails() {
                 onClick={() => setActiveTab(tab.id)}
                 className={cn(
                   "flex items-center gap-2 text-[9px] md:text-[10px] font-black uppercase tracking-widest transition-all relative h-full shrink-0",
-                  activeTab === tab.id ? "text-indigo-400" : "text-text-main/20 hover:text-text-main"
+                  activeTab === tab.id ? "text-indigo-600 dark:text-indigo-400" : "text-text-main/40 hover:text-text-main"
                 )}
               >
                 <tab.icon size={14} className={cn("transition-all duration-300", activeTab === tab.id ? "scale-110" : "opacity-50")} />
@@ -552,7 +552,7 @@ export function CollegeDetails() {
                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                     <div className="space-y-6 md:space-y-8 text-center lg:text-left">
                        <h2 className="text-4xl md:text-6xl font-black italic tracking-tighter">Verified Network.</h2>
-                       <p className="text-base text-white/30 leading-relaxed font-medium max-w-md">
+                       <p className="text-base text-text-main/40 leading-relaxed font-medium max-w-md">
                           We collaborate with elite student bodies and institutional hubs to maintain the highest standards of data integrity.
                        </p>
                     </div>
@@ -564,14 +564,14 @@ export function CollegeDetails() {
                             href={partner.url} 
                             target="_blank" 
                             rel="noopener noreferrer"
-                            className="p-6 rounded-3xl bg-white/[0.02] border border-white/5 hover:border-white/20 hover:bg-white/[0.04] transition-all duration-500 group flex items-center gap-5 cursor-pointer"
+                            className="p-6 rounded-3xl bg-card border border-border-subtle hover:border-indigo-500/20 hover:bg-text-main/[0.02] transition-all duration-500 group flex items-center gap-5 cursor-pointer"
                           >
-                             <div className="h-14 w-14 rounded-2xl bg-white/5 flex items-center justify-center text-white/40 group-hover:text-white group-hover:bg-white/10 transition-all">
+                             <div className="h-14 w-14 rounded-2xl bg-text-main/5 flex items-center justify-center text-text-main/40 group-hover:text-indigo-500 group-hover:bg-indigo-500/10 transition-all duration-300">
                                 {partner.platform === 'Instagram' ? <Camera size={22} /> : <Globe size={22} />}
                              </div>
                              <div className="text-left">
-                                <h4 className="text-lg font-black text-white tracking-tight">{partner.name}</h4>
-                                <div className="text-[10px] font-black text-white/20 uppercase tracking-widest mt-0.5">{partner.followers} Reach</div>
+                                <h4 className="text-lg font-black text-text-main tracking-tight">{partner.name}</h4>
+                                <div className="text-[10px] font-black text-text-main/30 uppercase tracking-widest mt-0.5">{partner.followers} Reach</div>
                              </div>
                           </a>
                        ))}
@@ -580,7 +580,7 @@ export function CollegeDetails() {
                   <div className="flex justify-center mt-16">
                      <Button 
                         onClick={() => setShowPartnerModal(true)}
-                        className="h-14 px-12 bg-white text-black hover:bg-white/90 font-black uppercase tracking-widest text-[10px] rounded-full transition-all duration-500 shadow-2xl shadow-white/5"
+                        className="h-14 px-12 bg-text-main text-background hover:opacity-90 font-black uppercase tracking-widest text-[10px] rounded-full transition-all duration-300 shadow-xl shadow-indigo-500/10"
                      >
                         Become a Verified Partner
                      </Button>
@@ -863,7 +863,7 @@ export function CollegeDetails() {
                   <div className="space-y-8">
                      <div className="space-y-2">
                         <div className="inline-flex px-3 py-1 rounded-full bg-white/5 text-white/40 text-[9px] font-black uppercase tracking-widest mb-2">Verification Portal</div>
-                        <h2 className="text-3xl md:text-4xl font-black italic tracking-tighter">Partner with Admyra.</h2>
+                        <h2 className="text-3xl md:text-4xl font-black italic tracking-tighter text-white">Partner with Admyra.</h2>
                         <p className="text-sm text-white/30 font-medium">Apply to join our network of verified institutional hubs.</p>
                      </div>
 
@@ -903,7 +903,7 @@ export function CollegeDetails() {
                ) : (
                   <div className="text-center py-12 space-y-8">
                      <div className="space-y-3">
-                        <h2 className="text-4xl font-black italic tracking-tighter">Application Received.</h2>
+                        <h2 className="text-4xl font-black italic tracking-tighter text-white">Application Received.</h2>
                         <p className="text-base text-white/30 font-medium max-w-xs mx-auto leading-relaxed">
                            Our verification team will audit your credentials and reach out to your Instagram handle within 48 hours.
                         </p>
