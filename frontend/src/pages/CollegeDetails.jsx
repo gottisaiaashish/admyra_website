@@ -351,12 +351,12 @@ export function CollegeDetails() {
 
                 <div className="space-y-12">
                    <div className="flex items-center gap-4">
-                      <h3 className="text-xl md:text-2xl font-black tracking-widest uppercase text-white/20">The 4-Year Blueprint</h3>
-                      <div className="h-[1px] flex-1 bg-white/5" />
+                      <h3 className="text-xl md:text-2xl font-black tracking-widest uppercase text-text-main/30">The 4-Year Blueprint</h3>
+                      <div className="h-[1px] flex-1 bg-border-subtle" />
                    </div>
                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
                       {college.experience?.map((exp, i) => (
-                        <div key={i} className="p-8 rounded-[2rem] bg-card border border-white/5 hover:border-indigo-500/20 transition-all">
+                        <div key={i} className="p-8 rounded-[2rem] bg-card border border-border-subtle hover:border-indigo-500/20 transition-all">
                            <div className="text-3xl font-black text-indigo-500/20 mb-4 italic">0{exp.year}</div>
                            <h4 className="text-lg font-black mb-2">{exp.title}</h4>
                            <p className="text-[12px] text-text-main/40 font-bold leading-relaxed">{exp.description}</p>
@@ -593,9 +593,9 @@ export function CollegeDetails() {
                   <h2 className="text-3xl md:text-5xl font-black italic tracking-tighter">Infrastructure Profile.</h2>
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                      {college.facilities?.map((f, i) => (
-                       <div key={i} className="p-6 md:p-8 rounded-2xl md:rounded-[2rem] bg-card border border-white/5 flex items-center justify-between group">
-                          <span className="text-base font-bold text-white/60 group-hover:text-white">{f}</span>
-                          <ChevronRight size={16} className="text-white/10 group-hover:text-indigo-500" />
+                       <div key={i} className="p-6 md:p-8 rounded-2xl md:rounded-[2rem] bg-card border border-border-subtle flex items-center justify-between group hover:bg-text-main/[0.02] transition-all duration-300">
+                          <span className="text-base font-bold text-text-main/80 group-hover:text-indigo-500 transition-colors">{f}</span>
+                          <ChevronRight size={16} className="text-text-main/30 group-hover:text-indigo-500 transition-all duration-300" />
                        </div>
                      ))}
                   </div>
@@ -613,7 +613,7 @@ export function CollegeDetails() {
                    </div>
 
                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-20">
-                      <div className="lg:col-span-8 h-[350px] md:h-auto md:aspect-video rounded-[2.5rem] md:rounded-[4rem] bg-card border border-white/5 overflow-hidden relative">
+                      <div className="lg:col-span-8 h-[350px] md:h-auto md:aspect-video rounded-[2.5rem] md:rounded-[4rem] bg-card border border-border-subtle overflow-hidden relative">
                         {college.mapEmbed ? (
                           <iframe 
                             src={college.mapEmbed}
