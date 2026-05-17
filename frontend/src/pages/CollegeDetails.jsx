@@ -647,28 +647,28 @@ export function CollegeDetails() {
                         <h2 className="text-3xl md:text-5xl font-black italic tracking-tighter">Campus Connectivity.</h2>
                         <div className="space-y-4">
                            {college.connectivity?.bus && (
-                             <div className="p-6 rounded-2xl bg-white/[0.01] border border-white/5 flex items-center justify-between group hover:bg-white/[0.03] transition-all">
+                             <div className="p-6 rounded-2xl bg-card border border-border-subtle flex items-center justify-between group hover:bg-text-main/[0.03] transition-all">
                                 <div>
-                                   <div className="text-[9px] font-black text-white/20 uppercase tracking-[0.2em] mb-1">Nearest Bus Stop</div>
-                                   <div className="text-sm font-bold text-white/60 group-hover:text-white transition-colors">{college.connectivity.bus.name}</div>
+                                   <div className="text-[9px] font-black text-text-main/40 uppercase tracking-[0.2em] mb-1">Nearest Bus Stop</div>
+                                   <div className="text-sm font-bold text-text-main/80 group-hover:text-indigo-500 transition-colors">{college.connectivity.bus.name}</div>
                                 </div>
                                 <span className="text-lg font-black italic text-indigo-400">{college.connectivity.bus.dist}</span>
                              </div>
                            )}
                            {college.connectivity?.metro && (
-                             <div className="p-6 rounded-2xl bg-white/[0.01] border border-white/5 flex items-center justify-between group hover:bg-white/[0.03] transition-all">
+                             <div className="p-6 rounded-2xl bg-card border border-border-subtle flex items-center justify-between group hover:bg-text-main/[0.03] transition-all">
                                 <div>
-                                   <div className="text-[9px] font-black text-white/20 uppercase tracking-[0.2em] mb-1">Nearest Metro</div>
-                                   <div className="text-sm font-bold text-white/60 group-hover:text-white transition-colors">{college.connectivity.metro.name}</div>
+                                   <div className="text-[9px] font-black text-text-main/40 uppercase tracking-[0.2em] mb-1">Nearest Metro</div>
+                                   <div className="text-sm font-bold text-text-main/80 group-hover:text-indigo-500 transition-colors">{college.connectivity.metro.name}</div>
                                 </div>
                                 <span className="text-lg font-black italic text-indigo-400">{college.connectivity.metro.dist}</span>
                              </div>
                            )}
                            {college.connectivity?.railway && (
-                             <div className="p-6 rounded-2xl bg-white/[0.01] border border-white/5 flex items-center justify-between group hover:bg-white/[0.03] transition-all">
+                             <div className="p-6 rounded-2xl bg-card border border-border-subtle flex items-center justify-between group hover:bg-text-main/[0.03] transition-all">
                                 <div>
-                                   <div className="text-[9px] font-black text-white/20 uppercase tracking-[0.2em] mb-1">Railway Hub</div>
-                                   <div className="text-sm font-bold text-white/60 group-hover:text-white transition-colors">{college.connectivity.railway.name}</div>
+                                   <div className="text-[9px] font-black text-text-main/40 uppercase tracking-[0.2em] mb-1">Railway Hub</div>
+                                   <div className="text-sm font-bold text-text-main/80 group-hover:text-indigo-500 transition-colors">{college.connectivity.railway.name}</div>
                                 </div>
                                 <span className="text-lg font-black italic text-indigo-400">{college.connectivity.railway.dist}</span>
                              </div>
