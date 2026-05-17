@@ -60,8 +60,12 @@ export function Navbar() {
         <div className=" hidden md:block px-2 sm:px-8 lg:px-0 max-w-7xl mx-auto">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-8">
-              <NavLink to="/" className="text-xl font-bold text-text-main mr-4">
-                Admyra
+              <NavLink to="/" className="flex items-center mr-4">
+                <img 
+                  src={theme === 'dark' ? '/logo-dark.png' : '/logo-light.png'} 
+                  alt="teamadmyra logo" 
+                  className="h-7 w-auto object-contain" 
+                />
               </NavLink>
               <div className="hidden md:block">
                 <div className="flex items-baseline space-x-8">
@@ -111,8 +115,12 @@ export function Navbar() {
 
         <div className="md:hidden px-4">
           <div className="flex items-center justify-between h-16">
-            <NavLink to="/" className="text-lg font-bold text-text-main">
-              Admyra
+            <NavLink to="/" className="flex items-center">
+              <img 
+                src={theme === 'dark' ? '/logo-dark.png' : '/logo-light.png'} 
+                alt="teamadmyra logo" 
+                className="h-6 w-auto object-contain" 
+              />
             </NavLink>
             
             <div className="flex items-center gap-2">
