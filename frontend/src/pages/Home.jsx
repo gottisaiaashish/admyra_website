@@ -222,7 +222,7 @@ export function Home() {
             
             <div className="py-4 relative overflow-hidden text-center">
               <LogoCloud logos={topColleges} />
-              <p className="text-sm text-white/30 font-medium max-w-xl mx-auto mt-12">
+              <p className="text-sm text-text-main/40 font-medium max-w-xl mx-auto mt-12">
                 Explore the most prestigious engineering institutions across Telangana.
               </p>
             </div>

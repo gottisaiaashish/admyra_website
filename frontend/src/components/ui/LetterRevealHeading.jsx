@@ -42,7 +42,7 @@ export const LetterRevealHeading = ({ text, className }) => {
   return (
     <motion.h3
       className={cn(
-        "flex flex-wrap justify-center text-4xl md:text-6xl lg:text-7xl font-black tracking-tighter uppercase italic leading-none text-white",
+        "flex flex-wrap justify-center text-4xl md:text-6xl lg:text-7xl font-black tracking-tighter uppercase italic leading-none text-text-main",
         className
       )}
       variants={container}
