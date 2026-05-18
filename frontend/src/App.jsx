@@ -26,7 +26,7 @@ function ScrollToTop() {
 
 function Layout() {
   const location = useLocation();
-  const hideNavbar = location.pathname === '/edit-profile' || location.pathname === '/' || location.pathname === '/predictor' || location.pathname === '/marks-predictor';
+  const hideNavbar = location.pathname === '/edit-profile' || location.pathname === '/' || location.pathname === '/predictor' || location.pathname === '/marks-predictor' || location.pathname === '/colleges';
   const isProfilePage = location.pathname.includes('/profile') || location.pathname === '/edit-profile';
 
   return (

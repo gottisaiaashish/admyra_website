@@ -78,7 +78,7 @@ export function Colleges() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-32">
+    <div className="max-w-7xl mx-auto px-4 pt-12 pb-32">
       <SEO 
         title="Top Engineering Colleges in Telangana & AP 2026 | Explore List"
         description="Rank #1 source for engineering colleges in Hyderabad, Warangal, and AP. Compare JNTU, OU, CBIT, VNR, and top tier private institutions with detailed reviews and cutoff data."
