@@ -2446,7 +2446,7 @@ export const colleges =
       location: "Kodad, Suryapet",
       rating: 4.1,
       description: "Anurag Engineering College (AEC), established in 2002 in Kodad, Suryapet District, is a premier private autonomous engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in CSE, CSM, ECE, EEE, Civil, and IT engineering, featuring a sprawling green campus, well-equipped laboratory infrastructure, and excellent career support via its placement cell.",
-      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      image: "https://anurag.ac.in/wp-content/uploads/2024/06/About-us-top.jpg",
       placements: {
         avgPackage: "3.5 LPA",
         topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "Accenture", "Capgemini"]
@@ -2485,7 +2485,7 @@ export const colleges =
       location: "Paloncha, Bhadradri Kothagudem",
       rating: 3.6,
       description: "Anu Bose Institute of Technology (ABIT), established in Paloncha, Bhadradri Kothagudem District, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The college offers undergraduate programs in engineering disciplines including Computer Science, Electronics and Communication, Mechanical, and Civil Engineering. ABIT focuses on providing quality technical education with dedicated faculty, modern laboratories, and a supportive learning environment for students from rural and semi-urban backgrounds.",
-      image: "https://images.shiksha.com/mediadata/images/1533296803phpfHfbCA.jpeg",
+      image: "https://www.agarum.com/photos/1/5/94/1443/c/l/aa194421811bcfa9c46e6a1fcd922728.jpg",
       placements: {
         avgPackage: "3.0 LPA",
         topRecruiters: ["Infosys", "Wipro", "TCS", "IBM", "Tech Mahindra", "Genpact", "HCL"]
@@ -2527,7 +2527,7 @@ export const colleges =
       location: "Gunthapally, Hayathnagar, Hyderabad",
       rating: 3.8,
       description: "Avanthi Institute of Engineering & Technology (AIET), located in Gunthapally near Hayathnagar, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers undergraduate and postgraduate programs in engineering disciplines including Computer Science, Electronics and Communication, Electrical, and Mechanical Engineering. AIET is known for its industry-oriented curriculum, placement training, and focus on developing technical and soft skills for career readiness.",
-      image: "https://images.static-collegedunia.com/public/college_data/images/appImage/1509430093cover.jpg",
+      image: "https://images.shiksha.com/mediadata/images/1744178810php4JVOwC.jpeg",
       placements: {
         avgPackage: "4.0 LPA",
         topRecruiters: ["TCS", "Infosys", "Wipro", "Cognizant", "Accenture", "Amazon", "Tech Mahindra"]
@@ -2569,7 +2569,7 @@ export const colleges =
       location: "Ibrahimpatnam, Hyderabad",
       rating: 3.9,
       description: "AVN Institute of Engineering & Technology (AVNIET), located in Ibrahimpatnam near Hyderabad, is a private engineering college affiliated with JNTU Hyderabad and approved by AICTE. The institute offers B.Tech programs in Computer Science, Electronics and Communication, Electrical, Mechanical, and Civil Engineering. AVNIET is known for its structured placement training, modern laboratories, smart classrooms, and a strong focus on campus recruitment with partnerships across 100+ companies.",
-      image: "https://images.shiksha.com/mediadata/images/1595846985phpW2q9ja.jpeg",
+      image: "https://avniet.ac.in/wp-content/uploads/2026/02/Copy-of-Copy-of-SPOT-ADS-1.jpg",
       placements: {
         avgPackage: "3.8 LPA",
         topRecruiters: ["TCS", "Infosys", "Wipro", "Amazon", "Accenture", "Cognizant", "IBM", "Tech Mahindra", "Capgemini"]
@@ -2612,7 +2612,7 @@ export const colleges =
       location: "Abdullapur, Abdullapurmet, Hyderabad",
       rating: 3.7,
       description: "Brilliant Institute of Engineering & Technology (BIET), part of the Brilliant Group of Technical Institutions, is located on a 70-acre campus in Abdullapur near Hyderabad. Affiliated with JNTU Hyderabad and approved by AICTE, the college offers undergraduate and postgraduate programs in engineering and technology. BIET is known for its spacious green campus, modern smart classrooms, well-equipped laboratories, and an active placement cell partnering with 100+ companies for campus recruitment.",
-      image: "https://images.shiksha.com/mediadata/images/1595846985phpW2q9ja.jpeg",
+      image: "https://image-static.collegedunia.com/public/reviewPhotos/228746/images%20(35).jpeg",
       placements: {
         avgPackage: "3.5 LPA",
         topRecruiters: ["TCS", "Wipro", "HCL", "Genpact", "IBM", "Capgemini", "Sutherland", "GlobalLogic"]
