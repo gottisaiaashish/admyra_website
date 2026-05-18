@@ -7,7 +7,7 @@ export function AiMentor() {
   const navigate = useNavigate();
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-24 min-h-[80dvh] flex items-center justify-center">
+    <div className="max-w-6xl mx-auto px-4 pt-12 pb-24 min-h-[80dvh] flex items-center justify-center">
       <SEO 
         title="AI Mentor - Coming Soon"
         description="Admyra AI Mentor is leveling up. Stay tuned for a smarter, more personalized AI guidance system for college choices and career paths."
